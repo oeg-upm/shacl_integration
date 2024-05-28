@@ -1,6 +1,6 @@
-from fact import Fact
-from condition import Condition
-from action import Action
+from service.rule_engine.fact import Fact
+from service.rule_engine.condition import Condition
+from service.rule_engine.action import Action
 from typing import List, Any
 from functools import reduce
 

@@ -1,5 +1,5 @@
 from typing import Callable, Any, Dict, List
-from fact import Fact
+from service.rule_engine.fact import Fact
 
 class Action:
 

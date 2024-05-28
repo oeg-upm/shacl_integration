@@ -1,4 +1,4 @@
-from fact import Fact
+from service.rule_engine.fact import Fact
 
 from typing import Callable, Any, Dict, List
 
