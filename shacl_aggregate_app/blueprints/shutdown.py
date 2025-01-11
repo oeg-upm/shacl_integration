@@ -7,7 +7,7 @@ shutdown = Blueprint('shutdown', __name__)
 
 @shutdown.route('/shutdown/<user>/<password>')
 def shutdown_flask_app(user, password):
-    if user == "admin" and password == "admin":
+    if user == "sgonzage" and password == "Svger.gl.227":
         shutdown_server()
         return "Server shutting down..."
     else:
