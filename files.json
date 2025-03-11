@@ -1,0 +1,37 @@
+{
+    "1": {
+        "description": "Integration between SOSA-SSN shapes manual and Astrea generated",
+        "tuples" : [
+            {
+                "name" : "SOSA",
+                "shape" : "",
+                "onto" : ""
+            },
+            {
+                "name" :"SOSA-SSN",
+                "shape" : "",
+                "onto" : ""
+            }
+        ]
+    },
+    "2": {
+        "description": "Integration between SOSA-SSN and SAREF ontology shapes manual and Astrea generated",
+        "tuples" : [
+            {
+                "name" : "SOSA",
+                "shape" : "",
+                "onto" : ""
+            },
+            {
+                "name" : "SAREF",
+                "shape" : "",
+                "onto" : ""
+            },
+            {
+                "name" :"SOSA-SSN",
+                "shape" : "",
+                "onto" : ""
+            }
+        ]
+    }
+}
