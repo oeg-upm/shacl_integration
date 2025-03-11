@@ -3,9 +3,9 @@ import os
 import sys
 sys.stdout.flush()
 
-aggregate = Blueprint('aggregate', __name__)
+integrate = Blueprint('integrate', __name__)
 
-@aggregate.route('/aggregate')
+@integrate.route('/integrate')
 def aggregation():
     # Join/AND
     # Disjoint/OR

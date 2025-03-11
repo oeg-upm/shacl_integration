@@ -16,8 +16,8 @@ def create_app():
 
     from .blueprints.render import render as render_blueprint
     app.register_blueprint(render_blueprint)
-    from .blueprints.aggregate import aggregate as aggregate_blueprint
-    app.register_blueprint(aggregate_blueprint)
+    from .blueprints.integrate import integrate as integrate_blueprint
+    app.register_blueprint(integrate_blueprint)
     from .blueprints.shutdown import shutdown as shutdown_blueprint
     app.register_blueprint(shutdown_blueprint)
 

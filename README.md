@@ -1,3 +1,5 @@
 # SHACL-AGGREGATE
 
-source environment.sh
+```
+pip install -r requirements.txt
+```
