@@ -1,0 +1,1980 @@
+@prefix :      <https://saref.etsi.org/core/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix saref: <https://saref.etsi.org/core/> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix s4syst: <https://saref.etsi.org/saref4syst/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<https://astrea.linkeddata.es/shapes#efbf4f800b87e2dea341738d2b4f4547>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:nonNegativeInteger ;
+        sh:minCount  "1"^^xsd:nonNegativeInteger ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:hasValue .
+
+<https://astrea.linkeddata.es/shapes#5acbffb330e1f1fa902b2febde3c8b14>
+        a               sh:PropertyShape ;
+        rdfs:label      "has input"@en , "Links a command, operation, or procedure execution, to its inputs."@en ;
+        sh:description  "Links a command, operation, or procedure execution, to its inputs."@en ;
+        sh:name         "has input"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#c6b18b5b7f305bf0b06521f183ee852a>
+        a               sh:NodeShape ;
+        rdfs:label      "Temperature"@en ;
+        sh:description  "A saref:Property related to some measurements that are characterized by a certain value that is measured in a temperature unit (degree_Celsius, degree_Fahrenheit, or degree_kelvin)"@en ;
+        sh:name         "Temperature"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:Temperature .
+
+<https://astrea.linkeddata.es/shapes#87e177cfcafeda0bbfb9bb8ac2fe3dc6>
+        a               sh:PropertyShape ;
+        rdfs:label      "has command of interest"@en , "Links a function of interest to one of its commands of interest."@en ;
+        sh:class        saref:CommandOfInterest ;
+        sh:description  "Links a function of interest to one of its commands of interest."@en ;
+        sh:name         "has command of interest"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasCommandOfInterest .
+
+<https://astrea.linkeddata.es/shapes#7d00afe10fb700336d8c042b8173c076>
+        a               sh:NodeShape ;
+        rdfs:label      "Start command"@en ;
+        sh:description  "A type of command"@en ;
+        sh:name         "Start command"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:StartCommand .
+
+<https://astrea.linkeddata.es/shapes#9291422746ea0f60decf2bbe468e154f>
+        a               sh:PropertyShape ;
+        rdfs:label      "has function of interest"@en , "Links a device to one of its functions of interest."@en ;
+        sh:class        saref:FunctionOfInterest ;
+        sh:description  "Links a device to one of its functions of interest."@en ;
+        sh:name         "has function of interest"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasFunctionOfInterest .
+
+<https://astrea.linkeddata.es/shapes#2573b9adc492bb07dad6c025f32aad10>
+        a               sh:PropertyShape ;
+        rdfs:label      "is produced by"@en , "Links a commodity to the feature kind, feature of interest, or device, that produces it"@en ;
+        sh:description  "Links a commodity to the feature kind, feature of interest, or device, that produces it"@en ;
+        sh:name         "is produced by"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:isProducedBy .
+
+<https://astrea.linkeddata.es/shapes#dedb38237273195fdb79246d848b4fda>
+        a               sh:NodeShape ;
+        rdfs:label      "Actuating function"@en ;
+        sh:description  "A function that allows to transmit data to actuators, such as level settings (e.g., temperature) or binary switching (e.g., open/close, on/off)"@en ;
+        sh:name         "Actuating function"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:ActuatingFunction .
+
+<https://astrea.linkeddata.es/shapes#858f1f03cd3853981cca75bbe1c350f6>
+        a                       sh:PropertyShape ;
+        sh:nodeKind             sh:IRIOrLiteral ;
+        sh:path                 saref:represents ;
+        sh:qualifiedMinCount    "1"^^xsd:nonNegativeInteger ;
+        sh:qualifiedValueShape  [ sh:class  saref:CommandOfInterest ] .
+
+<https://astrea.linkeddata.es/shapes#ad6a9f1bedbd7ac99e7d837089068df8>
+        a               sh:PropertyShape ;
+        rdfs:label      "has property value"@en , "Links a feature kind, a feature of interest, or a property of interest, to a property value."@en ;
+        sh:class        saref:PropertyValue ;
+        sh:description  "Links a feature kind, a feature of interest, or a property of interest, to a property value."@en ;
+        sh:name         "has property value"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasPropertyValue .
+
+<https://astrea.linkeddata.es/shapes#34c0f55f8f3f3c58d9cb361df2984c77>
+        a               sh:NodeShape ;
+        rdfs:label      "Feature of interest"@en ;
+        sh:description  "A feature of interest represents any real world entity from which a property or a state may be acted upon, such as observed and controlled. An instance of saref:FeatureOfInterest represents one specific real world entity."@en ;
+        sh:name         "Feature of interest"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#dd7c5ae36318814e4c4bd073b97ad3bb> , <https://astrea.linkeddata.es/shapes#18b996429f25eabd407e501f91a48950> , <https://astrea.linkeddata.es/shapes#ad69a4d63df8a60b511211a1a5383b9b> , <https://astrea.linkeddata.es/shapes#a2d1d3c933c9df46a5431f86a2e65948> , <https://astrea.linkeddata.es/shapes#ee1bb8ccf767b89f8e9b7a7df2b4e749> , <https://astrea.linkeddata.es/shapes#ad6a9f1bedbd7ac99e7d837089068df8> , <https://astrea.linkeddata.es/shapes#44c2e26c59181db9841becf44e7f142f> , <https://astrea.linkeddata.es/shapes#33647ad48fc226dbafdf80923a8a614b> , <https://astrea.linkeddata.es/shapes#1fddf06fe6e9b90dfa54ea35fe9edfb7> , <https://astrea.linkeddata.es/shapes#251b2229429e6609f9ba9332d3aeb8ba> , <https://astrea.linkeddata.es/shapes#2939175ece03f2a097adb8b0fcc694fe> ;
+        sh:targetClass  saref:FeatureOfInterest .
+
+<https://astrea.linkeddata.es/shapes#d5f0a710c47832d55bc72774c8b7d22b>
+        a               sh:NodeShape ;
+        rdfs:label      "Energy unit"@en ;
+        sh:description  "The unit of measure for energy"@en ;
+        sh:name         "Energy unit"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:EnergyUnit .
+
+<https://astrea.linkeddata.es/shapes#a95790c773fd7394ff9b0513a68ff506>
+        a               sh:PropertyShape ;
+        rdfs:label      "Links an operation to the service it belongs to."@en , "is operation of"@en ;
+        sh:class        saref:Service ;
+        sh:description  "Links an operation to the service it belongs to."@en ;
+        sh:maxCount     1 ;
+        sh:name         "is operation of"@en ;
+        sh:nodeKind     sh:IRIOrLiteral , sh:BlankNodeOrIRI ;
+        sh:path         saref:isOperationOf .
+
+<https://astrea.linkeddata.es/shapes#7e1fd57104d602bd2070e959c3d2e9ea>
+        a            sh:PropertyShape ;
+        sh:class     saref:FeatureKind ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      skos:broader .
+
+<https://astrea.linkeddata.es/shapes#cecd23353917812e5885792d2fd27029>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  time:TemporalPosition .
+
+<https://astrea.linkeddata.es/shapes#2939175ece03f2a097adb8b0fcc694fe>
+        a               sh:PropertyShape ;
+        rdfs:label      "made execution"@en , "Links an entity (e.g., device) to the procedure execution it made."@en ;
+        sh:class        saref:ProcedureExecution ;
+        sh:description  "Links an entity (e.g., device) to the procedure execution it made."@en ;
+        sh:name         "made execution"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:madeExecution .
+
+<https://astrea.linkeddata.es/shapes#2ba53b18bba6c4398ebe4a89b7a15006>
+        a               sh:PropertyShape ;
+        rdfs:label      "has price"@en , "Links a profile to the money earned (negative values) or paid (positive values) for the use (production or consumption) of the commodity by the device"@en ;
+        sh:class        saref:PropertyValue ;
+        sh:description  "Links a profile to the money earned (negative values) or paid (positive values) for the use (production or consumption) of the commodity by the device"@en ;
+        sh:name         "has price"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:profileHasPrice .
+
+<https://astrea.linkeddata.es/shapes#a2d1d3c933c9df46a5431f86a2e65948>
+        a               sh:PropertyShape ;
+        rdfs:label      "has feature kind"@en , "links a feature of interest to its kind, a feature kind"@en ;
+        sh:class        saref:FeatureKind ;
+        sh:description  "links a feature of interest to its kind, a feature kind"@en ;
+        sh:name         "has feature kind"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasFeatureKind .
+
+<https://astrea.linkeddata.es/shapes#ee1bb8ccf767b89f8e9b7a7df2b4e749>
+        a               sh:PropertyShape ;
+        rdfs:label      "has state"@en , "Links a feature kind or a feature of interest to one of its states."@en ;
+        sh:class        saref:State ;
+        sh:description  "Links a feature kind or a feature of interest to one of its states."@en ;
+        sh:name         "has state"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasState .
+
+<https://astrea.linkeddata.es/shapes#633fe74cb1add80584bb15775841838a>
+        a               sh:PropertyShape ;
+        rdfs:label      "has output"@en , "Links a command or operation to its outputs."@en ;
+        sh:description  "Links a command or operation to its outputs."@en ;
+        sh:name         "has output"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#251b2229429e6609f9ba9332d3aeb8ba>
+        a            sh:PropertyShape ;
+        sh:class     saref:FeatureOfInterest ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:consistsOf .
+
+<https://astrea.linkeddata.es/shapes#1ef0e14cd4ce581eb184a3ffed9a602e>
+        a               sh:PropertyShape ;
+        rdfs:label      "has meter reading type"@en , "A relationship identifying the reading type of a metering function (e.g., Water, Gas, Pressure , Energy , Power, etc.)"@en ;
+        sh:class        saref:Property ;
+        sh:description  "A relationship identifying the reading type of a metering function (e.g., Water, Gas, Pressure , Energy , Power, etc.)"@en ;
+        sh:name         "has meter reading type"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasMeterReadingType .
+
+<https://astrea.linkeddata.es/shapes#f481d4d475f6459f4de41c141c6a4fd9>
+        a               sh:PropertyShape ;
+        rdfs:label      "has mandatory command"@en , "Links a function and one of its mandatory commands"@en ;
+        sh:description  "Links a function and one of its mandatory commands"@en ;
+        sh:name         "has mandatory command"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#30473415520fe3216efbfaae0150dd78>
+        a               sh:NodeShape ;
+        rdfs:label      "Door switch"@en ;
+        sh:description  "A switch that performs the saref:OpenCloseFunction, is used for controlling a door, and can be found in the state saref:OpenCloseState. A saref:DoorSwitch is typically used to accomplish saref:Safety."@en ;
+        sh:name         "Door switch"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:DoorSwitch .
+
+<https://astrea.linkeddata.es/shapes#09f17fcc61f87f9692f33bab42323734>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      skos:broader .
+
+<https://astrea.linkeddata.es/shapes#44c2e26c59181db9841becf44e7f142f>
+        a               sh:PropertyShape ;
+        rdfs:label      "is used for"@en , "Links a feature kind, feature of interest, or device, to the commodity it is used for"@en ;
+        sh:class        saref:Commodity ;
+        sh:description  "Links a feature kind, feature of interest, or device, to the commodity it is used for"@en ;
+        sh:name         "is used for"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:isUsedFor .
+
+<https://astrea.linkeddata.es/shapes#0eb807de4b50dbbb4f338ddf5645226f>
+        a               sh:NodeShape ;
+        rdfs:label      "State"@en ;
+        sh:description  "Identifiable conditions that features of interest are or may be in, and that can be acted upon by devices, such as observed and controlled. A state can apply to different features of interest."@en ;
+        sh:name         "State"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#b8c92746c864c172bf8d75c2cc40380d> , <https://astrea.linkeddata.es/shapes#9055667f619352e161e334eb6f90527d> ;
+        sh:targetClass  saref:State .
+
+<https://astrea.linkeddata.es/shapes#6764ccfa3d337a9d981fc1a7e545ea92>
+        a               sh:NodeShape ;
+        rdfs:label      "Set level command"@en ;
+        sh:description  "A type of command"@en ;
+        sh:name         "Set level command"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:SetLevelCommand .
+
+<https://astrea.linkeddata.es/shapes#56e7c85c8d659331447f841c28306ba0>
+        a               sh:PropertyShape ;
+        rdfs:label      "has model"@en , "A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag."@en ;
+        sh:description  "A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag."@en ;
+        sh:name         "has model"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         saref:hasModel .
+
+<https://astrea.linkeddata.es/shapes#0a5804dbf271e1e0746c63e997fd9601>
+        a               sh:NodeShape ;
+        rdfs:label      "Feature kinds"@en ;
+        sh:description  "Feature kinds allow to describe kinds of features of interest, with common properties having the same value, and common states being the same. An instance of saref:FeatureKind represents an archetype of real world entities, for example to populate product catalogs."@en ;
+        sh:name         "Feature kinds"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#9b3c9a9ce165e94785caf040c46670dd> , <https://astrea.linkeddata.es/shapes#ee1bb8ccf767b89f8e9b7a7df2b4e749> , <https://astrea.linkeddata.es/shapes#38d6484e148433078745559bfd28d51a> , <https://astrea.linkeddata.es/shapes#7e1fd57104d602bd2070e959c3d2e9ea> , <https://astrea.linkeddata.es/shapes#1fddf06fe6e9b90dfa54ea35fe9edfb7> , <https://astrea.linkeddata.es/shapes#dd7c5ae36318814e4c4bd073b97ad3bb> , <https://astrea.linkeddata.es/shapes#44c2e26c59181db9841becf44e7f142f> , <https://astrea.linkeddata.es/shapes#567a05ac3de045510edf014728fd7acb> , <https://astrea.linkeddata.es/shapes#ad6a9f1bedbd7ac99e7d837089068df8> ;
+        sh:targetClass  saref:FeatureKind .
+
+<https://astrea.linkeddata.es/shapes#6ee31de90ba7aa1587df5cde5748de25>
+        a               sh:NodeShape ;
+        rdfs:label      "Multi level state"@en ;
+        sh:description  "A type of state"@en ;
+        sh:name         "Multi level state"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:MultiLevelState .
+
+<https://astrea.linkeddata.es/shapes#5a85ff7527e78eb51e15f9fe504ef815>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:nonNegativeInteger ;
+        sh:minCount  "1"^^xsd:nonNegativeInteger ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:isOperationOf .
+
+<https://astrea.linkeddata.es/shapes#b76f078f2a5ae6844196e8162af1983c>
+        a               sh:NodeShape ;
+        rdfs:label      "Smoke sensor"@en ;
+        sh:description  "A sensor that performs the saref:SensingFunction and the saref:EventFunction, and is used for the purpose of sensing a property of type saref:Smoke. A saref:SmokeSensor is typically used to saref:accomplish saref:Safety."@en ;
+        sh:name         "Smoke sensor"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:SmokeSensor .
+
+<https://astrea.linkeddata.es/shapes#2b5c499da543fd87f9bf3dd486e4fb6e>
+        a               sh:PropertyShape ;
+        rdfs:label      "has function kind"@en , "links a function of interest to its kind, a function"@en ;
+        sh:class        saref:Function ;
+        sh:description  "links a function of interest to its kind, a function"@en ;
+        sh:name         "has function kind"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasFunctionKind .
+
+<https://astrea.linkeddata.es/shapes#502768d6ad2ec9ff04901584a30935b3>
+        a               sh:NodeShape ;
+        rdfs:label      "On off state"@en ;
+        sh:description  "A type of state"@en ;
+        sh:name         "On off state"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:OnOffState .
+
+<https://astrea.linkeddata.es/shapes#2345a9450c33fbb788750c507e07ab01>
+        a            sh:PropertyShape ;
+        sh:class     saref:Operation ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:isExecutionOf .
+
+<https://astrea.linkeddata.es/shapes#d7d1e157a10d4c711970040956ced0eb>
+        a               sh:NodeShape ;
+        rdfs:label      "Sensor"@en ;
+        sh:description  "A device designed to observe one or more properties or states of one or more features of interest."@en ;
+        sh:name         "Sensor"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#b86e7e73a18bac08d7a3e6e9a140d2e8> ;
+        sh:targetClass  saref:Sensor .
+
+<https://astrea.linkeddata.es/shapes#b1ac7f6ee7079e85cb1b3b8eb11e1c43>
+        a               sh:NodeShape ;
+        rdfs:label      "Motion"@en ;
+        sh:description  "A saref:Property related to some measurements that are characterized by a certain value that is measured in a unit of measure for motion"@en ;
+        sh:name         "Motion"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:Motion .
+
+<https://astrea.linkeddata.es/shapes#9b03830ffc3f699d8e27eaaf3eefc5d0>
+        a               sh:NodeShape ;
+        rdfs:label      "Step up command"@en ;
+        sh:description  "A type of command"@en ;
+        sh:name         "Step up command"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:StepUpCommand .
+
+<https://astrea.linkeddata.es/shapes#79a8e64ece62e83c00996c62248cfb9e>
+        a               sh:PropertyShape ;
+        rdfs:label      "stores"@en , "Links a feature kind, feature of interest, or device, to the commodity it stores"@en ;
+        sh:description  "Links a feature kind, feature of interest, or device, to the commodity it stores"@en ;
+        sh:name         "stores"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:stores .
+
+<https://astrea.linkeddata.es/shapes#7636d31e71ce857caf3a6e5129fd0324>
+        a            sh:PropertyShape ;
+        sh:minCount  "1"^^xsd:nonNegativeInteger ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:observes .
+
+<https://astrea.linkeddata.es/shapes#1182e4c2df7ae0de5d28b9c69f07ccad>
+        a               sh:NodeShape ;
+        rdfs:label      "Currency"@en ;
+        sh:description  "The class of units of measure for price"@en ;
+        sh:name         "Currency"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:Currency .
+
+<https://astrea.linkeddata.es/shapes#419a96fe71239c01ed4effc708290d37>
+        a               sh:NodeShape ;
+        rdfs:label      "Open close function"@en ;
+        sh:description  "An actuating function that allows to open and close a device"@en ;
+        sh:name         "Open close function"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:OpenCloseFunction .
+
+<https://astrea.linkeddata.es/shapes#f7d4d51806befb3a506e515ecc4ff352>
+        a               sh:NodeShape ;
+        rdfs:label      "Off state"@en ;
+        sh:description  "The state of a device that is Off"@en ;
+        sh:name         "Off state"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:OffState .
+
+<https://astrea.linkeddata.es/shapes#ec4d9be43d49ce4a5080dc148f295395>
+        a               sh:NodeShape ;
+        rdfs:label      "Procedure Execution"@en ;
+        sh:description  "Represents the act of carrying out a procedure."@en ;
+        sh:name         "Procedure Execution"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#c04a746a71d9f143476d1a349cdaf11c> , <https://astrea.linkeddata.es/shapes#6b09657a9e2a3494865b52d785bdf325> , <https://astrea.linkeddata.es/shapes#502898d72a77a36190b2820684311a5b> ;
+        sh:targetClass  saref:ProcedureExecution .
+
+<https://astrea.linkeddata.es/shapes#9cfc6f8793fb0c6e8c8a68f6afe94c15>
+        a               sh:NodeShape ;
+        rdfs:label      "Get meter history command"@en ;
+        sh:description  "A type of get command"@en ;
+        sh:name         "Get meter history command"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:GetMeterHistoryCommand .
+
+<https://astrea.linkeddata.es/shapes#de327a2e129d6df403addd12a0de663f>
+        a               sh:NodeShape ;
+        rdfs:label      "Set absolute level command"@en ;
+        sh:description  "A type of set level command"@en ;
+        sh:name         "Set absolute level command"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:SetAbsoluteLevelCommand .
+
+<https://astrea.linkeddata.es/shapes#9551277a29d67a16ebf869c978be6865>
+        a               sh:NodeShape ;
+        rdfs:label      "Commodity"@en ;
+        sh:description  "A marketable item which may be supplied without qualitative differentiation."@en ;
+        sh:name         "Commodity"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#ba9310085cc1e7058f0ba52f255b73bc> , <https://astrea.linkeddata.es/shapes#cea08091a42c7e4b36b75a5ac55e3972> ;
+        sh:targetClass  saref:Commodity .
+
+<https://astrea.linkeddata.es/shapes#ba9310085cc1e7058f0ba52f255b73bc>
+        a            sh:PropertyShape ;
+        sh:class     saref:Commodity ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      skos:narrower .
+
+<https://astrea.linkeddata.es/shapes#e4831dbb0bf83e060dd243221283d064>
+        a               sh:PropertyShape ;
+        rdfs:label      "measures property"@en , "A relationship specifying the property that can be measured by a certain device"@en ;
+        sh:class        saref:Property ;
+        sh:description  "A relationship specifying the property that can be measured by a certain device"@en ;
+        sh:name         "measures property"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:measuresProperty .
+
+<https://astrea.linkeddata.es/shapes#8ccc2d6b158c6b88e0bcbce58ff1115d>
+        a               sh:PropertyShape ;
+        rdfs:label      "has applicable time"@en , "Links an entity (e.g., a profile) to an instant or interval or other compound temporal entity expressed using OWL Time, which bounds temporally the applicable context of that entity."@en ;
+        sh:description  "Links an entity (e.g., a profile) to an instant or interval or other compound temporal entity expressed using OWL Time, which bounds temporally the applicable context of that entity."@en ;
+        sh:name         "has applicable time"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:or           ( [ sh:class  time:TemporalEntity ;
+                            sh:path   saref:hasApplicableTime
+                          ]
+                          [ sh:class  time:TemporalPosition ;
+                            sh:path   saref:hasApplicableTime
+                          ]
+                        ) .
+
+<https://astrea.linkeddata.es/shapes#90118980a3e7c7108dae6fe97abfd6fe>
+        a            sh:PropertyShape ;
+        sh:class     saref:Command ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      skos:narrower .
+
+<https://astrea.linkeddata.es/shapes#937607848ac9b4ded3b6e8acc3608034>
+        a            sh:PropertyShape ;
+        sh:class     saref:Command ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      skos:broader .
+
+<https://astrea.linkeddata.es/shapes#e9fb92cd94473b63f75644aa2e32b9ff>
+        a               sh:PropertyShape ;
+        rdfs:label      "Links a function of interest to the device it is a function of."@en , "is function of interest of"@en ;
+        sh:class        saref:Device ;
+        sh:description  "Links a function of interest to the device it is a function of."@en ;
+        sh:maxCount     1 ;
+        sh:name         "is function of interest of"@en ;
+        sh:nodeKind     sh:IRIOrLiteral , sh:BlankNodeOrIRI ;
+        sh:path         saref:isFunctionOfInterestOf .
+
+<https://astrea.linkeddata.es/shapes#6096f284e512b43b1adbe1e389448317>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:nonNegativeInteger ;
+        sh:minCount  "1"^^xsd:nonNegativeInteger ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:isPropertyOfInterestOf .
+
+<https://astrea.linkeddata.es/shapes#cf180136b531f312cfe6d5a8998b157f>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  s4syst:System .
+
+<https://astrea.linkeddata.es/shapes#01eeb0bd0ded74c005960ab39c8af70a>
+        a               sh:PropertyShape ;
+        rdfs:label      "is consumed by"@en , "Links a commodity to the feature kind, feature of interest, or device, that consumes it"@en ;
+        sh:description  "Links a commodity to the feature kind, feature of interest, or device, that consumes it"@en ;
+        sh:name         "is consumed by"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:isConsumedBy .
+
+<https://astrea.linkeddata.es/shapes#7c7a9a59b471cb0b363fc811c110801a>
+        a               sh:PropertyShape ;
+        rdfs:label      "has result"@en , "Links a procedure execution (e.g., an observation) to its result (e.g., a property value)."@en ;
+        sh:description  "Links a procedure execution (e.g., an observation) to its result (e.g., a property value)."@en ;
+        sh:name         "has result"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#b2b347ba0131d115803c2ceb3e9c9456>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:nonNegativeInteger ;
+        sh:minCount  "1"^^xsd:nonNegativeInteger ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:isOfferedBy .
+
+<https://astrea.linkeddata.es/shapes#f3fe44f0d7f2e4f4d61ab43ea716590f>
+        a                       sh:PropertyShape ;
+        sh:class                saref:Property ;
+        sh:nodeKind             sh:IRIOrLiteral ;
+        sh:path                 saref:relatesToProperty ;
+        sh:qualifiedMaxCount    "1"^^xsd:nonNegativeInteger ;
+        sh:qualifiedMinCount    "1"^^xsd:nonNegativeInteger ;
+        sh:qualifiedValueShape  [ sh:class  saref:Property ] .
+
+<https://astrea.linkeddata.es/shapes#d1fbce9c312a4605972f5168937f0bf8>
+        a               sh:NodeShape ;
+        rdfs:label      "Get meter data command"@en ;
+        sh:description  "A type of get command"@en ;
+        sh:name         "Get meter data command"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:GetMeterDataCommand .
+
+<https://astrea.linkeddata.es/shapes#837edfdcebd60cabfdbfbc42816ef24e>
+        a               sh:PropertyShape ;
+        rdfs:label      "when property value"@en , "Links a profile to a property value that contributes to restricting its applicable context."@en ;
+        sh:class        saref:PropertyValue ;
+        sh:description  "Links a profile to a property value that contributes to restricting its applicable context."@en ;
+        sh:name         "when property value"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:whenPropertyValue .
+
+<https://astrea.linkeddata.es/shapes#18b996429f25eabd407e501f91a48950>
+        a               sh:PropertyShape ;
+        rdfs:label      "has property of interest"@en , "Links a feature of interest to one of its properties of interest."@en ;
+        sh:class        saref:PropertyOfInterest ;
+        sh:description  "Links a feature of interest to one of its properties of interest."@en ;
+        sh:name         "has property of interest"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasPropertyOfInterest .
+
+<https://astrea.linkeddata.es/shapes#2a7f559467b87c286ff1a0d603f59f77>
+        a               sh:PropertyShape ;
+        rdfs:label      "is controlled by device"@en , "A relationship specifying the devices that can control a certain property"@en ;
+        sh:class        saref:Device ;
+        sh:description  "A relationship specifying the devices that can control a certain property"@en ;
+        sh:name         "is controlled by device"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:isControlledByDevice .
+
+<https://astrea.linkeddata.es/shapes#b8c92746c864c172bf8d75c2cc40380d>
+        a            sh:PropertyShape ;
+        sh:class     saref:State ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      skos:narrower .
+
+<https://astrea.linkeddata.es/shapes#4c735598567c73ff2f3ced4b9d03a5a2>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:nonNegativeInteger ;
+        sh:minCount  "1"^^xsd:nonNegativeInteger ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:isStateOfInterestOf .
+
+<https://astrea.linkeddata.es/shapes#451e91a2de4845ad70fbf93cbabe6582>
+        a               sh:PropertyShape ;
+        rdfs:label      "consists of"@en , "A relationship indicating a composite entity that consists of other entities (e.g., a temperature/humidity sensor that consists of a temperature sensor and a humidity sensor)"@en ;
+        sh:description  "A relationship indicating a composite entity that consists of other entities (e.g., a temperature/humidity sensor that consists of a temperature sensor and a humidity sensor)"@en ;
+        sh:name         "consists of"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:consistsOf .
+
+<https://astrea.linkeddata.es/shapes#dca02d38e5e320264a1a30d672409036>
+        a               sh:PropertyShape ;
+        rdfs:label      "is measured by device"@en , "A relationship specifying the devices that can measure a certain property"@en ;
+        sh:class        saref:Device ;
+        sh:description  "A relationship specifying the devices that can measure a certain property"@en ;
+        sh:name         "is measured by device"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:isMeasuredByDevice .
+
+<https://astrea.linkeddata.es/shapes#8c653ae59853638af721b1deb0f113e1>
+        a               sh:PropertyShape ;
+        rdfs:label      "is profile of"@en , "Links a profile to the device it describes. The device should be linked to a certain commodity using OP saref:isUsedFor or its sub-properties, and optionally to some property or state using OP saref:actsUpon or its sub-properties."@en ;
+        sh:description  "Links a profile to the device it describes. The device should be linked to a certain commodity using OP saref:isUsedFor or its sub-properties, and optionally to some property or state using OP saref:actsUpon or its sub-properties."@en ;
+        sh:name         "is profile of"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:or           ( [ sh:class  saref:Device ;
+                            sh:path   saref:isProfileOf
+                          ]
+                          [ sh:class  saref:FeatureKind ;
+                            sh:path   saref:isProfileOf
+                          ]
+                        ) .
+
+<https://astrea.linkeddata.es/shapes#c4837a2e9a9e63b0d2e6e7fa7c5c65ac>
+        a               sh:PropertyShape ;
+        rdfs:label      "has property kind"@en , "links a property of interest to its kind, a property."@en ;
+        sh:class        saref:Property ;
+        sh:description  "links a property of interest to its kind, a property."@en ;
+        sh:name         "has property kind"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasPropertyKind .
+
+<https://astrea.linkeddata.es/shapes#ed9e65297669e522616100741ddbab06>
+        a               sh:NodeShape ;
+        rdfs:label      "Switch on service"@en ;
+        sh:description  "A type of service that represents an on/off function to the network"@en ;
+        sh:name         "Switch on service"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:SwitchOnService .
+
+<https://astrea.linkeddata.es/shapes#6d7832e4d93e75af0ce4b1bf9ad59537>
+        a               sh:NodeShape ;
+        rdfs:label      "Start stop state"@en ;
+        sh:description  "A type of state"@en ;
+        sh:name         "Start stop state"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:StartStopState .
+
+<https://astrea.linkeddata.es/shapes#94ed6d1fb959a29cb64e8b1533a5daf4>
+        a               sh:NodeShape ;
+        rdfs:label      "Unit of measure"@en ;
+        sh:description  "The unit of measure is a standard for measurement of a quantity, such as a Property."@en ;
+        sh:name         "Unit of measure"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:UnitOfMeasure .
+
+<https://astrea.linkeddata.es/shapes#b314d2d6e3881d73a5a8f9292a04f7f1>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      skos:narrower .
+
+<https://astrea.linkeddata.es/shapes#a94215bdd09d3f6476c6c0acc9696f1b>
+        a               sh:NodeShape ;
+        rdfs:label      "Stop command"@en ;
+        sh:description  "A type of command"@en ;
+        sh:name         "Stop command"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:StopCommand .
+
+<https://astrea.linkeddata.es/shapes#e6b95a4360fad5dd13278858dac4edd7>
+        a            sh:PropertyShape ;
+        sh:class     saref:Task ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      skos:narrower .
+
+<https://astrea.linkeddata.es/shapes#29973d39ed13ef76a30bf248a5070022>
+        a               sh:NodeShape ;
+        rdfs:label      "Gas"@en ;
+        sh:description  "A type of energy commodity"@en ;
+        sh:name         "Gas"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:Gas .
+
+<https://astrea.linkeddata.es/shapes#999b5618108abe603e6661cdbe7506e4>
+        a               sh:PropertyShape ;
+        rdfs:label      "measurement made by"@en , "A relation between a measurement and the device that made it."@en ;
+        sh:class        saref:Device ;
+        sh:description  "A relation between a measurement and the device that made it."@en ;
+        sh:name         "measurement made by"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:measurementMadeBy .
+
+<https://astrea.linkeddata.es/shapes#32b605e215e29baf6a61a785ca904484>
+        a               sh:NodeShape ;
+        rdfs:label      "Water"@en ;
+        sh:description  "A type of commodity"@en ;
+        sh:name         "Water"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:Water .
+
+<https://astrea.linkeddata.es/shapes#f320c8d829ddc6fc9d7a05cf830ce1c1>
+        a               sh:PropertyShape ;
+        rdfs:label      "has manufacturer"@en , "A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag."@en ;
+        sh:description  "A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag."@en ;
+        sh:name         "has manufacturer"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         saref:hasManufacturer .
+
+<https://astrea.linkeddata.es/shapes#c8e9e7f36803873fe76ee96e68e27b67>
+        a               sh:NodeShape ;
+        rdfs:label      "Coal"@en ;
+        sh:description  "A type of commodity"@en ;
+        sh:name         "Coal"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:Coal .
+
+<https://astrea.linkeddata.es/shapes#b86e7e73a18bac08d7a3e6e9a140d2e8>
+        a            sh:PropertyShape ;
+        sh:minCount  "1"^^xsd:nonNegativeInteger ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:observes .
+
+<https://astrea.linkeddata.es/shapes#8b6c87bc4f03bc761baf9f3299f12e6c>
+        a               sh:NodeShape ;
+        rdfs:label      "Actuation"@en ;
+        sh:description  "A saref:Actuation is the act of carrying out a procedure to control the state of the world using an actuator. It links to an actuator to describe what made the actuation, and to the controlled feature, property, property of interest, state, or state of interest. Typically, its input is a property value or a state. An actuation of a state (OP saref:controls) should have a state as input (OP saref:hasInput). Respectively, an actuation of a property should have a property value as input."@en ;
+        sh:name         "Actuation"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#9454ad942a73480a2d60bea468415b8e> , <https://astrea.linkeddata.es/shapes#06ed0ef0741917b2979fc87146b31d70> ;
+        sh:targetClass  saref:Actuation .
+
+<https://astrea.linkeddata.es/shapes#bedfc0382c810fb6973e11f70a7556e7>
+        a               sh:PropertyShape ;
+        rdfs:label      "when state"@en , "Links a profile to a state that contributes to restricting its applicable context."@en ;
+        sh:class        saref:State ;
+        sh:description  "Links a profile to a state that contributes to restricting its applicable context."@en ;
+        sh:name         "when state"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:whenState .
+
+<https://astrea.linkeddata.es/shapes#d8fcc404ec3569ab405576151e2c63f9>
+        a               sh:NodeShape ;
+        rdfs:label      "Property"@en ;
+        sh:description  "Identifiable qualities of features of interest that can be acted upon by devices, such as observed or controlled. A property can apply to different features of interest."@en ;
+        sh:name         "Property"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#d4e2a6e51178fc3cdeed2c00d08f6b35> , <https://astrea.linkeddata.es/shapes#dca02d38e5e320264a1a30d672409036> , <https://astrea.linkeddata.es/shapes#2a7f559467b87c286ff1a0d603f59f77> , <https://astrea.linkeddata.es/shapes#4c441e387479eb1dc5d5927ebccb0c1f> , <https://astrea.linkeddata.es/shapes#f48e6eb56794b646394b6da77e0d52c4> ;
+        sh:targetClass  saref:Property .
+
+<https://astrea.linkeddata.es/shapes#3fa7d19a4912e3306f7209cb475e0272>
+        a               sh:PropertyShape ;
+        rdfs:label      "has command"@en , "Links a function or function of interest and the command it supports."@en ;
+        sh:class        saref:Command ;
+        sh:description  "Links a function or function of interest and the command it supports."@en ;
+        sh:name         "has command"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasCommand .
+
+<https://astrea.linkeddata.es/shapes#0ac542fe05bf1e2555a2cb0118d23dc8>
+        a               sh:NodeShape ;
+        rdfs:label      "Actuator"@en ;
+        sh:description  "A device designed to control one or more properties or states of one or more features of interest."@en ;
+        sh:name         "Actuator"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#235c3793a9cf43b431d810b0fceeb625> ;
+        sh:targetClass  saref:Actuator .
+
+<https://astrea.linkeddata.es/shapes#5ad468feb7f22fa7b5d296b8afe7f818>
+        a               sh:PropertyShape ;
+        rdfs:label      "is state of interest of"@en , "Links a state of interest to the feature of interest it is a state of."@en ;
+        sh:class        saref:FeatureOfInterest ;
+        sh:description  "Links a state of interest to the feature of interest it is a state of."@en ;
+        sh:maxCount     1 ;
+        sh:name         "is state of interest of"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI , sh:IRIOrLiteral ;
+        sh:path         saref:isStateOfInterestOf .
+
+<https://astrea.linkeddata.es/shapes#9f265900343a6e84c3746dab5f1aa56e>
+        a               sh:NodeShape ;
+        rdfs:label      "Time"@en ;
+        sh:description  "A class that allows to specify the time concept."@en ;
+        sh:name         "Time"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:Time .
+
+<https://astrea.linkeddata.es/shapes#89602718fff77ec404fcb8fcccb9815d>
+        a               sh:PropertyShape ;
+        rdfs:label      "observes"@en , "Links a device, function, command, or procedure execution, to the feature, property, or state, it observes."@en ;
+        sh:description  "Links a device, function, command, or procedure execution, to the feature, property, or state, it observes."@en ;
+        sh:name         "observes"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#354a22c1f8206272bede8b833a253c1d>
+        a               sh:NodeShape ;
+        rdfs:label      "Open close state"@en ;
+        sh:description  "A type of state"@en ;
+        sh:name         "Open close state"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:OpenCloseState .
+
+<https://astrea.linkeddata.es/shapes#818c8d4adea92646d716355b340a4b2b>
+        a               sh:NodeShape ;
+        rdfs:label      "Light switch"@en ;
+        sh:description  "A switch that performs the saref:OnOffFunction, controls the property saref:Light, and can be found in the state saref:OnOffState. It can offer a switch on service. A saref:LightSwitch is typically used to accomplish saref:Lighting."@en ;
+        sh:name         "Light switch"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:LightSwitch .
+
+<https://astrea.linkeddata.es/shapes#cea08091a42c7e4b36b75a5ac55e3972>
+        a            sh:PropertyShape ;
+        sh:class     saref:Commodity ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      skos:broader .
+
+<https://astrea.linkeddata.es/shapes#e46b2441c73c4ed6c244c5aeb37e4f87>
+        a               sh:NodeShape ;
+        rdfs:label      "Illuminance unit"@en ;
+        sh:description  "The unit of measure for light"@en ;
+        sh:name         "Illuminance unit"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:IlluminanceUnit .
+
+<https://astrea.linkeddata.es/shapes#567a05ac3de045510edf014728fd7acb>
+        a            sh:PropertyShape ;
+        sh:class     saref:FeatureKind ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:consistsOf .
+
+<https://astrea.linkeddata.es/shapes#01880a796c2df7337b5c1375c51b5b7d>
+        a               sh:NodeShape ;
+        rdfs:label      "Observation"@en ;
+        sh:description  "A saref:Observation is the act of carrying out a procedure to estimate or calculate a value of a property of a feature of interest, or a state of a feature of interest. It links to a sensor to describe what made the observation, and to the observed feature, property, property of interest, state, or state of interest. Typically, its result is a property value or a state. An observation of a state (OP saref:observes) should have a state as a result (OP saref:hasResult). Respectively, an observation of a property should have a property value as a result."@en ;
+        sh:name         "Observation"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#7636d31e71ce857caf3a6e5129fd0324> , <https://astrea.linkeddata.es/shapes#37153f0f8f67ca08307bf87fb1627aee> ;
+        sh:targetClass  saref:Observation .
+
+<https://astrea.linkeddata.es/shapes#c9fea5c9ad9c0fe83823584abf9dea54>
+        a               sh:PropertyShape ;
+        rdfs:label      "has command kind"@en , "links a command of interest to its kind, a command."@en ;
+        sh:class        saref:Command ;
+        sh:description  "links a command of interest to its kind, a command."@en ;
+        sh:name         "has command kind"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasCommandKind .
+
+<https://astrea.linkeddata.es/shapes#25c421833c75c00a45cd08a0a123dbdd>
+        a               sh:NodeShape ;
+        rdfs:label      "Price"@en ;
+        sh:description  "A saref:Property related to some measurements that are characterized by a certain value that is measured using saref:Currency"@en , "A saref:Property crelated to some measurements that are characterized by a certain value that is measured using saref:Currency"@en ;
+        sh:name         "Price"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:Price .
+
+<https://astrea.linkeddata.es/shapes#fcd9e8a9d1d48699b8246bd36683a97d>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:isExecutionOf .
+
+<https://astrea.linkeddata.es/shapes#c378c62f98efa2f61271d583c4ee1dde>
+        a               sh:NodeShape ;
+        rdfs:label      "Operation"@en ;
+        sh:description  "A saref:Operation is the means of a service to communicate in a procedure-type manner over the network (i.e. transmit data to/from other devices). It is the –machine interpretable– exposure of a –human understandable– command to a network."@en ;
+        sh:name         "Operation"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:or           ( [ sh:class  saref:Command ;
+                            sh:path   saref:represents
+                          ]
+                          [ sh:class  saref:CommandOfInterest ;
+                            sh:path   saref:represents
+                          ]
+                        ) ;
+        sh:property     <https://astrea.linkeddata.es/shapes#a95790c773fd7394ff9b0513a68ff506> , <https://astrea.linkeddata.es/shapes#858f1f03cd3853981cca75bbe1c350f6> , <https://astrea.linkeddata.es/shapes#5a85ff7527e78eb51e15f9fe504ef815> ;
+        sh:targetClass  saref:Operation .
+
+<https://astrea.linkeddata.es/shapes#1f896116493df775b2e1eab0bc1a861a>
+        a               sh:PropertyShape ;
+        rdfs:label      "is command of"@en , "Links a command and a function or function of interest that supports it."@en ;
+        sh:description  "Links a command and a function or function of interest that supports it."@en ;
+        sh:name         "is command of"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:or           ( [ sh:class  saref:Function ;
+                            sh:path   saref:isCommandOf
+                          ]
+                          [ sh:class  saref:FunctionOfInterest ;
+                            sh:path   saref:isCommandOf
+                          ]
+                        ) .
+
+<https://astrea.linkeddata.es/shapes#c4824c54856675d123ffa7f31ec15b71>
+        a               sh:NodeShape ;
+        rdfs:label      "Task"@en ;
+        sh:description  "The goal for which a device is designed, from a user perspective."@en ;
+        sh:name         "Task"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#e6b95a4360fad5dd13278858dac4edd7> , <https://astrea.linkeddata.es/shapes#0b9719c79843a33d1bfe6c76c29a3784> ;
+        sh:targetClass  saref:Task .
+
+<https://astrea.linkeddata.es/shapes#6492d1ff8532f55e1193459c80d86b47>
+        a            sh:PropertyShape ;
+        sh:minCount  "1"^^xsd:nonNegativeInteger ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:observes .
+
+<https://astrea.linkeddata.es/shapes#53ce851efcc81411ff9807be4d57da5f>
+        a               sh:NodeShape ;
+        rdfs:label      "Appliance"@en ;
+        sh:description  "A device designed to accomplish a particular task for occupant use. It consumes, produces, or stores, some commodity."@en ;
+        sh:name         "Appliance"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#b572a4b8bfcb4f2ee011809bf571e92b> ;
+        sh:targetClass  saref:Appliance .
+
+<https://astrea.linkeddata.es/shapes#db085280eb44e73456450bcaf4d931b0>
+        a               sh:PropertyShape ;
+        rdfs:label      "is measured in"@en , "A relationship identifying the unit of measure used for a certain entity."@en ;
+        sh:class        saref:UnitOfMeasure ;
+        sh:description  "A relationship identifying the unit of measure used for a certain entity."@en ;
+        sh:name         "is measured in"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:isMeasuredIn .
+
+<https://astrea.linkeddata.es/shapes#04b78c84de89b65f9cae6f2645c073f6>
+        a               sh:NodeShape ;
+        rdfs:label      "Metering function"@en ;
+        sh:description  "A function that allows to get data from a meter, such as current meter reading or instantaneous demand"@en ;
+        sh:name         "Metering function"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#1ef0e14cd4ce581eb184a3ffed9a602e> , <https://astrea.linkeddata.es/shapes#f0c4e048fb71ff5877b599bd2e73bee4> ;
+        sh:targetClass  saref:MeteringFunction .
+
+<https://astrea.linkeddata.es/shapes#64478794b6093b0b3b562700029f0008>
+        a               sh:NodeShape ;
+        rdfs:label      "Set relative level command"@en ;
+        sh:description  "A type of set level command"@en ;
+        sh:name         "Set relative level command"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:SetRelativeLevelCommand .
+
+<https://astrea.linkeddata.es/shapes#ce380efe064c9351501a5a9a26e94307>
+        a               sh:NodeShape ;
+        rdfs:label      "Toggle command"@en ;
+        sh:description  "A type of command"@en ;
+        sh:name         "Toggle command"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:ToggleCommand .
+
+<https://astrea.linkeddata.es/shapes#7e55213db431f79e7f40fc2497318e52>
+        a               sh:NodeShape ;
+        rdfs:label      "Pressure unit"@en ;
+        sh:description  "The unit of measure for pressure"@en ;
+        sh:name         "Pressure unit"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:PressureUnit .
+
+<https://astrea.linkeddata.es/shapes#8661dcd9ee54db004f23ae5cc74f9889>
+        a               sh:PropertyShape ;
+        rdfs:label      "is property of"@en , "Links a property to the feature kind or feature of interest it is a property of."@en ;
+        sh:description  "Links a property to the feature kind or feature of interest it is a property of."@en ;
+        sh:name         "is property of"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:or           ( [ sh:class  saref:FeatureKind ;
+                            sh:path   saref:isPropertyOf
+                          ]
+                          [ sh:class  saref:FeatureOfInterest ;
+                            sh:path   saref:isPropertyOf
+                          ]
+                        ) .
+
+<https://astrea.linkeddata.es/shapes#d512df7343caf72b636a6148de5ca3a2>
+        a               sh:PropertyShape ;
+        rdfs:label      "has price"@en , "A relationship indentifying the price associated to an entity"@en ;
+        sh:class        saref:Price ;
+        sh:description  "A relationship indentifying the price associated to an entity"@en ;
+        sh:name         "has price"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasPrice .
+
+<https://astrea.linkeddata.es/shapes#755f8b4ff0f70ed4b629510f14a8804c>
+        a               sh:NodeShape ;
+        rdfs:label      "Service"@en ;
+        sh:description  "A saref:Service is a digital representation of a function in a network, making it discoverable, registerable and remotely controllable in the network."@en ;
+        sh:name         "Service"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:or           ( [ sh:class  saref:Function ;
+                            sh:path   saref:represents
+                          ]
+                          [ sh:class  saref:FunctionOfInterest ;
+                            sh:path   saref:represents
+                          ]
+                        ) ;
+        sh:property     <https://astrea.linkeddata.es/shapes#2d7b624266e6e40bf78d6bfa55447cdd> , <https://astrea.linkeddata.es/shapes#a0eebbbea442bf34ea954dc57e7cbda8> , <https://astrea.linkeddata.es/shapes#b2b347ba0131d115803c2ceb3e9c9456> , <https://astrea.linkeddata.es/shapes#dfa16431414125765813ecf998afcad0> ;
+        sh:targetClass  saref:Service .
+
+<https://astrea.linkeddata.es/shapes#502898d72a77a36190b2820684311a5b>
+        a               sh:PropertyShape ;
+        rdfs:label      "has timestamp"@en , "Links a procedure execution or a profile to an instant."@en ;
+        sh:datatype     xsd:dateTime ;
+        sh:description  "Links a procedure execution or a profile to an instant."@en ;
+        sh:name         "has timestamp"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         saref:hasTimestamp ;
+        sh:pattern      "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#3a233ad5718566d5252874efa6ba6e74>
+        a               sh:PropertyShape ;
+        rdfs:label      "has optional command"@en , "Links a function and one of its optional commands"@en ;
+        sh:description  "Links a function and one of its optional commands"@en ;
+        sh:name         "has optional command"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#2d7b624266e6e40bf78d6bfa55447cdd>
+        a               sh:PropertyShape ;
+        rdfs:label      "Links a service to the device that exposes it to a network"@en , "is offered by"@en ;
+        sh:class        saref:Device ;
+        sh:description  "Links a service to the device that exposes it to a network"@en ;
+        sh:maxCount     1 ;
+        sh:name         "is offered by"@en ;
+        sh:nodeKind     sh:IRIOrLiteral , sh:BlankNodeOrIRI ;
+        sh:path         saref:isOfferedBy .
+
+<https://astrea.linkeddata.es/shapes#e803adf2466d37bef02f8def2b6de922>
+        a               sh:PropertyShape ;
+        rdfs:label      "has sensor type"@en , "A relationship identifying the sensing type of a sensor detection (i.e., Temperature, Occupancy, Humidity, Motion , Smoke, Pressure, etc.) "@en ;
+        sh:class        saref:Property ;
+        sh:description  "A relationship identifying the sensing type of a sensor detection (i.e., Temperature, Occupancy, Humidity, Motion , Smoke, Pressure, etc.) "@en ;
+        sh:name         "has sensor type"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasSensorType .
+
+<https://astrea.linkeddata.es/shapes#81b8e6b70dbc57d774221b33b822db71>
+        a               sh:NodeShape ;
+        rdfs:label      "Power"@en ;
+        sh:description  "A saref:Property related to some measurements that are characterized by a certain value that is measured in a power unit (such as watt or kilowatt).  Further specializations of the saref:Power class can be found in the SAREF4ENER extension, where classes such as PowerMax, PowerMin and PowerExpected are defined."@en ;
+        sh:name         "Power"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:Power .
+
+<http://astrea.linkeddata.es/report>
+        a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#contains>
+                <https://astrea.linkeddata.es/shapes#ae7455c53047a30847be351138ab32fd> , <https://astrea.linkeddata.es/shapes#6b09657a9e2a3494865b52d785bdf325> , <https://astrea.linkeddata.es/shapes#2d5fb0696778adab75b551779784a6e6> , <https://astrea.linkeddata.es/shapes#73fa53b1eee0f4ba629861be3a5a6543> , <https://astrea.linkeddata.es/shapes#f481d4d475f6459f4de41c141c6a4fd9> , <https://astrea.linkeddata.es/shapes#dd7c5ae36318814e4c4bd073b97ad3bb> , <https://astrea.linkeddata.es/shapes#ad69a4d63df8a60b511211a1a5383b9b> , <https://astrea.linkeddata.es/shapes#755f8b4ff0f70ed4b629510f14a8804c> , <https://astrea.linkeddata.es/shapes#b76f078f2a5ae6844196e8162af1983c> , <https://astrea.linkeddata.es/shapes#18b996429f25eabd407e501f91a48950> , <https://astrea.linkeddata.es/shapes#d4b02650cf9e490662853cd658f196e5> , <https://astrea.linkeddata.es/shapes#1814f0e8a0589bb29b6eb6a35029c58d> , <https://astrea.linkeddata.es/shapes#528ae6335bb8dad566723812ce1d54d2> , <https://astrea.linkeddata.es/shapes#44c2e26c59181db9841becf44e7f142f> , <https://astrea.linkeddata.es/shapes#a94c793b44c9ff0b0a048a7a3211dbc4> , <https://astrea.linkeddata.es/shapes#01eeb0bd0ded74c005960ab39c8af70a> , <https://astrea.linkeddata.es/shapes#b8c92746c864c172bf8d75c2cc40380d> , <https://astrea.linkeddata.es/shapes#7636d31e71ce857caf3a6e5129fd0324> , <https://astrea.linkeddata.es/shapes#9291422746ea0f60decf2bbe468e154f> , <https://astrea.linkeddata.es/shapes#251b2229429e6609f9ba9332d3aeb8ba> , <https://astrea.linkeddata.es/shapes#c4837a2e9a9e63b0d2e6e7fa7c5c65ac> , <https://astrea.linkeddata.es/shapes#5a85ff7527e78eb51e15f9fe504ef815> , <https://astrea.linkeddata.es/shapes#0ac542fe05bf1e2555a2cb0118d23dc8> , <https://astrea.linkeddata.es/shapes#49ea869b34e204369ff722eab97eadce> , <https://astrea.linkeddata.es/shapes#9454ad942a73480a2d60bea468415b8e> , <https://astrea.linkeddata.es/shapes#68bedd26fd82e3f121c571cff7bb1109> , <https://astrea.linkeddata.es/shapes#a2d1d3c933c9df46a5431f86a2e65948> , <https://astrea.linkeddata.es/shapes#d4e2a6e51178fc3cdeed2c00d08f6b35> , <https://astrea.linkeddata.es/shapes#4c441e387479eb1dc5d5927ebccb0c1f> , <https://astrea.linkeddata.es/shapes#9551277a29d67a16ebf869c978be6865> , <https://astrea.linkeddata.es/shapes#fab2f4166705e943c82678246403260b> , <https://astrea.linkeddata.es/shapes#7ec20cc77837af747a47f4a28a039d49> , <https://astrea.linkeddata.es/shapes#1ef0e14cd4ce581eb184a3ffed9a602e> , <https://astrea.linkeddata.es/shapes#bee48000d187d18b22984aafd3e3aa79> , <https://astrea.linkeddata.es/shapes#de327a2e129d6df403addd12a0de663f> , <https://astrea.linkeddata.es/shapes#e4831dbb0bf83e060dd243221283d064> , <https://astrea.linkeddata.es/shapes#ace866cad64db21fbfe1e4c19afe093c> , <https://astrea.linkeddata.es/shapes#90711c714d37b9caac33aaf635d63cdb> , <https://astrea.linkeddata.es/shapes#235c3793a9cf43b431d810b0fceeb625> , <https://astrea.linkeddata.es/shapes#81b8e6b70dbc57d774221b33b822db71> , <https://astrea.linkeddata.es/shapes#5aae9ec4c018b10fa0fc1499ea26a0fc> , <https://astrea.linkeddata.es/shapes#c9fea5c9ad9c0fe83823584abf9dea54> , <https://astrea.linkeddata.es/shapes#bedfc0382c810fb6973e11f70a7556e7> , <https://astrea.linkeddata.es/shapes#2345a9450c33fbb788750c507e07ab01> , <https://astrea.linkeddata.es/shapes#b2b347ba0131d115803c2ceb3e9c9456> , <https://astrea.linkeddata.es/shapes#6d6adebc3adfc48442d9fb6df3ec2254> , <https://astrea.linkeddata.es/shapes#32b605e215e29baf6a61a785ca904484> , <https://astrea.linkeddata.es/shapes#e9fb92cd94473b63f75644aa2e32b9ff> , <https://astrea.linkeddata.es/shapes#9cfc6f8793fb0c6e8c8a68f6afe94c15> , <https://astrea.linkeddata.es/shapes#d8fcc404ec3569ab405576151e2c63f9> , <https://astrea.linkeddata.es/shapes#79a8e64ece62e83c00996c62248cfb9e> , <https://astrea.linkeddata.es/shapes#e8f86cb6d891cd2ab0c34b3ca22f06ca> , <https://astrea.linkeddata.es/shapes#f6c01f295bb333de57906d37dd06ffcc> , <https://astrea.linkeddata.es/shapes#eaae427db99c037af2872f55bab598e5> , <https://astrea.linkeddata.es/shapes#5acbffb330e1f1fa902b2febde3c8b14> , <https://astrea.linkeddata.es/shapes#84502258e859333061d933ec20281f90> , <https://astrea.linkeddata.es/shapes#34c0f55f8f3f3c58d9cb361df2984c77> , <https://astrea.linkeddata.es/shapes#feaa0768d1b5715ceceebb6a9ed4249b> , <https://astrea.linkeddata.es/shapes#2939175ece03f2a097adb8b0fcc694fe> , <https://astrea.linkeddata.es/shapes#47fbd5cb335c242c2a0308d864b03c42> , <https://astrea.linkeddata.es/shapes#33647ad48fc226dbafdf80923a8a614b> , <https://astrea.linkeddata.es/shapes#c6b18b5b7f305bf0b06521f183ee852a> , <https://astrea.linkeddata.es/shapes#3382498c9dc3e8d189a47acfb0f3e2d4> , <https://astrea.linkeddata.es/shapes#451e91a2de4845ad70fbf93cbabe6582> , <https://astrea.linkeddata.es/shapes#858f1f03cd3853981cca75bbe1c350f6> , <https://astrea.linkeddata.es/shapes#c378c62f98efa2f61271d583c4ee1dde> , <https://astrea.linkeddata.es/shapes#bc7f3ae52178c2b9707957cfc000b393> , <https://astrea.linkeddata.es/shapes#e92dc0050e023e468e3715d138b27130> , <https://astrea.linkeddata.es/shapes#85c44987c5a267f42ccb0356a1dc5eec> , <https://astrea.linkeddata.es/shapes#2b5c499da543fd87f9bf3dd486e4fb6e> , <https://astrea.linkeddata.es/shapes#7c7a9a59b471cb0b363fc811c110801a> , <https://astrea.linkeddata.es/shapes#4dbe021536fe2df95a1b2bf20860f8b0> , <https://astrea.linkeddata.es/shapes#62e4557bd770113651ac5c3cd059051e> , <https://astrea.linkeddata.es/shapes#502898d72a77a36190b2820684311a5b> , <https://astrea.linkeddata.es/shapes#9b3c9a9ce165e94785caf040c46670dd> , <https://astrea.linkeddata.es/shapes#a2541c7ab6566ce21e76c26e76b09a94> , <https://astrea.linkeddata.es/shapes#1ba36ef7476efaa067d9a6985b7dbd59> , <https://astrea.linkeddata.es/shapes#502768d6ad2ec9ff04901584a30935b3> , <https://astrea.linkeddata.es/shapes#e6b95a4360fad5dd13278858dac4edd7> , <https://astrea.linkeddata.es/shapes#5aaba442075d66bb2f0dd8498bcfbcfd> , <https://astrea.linkeddata.es/shapes#d1fbce9c312a4605972f5168937f0bf8> , <https://astrea.linkeddata.es/shapes#8661dcd9ee54db004f23ae5cc74f9889> , <https://astrea.linkeddata.es/shapes#3f77887532cb585c30865c73c18f4a62> , <https://astrea.linkeddata.es/shapes#0b9719c79843a33d1bfe6c76c29a3784> , <https://astrea.linkeddata.es/shapes#5ad468feb7f22fa7b5d296b8afe7f818> , <https://astrea.linkeddata.es/shapes#cf180136b531f312cfe6d5a8998b157f> , <https://astrea.linkeddata.es/shapes#29973d39ed13ef76a30bf248a5070022> , <https://astrea.linkeddata.es/shapes#37153f0f8f67ca08307bf87fb1627aee> , <https://astrea.linkeddata.es/shapes#0a7de8cbc793515c2b73526752a4271a> , <https://astrea.linkeddata.es/shapes#d79358d898e697679655e3d88513a454> , <https://astrea.linkeddata.es/shapes#2d7b624266e6e40bf78d6bfa55447cdd> , <https://astrea.linkeddata.es/shapes#a5d7dc4cca0b8c95d788757ecad48e27> , <https://astrea.linkeddata.es/shapes#9b03830ffc3f699d8e27eaaf3eefc5d0> , <https://astrea.linkeddata.es/shapes#87e177cfcafeda0bbfb9bb8ac2fe3dc6> , <https://astrea.linkeddata.es/shapes#9076e2ef4324b5e0175724840d4397c3> , <https://astrea.linkeddata.es/shapes#f3fe44f0d7f2e4f4d61ab43ea716590f> , <https://astrea.linkeddata.es/shapes#39de5582250560689bef08e3ecb01e3d> , <https://astrea.linkeddata.es/shapes#f00e56e400d3d438273881a4327e27b9> , <https://astrea.linkeddata.es/shapes#7d00afe10fb700336d8c042b8173c076> , <https://astrea.linkeddata.es/shapes#534e4f1e38ed3f83801e375de2fc2623> , <https://astrea.linkeddata.es/shapes#ed9e65297669e522616100741ddbab06> , <https://astrea.linkeddata.es/shapes#ee1bb8ccf767b89f8e9b7a7df2b4e749> , <https://astrea.linkeddata.es/shapes#7e66c4a7112d4e5272bd2653fed59cd1> , <https://astrea.linkeddata.es/shapes#8ccc2d6b158c6b88e0bcbce58ff1115d> , <https://astrea.linkeddata.es/shapes#8b6c87bc4f03bc761baf9f3299f12e6c> , <https://astrea.linkeddata.es/shapes#567a05ac3de045510edf014728fd7acb> , <https://astrea.linkeddata.es/shapes#68db7d1740f01fd3642217266c41dbb5> , <https://astrea.linkeddata.es/shapes#ce380efe064c9351501a5a9a26e94307> , <https://astrea.linkeddata.es/shapes#9ad1129450da26cf8bc636fcc4f17df6> , <https://astrea.linkeddata.es/shapes#165cf95371e7a3276897940ce32e0d7c> , <https://astrea.linkeddata.es/shapes#cecd23353917812e5885792d2fd27029> , <https://astrea.linkeddata.es/shapes#7e55213db431f79e7f40fc2497318e52> , <https://astrea.linkeddata.es/shapes#25c421833c75c00a45cd08a0a123dbdd> , <https://astrea.linkeddata.es/shapes#b314d2d6e3881d73a5a8f9292a04f7f1> , <https://astrea.linkeddata.es/shapes#53ce851efcc81411ff9807be4d57da5f> , <https://astrea.linkeddata.es/shapes#7637398c52b672dca6623f0185509e8d> , <https://astrea.linkeddata.es/shapes#c7487d6bd289ebe0b23325dd9615358b> , <https://astrea.linkeddata.es/shapes#09f17fcc61f87f9692f33bab42323734> , <https://astrea.linkeddata.es/shapes#8c653ae59853638af721b1deb0f113e1> , <https://astrea.linkeddata.es/shapes#3a233ad5718566d5252874efa6ba6e74> , <https://astrea.linkeddata.es/shapes#974cc80805769c1d474b1eb77731e302> , <https://astrea.linkeddata.es/shapes#c388433e234ce7c726b903790c7b8ec3> , <https://astrea.linkeddata.es/shapes#88d3f022bbe5ad4138183c6dd3f64ebf> , <https://astrea.linkeddata.es/shapes#efbf4f800b87e2dea341738d2b4f4547> , <https://astrea.linkeddata.es/shapes#64478794b6093b0b3b562700029f0008> , <https://astrea.linkeddata.es/shapes#00dd6c55f68ca7d72892137aaaa8cb6f> , <https://astrea.linkeddata.es/shapes#9fbdd1d37b316509a7ee76ad1422265b> , <https://astrea.linkeddata.es/shapes#a94215bdd09d3f6476c6c0acc9696f1b> , <https://astrea.linkeddata.es/shapes#5817518a10c6315c23a0a2201b183e69> , <https://astrea.linkeddata.es/shapes#ef0c35728042c268fe95cf0924b386a6> , <https://astrea.linkeddata.es/shapes#06ed0ef0741917b2979fc87146b31d70> , <https://astrea.linkeddata.es/shapes#ec4d9be43d49ce4a5080dc148f295395> , <https://astrea.linkeddata.es/shapes#08ef36d09b3e80016857192d74871fae> , <https://astrea.linkeddata.es/shapes#b572a4b8bfcb4f2ee011809bf571e92b> , <https://astrea.linkeddata.es/shapes#0eb807de4b50dbbb4f338ddf5645226f> , <https://astrea.linkeddata.es/shapes#6351fccc64fa2e1ae201527ac9bfb819> , <https://astrea.linkeddata.es/shapes#0a5804dbf271e1e0746c63e997fd9601> , <https://astrea.linkeddata.es/shapes#1992b26d2cf2fca1c2b726764c8a4650> , <https://astrea.linkeddata.es/shapes#fc7a03c80b9aeb5f2d8c56466ff5eac2> , <https://astrea.linkeddata.es/shapes#69481c5a25b05ae065ddc1a97001d0c0> , <https://astrea.linkeddata.es/shapes#2573b9adc492bb07dad6c025f32aad10> , <https://astrea.linkeddata.es/shapes#91e50ba5cb946ed6f71185c768ba8d74> , <https://astrea.linkeddata.es/shapes#12e900c4a4fd715327d0e8dadef8a13c> , <https://astrea.linkeddata.es/shapes#4c735598567c73ff2f3ced4b9d03a5a2> , <https://astrea.linkeddata.es/shapes#7e1fd57104d602bd2070e959c3d2e9ea> , <https://astrea.linkeddata.es/shapes#dedb38237273195fdb79246d848b4fda> , <https://astrea.linkeddata.es/shapes#dca02d38e5e320264a1a30d672409036> , <https://astrea.linkeddata.es/shapes#a853b04756c5e216cb6c8d8cf618ca1b> , <https://astrea.linkeddata.es/shapes#dfba1540209f35bb296fccb2f5c9c2d9> , <https://astrea.linkeddata.es/shapes#d512df7343caf72b636a6148de5ca3a2> , <https://astrea.linkeddata.es/shapes#a0eebbbea442bf34ea954dc57e7cbda8> , <https://astrea.linkeddata.es/shapes#e803adf2466d37bef02f8def2b6de922> , <https://astrea.linkeddata.es/shapes#89602718fff77ec404fcb8fcccb9815d> , <https://astrea.linkeddata.es/shapes#8dcea278f8f5ef5a48f821324db74452> , <https://astrea.linkeddata.es/shapes#81eb9ce9106c17c758bc5c0e1a3ac806> , <https://astrea.linkeddata.es/shapes#6d7832e4d93e75af0ce4b1bf9ad59537> , <https://astrea.linkeddata.es/shapes#a95790c773fd7394ff9b0513a68ff506> , <https://astrea.linkeddata.es/shapes#db085280eb44e73456450bcaf4d931b0> , <https://astrea.linkeddata.es/shapes#b8840ae319dd17775a4c3ff2c43caeca> , <https://astrea.linkeddata.es/shapes#14ffc5caa004487c821bf9987d25341b> , <https://astrea.linkeddata.es/shapes#b0fd6f9af8d50f80459665a3940e1f66> , <https://astrea.linkeddata.es/shapes#c8e9e7f36803873fe76ee96e68e27b67> , <https://astrea.linkeddata.es/shapes#c61898f24403ef1f26f4d3767e07d074> , <https://astrea.linkeddata.es/shapes#d96f63eb79972d515550764d0d0e8368> , <https://astrea.linkeddata.es/shapes#3fa7d19a4912e3306f7209cb475e0272> , <https://astrea.linkeddata.es/shapes#01880a796c2df7337b5c1375c51b5b7d> , <https://astrea.linkeddata.es/shapes#dfa16431414125765813ecf998afcad0> , <https://astrea.linkeddata.es/shapes#8dc3528baf288c15c10840c69428e1f4> , <https://astrea.linkeddata.es/shapes#30473415520fe3216efbfaae0150dd78> , <https://astrea.linkeddata.es/shapes#2a7f559467b87c286ff1a0d603f59f77> , <https://astrea.linkeddata.es/shapes#b22c016df7fa3773e62ef85da992fdad> , <https://astrea.linkeddata.es/shapes#56e7c85c8d659331447f841c28306ba0> , <https://astrea.linkeddata.es/shapes#937607848ac9b4ded3b6e8acc3608034> , <https://astrea.linkeddata.es/shapes#999b5618108abe603e6661cdbe7506e4> , <https://astrea.linkeddata.es/shapes#8b0af283fe5af7013cd9d8af9f12dc79> , <https://astrea.linkeddata.es/shapes#837edfdcebd60cabfdbfbc42816ef24e> , <https://astrea.linkeddata.es/shapes#ad6a9f1bedbd7ac99e7d837089068df8> , <https://astrea.linkeddata.es/shapes#f48e6eb56794b646394b6da77e0d52c4> , <https://astrea.linkeddata.es/shapes#1f896116493df775b2e1eab0bc1a861a> , <https://astrea.linkeddata.es/shapes#818c8d4adea92646d716355b340a4b2b> , <https://astrea.linkeddata.es/shapes#90118980a3e7c7108dae6fe97abfd6fe> , <https://astrea.linkeddata.es/shapes#fcd9e8a9d1d48699b8246bd36683a97d> , <https://astrea.linkeddata.es/shapes#8f6a43fb640c19d060a32de074a75ab0> , <https://astrea.linkeddata.es/shapes#a3cd8559ec4ed1dbd76b72e29726a947> , <https://astrea.linkeddata.es/shapes#b1ac7f6ee7079e85cb1b3b8eb11e1c43> , <https://astrea.linkeddata.es/shapes#354a22c1f8206272bede8b833a253c1d> , <https://astrea.linkeddata.es/shapes#dfdba9079e7e010d0f25a0ec09258e35> , <https://astrea.linkeddata.es/shapes#e46b2441c73c4ed6c244c5aeb37e4f87> , <https://astrea.linkeddata.es/shapes#633fe74cb1add80584bb15775841838a> , <https://astrea.linkeddata.es/shapes#6c7734354dabd0adf05e47559f056d3e> , <https://astrea.linkeddata.es/shapes#f0c4e048fb71ff5877b599bd2e73bee4> , <https://astrea.linkeddata.es/shapes#38d6484e148433078745559bfd28d51a> , <https://astrea.linkeddata.es/shapes#1fddf06fe6e9b90dfa54ea35fe9edfb7> , <https://astrea.linkeddata.es/shapes#6764ccfa3d337a9d981fc1a7e545ea92> , <https://astrea.linkeddata.es/shapes#9f265900343a6e84c3746dab5f1aa56e> , <https://astrea.linkeddata.es/shapes#6ee31de90ba7aa1587df5cde5748de25> , <https://astrea.linkeddata.es/shapes#2ba53b18bba6c4398ebe4a89b7a15006> , <https://astrea.linkeddata.es/shapes#66b3bc97de3fdc57ef812d4039bd8abc> , <https://astrea.linkeddata.es/shapes#f7d4d51806befb3a506e515ecc4ff352> , <https://astrea.linkeddata.es/shapes#0cc04d69041fa6a328b00ea3fd7d58fa> , <https://astrea.linkeddata.es/shapes#3e18b0f9fac2d3bdcd51a2fdadcbda53> , <https://astrea.linkeddata.es/shapes#5a85c18525f8403f2a44bb904fc90c39> , <https://astrea.linkeddata.es/shapes#23cee3f83973b3fcb777e64e1dd8308a> , <https://astrea.linkeddata.es/shapes#6492d1ff8532f55e1193459c80d86b47> , <https://astrea.linkeddata.es/shapes#95047faf0040a8059cff8c08114eabe5> , <https://astrea.linkeddata.es/shapes#d5f0a710c47832d55bc72774c8b7d22b> , <https://astrea.linkeddata.es/shapes#08fb1ad9242dda6cd51ef84538d23fc9> , <https://astrea.linkeddata.es/shapes#419a96fe71239c01ed4effc708290d37> , <https://astrea.linkeddata.es/shapes#94ed6d1fb959a29cb64e8b1533a5daf4> , <https://astrea.linkeddata.es/shapes#ba9310085cc1e7058f0ba52f255b73bc> , <https://astrea.linkeddata.es/shapes#cea08091a42c7e4b36b75a5ac55e3972> , <https://astrea.linkeddata.es/shapes#c4824c54856675d123ffa7f31ec15b71> , <https://astrea.linkeddata.es/shapes#c088fd6854acbca9eecaf9b9dec3d43c> , <https://astrea.linkeddata.es/shapes#9055667f619352e161e334eb6f90527d> , <https://astrea.linkeddata.es/shapes#c04a746a71d9f143476d1a349cdaf11c> , <https://astrea.linkeddata.es/shapes#8f3ff07316eaf70922908ffc93eece8b> , <https://astrea.linkeddata.es/shapes#2e176f370fbcb9f8e355fc1d59648bac> , <https://astrea.linkeddata.es/shapes#d7d1e157a10d4c711970040956ced0eb> , <https://astrea.linkeddata.es/shapes#64fa52c0b7adcbf451b13e34488a69e2> , <https://astrea.linkeddata.es/shapes#c4b64fa4bce8c5b66b94e01896c98bd1> , <https://astrea.linkeddata.es/shapes#04b78c84de89b65f9cae6f2645c073f6> , <https://astrea.linkeddata.es/shapes#534257dc478f71b4863319e4937f6db3> , <https://astrea.linkeddata.es/shapes#b86e7e73a18bac08d7a3e6e9a140d2e8> , <https://astrea.linkeddata.es/shapes#d12f4d5879159c35c9440ab64921c949> , <https://astrea.linkeddata.es/shapes#1182e4c2df7ae0de5d28b9c69f07ccad> , <https://astrea.linkeddata.es/shapes#09bbd3c916692f508aaca75e04c18648> , <https://astrea.linkeddata.es/shapes#6096f284e512b43b1adbe1e389448317> , <https://astrea.linkeddata.es/shapes#7fd858883e55601117acf9441b2384d5> , <https://astrea.linkeddata.es/shapes#f320c8d829ddc6fc9d7a05cf830ce1c1> ;
+        <https://w3id.org/def/astrea#generatedShapesFrom>
+                <https://astrea.linkeddata.es/report/0620946147> .
+
+<https://astrea.linkeddata.es/shapes#64fa52c0b7adcbf451b13e34488a69e2>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:nonNegativeInteger ;
+        sh:minCount  "1"^^xsd:nonNegativeInteger ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:hasValue .
+
+<https://astrea.linkeddata.es/shapes#90711c714d37b9caac33aaf635d63cdb>
+        a               sh:PropertyShape ;
+        rdfs:label      "produces"@en , "Links a feature kind, feature of interest, or device, to the commodity it produces"@en ;
+        sh:description  "Links a feature kind, feature of interest, or device, to the commodity it produces"@en ;
+        sh:name         "produces"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:produces .
+
+<https://astrea.linkeddata.es/shapes#14ffc5caa004487c821bf9987d25341b>
+        a               sh:NodeShape ;
+        rdfs:label      "Measurement"@en ;
+        sh:description  "Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement."@en ;
+        sh:name         "Measurement"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#999b5618108abe603e6661cdbe7506e4> , <https://astrea.linkeddata.es/shapes#7fd858883e55601117acf9441b2384d5> , <https://astrea.linkeddata.es/shapes#f3fe44f0d7f2e4f4d61ab43ea716590f> , <https://astrea.linkeddata.es/shapes#c388433e234ce7c726b903790c7b8ec3> , <https://astrea.linkeddata.es/shapes#4dbe021536fe2df95a1b2bf20860f8b0> , <https://astrea.linkeddata.es/shapes#8dcea278f8f5ef5a48f821324db74452> , <https://astrea.linkeddata.es/shapes#d12f4d5879159c35c9440ab64921c949> , <https://astrea.linkeddata.es/shapes#64fa52c0b7adcbf451b13e34488a69e2> ;
+        sh:targetClass  saref:Measurement .
+
+<https://astrea.linkeddata.es/shapes#d12f4d5879159c35c9440ab64921c949>
+        a            sh:PropertyShape ;
+        sh:class     saref:FeatureOfInterest ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:isMeasurementOf .
+
+<https://astrea.linkeddata.es/shapes#c088fd6854acbca9eecaf9b9dec3d43c>
+        a               sh:PropertyShape ;
+        rdfs:label      "has value"@en , "Value of a property value expressed as an RDF literal. Note that, even if decimal values are expected, values could use other datatypes."@en ;
+        sh:description  "Value of a property value expressed as an RDF literal. Note that, even if decimal values are expected, values could use other datatypes."@en ;
+        sh:name         "has value"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         saref:hasValue .
+
+<https://astrea.linkeddata.es/shapes#9076e2ef4324b5e0175724840d4397c3>
+        a               sh:PropertyShape ;
+        rdfs:label      "has identifier"@en , "Links some entity to its identifier. Extensions of SAREF may define sub-properties such as s4abcd:hasUUID, s4abcd:hasGTIN12, etc."@en ;
+        rdfs:seeAlso    <https://labs.etsi.org/rep/saref/saref-portal/-/issues/2> ;
+        sh:description  "Links some entity to its identifier. Extensions of SAREF may define sub-properties such as s4abcd:hasUUID, s4abcd:hasGTIN12, etc."@en ;
+        sh:name         "has identifier"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         saref:hasIdentifier .
+
+<https://astrea.linkeddata.es/shapes#5aaba442075d66bb2f0dd8498bcfbcfd>
+        a               sh:NodeShape ;
+        rdfs:label      "Electricity"@en ;
+        sh:description  "A type of energy commodity"@en ;
+        sh:name         "Electricity"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:Electricity .
+
+<https://astrea.linkeddata.es/shapes#ae7455c53047a30847be351138ab32fd>
+        a               sh:PropertyShape ;
+        rdfs:label      "is acted upon by"@en , "Links a feature, property, or state, to the device, function, command, or procedure execution, that acts on it."@en ;
+        sh:description  "Links a feature, property, or state, to the device, function, command, or procedure execution, that acts on it."@en ;
+        sh:name         "is acted upon by"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:or           ( [ sh:class  saref:Command ;
+                            sh:path   saref:isActedUponBy
+                          ]
+                          [ sh:class  saref:CommandOfInterest ;
+                            sh:path   saref:isActedUponBy
+                          ]
+                          [ sh:class  saref:Device ;
+                            sh:path   saref:isActedUponBy
+                          ]
+                          [ sh:class  saref:FeatureKind ;
+                            sh:path   saref:isActedUponBy
+                          ]
+                          [ sh:class  saref:Function ;
+                            sh:path   saref:isActedUponBy
+                          ]
+                          [ sh:class  saref:FunctionOfInterest ;
+                            sh:path   saref:isActedUponBy
+                          ]
+                          [ sh:class  saref:ProcedureExecution ;
+                            sh:path   saref:isActedUponBy
+                          ]
+                        ) .
+
+<https://astrea.linkeddata.es/shapes#69481c5a25b05ae065ddc1a97001d0c0>
+        a               sh:NodeShape ;
+        rdfs:label      "Property Value"@en ;
+        sh:description  "Describes the value for a property. The property value is linked to its value expressed as an RDF literal (DP saref:hasValue), optionally to the unit of measurement (OP saref:isMeasuredIn), and optionally to the properties or properties of interest it is a value of (OP saref:isValueOfProperty)."@en ;
+        sh:name         "Property Value"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#efbf4f800b87e2dea341738d2b4f4547> , <https://astrea.linkeddata.es/shapes#974cc80805769c1d474b1eb77731e302> ;
+        sh:targetClass  saref:PropertyValue .
+
+<https://astrea.linkeddata.es/shapes#00dd6c55f68ca7d72892137aaaa8cb6f>
+        a               sh:PropertyShape ;
+        rdfs:label      "makes measurement"@en , "A relation between a device and the measurements it makes. Such measurement will link together the value of the measurement, its unit of measure and the property to which it relates."@en ;
+        sh:class        saref:Measurement ;
+        sh:description  "A relation between a device and the measurements it makes. Such measurement will link together the value of the measurement, its unit of measure and the property to which it relates."@en ;
+        sh:name         "makes measurement"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:makesMeasurement .
+
+<https://astrea.linkeddata.es/shapes#7fd858883e55601117acf9441b2384d5>
+        a               sh:PropertyShape ;
+        rdfs:label      "relates to property"@en , "A relationship between a measurement and the property it relates to"@en ;
+        sh:class        saref:Property ;
+        sh:description  "A relationship between a measurement and the property it relates to"@en ;
+        sh:name         "relates to property"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:relatesToProperty .
+
+<https://astrea.linkeddata.es/shapes#6b09657a9e2a3494865b52d785bdf325>
+        a               sh:PropertyShape ;
+        rdfs:label      "has result time"@en , "Links a procedure execution to the instant of time when the activity was completed, expressed as an xsd:dateTime literal."@en ;
+        sh:datatype     xsd:dateTime ;
+        sh:description  "Links a procedure execution to the instant of time when the activity was completed, expressed as an xsd:dateTime literal."@en ;
+        sh:name         "has result time"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         saref:hasResultTime ;
+        sh:pattern      "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#12e900c4a4fd715327d0e8dadef8a13c>
+        a               sh:NodeShape ;
+        rdfs:label      "Open state"@en ;
+        sh:description  "The state of a device that is OPEN "@en ;
+        sh:name         "Open state"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:OpenState .
+
+<https://astrea.linkeddata.es/shapes#f6c01f295bb333de57906d37dd06ffcc>
+        a            sh:PropertyShape ;
+        sh:class     saref:Function ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      skos:broader .
+
+<https://astrea.linkeddata.es/shapes#8dc3528baf288c15c10840c69428e1f4>
+        a               sh:NodeShape ;
+        rdfs:label      "Command Execution"@en ;
+        sh:description  "Describes the execution of a command. Typically, its inputs and outputs are human understandable and relate to some feature of interest, such as its state (e.g., s4abcd:On), or the value of its temperature (e.g., property value 21.0 °C)."@en ;
+        sh:name         "Command Execution"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:or           ( [ sh:class  saref:Command ;
+                            sh:path   saref:isExecutionOf
+                          ]
+                          [ sh:class  saref:CommandOfInterest ;
+                            sh:path   saref:isExecutionOf
+                          ]
+                        ) ;
+        sh:property     <https://astrea.linkeddata.es/shapes#fcd9e8a9d1d48699b8246bd36683a97d> ;
+        sh:targetClass  saref:CommandExecution .
+
+<https://astrea.linkeddata.es/shapes#33647ad48fc226dbafdf80923a8a614b>
+        a               sh:PropertyShape ;
+        rdfs:label      "has measurement"@en , "A relationship between a feature of interest and a measurement about it"@en ;
+        sh:class        saref:Measurement ;
+        sh:description  "A relationship between a feature of interest and a measurement about it"@en ;
+        sh:name         "has measurement"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasMeasurement .
+
+<https://astrea.linkeddata.es/shapes#6d6adebc3adfc48442d9fb6df3ec2254>
+        a               sh:PropertyShape ;
+        rdfs:label      "controls property"@en , "A relationship specifying the property that can be controlled by a certain device"@en ;
+        sh:class        saref:Property ;
+        sh:description  "A relationship specifying the property that can be controlled by a certain device"@en ;
+        sh:name         "controls property"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:controlsProperty .
+
+<https://astrea.linkeddata.es/shapes#1ba36ef7476efaa067d9a6985b7dbd59>
+        a               sh:PropertyShape ;
+        rdfs:label      "controls"@en , "Links a device, function, command, or procedure execution, to the feature, property, or state, it controls."@en ;
+        sh:description  "Links a device, function, command, or procedure execution, to the feature, property, or state, it controls."@en ;
+        sh:name         "controls"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#68db7d1740f01fd3642217266c41dbb5>
+        a               sh:PropertyShape ;
+        rdfs:label      "is command of interest of"@en , "Links a command of interest to the function of interest it is a command of."@en ;
+        sh:class        saref:FunctionOfInterest ;
+        sh:description  "Links a command of interest to the function of interest it is a command of."@en ;
+        sh:maxCount     1 ;
+        sh:name         "is command of interest of"@en ;
+        sh:nodeKind     sh:IRIOrLiteral , sh:BlankNodeOrIRI ;
+        sh:path         saref:isCommandOfInterestOf .
+
+<https://astrea.linkeddata.es/shapes#d96f63eb79972d515550764d0d0e8368>
+        a               sh:NodeShape ;
+        rdfs:label      "Pressure"@en ;
+        sh:description  "A saref:Property related to some measurements that are characterized by a certain value that is measured in a pressure unit (bar or pascal)"@en ;
+        sh:name         "Pressure"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:Pressure .
+
+<https://astrea.linkeddata.es/shapes#08fb1ad9242dda6cd51ef84538d23fc9>
+        a               sh:NodeShape ;
+        rdfs:label      "Start stop function"@en ;
+        sh:description  "An actuating function that allows to start and stop a device"@en ;
+        sh:name         "Start stop function"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:StartStopFunction .
+
+<https://astrea.linkeddata.es/shapes#7ec20cc77837af747a47f4a28a039d49>
+        a               sh:PropertyShape ;
+        rdfs:label      "Links a property of interest to the feature of interest it is a property of."@en , "is property of interest of"@en ;
+        sh:class        saref:FeatureOfInterest ;
+        sh:description  "Links a property of interest to the feature of interest it is a property of."@en ;
+        sh:maxCount     1 ;
+        sh:name         "is property of interest of"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI , sh:IRIOrLiteral ;
+        sh:path         saref:isPropertyOfInterestOf .
+
+<https://astrea.linkeddata.es/report/0620946147>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#a0eebbbea442bf34ea954dc57e7cbda8>
+        a                       sh:PropertyShape ;
+        sh:nodeKind             sh:IRIOrLiteral ;
+        sh:path                 saref:represents ;
+        sh:qualifiedMinCount    "1"^^xsd:nonNegativeInteger ;
+        sh:qualifiedValueShape  [ sh:class  saref:FunctionOfInterest ] .
+
+<https://astrea.linkeddata.es/shapes#f48e6eb56794b646394b6da77e0d52c4>
+        a            sh:PropertyShape ;
+        sh:class     saref:Property ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      skos:broader .
+
+<https://astrea.linkeddata.es/shapes#38d6484e148433078745559bfd28d51a>
+        a            sh:PropertyShape ;
+        sh:class     saref:FeatureKind ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      skos:narrower .
+
+<https://astrea.linkeddata.es/shapes#2d5fb0696778adab75b551779784a6e6>
+        a               sh:NodeShape ;
+        rdfs:label      "Operation Execution"@en ;
+        sh:description  "Describes the execution of an operation in a network: the–machine interpretable–  description of a communication between devices over the network. Typically, its input and result are network messages, that conform to the input and output of the executed operation."@en ;
+        sh:name         "Operation Execution"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#2345a9450c33fbb788750c507e07ab01> ;
+        sh:targetClass  saref:OperationExecution .
+
+<https://astrea.linkeddata.es/shapes#c4b64fa4bce8c5b66b94e01896c98bd1>
+        a               sh:NodeShape ;
+        rdfs:label      "Function"@en ;
+        sh:description  "Logical groups of commands that devices support to accomplish their tasks. Function can act upon (OP saref:actsUpon and its sub-properties) features, properties, or states. An instance of saref:Function can apply to different devices."@en ;
+        sh:name         "Function"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#3fa7d19a4912e3306f7209cb475e0272> , <https://astrea.linkeddata.es/shapes#ef0c35728042c268fe95cf0924b386a6> , <https://astrea.linkeddata.es/shapes#f6c01f295bb333de57906d37dd06ffcc> ;
+        sh:targetClass  saref:Function .
+
+<https://astrea.linkeddata.es/shapes#0cc04d69041fa6a328b00ea3fd7d58fa>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:nonNegativeInteger ;
+        sh:minCount  "1"^^xsd:nonNegativeInteger ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:isCommandOfInterestOf .
+
+<https://astrea.linkeddata.es/shapes#fab2f4166705e943c82678246403260b>
+        a               sh:PropertyShape ;
+        rdfs:label      "represents"@en , "Links a service to some function or function of interest it exposes to the network. Also links an operation to some command or command of interest it exposes to the network."@en ;
+        sh:description  "Links a service to some function or function of interest it exposes to the network. Also links an operation to some command or command of interest it exposes to the network."@en ;
+        sh:name         "represents"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:or           ( [ sh:class  saref:Command ;
+                            sh:path   saref:represents
+                          ]
+                          [ sh:class  saref:CommandOfInterest ;
+                            sh:path   saref:represents
+                          ]
+                          [ sh:class  saref:Function ;
+                            sh:path   saref:represents
+                          ]
+                          [ sh:class  saref:FunctionOfInterest ;
+                            sh:path   saref:represents
+                          ]
+                        ) .
+
+<https://astrea.linkeddata.es/shapes#0a7de8cbc793515c2b73526752a4271a>
+        a               sh:NodeShape ;
+        rdfs:label      "Smoke"@en ;
+        sh:description  "A saref:Property related to some measurements that are characterized by a certain value that is measured in a unit of measure for smoke"@en ;
+        sh:name         "Smoke"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:Smoke .
+
+<https://astrea.linkeddata.es/shapes#91e50ba5cb946ed6f71185c768ba8d74>
+        a               sh:NodeShape ;
+        rdfs:label      "Off command"@en ;
+        sh:description  "A type of command"@en ;
+        sh:name         "Off command"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:OffCommand .
+
+<https://astrea.linkeddata.es/shapes#09bbd3c916692f508aaca75e04c18648>
+        a               sh:PropertyShape ;
+        rdfs:label      "isAbout"@en , "A relationship identifying what an entity, such as a profile, is about"@en ;
+        sh:description  "A relationship identifying what an entity, such as a profile, is about"@en ;
+        sh:name         "isAbout"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:isAbout .
+
+<https://astrea.linkeddata.es/shapes#b8840ae319dd17775a4c3ff2c43caeca>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal .
+
+<https://astrea.linkeddata.es/shapes#b572a4b8bfcb4f2ee011809bf571e92b>
+        a            sh:PropertyShape ;
+        sh:minCount  "1"^^xsd:nonNegativeInteger ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:isUsedFor .
+
+<https://astrea.linkeddata.es/shapes#e8f86cb6d891cd2ab0c34b3ca22f06ca>
+        a               sh:PropertyShape ;
+        rdfs:label      "accomplishes"@en , "Links a certain entity (e.g., a device) to the task it accomplishes."@en ;
+        sh:class        saref:Task ;
+        sh:description  "Links a certain entity (e.g., a device) to the task it accomplishes."@en ;
+        sh:name         "accomplishes"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:accomplishes .
+
+<https://astrea.linkeddata.es/shapes#6351fccc64fa2e1ae201527ac9bfb819>
+        a               sh:NodeShape ;
+        rdfs:label      "Start state"@en ;
+        sh:description  "The state of a device that is STARTED"@en ;
+        sh:name         "Start state"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:StartState .
+
+<https://astrea.linkeddata.es/shapes#e92dc0050e023e468e3715d138b27130>
+        a               sh:NodeShape ;
+        rdfs:label      "Humidity"@en ;
+        sh:description  "A saref:Property related to some measurements that are characterized by a certain value that is measured in a humidity unit"@en ;
+        sh:name         "Humidity"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:Humidity .
+
+<https://astrea.linkeddata.es/shapes#a853b04756c5e216cb6c8d8cf618ca1b>
+        a               sh:NodeShape ;
+        rdfs:label      "Profile"@en ;
+        sh:description  "A saref:Profile describes the money earned (negative values) or paied (positive values) for the use (production or consumption) of a commodity by a device in a certain context."@en ;
+        sh:name         "Profile"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#2ba53b18bba6c4398ebe4a89b7a15006> , <https://astrea.linkeddata.es/shapes#502898d72a77a36190b2820684311a5b> , <https://astrea.linkeddata.es/shapes#837edfdcebd60cabfdbfbc42816ef24e> , <https://astrea.linkeddata.es/shapes#bedfc0382c810fb6973e11f70a7556e7> ;
+        sh:targetClass  saref:Profile .
+
+<https://astrea.linkeddata.es/shapes#feaa0768d1b5715ceceebb6a9ed4249b>
+        a               sh:PropertyShape ;
+        rdfs:label      "consumes"@en , "Links a feature kind, feature of interest, or device, to the commodity it consumes"@en ;
+        sh:description  "Links a feature kind, feature of interest, or device, to the commodity it consumes"@en ;
+        sh:name         "consumes"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:consumes .
+
+<https://astrea.linkeddata.es/shapes#8b0af283fe5af7013cd9d8af9f12dc79>
+        a               sh:NodeShape ;
+        rdfs:label      "Pause command"@en ;
+        sh:description  "A type of command"@en ;
+        sh:name         "Pause command"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:PauseCommand .
+
+<https://astrea.linkeddata.es/shapes#9fbdd1d37b316509a7ee76ad1422265b>
+        a               sh:NodeShape ;
+        rdfs:label      "Open command"@en ;
+        sh:description  "A type of command"@en ;
+        sh:name         "Open command"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:OpenCommand .
+
+<https://astrea.linkeddata.es/shapes#23cee3f83973b3fcb777e64e1dd8308a>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:nonNegativeInteger ;
+        sh:minCount  "1"^^xsd:nonNegativeInteger ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:isFunctionOfInterestOf .
+
+<https://astrea.linkeddata.es/shapes#235c3793a9cf43b431d810b0fceeb625>
+        a            sh:PropertyShape ;
+        sh:minCount  "1"^^xsd:nonNegativeInteger ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:controls .
+
+<https://astrea.linkeddata.es/shapes#4dbe021536fe2df95a1b2bf20860f8b0>
+        a                       sh:PropertyShape ;
+        sh:class                saref:UnitOfMeasure ;
+        sh:nodeKind             sh:IRIOrLiteral ;
+        sh:path                 saref:isMeasuredIn ;
+        sh:qualifiedMaxCount    "1"^^xsd:nonNegativeInteger ;
+        sh:qualifiedMinCount    "1"^^xsd:nonNegativeInteger ;
+        sh:qualifiedValueShape  [ sh:class  saref:UnitOfMeasure ] .
+
+<https://astrea.linkeddata.es/shapes#3f77887532cb585c30865c73c18f4a62>
+        a               sh:NodeShape ;
+        rdfs:label      "Temperature sensor"@en ;
+        sh:description  "A sensor that is used for the purpose of sensing a property of type saref:Temperature. A saref:TemperatureSensor is typically used to saref:accomplish saref:Comfort."@en ;
+        sh:name         "Temperature sensor"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:TemperatureSensor .
+
+<https://astrea.linkeddata.es/shapes#dd7c5ae36318814e4c4bd073b97ad3bb>
+        a               sh:PropertyShape ;
+        rdfs:label      "has function"@en , "Links a feature kind or a device to one of its functions."@en ;
+        sh:class        saref:Function ;
+        sh:description  "Links a feature kind or a device to one of its functions."@en ;
+        sh:name         "has function"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasFunction .
+
+<https://astrea.linkeddata.es/shapes#95047faf0040a8059cff8c08114eabe5>
+        a               sh:NodeShape ;
+        rdfs:label      "Command"@en ;
+        sh:description  "The lowest-level directives a function exposes to some network. Commands can act upon (OP saref:actsUpon and its sub-properties) features, properties, or states. An instance of saref:Command is independent of any device."@en ;
+        sh:name         "Command"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#90118980a3e7c7108dae6fe97abfd6fe> , <https://astrea.linkeddata.es/shapes#937607848ac9b4ded3b6e8acc3608034> ;
+        sh:targetClass  saref:Command .
+
+<https://astrea.linkeddata.es/shapes#08ef36d09b3e80016857192d74871fae>
+        a               sh:NodeShape ;
+        rdfs:label      "Function of Interest"@en ;
+        sh:description  "Logical groups of commands that devices support to accomplish their tasks. Function can act upon (OP saref:actsUpon and its sub-properties) features, properties, or states. An instance of saref:FunctionOfInterest is supported by exactly one device."@en ;
+        sh:name         "Function of Interest"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#e9fb92cd94473b63f75644aa2e32b9ff> , <https://astrea.linkeddata.es/shapes#23cee3f83973b3fcb777e64e1dd8308a> , <https://astrea.linkeddata.es/shapes#2b5c499da543fd87f9bf3dd486e4fb6e> , <https://astrea.linkeddata.es/shapes#87e177cfcafeda0bbfb9bb8ac2fe3dc6> , <https://astrea.linkeddata.es/shapes#3fa7d19a4912e3306f7209cb475e0272> ;
+        sh:targetClass  saref:FunctionOfInterest .
+
+<https://astrea.linkeddata.es/shapes#81eb9ce9106c17c758bc5c0e1a3ac806>
+        a               sh:PropertyShape ;
+        rdfs:label      "is state of"@en , "Links a state to the feature kind or feature of interest it is a state of."@en ;
+        sh:description  "Links a state to the feature kind or feature of interest it is a state of."@en ;
+        sh:name         "is state of"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:or           ( [ sh:class  saref:FeatureKind ;
+                            sh:path   saref:isStateOf
+                          ]
+                          [ sh:class  saref:FeatureOfInterest ;
+                            sh:path   saref:isStateOf
+                          ]
+                        ) .
+
+<https://astrea.linkeddata.es/shapes#66b3bc97de3fdc57ef812d4039bd8abc>
+        a               sh:NodeShape ;
+        rdfs:label      "Get sensing data command"@en ;
+        sh:description  "A type of get command"@en ;
+        sh:name         "Get sensing data command"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:GetSensingDataCommand .
+
+<https://astrea.linkeddata.es/shapes#9b3c9a9ce165e94785caf040c46670dd>
+        a               sh:PropertyShape ;
+        rdfs:label      "has profile"@en , "Links a device to its profile. Its inverse is saref:isProfileOf. The device should be linked to a certain commodity using OP saref:isUsedFor or its sub-properties, and optionally to some property or state using OP saref:actsUpon or its sub-properties."@en ;
+        sh:class        saref:Profile ;
+        sh:description  "Links a device to its profile. Its inverse is saref:isProfileOf. The device should be linked to a certain commodity using OP saref:isUsedFor or its sub-properties, and optionally to some property or state using OP saref:actsUpon or its sub-properties."@en ;
+        sh:name         "has profile"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasProfile .
+
+<https://astrea.linkeddata.es/shapes#974cc80805769c1d474b1eb77731e302>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:nonNegativeInteger ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:isMeasuredIn .
+
+<https://astrea.linkeddata.es/shapes#62e4557bd770113651ac5c3cd059051e>
+        a               sh:PropertyShape ;
+        rdfs:label      "has typical consumption"@en , "A relationship identifying the typical (energy or power) consumption of a device"@en ;
+        sh:description  "A relationship identifying the typical (energy or power) consumption of a device"@en ;
+        sh:name         "has typical consumption"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasTypicalConsumption .
+
+<https://astrea.linkeddata.es/shapes#c61898f24403ef1f26f4d3767e07d074>
+        a               sh:NodeShape ;
+        rdfs:label      "Meter"@en ;
+        sh:description  "A device designed to observe and measure one or more properties of one or more features of interest."@en ;
+        sh:name         "Meter"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#6492d1ff8532f55e1193459c80d86b47> ;
+        sh:targetClass  saref:Meter .
+
+<https://astrea.linkeddata.es/shapes#b0fd6f9af8d50f80459665a3940e1f66>
+        a               sh:PropertyShape ;
+        rdfs:label      "is stored by"@en , "Links a commodity to the feature kind, feature of interest, or device, that stores it"@en ;
+        sh:description  "Links a commodity to the feature kind, feature of interest, or device, that stores it"@en ;
+        sh:name         "is stored by"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:isStoredBy .
+
+<https://astrea.linkeddata.es/shapes#f00e56e400d3d438273881a4327e27b9>
+        a               sh:NodeShape ;
+        rdfs:label      "Energy Commodity"@en ;
+        sh:description  "The class of energy commodities"@en ;
+        sh:name         "Energy Commodity"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:EnergyCommodity .
+
+<https://astrea.linkeddata.es/shapes#7637398c52b672dca6623f0185509e8d>
+        a               sh:NodeShape ;
+        rdfs:label      "Switch"@en ;
+        sh:description  "A device of category saref:Actuator that performs an actuating function of type saref:OnOffFunction or saref:OpenCloseFunction"@en ;
+        sh:name         "Switch"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:Switch .
+
+<https://astrea.linkeddata.es/shapes#84502258e859333061d933ec20281f90>
+        a               sh:PropertyShape ;
+        rdfs:label      "has threshold measurement"@en , "A relationship associated with an event function to notify that a certain threshold measurement has been exceeded"@en ;
+        sh:class        saref:Measurement ;
+        sh:description  "A relationship associated with an event function to notify that a certain threshold measurement has been exceeded"@en ;
+        sh:name         "has threshold measurement"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasThresholdMeasurement .
+
+<https://astrea.linkeddata.es/shapes#528ae6335bb8dad566723812ce1d54d2>
+        a               sh:PropertyShape ;
+        rdfs:label      "is accomplished by"@en , "A relationship identifying an entity (e.g., a device) that can accomplish a task."@en ;
+        sh:description  "A relationship identifying an entity (e.g., a device) that can accomplish a task."@en ;
+        sh:name         "is accomplished by"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#7e66c4a7112d4e5272bd2653fed59cd1>
+        a               sh:NodeShape ;
+        rdfs:label      "HVAC"@en ;
+        sh:description  "Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. A saref:HVAC is typically used to accomplish saref:Comfort."@en ;
+        sh:name         "HVAC"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:HVAC .
+
+<https://astrea.linkeddata.es/shapes#eaae427db99c037af2872f55bab598e5>
+        a               sh:NodeShape ;
+        rdfs:label      "Close state"@en ;
+        sh:description  "The state of a device that is CLOSE"@en ;
+        sh:name         "Close state"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:CloseState .
+
+<https://astrea.linkeddata.es/shapes#5a85c18525f8403f2a44bb904fc90c39>
+        a               sh:NodeShape ;
+        rdfs:label      "Property of Interest"@en ;
+        sh:description  "Identifiable qualities of features of interest that can be acted upon by devices, such as observed or controlled. An instance of saref:PropertyOfInterest is specific to a feature of interest. It is inherent to and cannot exist without that feature of interest."@en ;
+        sh:name         "Property of Interest"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#7ec20cc77837af747a47f4a28a039d49> , <https://astrea.linkeddata.es/shapes#6096f284e512b43b1adbe1e389448317> , <https://astrea.linkeddata.es/shapes#c4837a2e9a9e63b0d2e6e7fa7c5c65ac> , <https://astrea.linkeddata.es/shapes#ad6a9f1bedbd7ac99e7d837089068df8> ;
+        sh:targetClass  saref:PropertyOfInterest .
+
+<https://astrea.linkeddata.es/shapes#88d3f022bbe5ad4138183c6dd3f64ebf>
+        a               sh:NodeShape ;
+        rdfs:label      "Device"@en ;
+        sh:description  "A tangible object designed to accomplish a particular task. In order to accomplish this task, the device performs one or more functions. An instance of saref:Device represents one specific real world entity."@en ;
+        sh:name         "Device"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#6d6adebc3adfc48442d9fb6df3ec2254> , <https://astrea.linkeddata.es/shapes#e4831dbb0bf83e060dd243221283d064> , <https://astrea.linkeddata.es/shapes#9ad1129450da26cf8bc636fcc4f17df6> , <https://astrea.linkeddata.es/shapes#9b3c9a9ce165e94785caf040c46670dd> , <https://astrea.linkeddata.es/shapes#ace866cad64db21fbfe1e4c19afe093c> , <https://astrea.linkeddata.es/shapes#9291422746ea0f60decf2bbe468e154f> , <https://astrea.linkeddata.es/shapes#00dd6c55f68ca7d72892137aaaa8cb6f> , <https://astrea.linkeddata.es/shapes#44c2e26c59181db9841becf44e7f142f> ;
+        sh:targetClass  saref:Device .
+
+<https://astrea.linkeddata.es/shapes#dfdba9079e7e010d0f25a0ec09258e35>
+        a               sh:NodeShape ;
+        rdfs:label      "State of Interest"@en ;
+        sh:description  "Identifiable conditions that features of interest are or may be in, and that can be acted upon by devices, such as observed and controlled. An instance of saref:StateOfInterest is specific to a feature of interest. It is inherent to and cannot exist without that feature of interest."@en ;
+        sh:name         "State of Interest"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#b22c016df7fa3773e62ef85da992fdad> , <https://astrea.linkeddata.es/shapes#ee1bb8ccf767b89f8e9b7a7df2b4e749> , <https://astrea.linkeddata.es/shapes#5ad468feb7f22fa7b5d296b8afe7f818> , <https://astrea.linkeddata.es/shapes#4c735598567c73ff2f3ced4b9d03a5a2> ;
+        sh:targetClass  saref:StateOfInterest .
+
+<https://astrea.linkeddata.es/shapes#d4e2a6e51178fc3cdeed2c00d08f6b35>
+        a            sh:PropertyShape ;
+        sh:class     saref:Property ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      skos:narrower .
+
+<https://astrea.linkeddata.es/shapes#8f3ff07316eaf70922908ffc93eece8b>
+        a               sh:NodeShape ;
+        rdfs:label      "Natural Resource Commodity"@en ;
+        sh:description  "The class of natural resource commodities"@en ;
+        sh:name         "Natural Resource Commodity"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:NaturalResourceCommodity .
+
+<https://astrea.linkeddata.es/shapes#ef0c35728042c268fe95cf0924b386a6>
+        a            sh:PropertyShape ;
+        sh:class     saref:Function ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      skos:narrower .
+
+<https://astrea.linkeddata.es/shapes#1fddf06fe6e9b90dfa54ea35fe9edfb7>
+        a               sh:PropertyShape ;
+        rdfs:label      "has property"@en , "Links a feature kind or a feature of interest to one of its properties."@en ;
+        sh:class        saref:Property ;
+        sh:description  "Links a feature kind or a feature of interest to one of its properties."@en ;
+        sh:name         "has property"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasProperty .
+
+<https://astrea.linkeddata.es/shapes#9ad1129450da26cf8bc636fcc4f17df6>
+        a               sh:PropertyShape ;
+        rdfs:label      "offers"@en , "Links a device to a service it exposes to a network."@en ;
+        sh:class        saref:Service ;
+        sh:description  "Links a device to a service it exposes to a network."@en ;
+        sh:name         "offers"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:offers .
+
+<https://astrea.linkeddata.es/shapes#a3cd8559ec4ed1dbd76b72e29726a947>
+        a               sh:NodeShape ;
+        rdfs:label      "On state"@en ;
+        sh:description  "The state of a device that is On"@en ;
+        sh:name         "On state"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:OnState .
+
+<https://astrea.linkeddata.es/shapes#b22c016df7fa3773e62ef85da992fdad>
+        a               sh:PropertyShape ;
+        rdfs:label      "has state kind"@en , "links a state of interest to its kind, a state"@en ;
+        sh:class        saref:State ;
+        sh:description  "links a state of interest to its kind, a state"@en ;
+        sh:name         "has state kind"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasStateKind .
+
+<https://astrea.linkeddata.es/shapes#06ed0ef0741917b2979fc87146b31d70>
+        a            sh:PropertyShape ;
+        sh:class     saref:Actuator ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:madeBy .
+
+<https://astrea.linkeddata.es/shapes#8dcea278f8f5ef5a48f821324db74452>
+        a            sh:PropertyShape ;
+        sh:datatype  xsd:dateTime ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:hasTimestamp .
+
+<https://astrea.linkeddata.es/shapes#1992b26d2cf2fca1c2b726764c8a4650>
+        a               sh:NodeShape ;
+        rdfs:label      "Command Of Interest"@en ;
+        sh:description  "The lowest-level directives a device supports and exposes to some network. Commands can act upon (OP saref:actsUpon and its sub-properties) features, properties, or states. A saref:CommandOfInterest is a directives actually supported by a device and exposed to some network."@en ;
+        sh:name         "Command Of Interest"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#c9fea5c9ad9c0fe83823584abf9dea54> , <https://astrea.linkeddata.es/shapes#68db7d1740f01fd3642217266c41dbb5> , <https://astrea.linkeddata.es/shapes#0cc04d69041fa6a328b00ea3fd7d58fa> ;
+        sh:targetClass  saref:CommandOfInterest .
+
+<https://astrea.linkeddata.es/shapes#ad69a4d63df8a60b511211a1a5383b9b>
+        a               sh:PropertyShape ;
+        rdfs:label      "has state of interest"@en , "Links a feature of interest to one of its states of interest."@en ;
+        sh:class        saref:StateOfInterest ;
+        sh:description  "Links a feature of interest to one of its states of interest."@en ;
+        sh:name         "has state of interest"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasStateOfInterest .
+
+<https://astrea.linkeddata.es/shapes#f0c4e048fb71ff5877b599bd2e73bee4>
+        a               sh:PropertyShape ;
+        rdfs:label      "has meter reading"@en , "A relationship between a metering function and the measurement of the reading"@en ;
+        sh:class        saref:Measurement ;
+        sh:description  "A relationship between a metering function and the measurement of the reading"@en ;
+        sh:name         "has meter reading"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasMeterReading .
+
+<https://astrea.linkeddata.es/shapes#c04a746a71d9f143476d1a349cdaf11c>
+        a               sh:PropertyShape ;
+        rdfs:label      "made by"@en , "Links a procedure execution to the entity (e.g., device) that made it."@en ;
+        sh:class        saref:FeatureOfInterest ;
+        sh:description  "Links a procedure execution to the entity (e.g., device) that made it."@en ;
+        sh:name         "made by"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:madeBy .
+
+<https://astrea.linkeddata.es/shapes#fc7a03c80b9aeb5f2d8c56466ff5eac2>
+        a               sh:NodeShape ;
+        rdfs:label      "Level control function"@en ;
+        sh:description  "An actuating function that allows to do level adjustments of a property in a certain range (e.g., 0%-100%), such as dimming a light in a room or setting the speed of an electric motor. "@en ;
+        sh:name         "Level control function"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:LevelControlFunction .
+
+<https://astrea.linkeddata.es/shapes#a5d7dc4cca0b8c95d788757ecad48e27>
+        a               sh:NodeShape ;
+        rdfs:label      "Get current meter value command"@en ;
+        sh:description  "A type of get command"@en ;
+        sh:name         "Get current meter value command"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:GetCurrentMeterValueCommand .
+
+<https://astrea.linkeddata.es/shapes#1814f0e8a0589bb29b6eb6a35029c58d>
+        a               sh:NodeShape ;
+        rdfs:label      "Notify command"@en ;
+        sh:description  "A type of command"@en ;
+        sh:name         "Notify command"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:NotifyCommand .
+
+<https://astrea.linkeddata.es/shapes#9454ad942a73480a2d60bea468415b8e>
+        a            sh:PropertyShape ;
+        sh:minCount  "1"^^xsd:nonNegativeInteger ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:controls .
+
+<https://astrea.linkeddata.es/shapes#d4b02650cf9e490662853cd658f196e5>
+        a               sh:PropertyShape ;
+        rdfs:label      "has sensing range"@en , "A relationship between a sensing function and a measurement identifying the range of a sensor detection"@en ;
+        sh:class        saref:Measurement ;
+        sh:description  "A relationship between a sensing function and a measurement identifying the range of a sensor detection"@en ;
+        sh:name         "has sensing range"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasSensingRange .
+
+<https://astrea.linkeddata.es/shapes#c388433e234ce7c726b903790c7b8ec3>
+        a               sh:PropertyShape ;
+        rdfs:label      "isMeasurementOf"@en , "A relationship between a measurement and the feature of interest whose quality was measured"@en ;
+        sh:class        saref:FeatureOfInterest ;
+        sh:description  "A relationship between a measurement and the feature of interest whose quality was measured"@en ;
+        sh:name         "isMeasurementOf"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:isMeasurementOf .
+
+<https://astrea.linkeddata.es/shapes#534e4f1e38ed3f83801e375de2fc2623>
+        a               sh:PropertyShape ;
+        rdfs:label      "is execution of"@en , "Links a command execution to the command or command of interest that was executed. Also liks an operation execution to the operation that was executed"@en ;
+        sh:description  "Links a command execution to the command or command of interest that was executed. Also liks an operation execution to the operation that was executed"@en ;
+        sh:name         "is execution of"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:or           ( [ sh:class  saref:Command ;
+                            sh:path   saref:isExecutionOf
+                          ]
+                          [ sh:class  saref:CommandOfInterest ;
+                            sh:path   saref:isExecutionOf
+                          ]
+                          [ sh:class  saref:Operation ;
+                            sh:path   saref:isExecutionOf
+                          ]
+                        ) .
+
+<https://astrea.linkeddata.es/shapes#5aae9ec4c018b10fa0fc1499ea26a0fc>
+        a               sh:NodeShape ;
+        rdfs:label      "Get command"@en ;
+        sh:description  "A type of command"@en ;
+        sh:name         "Get command"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:GetCommand .
+
+<https://astrea.linkeddata.es/shapes#bc7f3ae52178c2b9707957cfc000b393>
+        a               sh:NodeShape ;
+        rdfs:label      "Sensing function"@en ;
+        sh:description  "A function that allows to transmit data from sensors, such as measurement values (e.g., temperature) or sensing data (e.g., occupancy)"@en ;
+        sh:name         "Sensing function"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#d4b02650cf9e490662853cd658f196e5> , <https://astrea.linkeddata.es/shapes#e803adf2466d37bef02f8def2b6de922> ;
+        sh:targetClass  saref:SensingFunction .
+
+<https://astrea.linkeddata.es/shapes#2e176f370fbcb9f8e355fc1d59648bac>
+        a               sh:PropertyShape ;
+        rdfs:label      "is observed by"@en , "Links a feature, property, or state, to the device, function, command, or procedure execution, that observes it."@en ;
+        sh:description  "Links a feature, property, or state, to the device, function, command, or procedure execution, that observes it."@en ;
+        sh:name         "is observed by"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:isObservedBy .
+
+<https://astrea.linkeddata.es/shapes#165cf95371e7a3276897940ce32e0d7c>
+        a               sh:NodeShape ;
+        rdfs:label      "On command"@en ;
+        sh:description  "A type of command"@en ;
+        sh:name         "On command"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:OnCommand .
+
+<https://astrea.linkeddata.es/shapes#d79358d898e697679655e3d88513a454>
+        a               sh:NodeShape ;
+        rdfs:label      "Event function"@en ;
+        sh:description  "A function that allows to notify about some relevant activity; e.g., that a certain threshold value has been exceeded or that some object has moved."@en ;
+        sh:name         "Event function"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#84502258e859333061d933ec20281f90> ;
+        sh:targetClass  saref:EventFunction .
+
+<https://astrea.linkeddata.es/shapes#9055667f619352e161e334eb6f90527d>
+        a            sh:PropertyShape ;
+        sh:class     saref:State ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      skos:broader .
+
+<https://astrea.linkeddata.es/shapes#5817518a10c6315c23a0a2201b183e69>
+        a               sh:NodeShape ;
+        rdfs:label      "Temperature unit"@en ;
+        sh:description  "The unit of measure for temperature"@en ;
+        sh:name         "Temperature unit"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:TemperatureUnit .
+
+<https://astrea.linkeddata.es/shapes#bee48000d187d18b22984aafd3e3aa79>
+        a               sh:NodeShape ;
+        rdfs:label      "Step down command"@en ;
+        sh:description  "A type of command"@en ;
+        sh:name         "Step down command"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:StepDownCommand .
+
+<https://astrea.linkeddata.es/shapes#a94c793b44c9ff0b0a048a7a3211dbc4>
+        a               sh:NodeShape ;
+        rdfs:label      "Close command"@en ;
+        sh:description  "A type of command"@en ;
+        sh:name         "Close command"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:CloseCommand .
+
+<https://astrea.linkeddata.es/shapes#3e18b0f9fac2d3bdcd51a2fdadcbda53>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  time:TemporalEntity .
+
+<https://astrea.linkeddata.es/shapes#534257dc478f71b4863319e4937f6db3>
+        a               sh:PropertyShape ;
+        rdfs:label      "acts upon"@en , "Links a device, function, command, or procedure execution, to the feature, property, or state, it acts upon."@en ;
+        sh:description  "Links a device, function, command, or procedure execution, to the feature, property, or state, it acts upon."@en ;
+        sh:name         "acts upon"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:or           ( [ sh:class  saref:FeatureKind ;
+                            sh:path   saref:actsUpon
+                          ]
+                          [ sh:class  saref:FeatureOfInterest ;
+                            sh:path   saref:actsUpon
+                          ]
+                          [ sh:class  saref:Property ;
+                            sh:path   saref:actsUpon
+                          ]
+                          [ sh:class  saref:PropertyOfInterest ;
+                            sh:path   saref:actsUpon
+                          ]
+                          [ sh:class  saref:State ;
+                            sh:path   saref:actsUpon
+                          ]
+                          [ sh:class  saref:StateOfInterest ;
+                            sh:path   saref:actsUpon
+                          ]
+                        ) .
+
+<https://astrea.linkeddata.es/shapes#0b9719c79843a33d1bfe6c76c29a3784>
+        a            sh:PropertyShape ;
+        sh:class     saref:Task ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      skos:broader .
+
+<https://astrea.linkeddata.es/shapes#dfa16431414125765813ecf998afcad0>
+        a               sh:PropertyShape ;
+        rdfs:label      "has operation"@en , "Links a service to one of its operations."@en ;
+        sh:class        saref:Operation ;
+        sh:description  "Links a service to one of its operations."@en ;
+        sh:name         "has operation"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasOperation .
+
+<https://astrea.linkeddata.es/shapes#c7487d6bd289ebe0b23325dd9615358b>
+        a               sh:NodeShape ;
+        rdfs:label      "Light"@en ;
+        sh:description  "A saref:Property related to some measurements that are characterized by a certain value that is measured in a illuminance unit (lux)"@en ;
+        sh:name         "Light"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:Light .
+
+<https://astrea.linkeddata.es/shapes#47fbd5cb335c242c2a0308d864b03c42>
+        a               sh:PropertyShape ;
+        rdfs:label      "is controlled by"@en , "Links a feature, property, or state, to the device, function, command, or procedure execution, that controls it."@en ;
+        sh:description  "Links a feature, property, or state, to the device, function, command, or procedure execution, that controls it."@en ;
+        sh:name         "is controlled by"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:isControlledBy .
+
+<https://astrea.linkeddata.es/shapes#37153f0f8f67ca08307bf87fb1627aee>
+        a            sh:PropertyShape ;
+        sh:class     saref:Sensor ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:madeBy .
+
+<https://astrea.linkeddata.es/shapes#8f6a43fb640c19d060a32de074a75ab0>
+        a               sh:NodeShape ;
+        rdfs:label      "Stop state"@en ;
+        sh:description  "The state of a device that is STOPPED"@en ;
+        sh:name         "Stop state"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:StopState .
+
+<https://astrea.linkeddata.es/shapes#4c441e387479eb1dc5d5927ebccb0c1f>
+        a               sh:PropertyShape ;
+        rdfs:label      "relates to measurement"@en , "A relationship between a property and the measurements it relates to"@en ;
+        sh:class        saref:Measurement ;
+        sh:description  "A relationship between a property and the measurements it relates to"@en ;
+        sh:name         "relates to measurement"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:relatesToMeasurement .
+
+<https://astrea.linkeddata.es/shapes#39de5582250560689bef08e3ecb01e3d>
+        a               sh:PropertyShape ;
+        rdfs:label      "is value of property"@en , "Links a property value to the property or property of interest it is a value of."@en ;
+        sh:description  "Links a property value to the property or property of interest it is a value of."@en ;
+        sh:name         "is value of property"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:or           ( [ sh:class  saref:Property ;
+                            sh:path   saref:isValueOfProperty
+                          ]
+                          [ sh:class  saref:PropertyOfInterest ;
+                            sh:path   saref:isValueOfProperty
+                          ]
+                        ) .
+
+<https://astrea.linkeddata.es/shapes#a2541c7ab6566ce21e76c26e76b09a94>
+        a               sh:NodeShape ;
+        rdfs:label      "On off function"@en ;
+        sh:description  "An actuating function that allows to switch on and off an actuator"@en ;
+        sh:name         "On off function"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:OnOffFunction .
+
+<https://astrea.linkeddata.es/shapes#49ea869b34e204369ff722eab97eadce>
+        a               sh:NodeShape ;
+        rdfs:label      "Power unit"@en ;
+        sh:description  "The unit of measure for power"@en ;
+        sh:name         "Power unit"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:PowerUnit .
+
+<https://astrea.linkeddata.es/shapes#6c7734354dabd0adf05e47559f056d3e>
+        a               sh:NodeShape ;
+        rdfs:label      "Energy"@en ;
+        sh:description  "A saref:Property related to some measurements that are characterized by a certain value measured in an energy unit (such as Kilowatt_Hour or Watt_hour). Furter specializations of the saref:Energy class can be found in the SAREF4ENER extension, where classes such as EnergyMax, EnergyMin and EnergyExpected are defined. "@en ;
+        sh:name         "Energy"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:Energy .
+
+<https://astrea.linkeddata.es/shapes#dfba1540209f35bb296fccb2f5c9c2d9>
+        a               sh:PropertyShape ;
+        rdfs:label      "has time"@en , "A relationship to associate time information to an entity"@en ;
+        sh:class        saref:Time ;
+        sh:description  "A relationship to associate time information to an entity"@en ;
+        sh:name         "has time"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasTime .
+
+<https://astrea.linkeddata.es/shapes#68bedd26fd82e3f121c571cff7bb1109>
+        a               sh:PropertyShape ;
+        rdfs:label      "has phenomenon time"@en , "Links a procedure execution to the time that the result applies. It may be an interval or an instant, or some other compound temporal entity expressed using OWL Time."@en ;
+        sh:class        time:TemporalEntity ;
+        sh:description  "Links a procedure execution to the time that the result applies. It may be an interval or an instant, or some other compound temporal entity expressed using OWL Time."@en ;
+        sh:name         "has phenomenon time"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasPhenomenonTime .
+
+<https://astrea.linkeddata.es/shapes#85c44987c5a267f42ccb0356a1dc5eec>
+        a               sh:PropertyShape ;
+        rdfs:label      "has description"@en , "DEPRECATED: The use of rdfs:comment is recommended instead."@en , "A relationship providing a description of an entity (e.g., device). The value is expected to be a string or a string with language tag."@en ;
+        sh:description  "DEPRECATED: The use of rdfs:comment is recommended instead."@en , "A relationship providing a description of an entity (e.g., device). The value is expected to be a string or a string with language tag."@en ;
+        sh:name         "has description"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         saref:hasDescription .
+
+<https://astrea.linkeddata.es/shapes#3382498c9dc3e8d189a47acfb0f3e2d4>
+        a               sh:NodeShape ;
+        rdfs:label      "Occupancy"@en ;
+        sh:description  "A saref:Property related to some measurements that are characterized by a certain value (saref:hasValue property) that is measured in a unit of measure for occupancy"@en ;
+        sh:name         "Occupancy"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  saref:Occupancy .
+
+<https://astrea.linkeddata.es/shapes#73fa53b1eee0f4ba629861be3a5a6543>
+        a               sh:PropertyShape ;
+        rdfs:label      "is function of"@en , "Links a function to the feature kind or device it is a function of."@en ;
+        sh:description  "Links a function to the feature kind or device it is a function of."@en ;
+        sh:name         "is function of"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:or           ( [ sh:class  saref:FeatureKind ;
+                            sh:path   saref:isFunctionOf
+                          ]
+                          [ sh:class  saref:FeatureOfInterest ;
+                            sh:path   saref:isFunctionOf
+                          ]
+                        ) .
+
+<https://astrea.linkeddata.es/shapes#ace866cad64db21fbfe1e4c19afe093c>
+        a               sh:PropertyShape ;
+        rdfs:label      "has device kind"@en , "Links a device to its kind, a feature kind. Kinds of devices describe models of devices, with common properties having the same value, common states being the same, common functions, and common services."@en ;
+        sh:class        saref:FeatureKind ;
+        sh:description  "Links a device to its kind, a feature kind. Kinds of devices describe models of devices, with common properties having the same value, common states being the same, common functions, and common services."@en ;
+        sh:name         "has device kind"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:hasDeviceKind .

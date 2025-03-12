@@ -4,34 +4,36 @@
         "tuples" : [
             {
                 "name" : "SOSA",
-                "shape" : "",
-                "onto" : ""
+                "shape" : "C:\\Users\\salgo\\Developer\\tesis\\shacl_integration\\evaluation_files\\sosa-ssn\\shapes\\sosa-shacl-manual.ttl",
+                "onto" : "C:\\Users\\salgo\\Developer\\tesis\\shacl_integration\\evaluation_files\\sosa-ssn\\ontologies\\sosa-ssn-ontology.ttl"
             },
             {
                 "name" :"SOSA-SSN",
-                "shape" : "",
-                "onto" : ""
+                "shape" : "C:\\Users\\salgo\\Developer\\tesis\\shacl_integration\\evaluation_files\\sosa-ssn\\shapes\\sosa-ssn-astrea-shapes.ttl",
+                "onto" : "C:\\Users\\salgo\\Developer\\tesis\\shacl_integration\\evaluation_files\\sosa-ssn\\ontologies\\sosa-ssn-ontology.ttl"
             }
-        ]
+        ],
+        "alignment_reference" : null
     },
     "2": {
         "description": "Integration between SOSA-SSN and SAREF ontology shapes manual and Astrea generated",
         "tuples" : [
             {
                 "name" : "SOSA",
-                "shape" : "",
-                "onto" : ""
+                "shape" : "C:\\Users\\salgo\\Developer\\tesis\\shacl_integration\\evaluation_files\\sosa-ssn-saref\\shapes\\sosa-shacl-manual.ttl",
+                "onto" : "C:\\Users\\salgo\\Developer\\tesis\\shacl_integration\\evaluation_files\\sosa-ssn-saref\\ontologies\\sosa-ssn-ontology.ttl"
             },
             {
                 "name" : "SAREF",
-                "shape" : "",
-                "onto" : ""
+                "shape" : "C:\\Users\\salgo\\Developer\\tesis\\shacl_integration\\evaluation_files\\sosa-ssn-saref\\shapes\\saref-astrea-shapes.ttl",
+                "onto" : "C:\\Users\\salgo\\Developer\\tesis\\shacl_integration\\evaluation_files\\sosa-ssn-saref\\ontologies\\saref-ontology.ttl"
             },
             {
                 "name" :"SOSA-SSN",
-                "shape" : "",
-                "onto" : ""
+                "shape" : "C:\\Users\\salgo\\Developer\\tesis\\shacl_integration\\evaluation_files\\sosa-ssn-saref\\shapes\\sosa-ssn-astrea-shapes.ttl",
+                "onto" : "C:\\Users\\salgo\\Developer\\tesis\\shacl_integration\\evaluation_files\\sosa-ssn-saref\\ontologies\\sosa-ssn-ontology.ttl"
             }
-        ]
+        ],
+        "alignment_reference" : "C:\\Users\\salgo\\Developer\\tesis\\shacl_integration\\evaluation_files\\sosa-ssn-saref\\alignment_references\\reference.ttl"
     }
 }

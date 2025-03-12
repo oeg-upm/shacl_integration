@@ -9,3 +9,12 @@ try:
         f.close()
 except FileNotFoundError:
     json_data: dict = {}
+
+
+# STATUS CODES
+
+BAD_REQUEST: int = 400
+OK: int = 200
+INTERNAL_SERVER_ERROR: int = 500
+
+__all__ = [*locals().keys()]
