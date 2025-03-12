@@ -10,12 +10,12 @@ class Identification:
         self.cluster_result_list: list[Cluster] = []
         self.alignment_reference: str = alignment_reference
 
-    def tuple_extraction(self) -> None:
+    def tuple_extraction(self) -> Graph:
         tuple_extraction_activity: TupleExtraction = TupleExtraction(self.input_tuples)
         self.tuple_result_list = tuple_extraction_activity.execute_tuple_extraction
         return self.tuple_result_list
 
-    def cluster_generation(self) -> None:
+    def cluster_generation(self) -> list[Cluster]:
         cluster_generation_activity: ClusterGeneration = ClusterGeneration(ontology_list=[tup[0] for tup in self.input_tuples],
                                                                            alignment_reference=self.alignment_reference,
                                                                            tuple_result_list=self.tuple_result_list)
