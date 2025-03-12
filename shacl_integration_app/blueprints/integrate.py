@@ -4,6 +4,7 @@ import sys
 import json
 from shacl_integration_app.repository.constants import *
 from shacl_integration_app.repository.models import Cluster, ConceptCluster, NodeAxiomCluster, PropertyCluster, PropertyAxiomCluster
+from shacl_integration_app.repository.wrappers import get_time
 from shacl_integration_app.service.integration_engine import IntegrationMethod, Identification, Integration
 sys.stdout.flush()
 
@@ -17,6 +18,7 @@ def integration_possibilities() -> dict:
 
 
 @integrate.route('/integrate/<id>/<operation>', methods=['POST'])
+@get_time
 def integration(id: str, operation: str) -> str:
     # Join/AND
     # Disjoint/OR
