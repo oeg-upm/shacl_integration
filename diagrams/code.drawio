@@ -1,11 +1,11 @@
 <mxfile host="65bd71144e">
     <diagram id="N_ACyk_NYoFnbW6lfRZY" name="Page-1">
-        <mxGraphModel dx="1727" dy="810" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+        <mxGraphModel dx="1619" dy="587" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="170" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="-320" y="170" width="2740" height="1140" as="geometry"/>
+                    <mxGeometry x="-270" y="170" width="2690" height="1140" as="geometry"/>
                 </mxCell>
                 <mxCell id="131" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="10" target="83" edge="1">
                     <mxGeometry relative="1" as="geometry">
@@ -17,8 +17,8 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="10" value="Cluster : datamodel ✔" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
-                    <mxGeometry x="160" y="880" width="240" height="80" as="geometry">
-                        <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds"/>
+                    <mxGeometry x="160" y="892" width="240" height="80" as="geometry">
+                        <mxRectangle x="160" y="880" width="160" height="26" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="11" value="Concept : str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="10" vertex="1">
@@ -66,7 +66,7 @@
                 <mxCell id="30" value="Integration_option : str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="27" vertex="1">
                     <mxGeometry y="52" width="320" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="171" value="Alignment_reference : str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="27">
+                <mxCell id="171" value="Alignment_reference : str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="27" vertex="1">
                     <mxGeometry y="78" width="320" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="101" value="Concept_Clusters : list[Cluster]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="27" vertex="1">
@@ -95,7 +95,7 @@
                 <mxCell id="36" value="Input_tuples : list[tuple[str,str]]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="35" vertex="1">
                     <mxGeometry y="26" width="400" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="172" value="Alignment_reference : str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="35">
+                <mxCell id="172" value="Alignment_reference : str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="35" vertex="1">
                     <mxGeometry y="52" width="400" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="39" value="Tuple_result_list : list[dict]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="35" vertex="1">
@@ -157,27 +157,27 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="58" value="Tuple Extraction" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-                    <mxGeometry x="-260" y="652" width="260" height="164" as="geometry">
+                    <mxGeometry x="-200" y="690" width="270" height="170" as="geometry">
                         <mxRectangle x="-250" y="650" width="160" height="26" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="59" value="Input_tuples : list[tuple[str,str]]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="58" vertex="1">
-                    <mxGeometry y="26" width="260" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="60" value="SPARQL_query : str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="58" vertex="1">
-                    <mxGeometry y="52" width="260" height="26" as="geometry"/>
+                    <mxGeometry y="26" width="270" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="63" value="Query_results : Graph" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="58" vertex="1">
-                    <mxGeometry y="78" width="260" height="26" as="geometry"/>
+                    <mxGeometry y="52" width="270" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="107" value="Tuple_result_list : Graph" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="58" vertex="1">
-                    <mxGeometry y="104" width="260" height="26" as="geometry"/>
+                    <mxGeometry y="78" width="270" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="64" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="58" vertex="1">
-                    <mxGeometry y="130" width="260" height="8" as="geometry"/>
+                    <mxGeometry y="104" width="270" height="8" as="geometry"/>
                 </mxCell>
-                <mxCell id="65" value="tuple_extraction(input_tuples, SPARQL_query)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="58" vertex="1">
-                    <mxGeometry y="138" width="260" height="26" as="geometry"/>
+                <mxCell id="65" value="execute_tuple_extraction(input_tuples)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="58" vertex="1">
+                    <mxGeometry y="112" width="270" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="execute_sparql_query(Graph, SPARQL_query)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="58" vertex="1">
+                    <mxGeometry y="138" width="270" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="67" value="Ontology Alignment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
                     <mxGeometry x="680" y="850" width="340" height="164" as="geometry">
@@ -187,7 +187,7 @@
                 <mxCell id="69" value="Ontology_list : list[str]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="67" vertex="1">
                     <mxGeometry y="26" width="340" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="176" value="Tuple_result_list : Graph" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="67">
+                <mxCell id="176" value="Tuple_result_list : Graph" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="67" vertex="1">
                     <mxGeometry y="52" width="340" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="70" value="Alignment_results : Graph" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="67" vertex="1">
@@ -202,26 +202,6 @@
                 <mxCell id="132" value="execute_transitive_alignment(ontology_list, alignment_results)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="67" vertex="1">
                     <mxGeometry y="138" width="340" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="75" value="SPARQL Query" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-                    <mxGeometry x="-260" y="850" width="260" height="140" as="geometry">
-                        <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="76" value="Graph : Graph" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="75" vertex="1">
-                    <mxGeometry y="26" width="260" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="77" value="SPARQL_query : str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="75" vertex="1">
-                    <mxGeometry y="52" width="260" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="78" value="Query_results : Graph" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="75" vertex="1">
-                    <mxGeometry y="78" width="260" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="79" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="75" vertex="1">
-                    <mxGeometry y="104" width="260" height="8" as="geometry"/>
-                </mxCell>
-                <mxCell id="80" value="execute_query(Graph, SPARQL_query)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="75" vertex="1">
-                    <mxGeometry y="112" width="260" height="26" as="geometry"/>
-                </mxCell>
                 <mxCell id="81" value="Cluster Generation" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
                     <mxGeometry x="290" y="652" width="360" height="216" as="geometry">
                         <mxRectangle x="290" y="652" width="160" height="26" as="alternateBounds"/>
@@ -230,10 +210,10 @@
                 <mxCell id="82" value="Ontology_list : list[str]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="81" vertex="1">
                     <mxGeometry y="26" width="360" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="174" value="Tuple_result_list : Graph" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="81">
+                <mxCell id="174" value="Tuple_result_list : Graph" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="81" vertex="1">
                     <mxGeometry y="52" width="360" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="173" value="Alignment_reference : str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="81">
+                <mxCell id="173" value="Alignment_reference : str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="81" vertex="1">
                     <mxGeometry y="78" width="360" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="83" value="Cluster_result_list: list[Cluster]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="81" vertex="1">
@@ -268,16 +248,13 @@
                 <mxCell id="95" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="42" target="58" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="96" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="107" target="39" edge="1">
+                <mxCell id="96" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="107" target="39" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="-280" y="769"/>
-                            <mxPoint x="-280" y="541"/>
+                            <mxPoint x="-240" y="781"/>
+                            <mxPoint x="-240" y="541"/>
                         </Array>
                     </mxGeometry>
-                </mxCell>
-                <mxCell id="102" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="65" target="75" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="105" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="85" target="67" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -287,14 +264,6 @@
                         <Array as="points">
                             <mxPoint x="1040" y="941"/>
                             <mxPoint x="1040" y="795"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="108" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;" parent="1" source="78" target="63" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="30" y="941"/>
-                            <mxPoint x="30" y="743"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
@@ -480,12 +449,22 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="175" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;jumpStyle=arc;" edge="1" parent="1" source="36" target="82">
+                <mxCell id="175" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;jumpStyle=arc;" parent="1" source="39" target="174" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="700" y="489"/>
-                            <mxPoint x="700" y="691"/>
+                            <mxPoint x="700" y="541"/>
+                            <mxPoint x="700" y="717"/>
                         </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="177" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;jumpStyle=arc;" edge="1" parent="1" source="36" target="82">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="710" y="489"/>
+                            <mxPoint x="710" y="691"/>
+                        </Array>
+                        <mxPoint x="424" y="551" as="sourcePoint"/>
+                        <mxPoint x="660" y="727" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
             </root>

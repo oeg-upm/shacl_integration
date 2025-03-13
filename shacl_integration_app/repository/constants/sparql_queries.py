@@ -1,8 +1,8 @@
 
-SPARQL_QUERY_TARGET_CLASS_PATH: str = (lambda ontology, target_class_path, ontology_class: f"""
+SPARQL_QUERY_TARGET_CLASS_PATH: str = (lambda target_class_path, ontology_class: f"""
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     PREFIX schema: <http://schema.org/>
-    SELECT DISTINCT * FROM <{ontology}>
+    SELECT DISTINCT *
     WHERE {{
         <{target_class_path}> a ?type ;
             (rdfs:domain | schema:domainIncludes) <{ontology_class}> .
@@ -11,10 +11,10 @@ SPARQL_QUERY_TARGET_CLASS_PATH: str = (lambda ontology, target_class_path, ontol
         }}
     }} """)
 
-SPARQL_QUERY_TARGET_SUBJECTS_OF_PATH: str = (lambda ontology, target_subjects_of_path: f"""
+SPARQL_QUERY_TARGET_SUBJECTS_OF_PATH: str = (lambda target_subjects_of_path: f"""
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     PREFIX schema: <http://schema.org/>
-    SELECT DISTINCT * FROM <{ontology}>
+    SELECT DISTINCT *
     WHERE {{
         <{target_subjects_of_path}> a ?type ;
             (rdfs:domain | schema:domainIncludes) ?domain .
@@ -24,11 +24,11 @@ SPARQL_QUERY_TARGET_SUBJECTS_OF_PATH: str = (lambda ontology, target_subjects_of
     }} """)
 
 
-SPARQL_QUERY_TARGET_OBJECTS_OF_PATH: str = (lambda ontology, target_objects_of_path: f"""
+SPARQL_QUERY_TARGET_OBJECTS_OF_PATH: str = (lambda target_objects_of_path: f"""
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     PREFIX schema: <http://schema.org/>
     PREFIX owl: <http://www.w3.org/2002/07/owl#>
-    SELECT DISTINCT * FROM <{ontology}>
+    SELECT DISTINCT *
     WHERE {{
         <{target_objects_of_path}> a owl.ObjectProperty ;
             (rdfs:domain | schema:domainIncludes) ?domain .
@@ -38,9 +38,9 @@ SPARQL_QUERY_TARGET_OBJECTS_OF_PATH: str = (lambda ontology, target_objects_of_p
     }} """)
 
 
-SPARQL_QUERY_ONTOLOGY_RESTRICTIONS_EXTRACTION: str = (lambda ontology: f"""
+SPARQL_QUERY_ONTOLOGY_RESTRICTIONS_EXTRACTION: str = f"""
     PREFIX owl: <http://www.w3.org/2002/07/owl#>
-    SELECT DISTINCT ?class ?property ?restriction ?restrictionValue FROM <{ontology}>
+    SELECT DISTINCT ?class ?property ?restriction ?restrictionValue
     WHERE {{
         ?s a owl:Restriction ;
             owl:onProperty ?property ;
@@ -48,6 +48,6 @@ SPARQL_QUERY_ONTOLOGY_RESTRICTIONS_EXTRACTION: str = (lambda ontology: f"""
         ?class ?relation ?s .
         FILTER (?restrictionValue != ?property)
         FILTER (?restrictionValue != owl:Restriction)
-    }} """)
+    }} """
 
 __all__ = [*locals().keys()]
