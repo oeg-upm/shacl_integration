@@ -34,6 +34,6 @@
                 "onto" : "C:\\Users\\salgo\\Developer\\tesis\\shacl_integration\\evaluation_files\\sosa-ssn-saref\\ontologies\\sosa-ssn-ontology.ttl"
             }
         ],
-        "alignment_reference" : "C:\\Users\\salgo\\Developer\\tesis\\shacl_integration\\evaluation_files\\sosa-ssn-saref\\alignment_references\\reference.ttl"
+        "alignment_reference" : "C:\\Users\\salgo\\Developer\\tesis\\shacl_integration\\evaluation_files\\sosa-ssn-saref\\alignment_references\\reference.rdf"
     }
 }
