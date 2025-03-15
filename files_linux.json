@@ -34,6 +34,6 @@
                 "onto" : "/Users/salva/Developer/GitHub/shacl_integration/evaluation_files/sosa-ssn-saref/ontologies/sosa-ssn-ontology.ttl"
             }
         ],
-        "alignment_reference" : "/Users/salva/Developer/GitHub/shacl_integration/evaluation_files/sosa-ssn-saref/alignment_references/reference.ttl"
+        "alignment_reference" : "/Users/salva/Developer/GitHub/shacl_integration/evaluation_files/sosa-ssn-saref/alignment_references/reference.rdf"
     }
 }

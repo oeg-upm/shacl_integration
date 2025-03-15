@@ -112,4 +112,28 @@ SPARQL_QUERY_ONTOLOGY_RESTRICTIONS_EXTRACTION: str = f"""
         FILTER (?restrictionValue != owl:Restriction)
     }} """
 
+
+# SPARQL QUERIES FOR ALIGNMENT REFERENCE EXTRACTION
+
+SPARQL_QUERY_ALIGNMENT_REFERENCE: str = (lambda threshold: f"""
+PREFIX align: <http://knowledgeweb.semanticweb.org/heterogeneity/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?entity1 ?entity2
+WHERE {{
+    ?init a align:alignmentCell .
+    ?init align:alignmententity1 ?entity1 .
+    ?init align:alignmententity2 ?entity2 .
+    ?init align:alignmentmeasure ?rawMeasure .
+    ?init align:alignmentrelation ?relation .
+
+    BIND(xsd:float(str(?rawMeasure)) AS ?measure)
+
+    FILTER (?measure >= {threshold})
+    FILTER (?relation = "=")
+}}
+""")
+
+
+
 __all__ = [*locals().keys()]
