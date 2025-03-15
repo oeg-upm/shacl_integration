@@ -12,6 +12,7 @@ class ClusterGeneration:
 
     @get_time
     def execute_alignment(self) -> Graph:
+        print(self.alignment_reference)
         if self.alignment_reference is None:
             self.ontology_alignment_results = None
             return self.ontology_alignment_results

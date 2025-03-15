@@ -19,19 +19,15 @@ class TupleExtraction:
 
             # Node queries target class
             node_queries_result_target_class: list[tuple[str]] = self.obtain_node_transE_tuples(graph=shapes_graph, node_queries=sparql_queries.node_queries_target_class)
-            #print(node_queries_result_target_class)
 
             # Node queries target subjects and objects of
             node_queries_result_subjects_objects: list[tuple[str]] = self.obtain_node_transE_tuples(graph=shapes_graph, node_queries=sparql_queries.node_queries_subjects_objects)
-            #print(node_queries_result_subjects_objects)
 
             # Property queries
             property_queries_result: list[tuple[str]] = self.obtain_property_transE_tuples(graph=shapes_graph)
-            #print(property_queries_result)
 
             # TargetSubjectsOf & TargetObjectsOf query onto
             final_transE_subj_obj_tuples_result: list[tuple[str]] = self.final_transE_tuples(queries_result=node_queries_result_subjects_objects, ontology=ontology_graph)
-            #print(final_transE_subj_obj_tuples_result)
 
             # Property shapes query onto
             final_transE_property_tuples_result: list[tuple[str]] = self.final_transE_tuples(queries_result=property_queries_result, ontology=ontology_graph)
