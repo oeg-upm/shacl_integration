@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<Alignment>
+<xml>yes</xml>
+<level>0</level>
+<type>??</type>
+<onto1>Optional.of(https://saref.etsi.org/core/)</onto1>
+<onto2>Optional.of(http://www.w3.org/ns/ssn/ext)</onto2>
+<uri1>Optional.of(https://saref.etsi.org/core/)</uri1>
+<uri2>Optional.of(http://www.w3.org/ns/ssn/ext)</uri2>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/Actuation"/>
+		<entity2 rdf:resource="http://www.w3.org/ns/sosa/Actuation"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/Actuator"/>
+		<entity2 rdf:resource="http://www.w3.org/ns/sosa/Actuator"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/Property"/>
+		<entity2 rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
+		<entity2 rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/Observation"/>
+		<entity2 rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+		<entity2 rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/saref4syst/System"/>
+		<entity2 rdf:resource="http://www.w3.org/ns/ssn/System"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/Sensor"/>
+		<entity2 rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/hasResultTime"/>
+		<entity2 rdf:resource="http://www.w3.org/ns/sosa/resultTime"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/hasProperty"/>
+		<entity2 rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/isPropertyOf"/>
+		<entity2 rdf:resource="http://www.w3.org/ns/ssn/isPropertyOf"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/hasPhenomenonTime"/>
+		<entity2 rdf:resource="http://www.w3.org/ns/sosa/phenomenonTime"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/isActedUponBy"/>
+		<entity2 rdf:resource="http://www.w3.org/ns/sosa/isActedOnBy"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/hasInput"/>
+		<entity2 rdf:resource="http://www.w3.org/ns/ssn/hasInput"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/hasOutput"/>
+		<entity2 rdf:resource="http://www.w3.org/ns/ssn/hasOutput"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/isObservedBy"/>
+		<entity2 rdf:resource="http://www.w3.org/ns/sosa/isObservedBy"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/observes"/>
+		<entity2 rdf:resource="http://www.w3.org/ns/sosa/observes"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/hasResult"/>
+		<entity2 rdf:resource="http://www.w3.org/ns/sosa/hasResult"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+</Alignment>
+</rdf:RDF>
