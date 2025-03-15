@@ -36,7 +36,7 @@ class TupleExtraction:
             # Property shapes query onto
             final_transE_property_tuples_result: list[tuple[str]] = self.final_transE_tuples(queries_result=property_queries_result, ontology=ontology_graph)
 
-            result_list: list[list[tuple[str]]] = [node_queries_result_target_class, final_transE_subj_obj_tuples_result, final_transE_property_tuples_result]
+            result_list: list[list[tuple[str]]] = [node_queries_result_target_class, node_queries_result_subjects_objects, property_queries_result, final_transE_subj_obj_tuples_result, final_transE_property_tuples_result]
             [self.tuple_result_list.extend(item) for item in result_list if item != None and len(item) > 0]
 
         # Remove duplicates
@@ -44,15 +44,14 @@ class TupleExtraction:
 
         # Remove tuples with not correct values
         for item in self.tuple_result_list[:]:  # Create a copy of the list
-            if len(item) == 3 and 'http' not in item[0]:
+            if 'http' not in item[0]:
                 self.tuple_result_list.remove(item)
-            elif len(item) == 3 and 'http' not in item[2] and item[2] != 'None':
+            elif 'http' not in item[2] and item[2] != 'None':
                 self.tuple_result_list.remove(item)
         
         # Write the result to a file
         with open("tuple_result_list.txt", "w") as f:
-            [f.write(str(item) + '\n') for item in self.tuple_result_list if len(item) != 3]
-            [f.write(str(item) + '\n') for item in self.tuple_result_list if len(item) == 3]
+            [f.write(str(item) + '\n') for item in self.tuple_result_list]
             f.close()
 
         return self.tuple_result_list
@@ -80,7 +79,7 @@ class TupleExtraction:
     @staticmethod
     def obtain_transE_tuples(graph: Graph, sparql_query: str, value_list: list[str, str]) -> list[tuple[str]]:
         results: Result = graph.query(sparql_query)
-        result_tuples: list[tuple[str]] = [(str(row[value_list[0]]), str(row[value_list[1]])) for row in results]
+        result_tuples: list[tuple[str]] = [(str(row[value_list[0]]), str(row[value_list[1]]), str(value_list[2])) for row in results]
         return result_tuples
     
     @staticmethod

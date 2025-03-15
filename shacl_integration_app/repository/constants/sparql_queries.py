@@ -9,7 +9,7 @@ SPARQL_QUERY_TARGET_CLASS_PATH_SHAPE: str = """
     }
 """
 
-SPARQL_QUERY_TARGET_CLASS_PATH_SHAPE_values: list[str] = ["NodeShape", "class"]
+SPARQL_QUERY_TARGET_CLASS_PATH_SHAPE_values: list[str] = ["NodeShape", "class", "http://www.w3.org/ns/shacl#targetClass"]
 
 
 
@@ -22,7 +22,7 @@ SPARQL_QUERY_TARGET_SUBJECTS_OF_PATH_SHAPE: str = """
     }
 """
 
-SPARQL_QUERY_TARGET_SUBJECTS_OF_PATH_SHAPE_values: list[str] = ["NodeShape", "path"]
+SPARQL_QUERY_TARGET_SUBJECTS_OF_PATH_SHAPE_values: list[str] = ["NodeShape", "path", "http://www.w3.org/ns/shacl#targetSubjectsOf"]
 
 
 SPARQL_QUERY_TARGET_OBJECTS_OF_PATH_SHAPE: str = """
@@ -34,7 +34,7 @@ SPARQL_QUERY_TARGET_OBJECTS_OF_PATH_SHAPE: str = """
     }
 """
 
-SPARQL_QUERY_TARGET_OBJECTS_OF_PATH_SHAPE_values: list[str] = ["NodeShape", "path"]
+SPARQL_QUERY_TARGET_OBJECTS_OF_PATH_SHAPE_values: list[str] = ["NodeShape", "path", "http://www.w3.org/ns/shacl#targetObjectsOf"]
 
 
 SPARQL_QUERY_PROPERTY_PATH_SHAPE: str = """
@@ -62,7 +62,7 @@ SPARQL_QUERY_PROPERTY_PATH_SHAPE: str = """
     }
 """
 
-SPARQL_QUERY_PROPERTY_PATH_SHAPE_values: list[str] = ["NodeShape", "path"]
+SPARQL_QUERY_PROPERTY_PATH_SHAPE_values: list[str] = ["NodeShape", "path", "http://www.w3.org/ns/shacl#path"]
 
 node_queries_target_class: list[list[str]] = [
             [SPARQL_QUERY_TARGET_CLASS_PATH_SHAPE, SPARQL_QUERY_TARGET_CLASS_PATH_SHAPE_values]]
