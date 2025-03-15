@@ -1,13 +1,16 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from .axiom import Axiom
+import uuid
+
 
 @dataclass
 class Cluster:
     concept: str
     concept_list : list[str]
+    id: str = field(init=False, default_factory=uuid.uuid4)
 
     def __str__(self) -> str:
-        return f"concept: {self.concept}, concept_list: {self.concept_list}"
+        return f"concept: {self.concept}, concept_list: {self.concept_list}, id: {self.id}"
     
 @dataclass
 class ConceptCluster(Cluster):

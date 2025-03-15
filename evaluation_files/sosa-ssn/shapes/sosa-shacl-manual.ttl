@@ -5,6 +5,8 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix sosa-shacl: <http://stko-kwg.geog.ucsb.ed/sosa-shacl/> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix ssn:   <http://www.w3.org/ns/ssn/> .
 
 #########################  Shapes for classes (14 in total in SOSA) ############################
 

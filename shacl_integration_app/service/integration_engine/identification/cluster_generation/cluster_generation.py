@@ -3,11 +3,11 @@ from rdflib import Graph
 from shacl_integration_app.repository.wrappers import get_time
 
 class ClusterGeneration:
-    def __init__(self, ontology_list: list[str], alignment_reference: str, tuple_result_list: Graph) -> None:
+    def __init__(self, ontology_list: list[str], tuple_result_list: Graph, alignment_reference: str = None) -> None:
         self.ontology_list : list[str] = ontology_list
-        self.cluster_result_list : list[Cluster] = []
-        self.alignment_reference : str = alignment_reference
         self.tuple_result_list : Graph = tuple_result_list
+        self.alignment_reference : str = alignment_reference
+        self.cluster_result_list : list[Cluster] = []
         self.ontology_alignment_results : Graph = Graph()
 
     @get_time
