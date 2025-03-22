@@ -5,6 +5,8 @@ from shacl_integration_app.repository.wrappers import get_time
 from shacl_integration_app.repository.constants import sparql_queries
 import os
 
+# This Python class `ClusterGeneration` is designed to generate clusters based on ontology alignment
+# results and transitive alignment.
 class ClusterGeneration:
     def __init__(self, ontology_list: list[str], tuple_result_list: list[tuple[str]], alignment_reference: str = None) -> None:
         self.ontology_list : list[str] = ontology_list
@@ -16,6 +18,10 @@ class ClusterGeneration:
 
     @get_time
     def execute_alignment(self) -> list[tuple[str]]:
+        """
+        The function `execute_alignment` parses an alignment reference, queries the results based on a
+        threshold, and stores the alignment tuples in a list.
+        """
         print(self.alignment_reference)
         if self.alignment_reference is None:
             self.ontology_alignment_results = None
