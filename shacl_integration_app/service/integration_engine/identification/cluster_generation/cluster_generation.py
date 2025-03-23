@@ -8,8 +8,9 @@ import os
 # This Python class `ClusterGeneration` is designed to generate clusters based on ontology alignment
 # results and transitive alignment.
 class ClusterGeneration:
-    def __init__(self, ontology_list: list[str], tuple_result_list: list[tuple[str]], alignment_reference: str = None) -> None:
+    def __init__(self, ontology_list: list[str], shapes_list: list[str], tuple_result_list: list[tuple[str]], alignment_reference: str = None) -> None:
         self.ontology_list : list[str] = ontology_list
+        self.shapes_list : list[str] = shapes_list
         self.tuple_result_list : list[tuple[str]] = tuple_result_list
         self.alignment_reference : str = alignment_reference
         self.cluster_result_list : list[Cluster] = []
@@ -35,6 +36,13 @@ class ClusterGeneration:
         
     @get_time        
     def execute_transitive_alignment(self) -> list[tuple[str]]:
+        """
+        The function `execute_transitive_alignment` processes alignment tuples and generates new
+        alignment tuples based on certain conditions.
+        :return: The `execute_transitive_alignment` method returns a list of tuples containing alignment
+        pairs that have been identified based on certain conditions and operations performed within the
+        method.
+        """
         path_list: list[str] = ['http://www.w3.org/ns/shacl#targetClass', 'http://www.w3.org/ns/shacl#path', 'http://www.w3.org/ns/shacl#targetObjectsOf', 'http://www.w3.org/ns/shacl#targetSubjectsOf']
         hlt_tuples: list[tuple[str]] = [tup for tup in self.tuple_result_list if tup[2] not in path_list]
         new_hlt_tuples = []
@@ -60,7 +68,7 @@ class ClusterGeneration:
                 t1 = set(new_hlt_tuples[i])
                 t2 = set(new_hlt_tuples[j])
                 common: set = t1.intersection(t2)
-                if len(common) == 2:
+                if len(common) == 2 and len(t1) == 3 and len(t2) == 3:
                     diff_t1: str | tuple = list(t1 - common)[0]
                     diff_t2: str | tuple = list(t2 - common)[0]
                     if type(diff_t1) is not tuple and type(diff_t2) is not tuple:
@@ -72,7 +80,17 @@ class ClusterGeneration:
 
 
     def get_namespace(self, uri: str) -> str:
-        """Extracts the prefix or namespace from a URI."""
+        """
+        This Python function extracts the namespace from a given URI.
+        
+        :param uri: The `uri` parameter is a string that represents a Uniform Resource Identifier (URI)
+        for which we want to extract the namespace
+        :type uri: str
+        :return: The `get_namespace` function takes a URI as input and returns the namespace part of the
+        URI. If the URI contains a '#' symbol, it splits the URI at the '#' symbol and returns the part
+        before the '#'. If the URI does not contain a '#', it splits the URI at the last '/' symbol and
+        returns all parts except the last one.
+        """
         if '#' in uri:
             return uri.split('#')[0]
         else:
@@ -80,13 +98,71 @@ class ClusterGeneration:
 
     @get_time
     def execute_cluster_generation(self) -> list[Cluster]:
+        """
+        This function executes cluster generation after performing alignment and transitive alignment if
+        needed.
+        :return: The method `execute_cluster_generation` returns a list of Cluster objects.
+        """
         self.execute_alignment()
         if self.alignment_reference is None:
             pass
         else:
             self.execute_transitive_alignment()
+            self.cluster_generation()
         return self.cluster_result_list
     
     def cluster_generation(self) -> list[Cluster]:
-        print(self.alignment_tuples_result)
-        return self.execute_cluster_generation()
+        # self.shapes_list
+        # tuple_result_list
+        # self.alignment_tuples_result
+
+        # Step 1: Search for alignments in the tuple_result_list for node shapes
+        path_list: list[str] = ['http://www.w3.org/ns/shacl#targetClass', 'http://www.w3.org/ns/shacl#path', 'http://www.w3.org/ns/shacl#targetObjectsOf', 'http://www.w3.org/ns/shacl#targetSubjectsOf']
+        hlt_node_tuples: list[tuple[str]] = [tup for tup in self.tuple_result_list if tup[2] in path_list]
+        hlt_property_tuples: list[tuple[str]] = [tup for tup in self.tuple_result_list if tup[2] not in path_list]
+        new_hlt_tuples_aligned: list[list[tuple[str]]] = []
+        new_hlt_tuples_unaligned: list[tuple[str]] = []
+
+        for hlt in hlt_node_tuples:
+            new_hlt_node = list(hlt)
+            flag: int = 0
+            aligned_tuples = []
+            for alignment in self.alignment_tuples_result:
+                if hlt[1] in alignment:
+                    flag += 1
+                    target_alignment = alignment[1] if hlt[1] == alignment[0] else alignment[0]
+                    # print("Alignment:",alignment)
+                    # [print("Caso:",elem) for elem in hlt_node_tuples if elem[1] == target_alignment]
+                    # aligned_tuples.extend(
+                    #     [elem for elem in hlt_node_tuples if elem[1] == target_alignment]
+                    # )
+                    # print(f"Caso {'1' if hlt[1] == alignment[0] else '2'}:", aligned_tuples)
+        #     if flag == 1:
+        #         # aligned_tuples.append(tuple(new_hlt_node))
+        #         # new_hlt_tuples_aligned.append(aligned_tuples)
+        #         new_hlt_node.append(aligned_tuples)
+        #         new_hlt_tuples_aligned.append(new_hlt_node)
+        #     else:
+        #         new_hlt_tuples_unaligned.append(hlt)
+        
+        # with open('new_hlt_tuples_aligned.txt', 'w') as f:
+        #     for item in new_hlt_tuples_aligned:
+        #         f.write("%s\n" % str(item))
+                
+        # with open('new_hlt_tuples_unaligned.txt', 'w') as f:
+        #     for item in new_hlt_tuples_unaligned:
+        #         f.write("%s\n" % str(item))
+            
+
+        # self.cluster_result_list
+        return self.cluster_result_list
+
+
+    def node_axiom_cluster_generation(self) -> Cluster:
+        pass
+
+    def property_cluster_generation(self) -> Cluster:
+        pass
+
+    def property_axiom_cluster_generation(self) -> Cluster:
+        pass

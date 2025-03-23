@@ -24,7 +24,9 @@ class TupleExtraction:
             node_queries_result_subjects_objects: list[tuple[str]] = self.obtain_node_transE_tuples(graph=shapes_graph, node_queries=sparql_queries.node_queries_subjects_objects)
 
             # Property queries
-            property_queries_result: list[tuple[str]] = self.obtain_property_transE_tuples(graph=shapes_graph)
+            property_queries_result: list[tuple[str]] = self.obtain_property_transE_tuples(graph=shapes_graph, sparql_query=sparql_queries.SPARQL_QUERY_PROPERTY_PATH_SHAPE, value_list=sparql_queries.SPARQL_QUERY_PROPERTY_PATH_SHAPE_values)
+
+            property_queries_result_real: list[tuple[str]] = self.obtain_property_transE_tuples(graph=shapes_graph, sparql_query=sparql_queries.SPARQL_QUERY_REAL_PROPERTY_PATH_SHAPE, value_list=sparql_queries.SPARQL_QUERY_REAL_PROPERTY_PATH_SHAPE_values)
 
             # TargetSubjectsOf & TargetObjectsOf query onto
             final_transE_subj_obj_tuples_result: list[tuple[str]] = self.final_transE_tuples(queries_result=node_queries_result_subjects_objects, ontology=ontology_graph)
@@ -32,7 +34,9 @@ class TupleExtraction:
             # Property shapes query onto
             final_transE_property_tuples_result: list[tuple[str]] = self.final_transE_tuples(queries_result=property_queries_result, ontology=ontology_graph)
 
-            result_list: list[list[tuple[str]]] = [node_queries_result_target_class, node_queries_result_subjects_objects, property_queries_result, final_transE_subj_obj_tuples_result, final_transE_property_tuples_result]
+            final_transE_property_tuples_result_real: list[tuple[str]] = self.final_transE_tuples(queries_result=property_queries_result_real, ontology=ontology_graph)
+
+            result_list: list[list[tuple[str]]] = [node_queries_result_target_class, node_queries_result_subjects_objects, property_queries_result, property_queries_result_real, final_transE_subj_obj_tuples_result, final_transE_property_tuples_result, final_transE_property_tuples_result_real]
             [self.tuple_result_list.extend(item) for item in result_list if item != None and len(item) > 0]
 
         # Remove duplicates
@@ -63,12 +67,12 @@ class TupleExtraction:
         ]
         return node_queries_result
     
-    def obtain_property_transE_tuples(self, graph: Graph) -> list[tuple[str]]:
+    def obtain_property_transE_tuples(self, graph: Graph, sparql_query: str, value_list: str) -> list[tuple[str]]:
         property_queries_result: list[tuple[str]] = [
             transE_tuple
             for transE_tuple in self.obtain_transE_tuples(graph=graph,
-                                  sparql_query=sparql_queries.SPARQL_QUERY_PROPERTY_PATH_SHAPE,
-                                  value_list=sparql_queries.SPARQL_QUERY_PROPERTY_PATH_SHAPE_values)
+                                  sparql_query=sparql_query,
+                                  value_list=value_list) if transE_tuple[1] != 'None'
         ]
         return property_queries_result
     
@@ -84,7 +88,7 @@ class TupleExtraction:
         example = [ontology.query(sparql_queries.SPARQL_QUERY_TARGET_SUBJECTS_OBJECTS_OF_PATH(target_of_path=res[1])) for res in queries_result if ontology.query(sparql_queries.SPARQL_QUERY_TARGET_SUBJECTS_OBJECTS_OF_PATH(target_of_path=res[1])) != []]
         try:
             if len(example) > 0:
-                final_transE_tuples_result: list[tuple[str]] = [(str(row[0]), str(row[1]), str(row[2])) for elem in example for row in elem]
+                final_transE_tuples_result: list[tuple[str]] = [(str(row[0]), str(row[1]), str(row[2])) for elem in example for row in elem if str(row[0]) != 'None' and str(row[1]) != 'None']
                 return final_transE_tuples_result
         except Exception as e:
             print(e)

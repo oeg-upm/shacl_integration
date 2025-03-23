@@ -21,6 +21,7 @@ class Identification:
     @get_time
     def cluster_generation(self) -> list[Cluster]:
         cluster_generation_activity: ClusterGeneration = ClusterGeneration(ontology_list=[tup[0] for tup in self.input_tuples],
+                                                                           shapes_list=[tup[1] for tup in self.input_tuples],
                                                                            alignment_reference=self.alignment_reference,
                                                                            tuple_result_list=self.tuple_result_list)
         self.cluster_result_list = cluster_generation_activity.execute_cluster_generation()

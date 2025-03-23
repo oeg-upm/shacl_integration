@@ -62,7 +62,32 @@ SPARQL_QUERY_PROPERTY_PATH_SHAPE: str = """
     }
 """
 
+SPARQL_QUERY_REAL_PROPERTY_PATH_SHAPE: str = """
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    SELECT DISTINCT ?PropertyShape ?path
+    WHERE {
+        ?PropertyShape a sh:PropertyShape.
+        OPTIONAL {
+            ?PropertyShape sh:path ?path .
+        }
+        OPTIONAL {
+            ?PropertyShape sh:or/rdf:rest*/rdf:first ?p .
+            ?p sh:path ?path .
+        }
+        OPTIONAL {
+            ?PropertyShape sh:and/rdf:rest*/rdf:first ?p .
+            ?p sh:path ?path .
+        }
+        OPTIONAL {
+            ?PropertyShape sh:xone/rdf:rest*/rdf:first ?p .
+            ?p sh:path ?path .
+        }
+    }
+"""
+
 SPARQL_QUERY_PROPERTY_PATH_SHAPE_values: list[str] = ["NodeShape", "path", "http://www.w3.org/ns/shacl#path"]
+SPARQL_QUERY_REAL_PROPERTY_PATH_SHAPE_values: list[str] = ["PropertyShape", "path", "http://www.w3.org/ns/shacl#path"]
 
 node_queries_target_class: list[list[str]] = [
             [SPARQL_QUERY_TARGET_CLASS_PATH_SHAPE, SPARQL_QUERY_TARGET_CLASS_PATH_SHAPE_values]]
@@ -88,16 +113,41 @@ SPARQL_QUERY_TARGET_CLASS_PATH: str = (lambda target_class_path, ontology_class:
 
 SPARQL_QUERY_TARGET_SUBJECTS_OBJECTS_OF_PATH: str = (lambda target_of_path: f"""
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
     PREFIX schema: <http://schema.org/>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
     SELECT DISTINCT ?domain ?property ?range
     WHERE {{
         BIND(<{target_of_path}> AS ?property)
-        ?property a ?type ;
-            (rdfs:domain | schema:domainIncludes) ?domain .
+
         OPTIONAL {{
-            ?property (rdfs:range | schema:rangeIncludes) ?range .
+            ?property (rdfs:domain | schema:domainIncludes) ?crude_domain .
+            {{
+                ?crude_domain owl:unionOf ?domain_list .
+                ?domain_list rdf:rest*/rdf:first ?domain .
+            }}
+            UNION {{
+                FILTER(NOT EXISTS {{ ?crude_domain owl:unionOf ?_ }})
+                BIND(?crude_domain AS ?domain)
+            }}
         }}
-    }} """)
+
+        OPTIONAL {{
+            ?property (rdfs:range | schema:rangeIncludes) ?crude_range .
+            {{
+                ?crude_range owl:unionOf ?range_list .
+                ?range_list rdf:rest*/rdf:first ?range .
+            }}
+            UNION {{
+                FILTER(NOT EXISTS {{ ?crude_range owl:unionOf ?_ }})
+                BIND(?crude_range AS ?range)
+            }}
+        }}
+    }}
+""")
+
+
 
 
 SPARQL_QUERY_ONTOLOGY_RESTRICTIONS_EXTRACTION: str = f"""
