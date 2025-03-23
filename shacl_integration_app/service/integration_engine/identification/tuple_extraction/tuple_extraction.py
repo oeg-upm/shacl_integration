@@ -84,7 +84,6 @@ class TupleExtraction:
     
     @staticmethod
     def final_transE_tuples(queries_result: list[tuple[str]], ontology: Graph) -> list[tuple[str]]:
-        
         example = [ontology.query(sparql_queries.SPARQL_QUERY_TARGET_SUBJECTS_OBJECTS_OF_PATH(target_of_path=res[1])) for res in queries_result if ontology.query(sparql_queries.SPARQL_QUERY_TARGET_SUBJECTS_OBJECTS_OF_PATH(target_of_path=res[1])) != []]
         try:
             if len(example) > 0:

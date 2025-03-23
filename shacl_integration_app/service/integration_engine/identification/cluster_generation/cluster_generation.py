@@ -3,6 +3,7 @@ from rdflib import Graph
 from rdflib.query import Result
 from shacl_integration_app.repository.wrappers import get_time
 from shacl_integration_app.repository.constants import sparql_queries
+from shacl_integration_app.service.integration_engine.identification.cluster_generation.tuple_processor import TupleProcessor
 import os
 
 # This Python class `ClusterGeneration` is designed to generate clusters based on ontology alignment
@@ -129,29 +130,29 @@ class ClusterGeneration:
             aligned_tuples = []
             for alignment in self.alignment_tuples_result:
                 if hlt[1] in alignment:
-                    flag += 1
                     target_alignment = alignment[1] if hlt[1] == alignment[0] else alignment[0]
-                    # print("Alignment:",alignment)
-                    # [print("Caso:",elem) for elem in hlt_node_tuples if elem[1] == target_alignment]
-                    # aligned_tuples.extend(
-                    #     [elem for elem in hlt_node_tuples if elem[1] == target_alignment]
-                    # )
-                    # print(f"Caso {'1' if hlt[1] == alignment[0] else '2'}:", aligned_tuples)
-        #     if flag == 1:
-        #         # aligned_tuples.append(tuple(new_hlt_node))
-        #         # new_hlt_tuples_aligned.append(aligned_tuples)
-        #         new_hlt_node.append(aligned_tuples)
-        #         new_hlt_tuples_aligned.append(new_hlt_node)
-        #     else:
-        #         new_hlt_tuples_unaligned.append(hlt)
+                    res_alignment: list[tuple[str]] =[elem for elem in hlt_node_tuples if elem[1] == target_alignment]
+                    if res_alignment != []:
+                        aligned_tuples.extend(res_alignment)
+                        flag += 1
+            if flag == 1:
+                aligned_tuples.append(tuple(new_hlt_node))
+                new_hlt_tuples_aligned.append(aligned_tuples)
+                # new_hlt_node.append(aligned_tuples)
+                # new_hlt_tuples_aligned.append(new_hlt_node)
+            else:
+                new_hlt_tuples_unaligned.append(hlt)
+
+        processor = TupleProcessor()
+        new_hlt_tuples_aligned = processor.process_tuples(new_hlt_tuples_aligned)
         
-        # with open('new_hlt_tuples_aligned.txt', 'w') as f:
-        #     for item in new_hlt_tuples_aligned:
-        #         f.write("%s\n" % str(item))
+        with open('new_hlt_tuples_aligned.txt', 'w') as f:
+            for item in new_hlt_tuples_aligned:
+                f.write("%s\n" % str(item))
                 
-        # with open('new_hlt_tuples_unaligned.txt', 'w') as f:
-        #     for item in new_hlt_tuples_unaligned:
-        #         f.write("%s\n" % str(item))
+        with open('new_hlt_tuples_unaligned.txt', 'w') as f:
+            for item in new_hlt_tuples_unaligned:
+                f.write("%s\n" % str(item))
             
 
         # self.cluster_result_list
@@ -166,3 +167,6 @@ class ClusterGeneration:
 
     def property_axiom_cluster_generation(self) -> Cluster:
         pass
+
+
+    
