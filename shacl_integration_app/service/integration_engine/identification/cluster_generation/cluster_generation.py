@@ -124,24 +124,13 @@ class ClusterGeneration:
         new_hlt_tuples_aligned: list[list[tuple[str]]] = []
         new_hlt_tuples_unaligned: list[tuple[str]] = []
 
-        for hlt in hlt_node_tuples:
-            new_hlt_node = list(hlt)
-            flag: int = 0
-            aligned_tuples = []
-            for alignment in self.alignment_tuples_result:
-                if hlt[1] in alignment:
-                    target_alignment = alignment[1] if hlt[1] == alignment[0] else alignment[0]
-                    res_alignment: list[tuple[str]] =[elem for elem in hlt_node_tuples if elem[1] == target_alignment]
-                    if res_alignment != []:
-                        aligned_tuples.extend(res_alignment)
-                        flag += 1
-            if flag == 1:
-                aligned_tuples.append(tuple(new_hlt_node))
-                new_hlt_tuples_aligned.append(aligned_tuples)
-                # new_hlt_node.append(aligned_tuples)
-                # new_hlt_tuples_aligned.append(new_hlt_node)
-            else:
-                new_hlt_tuples_unaligned.append(hlt)
+        new_hlt_tuples_aligned, new_hlt_tuples_unaligned = self.extract_alignments_from_tuples(hlt_node_tuples=hlt_node_tuples,
+                                                                                               new_hlt_tuples_aligned=new_hlt_tuples_aligned,
+                                                                                                new_hlt_tuples_unaligned=new_hlt_tuples_unaligned)
+        
+        new_hlt_tuples_aligned, new_hlt_tuples_unaligned = self.extract_alignments_from_tuples(hlt_node_tuples=hlt_property_tuples,
+                                                                                               new_hlt_tuples_aligned=new_hlt_tuples_aligned,
+                                                                                                new_hlt_tuples_unaligned=new_hlt_tuples_unaligned)
 
         processor = TupleProcessor()
         new_hlt_tuples_aligned = processor.process_tuples(new_hlt_tuples_aligned)
@@ -157,6 +146,27 @@ class ClusterGeneration:
 
         # self.cluster_result_list
         return self.cluster_result_list
+    
+    def extract_alignments_from_tuples(self, hlt_node_tuples: list[tuple[str]], new_hlt_tuples_aligned: list[list[tuple[str]]], new_hlt_tuples_unaligned: list[tuple[str]]) -> list[list[tuple[str]]]:
+        for hlt in hlt_node_tuples:
+            new_hlt_node = list(hlt)
+            flag: int = 0
+            aligned_tuples = []
+            for alignment in self.alignment_tuples_result:
+                if hlt[1] in alignment:
+                    target_alignment = alignment[1] if hlt[1] == alignment[0] else alignment[0]
+                    res_alignment: list[tuple[str]] =[elem for elem in hlt_node_tuples if elem[1] == target_alignment]
+                    if res_alignment != []:
+                        aligned_tuples.extend(res_alignment)
+                        flag += 1
+            if flag == 1:
+                aligned_tuples.append(tuple(new_hlt_node))
+                new_hlt_tuples_aligned.append(aligned_tuples)
+            else:
+                new_hlt_tuples_unaligned.append(hlt)
+
+        return new_hlt_tuples_aligned, new_hlt_tuples_unaligned
+
 
 
     def node_axiom_cluster_generation(self) -> Cluster:
