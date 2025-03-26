@@ -4,9 +4,11 @@ from rdflib.query import Result
 from shacl_integration_app.repository.wrappers import get_time
 from shacl_integration_app.repository.constants import sparql_queries
 from shacl_integration_app.service.integration_engine.identification.cluster_generation.tuple_processor import TupleProcessor
+from shacl_integration_app.repository.constants.constants import global_aligned_properties, global_aligned_properties_res
 import os
 from collections import defaultdict
 import json
+import re
 
 # This Python class `ClusterGeneration` is designed to generate clusters based on ontology alignment
 # results and transitive alignment.
@@ -159,9 +161,10 @@ class ClusterGeneration:
                                                              .replace("#",  "")
                                                              .replace("/", ""),
                                                              concept_list=[elem[1] for elem in target_node], 
-                                                             node_axiom_cluster_list=self.node_axiom_cluster_generation(target_node=target_node, new_hlt_tuples_aligned=new_hlt_tuples_aligned, extraction_results=extraction_results),
-                                                             property_cluster_list=self.property_cluster_generation(target_node=target_node, new_hlt_tuples_aligned=new_hlt_tuples_aligned, extraction_results=extraction_results))
-            print(concept_cluster)
+                                                             node_axiom_cluster_list=self.node_axiom_cluster_generation(target_node=target_node, 
+                                                             extraction_results=extraction_results),
+                                                             property_cluster_list=self.property_cluster_generation(target_node=target_node, new_hlt_tuples_unaligned=new_hlt_tuples_unaligned, new_hlt_tuples_aligned=new_hlt_tuples_aligned, extraction_results=extraction_results))
+            # print(concept_cluster)
         
         
         # with open('new_hlt_tuples_aligned.txt', 'w') as f:
@@ -180,14 +183,134 @@ class ClusterGeneration:
         return self.cluster_result_list
     
     
-    def node_axiom_cluster_generation(self, target_node: tuple[tuple[str]], new_hlt_tuples_aligned: list[list[tuple[str]]], extraction_results: dict) -> list[Cluster]:
+    def node_axiom_cluster_generation(self, target_node: tuple[tuple[str]], extraction_results: dict) -> list[Cluster]:
+        axiom_list: list[Axiom] = []
+        axiom_logical_list: list[Axiom] = []
+        for node in target_node:
+            for res in extraction_results["shape_extractions"]:
+                if res["root"] == node[0]:
+                    for triple in res["triples"]:
+                        not_list_with_property: list[str] = ['http://www.w3.org/ns/shacl#property', 'http://www.w3.org/ns/shacl#or', 'http://www.w3.org/ns/shacl#and', 'http://www.w3.org/ns/shacl#xone', 'http://www.w3.org/ns/shacl#not', 'http://www.w3.org/2000/01/rdf-schema#isDefinedBy', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type']
+                        if triple["subject"] == node[0] and triple["predicate"] not in not_list_with_property:
+                            axiom_list.append(Axiom(pred=triple["predicate"], obj=triple["object"]))
+
+                        not_list_without_property: list[str] = ['http://www.w3.org/ns/shacl#or', 'http://www.w3.org/ns/shacl#and', 'http://www.w3.org/ns/shacl#xone', 'http://www.w3.org/ns/shacl#not']
+                        if triple["subject"] == node[0] and triple["predicate"] in not_list_without_property:
+                            logic_constraint = [triple2["object"] for triple2 in res["triples"] if triple2["subject"] == triple["object"] and triple2["predicate"] == 'http://www.w3.org/1999/02/22-rdf-syntax-ns#rest']
+                            if logic_constraint:
+                                match = re.search(r'\d+$', logic_constraint[0])
+                                counter: int = None
+                                if match:
+                                    counter: int = int(match.group()) - 2 # take last number of blank node and subtract 2
+                                if counter:
+                                    logic_list: list[str] = [logic_constraint[0][:-1] + str(i) for i in range(1, counter + 1)]
+                                    [axiom_logical_list.append(Axiom(pred=triple2["predicate"],
+                                                                    obj=triple2["object"],
+                                                                    link=triple2["subject"],
+                                                                    logical_operator=triple["predicate"]
+                                                                    .replace(self.get_namespace(triple["predicate"]), "")
+                                                                    .replace("#",  "")))
+                                                                    for triple2 in res["triples"] if triple2["subject"] in logic_list and triple2["predicate"] not in not_list_with_property]
+                        
+        # Dictionary to group axioms by predicate
+        grouped_axioms = defaultdict(list)
+        grouped_logical_axioms = defaultdict(list)
+
+        # Iterate through the axioms and group them by predicate
+        for axiom in axiom_list:
+            grouped_axioms[axiom.pred].append(axiom)
+
+        for axiom in axiom_logical_list:
+            grouped_logical_axioms[axiom.pred].append(axiom)
+        
+        result_dict: list = []
+        for grouped_axiom in [grouped_axioms, grouped_logical_axioms]:
+            for axiom in grouped_axiom.values():
+                cluster = {
+                    "constraint": axiom[0].pred,
+                    "axioms": [
+                        {"obj": ax.obj, "logical_operator": ax.logical_operator} for ax in axiom
+                    ]
+                }
+                # Remove duplicate axioms
+                cluster['axioms'] = [dict(t) for t in {tuple(d.items()) for d in cluster['axioms']}]
+                existing_cluster = next((elem for elem in result_dict if elem["constraint"] == cluster["constraint"]), None)
+                if existing_cluster:
+                    existing_cluster["axioms"].extend(cluster["axioms"])
+                else:
+                    result_dict.append(cluster)
+                
+        cluster_list: list[Cluster] = [NodeAxiomCluster(concept=res["constraint"],
+                                                        axiom_list=res["axioms"])
+                                                        for res in result_dict]
+          
+        return cluster_list
+    
+
+    def property_cluster_generation(self, target_node: tuple[tuple[str]], new_hlt_tuples_unaligned: list[list[tuple[str]]], new_hlt_tuples_aligned: list[list[tuple[str]]], extraction_results: dict) -> list[Cluster]:
+        axiom_list, axiom_logical_list = self.property_axiom_cluster_generation(target_node=target_node, extraction_results=extraction_results)
+                                
+        # ANALYSE HERE IF THERE ARE PROPERTY SHAPES THAT ARE ALIGNED
+
+
+        if axiom_list != []:
+            print(axiom_list)
+        # if axiom_logical_list != []:
+        #     print(axiom_logical_list)
+
         return []
 
-    def property_cluster_generation(self, target_node: tuple[tuple[str]], new_hlt_tuples_aligned: list[list[tuple[str]]], extraction_results: dict) -> list[Cluster]:
-        return []
 
-    def property_axiom_cluster_generation(self) -> Cluster:
-        pass
+
+    def property_axiom_cluster_generation(self, target_node: tuple[tuple[str]], extraction_results: dict) -> tuple[list[Axiom], list[Axiom]]:
+        axiom_list: list[Axiom] = []
+        axiom_logical_list: list[Axiom] = []
+        for node in target_node:
+            for res in extraction_results['shape_extractions']:
+                if res["root"] == node[0]:
+                    for triple in res["triples"]:
+                        stop_word_list: list[str] = ['http://www.w3.org/ns/shacl#or', 'http://www.w3.org/ns/shacl#and', 'http://www.w3.org/ns/shacl#xone', 'http://www.w3.org/ns/shacl#not', 'http://www.w3.org/2000/01/rdf-schema#isDefinedBy', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type']
+                        logical_stop_word_list: list[str] = ['http://www.w3.org/ns/shacl#or', 'http://www.w3.org/ns/shacl#and', 'http://www.w3.org/ns/shacl#xone', 'http://www.w3.org/ns/shacl#not']
+                        if triple["subject"] == node[0] and triple["predicate"] == 'http://www.w3.org/ns/shacl#property':
+                            property_triples = [[triple2['predicate'], triple2["object"]] for triple2 in res["triples"] if triple2["subject"] == triple["object"] and triple2["subject"] == triple['object'] and triple2["predicate"] not in stop_word_list] # This works
+                            # print(property_triples)
+                            [axiom_list.append(Axiom(pred=property_triple[0], obj=property_triple[1], link=triple["subject"])) for property_triple in property_triples if property_triples] # This also works
+                            
+                            logic_constraints = [[triple2["predicate"], triple2["object"]] for triple2 in res["triples"] if triple2["subject"] == triple["object"] and triple2["predicate"] in logical_stop_word_list] # This also works
+
+                            logic_triples : dict = None
+                            if logic_constraints:
+                                for logic_c in logic_constraints:
+                                    first_triple: str = None
+                                    rest_triple: str = None
+                                    for triple2 in res["triples"]:
+                                        if triple2["subject"] == logic_c[1] and triple2["predicate"] not in stop_word_list and triple2["predicate"] == 'http://www.w3.org/1999/02/22-rdf-syntax-ns#first':
+                                            first_triple = triple2["object"]
+                                        if triple2["subject"] == logic_c[1] and triple2["predicate"] not in stop_word_list and triple2["predicate"] == 'http://www.w3.org/1999/02/22-rdf-syntax-ns#rest':
+                                            rest_triple = triple2["object"]
+                                        if first_triple and rest_triple:
+                                            logic_triples = {}
+                                            logic_triples["logical_operator"] = logic_c[0]
+                                            logic_triples["first_triple"] = first_triple
+                                            logic_triples["rest_triple"] = rest_triple
+
+                            if logic_triples:
+                                match_first = re.search(r'\d+$', logic_triples["first_triple"])
+                                match_first_without_num = re.sub(r'\d+$', '', logic_triples["first_triple"])
+                                match_rest = re.search(r'\d+$', logic_triples["rest_triple"])
+                                counter: int = None
+                                if match_first and match_rest:
+                                    counter: int = int(match_rest.group()) - 2
+                                    logic_list: list[str] = [match_first_without_num + str(i) for i in range(int(match_first.group()), counter + 1)]
+                                    for logic in logic_list:
+                                        axiom_logical_list.extend([Axiom(pred=triple2["predicate"],
+                                                                    obj=triple2["object"],
+                                                                    link=logic,
+                                                                    logical_operator=logic_triples["logical_operator"]
+                                                                    .replace(self.get_namespace(triple["predicate"]), "")
+                                                                    .replace("#",  ""))
+                                                                    for triple2 in res["triples"] if triple2["subject"] == logic and triple2["predicate"] not in stop_word_list])
+        return axiom_list, axiom_logical_list
 
     
     def process_sparql_results(self, query_results: Result) -> list[dict[str, list[dict[str, str]]]]:

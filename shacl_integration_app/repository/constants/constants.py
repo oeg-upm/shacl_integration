@@ -17,4 +17,8 @@ BAD_REQUEST: int = 400
 OK: int = 200
 INTERNAL_SERVER_ERROR: int = 500
 
+global_aligned_properties: list[str] = []
+
+global_aligned_properties_res : dict = {}
+
 __all__ = [*locals().keys()]

@@ -76,7 +76,7 @@
         sh:name         "Actuating function"@en ;
         sh:nodeKind     sh:IRI ;
         sh:targetClass  saref:ActuatingFunction .
-
+ 
 <https://astrea.linkeddata.es/shapes#858f1f03cd3853981cca75bbe1c350f6>
         a                       sh:PropertyShape ;
         sh:nodeKind             sh:IRIOrLiteral ;

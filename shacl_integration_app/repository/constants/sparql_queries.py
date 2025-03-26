@@ -208,7 +208,14 @@ WHERE {
     }
     UNION
     {
-        # Extract sh:or, sh:and, sh:xone, sh:not within each PropertyShape
+        # Extract sh:or, sh:and, sh:xone, sh:not when defined in the NodeShape directly
+        ?root (sh:or|sh:and|sh:xone|sh:not) ?list .
+        ?list rdf:rest*/rdf:first ?subj .
+        ?subj ?pred ?obj .
+    }
+    UNION
+    {
+        # Extract sh:or, sh:and, sh:xone, sh:not when defined inside a PropertyShape
         ?root sh:property ?propertyShape .
         ?propertyShape (sh:or|sh:and|sh:xone|sh:not) ?list .
         ?list rdf:rest*/rdf:first ?subj .
@@ -216,12 +223,33 @@ WHERE {
     }
     UNION
     {
-        # Extract restrictions within sh:or, sh:and, sh:xone, sh:not
+        # Extract restrictions within sh:or, sh:and, sh:xone, sh:not (lists inside NodeShape)
+        ?root (sh:or|sh:and|sh:xone|sh:not) ?list .
+        ?list rdf:rest*/rdf:first ?innerShape .
+        ?innerShape ?pred ?obj .
+        BIND(?innerShape AS ?subj)
+    }
+    UNION
+    {
+        # Extract restrictions within sh:or, sh:and, sh:xone, sh:not (lists inside PropertyShape)
         ?root sh:property ?propertyShape .
         ?propertyShape (sh:or|sh:and|sh:xone|sh:not) ?list .
         ?list rdf:rest*/rdf:first ?innerShape .
         ?innerShape ?pred ?obj .
         BIND(?innerShape AS ?subj)
+    }
+    UNION
+    {
+        # Extract sh:or, sh:and, sh:xone, sh:not (when they are direct nodes inside a NodeShape)
+        ?root (sh:or|sh:and|sh:xone|sh:not) ?subj .
+        ?subj ?pred ?obj .
+    }
+    UNION
+    {
+        # Extract sh:or, sh:and, sh:xone, sh:not (when they are direct nodes inside a PropertyShape)
+        ?root sh:property ?propertyShape .
+        ?propertyShape (sh:or|sh:and|sh:xone|sh:not) ?subj .
+        ?subj ?pred ?obj .
     }
     UNION
     {
@@ -232,6 +260,7 @@ WHERE {
         BIND(?propertyShape AS ?subj)
     }
 }
+
 """
 
 __all__ = [*locals().keys()]

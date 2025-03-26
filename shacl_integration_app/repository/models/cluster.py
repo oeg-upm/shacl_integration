@@ -26,7 +26,8 @@ class ConceptCluster(Cluster):
     
 @dataclass
 class NodeAxiomCluster(Cluster):
-    axiom_list: list[Axiom] = field(default_factory=list)
+    axiom_list: list[dict] = field(default_factory=list)
+    
 
     def __str__(self) -> str:
         return f"{super().__str__()}, node_axiom_list: {self.axiom_list}"
@@ -40,7 +41,7 @@ class PropertyCluster(Cluster):
     
 @dataclass
 class PropertyAxiomCluster(Cluster):
-    axiom_list: list[Axiom] = field(default_factory=list)
+    axiom_list: dict[list[Axiom]] = field(default_factory=dict)
 
     def __str__(self) -> str:
         return f"{super().__str__()}, property_axiom_list: {self.axiom_list}"

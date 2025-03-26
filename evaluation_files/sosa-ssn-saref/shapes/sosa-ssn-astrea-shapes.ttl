@@ -187,8 +187,13 @@
         rdfs:label        "System"@en ;
         sh:description    "System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other systems."@en ;
         sh:name           "System"@en ;
-        sh:nodeKind       sh:IRI ;
+        # sh:nodeKind       sh:IRI ;
         sh:property       <https://astrea.linkeddata.es/shapes#cd81dab8bce8117c90b05fbcf8d606bb> , <https://astrea.linkeddata.es/shapes#42d6396ea70fc1eb0ab385315cd1b78e> , <https://astrea.linkeddata.es/shapes#55c717bc8ac74dd482cacdc961be1ed8> , <https://astrea.linkeddata.es/shapes#fcf319f0451bc10f3362d90ee1f989dd> ;
+        sh:or   ( 
+                [ sh:nodeKind sh:IRI ]
+                [ sh:nodeKind sh:BlankNode ]
+                [ sh:nodeKind sh:BlankNodeOrIRI ]
+                ) ; # REMOVE THIS LINE!!!
         sh:targetClass    ssn:System .
 
 <https://astrea.linkeddata.es/shapes#332db225382194124a73229a23672adb>
