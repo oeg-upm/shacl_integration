@@ -1,10 +1,12 @@
-from shacl_integration_app.repository.models import Cluster
+from shacl_integration_app.repository.models import Cluster, ConceptCluster, NodeAxiomCluster, PropertyCluster, PropertyAxiomCluster, Axiom
 from rdflib import Graph
 from rdflib.query import Result
 from shacl_integration_app.repository.wrappers import get_time
 from shacl_integration_app.repository.constants import sparql_queries
 from shacl_integration_app.service.integration_engine.identification.cluster_generation.tuple_processor import TupleProcessor
 import os
+from collections import defaultdict
+import json
 
 # This Python class `ClusterGeneration` is designed to generate clusters based on ontology alignment
 # results and transitive alignment.
@@ -134,20 +136,122 @@ class ClusterGeneration:
 
         processor = TupleProcessor()
         new_hlt_tuples_aligned = processor.process_tuples(new_hlt_tuples_aligned)
+
+        # Step 2: Extract shapes from shacl shapes 
+
+        extraction_results: dict = {
+            "shape_extractions" : []
+        }
+        for shape_file in self.shapes_list:
+            shape: Graph = Graph()
+            shape.parse(shape_file)
+            results: Result = shape.query(sparql_queries.SPARQL_QUERY_EXTRACT_SHAPES)
+            if results:
+                extraction_results["shape_extractions"].extend(self.process_sparql_results(results))
+
+        # Step 3: Generate clusters
+
+        target_nodes_aligned: list[tuple[tuple[str]]] = [elem for elem in new_hlt_tuples_aligned if elem[0][2] == 'http://www.w3.org/ns/shacl#targetClass']
+
+        for target_node in target_nodes_aligned:
+            concept_cluster: ConceptCluster = ConceptCluster(concept=target_node[0][1]
+                                                             .replace(self.get_namespace(target_node[0][1]), "")
+                                                             .replace("#",  "")
+                                                             .replace("/", ""),
+                                                             concept_list=[elem[1] for elem in target_node], 
+                                                             node_axiom_cluster_list=self.node_axiom_cluster_generation(target_node=target_node, new_hlt_tuples_aligned=new_hlt_tuples_aligned, extraction_results=extraction_results),
+                                                             property_cluster_list=self.property_cluster_generation(target_node=target_node, new_hlt_tuples_aligned=new_hlt_tuples_aligned, extraction_results=extraction_results))
+            print(concept_cluster)
         
-        with open('new_hlt_tuples_aligned.txt', 'w') as f:
-            for item in new_hlt_tuples_aligned:
-                f.write("%s\n" % str(item))
+        
+        # with open('new_hlt_tuples_aligned.txt', 'w') as f:
+        #     for item in new_hlt_tuples_aligned:
+        #         f.write("%s\n" % str(item))
                 
-        with open('new_hlt_tuples_unaligned.txt', 'w') as f:
-            for item in new_hlt_tuples_unaligned:
-                f.write("%s\n" % str(item))
+        # with open('new_hlt_tuples_unaligned.txt', 'w') as f:
+        #     for item in new_hlt_tuples_unaligned:
+        #         f.write("%s\n" % str(item))
+
+        # with open('extraction_results.json', 'w') as f:
+        #     f.write(json.dumps(extraction_results, indent=4))
             
 
         # self.cluster_result_list
         return self.cluster_result_list
     
+    
+    def node_axiom_cluster_generation(self, target_node: tuple[tuple[str]], new_hlt_tuples_aligned: list[list[tuple[str]]], extraction_results: dict) -> list[Cluster]:
+        return []
+
+    def property_cluster_generation(self, target_node: tuple[tuple[str]], new_hlt_tuples_aligned: list[list[tuple[str]]], extraction_results: dict) -> list[Cluster]:
+        return []
+
+    def property_axiom_cluster_generation(self) -> Cluster:
+        pass
+
+    
+    def process_sparql_results(self, query_results: Result) -> list[dict[str, list[dict[str, str]]]]:
+        """
+        Processes SPARQL query results to extract and organize data into a structured format.
+        
+        :param query_results: SPARQL query results containing rows with root, subject, predicate, and object.
+        :return: A list of dictionaries, each representing a root and its associated triples.
+        """
+        data = {}
+        all_roots = set()
+        subj_objs = defaultdict(set)
+
+        for row in query_results:
+            root = str(row.root)
+            subject = str(row.subj)
+            predicate = str(row.pred)
+            obj = str(row.obj)
+
+            if root not in data:
+                data[root] = {"root": root, "triples": []}
+
+            data[root]["triples"].append({
+                "subject": subject,
+                "predicate": predicate,
+                "object": obj
+            })
+
+            all_roots.add(root)
+            subj_objs[root].update([subject, obj])
+
+        roots_to_remove = {
+            root for root in all_roots
+            if any(root in subj_objs[other_root] for other_root in all_roots if root != other_root)
+        }
+
+        for root in roots_to_remove:
+            data.pop(root, None)
+
+        return list(data.values())
+
+    
     def extract_alignments_from_tuples(self, hlt_node_tuples: list[tuple[str]], new_hlt_tuples_aligned: list[list[tuple[str]]], new_hlt_tuples_unaligned: list[tuple[str]]) -> list[list[tuple[str]]]:
+        """
+        The function `extract_alignments_from_tuples` processes a list of tuples to extract aligned and
+        unaligned tuples based on certain conditions.
+        
+        :param hlt_node_tuples: The `hlt_node_tuples` parameter is a list of tuples where each tuple
+        contains two strings. This function seems to iterate over each tuple in `hlt_node_tuples`, check
+        for alignments in `alignment_tuples_result`, and then categorize the tuples into
+        `new_hlt_tuples_aligned` or `
+        :type hlt_node_tuples: list[tuple[str]]
+        :param new_hlt_tuples_aligned: The `new_hlt_tuples_aligned` parameter is a list of lists where
+        each inner list contains tuples of strings. This parameter is used to store aligned tuples
+        extracted from the `hlt_node_tuples` based on certain conditions in the
+        `extract_alignments_from_tuples` method
+        :type new_hlt_tuples_aligned: list[list[tuple[str]]]
+        :param new_hlt_tuples_unaligned: The parameter `new_hlt_tuples_unaligned` in the function
+        `extract_alignments_from_tuples` is a list of tuples containing strings. This list is used to
+        store the tuples that do not have any alignments based on the logic implemented in the function
+        :type new_hlt_tuples_unaligned: list[tuple[str]]
+        :return: The function `extract_alignments_from_tuples` returns two lists:
+        `new_hlt_tuples_aligned` and `new_hlt_tuples_unaligned`.
+        """
         for hlt in hlt_node_tuples:
             new_hlt_node = list(hlt)
             flag: int = 0
@@ -169,14 +273,3 @@ class ClusterGeneration:
 
 
 
-    def node_axiom_cluster_generation(self) -> Cluster:
-        pass
-
-    def property_cluster_generation(self) -> Cluster:
-        pass
-
-    def property_axiom_cluster_generation(self) -> Cluster:
-        pass
-
-
-    

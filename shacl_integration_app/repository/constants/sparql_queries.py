@@ -185,5 +185,53 @@ WHERE {{
 """)
 
 
+SPARQL_QUERY_EXTRACT_SHAPES: str = """
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?root ?propertyShape ?subj ?pred ?obj
+WHERE {
+    {
+        # Extract all triples from the main NodeShape
+        ?root a ?type .
+        VALUES ?type { sh:NodeShape sh:PropertyShape }
+        BIND(?root AS ?subj)
+        ?subj ?pred ?obj .
+    }
+    UNION
+    {
+        # Extract all properties (including rdfs:comment and others)
+        ?root sh:property ?propertyShape .
+        BIND(?propertyShape AS ?subj)
+        ?subj ?pred ?obj .
+    }
+    UNION
+    {
+        # Extract sh:or, sh:and, sh:xone, sh:not within each PropertyShape
+        ?root sh:property ?propertyShape .
+        ?propertyShape (sh:or|sh:and|sh:xone|sh:not) ?list .
+        ?list rdf:rest*/rdf:first ?subj .
+        ?subj ?pred ?obj .
+    }
+    UNION
+    {
+        # Extract restrictions within sh:or, sh:and, sh:xone, sh:not
+        ?root sh:property ?propertyShape .
+        ?propertyShape (sh:or|sh:and|sh:xone|sh:not) ?list .
+        ?list rdf:rest*/rdf:first ?innerShape .
+        ?innerShape ?pred ?obj .
+        BIND(?innerShape AS ?subj)
+    }
+    UNION
+    {
+        # Extract rdfs:comment and other predicates within each PropertyShape
+        ?root sh:property ?propertyShape .
+        ?propertyShape ?pred ?obj .
+        FILTER(?pred != sh:property)  # Exclude sh:property to avoid duplicating properties
+        BIND(?propertyShape AS ?subj)
+    }
+}
+"""
 
 __all__ = [*locals().keys()]
