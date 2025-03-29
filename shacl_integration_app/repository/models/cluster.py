@@ -11,7 +11,12 @@ class Cluster:
     id: str = field(init=False)
 
     def __post_init__(self):
-        self.id = hashlib.sha1(self.concept.encode("utf-8")).hexdigest()
+        if self.concept != "default_cluster":
+            self.id = hashlib.sha1(self.concept.encode("utf-8")).hexdigest()
+        elif self.concept_list is not []:
+            self.id = hashlib.sha1("".join(self.concept_list).encode("utf-8")).hexdigest()
+        else:
+            self.id = str(uuid.uuid4())
 
     def __str__(self) -> str:
         return f"concept: {self.concept}, concept_list: {self.concept_list}, id: {self.id}"

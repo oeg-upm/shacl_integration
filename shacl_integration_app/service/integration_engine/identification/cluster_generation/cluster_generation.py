@@ -9,6 +9,7 @@ import os
 from collections import defaultdict
 import json
 import re
+import hashlib
 
 # This Python class `ClusterGeneration` is designed to generate clusters based on ontology alignment
 # results and transitive alignment.
@@ -117,9 +118,6 @@ class ClusterGeneration:
         return self.cluster_result_list
     
     def cluster_generation(self) -> list[Cluster]:
-        # self.shapes_list
-        # tuple_result_list
-        # self.alignment_tuples_result
 
         # Step 1: Search for alignments in the tuple_result_list for node shapes
         path_list: list[str] = ['http://www.w3.org/ns/shacl#targetClass', 'http://www.w3.org/ns/shacl#path', 'http://www.w3.org/ns/shacl#targetObjectsOf', 'http://www.w3.org/ns/shacl#targetSubjectsOf']
@@ -154,6 +152,7 @@ class ClusterGeneration:
         # Step 3: Generate clusters
 
         target_nodes_aligned: list[tuple[tuple[str]]] = [elem for elem in new_hlt_tuples_aligned if elem[0][2] == 'http://www.w3.org/ns/shacl#targetClass']
+        target_nodes_unaligned: list[tuple[tuple[str]]] = [elem for elem in new_hlt_tuples_unaligned if elem[2] == 'http://www.w3.org/ns/shacl#targetClass']
 
         for target_node in target_nodes_aligned:
             concept_cluster: ConceptCluster = ConceptCluster(concept=target_node[0][1]
@@ -163,8 +162,26 @@ class ClusterGeneration:
                                                              concept_list=[elem[1] for elem in target_node], 
                                                              node_axiom_cluster_list=self.node_axiom_cluster_generation(target_node=target_node, 
                                                              extraction_results=extraction_results),
-                                                             property_cluster_list=self.property_cluster_generation(target_node=target_node, new_hlt_tuples_unaligned=new_hlt_tuples_unaligned, new_hlt_tuples_aligned=new_hlt_tuples_aligned, extraction_results=extraction_results))
-            # print(concept_cluster)
+                                                             property_cluster_list=self.property_cluster_generation(target_node=target_node,
+                                                                                                                    new_hlt_tuples_aligned=new_hlt_tuples_aligned,
+                                                                                                                    extraction_results=extraction_results))
+        
+            self.cluster_result_list.append(concept_cluster)
+        
+        for target_node in target_nodes_unaligned:
+            concept_cluster: ConceptCluster = ConceptCluster(concept=target_node[1]
+                                                             .replace(self.get_namespace(target_node[1]), "")
+                                                             .replace("#",  "")
+                                                             .replace("/", ""),
+                                                             concept_list=[target_node[1]], 
+                                                             node_axiom_cluster_list=self.node_axiom_cluster_generation(target_node=[target_node], # Aquí el target node es una única tupla, por lo que lo metemos en una lista y así vale el mismo código
+                                                             extraction_results=extraction_results),
+                                                             property_cluster_list=self.property_cluster_generation(target_node=[target_node], # Aquí el target node es una única tupla, por lo que lo metemos en una lista y así vale el mismo código
+                                                                                                                    new_hlt_tuples_aligned=new_hlt_tuples_aligned,
+                                                                                                                    extraction_results=extraction_results))
+        
+            self.cluster_result_list.append(concept_cluster)
+        
         
         
         # with open('new_hlt_tuples_aligned.txt', 'w') as f:
@@ -177,9 +194,10 @@ class ClusterGeneration:
 
         # with open('extraction_results.json', 'w') as f:
         #     f.write(json.dumps(extraction_results, indent=4))
-            
+        
+        # with open('cluster_result_list.txt', 'w') as f:
+        #     f.write(str(self.cluster_result_list))
 
-        # self.cluster_result_list
         return self.cluster_result_list
     
     
@@ -243,23 +261,28 @@ class ClusterGeneration:
         cluster_list: list[Cluster] = [NodeAxiomCluster(concept=res["constraint"],
                                                         axiom_list=res["axioms"])
                                                         for res in result_dict]
-          
+        
         return cluster_list
     
 
-    def property_cluster_generation(self, target_node: tuple[tuple[str]], new_hlt_tuples_unaligned: list[list[tuple[str]]], new_hlt_tuples_aligned: list[list[tuple[str]]], extraction_results: dict) -> list[Cluster]:
+    def property_cluster_generation(self, target_node: tuple[tuple[str]], new_hlt_tuples_aligned: list[list[tuple[str]]], extraction_results: dict) -> list[Cluster]:
         axiom_list, axiom_logical_list = self.property_axiom_cluster_generation(target_node=target_node, extraction_results=extraction_results)
+
+        axiom_list.extend(axiom_logical_list)
                                 
-        # ANALYSE HERE IF THERE ARE PROPERTY SHAPES THAT ARE ALIGNED
+        # # ANALYSE HERE IF THERE ARE PROPERTY SHAPES THAT ARE ALIGNED
 
-
+        res = []
         if axiom_list != []:
-            print(axiom_list)
-        # if axiom_logical_list != []:
-        #     print(axiom_logical_list)
-
-        return []
-
+            # print(axiom_list)
+            # for axiom in axiom_list:
+            #     if axiom.obj == "http://www.w3.org/ns/ssn/hasProperty":
+            #         res = self.group_axioms_by_path(axioms=axiom_list, aligned_paths=new_hlt_tuples_aligned)
+            #         print("here")
+            #         with open ('axiom_list.txt', 'w') as f:
+            #             f.write(str(res))
+            res = self.group_axioms_by_path(axioms=axiom_list, aligned_paths=new_hlt_tuples_aligned)
+        return res
 
 
     def property_axiom_cluster_generation(self, target_node: tuple[tuple[str]], extraction_results: dict) -> tuple[list[Axiom], list[Axiom]]:
@@ -272,9 +295,9 @@ class ClusterGeneration:
                         stop_word_list: list[str] = ['http://www.w3.org/ns/shacl#or', 'http://www.w3.org/ns/shacl#and', 'http://www.w3.org/ns/shacl#xone', 'http://www.w3.org/ns/shacl#not', 'http://www.w3.org/2000/01/rdf-schema#isDefinedBy', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type']
                         logical_stop_word_list: list[str] = ['http://www.w3.org/ns/shacl#or', 'http://www.w3.org/ns/shacl#and', 'http://www.w3.org/ns/shacl#xone', 'http://www.w3.org/ns/shacl#not']
                         if triple["subject"] == node[0] and triple["predicate"] == 'http://www.w3.org/ns/shacl#property':
-                            property_triples = [[triple2['predicate'], triple2["object"]] for triple2 in res["triples"] if triple2["subject"] == triple["object"] and triple2["subject"] == triple['object'] and triple2["predicate"] not in stop_word_list] # This works
-                            # print(property_triples)
-                            [axiom_list.append(Axiom(pred=property_triple[0], obj=property_triple[1], link=triple["subject"])) for property_triple in property_triples if property_triples] # This also works
+                            property_triples = [[triple2['predicate'], triple2["object"], triple2["subject"]] for triple2 in res["triples"] if triple2["subject"] == triple["object"] and triple2["subject"] == triple['object'] and triple2["predicate"] not in stop_word_list] # This works
+                            
+                            [axiom_list.append(Axiom(pred=property_triple[0], obj=property_triple[1], link=property_triple[2])) for property_triple in property_triples if property_triples] # This also works
                             
                             logic_constraints = [[triple2["predicate"], triple2["object"]] for triple2 in res["triples"] if triple2["subject"] == triple["object"] and triple2["predicate"] in logical_stop_word_list] # This also works
 
@@ -303,16 +326,18 @@ class ClusterGeneration:
                                     counter: int = int(match_rest.group()) - 2
                                     logic_list: list[str] = [match_first_without_num + str(i) for i in range(int(match_first.group()), counter + 1)]
                                     for logic in logic_list:
-                                        axiom_logical_list.extend([Axiom(pred=triple2["predicate"],
+                                        axiom_class = [Axiom(pred=triple2["predicate"],
                                                                     obj=triple2["object"],
                                                                     link=logic,
                                                                     logical_operator=logic_triples["logical_operator"]
                                                                     .replace(self.get_namespace(triple["predicate"]), "")
                                                                     .replace("#",  ""))
-                                                                    for triple2 in res["triples"] if triple2["subject"] == logic and triple2["predicate"] not in stop_word_list])
+                                                                    for triple2 in res["triples"] if triple2["subject"] == logic and triple2["predicate"] not in stop_word_list]
+                                        
+                                        axiom_logical_list.extend(axiom_class)
         return axiom_list, axiom_logical_list
 
-    
+
     def process_sparql_results(self, query_results: Result) -> list[dict[str, list[dict[str, str]]]]:
         """
         Processes SPARQL query results to extract and organize data into a structured format.
@@ -352,29 +377,8 @@ class ClusterGeneration:
 
         return list(data.values())
 
-    
+
     def extract_alignments_from_tuples(self, hlt_node_tuples: list[tuple[str]], new_hlt_tuples_aligned: list[list[tuple[str]]], new_hlt_tuples_unaligned: list[tuple[str]]) -> list[list[tuple[str]]]:
-        """
-        The function `extract_alignments_from_tuples` processes a list of tuples to extract aligned and
-        unaligned tuples based on certain conditions.
-        
-        :param hlt_node_tuples: The `hlt_node_tuples` parameter is a list of tuples where each tuple
-        contains two strings. This function seems to iterate over each tuple in `hlt_node_tuples`, check
-        for alignments in `alignment_tuples_result`, and then categorize the tuples into
-        `new_hlt_tuples_aligned` or `
-        :type hlt_node_tuples: list[tuple[str]]
-        :param new_hlt_tuples_aligned: The `new_hlt_tuples_aligned` parameter is a list of lists where
-        each inner list contains tuples of strings. This parameter is used to store aligned tuples
-        extracted from the `hlt_node_tuples` based on certain conditions in the
-        `extract_alignments_from_tuples` method
-        :type new_hlt_tuples_aligned: list[list[tuple[str]]]
-        :param new_hlt_tuples_unaligned: The parameter `new_hlt_tuples_unaligned` in the function
-        `extract_alignments_from_tuples` is a list of tuples containing strings. This list is used to
-        store the tuples that do not have any alignments based on the logic implemented in the function
-        :type new_hlt_tuples_unaligned: list[tuple[str]]
-        :return: The function `extract_alignments_from_tuples` returns two lists:
-        `new_hlt_tuples_aligned` and `new_hlt_tuples_unaligned`.
-        """
         for hlt in hlt_node_tuples:
             new_hlt_node = list(hlt)
             flag: int = 0
@@ -395,4 +399,107 @@ class ClusterGeneration:
         return new_hlt_tuples_aligned, new_hlt_tuples_unaligned
 
 
+    def group_axioms_by_path(self, axioms, aligned_paths):
+        path_to_link = defaultdict(list)
+        grouped_axioms = defaultdict(lambda: defaultdict(list))
+        link_to_paths = defaultdict(set)
 
+        # Recorremos los axiomas para obtener el mapeo de links a paths
+        for axiom in axioms:
+            if axiom.pred.endswith("#path"):
+                path_to_link[axiom.link].append(axiom.obj)
+                link_to_paths[axiom.obj].add(axiom.link)
+
+        # Mapeo de paths alineados
+        aligned_map = {}
+        for paths_group in aligned_paths:
+            unified_paths = set()
+            for _, path_value, path_type in paths_group:
+                if path_type == "http://www.w3.org/ns/shacl#path":
+                    unified_paths.add(path_value)
+            for path in unified_paths:
+                aligned_map[path] = unified_paths
+
+            # Guardamos en el diccionario global solo cuando se encuentra un aligned_path
+            if unified_paths:
+                unified_paths_id = hashlib.sha1("".join(unified_paths).encode("utf-8")).hexdigest()
+                global_aligned_properties_res[unified_paths_id] = {
+                    "aligned_path": unified_paths
+                }
+
+        # Agrupar axiomas según los paths alineados
+        for axiom in axioms:
+            if axiom.link in path_to_link and not axiom.pred.endswith("#path"):
+                paths = set(path_to_link[axiom.link])
+                aligned_paths_set = set()
+                for path in paths:
+                    # Verifica si el path está alineado
+                    aligned_paths_set.update(aligned_map.get(path, set()))
+
+                # Solo agrupar si hay rutas alineadas
+                if aligned_paths_set:
+                    grouped_axioms[tuple(sorted(aligned_paths_set))][axiom.pred].append(axiom.obj)
+                else:
+                    # Si no está alineado, no agrupar
+                    grouped_axioms[tuple(sorted(paths))][axiom.pred].append(axiom.obj)
+
+        # Función para determinar el operador lógico predominante
+        def get_predominant_operator(operators):
+            precedence = {"or": 1, "and": 2, "not": 3, "xone": 4}
+            max_precedence = float("inf")
+            predominant = None
+            if operators != {None}:
+                for op in operators:
+                    op_precedence = precedence.get(op, float("inf"))
+                    if op_precedence < max_precedence:
+                        max_precedence = op_precedence
+                        predominant = op
+            else:
+                predominant = "None"
+            return predominant
+
+        # Formar el resultado con las claves necesarias
+        result = []
+        for path, predicates in grouped_axioms.items():
+            group = {"path": list(path), "axioms": []}
+
+            # Obtener todos los operadores lógicos en los axiomas del grupo
+            operators = set()
+            logical_operator = None
+
+            # Iterate over predicates and objects to obtain logical operators
+            for pred, objs in predicates.items():
+                
+                for obj in objs:
+                    # Here it filters to ensure that only the axioms of the current group are processed
+                    for axiom in axioms:
+                        if axiom.pred == pred and axiom.obj == obj:
+                            operators.add(axiom.logical_operator)
+
+            # Determinar el operador lógico predominante
+            logical_operator = get_predominant_operator(operators)
+            if logical_operator:
+                group["logical_operator"] = logical_operator
+
+            # Añadir los axiomas al grupo
+            for pred, objs in predicates.items():
+                # remove duplicates
+                objs = list(set(objs))
+                group["axioms"].append({"predicate": pred, "objects": objs})
+
+            # Crear PropertyCluster incluso si no se encuentra en el diccionario global
+            property_cluster = PropertyCluster(
+                property_axiom_cluster_list=[group],
+                concept_list=list(path),
+            )
+
+            # Si encontramos una coincidencia en el diccionario global, asignamos el id
+            for cluster_id, cluster_info in global_aligned_properties_res.items():
+                if set(path).issubset(cluster_info["aligned_path"]):
+                    property_cluster.id = cluster_id  # Asignar el id del diccionario global
+                    break  # Si ya encontramos el id, no es necesario seguir buscando
+
+            # Añadir el PropertyCluster al resultado
+            result.append(property_cluster)
+
+        return result

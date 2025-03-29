@@ -8,6 +8,7 @@
 
 
 (('http://stko-kwg.geog.ucsb.ed/sosa-shacl/FeatureOfInterestConstraint', 'http://www.w3.org/ns/ssn/hasProperty', 'http://www.w3.org/ns/shacl#path'), ('https://astrea.linkeddata.es/shapes#0a5804dbf271e1e0746c63e997fd9601', 'https://saref.etsi.org/core/hasProperty', 'http://www.w3.org/ns/shacl#path'), ('https://astrea.linkeddata.es/shapes#1fddf06fe6e9b90dfa54ea35fe9edfb7', 'https://saref.etsi.org/core/hasProperty', 'http://www.w3.org/ns/shacl#path'), ('https://astrea.linkeddata.es/shapes#34c0f55f8f3f3c58d9cb361df2984c77', 'https://saref.etsi.org/core/hasProperty', 'http://www.w3.org/ns/shacl#path'), ('https://astrea.linkeddata.es/shapes#37d326bac283bb914605639aa82dfc51', 'http://www.w3.org/ns/ssn/hasProperty', 'http://www.w3.org/ns/shacl#path'), ('https://astrea.linkeddata.es/shapes#811ef72b6ccea344721cf0bcfa6618ba', 'http://www.w3.org/ns/ssn/hasProperty', 'http://www.w3.org/ns/shacl#path'), ('https://astrea.linkeddata.es/shapes#e85f7f569c1b43b31809a79038a33ed0', 'http://www.w3.org/ns/ssn/hasProperty', 'http://www.w3.org/ns/shacl#path'))
+
 (('https://astrea.linkeddata.es/shapes#3e18b0f9fac2d3bdcd51a2fdadcbda53', 'http://www.w3.org/2006/time#TemporalEntity', 'http://www.w3.org/ns/shacl#targetClass'),)
 (('https://astrea.linkeddata.es/shapes#1747a03e68342090168eaf0538c06be3', 'http://www.w3.org/ns/ssn/Property', 'http://www.w3.org/ns/shacl#targetClass'), ('https://astrea.linkeddata.es/shapes#d8fcc404ec3569ab405576151e2c63f9', 'https://saref.etsi.org/core/Property', 'http://www.w3.org/ns/shacl#targetClass'))
 
