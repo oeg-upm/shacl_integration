@@ -7,3 +7,6 @@ class Action_Library():
         self.returnSecond = Action(name="Return Second", execution_function=lambda fact: fact.second)
         self.returnNone = Action(name="Return None", execution_function=lambda fact: None)
         self.returnNotNone = Action(name="Return Not None", execution_function=lambda fact: fact.first if fact.first != None else fact.second)
+
+        self.returnTrue = Action(name="Return True", execution_function=lambda fact: True)
+        self.returnFalse = Action(name="Return False", execution_function=lambda fact: False)

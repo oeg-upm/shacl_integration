@@ -8,7 +8,7 @@ import hashlib
 class Cluster:
     concept: str = "default_cluster"
     concept_list : list[str] = field(default_factory=list)
-    id: str = field(init=False)
+    id: str = '' # CHANGE TO field(init=False) 
 
     def __post_init__(self):
         if self.concept != "default_cluster":

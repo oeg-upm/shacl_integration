@@ -38,10 +38,10 @@ def integration(id: str, operation: str) -> str:
     result: dict = integration.execute()
 
     # Check if the result is valid
-    if all(key in result for key in ['integrated_shape_path', 'inconsistence_report_path']):
+    if all(key in result for key in ['integrated_shape_path', 'inconsistences_report_path']):
         return MESSAGE_INTEGRATION_OK(id=id, operation=operation,
                                       integrated_shape_path=result['integrated_shape_path'],
-                                      inconsistence_report_path=result['inconsistence_report_path']
+                                      inconsistences_report_path=result['inconsistences_report_path']
                                       ), OK
     else:
         return MESSAGE_INTEGRATION_KO(id=id,

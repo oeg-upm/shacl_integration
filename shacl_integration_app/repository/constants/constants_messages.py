@@ -1,10 +1,10 @@
 # OK messages
 
-MESSAGE_INTEGRATION_OK: dict = (lambda id, operation, integrated_shape_path, inconsistence_report_path : {
+MESSAGE_INTEGRATION_OK: dict = (lambda id, operation, integrated_shape_path, inconsistences_report_path : {
     "message": f'Integration of shapes with id: [{id}], using operation: [{operation}]',
     "status": "OK",
     "integrated_shape": f'{integrated_shape_path}',
-    "inconsistence_report": f'{inconsistence_report_path}'
+    "inconsistences_report": f'{inconsistences_report_path}'
     })
 
 # KO messages
