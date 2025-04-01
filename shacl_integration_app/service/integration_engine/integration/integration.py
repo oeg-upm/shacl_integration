@@ -59,7 +59,8 @@ class Integration:
             # concept_clusters_without_inconsistences: list[Cluster] = self.concept_clusters.copy() # TODO: update this list with the filtered clusters removing the clusters with inconsistences
 
             inconsistences_filter = InconsistencesFilter(concept_clusters=self.concept_clusters,
-                                                         inconsistences_report_path=inconsistences_report_path)
+                                                         inconsistences_report_path=inconsistences_report_path,
+                                                         integration_option=self.integration_option)
             concept_clusters_without_inconsistences: list[Cluster] = inconsistences_filter.filter_inconsistencies()
         
             if concept_clusters_without_inconsistences == self.concept_clusters:

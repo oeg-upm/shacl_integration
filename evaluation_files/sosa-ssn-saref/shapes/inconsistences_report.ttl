@@ -1,0 +1,20 @@
+@prefix inc: <http://www.inconsistence.es#> .
+@prefix inc-ex: <http://www.inconsistence_example.es/resource/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+
+inc-ex:ddbe1d39-0dd7-4f34-a386-f23ae54e64d3 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:or ;
+    inc:hasInconsistencyInClass ssn:System,
+        <https://saref.etsi.org/saref4syst/System> ;
+    inc:hasReport "Logical constraints not compatible for intersection operation." .
+
+inc-ex:f95cde4f-43d8-4f46-94e0-0691e93dac77 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:maxCount,
+        sh:minCount ;
+    inc:hasInconsistencyInClass sosa:Actuation,
+        <https://saref.etsi.org/core/Actuation> ;
+    inc:hasInconsistencyPath sosa:madeByActuator ;
+    inc:hasReport "sh:minCount greater or equals than sh:maxCount." .
+

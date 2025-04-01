@@ -39,8 +39,8 @@ class Condition_Library():
 
 
         # Language condition
-        self.languageIn = Condition(name="Language", evaluation_function=lambda fact: True if fact.uniqueLang != None and type(fact.uniqueLang) == str and fact.languageIn != None and type(fact.languageIn) == list and fact.uniqueLang not in fact.languageIn else False)
-        self.uniqueLang = Condition(name="Language", evaluation_function=lambda fact: True if fact.uniqueLang1 != None and type(fact.uniqueLang1) == str and fact.uniqueLang1 != None and type(fact.uniqueLang2) == str and fact.uniqueLang1 != fact.uniqueLang2 else False)
+        self.languageIn = Condition(name="languageIn", evaluation_function=lambda fact: True if fact.uniqueLang != None and type(fact.uniqueLang) == bool and fact.languageIn != None and type(fact.languageIn) == list and fact.uniqueLang == True and len(fact.languageIn) > 1 else False)
+        self.uniqueLang = Condition(name="uniqueLang", evaluation_function=lambda fact: True if fact.uniqueLang1 != None and type(fact.uniqueLang1) == bool and fact.uniqueLang1 != None and type(fact.uniqueLang2) == bool and fact.uniqueLang1 != fact.uniqueLang2 else False)
 
         # In condition
         self.inCondition = Condition(name="In", evaluation_function=lambda fact: True if fact.in1 != None and type(fact.in1) == list and fact.in2 != None and type(fact.in2) == list and fact.in1 != fact.in2 else False)
