@@ -208,6 +208,11 @@ WHERE {
     }
     UNION
     {
+        ?root sh:qualifiedValueShape ?subj .
+        ?subj ?pred ?obj .
+    }
+    UNION
+    {
         # Extract sh:or, sh:and, sh:xone, sh:not when defined in the NodeShape directly
         ?root (sh:or|sh:and|sh:xone|sh:not) ?list .
         ?list rdf:rest*/rdf:first ?subj .
@@ -219,6 +224,12 @@ WHERE {
         ?root sh:property ?propertyShape .
         ?propertyShape (sh:or|sh:and|sh:xone|sh:not) ?list .
         ?list rdf:rest*/rdf:first ?subj .
+        ?subj ?pred ?obj .
+    }
+    UNION
+    {
+        ?root sh:property ?propertyShape .
+        ?root sh:qualifiedValueShape ?subj .
         ?subj ?pred ?obj .
     }
     UNION
@@ -260,7 +271,6 @@ WHERE {
         BIND(?propertyShape AS ?subj)
     }
 }
-
 """
 
 __all__ = [*locals().keys()]

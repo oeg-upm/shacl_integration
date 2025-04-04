@@ -30,3 +30,16 @@ class Rule_Library():
         self.intersectionMinSecond = Rule(condition=self.condition_library.minSecond, action=self.action_library.returnFirst)
         self.intersectionMinNone = Rule(condition=self.condition_library.minNone, action=self.action_library.returnNotNone)
         self.intersectionMinRules = [self.intersectionMinFirst, self.intersectionMinSecond, self.intersectionMinNone]
+
+        # INTEGRATION RULES
+        
+        # NodeKind
+        self.nodeKindIRIOnlyIntegration = Rule(condition=self.condition_library.nodeKindIRIOnlyIntegration, action=self.action_library.returnOne, else_action=self.action_library.returnZero)
+        self.nodeKindLiteralOnlyIntegration = Rule(condition=self.condition_library.nodeKindLiteralOnlyIntegration, action=self.action_library.returnOne, else_action=self.action_library.returnZero)
+        self.nodeKindBlankNodeOnlyIntegration = Rule(condition=self.condition_library.nodeKindBlankNodeOnlyIntegration, action=self.action_library.returnOne, else_action=self.action_library.returnZero)
+        self.nodeKindIRIIntegration = Rule(condition=self.condition_library.nodeKindIRIIntegration, action=self.action_library.returnOne, else_action=self.action_library.returnZero)
+        self.nodeKindLiteralIntegration = Rule(condition=self.condition_library.nodeKindLiteralIntegration, action=self.action_library.returnOne, else_action=self.action_library.returnZero)
+        self.nodeKindBlankNodeIntegration = Rule(condition=self.condition_library.nodeKindBlankNodeIntegration, action=self.action_library.returnOne, else_action=self.action_library.returnZero)
+        self.integrationNodeKindRules = [self.nodeKindIRIOnlyIntegration, self.nodeKindLiteralOnlyIntegration, self.nodeKindBlankNodeOnlyIntegration, self.nodeKindIRIIntegration, self.nodeKindLiteralIntegration, self.nodeKindBlankNodeIntegration]
+
+

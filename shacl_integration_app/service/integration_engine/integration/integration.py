@@ -81,6 +81,9 @@ class Integration:
         # output -> concept_clusters_integrated
         try:
             concept_clusters_integrated: list[Cluster] = concept_clusters_without_inconsistences.copy()
+            integration_operation = IntegrationOperation(concept_clusters=concept_clusters_without_inconsistences,
+                                                          integration_option=self.integration_option)
+            concept_clusters_integrated = integration_operation.execute_integration()
             return concept_clusters_integrated
         except Exception as e:
             return (f"Error during integration operation: {e}")

@@ -6,6 +6,7 @@ class Axiom:
     obj: str
     logical_operator: str = None
     link: str = None
+    qualified_value_shape: str = None
 
     def __str__(self) -> str:
         return f"Axiom predicate: {self.pred}, axiom object: {self.obj}, logical operator: {self.logical_operator}, link: {self.link}"

@@ -10,3 +10,6 @@ class Action_Library():
 
         self.returnTrue = Action(name="Return True", execution_function=lambda fact: True)
         self.returnFalse = Action(name="Return False", execution_function=lambda fact: False)
+
+        self.returnOne = Action(name="Return Binary", execution_function=lambda fact: 1)
+        self.returnZero = Action(name="Return Binary", execution_function=lambda fact: 0)

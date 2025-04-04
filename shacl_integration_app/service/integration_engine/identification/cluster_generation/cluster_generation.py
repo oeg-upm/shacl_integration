@@ -208,9 +208,17 @@ class ClusterGeneration:
             for res in extraction_results["shape_extractions"]:
                 if res["root"] == node[0]:
                     for triple in res["triples"]:
-                        not_list_with_property: list[str] = ['http://www.w3.org/ns/shacl#property', 'http://www.w3.org/ns/shacl#or', 'http://www.w3.org/ns/shacl#and', 'http://www.w3.org/ns/shacl#xone', 'http://www.w3.org/ns/shacl#not', 'http://www.w3.org/2000/01/rdf-schema#isDefinedBy', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type']
+                        not_list_with_property: list[str] = ['http://www.w3.org/ns/shacl#property', 'http://www.w3.org/ns/shacl#or', 'http://www.w3.org/ns/shacl#and', 'http://www.w3.org/ns/shacl#xone', 'http://www.w3.org/ns/shacl#not', 'http://www.w3.org/2000/01/rdf-schema#isDefinedBy', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'http://www.w3.org/ns/shacl#qualifiedValueShape']
                         if triple["subject"] == node[0] and triple["predicate"] not in not_list_with_property:
                             axiom_list.append(Axiom(pred=triple["predicate"], obj=triple["object"]))
+                        
+                        elif triple["subject"] == node[0] and triple["predicate"] in not_list_with_property and triple["predicate"] not in ['http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'http://www.w3.org/2000/01/rdf-schema#isDefinedBy', 'http://www.w3.org/ns/shacl#property']:
+                            print("hola estoy aquí1")
+                            print(triple["predicate"])
+
+                        if triple["subject"] == node[0] and triple["predicate"] == 'http://www.w3.org/ns/shacl#qualifiedValueShape':
+                            print("hola estoy aquí2")
+                            [axiom_list.append(Axiom(pred=triple2["predicate"], obj=triple2["object"], qualified_value_shape='qualified')) for triple2 in res["triples"] if triple2["subject"] == triple["object"]]
 
                         not_list_without_property: list[str] = ['http://www.w3.org/ns/shacl#or', 'http://www.w3.org/ns/shacl#and', 'http://www.w3.org/ns/shacl#xone', 'http://www.w3.org/ns/shacl#not']
                         if triple["subject"] == node[0] and triple["predicate"] in not_list_without_property:
@@ -247,7 +255,7 @@ class ClusterGeneration:
                 cluster = {
                     "constraint": axiom[0].pred,
                     "axioms": [
-                        {"obj": ax.obj, "logical_operator": ax.logical_operator} for ax in axiom
+                        {"obj": ax.obj, "logical_operator": ax.logical_operator, "qualified_value_shape": ax.qualified_value_shape} for ax in axiom
                     ]
                 }
                 # Remove duplicate axioms
@@ -292,12 +300,17 @@ class ClusterGeneration:
             for res in extraction_results['shape_extractions']:
                 if res["root"] == node[0]:
                     for triple in res["triples"]:
-                        stop_word_list: list[str] = ['http://www.w3.org/ns/shacl#or', 'http://www.w3.org/ns/shacl#and', 'http://www.w3.org/ns/shacl#xone', 'http://www.w3.org/ns/shacl#not', 'http://www.w3.org/2000/01/rdf-schema#isDefinedBy', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type']
+                        stop_word_list: list[str] = ['http://www.w3.org/ns/shacl#or', 'http://www.w3.org/ns/shacl#and', 'http://www.w3.org/ns/shacl#xone', 'http://www.w3.org/ns/shacl#not', 'http://www.w3.org/2000/01/rdf-schema#isDefinedBy', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'http://www.w3.org/ns/shacl#qualifiedValueShape']
                         logical_stop_word_list: list[str] = ['http://www.w3.org/ns/shacl#or', 'http://www.w3.org/ns/shacl#and', 'http://www.w3.org/ns/shacl#xone', 'http://www.w3.org/ns/shacl#not']
                         if triple["subject"] == node[0] and triple["predicate"] == 'http://www.w3.org/ns/shacl#property':
                             property_triples = [[triple2['predicate'], triple2["object"], triple2["subject"]] for triple2 in res["triples"] if triple2["subject"] == triple["object"] and triple2["subject"] == triple['object'] and triple2["predicate"] not in stop_word_list] # This works
                             
                             [axiom_list.append(Axiom(pred=property_triple[0], obj=property_triple[1], link=property_triple[2])) for property_triple in property_triples if property_triples] # This also works
+
+                            qualified_triples = [[triple2["subject"], triple2["object"]] for triple2 in res["triples"] if triple2["subject"] == triple["object"] and triple2["predicate"] == 'http://www.w3.org/ns/shacl#qualifiedValueShape'] # This also works
+
+                            if qualified_triples:
+                                [axiom_list.append(Axiom(pred=triple2["predicate"], obj=triple2["object"], link=qualified_triples[0][0], qualified_value_shape='qualified')) for triple2 in res["triples"] if triple2["subject"] == qualified_triples[0][1]]
                             
                             logic_constraints = [[triple2["predicate"], triple2["object"]] for triple2 in res["triples"] if triple2["subject"] == triple["object"] and triple2["predicate"] in logical_stop_word_list] # This also works
 
@@ -349,11 +362,14 @@ class ClusterGeneration:
         all_roots = set()
         subj_objs = defaultdict(set)
 
+        example = ''
+
         for row in query_results:
             root = str(row.root)
             subject = str(row.subj)
             predicate = str(row.pred)
             obj = str(row.obj)
+
 
             if root not in data:
                 data[root] = {"root": root, "triples": []}
@@ -367,11 +383,25 @@ class ClusterGeneration:
             all_roots.add(root)
             subj_objs[root].update([subject, obj])
 
-        roots_to_remove = {
-            root for root in all_roots
-            if any(root in subj_objs[other_root] for other_root in all_roots if root != other_root)
-        }
+        roots_to_remove = set()
 
+        for root in all_roots:
+            # Verifica si root aparece en los sujetos/objetos de otros roots
+            referenced_elsewhere = any(
+                root in subj_objs[other_root]
+                for other_root in all_roots
+                if other_root != root
+            )
+
+            if referenced_elsewhere:
+                # Busca si root tiene algún triple donde él mismo es el subject
+                root_triples = data[root]["triples"]
+                has_own_info = any(triple["subject"] == root for triple in root_triples)
+
+                if not has_own_info:
+                    roots_to_remove.add(root)
+
+        # Elimina solo los roots sin triples relevantes propios
         for root in roots_to_remove:
             data.pop(root, None)
 
