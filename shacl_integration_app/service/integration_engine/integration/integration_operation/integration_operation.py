@@ -1,5 +1,6 @@
 from shacl_integration_app.repository.models import Cluster, ConceptCluster, NodeAxiomCluster, PropertyCluster
 from rdflib import Graph, URIRef, RDF, Literal
+from shacl_integration_app.repository.constants.constants import nodeKindDict
 from shacl_integration_app.repository.rule_library import *
 import shacl_integration_app.service.rule_engine as rule_engine
 rule_library: Rule_Library = Rule_Library()
@@ -15,7 +16,6 @@ class IntegrationOperation:
         """
         self.concept_clusters: list[Cluster] = concept_clusters
         self.integration_option: str = integration_option
-        self.integrated_shacl_shape: Graph = Graph()
         self.integrated_shape_path: str = ''
 
     def execute_integration(self) -> list[Cluster]:
@@ -26,7 +26,7 @@ class IntegrationOperation:
 
         for cluster in self.concept_clusters:
             new_node_clusters: list[NodeAxiomCluster] = self.execute_node_integration(node_list=cluster.node_axiom_cluster_list)
-            new_property_clusters: list[PropertyCluster] = [self.execute_property_integration(property=prop) for prop in cluster.property_cluster_list]
+            new_property_clusters: list[PropertyCluster] = [self.execute_property_integration(property_list=prop) for prop in cluster.property_cluster_list]
 
             cluster.node_axiom_cluster_list = new_node_clusters
             cluster.property_cluster_list = new_property_clusters
@@ -51,7 +51,7 @@ class IntegrationOperation:
                     res = self.execute_nodekind_integration(nodekind_list=object_list)
                     node.axiom_list = [{
                         'logical_operator': logical_operator,
-                        'obj': res
+                        'obj': res[0]
                     }]
             new_node_list.append(node)
 
@@ -59,34 +59,125 @@ class IntegrationOperation:
     
 
     
-    def execute_property_integration(self, property: PropertyCluster) -> PropertyCluster:
-        print(f"Property: {property}")
-        return
+    def execute_property_integration(self, property_list: PropertyCluster) -> PropertyCluster:
+        
+        for prop in property_list.property_axiom_cluster_list:
+
+            new_prop_dict: dict = {
+                'path' : prop['path'],
+                'axioms' : [],
+                'logical_operator' : prop['logical_operator']
+            }
+
+            new_in_ex_clusive: dict = {
+                'minExclusive': [],
+                'maxExclusive': [],
+                'minInclusive': [],
+                'maxInclusive': []
+            }
+
+            qualified: str = None
+
+            if  'qualified_value_shape' in prop and prop['qualified_value_shape'] != None:
+                qualified: str = prop['qualified_value_shape']
+
+            if prop['axioms'] != []:
+                for axiom in prop['axioms']:
+                    if axiom['predicate'] == 'http://www.w3.org/ns/shacl#nodeKind':
+                        res = self.execute_nodekind_integration(nodekind_list=axiom['objects'])
+                        axiom['objects'] = res
+                        new_prop_dict['axioms'].append(axiom)
+                        
+                    elif axiom['predicate'] == 'http://www.w3.org/ns/shacl#minCount':
+                        res = self.execute_min_count_integration(min_count_list=axiom['objects'])
+                        axiom['objects'] = res
+                        new_prop_dict['axioms'].append(axiom)
+                        
+                    elif axiom['predicate'] == 'http://www.w3.org/ns/shacl#maxCount':
+                        res = self.execute_max_count_integration(max_count_list=axiom['objects'])
+                        axiom['objects'] = res
+                        new_prop_dict['axioms'].append(axiom)
+                        
+                    elif axiom['predicate'] in ['http://www.w3.org/ns/shacl#minExclusive','http://www.w3.org/ns/shacl#maxExclusive','http://www.w3.org/ns/shacl#minInclusive', 'http://www.w3.org/ns/shacl#maxInclusive']:
+                        for axiom in prop['axioms']:
+                            if axiom['predicate'] == 'http://www.w3.org/ns/shacl#minExclusive':
+                                new_in_ex_clusive['minExclusive'].extend(axiom['objects'])
+                            elif axiom['predicate'] == 'http://www.w3.org/ns/shacl#maxExclusive':
+                                new_in_ex_clusive['maxExclusive'].extend(axiom['objects'])
+                            elif axiom['predicate'] == 'http://www.w3.org/ns/shacl#minInclusive':
+                                new_in_ex_clusive['minInclusive'].extend(axiom['objects'])
+                            elif axiom['predicate'] == 'http://www.w3.org/ns/shacl#maxInclusive':
+                                new_in_ex_clusive['maxInclusive'].extend(axiom['objects'])
+                        res_min = self.get_min_bound(
+                            minExclusive=new_in_ex_clusive['minExclusive'],
+                            minInclusive=new_in_ex_clusive['minInclusive']
+                        )
+                        res_max = self.get_max_bound(
+                            maxExclusive=new_in_ex_clusive['maxExclusive'],
+                            maxInclusive=new_in_ex_clusive['maxInclusive']
+                        )
+                        if res_min != {} and res_min['min_type'] == 'inclusive':
+                            new_min_dict = {
+                                'predicate': 'http://www.w3.org/ns/shacl#minInclusive',
+                                'objects': [res_min['min']]
+                            }
+                            if new_min_dict not in new_prop_dict['axioms']:
+                                new_prop_dict['axioms'].append(new_min_dict)
+                        elif res_min != {} and res_min['min_type'] == 'exclusive':
+                            new_min_dict = {
+                                'predicate': 'http://www.w3.org/ns/shacl#minExclusive',
+                                'objects': [res_min['min']]
+                            }
+                            if new_min_dict not in new_prop_dict['axioms']:
+                                new_prop_dict['axioms'].append(new_min_dict)
+                        if res_max != {} and res_max['max_type'] == 'inclusive':
+                            new_max_dict = {
+                                'predicate': 'http://www.w3.org/ns/shacl#maxInclusive',
+                                'objects': [res_max['max']]
+                            }
+                            if new_max_dict not in new_prop_dict['axioms']:
+                                new_prop_dict['axioms'].append(new_max_dict)
+                        elif res_max != {} and res_max['max_type'] == 'exclusive':
+                            new_max_dict = {
+                                'predicate': 'http://www.w3.org/ns/shacl#maxExclusive',
+                                'objects': [res_max['max']]
+                            }
+                            if new_max_dict not in new_prop_dict['axioms']:
+                                new_prop_dict['axioms'].append(new_max_dict)
+
+                    elif axiom['predicate'] == 'http://www.w3.org/ns/shacl#minLength':
+                        res = self.execute_min_count_integration(min_count_list=axiom['objects'])
+                        axiom['objects'] = res
+                        new_prop_dict['axioms'].append(axiom)
+
+                    elif axiom['predicate'] == 'http://www.w3.org/ns/shacl#maxLength':
+                        res = self.execute_max_count_integration(max_count_list=axiom['objects'])
+                        axiom['objects'] = res
+                        new_prop_dict['axioms'].append(axiom)
+                        
+                    elif axiom['predicate'] == 'http://www.w3.org/ns/shacl#qualifiedMinCount' and qualified != None:
+                        res = self.execute_min_count_integration(min_count_list=axiom['objects'])
+                        axiom['objects'] = res
+                        new_prop_dict['axioms'].append(axiom)
+                        
+                    elif axiom['predicate'] == 'http://www.w3.org/ns/shacl#qualifiedMaxCount' and qualified != None:
+                        res = self.execute_max_count_integration(max_count_list=axiom['objects'])
+                        axiom['objects'] = res
+                        new_prop_dict['axioms'].append(axiom)
+                        
+                    else:
+                        new_prop_dict['axioms'].append(axiom)
+                                
+                prop['axioms'] = new_prop_dict['axioms']
+
+        
+        return property_list
     
     def execute_nodekind_integration(self, nodekind_list: list) -> list[str]:
-        nodeKindDict : dict = {
-            "[1, 0, 0, 1, 0, 0]_union" : 'http://www.w3.org/ns/shacl#IRI',
-            "[1, 0, 0, 1, 0, 0]_intersection" : 'http://www.w3.org/ns/shacl#IRI',
-            "[0, 1, 0, 0, 1, 0]_union" : 'http://www.w3.org/ns/shacl#Literal',
-            "[0, 1, 0, 0, 1, 0]_intersection" : 'http://www.w3.org/ns/shacl#Literal',
-            "[0, 0, 1, 0, 0, 1]_union" : 'http://www.w3.org/ns/shacl#BlankNode',
-            "[0, 0, 1, 0, 0, 1]_intersection" : 'http://www.w3.org/ns/shacl#BlankNode',
-            "[1, 0, 0, 1, 1, 0]_union" : 'http://www.w3.org/ns/shacl#IRIOrLiteral',
-            "[1, 0, 0, 1, 1, 0]_intersection" : 'http://www.w3.org/ns/shacl#IRI',
-            "[0, 1, 0, 1, 1, 0]_union" : 'http://www.w3.org/ns/shacl#IRIOrLiteral',
-            "[0, 1, 0, 1, 1, 0]_intersection" : 'http://www.w3.org/ns/shacl#Literal',
-            "[1, 0, 0, 1, 0, 1]_union" : 'http://www.w3.org/ns/shacl#BlankNodeOrIRI',
-            "[1, 0, 0, 1, 0, 1]_intersection" : 'http://www.w3.org/ns/shacl#IRI',
-            "[0, 0, 1, 1, 0, 1]_union" : 'http://www.w3.org/ns/shacl#BlankNodeOrIRI',
-            "[0, 0, 1, 1, 0, 1]_intersection" : 'http://www.w3.org/ns/shacl#BlankNode',
-            "[0, 1, 0, 0, 1, 1]_union" : 'http://www.w3.org/ns/shacl#BlankNodeOrLiteral',
-            "[0, 1, 0, 0, 1, 1]_intersection" : 'http://www.w3.org/ns/shacl#Literal'
-        }
         fact = rule_engine.Fact(list=nodekind_list)
-
         res = rule_library.rule_multiple.evaluate_multiple_rules_with_result([fact], rule_library.integrationNodeKindRules)
-
-        return nodeKindDict[str(res) + "_" + self.integration_option]
+        # nodeKindDict: dict imported from constants.py
+        return [nodeKindDict[str(res) + "_" + self.integration_option]]
     
     def execute_min_count_integration(self, min_count_list: list) -> list:
         if self.integration_option == 'union':

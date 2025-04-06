@@ -1,5 +1,6 @@
 from shacl_integration_app.repository.models import Cluster, ConceptCluster, NodeAxiomCluster, PropertyCluster
 from shacl_integration_app.repository.rule_library.filter_library import Filter_Library
+from shacl_integration_app.repository.constants import count_constants
 import shacl_integration_app.service.rule_engine as rule_engine
 from rdflib import Graph, URIRef, RDF, Literal
 import uuid
@@ -16,8 +17,8 @@ class InconsistencesFilter:
         self.inconsistences_graph: Graph = Graph()
         # PREFIXES
         self.inconsistences_graph.bind('sh', 'http://www.w3.org/ns/shacl#')
-        self.inconsistences_graph.bind('inc', 'http://www.inconsistence.es#')
-        self.inconsistences_graph.bind('inc-ex', 'http://www.inconsistence_example.es/resource/')
+        self.inconsistences_graph.bind('inc', 'http://inconsistence.es#')
+        self.inconsistences_graph.bind('inc_ex', 'http://inconsistence_example.es/resource/')
 
 
     def filter_inconsistencies(self) -> list[Cluster]:
@@ -28,7 +29,8 @@ class InconsistencesFilter:
         for cluster in self.concept_clusters:
             node_result: list[bool] = self.filter_node_inconsistences(list_node=cluster.node_axiom_cluster_list, cluster_concept=cluster.concept_list)
             property_result: list[bool] = [self.filter_property_inconsistences(prop=prop, cluster_concept=cluster.concept_list) for prop in cluster.property_cluster_list]
-            if True not in node_result and True not in property_result:
+            [node_result.extend(elem) for elem in property_result]
+            if True not in node_result:
                 self.final_clusters.append(cluster)
 
         self.inconsistences_graph.serialize(destination=self.inconsistences_report_path, format='turtle')
@@ -69,9 +71,16 @@ class InconsistencesFilter:
         ::return: False if there is no inconsistency, True if there is an inconsistency.
         """
 
+        
+
         list_inconsistencies: list[bool] = []
 
         filter_dict: list[dict] = [
+            {
+                'filter' : ['http://www.w3.org/ns/shacl#nodeKind'],
+                'list' : [],
+                'path' : []
+            },
             {
                 'filter' : ['http://www.w3.org/ns/shacl#equals', 'http://www.w3.org/ns/shacl#disjoint'],
                 'list' : [],
@@ -114,9 +123,7 @@ class InconsistencesFilter:
                 [(filter_dict[filter_dict.index(fil)]['path'].append(axiom['path']), filter_dict[filter_dict.index(fil)]['list'].append(ax)) for fil in filter_dict if ax['predicate'] in fil['filter']]
 
         list_inconsistencies = [self.execute_filter_property(filter=fil, cluster_concept=cluster_concept) for fil in filter_dict]
-        # print(f'Filter dict: {filter_dict}')
 
-        # print('Property:', prop)
         
         return list_inconsistencies
 
@@ -149,7 +156,7 @@ class InconsistencesFilter:
                                         'filter': cluster_concept,
                                         'axioms': [a1, a2],
                                         'path': path,
-                                        'inconsistency': 'sh:nodeKind not compatible'
+                                        'inconsistency': 'sh:nodeKind not compatible for intersection operator.'
                                     }
                                     self.generate_inconsistences_report(dict_response=dict_response)
                                     return True
@@ -160,7 +167,7 @@ class InconsistencesFilter:
                                         'filter': cluster_concept,
                                         'axioms': [a1, a2],
                                         'path': path,
-                                        'inconsistency': 'sh:nodeKind not compatible.'
+                                        'inconsistency': 'sh:nodeKind not compatible for union operator.'
                                     }
                                     self.generate_inconsistences_report(dict_response=dict_response)
                                     return True
@@ -182,7 +189,7 @@ class InconsistencesFilter:
                                         'filter': cluster_concept,
                                         'axioms': [a1, a2],
                                         'path': path,
-                                        'inconsistency': 'sh:closed not compatible.'
+                                        'inconsistency': 'sh:closed not compatible for intersection operator.'
                                     }
                                     self.generate_inconsistences_report(dict_response=dict_response)
                                     return filter_result
@@ -211,7 +218,7 @@ class InconsistencesFilter:
                                 'filter': cluster_concept,
                                 'axioms': [a1, a2],
                                 'path': path,
-                                'inconsistency': 'sh:equals and sh:disjoint not compatible.'
+                                'inconsistency': 'sh:equals and sh:disjoint not compatible for intersection operator.'
                             }
                             self.generate_inconsistences_report(dict_response=dict_response)
                             return filter_result
@@ -237,7 +244,7 @@ class InconsistencesFilter:
                         'filter': cluster_concept,
                         'axioms': ['http://www.w3.org/ns/shacl#minCount', 'http://www.w3.org/ns/shacl#maxCount'],
                         'path': path,
-                        'inconsistency': 'sh:minCount greater or equals than sh:maxCount.'
+                        'inconsistency': 'sh:minCount greater or equals than sh:maxCount for intersection operator.'
                     }
                     self.generate_inconsistences_report(dict_response=dict_response)
                     return filter_result
@@ -280,7 +287,7 @@ class InconsistencesFilter:
                         'filter': cluster_concept,
                         'axioms': ['http://www.w3.org/ns/shacl#minInclusive', 'http://www.w3.org/ns/shacl#maxInclusive', 'http://www.w3.org/ns/shacl#minExclusive', 'http://www.w3.org/ns/shacl#maxExclusive'],
                         'path': path,
-                        'inconsistency': 'Error within sh:minExclusive, sh:maxExclusive, sh:minInclusive and sh:maxInclusive.'
+                        'inconsistency': 'Error within sh:minExclusive, sh:maxExclusive, sh:minInclusive and sh:maxInclusive for intersection operator.'
                     }
                     self.generate_inconsistences_report(dict_response=dict_response)
                     return True
@@ -308,7 +315,7 @@ class InconsistencesFilter:
                         'filter': cluster_concept,
                         'axioms': ['http://www.w3.org/ns/shacl#minLength', 'http://www.w3.org/ns/shacl#maxLength'],
                         'path': path,
-                        'inconsistency': 'sh:minLength greater or equals than sh:maxLength.'
+                        'inconsistency': 'sh:minLength greater or equals than sh:maxLength for intersection operator.'
                     }
                     self.generate_inconsistences_report(dict_response=dict_response)
                     return filter_result
@@ -335,7 +342,7 @@ class InconsistencesFilter:
                         'filter': cluster_concept,
                         'axioms': ['http://www.w3.org/ns/shacl#qualifiedMinCount', 'http://www.w3.org/ns/shacl#qualifiedMaxCount'],
                         'path': path,
-                        'inconsistency': 'sh:qualifiedMinCount greater or equals than sh:qualifiedMaxCount.'
+                        'inconsistency': 'sh:qualifiedMinCount greater or equals than sh:qualifiedMaxCount for intersection operator.'
                     }
                     self.generate_inconsistences_report(dict_response=dict_response)
                     return filter_result
@@ -363,7 +370,7 @@ class InconsistencesFilter:
                                     'filter': cluster_concept,
                                     'axioms': ['http://www.w3.org/ns/shacl#uniqueLang'],
                                     'path': path,
-                                    'inconsistency': 'sh:uniqueLang not compatible.'
+                                    'inconsistency': 'sh:uniqueLang not compatible for intersection operator.'
                                 }
                                 self.generate_inconsistences_report(dict_response=dict_response)
                                 return True
@@ -378,7 +385,7 @@ class InconsistencesFilter:
                                     'filter': cluster_concept,
                                     'axioms': ['http://www.w3.org/ns/shacl#uniqueLang', 'http://www.w3.org/ns/shacl#languageIn'],
                                     'path': path,
-                                    'inconsistency': 'sh:uniqueLang and sh:languageIn not compatible.'
+                                    'inconsistency': 'sh:uniqueLang and sh:languageIn not compatible for intersection operator.'
                                 }
                                 self.generate_inconsistences_report(dict_response=dict_response)
                                 return True
@@ -403,7 +410,7 @@ class InconsistencesFilter:
                             'filter': cluster_concept,
                             'axioms': ['http://www.w3.org/ns/shacl#in'],
                             'path': path,
-                            'inconsistency': 'sh:in not compatible.'
+                            'inconsistency': 'sh:in not compatible for intersection operator.'
                         }
                         self.generate_inconsistences_report(dict_response=dict_response)
                         return True
@@ -494,17 +501,19 @@ class InconsistencesFilter:
 
         identifier: str = str(uuid.uuid4())
 
-        self.inconsistences_graph.add((URIRef('http://www.inconsistence_example.es/resource/' + identifier), RDF.type, URIRef('http://www.inconsistence.es#Inconsistency')))
+        count_constants.global_inconsistences_counter += 1
+
+        self.inconsistences_graph.add((URIRef('http://inconsistence_example.es/resource/' + identifier), RDF.type, URIRef('http://inconsistence.es#Inconsistency')))
         for elem in dict_response['filter']:
-            self.inconsistences_graph.add((URIRef('http://www.inconsistence_example.es/resource/' + identifier), URIRef('http://www.inconsistence.es#hasInconsistencyInClass'), URIRef(elem)))
+            self.inconsistences_graph.add((URIRef('http://inconsistence_example.es/resource/' + identifier), URIRef('http://inconsistence.es#hasInconsistencyInClass'), URIRef(elem)))
 
         for axiom in dict_response['axioms']:
-            self.inconsistences_graph.add((URIRef('http://www.inconsistence_example.es/resource/' + identifier), URIRef('http://www.inconsistence.es#hasInconsistencyAxiom'), URIRef(axiom)))
+            self.inconsistences_graph.add((URIRef('http://inconsistence_example.es/resource/' + identifier), URIRef('http://inconsistence.es#hasInconsistencyAxiom'), URIRef(axiom)))
 
         if 'path' in dict_response:
             for path in dict_response['path']:
-                self.inconsistences_graph.add((URIRef('http://www.inconsistence_example.es/resource/' + identifier), URIRef('http://www.inconsistence.es#hasInconsistencyPath'), URIRef(path)))
+                self.inconsistences_graph.add((URIRef('http://inconsistence_example.es/resource/' + identifier), URIRef('http://inconsistence.es#hasInconsistencyPath'), URIRef(path)))
         
-        self.inconsistences_graph.add((URIRef('http://www.inconsistence_example.es/resource/' + identifier), URIRef('http://www.inconsistence.es#hasReport'), Literal(dict_response['inconsistency'])))
+        self.inconsistences_graph.add((URIRef('http://inconsistence_example.es/resource/' + identifier), URIRef('http://inconsistence.es#hasReport'), Literal(dict_response['inconsistency'])))
 
         return self.inconsistences_report_path

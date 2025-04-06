@@ -1,20 +1,71 @@
-@prefix inc: <http://www.inconsistence.es#> .
-@prefix inc-ex: <http://www.inconsistence_example.es/resource/> .
+@prefix inc: <http://inconsistence.es#> .
+@prefix inc_ex: <http://inconsistence_example.es/resource/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix ssn: <http://www.w3.org/ns/ssn/> .
 
-inc-ex:4976b625-0f35-4f4b-b3e5-b8563babede1 a inc:Inconsistency ;
-    inc:hasInconsistencyAxiom sh:or ;
-    inc:hasInconsistencyInClass ssn:System,
-        <https://saref.etsi.org/saref4syst/System> ;
-    inc:hasReport "Logical constraints not compatible for intersection operation." .
+inc_ex:0307843d-5085-456b-97dd-d26861dd3b37 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <https://saref.etsi.org/core/CommandOfInterest> ;
+    inc:hasInconsistencyPath <https://saref.etsi.org/core/isCommandOfInterestOf> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
 
-inc-ex:588dd98e-c2af-40a8-86e7-e315df45919c a inc:Inconsistency ;
-    inc:hasInconsistencyAxiom sh:maxCount,
-        sh:minCount ;
-    inc:hasInconsistencyInClass sosa:Actuation,
-        <https://saref.etsi.org/core/Actuation> ;
-    inc:hasInconsistencyPath sosa:madeByActuator ;
-    inc:hasReport "sh:minCount greater or equals than sh:maxCount." .
+inc_ex:686c3d0b-49b2-4391-9191-31dc5e69f37a a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <https://saref.etsi.org/core/Measurement> ;
+    inc:hasInconsistencyPath <https://saref.etsi.org/core/relatesToProperty> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:68e09509-cf6a-4f0a-bfed-1deccae9ee3e a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <https://saref.etsi.org/core/PropertyOfInterest> ;
+    inc:hasInconsistencyPath <https://saref.etsi.org/core/isPropertyOfInterestOf> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:81b603ad-a734-428b-84cc-0e315888d695 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <https://saref.etsi.org/core/Service> ;
+    inc:hasInconsistencyPath <https://saref.etsi.org/core/isOfferedBy> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:8ce479fb-b0f5-404f-8d2b-fb83e61e6a85 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <https://saref.etsi.org/core/FunctionOfInterest> ;
+    inc:hasInconsistencyPath <https://saref.etsi.org/core/isFunctionOfInterestOf> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:b8691da8-0210-4cce-b958-fb34a0255fd6 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <https://saref.etsi.org/core/Operation> ;
+    inc:hasInconsistencyPath <https://saref.etsi.org/core/isOperationOf> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:b89ac7c0-03d8-479e-8e3c-55de7bf7e1eb a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass sosa:FeatureOfInterest,
+        <https://saref.etsi.org/core/FeatureOfInterest> ;
+    inc:hasInconsistencyPath ssn:hasProperty,
+        <https://saref.etsi.org/core/hasProperty> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:cf3cc2fe-783f-4eec-aa99-e13278c87700 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <https://saref.etsi.org/core/Measurement> ;
+    inc:hasInconsistencyPath <https://saref.etsi.org/core/isMeasurementOf> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:d08d25b7-1b87-4bae-b991-7f3469bfe2e8 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <https://saref.etsi.org/core/StateOfInterest> ;
+    inc:hasInconsistencyPath <https://saref.etsi.org/core/isStateOfInterestOf> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
 

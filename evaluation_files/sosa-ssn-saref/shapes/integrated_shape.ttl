@@ -1,0 +1,1395 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix shape_int: <http://integratedshapes.es#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+shape_int:015752c35f733a22ff697640a6acf16631010b71 a sh:NodeShape ;
+    rdfs:label "Level control function" ;
+    sh:description "An actuating function that allows to do level adjustments of a property in a certain range (e.g., 0%-100%), such as dimming a light in a room or setting the speed of an electric motor. " ;
+    sh:name "Level control function" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/LevelControlFunction> .
+
+shape_int:028f2cb637bdc9c387bc275bb0c59b5784a3726b a sh:NodeShape ;
+    rdfs:label "Smoke" ;
+    sh:description "A saref:Property related to some measurements that are characterized by a certain value that is measured in a unit of measure for smoke" ;
+    sh:name "Smoke" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/Smoke> .
+
+shape_int:02efcb28d8485dcd023f206340f528ea0e8dbfd3 a sh:NodeShape ;
+    rdfs:label "Light switch" ;
+    sh:description "A switch that performs the saref:OnOffFunction, controls the property saref:Light, and can be found in the state saref:OnOffState. It can offer a switch on service. A saref:LightSwitch is typically used to accomplish saref:Lighting." ;
+    sh:name "Light switch" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/LightSwitch> .
+
+shape_int:045933bf737df24698d5ae20751420249d4f515a a sh:NodeShape ;
+    rdfs:label "Sampler" ;
+    sh:description "A device that is used by, or implements, a Sampling Procedure to create or transform one or more samples." ;
+    sh:name "Sampler" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:15095dbf48e92c43d9f437430ec7e3af32e3296e,
+        shape_int:4fb4f730e97697345d7385f5ad2c24f4d1995dab ;
+    sh:targetClass sosa:Sampler .
+
+shape_int:0a51be8f44b049463ff5ce782d7b6a57e960aa30 a sh:NodeShape ;
+    rdfs:label "Operation Execution" ;
+    sh:description "Describes the execution of an operation in a network: the–machine interpretable–  description of a communication between devices over the network. Typically, its input and result are network messages, that conform to the input and output of the executed operation." ;
+    sh:name "Operation Execution" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:81f65c7413fccc2f0028601c749d3c0892f25a02 ;
+    sh:targetClass <https://saref.etsi.org/core/OperationExecution> .
+
+shape_int:0a9062a9cb51995dea9fad8d50a651dd75a226f9 a sh:NodeShape ;
+    rdfs:label "Temperature" ;
+    sh:description "A saref:Property related to some measurements that are characterized by a certain value that is measured in a temperature unit (degree_Celsius, degree_Fahrenheit, or degree_kelvin)" ;
+    sh:name "Temperature" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/Temperature> .
+
+shape_int:0d8de09cc27f5fbd00009a26125a3df1478e041f a sh:NodeShape ;
+    sh:property shape_int:029626e11042efc01d61da9bbd432b3990f48e57,
+        shape_int:0b9819761dce094ea83b1456ea69159b50639b28,
+        shape_int:13fb04dd886f60495e225065e758c6cd54ff9beb,
+        shape_int:4d833c9c975bd0209782c158f11ce58f3e59633f,
+        shape_int:5e5747f11d0af952e91f30c7c5b0ba1970d9fac6,
+        shape_int:663ae6c197206cb4944c2373491d9b9b1d2aa2e4,
+        shape_int:670db9b21f2afa14b64f897c5fe3c070df3d2bb4,
+        shape_int:a2db588757f7a4cdd116d1213fabb9dd5024ae93 ;
+    sh:targetClass sosa:ObservationCollection .
+
+shape_int:123a7f2fcc9ae7cbbbd7c7627a483853a9708dab a sh:NodeShape ;
+    rdfs:label "Platform" ;
+    sh:description "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms." ;
+    sh:name "Platform" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:209cb14438467be3e4feed085c11e395af560812,
+        shape_int:c4c2be95c03c28939f252a33b896c3d34e49cf48 ;
+    sh:targetClass sosa:Platform .
+
+shape_int:1297a2a4ce2f5e568ac6bf2fe7752d145fe63dc8 a sh:NodeShape ;
+    rdfs:label "Power unit" ;
+    sh:description "The unit of measure for power" ;
+    sh:name "Power unit" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/PowerUnit> .
+
+shape_int:12f904609ada945e775e57222f412cfda5ca3f90 a sh:NodeShape ;
+    rdfs:label "Toggle command" ;
+    sh:description "A type of command" ;
+    sh:name "Toggle command" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/ToggleCommand> .
+
+shape_int:13e254437294baf8321e2111bd97c348dc8dd6eb a sh:NodeShape ;
+    rdfs:label "Event function" ;
+    sh:description "A function that allows to notify about some relevant activity; e.g., that a certain threshold value has been exceeded or that some object has moved." ;
+    sh:name "Event function" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:61f2c282edd87c80e13a4a0ff759f4f053182acb ;
+    sh:targetClass <https://saref.etsi.org/core/EventFunction> .
+
+shape_int:1482029e540346a097b1a824148f6e47b4f4e83f a sh:NodeShape ;
+    rdfs:label "Command Execution" ;
+    sh:description "Describes the execution of a command. Typically, its inputs and outputs are human understandable and relate to some feature of interest, such as its state (e.g., s4abcd:On), or the value of its temperature (e.g., property value 21.0 °C)." ;
+    sh:name "Command Execution" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:81f65c7413fccc2f0028601c749d3c0892f25a02 ;
+    sh:targetClass <https://saref.etsi.org/core/CommandExecution> .
+
+shape_int:15290f42a24dcb04200ce25dfc4aad0280163c00 a sh:NodeShape ;
+    rdfs:label "Step up command" ;
+    sh:description "A type of command" ;
+    sh:name "Step up command" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/StepUpCommand> .
+
+shape_int:1babc5f93ac541800d974d8682b01e0a86c0858a a sh:NodeShape ;
+    rdfs:label "Door switch" ;
+    sh:description "A switch that performs the saref:OpenCloseFunction, is used for controlling a door, and can be found in the state saref:OpenCloseState. A saref:DoorSwitch is typically used to accomplish saref:Safety." ;
+    sh:name "Door switch" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/DoorSwitch> .
+
+shape_int:2065c094846edda15aa9be7c971f18f061398991 a sh:NodeShape ;
+    rdfs:label "Stop command" ;
+    sh:description "A type of command" ;
+    sh:name "Stop command" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/StopCommand> .
+
+shape_int:21f495c986dc30b26a63d634313f4353edfa045a a sh:NodeShape ;
+    rdfs:label "Get meter history command" ;
+    sh:description "A type of get command" ;
+    sh:name "Get meter history command" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/GetMeterHistoryCommand> .
+
+shape_int:2f7b48b1afc1075a244f0f67439cd279bb7e55fc a sh:NodeShape ;
+    rdfs:label "Procedure Execution" ;
+    sh:description "Represents the act of carrying out a procedure." ;
+    sh:name "Procedure Execution" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:05efe15c09a5a10ccab8ea43bf3a427ee73a3f0a,
+        shape_int:13fb04dd886f60495e225065e758c6cd54ff9beb,
+        shape_int:b123de5385156025c3002544c773a23ccf7b12cb ;
+    sh:targetClass <https://saref.etsi.org/core/ProcedureExecution> .
+
+shape_int:30e759dcdef0f3707c19c1673fbc1af90624ba02 a sh:NodeShape ;
+    rdfs:label "On state" ;
+    sh:description "The state of a device that is On" ;
+    sh:name "On state" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/OnState> .
+
+shape_int:32638d9efa6201ead4608a2c3dc8bbe93ce4a794 a sh:NodeShape ;
+    rdfs:label "Natural Resource Commodity" ;
+    sh:description "The class of natural resource commodities" ;
+    sh:name "Natural Resource Commodity" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/NaturalResourceCommodity> .
+
+shape_int:327a55f82dc6818877a68e37b722bb7f2360b633 a sh:NodeShape ;
+    rdfs:label "Deployment" ;
+    sh:description "Describes the Deployment of one or more Systems for a particular purpose. Deployment may be done on a Platform." ;
+    sh:name "Deployment" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:2df1039eb3f85b028161dbf509f7d8ed460cb304,
+        shape_int:4aab440f562cb7f89a83e6f954a15fbd29e4d40c,
+        shape_int:4dc29891e96064a197ca49f97e261791b23b9156 ;
+    sh:targetClass ssn:Deployment .
+
+shape_int:33133c426220ffc4364f87a2d68ce80497010605 a sh:NodeShape ;
+    rdfs:label "Temperature sensor" ;
+    sh:description "A sensor that is used for the purpose of sensing a property of type saref:Temperature. A saref:TemperatureSensor is typically used to saref:accomplish saref:Comfort." ;
+    sh:name "Temperature sensor" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/TemperatureSensor> .
+
+shape_int:3356a0d442e355e2596a1b8ec91a5d869d0a4b55 a sh:NodeShape ;
+    rdfs:label "Pause command" ;
+    sh:description "A type of command" ;
+    sh:name "Pause command" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/PauseCommand> .
+
+shape_int:38dfc233193c1840df78bc1029b3e9af98c99186 a sh:NodeShape ;
+    rdfs:label "Commodity" ;
+    sh:description "A marketable item which may be supplied without qualitative differentiation." ;
+    sh:name "Commodity" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:0e711b5134e15cd2e276ff8f6f0860491154ba95,
+        shape_int:9137d01245a94ca912a447707f6e7deb76a47647 ;
+    sh:targetClass <https://saref.etsi.org/core/Commodity> .
+
+shape_int:39ddd495bdea04f831d39d680a20f428fe9643d6 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass time:TemporalPosition .
+
+shape_int:39ea950d91e4c17c63a673afc3ed072f8dbdeb1c a sh:NodeShape ;
+    rdfs:label "Coal" ;
+    sh:description "A type of commodity" ;
+    sh:name "Coal" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/Coal> .
+
+shape_int:3aef291008b6e59edf7efe8866359d0723c5ca4b a sh:NodeShape ;
+    rdfs:label "Set relative level command" ;
+    sh:description "A type of set level command" ;
+    sh:name "Set relative level command" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/SetRelativeLevelCommand> .
+
+shape_int:3b80931e2dfb818105f7709480fa2dc5ef055808 a sh:NodeShape ;
+    rdfs:label "Off state" ;
+    sh:description "The state of a device that is Off" ;
+    sh:name "Off state" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/OffState> .
+
+shape_int:3c77c356e01614e997401714c95801b7f752291b a sh:NodeShape ;
+    rdfs:label "Multi level state" ;
+    sh:description "A type of state" ;
+    sh:name "Multi level state" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/MultiLevelState> .
+
+shape_int:3e44c920427e845df4958295eb8c3045b55fcfd5 a sh:NodeShape ;
+    rdfs:label "Switch" ;
+    sh:description "A device of category saref:Actuator that performs an actuating function of type saref:OnOffFunction or saref:OpenCloseFunction" ;
+    sh:name "Switch" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/Switch> .
+
+shape_int:3e49e316cc8e00d38be65add70efc8b9c31a3912 a sh:NodeShape ;
+    rdfs:label "On command" ;
+    sh:description "A type of command" ;
+    sh:name "On command" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/OnCommand> .
+
+shape_int:3e8248e32edfca0c629622b5b669c2d9ce4d0917 a sh:NodeShape ;
+    rdfs:label "Price" ;
+    sh:description "A saref:Property crelated to some measurements that are characterized by a certain value that is measured using saref:Currency",
+        "A saref:Property related to some measurements that are characterized by a certain value that is measured using saref:Currency" ;
+    sh:name "Price" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/Price> .
+
+shape_int:437bcb15112715dc73cb38b85f0830f3ce457ded a sh:NodeShape ;
+    rdfs:label "Energy" ;
+    sh:description "A saref:Property related to some measurements that are characterized by a certain value measured in an energy unit (such as Kilowatt_Hour or Watt_hour). Furter specializations of the saref:Energy class can be found in the SAREF4ENER extension, where classes such as EnergyMax, EnergyMin and EnergyExpected are defined. " ;
+    sh:name "Energy" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/Energy> .
+
+shape_int:43f6d08abbca2285ad474575f82dee7eee260a72 a sh:NodeShape ;
+    rdfs:label "Open close state" ;
+    sh:description "A type of state" ;
+    sh:name "Open close state" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/OpenCloseState> .
+
+shape_int:477e13285cd38c9bb64cd96efdf36a90c88dd3e4 a sh:NodeShape ;
+    rdfs:label "Open close function" ;
+    sh:description "An actuating function that allows to open and close a device" ;
+    sh:name "Open close function" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/OpenCloseFunction> .
+
+shape_int:4bed336194a9a5c86b6a734f03b3570d2aae1a68 a sh:NodeShape ;
+    rdfs:label "Output" ;
+    sh:description "Any information that is reported from a Procedure." ;
+    sh:name "Output" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass ssn:Output .
+
+shape_int:4e578eee2df774f78e4d6039b116a3b08f0dd0ad a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass time:TemporalEntity .
+
+shape_int:50129551d6b11b194de166f1d93f270cf753cbac a sh:NodeShape ;
+    rdfs:label "Actuatable Property" ;
+    sh:description "An actuatable quality (property, characteristic) of a FeatureOfInterest." ;
+    sh:name "Actuatable Property" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:70cee6a5683f7eea433606ab11aa55db22166292 ;
+    sh:targetClass sosa:ActuatableProperty .
+
+shape_int:5178b8ee50143f817566b0bf8a599ecfa344c4d6 a sh:NodeShape ;
+    rdfs:label "Actuator" ;
+    sh:description "A device designed to control one or more properties or states of one or more features of interest.",
+        "A device that is used by, or implements, an (Actuation) Procedure that changes the state of the world." ;
+    sh:name "Actuator" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:2df1039eb3f85b028161dbf509f7d8ed460cb304,
+        shape_int:4fb4f730e97697345d7385f5ad2c24f4d1995dab,
+        shape_int:699ddf8455a37edf419297da964610c4ad3cf02c,
+        shape_int:a16d798e49312ed34a330980df3c0f3ab413df38 ;
+    sh:targetClass sosa:Actuator,
+        <https://saref.etsi.org/core/Actuator> .
+
+shape_int:51afbc016f5d2b0a896ba690a5ccb79a8937ef1a a sh:NodeShape ;
+    rdfs:label "Energy unit" ;
+    sh:description "The unit of measure for energy" ;
+    sh:name "Energy unit" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/EnergyUnit> .
+
+shape_int:51f13cc7f27d9759af7e417bc612b725b26ff646 a sh:NodeShape ;
+    rdfs:label "Close state" ;
+    sh:description "The state of a device that is CLOSE" ;
+    sh:name "Close state" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/CloseState> .
+
+shape_int:53d6bf00994a7a961b92ecd0048f0ecd77a13ddf a sh:NodeShape ;
+    rdfs:label "Observable Property" ;
+    sh:description "An observable quality (property, characteristic) of a FeatureOfInterest." ;
+    sh:name "Observable Property" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:14646c2e794205413e65db44e36e33709048eace ;
+    sh:targetClass sosa:ObservableProperty .
+
+shape_int:570235059a222492a19258ceb49ba4903a1c6a49 a sh:NodeShape ;
+    rdfs:label "Occupancy" ;
+    sh:description "A saref:Property related to some measurements that are characterized by a certain value (saref:hasValue property) that is measured in a unit of measure for occupancy" ;
+    sh:name "Occupancy" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/Occupancy> .
+
+shape_int:570e8fd231a5c6e555172897c1db384b9318c579 a sh:NodeShape ;
+    rdfs:label "Actuation" ;
+    sh:description "A saref:Actuation is the act of carrying out a procedure to control the state of the world using an actuator. It links to an actuator to describe what made the actuation, and to the controlled feature, property, property of interest, state, or state of interest. Typically, its input is a property value or a state. An actuation of a state (OP saref:controls) should have a state as input (OP saref:hasInput). Respectively, an actuation of a property should have a property value as input.",
+        "An Actuation carries out an (Actuation) Procedure to change the state of the world using an Actuator." ;
+    sh:name "Actuation" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:0b9819761dce094ea83b1456ea69159b50639b28,
+        shape_int:13fb04dd886f60495e225065e758c6cd54ff9beb,
+        shape_int:43b419389f643b15ef121fdbcff202ca94db8bb2,
+        shape_int:4d833c9c975bd0209782c158f11ce58f3e59633f,
+        shape_int:663ae6c197206cb4944c2373491d9b9b1d2aa2e4,
+        shape_int:699ddf8455a37edf419297da964610c4ad3cf02c,
+        shape_int:82daa7cd221b63b95d8e756419abaf1304232cbc,
+        shape_int:b123de5385156025c3002544c773a23ccf7b12cb,
+        shape_int:b343e2111cef10daead924f022f60c7f4643e514,
+        shape_int:ccd24208229d49d806b88a0f8bf75804452d8e73 ;
+    sh:targetClass sosa:Actuation,
+        <https://saref.etsi.org/core/Actuation> .
+
+shape_int:5829707067c86d3d99ea9bbf5ab8e41acb2b4f54 a sh:NodeShape ;
+    rdfs:label "Close command" ;
+    sh:description "A type of command" ;
+    sh:name "Close command" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/CloseCommand> .
+
+shape_int:58fabfa70811950fc1a8c6e0d56faec87e4e08cb a sh:NodeShape ;
+    rdfs:label "Sample" ;
+    sh:description "A Sample is the result from an act of Sampling.",
+        "Feature which is intended to be representative of a FeatureOfInterest on which Observations may be made.",
+        "Physical samples are sometimes known as 'specimens'.",
+        """Samples are artifacts of an observational strategy, and have no significant function outside of their role in the observation process. The characteristics of the samples themselves are of little interest, except perhaps to the manager of a sampling campaign.
+
+A Sample is intended to sample some FatureOfInterest, so there is an expectation of at least one isSampleOf property. However, in some cases the identity, and even the exact type, of the sampled feature may not be known when observations are made using the sampling features.""" ;
+    sh:name "Sample" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:e40426c4a47c9c993bb7649e5dda1a2c0721bda4,
+        shape_int:ea3ec6247ba1d5d05d8b83b297049e668068ed0e ;
+    sh:targetClass sosa:Sample .
+
+shape_int:5b59a6cbe5984326ac17e4c469eddfe5596d027c a sh:NodeShape ;
+    rdfs:label "Energy Commodity" ;
+    sh:description "The class of energy commodities" ;
+    sh:name "Energy Commodity" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/EnergyCommodity> .
+
+shape_int:5ce2e6f40299204d94dfc0abf19fa8ab52d6c211 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass foaf:Agent .
+
+shape_int:5faa59d4bc3756040b8ce9e673c09f929e6ee9ba a sh:NodeShape ;
+    rdfs:label "Result" ;
+    sh:description "The Result of an Observation, Actuation, or act of Sampling. To store an observation's simple result value one can use the hasSimpleResult property." ;
+    sh:name "Result" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:e40426c4a47c9c993bb7649e5dda1a2c0721bda4 ;
+    sh:targetClass sosa:Result .
+
+shape_int:65adb9c296d2e3526c7527aa60f1a66fea425a3e a sh:NodeShape ;
+    rdfs:label "Humidity" ;
+    sh:description "A saref:Property related to some measurements that are characterized by a certain value that is measured in a humidity unit" ;
+    sh:name "Humidity" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/Humidity> .
+
+shape_int:6739a7bbba41d86848fe3f26fc41ce673775f3f1 a sh:NodeShape ;
+    rdfs:label "Open command" ;
+    sh:description "A type of command" ;
+    sh:name "Open command" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/OpenCommand> .
+
+shape_int:6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b a sh:NodeShape ;
+    rdfs:label "Time" ;
+    sh:description "A class that allows to specify the time concept." ;
+    sh:name "Time" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/Time> .
+
+shape_int:741d6c4833345e381d4c6ed22dde37b19759453d a sh:NodeShape ;
+    rdfs:label "Sampling" ;
+    sh:description "An act of Sampling carries out a sampling Procedure to create or transform one or more samples." ;
+    sh:name "Sampling" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:0b9819761dce094ea83b1456ea69159b50639b28,
+        shape_int:12b86c69bb81474d4159a29d530d30e8dcf809fe,
+        shape_int:13fb04dd886f60495e225065e758c6cd54ff9beb,
+        shape_int:4d833c9c975bd0209782c158f11ce58f3e59633f,
+        shape_int:ccd24208229d49d806b88a0f8bf75804452d8e73 ;
+    sh:targetClass sosa:Sampling .
+
+shape_int:7548ab52c3d1d595240379937e08f3e95c072312 a sh:NodeShape ;
+    rdfs:label "Power" ;
+    sh:description "A saref:Property related to some measurements that are characterized by a certain value that is measured in a power unit (such as watt or kilowatt).  Further specializations of the saref:Power class can be found in the SAREF4ENER extension, where classes such as PowerMax, PowerMin and PowerExpected are defined." ;
+    sh:name "Power" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/Power> .
+
+shape_int:77c07336d9a771a3a53617d9915e5f8f2d606109 a sh:NodeShape ;
+    rdfs:label "On off function" ;
+    sh:description "An actuating function that allows to switch on and off an actuator" ;
+    sh:name "On off function" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/OnOffFunction> .
+
+shape_int:7a6b1e512d36842a0812224febb13a10cb6ac98a a sh:NodeShape ;
+    rdfs:label "On off state" ;
+    sh:description "A type of state" ;
+    sh:name "On off state" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/OnOffState> .
+
+shape_int:7bb0ddf9221c03b806b03c209e8366000124aa15 a sh:NodeShape ;
+    rdfs:label "Task" ;
+    sh:description "The goal for which a device is designed, from a user perspective." ;
+    sh:name "Task" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:0e711b5134e15cd2e276ff8f6f0860491154ba95,
+        shape_int:9137d01245a94ca912a447707f6e7deb76a47647 ;
+    sh:targetClass <https://saref.etsi.org/core/Task> .
+
+shape_int:7eb056264dcb17e4f81ebc0b5d525251d56cbf1e a sh:NodeShape ;
+    rdfs:label "Start stop state" ;
+    sh:description "A type of state" ;
+    sh:name "Start stop state" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/StartStopState> .
+
+shape_int:801f6fc2d3559d177ad03edd89977fd43456bf61 a sh:NodeShape ;
+    rdfs:label "Switch on service" ;
+    sh:description "A type of service that represents an on/off function to the network" ;
+    sh:name "Switch on service" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/SwitchOnService> .
+
+shape_int:81e36269fa5c82b728da8fe0d4b2bec6db3f604b a sh:NodeShape ;
+    rdfs:label "Temperature unit" ;
+    sh:description "The unit of measure for temperature" ;
+    sh:name "Temperature unit" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/TemperatureUnit> .
+
+shape_int:842b92b25c64bc6528aef10eb45fe64a9c77d03c a sh:NodeShape ;
+    rdfs:label "Start command" ;
+    sh:description "A type of command" ;
+    sh:name "Start command" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/StartCommand> .
+
+shape_int:87f7111f0d18cfe118b5e74a56e59e82cefbba38 a sh:NodeShape ;
+    rdfs:label "Open state" ;
+    sh:description "The state of a device that is OPEN " ;
+    sh:name "Open state" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/OpenState> .
+
+shape_int:8901895fb1b1d4c4ea2fec368c25176bf73e2f7e a sh:NodeShape ;
+    rdfs:label "Command" ;
+    sh:description "The lowest-level directives a function exposes to some network. Commands can act upon (OP saref:actsUpon and its sub-properties) features, properties, or states. An instance of saref:Command is independent of any device." ;
+    sh:name "Command" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:0e711b5134e15cd2e276ff8f6f0860491154ba95,
+        shape_int:9137d01245a94ca912a447707f6e7deb76a47647 ;
+    sh:targetClass <https://saref.etsi.org/core/Command> .
+
+shape_int:9101fc1744ab274aaa0b54ee22b14ca53ee6e236 a sh:NodeShape ;
+    rdfs:label "Sensor" ;
+    sh:description "A device designed to observe one or more properties or states of one or more features of interest.",
+        "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms." ;
+    sh:name "Sensor" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:111941cecef741d51ab22c0c2a25eef2ff3db98c,
+        shape_int:4fb4f730e97697345d7385f5ad2c24f4d1995dab,
+        shape_int:89ebabbc30dec429b4f3b46629d5f4076f9eb8e0,
+        shape_int:c5aad137891bed300ce345277ff00c29feb3d264 ;
+    sh:targetClass sosa:Sensor,
+        <https://saref.etsi.org/core/Sensor> .
+
+shape_int:925cf7f28585a8696c1feca60531efe3c08a099e a sh:NodeShape ;
+    rdfs:label "Electricity" ;
+    sh:description "A type of energy commodity" ;
+    sh:name "Electricity" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/Electricity> .
+
+shape_int:92b3a59934c7ddf415c39f45162e4a9ea8e2f274 a sh:NodeShape ;
+    rdfs:label "Illuminance unit" ;
+    sh:description "The unit of measure for light" ;
+    sh:name "Illuminance unit" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/IlluminanceUnit> .
+
+shape_int:9548bab191deb383cf18052550fa12f15711df66 a sh:NodeShape ;
+    rdfs:label "Metering function" ;
+    sh:description "A function that allows to get data from a meter, such as current meter reading or instantaneous demand" ;
+    sh:name "Metering function" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:466c880b78f595eb395f1d1cb1b57f883ee1ea84,
+        shape_int:dbc25224636c208f6307bea131a39832143b2740 ;
+    sh:targetClass <https://saref.etsi.org/core/MeteringFunction> .
+
+shape_int:96445586ca9aae77ea345e430ea30afd5a4c326a a sh:NodeShape ;
+    rdfs:label "Pressure unit" ;
+    sh:description "The unit of measure for pressure" ;
+    sh:name "Pressure unit" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/PressureUnit> .
+
+shape_int:9a279c9f04eead9d631289ee582ad5248c2a357b a sh:NodeShape ;
+    rdfs:label "Stimulus" ;
+    sh:description "An event in the real world that 'triggers' the Sensor. The properties associated to the Stimulus may be different to the eventual observed ObservableProperty. It is the event, not the object, that triggers the Sensor." ;
+    sh:name "Stimulus" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:28a354b99ba367c82746ae73dd5d7051a00ba5f9 ;
+    sh:targetClass ssn:Stimulus .
+
+shape_int:9ae33a7d0ecb82cae8f04aafab20bf90425b7b8c a sh:NodeShape ;
+    rdfs:label "Property" ;
+    sh:description "A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity.",
+        "Identifiable qualities of features of interest that can be acted upon by devices, such as observed or controlled. A property can apply to different features of interest." ;
+    sh:name "Property" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:0e711b5134e15cd2e276ff8f6f0860491154ba95,
+        shape_int:3fbaf5c2b0a94beac8a677ffaedf52102b451347,
+        shape_int:88bedf235f41d2d00cc293769f22e2be499ce716,
+        shape_int:9137d01245a94ca912a447707f6e7deb76a47647,
+        shape_int:a21e7473bb7efbe2dfaefa135a1ff134370c755c,
+        shape_int:eeccc45c2c09acb18cb265a740655230764bffef ;
+    sh:targetClass ssn:Property,
+        <https://saref.etsi.org/core/Property> .
+
+shape_int:a36ef8aba22905e2d2efbf1ac1d6230d5761859d a sh:NodeShape ;
+    rdfs:label "Light" ;
+    sh:description "A saref:Property related to some measurements that are characterized by a certain value that is measured in a illuminance unit (lux)" ;
+    sh:name "Light" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/Light> .
+
+shape_int:a4ea781ed99930cb2040f2b3d1f7277fa799d5c7 a sh:NodeShape ;
+    rdfs:label "Procedure" ;
+    sh:description "A workflow, protocol, plan, algorithm, or computational method specifying how to make an Observation, create a Sample, or make a change to the state of the world (via an Actuator). A Procedure is re-usable, and might be involved in many Observations, Samplings, or Actuations. It explains the steps to be carried out to arrive at reproducible results." ;
+    sh:name "Procedure" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:2217f40f3c5ea4ac4d2e5cc25fc34960c92304aa,
+        shape_int:3581ef7afd5a18fac3e50317deb52f4832d8b0ba,
+        shape_int:e2a8c80fe242aae97d4403f24fecbff04d303777 ;
+    sh:targetClass sosa:Procedure,
+        ssn:Procedure .
+
+shape_int:a5a74a6df09278b88cb6ea23b7d7f2570c33babf a sh:NodeShape ;
+    rdfs:label "Device" ;
+    sh:description "A tangible object designed to accomplish a particular task. In order to accomplish this task, the device performs one or more functions. An instance of saref:Device represents one specific real world entity." ;
+    sh:name "Device" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:350680a01c5ad8fab16f5348c645961b8747d304,
+        shape_int:556e4be069236b6eb683c6a63f37cdb157b62107,
+        shape_int:5aa53da313c746e044fee0c843263a7b7a7844d9,
+        shape_int:63ecad62c9d085aa8bb8163d8987a570cd0ea748,
+        shape_int:8369fab6c4d2067ad5f36d96047012962a91155b,
+        shape_int:96bcced52ec4401f1c8f3b531f5c7359536c4bbb,
+        shape_int:a3b0d138de608f26d0518e76ecbfc24727750995,
+        shape_int:d3abbd3d874e4c556dbc0d469dc04c63a1b51466 ;
+    sh:targetClass <https://saref.etsi.org/core/Device> .
+
+shape_int:a72502067518684f9deeec70cf119fd26326cd33 a sh:NodeShape ;
+    rdfs:label "State" ;
+    sh:description "Identifiable conditions that features of interest are or may be in, and that can be acted upon by devices, such as observed and controlled. A state can apply to different features of interest." ;
+    sh:name "State" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:0e711b5134e15cd2e276ff8f6f0860491154ba95,
+        shape_int:9137d01245a94ca912a447707f6e7deb76a47647 ;
+    sh:targetClass <https://saref.etsi.org/core/State> .
+
+shape_int:aa5f3ad5b9d61cece0d5f55e987aeb227daf26c7 a sh:NodeShape ;
+    rdfs:label "Stop state" ;
+    sh:description "The state of a device that is STOPPED" ;
+    sh:name "Stop state" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/StopState> .
+
+shape_int:b51bae49ed9cd40bfe71f7cad5fb8bbfd1d00bdd a sh:NodeShape ;
+    rdfs:label "Get current meter value command" ;
+    sh:description "A type of get command" ;
+    sh:name "Get current meter value command" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/GetCurrentMeterValueCommand> .
+
+shape_int:b568d47f2e244743b1fd7472db836ef9769c21f8 a sh:NodeShape ;
+    rdfs:label "Input" ;
+    sh:description "Any information that is provided to a Procedure for its use." ;
+    sh:name "Input" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass ssn:Input .
+
+shape_int:b8f25847c3810834b2b8a6bf6bb1a246fba8e4c6 a sh:NodeShape ;
+    rdfs:label "Feature kinds" ;
+    sh:description "Feature kinds allow to describe kinds of features of interest, with common properties having the same value, and common states being the same. An instance of saref:FeatureKind represents an archetype of real world entities, for example to populate product catalogs." ;
+    sh:name "Feature kinds" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:0e711b5134e15cd2e276ff8f6f0860491154ba95,
+        shape_int:1f1051cd75fafb271798ed30aa6f18df688cf6f5,
+        shape_int:20a325f29462e3071c6693a11fb079aa80dab3ea,
+        shape_int:556e4be069236b6eb683c6a63f37cdb157b62107,
+        shape_int:6bf9d48a5548492551b3e03181792e900d2a72f3,
+        shape_int:9137d01245a94ca912a447707f6e7deb76a47647,
+        shape_int:93ce6e13717d8d3ed0ef53a250cd29aa1646d76f,
+        shape_int:c633f0d3824d1af0e918363648c2c0c3f9d8d189,
+        shape_int:d3abbd3d874e4c556dbc0d469dc04c63a1b51466 ;
+    sh:targetClass <https://saref.etsi.org/core/FeatureKind> .
+
+shape_int:bc0792d8dc81e8aa30b987246a5ce97c40cd6833 a sh:NodeShape ;
+    rdfs:label "System" ;
+    sh:description "System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other systems." ;
+    sh:name "System" ;
+    sh:or [ ] ;
+    sh:property shape_int:43eb22f8947bfdd4c84d1b32d3dbbbd56ffddf4a,
+        shape_int:4e0dfed9a4eee02fd719b2629342020fa582939d,
+        shape_int:4fb4f730e97697345d7385f5ad2c24f4d1995dab,
+        shape_int:acf11cf801e288f3f9da5be5c64f5efe77bbfbb0 ;
+    sh:targetClass ssn:System,
+        <https://saref.etsi.org/saref4syst/System> .
+
+shape_int:bc763cd41210febe8463d4847921d5a86e54cf51 a sh:NodeShape ;
+    rdfs:label "Observation" ;
+    sh:description "A saref:Observation is the act of carrying out a procedure to estimate or calculate a value of a property of a feature of interest, or a state of a feature of interest. It links to a sensor to describe what made the observation, and to the observed feature, property, property of interest, state, or state of interest. Typically, its result is a property value or a state. An observation of a state (OP saref:observes) should have a state as a result (OP saref:hasResult). Respectively, an observation of a property should have a property value as a result.",
+        "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with." ;
+    sh:name "Observation" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:0b9819761dce094ea83b1456ea69159b50639b28,
+        shape_int:13fb04dd886f60495e225065e758c6cd54ff9beb,
+        shape_int:4d833c9c975bd0209782c158f11ce58f3e59633f,
+        shape_int:5e5747f11d0af952e91f30c7c5b0ba1970d9fac6,
+        shape_int:663ae6c197206cb4944c2373491d9b9b1d2aa2e4,
+        shape_int:670db9b21f2afa14b64f897c5fe3c070df3d2bb4,
+        shape_int:89ebabbc30dec429b4f3b46629d5f4076f9eb8e0,
+        shape_int:b123de5385156025c3002544c773a23ccf7b12cb,
+        shape_int:b343e2111cef10daead924f022f60c7f4643e514,
+        shape_int:ccd24208229d49d806b88a0f8bf75804452d8e73,
+        shape_int:dd154d759e5107707bfeaffe2227898b40f16ac2,
+        shape_int:e6e49bc1f72e3b64ddf3ce36c147c9b2c9f6acbd ;
+    sh:targetClass sosa:Observation,
+        <https://saref.etsi.org/core/Observation> .
+
+shape_int:bdc752c9be3af97e684d1ccc96f6f02a311f7cc3 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://purl.org/vocommons/voaf#Vocabulary> .
+
+shape_int:c3536d4fad7487bfcd30a84c4940a3da6ce1becf a sh:NodeShape ;
+    rdfs:label "Sensing function" ;
+    sh:description "A function that allows to transmit data from sensors, such as measurement values (e.g., temperature) or sensing data (e.g., occupancy)" ;
+    sh:name "Sensing function" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:5803c87ad6172d2d2bb4d87bbdf95e07a076680c,
+        shape_int:a1374786d64e63d49ece360e20dff5d08296665b ;
+    sh:targetClass <https://saref.etsi.org/core/SensingFunction> .
+
+shape_int:c541e6ca101b6b2aaf96a1ecd12b1837cff77130 a sh:NodeShape ;
+    rdfs:label "Unit of measure" ;
+    sh:description "The unit of measure is a standard for measurement of a quantity, such as a Property." ;
+    sh:name "Unit of measure" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/UnitOfMeasure> .
+
+shape_int:c7c4a555e294960cb11b05e30c302f2f33c0b23d a sh:NodeShape ;
+    rdfs:label "Off command" ;
+    sh:description "A type of command" ;
+    sh:name "Off command" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/OffCommand> .
+
+shape_int:cf0908cf1b264927f95c21ef23ae8ef9c9641a27 a sh:NodeShape ;
+    rdfs:label "Appliance" ;
+    sh:description "A device designed to accomplish a particular task for occupant use. It consumes, produces, or stores, some commodity." ;
+    sh:name "Appliance" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:556e4be069236b6eb683c6a63f37cdb157b62107 ;
+    sh:targetClass <https://saref.etsi.org/core/Appliance> .
+
+shape_int:d02ce0e2eda2767320aecfe39dbb44cbc518f4db a sh:NodeShape ;
+    rdfs:label "Step down command" ;
+    sh:description "A type of command" ;
+    sh:name "Step down command" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/StepDownCommand> .
+
+shape_int:d1222178efa7946ad8940a0b57a0d3cb3856180c a sh:NodeShape ;
+    rdfs:label "Pressure" ;
+    sh:description "A saref:Property related to some measurements that are characterized by a certain value that is measured in a pressure unit (bar or pascal)" ;
+    sh:name "Pressure" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/Pressure> .
+
+shape_int:d5927cfb48c75fc1fc3ca51a26774b61e73d403d a sh:NodeShape ;
+    rdfs:label "Set level command" ;
+    sh:description "A type of command" ;
+    sh:name "Set level command" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/SetLevelCommand> .
+
+shape_int:d66f725cb00f90e2824b11f1825973caa64cd7e8 a sh:NodeShape ;
+    rdfs:label "Set absolute level command" ;
+    sh:description "A type of set level command" ;
+    sh:name "Set absolute level command" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/SetAbsoluteLevelCommand> .
+
+shape_int:d7ae0d86560d1f26c13fc8ecc890665bd77debc5 a sh:NodeShape ;
+    rdfs:label "Get sensing data command" ;
+    sh:description "A type of get command" ;
+    sh:name "Get sensing data command" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/GetSensingDataCommand> .
+
+shape_int:da9d4c39b2f803d94158b40ffbd4b96613b25b6e a sh:NodeShape ;
+    rdfs:label "Notify command" ;
+    sh:description "A type of command" ;
+    sh:name "Notify command" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/NotifyCommand> .
+
+shape_int:de9b1be49dae27efd757dc48f1ad55ec95a5e9e5 a sh:NodeShape ;
+    rdfs:label "Water" ;
+    sh:description "A type of commodity" ;
+    sh:name "Water" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/Water> .
+
+shape_int:df8fad2cc28080ebffb2553e4679edc2f50cfbfe a sh:NodeShape ;
+    rdfs:label "Meter" ;
+    sh:description "A device designed to observe and measure one or more properties of one or more features of interest." ;
+    sh:name "Meter" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:89ebabbc30dec429b4f3b46629d5f4076f9eb8e0 ;
+    sh:targetClass <https://saref.etsi.org/core/Meter> .
+
+shape_int:e040db2b7f1361a938099464de9858040e353ddb a sh:NodeShape ;
+    rdfs:label "Motion" ;
+    sh:description "A saref:Property related to some measurements that are characterized by a certain value that is measured in a unit of measure for motion" ;
+    sh:name "Motion" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/Motion> .
+
+shape_int:e070de224434a2acd352b35cec46f34f9e08e1b2 a sh:NodeShape ;
+    rdfs:label "Currency" ;
+    sh:description "The class of units of measure for price" ;
+    sh:name "Currency" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/Currency> .
+
+shape_int:e8f04a0d1bdf90b9e871d6a8ad247f8edb9fc697 a sh:NodeShape ;
+    rdfs:label "Start state" ;
+    sh:description "The state of a device that is STARTED" ;
+    sh:name "Start state" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/StartState> .
+
+shape_int:ea04f1414fa1cc8a608f47e66f97e974d3549834 a sh:NodeShape ;
+    rdfs:label "Get command" ;
+    sh:description "A type of command" ;
+    sh:name "Get command" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/GetCommand> .
+
+shape_int:ea4b95b83bec84e81dabf7b43fbe6072e56a1d4d a sh:NodeShape ;
+    rdfs:label "HVAC" ;
+    sh:description "Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. A saref:HVAC is typically used to accomplish saref:Comfort." ;
+    sh:name "HVAC" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/HVAC> .
+
+shape_int:ead9650a748b7a99b6f997b61db349cf276d2716 a sh:NodeShape ;
+    rdfs:label "Gas" ;
+    sh:description "A type of energy commodity" ;
+    sh:name "Gas" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/Gas> .
+
+shape_int:ed21ddfbae39061809d3105fdb6543304c94672e a sh:NodeShape ;
+    rdfs:label "Get meter data command" ;
+    sh:description "A type of get command" ;
+    sh:name "Get meter data command" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/GetMeterDataCommand> .
+
+shape_int:f1dcd94a63a1cf20fc1a0cf1c3e6f419fcdac957 a sh:NodeShape ;
+    rdfs:label "Actuating function" ;
+    sh:description "A function that allows to transmit data to actuators, such as level settings (e.g., temperature) or binary switching (e.g., open/close, on/off)" ;
+    sh:name "Actuating function" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/ActuatingFunction> .
+
+shape_int:f1e410ad1472b42cb42cc98962428637290b6706 a sh:NodeShape ;
+    rdfs:label "Function" ;
+    sh:description "Logical groups of commands that devices support to accomplish their tasks. Function can act upon (OP saref:actsUpon and its sub-properties) features, properties, or states. An instance of saref:Function can apply to different devices." ;
+    sh:name "Function" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:0e711b5134e15cd2e276ff8f6f0860491154ba95,
+        shape_int:9137d01245a94ca912a447707f6e7deb76a47647,
+        shape_int:bd97df981b9d183d9af791d3be0cb551745b0673 ;
+    sh:targetClass <https://saref.etsi.org/core/Function> .
+
+shape_int:fcf8f76dda223261a8d880a720ea53216fda42c9 a sh:NodeShape ;
+    rdfs:label "Property Value" ;
+    sh:description "Describes the value for a property. The property value is linked to its value expressed as an RDF literal (DP saref:hasValue), optionally to the unit of measurement (OP saref:isMeasuredIn), and optionally to the properties or properties of interest it is a value of (OP saref:isValueOfProperty)." ;
+    sh:name "Property Value" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:a0a5cd900f4401b55d8ed1812459a38f875ccecc,
+        shape_int:bc9a0037227c19760435e784bf3d2e178a65cf30 ;
+    sh:targetClass <https://saref.etsi.org/core/PropertyValue> .
+
+shape_int:ff4fc0276e960c348647b647235f68200887c9d2 a sh:NodeShape ;
+    rdfs:label "Profile" ;
+    sh:description "A saref:Profile describes the money earned (negative values) or paied (positive values) for the use (production or consumption) of a commodity by a device in a certain context." ;
+    sh:name "Profile" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:05efe15c09a5a10ccab8ea43bf3a427ee73a3f0a,
+        shape_int:429810903fdbee44d2ff53e46b4446fcd15b28a4,
+        shape_int:9aa7fdc7d153518c10445fca0cb9dbda054a3f4c,
+        shape_int:b739f9ca5bc48f8448818fe0f3e6dbd8a1809513 ;
+    sh:targetClass <https://saref.etsi.org/core/Profile> .
+
+shape_int:ff5673503543fe63da08ebd9210a961bd08a9fec a sh:NodeShape ;
+    rdfs:label "Smoke sensor" ;
+    sh:description "A sensor that performs the saref:SensingFunction and the saref:EventFunction, and is used for the purpose of sensing a property of type saref:Smoke. A saref:SmokeSensor is typically used to saref:accomplish saref:Safety." ;
+    sh:name "Smoke sensor" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/SmokeSensor> .
+
+shape_int:ffadd6591dd9191b9776ffb4732dacb8349532a4 a sh:NodeShape ;
+    rdfs:label "Start stop function" ;
+    sh:description "An actuating function that allows to start and stop a device" ;
+    sh:name "Start stop function" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://saref.etsi.org/core/StartStopFunction> .
+
+shape_int:029626e11042efc01d61da9bbd432b3990f48e57 a sh:PropertyShape ;
+    rdfs:comment "We mandate the existence of a filler for sosa:hasMember." ;
+    sh:minCount "1" ;
+    sh:path sosa:hasMember .
+
+shape_int:111941cecef741d51ab22c0c2a25eef2ff3db98c a sh:PropertyShape ;
+    rdfs:comment "A sensor makes observations." ;
+    sh:class sosa:Observation ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path sosa:madeObservation .
+
+shape_int:12b86c69bb81474d4159a29d530d30e8dcf809fe a sh:PropertyShape ;
+    rdfs:comment "A sampling act is made by one and only one sampler." ;
+    sh:class sosa:Sampler ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path sosa:madeBySampler .
+
+shape_int:14646c2e794205413e65db44e36e33709048eace a sh:PropertyShape ;
+    rdfs:comment "An observable property can only be observed by instances from class sosa:Sensor." ;
+    sh:class sosa:Sensor ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path [ sh:alternativePath ( sosa:isObservedBy <https://saref.etsi.org/core/isObservedBy> ) ] .
+
+shape_int:15095dbf48e92c43d9f437430ec7e3af32e3296e a sh:PropertyShape ;
+    rdfs:comment "A sampler makes sampling." ;
+    sh:class sosa:Sampling ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path sosa:madeSampling .
+
+shape_int:1f1051cd75fafb271798ed30aa6f18df688cf6f5 a sh:PropertyShape ;
+    sh:class <https://saref.etsi.org/core/FeatureKind> ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <https://saref.etsi.org/core/consistsOf> .
+
+shape_int:209cb14438467be3e4feed085c11e395af560812 a sh:PropertyShape ;
+    rdfs:comment "A platform is in deployment of a deployment." ;
+    sh:class ssn:Deployment ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path ssn:inDeployment .
+
+shape_int:20a325f29462e3071c6693a11fb079aa80dab3ea a sh:PropertyShape ;
+    rdfs:label "Links a feature kind, a feature of interest, or a property of interest, to a property value.",
+        "has property value" ;
+    sh:class <https://saref.etsi.org/core/PropertyValue> ;
+    sh:description "Links a feature kind, a feature of interest, or a property of interest, to a property value." ;
+    sh:name "has property value" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://saref.etsi.org/core/hasPropertyValue> .
+
+shape_int:2217f40f3c5ea4ac4d2e5cc25fc34960c92304aa a sh:PropertyShape ;
+    rdfs:comment "A procedure has output." ;
+    sh:class ssn:Output ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path ssn:hasOutput .
+
+shape_int:28a354b99ba367c82746ae73dd5d7051a00ba5f9 a sh:PropertyShape ;
+    sh:class sosa:ObservableProperty ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path ssn:isProxyFor .
+
+shape_int:350680a01c5ad8fab16f5348c645961b8747d304 a sh:PropertyShape ;
+    rdfs:label "A relationship specifying the property that can be measured by a certain device",
+        "measures property" ;
+    sh:class <https://saref.etsi.org/core/Property> ;
+    sh:description "A relationship specifying the property that can be measured by a certain device" ;
+    sh:name "measures property" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://saref.etsi.org/core/measuresProperty> .
+
+shape_int:3581ef7afd5a18fac3e50317deb52f4832d8b0ba a sh:PropertyShape ;
+    rdfs:comment "A procedure is implemented by a system." ;
+    sh:class ssn:System ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path ssn:implementedBy .
+
+shape_int:3fbaf5c2b0a94beac8a677ffaedf52102b451347 a sh:PropertyShape ;
+    sh:class sosa:FeatureOfInterest ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path [ sh:alternativePath ( ssn:isPropertyOf <https://saref.etsi.org/core/isPropertyOf> ) ] .
+
+shape_int:429810903fdbee44d2ff53e46b4446fcd15b28a4 a sh:PropertyShape ;
+    rdfs:label "Links a profile to the money earned (negative values) or paid (positive values) for the use (production or consumption) of the commodity by the device",
+        "has price" ;
+    sh:class <https://saref.etsi.org/core/PropertyValue> ;
+    sh:description "Links a profile to the money earned (negative values) or paid (positive values) for the use (production or consumption) of the commodity by the device" ;
+    sh:name "has price" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://saref.etsi.org/core/profileHasPrice> .
+
+shape_int:43b419389f643b15ef121fdbcff202ca94db8bb2 a sh:PropertyShape ;
+    rdfs:comment "An actuation is made by mostly one actuator." ;
+    sh:class sosa:Actuator ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path sosa:madeByActuator .
+
+shape_int:43eb22f8947bfdd4c84d1b32d3dbbbd56ffddf4a a sh:PropertyShape ;
+    sh:class ssn:System ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path ssn:hasSubSystem .
+
+shape_int:466c880b78f595eb395f1d1cb1b57f883ee1ea84 a sh:PropertyShape ;
+    rdfs:label "A relationship identifying the reading type of a metering function (e.g., Water, Gas, Pressure , Energy , Power, etc.)",
+        "has meter reading type" ;
+    sh:class <https://saref.etsi.org/core/Property> ;
+    sh:description "A relationship identifying the reading type of a metering function (e.g., Water, Gas, Pressure , Energy , Power, etc.)" ;
+    sh:name "has meter reading type" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://saref.etsi.org/core/hasMeterReadingType> .
+
+shape_int:4aab440f562cb7f89a83e6f954a15fbd29e4d40c a sh:PropertyShape ;
+    sh:class ssn:System ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path ssn:deployedSystem .
+
+shape_int:4dc29891e96064a197ca49f97e261791b23b9156 a sh:PropertyShape ;
+    sh:class sosa:Platform ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path ssn:deployedOnPlatform .
+
+shape_int:4e0dfed9a4eee02fd719b2629342020fa582939d a sh:PropertyShape ;
+    sh:class sosa:Platform ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path sosa:isHostedBy .
+
+shape_int:5803c87ad6172d2d2bb4d87bbdf95e07a076680c a sh:PropertyShape ;
+    rdfs:label "A relationship between a sensing function and a measurement identifying the range of a sensor detection",
+        "has sensing range" ;
+    sh:class <https://saref.etsi.org/core/Measurement> ;
+    sh:description "A relationship between a sensing function and a measurement identifying the range of a sensor detection" ;
+    sh:name "has sensing range" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://saref.etsi.org/core/hasSensingRange> .
+
+shape_int:5aa53da313c746e044fee0c843263a7b7a7844d9 a sh:PropertyShape ;
+    rdfs:label "Links a device to a service it exposes to a network.",
+        "offers" ;
+    sh:class <https://saref.etsi.org/core/Service> ;
+    sh:description "Links a device to a service it exposes to a network." ;
+    sh:name "offers" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://saref.etsi.org/core/offers> .
+
+shape_int:61f2c282edd87c80e13a4a0ff759f4f053182acb a sh:PropertyShape ;
+    rdfs:label "A relationship associated with an event function to notify that a certain threshold measurement has been exceeded",
+        "has threshold measurement" ;
+    sh:class <https://saref.etsi.org/core/Measurement> ;
+    sh:description "A relationship associated with an event function to notify that a certain threshold measurement has been exceeded" ;
+    sh:name "has threshold measurement" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://saref.etsi.org/core/hasThresholdMeasurement> .
+
+shape_int:63ecad62c9d085aa8bb8163d8987a570cd0ea748 a sh:PropertyShape ;
+    rdfs:label "A relationship specifying the property that can be controlled by a certain device",
+        "controls property" ;
+    sh:class <https://saref.etsi.org/core/Property> ;
+    sh:description "A relationship specifying the property that can be controlled by a certain device" ;
+    sh:name "controls property" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://saref.etsi.org/core/controlsProperty> .
+
+shape_int:6bf9d48a5548492551b3e03181792e900d2a72f3 a sh:PropertyShape ;
+    rdfs:label "Links a feature kind or a feature of interest to one of its states.",
+        "has state" ;
+    sh:class <https://saref.etsi.org/core/State> ;
+    sh:description "Links a feature kind or a feature of interest to one of its states." ;
+    sh:name "has state" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://saref.etsi.org/core/hasState> .
+
+shape_int:70cee6a5683f7eea433606ab11aa55db22166292 a sh:PropertyShape ;
+    rdfs:comment "An actuatable property can only be acted on by an actuation." ;
+    sh:class sosa:Actuation ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path [ sh:alternativePath ( sosa:isActedOnBy <https://saref.etsi.org/core/isActedUponBy> ) ] .
+
+shape_int:82daa7cd221b63b95d8e756419abaf1304232cbc a sh:PropertyShape ;
+    rdfs:comment "An actuation acts at least on one actuable property." ;
+    sh:class sosa:ActuatableProperty ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path sosa:actsOnProperty .
+
+shape_int:8369fab6c4d2067ad5f36d96047012962a91155b a sh:PropertyShape ;
+    rdfs:label "A relation between a device and the measurements it makes. Such measurement will link together the value of the measurement, its unit of measure and the property to which it relates.",
+        "makes measurement" ;
+    sh:class <https://saref.etsi.org/core/Measurement> ;
+    sh:description "A relation between a device and the measurements it makes. Such measurement will link together the value of the measurement, its unit of measure and the property to which it relates." ;
+    sh:name "makes measurement" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://saref.etsi.org/core/makesMeasurement> .
+
+shape_int:88bedf235f41d2d00cc293769f22e2be499ce716 a sh:PropertyShape ;
+    rdfs:label "A relationship specifying the devices that can control a certain property",
+        "is controlled by device" ;
+    sh:class <https://saref.etsi.org/core/Device> ;
+    sh:description "A relationship specifying the devices that can control a certain property" ;
+    sh:name "is controlled by device" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://saref.etsi.org/core/isControlledByDevice> .
+
+shape_int:93ce6e13717d8d3ed0ef53a250cd29aa1646d76f a sh:PropertyShape ;
+    rdfs:label "Links a feature kind or a feature of interest to one of its properties.",
+        "has property" ;
+    sh:class <https://saref.etsi.org/core/Property> ;
+    sh:description "Links a feature kind or a feature of interest to one of its properties." ;
+    sh:name "has property" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path [ sh:alternativePath ( ssn:hasProperty <https://saref.etsi.org/core/hasProperty> ) ] .
+
+shape_int:96bcced52ec4401f1c8f3b531f5c7359536c4bbb a sh:PropertyShape ;
+    rdfs:label "Links a device to its kind, a feature kind. Kinds of devices describe models of devices, with common properties having the same value, common states being the same, common functions, and common services.",
+        "has device kind" ;
+    sh:class <https://saref.etsi.org/core/FeatureKind> ;
+    sh:description "Links a device to its kind, a feature kind. Kinds of devices describe models of devices, with common properties having the same value, common states being the same, common functions, and common services." ;
+    sh:name "has device kind" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://saref.etsi.org/core/hasDeviceKind> .
+
+shape_int:9aa7fdc7d153518c10445fca0cb9dbda054a3f4c a sh:PropertyShape ;
+    rdfs:label "Links a profile to a property value that contributes to restricting its applicable context.",
+        "when property value" ;
+    sh:class <https://saref.etsi.org/core/PropertyValue> ;
+    sh:description "Links a profile to a property value that contributes to restricting its applicable context." ;
+    sh:name "when property value" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://saref.etsi.org/core/whenPropertyValue> .
+
+shape_int:a0a5cd900f4401b55d8ed1812459a38f875ccecc a sh:PropertyShape ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <https://saref.etsi.org/core/isMeasuredIn> .
+
+shape_int:a1374786d64e63d49ece360e20dff5d08296665b a sh:PropertyShape ;
+    rdfs:label "A relationship identifying the sensing type of a sensor detection (i.e., Temperature, Occupancy, Humidity, Motion , Smoke, Pressure, etc.) ",
+        "has sensor type" ;
+    sh:class <https://saref.etsi.org/core/Property> ;
+    sh:description "A relationship identifying the sensing type of a sensor detection (i.e., Temperature, Occupancy, Humidity, Motion , Smoke, Pressure, etc.) " ;
+    sh:name "has sensor type" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://saref.etsi.org/core/hasSensorType> .
+
+shape_int:a16d798e49312ed34a330980df3c0f3ab413df38 a sh:PropertyShape ;
+    rdfs:comment "A actuator makes actuation(s)." ;
+    sh:class sosa:Actuation ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path sosa:madeActuation .
+
+shape_int:a21e7473bb7efbe2dfaefa135a1ff134370c755c a sh:PropertyShape ;
+    rdfs:label "A relationship specifying the devices that can measure a certain property",
+        "is measured by device" ;
+    sh:class <https://saref.etsi.org/core/Device> ;
+    sh:description "A relationship specifying the devices that can measure a certain property" ;
+    sh:name "is measured by device" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://saref.etsi.org/core/isMeasuredByDevice> .
+
+shape_int:a2db588757f7a4cdd116d1213fabb9dd5024ae93 a sh:PropertyShape ;
+    rdfs:comment "We constrain the number of fillers of sosa:hasUltimateFeatureOfInterest, when the domain is sosa:ObservationCollection, to 1." ;
+    sh:maxCount "1" ;
+    sh:path sosa:hasUltimateFeatureOfInterest .
+
+shape_int:a3b0d138de608f26d0518e76ecbfc24727750995 a sh:PropertyShape ;
+    rdfs:label "Links a device to one of its functions of interest.",
+        "has function of interest" ;
+    sh:class <https://saref.etsi.org/core/FunctionOfInterest> ;
+    sh:description "Links a device to one of its functions of interest." ;
+    sh:name "has function of interest" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://saref.etsi.org/core/hasFunctionOfInterest> .
+
+shape_int:acf11cf801e288f3f9da5be5c64f5efe77bbfbb0 a sh:PropertyShape ;
+    sh:class ssn:Deployment ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path ssn:hasDeployment .
+
+shape_int:b739f9ca5bc48f8448818fe0f3e6dbd8a1809513 a sh:PropertyShape ;
+    rdfs:label "Links a profile to a state that contributes to restricting its applicable context.",
+        "when state" ;
+    sh:class <https://saref.etsi.org/core/State> ;
+    sh:description "Links a profile to a state that contributes to restricting its applicable context." ;
+    sh:name "when state" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://saref.etsi.org/core/whenState> .
+
+shape_int:bc9a0037227c19760435e784bf3d2e178a65cf30 a sh:PropertyShape ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <https://saref.etsi.org/core/hasValue> .
+
+shape_int:bd97df981b9d183d9af791d3be0cb551745b0673 a sh:PropertyShape ;
+    rdfs:label "Links a function or function of interest and the command it supports.",
+        "has command" ;
+    sh:class <https://saref.etsi.org/core/Command> ;
+    sh:description "Links a function or function of interest and the command it supports." ;
+    sh:name "has command" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://saref.etsi.org/core/hasCommand> .
+
+shape_int:c4c2be95c03c28939f252a33b896c3d34e49cf48 a sh:PropertyShape ;
+    rdfs:comment "A platform only hosts a system." ;
+    sh:class ssn:System ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path sosa:hosts .
+
+shape_int:c5aad137891bed300ce345277ff00c29feb3d264 a sh:PropertyShape ;
+    rdfs:comment "A sensor detects observation." ;
+    sh:class [ rdf:rest ( ssn:Stimulus sosa:Stimulus ) ] ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path ssn:detects .
+
+shape_int:c633f0d3824d1af0e918363648c2c0c3f9d8d189 a sh:PropertyShape ;
+    rdfs:label "Links a feature kind or a device to one of its functions.",
+        "has function" ;
+    sh:class <https://saref.etsi.org/core/Function> ;
+    sh:description "Links a feature kind or a device to one of its functions." ;
+    sh:name "has function" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://saref.etsi.org/core/hasFunction> .
+
+shape_int:dbc25224636c208f6307bea131a39832143b2740 a sh:PropertyShape ;
+    rdfs:label "A relationship between a metering function and the measurement of the reading",
+        "has meter reading" ;
+    sh:class <https://saref.etsi.org/core/Measurement> ;
+    sh:description "A relationship between a metering function and the measurement of the reading" ;
+    sh:name "has meter reading" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://saref.etsi.org/core/hasMeterReading> .
+
+shape_int:dd154d759e5107707bfeaffe2227898b40f16ac2 a sh:PropertyShape ;
+    rdfs:comment "An observation is originated from at most one stimulus and the stimulus can be implicit (unknown)." ;
+    sh:class ssn:Stimulus ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path ssn:wasOriginatedBy .
+
+shape_int:e2a8c80fe242aae97d4403f24fecbff04d303777 a sh:PropertyShape ;
+    rdfs:comment "A procdedure has input." ;
+    sh:class ssn:Input ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path ssn:hasInput .
+
+shape_int:e6e49bc1f72e3b64ddf3ce36c147c9b2c9f6acbd a sh:PropertyShape ;
+    rdfs:comment "An observation is made on one and exactly one feature of interest." ;
+    sh:class sosa:FeatureOfInterest ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:path sosa:hasFeatureOfInterst .
+
+shape_int:ea3ec6247ba1d5d05d8b83b297049e668068ed0e a sh:PropertyShape ;
+    rdfs:comment "A sample is representative of at least one feature of interest." ;
+    sh:class sosa:FeatureOfInterest ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path sosa:isSampleOf .
+
+shape_int:eeccc45c2c09acb18cb265a740655230764bffef a sh:PropertyShape ;
+    rdfs:label "A relationship between a property and the measurements it relates to",
+        "relates to measurement" ;
+    sh:class <https://saref.etsi.org/core/Measurement> ;
+    sh:description "A relationship between a property and the measurements it relates to" ;
+    sh:name "relates to measurement" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://saref.etsi.org/core/relatesToMeasurement> .
+
+shape_int:05efe15c09a5a10ccab8ea43bf3a427ee73a3f0a a sh:PropertyShape ;
+    rdfs:label "Links a procedure execution or a profile to an instant.",
+        "has timestamp" ;
+    sh:datatype xsd:dateTime ;
+    sh:description "Links a procedure execution or a profile to an instant." ;
+    sh:name "has timestamp" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <https://saref.etsi.org/core/hasTimestamp> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:2df1039eb3f85b028161dbf509f7d8ed460cb304 a sh:PropertyShape ;
+    rdfs:comment "An actuator corresponds to the actuatable property." ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:or ( [ sh:class sosa:ActuatableProperty ] [ sh:class ssn:Property ] ) ;
+    sh:path ssn:forProperty .
+
+shape_int:5e5747f11d0af952e91f30c7c5b0ba1970d9fac6 a sh:PropertyShape ;
+    rdfs:comment "An observation is about one and only one obervable property.",
+        "We constrain the number of fillers of sosa:observedProperty, when the domain is sosa:ObservationCollection, to 1." ;
+    sh:class sosa:ObservableProperty ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path sosa:observedProperty .
+
+shape_int:670db9b21f2afa14b64f897c5fe3c070df3d2bb4 a sh:PropertyShape ;
+    rdfs:comment "An observation is made by at most one sensor and the sensor can be implicit (unknown).",
+        "We constrain the number of fillers of sosa:madeBySensor, when the domain is sosa:ObservationCollection, to 1." ;
+    sh:class sosa:Sensor ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path sosa:madeBySensor .
+
+shape_int:699ddf8455a37edf419297da964610c4ad3cf02c a sh:PropertyShape ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <https://saref.etsi.org/core/controls> .
+
+shape_int:81f65c7413fccc2f0028601c749d3c0892f25a02 a sh:PropertyShape ;
+    sh:class <https://saref.etsi.org/core/Operation> ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <https://saref.etsi.org/core/isExecutionOf> .
+
+shape_int:b343e2111cef10daead924f022f60c7f4643e514 a sh:PropertyShape ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:path sosa:hasSimpleResult .
+
+shape_int:d3abbd3d874e4c556dbc0d469dc04c63a1b51466 a sh:PropertyShape ;
+    rdfs:label "Links a device to its profile. Its inverse is saref:isProfileOf. The device should be linked to a certain commodity using OP saref:isUsedFor or its sub-properties, and optionally to some property or state using OP saref:actsUpon or its sub-properties.",
+        "has profile" ;
+    sh:class <https://saref.etsi.org/core/Profile> ;
+    sh:description "Links a device to its profile. Its inverse is saref:isProfileOf. The device should be linked to a certain commodity using OP saref:isUsedFor or its sub-properties, and optionally to some property or state using OP saref:actsUpon or its sub-properties." ;
+    sh:name "has profile" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://saref.etsi.org/core/hasProfile> .
+
+shape_int:e40426c4a47c9c993bb7649e5dda1a2c0721bda4 a sh:PropertyShape ;
+    rdfs:comment "A result is from at least one observation/actuation/sampling.",
+        "A sample is the result of at least one sampling act." ;
+    sh:class sosa:Sampling ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path sosa:isResultOf .
+
+shape_int:556e4be069236b6eb683c6a63f37cdb157b62107 a sh:PropertyShape ;
+    rdfs:label "Links a feature kind, feature of interest, or device, to the commodity it is used for",
+        "is used for" ;
+    sh:class <https://saref.etsi.org/core/Commodity> ;
+    sh:description "Links a feature kind, feature of interest, or device, to the commodity it is used for" ;
+    sh:minCount "1" ;
+    sh:name "is used for" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <https://saref.etsi.org/core/isUsedFor> .
+
+shape_int:663ae6c197206cb4944c2373491d9b9b1d2aa2e4 a sh:PropertyShape ;
+    rdfs:comment "We constrain the number of fillers of sosa:phenomenonTime, when the domain is sosa:ObservationCollection, to 1." ;
+    sh:class time:TemporalEntity ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path [ sh:alternativePath ( sosa:phenomenonTime <https://saref.etsi.org/core/hasPhenomenonTime> ) ] .
+
+shape_int:89ebabbc30dec429b4f3b46629d5f4076f9eb8e0 a sh:PropertyShape ;
+    rdfs:comment "A sensor oberses observable property." ;
+    sh:class sosa:ObservableProperty ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path [ sh:alternativePath ( sosa:observes <https://saref.etsi.org/core/observes> ) ] .
+
+shape_int:b123de5385156025c3002544c773a23ccf7b12cb a sh:PropertyShape ;
+    rdfs:label "Links a procedure execution to the entity (e.g., device) that made it.",
+        "made by" ;
+    sh:description "Links a procedure execution to the entity (e.g., device) that made it." ;
+    sh:name "made by" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:or ( [ sh:class <https://saref.etsi.org/core/Actuator> ] [ sh:class <https://saref.etsi.org/core/Sensor> ] [ sh:class <https://saref.etsi.org/core/FeatureOfInterest> ] ) ;
+    sh:path <https://saref.etsi.org/core/madeBy> .
+
+shape_int:ccd24208229d49d806b88a0f8bf75804452d8e73 a sh:PropertyShape ;
+    rdfs:comment "A sampling act always results in at least one sample." ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:or ( [ sh:class sosa:Result ] [ sh:class sosa:Sample ] ) ;
+    sh:path sosa:hasResult .
+
+shape_int:0b9819761dce094ea83b1456ea69159b50639b28 a sh:PropertyShape ;
+    rdfs:comment "A sampling act applies a procedure.",
+        "An actuation is made through a procedure.",
+        "An observation can only made via a procedure.",
+        "We constrain the number of fillers of sosa:usedProcedure, when the domain is sosa:ObservationCollection, to 1." ;
+    sh:class sosa:Procedure ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path sosa:usedProcedure .
+
+shape_int:4d833c9c975bd0209782c158f11ce58f3e59633f a sh:PropertyShape ;
+    rdfs:comment "A sampling act is carried out for one and only one feature of interest.",
+        "An actuation has one and only one feature of interest.",
+        "We constrain the number of fillers of sosa:hasFeatureOfInterest, when the domain is sosa:ObservationCollection, to 1." ;
+    sh:class sosa:FeatureOfInterest ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path sosa:hasFeatureOfInterest .
+
+shape_int:4fb4f730e97697345d7385f5ad2c24f4d1995dab a sh:PropertyShape ;
+    rdfs:comment "A sampler has to implement at least one sampling procedure.",
+        "An actuator implements at least one actuation." ;
+    sh:class sosa:Procedure ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path ssn:implements .
+
+shape_int:13fb04dd886f60495e225065e758c6cd54ff9beb a sh:PropertyShape ;
+    rdfs:label "Links a procedure execution to the instant of time when the activity was completed, expressed as an xsd:dateTime literal.",
+        "has result time" ;
+    rdfs:comment "A sampling act produces a result during exactly one temporal entity.",
+        "We constrain the number of fillers of sosa:resultTime, when the domain is sosa:ObservationCollection, to 1." ;
+    sh:datatype xsd:dateTime ;
+    sh:description "Links a procedure execution to the instant of time when the activity was completed, expressed as an xsd:dateTime literal." ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:name "has result time" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path [ sh:alternativePath ( sosa:resultTime <https://saref.etsi.org/core/hasResultTime> ) ] ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:0e711b5134e15cd2e276ff8f6f0860491154ba95 a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:or ( [ sh:class <https://saref.etsi.org/core/Property> ] [ sh:class <https://saref.etsi.org/core/State> ] [ sh:class <https://saref.etsi.org/core/Function> ] [ sh:class <https://saref.etsi.org/core/Task> ] [ sh:class <https://saref.etsi.org/core/Command> ] [ sh:class <https://saref.etsi.org/core/FeatureKind> ] [ sh:class <https://saref.etsi.org/core/Commodity> ] ) ;
+    sh:path skos:broader .
+
+shape_int:9137d01245a94ca912a447707f6e7deb76a47647 a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:or ( [ sh:class <https://saref.etsi.org/core/Property> ] [ sh:class <https://saref.etsi.org/core/State> ] [ sh:class <https://saref.etsi.org/core/Function> ] [ sh:class <https://saref.etsi.org/core/Task> ] [ sh:class <https://saref.etsi.org/core/Command> ] [ sh:class <https://saref.etsi.org/core/FeatureKind> ] [ sh:class <https://saref.etsi.org/core/Commodity> ] ) ;
+    sh:path skos:narrower .
+

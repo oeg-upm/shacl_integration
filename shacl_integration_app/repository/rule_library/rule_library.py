@@ -35,11 +35,17 @@ class Rule_Library():
         
         # NodeKind
         self.nodeKindIRIOnlyIntegration = Rule(condition=self.condition_library.nodeKindIRIOnlyIntegration, action=self.action_library.returnOne, else_action=self.action_library.returnZero)
+
         self.nodeKindLiteralOnlyIntegration = Rule(condition=self.condition_library.nodeKindLiteralOnlyIntegration, action=self.action_library.returnOne, else_action=self.action_library.returnZero)
+
         self.nodeKindBlankNodeOnlyIntegration = Rule(condition=self.condition_library.nodeKindBlankNodeOnlyIntegration, action=self.action_library.returnOne, else_action=self.action_library.returnZero)
-        self.nodeKindIRIIntegration = Rule(condition=self.condition_library.nodeKindIRIIntegration, action=self.action_library.returnOne, else_action=self.action_library.returnZero)
-        self.nodeKindLiteralIntegration = Rule(condition=self.condition_library.nodeKindLiteralIntegration, action=self.action_library.returnOne, else_action=self.action_library.returnZero)
-        self.nodeKindBlankNodeIntegration = Rule(condition=self.condition_library.nodeKindBlankNodeIntegration, action=self.action_library.returnOne, else_action=self.action_library.returnZero)
-        self.integrationNodeKindRules = [self.nodeKindIRIOnlyIntegration, self.nodeKindLiteralOnlyIntegration, self.nodeKindBlankNodeOnlyIntegration, self.nodeKindIRIIntegration, self.nodeKindLiteralIntegration, self.nodeKindBlankNodeIntegration]
+
+        self.nodeKindIRIOrLiteralOnlyIntegration = Rule(condition=self.condition_library.nodeKindIRIOrLiteralOnlyIntegration, action=self.action_library.returnOne, else_action=self.action_library.returnZero)
+
+        self.nodeKindBlankNodeOrLiteralOnlyIntegration = Rule(condition=self.condition_library.nodeKindBlankNodeOrLiteralOnlyIntegration, action=self.action_library.returnOne, else_action=self.action_library.returnZero)
+
+        self.nodeKindBlankNodeOrIRIOnlyIntegration = Rule(condition=self.condition_library.nodeKindBlankNodeOrIRIOnlyIntegration, action=self.action_library.returnOne, else_action=self.action_library.returnZero)
+        
+        self.integrationNodeKindRules = [self.nodeKindIRIOnlyIntegration, self.nodeKindLiteralOnlyIntegration, self.nodeKindBlankNodeOnlyIntegration, self.nodeKindIRIOrLiteralOnlyIntegration, self.nodeKindBlankNodeOrLiteralOnlyIntegration, self.nodeKindBlankNodeOrIRIOnlyIntegration]
 
 

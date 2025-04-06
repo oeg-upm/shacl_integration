@@ -52,6 +52,15 @@ class Condition_Library():
         blankNodeUnionList : list[str] = ['http://www.w3.org/ns/shacl#BlankNode', 'http://www.w3.org/ns/shacl#IRI', 'http://www.w3.org/ns/shacl#BlankNodeOrIRI', 'http://www.w3.org/ns/shacl#BlankNodeOrLiteral', 'http://www.w3.org/ns/shacl#Literal']
         self.nodeKindUnionBlankNode = Condition(name="NodeKindUnionBlankNode", evaluation_function=lambda fact: True if fact.nodeKind1 != None and fact.nodeKind2 != None and fact.nodeKind1 == 'http://www.w3.org/ns/shacl#BlankNode' and fact.nodeKind2 not in blankNodeUnionList else False)
 
+        blankNodeOrLiteralUnionList : list[str] = ['http://www.w3.org/ns/shacl#IRIOrLiteral','http://www.w3.org/ns/shacl#BlankNodeOrIRI']
+        self.nodeKindUnionBlankNodeOrLiteral = Condition(name="NodeKindUnionBlankNode", evaluation_function=lambda fact: True if fact.nodeKind1 != None and fact.nodeKind2 != None and fact.nodeKind1 == 'http://www.w3.org/ns/shacl#BlankNodeOrLiteral' and fact.nodeKind2 in blankNodeOrLiteralUnionList else False)
+
+        blankNodeOrIRIUnionList : list[str] = ['http://www.w3.org/ns/shacl#IRIOrLiteral','http://www.w3.org/ns/shacl#BlankNodeOrLiteral']
+        self.nodeKindUnionBlankNodeOrIRI = Condition(name="NodeKindUnionBlankNode", evaluation_function=lambda fact: True if fact.nodeKind1 != None and fact.nodeKind2 != None and fact.nodeKind1 == 'http://www.w3.org/ns/shacl#BlankNodeOrIRI' and fact.nodeKind2 in blankNodeOrIRIUnionList else False)
+
+        IRIOrLiteralUnionList : list[str] = ['http://www.w3.org/ns/shacl#BlankNodeOrLiteral','http://www.w3.org/ns/shacl#BlankNodeOrIRI']
+        self.nodeKindUnionIRIOrLiteral = Condition(name="NodeKindUnionBlankNode", evaluation_function=lambda fact: True if fact.nodeKind1 != None and fact.nodeKind2 != None and fact.nodeKind1 == 'http://www.w3.org/ns/shacl#IRIOrLiteral' and fact.nodeKind2 in IRIOrLiteralUnionList else False)
+
         # NodeKind condition INTERSECTION
         literalIntersectionList : list[str] = ['http://www.w3.org/ns/shacl#Literal', 'http://www.w3.org/ns/shacl#IRIOrLiteral', 'http://www.w3.org/ns/shacl#BlankNodeOrLiteral']
         self.nodeKindIntersectionLiteral = Condition(name="NodeKindIntersectionLiteral", evaluation_function=lambda fact: True if fact.nodeKind1 != None and fact.nodeKind2 != None and fact.nodeKind1 == 'http://www.w3.org/ns/shacl#Literal' and fact.nodeKind2 not in literalIntersectionList else False)
@@ -65,12 +74,17 @@ class Condition_Library():
         
         # INTEGRATION CONDITIONS
         # NodeKind condition INTEGRATION
-        self.nodeKindIRIOnlyIntegration = Condition(name="NodeKindIRIIntegration", evaluation_function=lambda fact: True if fact.list != [] and ('http://www.w3.org/ns/shacl#IRI') in fact.list else False)
-        self.nodeKindLiteralOnlyIntegration = Condition(name="NodeKindLiteralIntegration", evaluation_function=lambda fact: True if fact.list != [] and ('http://www.w3.org/ns/shacl#Literal') in fact.list else False)
-        self.nodeKindBlankNodeOnlyIntegration = Condition(name="NodeKindBlankNodeIntegration", evaluation_function=lambda fact: True if fact.list != [] and ('http://www.w3.org/ns/shacl#BlankNode') in fact.list else False)
-        self.nodeKindIRIIntegration = Condition(name="NodeKindIRIIntegration", evaluation_function=lambda fact: True if fact.list != [] and ('http://www.w3.org/ns/shacl#IRI' or 'http://www.w3.org/ns/shacl#BlankNodeOrIRI' or 'http://www.w3.org/ns/shacl#IRIOrLiteral') in fact.list else False)
-        self.nodeKindLiteralIntegration = Condition(name="NodeKindLiteralIntegration", evaluation_function=lambda fact: True if fact.list != [] and ('http://www.w3.org/ns/shacl#Literal' or 'http://www.w3.org/ns/shacl#IRIOrLiteral' or 'http://www.w3.org/ns/shacl#BlankNodeOrLiteral') in fact.list else False)
-        self.nodeKindBlankNodeIntegration = Condition(name="NodeKindBlankNodeIntegration", evaluation_function=lambda fact: True if fact.list != [] and ('http://www.w3.org/ns/shacl#BlankNode' or 'http://www.w3.org/ns/shacl#BlankNodeOrIRI' or 'http://www.w3.org/ns/shacl#BlankNodeOrLiteral') in fact.list else False)
+        self.nodeKindIRIOnlyIntegration = Condition(name="NodeKindIRIIntegration", evaluation_function=lambda fact: True if fact.list != [] and 'http://www.w3.org/ns/shacl#IRI' in fact.list else False)
+
+        self.nodeKindLiteralOnlyIntegration = Condition(name="NodeKindLiteralIntegration", evaluation_function=lambda fact: True if fact.list != [] and 'http://www.w3.org/ns/shacl#Literal' in fact.list else False)
+
+        self.nodeKindBlankNodeOnlyIntegration = Condition(name="NodeKindBlankNodeIntegration", evaluation_function=lambda fact: True if fact.list != [] and 'http://www.w3.org/ns/shacl#BlankNode' in fact.list else False)
+
+        self.nodeKindIRIOrLiteralOnlyIntegration = Condition(name="NodeKindIRIIntegration", evaluation_function=lambda fact: True if fact.list != [] and 'http://www.w3.org/ns/shacl#IRIOrLiteral' in fact.list else False)
+
+        self.nodeKindBlankNodeOrLiteralOnlyIntegration = Condition(name="NodeKindBlankNodeIntegration", evaluation_function=lambda fact: True if fact.list != [] and 'http://www.w3.org/ns/shacl#BlankNodeOrLiteral' in fact.list else False)
+
+        self.nodeKindBlankNodeOrIRIOnlyIntegration = Condition(name="NodeKindLiteralIntegration", evaluation_function=lambda fact: True if fact.list != [] and 'http://www.w3.org/ns/shacl#BlankNodeOrIRI' in fact.list else False)
         
 
         # minCount condition INTEGRATION

@@ -2,6 +2,7 @@ from shacl_integration_app.repository.models import Cluster
 from shacl_integration_app.repository.wrappers import get_time
 from shacl_integration_app.service.integration_engine.integration.inconsistences_filter import InconsistencesFilter
 from shacl_integration_app.service.integration_engine.integration.integration_operation import IntegrationOperation
+from shacl_integration_app.service.integration_engine.integration.shacl_unification import SHACLUnificationOperation
 from rdflib import Graph
 import os
 
@@ -10,7 +11,6 @@ class Integration:
         self.concept_clusters: list[Cluster] = concept_clusters
         self.integration_option: str = integration_option
         self.common_path: str = os.path.commonpath(input_shapes_path)
-        self.integrated_shacl_shape : Graph = Graph()
         
     @get_time
     def execute_integration(self) -> dict:
@@ -96,11 +96,12 @@ class Integration:
         """
         
         try:
-            self.integrated_shacl_shape : Graph = Graph() # TODO: remove this line later
             # Execute SHACL unification process
             # input -> final_concept_clusters
-            # output -> integrated_shape_path, Graph()
+            # output -> integrated_shape_path
             integrated_shape_path: str = self.common_path + '/integrated_shape.ttl'
+            shacl_unification = SHACLUnificationOperation(clusters=concept_clusters_integrated, integrated_shapes_path=integrated_shape_path)
+            shacl_unification.unify()
             return integrated_shape_path
         except Exception as e:
             return (f"Error during SHACL unification process: {e}")

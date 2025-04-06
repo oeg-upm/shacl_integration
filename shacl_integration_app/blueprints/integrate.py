@@ -3,6 +3,7 @@ import os
 import sys
 import json
 from shacl_integration_app.repository.constants import *
+from shacl_integration_app.repository.constants import count_constants
 from shacl_integration_app.repository.models import Cluster, ConceptCluster, NodeAxiomCluster, PropertyCluster, PropertyAxiomCluster
 from shacl_integration_app.repository.wrappers import get_time
 from shacl_integration_app.service.integration_engine import IntegrationMethod, Identification, Integration
@@ -36,6 +37,9 @@ def integration(id: str, operation: str) -> str:
     # Execute integration
     integration: IntegrationMethod = IntegrationMethod(input_tuples=input_tuples, integration_option=operation, alignment_reference=alignment_reference)
     result: dict = integration.execute()
+
+    print(f"Number of inconsistences: {count_constants.global_inconsistences_counter}")
+    print(f"Number of integrations: {count_constants.global_integration_counter}")
 
     # Check if the result is valid
     if all(key in result for key in ['integrated_shape_path', 'inconsistences_report_path']):

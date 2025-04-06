@@ -212,12 +212,9 @@ class ClusterGeneration:
                         if triple["subject"] == node[0] and triple["predicate"] not in not_list_with_property:
                             axiom_list.append(Axiom(pred=triple["predicate"], obj=triple["object"]))
                         
-                        elif triple["subject"] == node[0] and triple["predicate"] in not_list_with_property and triple["predicate"] not in ['http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'http://www.w3.org/2000/01/rdf-schema#isDefinedBy', 'http://www.w3.org/ns/shacl#property']:
-                            print("hola estoy aquí1")
-                            print(triple["predicate"])
-
+                        # elif triple["subject"] == node[0] and triple["predicate"] in not_list_with_property and triple["predicate"] not in ['http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'http://www.w3.org/2000/01/rdf-schema#isDefinedBy', 'http://www.w3.org/ns/shacl#property']:
+                            
                         if triple["subject"] == node[0] and triple["predicate"] == 'http://www.w3.org/ns/shacl#qualifiedValueShape':
-                            print("hola estoy aquí2")
                             [axiom_list.append(Axiom(pred=triple2["predicate"], obj=triple2["object"], qualified_value_shape='qualified')) for triple2 in res["triples"] if triple2["subject"] == triple["object"]]
 
                         not_list_without_property: list[str] = ['http://www.w3.org/ns/shacl#or', 'http://www.w3.org/ns/shacl#and', 'http://www.w3.org/ns/shacl#xone', 'http://www.w3.org/ns/shacl#not']
