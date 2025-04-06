@@ -280,7 +280,7 @@ shape_int:50129551d6b11b194de166f1d93f270cf753cbac a sh:NodeShape ;
     sh:description "An actuatable quality (property, characteristic) of a FeatureOfInterest." ;
     sh:name "Actuatable Property" ;
     sh:nodeKind sh:IRI ;
-    sh:property shape_int:70cee6a5683f7eea433606ab11aa55db22166292 ;
+    sh:property shape_int:e2c21615478e02f7145c5731a77292a080608037 ;
     sh:targetClass sosa:ActuatableProperty .
 
 shape_int:5178b8ee50143f817566b0bf8a599ecfa344c4d6 a sh:NodeShape ;
@@ -315,7 +315,7 @@ shape_int:53d6bf00994a7a961b92ecd0048f0ecd77a13ddf a sh:NodeShape ;
     sh:description "An observable quality (property, characteristic) of a FeatureOfInterest." ;
     sh:name "Observable Property" ;
     sh:nodeKind sh:IRI ;
-    sh:property shape_int:14646c2e794205413e65db44e36e33709048eace ;
+    sh:property shape_int:2c73bdaecd2868244e699e62dadf31ffe8fc7d6f ;
     sh:targetClass sosa:ObservableProperty .
 
 shape_int:570235059a222492a19258ceb49ba4903a1c6a49 a sh:NodeShape ;
@@ -549,10 +549,10 @@ shape_int:9ae33a7d0ecb82cae8f04aafab20bf90425b7b8c a sh:NodeShape ;
     sh:name "Property" ;
     sh:nodeKind sh:IRI ;
     sh:property shape_int:0e711b5134e15cd2e276ff8f6f0860491154ba95,
-        shape_int:3fbaf5c2b0a94beac8a677ffaedf52102b451347,
         shape_int:88bedf235f41d2d00cc293769f22e2be499ce716,
         shape_int:9137d01245a94ca912a447707f6e7deb76a47647,
         shape_int:a21e7473bb7efbe2dfaefa135a1ff134370c755c,
+        shape_int:d98ab316dee9a19f27331c4960bfc3c008eae294,
         shape_int:eeccc45c2c09acb18cb265a740655230764bffef ;
     sh:targetClass ssn:Property,
         <https://saref.etsi.org/core/Property> .
@@ -630,8 +630,8 @@ shape_int:b8f25847c3810834b2b8a6bf6bb1a246fba8e4c6 a sh:NodeShape ;
         shape_int:20a325f29462e3071c6693a11fb079aa80dab3ea,
         shape_int:556e4be069236b6eb683c6a63f37cdb157b62107,
         shape_int:6bf9d48a5548492551b3e03181792e900d2a72f3,
+        shape_int:7d4d73d67361bfa092a922bf8e1d14806adf4bf5,
         shape_int:9137d01245a94ca912a447707f6e7deb76a47647,
-        shape_int:93ce6e13717d8d3ed0ef53a250cd29aa1646d76f,
         shape_int:c633f0d3824d1af0e918363648c2c0c3f9d8d189,
         shape_int:d3abbd3d874e4c556dbc0d469dc04c63a1b51466 ;
     sh:targetClass <https://saref.etsi.org/core/FeatureKind> .
@@ -880,12 +880,6 @@ shape_int:12b86c69bb81474d4159a29d530d30e8dcf809fe a sh:PropertyShape ;
     sh:nodeKind sh:IRIOrLiteral ;
     sh:path sosa:madeBySampler .
 
-shape_int:14646c2e794205413e65db44e36e33709048eace a sh:PropertyShape ;
-    rdfs:comment "An observable property can only be observed by instances from class sosa:Sensor." ;
-    sh:class sosa:Sensor ;
-    sh:nodeKind sh:IRIOrLiteral ;
-    sh:path [ sh:alternativePath ( sosa:isObservedBy <https://saref.etsi.org/core/isObservedBy> ) ] .
-
 shape_int:15095dbf48e92c43d9f437430ec7e3af32e3296e a sh:PropertyShape ;
     rdfs:comment "A sampler makes sampling." ;
     sh:class sosa:Sampling ;
@@ -923,6 +917,12 @@ shape_int:28a354b99ba367c82746ae73dd5d7051a00ba5f9 a sh:PropertyShape ;
     sh:nodeKind sh:IRIOrLiteral ;
     sh:path ssn:isProxyFor .
 
+shape_int:2c73bdaecd2868244e699e62dadf31ffe8fc7d6f a sh:PropertyShape ;
+    rdfs:comment "An observable property can only be observed by instances from class sosa:Sensor." ;
+    sh:class sosa:Sensor ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path [ sh:alternativePath ( sosa:isObservedBy <https://saref.etsi.org/core/isObservedBy> ) ] .
+
 shape_int:350680a01c5ad8fab16f5348c645961b8747d304 a sh:PropertyShape ;
     rdfs:label "A relationship specifying the property that can be measured by a certain device",
         "measures property" ;
@@ -937,11 +937,6 @@ shape_int:3581ef7afd5a18fac3e50317deb52f4832d8b0ba a sh:PropertyShape ;
     sh:class ssn:System ;
     sh:nodeKind sh:IRIOrLiteral ;
     sh:path ssn:implementedBy .
-
-shape_int:3fbaf5c2b0a94beac8a677ffaedf52102b451347 a sh:PropertyShape ;
-    sh:class sosa:FeatureOfInterest ;
-    sh:nodeKind sh:IRIOrLiteral ;
-    sh:path [ sh:alternativePath ( ssn:isPropertyOf <https://saref.etsi.org/core/isPropertyOf> ) ] .
 
 shape_int:429810903fdbee44d2ff53e46b4446fcd15b28a4 a sh:PropertyShape ;
     rdfs:label "Links a profile to the money earned (negative values) or paid (positive values) for the use (production or consumption) of the commodity by the device",
@@ -1034,11 +1029,14 @@ shape_int:6bf9d48a5548492551b3e03181792e900d2a72f3 a sh:PropertyShape ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path <https://saref.etsi.org/core/hasState> .
 
-shape_int:70cee6a5683f7eea433606ab11aa55db22166292 a sh:PropertyShape ;
-    rdfs:comment "An actuatable property can only be acted on by an actuation." ;
-    sh:class sosa:Actuation ;
-    sh:nodeKind sh:IRIOrLiteral ;
-    sh:path [ sh:alternativePath ( sosa:isActedOnBy <https://saref.etsi.org/core/isActedUponBy> ) ] .
+shape_int:7d4d73d67361bfa092a922bf8e1d14806adf4bf5 a sh:PropertyShape ;
+    rdfs:label "Links a feature kind or a feature of interest to one of its properties.",
+        "has property" ;
+    sh:class <https://saref.etsi.org/core/Property> ;
+    sh:description "Links a feature kind or a feature of interest to one of its properties." ;
+    sh:name "has property" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path [ sh:alternativePath ( ssn:hasProperty <https://saref.etsi.org/core/hasProperty> ) ] .
 
 shape_int:82daa7cd221b63b95d8e756419abaf1304232cbc a sh:PropertyShape ;
     rdfs:comment "An actuation acts at least on one actuable property." ;
@@ -1064,15 +1062,6 @@ shape_int:88bedf235f41d2d00cc293769f22e2be499ce716 a sh:PropertyShape ;
     sh:name "is controlled by device" ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path <https://saref.etsi.org/core/isControlledByDevice> .
-
-shape_int:93ce6e13717d8d3ed0ef53a250cd29aa1646d76f a sh:PropertyShape ;
-    rdfs:label "Links a feature kind or a feature of interest to one of its properties.",
-        "has property" ;
-    sh:class <https://saref.etsi.org/core/Property> ;
-    sh:description "Links a feature kind or a feature of interest to one of its properties." ;
-    sh:name "has property" ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path [ sh:alternativePath ( ssn:hasProperty <https://saref.etsi.org/core/hasProperty> ) ] .
 
 shape_int:96bcced52ec4401f1c8f3b531f5c7359536c4bbb a sh:PropertyShape ;
     rdfs:label "Links a device to its kind, a feature kind. Kinds of devices describe models of devices, with common properties having the same value, common states being the same, common functions, and common services.",
@@ -1185,6 +1174,11 @@ shape_int:c633f0d3824d1af0e918363648c2c0c3f9d8d189 a sh:PropertyShape ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path <https://saref.etsi.org/core/hasFunction> .
 
+shape_int:d98ab316dee9a19f27331c4960bfc3c008eae294 a sh:PropertyShape ;
+    sh:class sosa:FeatureOfInterest ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path [ sh:alternativePath ( ssn:isPropertyOf <https://saref.etsi.org/core/isPropertyOf> ) ] .
+
 shape_int:dbc25224636c208f6307bea131a39832143b2740 a sh:PropertyShape ;
     rdfs:label "A relationship between a metering function and the measurement of the reading",
         "has meter reading" ;
@@ -1207,6 +1201,12 @@ shape_int:e2a8c80fe242aae97d4403f24fecbff04d303777 a sh:PropertyShape ;
     sh:class ssn:Input ;
     sh:nodeKind sh:IRIOrLiteral ;
     sh:path ssn:hasInput .
+
+shape_int:e2c21615478e02f7145c5731a77292a080608037 a sh:PropertyShape ;
+    rdfs:comment "An actuatable property can only be acted on by an actuation." ;
+    sh:class sosa:Actuation ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path [ sh:alternativePath ( sosa:isActedOnBy <https://saref.etsi.org/core/isActedUponBy> ) ] .
 
 shape_int:e6e49bc1f72e3b64ddf3ce36c147c9b2c9f6acbd a sh:PropertyShape ;
     rdfs:comment "An observation is made on one and exactly one feature of interest." ;
@@ -1330,7 +1330,7 @@ shape_int:b123de5385156025c3002544c773a23ccf7b12cb a sh:PropertyShape ;
     sh:name "made by" ;
     sh:nodeKind sh:BlankNodeOrIRI,
         sh:IRIOrLiteral ;
-    sh:or ( [ sh:class <https://saref.etsi.org/core/Actuator> ] [ sh:class <https://saref.etsi.org/core/Sensor> ] [ sh:class <https://saref.etsi.org/core/FeatureOfInterest> ] ) ;
+    sh:or ( [ sh:class <https://saref.etsi.org/core/Sensor> ] [ sh:class <https://saref.etsi.org/core/Actuator> ] [ sh:class <https://saref.etsi.org/core/FeatureOfInterest> ] ) ;
     sh:path <https://saref.etsi.org/core/madeBy> .
 
 shape_int:ccd24208229d49d806b88a0f8bf75804452d8e73 a sh:PropertyShape ;
@@ -1385,11 +1385,11 @@ shape_int:13fb04dd886f60495e225065e758c6cd54ff9beb a sh:PropertyShape ;
 
 shape_int:0e711b5134e15cd2e276ff8f6f0860491154ba95 a sh:PropertyShape ;
     sh:nodeKind sh:IRIOrLiteral ;
-    sh:or ( [ sh:class <https://saref.etsi.org/core/Property> ] [ sh:class <https://saref.etsi.org/core/State> ] [ sh:class <https://saref.etsi.org/core/Function> ] [ sh:class <https://saref.etsi.org/core/Task> ] [ sh:class <https://saref.etsi.org/core/Command> ] [ sh:class <https://saref.etsi.org/core/FeatureKind> ] [ sh:class <https://saref.etsi.org/core/Commodity> ] ) ;
+    sh:or ( [ sh:class <https://saref.etsi.org/core/Property> ] [ sh:class <https://saref.etsi.org/core/Task> ] [ sh:class <https://saref.etsi.org/core/Command> ] [ sh:class <https://saref.etsi.org/core/Function> ] [ sh:class <https://saref.etsi.org/core/State> ] [ sh:class <https://saref.etsi.org/core/Commodity> ] [ sh:class <https://saref.etsi.org/core/FeatureKind> ] ) ;
     sh:path skos:broader .
 
 shape_int:9137d01245a94ca912a447707f6e7deb76a47647 a sh:PropertyShape ;
     sh:nodeKind sh:IRIOrLiteral ;
-    sh:or ( [ sh:class <https://saref.etsi.org/core/Property> ] [ sh:class <https://saref.etsi.org/core/State> ] [ sh:class <https://saref.etsi.org/core/Function> ] [ sh:class <https://saref.etsi.org/core/Task> ] [ sh:class <https://saref.etsi.org/core/Command> ] [ sh:class <https://saref.etsi.org/core/FeatureKind> ] [ sh:class <https://saref.etsi.org/core/Commodity> ] ) ;
+    sh:or ( [ sh:class <https://saref.etsi.org/core/Property> ] [ sh:class <https://saref.etsi.org/core/Task> ] [ sh:class <https://saref.etsi.org/core/Command> ] [ sh:class <https://saref.etsi.org/core/Function> ] [ sh:class <https://saref.etsi.org/core/State> ] [ sh:class <https://saref.etsi.org/core/Commodity> ] [ sh:class <https://saref.etsi.org/core/FeatureKind> ] ) ;
     sh:path skos:narrower .
 

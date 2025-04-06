@@ -21,9 +21,7 @@ def integration_possibilities() -> dict:
 @integrate.route('/integrate/<id>/<operation>', methods=['POST'])
 @get_time
 def integration(id: str, operation: str) -> str:
-    # Join/AND
-    # Disjoint/OR
-
+    
     # Check if the operation is valid and if the id is in the json_data
     if operation not in ['union', 'intersection']:
         return MESSAGE_INTEGRATION_INVALID_OPERATION_KO, BAD_REQUEST
@@ -45,7 +43,9 @@ def integration(id: str, operation: str) -> str:
     if all(key in result for key in ['integrated_shape_path', 'inconsistences_report_path']):
         return MESSAGE_INTEGRATION_OK(id=id, operation=operation,
                                       integrated_shape_path=result['integrated_shape_path'],
-                                      inconsistences_report_path=result['inconsistences_report_path']
+                                      inconsistences_report_path=result['inconsistences_report_path'],
+                                      inconsistences=count_constants.global_inconsistences_counter,
+                                      integrations=count_constants.global_integration_counter
                                       ), OK
     else:
         return MESSAGE_INTEGRATION_KO(id=id,
