@@ -13,7 +13,7 @@ class IntegrationMethod:
 
     @get_time
     def execute_identification(self) -> list[Cluster]:
-        identification_activity: Identification = Identification(input_tuples=self.input_tuples, alignment_reference=self.alignment_reference) 
+        identification_activity: Identification = Identification(input_tuples=self.input_tuples, alignment_reference=self.alignment_reference)
         self.concept_clusters = identification_activity.execute_identification()
         return self.concept_clusters
 

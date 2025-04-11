@@ -1,0 +1,34 @@
+@prefix inc: <http://inconsistence.es#> .
+@prefix inc_ex: <http://inconsistence_example.es/resource/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+inc_ex:130a7621-5d60-4cca-9677-011a6ab18548 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:IRI,
+        sh:Literal ;
+    inc:hasInconsistencyInClass <http://codata.jp/OML-MaterialInformation#Geometry> ;
+    inc:hasReport "sh:nodeKind not compatible" .
+
+inc_ex:2ac4b4af-390b-4773-9002-ebf9fd08df24 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:IRI,
+        sh:Literal ;
+    inc:hasInconsistencyInClass <http://codata.jp/OML-MaterialInformation#CommonName> ;
+    inc:hasReport "sh:nodeKind not compatible" .
+
+inc_ex:63368b94-abc8-4f07-bc19-903dc8cd719e a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:IRI,
+        sh:Literal ;
+    inc:hasInconsistencyInClass <http://codata.jp/OML-MaterialInformation#Value> ;
+    inc:hasReport "sh:nodeKind not compatible" .
+
+inc_ex:826b2c0f-ee1e-4797-baae-b8cdd12d4032 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:IRI,
+        sh:Literal ;
+    inc:hasInconsistencyInClass <http://codata.jp/OML-MaterialInformation#Atmosphere> ;
+    inc:hasReport "sh:nodeKind not compatible" .
+
+inc_ex:c0de6b46-ba86-477a-8c1b-481e1347efad a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:IRI,
+        sh:Literal ;
+    inc:hasInconsistencyInClass <http://codata.jp/OML-MaterialInformation#Thickness> ;
+    inc:hasReport "sh:nodeKind not compatible" .
+

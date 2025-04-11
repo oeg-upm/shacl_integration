@@ -1,0 +1,725 @@
+@prefix :      <http://cmt#> .
+@prefix xsp:   <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix swrl:  <http://www.w3.org/2003/11/swrl#> .
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://astrea.linkeddata.es/shapes#e5a56f34101159a4b5f973fc499af8c4>
+        a            sh:PropertyShape ;
+        sh:class     :Administrator ;
+        sh:maxCount  1 ;
+        sh:nodeKind  sh:BlankNodeOrIRI , sh:IRIOrLiteral ;
+        sh:path      :addedBy .
+
+<https://astrea.linkeddata.es/shapes#220668e77cde078abb1c83536ab4cb70>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#da738c69edd14dcb7bdccb8adba4a862> , <https://astrea.linkeddata.es/shapes#355c1076be2189ac61e02b087bc1cd54> , <https://astrea.linkeddata.es/shapes#052190b46332db433adf20126903dd09> , <https://astrea.linkeddata.es/shapes#d022ae7cf2618fac78312bebfae3fd1e> , <https://astrea.linkeddata.es/shapes#6442297e89c58ec8dba965a518c10659> , <https://astrea.linkeddata.es/shapes#92cdc647bf59b01a2a2b2f8228c785de> ;
+        sh:targetClass  :Preference .
+
+<https://astrea.linkeddata.es/shapes#ad42b9d36e5e2d8c029ab310d8fb1054>
+        a         sh:PropertyShape ;
+        sh:class  :Acceptance .
+
+<https://astrea.linkeddata.es/shapes#83bcb999b9ddc708bfb07563e793f85f>
+        a            sh:PropertyShape ;
+        sh:class     :Reviewer ;
+        sh:maxCount  1 ;
+        sh:nodeKind  sh:BlankNodeOrIRI , sh:IRIOrLiteral ;
+        sh:path      :writtenBy .
+
+<https://astrea.linkeddata.es/shapes#e70179d57e2e1741be72d01d86ffe02b>
+        a            sh:PropertyShape ;
+        sh:class     :ProgramCommitteeMember ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :setMaxPapers .
+
+<https://astrea.linkeddata.es/shapes#92cdc647bf59b01a2a2b2f8228c785de>
+        a         sh:PropertyShape ;
+        sh:class  :ProgramCommittee .
+
+<https://astrea.linkeddata.es/shapes#a49fc145a7dfec4b229262bc1ee09aab>
+        a            sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :email ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#56444fbbb5a3848d437f2061f141bbb9>
+        a                sh:PropertyShape ;
+        sh:datatype      xsd:int ;
+        sh:maxCount      1 ;
+        sh:maxInclusive  2147483647 ;
+        sh:minInclusive  -2147483648 ;
+        sh:nodeKind      sh:Literal , sh:IRIOrLiteral ;
+        sh:path          :reviewsPerPaper ;
+        sh:pattern       "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#b66fdd270733eb964ecbea9149882d9e>
+        a               sh:NodeShape ;
+        sh:description  "A special type of Reviewer.  There can be any number of Reviewers for a given paper, but only one Meta-Reviewer.  The Meta-Reviewer can go over all the reviews submitted for the paper and submit their own review.  Questions for the Meta-Reviewer can be different from those for a normal Reviewer.  Their role is to ensure that the reviews are good and consistent. The decision to use Meta-Reviewers is optional, and must be set before paper assignment occurs." ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Meta-Reviewer .
+
+<https://astrea.linkeddata.es/shapes#6854d4e4c0236f485df6a32dedb8b283>
+        a            sh:PropertyShape ;
+        sh:class     :Meta-Reviewer ;
+        sh:maxCount  1 ;
+        sh:nodeKind  sh:BlankNodeOrIRI , sh:IRIOrLiteral ;
+        sh:path      :readByMeta-Reviewer .
+
+<https://astrea.linkeddata.es/shapes#84f9a83070a73112a5bca090e4fe91d4>
+        a            sh:PropertyShape ;
+        sh:class     :Review ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :endReview .
+
+<https://astrea.linkeddata.es/shapes#1cb1f553ca4ad43745110b7542873a02>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#746d2abe84944ad01279eaa27baa1666> ;
+        sh:targetClass  :AssociatedChair .
+
+<https://astrea.linkeddata.es/shapes#777864a1365904731c03b8383bb6e5d5>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :name .
+
+<https://astrea.linkeddata.es/shapes#2e2120d3d5a2b4d46e8cf57b17c9ea9b>
+        a         sh:PropertyShape ;
+        sh:class  :Reviewer .
+
+<https://astrea.linkeddata.es/shapes#6442297e89c58ec8dba965a518c10659>
+        a         sh:PropertyShape ;
+        sh:class  :Person .
+
+<https://astrea.linkeddata.es/shapes#8a746f538ff3d3476b5cce48e83b9648>
+        a            sh:PropertyShape ;
+        sh:class     :Administrator ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :virtualMeetingEnabledBy .
+
+<https://astrea.linkeddata.es/shapes#c9361c330b45e9e23cd73aa11aa5613c>
+        a               sh:PropertyShape ;
+        sh:class        :Paper ;
+        sh:inversePath  :acceptPaper ;
+        sh:maxCount     1 ;
+        sh:nodeKind     sh:BlankNodeOrIRI , sh:IRIOrLiteral ;
+        sh:path         :acceptPaper .
+
+<https://astrea.linkeddata.es/shapes#084f62eebce23b0d4a1ac7a5e2265909>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#052190b46332db433adf20126903dd09> , <https://astrea.linkeddata.es/shapes#7ea1c77d12498df559363870ef5a20be> , <https://astrea.linkeddata.es/shapes#355c1076be2189ac61e02b087bc1cd54> , <https://astrea.linkeddata.es/shapes#da738c69edd14dcb7bdccb8adba4a862> , <https://astrea.linkeddata.es/shapes#6442297e89c58ec8dba965a518c10659> , <https://astrea.linkeddata.es/shapes#d022ae7cf2618fac78312bebfae3fd1e> ;
+        sh:property     <https://astrea.linkeddata.es/shapes#e093e949248f62a9ab121852c126eb0c> ;
+        sh:targetClass  :ProgramCommittee .
+
+<https://astrea.linkeddata.es/shapes#e31974121289ac4b1cd1006333be99b3>
+        a            sh:PropertyShape ;
+        sh:class     :Paper ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :submitPaper .
+
+<https://astrea.linkeddata.es/shapes#7d7ba77a15597f772d741d76c67fa424>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#84f9a83070a73112a5bca090e4fe91d4> ;
+        sh:targetClass  :ProgramCommitteeChair .
+
+<https://astrea.linkeddata.es/shapes#341091709432f662494917876046ac87>
+        a               sh:PropertyShape ;
+        sh:class        :ProgramCommitteeMember ;
+        sh:inversePath  :addProgramCommitteeMember ;
+        sh:maxCount     1 ;
+        sh:nodeKind     sh:IRIOrLiteral , sh:BlankNodeOrIRI ;
+        sh:path         :addProgramCommitteeMember .
+
+<https://astrea.linkeddata.es/shapes#62c2ad0650558b0a493239c2083c0cea>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:int ;
+        sh:minCount  "0"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :hasDecision .
+
+<https://astrea.linkeddata.es/shapes#746d2abe84944ad01279eaa27baa1666>
+        a         sh:PropertyShape ;
+        sh:class  :ConferenceChair .
+
+<https://astrea.linkeddata.es/shapes#f68a767107227a91f7706b4f15dea563>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#92cdc647bf59b01a2a2b2f8228c785de> , <https://astrea.linkeddata.es/shapes#d022ae7cf2618fac78312bebfae3fd1e> , <https://astrea.linkeddata.es/shapes#6442297e89c58ec8dba965a518c10659> , <https://astrea.linkeddata.es/shapes#7ea1c77d12498df559363870ef5a20be> , <https://astrea.linkeddata.es/shapes#da738c69edd14dcb7bdccb8adba4a862> , <https://astrea.linkeddata.es/shapes#052190b46332db433adf20126903dd09> ;
+        sh:property     <https://astrea.linkeddata.es/shapes#52cce6c387b2b850f6a1e63480c48609> , <https://astrea.linkeddata.es/shapes#777864a1365904731c03b8383bb6e5d5> , <https://astrea.linkeddata.es/shapes#cb9b47ab1f927950d8e939e0c062778b> , <https://astrea.linkeddata.es/shapes#becc20eb610ad84e103a4b11e33370fa> , <https://astrea.linkeddata.es/shapes#4194ff4a5cd8a45196449a69d49b28a8> , <https://astrea.linkeddata.es/shapes#90e2317dc35d91e23b1dd8abc7482cfc> , <https://astrea.linkeddata.es/shapes#cd6ffcecaf3ab918bfec3d6d6469595f> , <https://astrea.linkeddata.es/shapes#a6ec890fbadee4d4b456bf7d3028212b> , <https://astrea.linkeddata.es/shapes#8a746f538ff3d3476b5cce48e83b9648> , <https://astrea.linkeddata.es/shapes#b562091393a4148844b2c3814a1cd9ab> , <https://astrea.linkeddata.es/shapes#89a18b554fdcf77285b2e0d172137d64> , <https://astrea.linkeddata.es/shapes#c9ed4a7a03c32cd849bf486f1ba680b1> , <https://astrea.linkeddata.es/shapes#56444fbbb5a3848d437f2061f141bbb9> , <https://astrea.linkeddata.es/shapes#d927cf39878acd9f420dae28d1f554bb> , <https://astrea.linkeddata.es/shapes#bc7fcfc707938a8845ed1ad6f51da21b> , <https://astrea.linkeddata.es/shapes#992992be61c0ef60d45300b90cf122b3> , <https://astrea.linkeddata.es/shapes#16f5a489feb9b288fd674300f050bbd4> ;
+        sh:targetClass  :Conference .
+
+<https://astrea.linkeddata.es/shapes#b5c1348491a5782ee05e0872a12c7b60>
+        a            sh:PropertyShape ;
+        sh:class     :Administrator ;
+        sh:maxCount  1 ;
+        sh:nodeKind  sh:BlankNodeOrIRI , sh:IRIOrLiteral ;
+        sh:path      :rejectedBy .
+
+<https://astrea.linkeddata.es/shapes#1d4ae018424cb9b5b2e2ab0b44e9defa>
+        a         sh:PropertyShape ;
+        sh:class  :ExternalReviewer .
+
+<https://astrea.linkeddata.es/shapes#8451079a0a46a61cc13af4c758274f9a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#4f13eefa661596f9ae7151558a1b1ada> ;
+        sh:targetClass  :AssociatedChair , :ConferenceChair , :ProgramCommitteeChair , :Chairman .
+
+<https://astrea.linkeddata.es/shapes#7ea1c77d12498df559363870ef5a20be>
+        a         sh:PropertyShape ;
+        sh:class  :Preference .
+
+<https://astrea.linkeddata.es/shapes#11f6b8122d266bc38fbece6e0a539832>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#92cdc647bf59b01a2a2b2f8228c785de> , <https://astrea.linkeddata.es/shapes#6442297e89c58ec8dba965a518c10659> , <https://astrea.linkeddata.es/shapes#355c1076be2189ac61e02b087bc1cd54> , <https://astrea.linkeddata.es/shapes#052190b46332db433adf20126903dd09> , <https://astrea.linkeddata.es/shapes#7ea1c77d12498df559363870ef5a20be> , <https://astrea.linkeddata.es/shapes#d022ae7cf2618fac78312bebfae3fd1e> ;
+        sh:property     <https://astrea.linkeddata.es/shapes#9dfe708879866b8c84d5dcf536398885> ;
+        sh:targetClass  :Bid .
+
+<https://astrea.linkeddata.es/shapes#78cc7c1c7dd7be2399f587ab79026cd8>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#b79fec49efe9d8135e6eff10a8a789fb> , <https://astrea.linkeddata.es/shapes#47b4a35a346830f8d70449039caaaa10> , <https://astrea.linkeddata.es/shapes#e70179d57e2e1741be72d01d86ffe02b> , <https://astrea.linkeddata.es/shapes#96324bbbfc08dbf4b877209d2ff89d93> , <https://astrea.linkeddata.es/shapes#925b3ebf5344b1ceedeeb40cf972f04e> , <https://astrea.linkeddata.es/shapes#0d4ee6057f5b789befa92306f7fc6ac0> , <https://astrea.linkeddata.es/shapes#40cdc3d3bc359bf91f5dbd8c8076e789> , <https://astrea.linkeddata.es/shapes#7e8d8abbe8d54345a3df5e5b407acfca> , <https://astrea.linkeddata.es/shapes#1ad9e28e9dc17d93c8c97f3e6bdae0ed> ;
+        sh:targetClass  :Administrator .
+
+<https://astrea.linkeddata.es/shapes#cb66519e49ec6eb32f9912515b4e8ac0>
+        a               sh:PropertyShape ;
+        sh:class        :Review ;
+        sh:inversePath  :writeReview ;
+        sh:maxCount     1 ;
+        sh:nodeKind     sh:IRIOrLiteral , sh:BlankNodeOrIRI ;
+        sh:path         :writeReview .
+
+<https://astrea.linkeddata.es/shapes#ebfc2177b406285ac876c397d40071ff>
+        a               sh:NodeShape ;
+        sh:description  "The Program Committee consists of all members of the conference except for Authors who are not also Reviewers." ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#f12861afaeb0c28f7cb4da8bdcb7fede> ;
+        sh:property     <https://astrea.linkeddata.es/shapes#e5a56f34101159a4b5f973fc499af8c4> , <https://astrea.linkeddata.es/shapes#d4d04162ceb48a9512a0b44ba1ce3264> , <https://astrea.linkeddata.es/shapes#e1199517b8d2f424eb4fc4dcec46429b> ;
+        sh:targetClass  :ProgramCommitteeMember .
+
+<https://astrea.linkeddata.es/shapes#9f1156412a61723aa55151f68cd97f4c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#7ea1c77d12498df559363870ef5a20be> , <https://astrea.linkeddata.es/shapes#da738c69edd14dcb7bdccb8adba4a862> , <https://astrea.linkeddata.es/shapes#052190b46332db433adf20126903dd09> , <https://astrea.linkeddata.es/shapes#d022ae7cf2618fac78312bebfae3fd1e> , <https://astrea.linkeddata.es/shapes#355c1076be2189ac61e02b087bc1cd54> , <https://astrea.linkeddata.es/shapes#92cdc647bf59b01a2a2b2f8228c785de> ;
+        sh:property     <https://astrea.linkeddata.es/shapes#52cce6c387b2b850f6a1e63480c48609> , <https://astrea.linkeddata.es/shapes#7c1efb6f94be460f2756785b9118205d> , <https://astrea.linkeddata.es/shapes#a49fc145a7dfec4b229262bc1ee09aab> ;
+        sh:targetClass  :Person .
+
+<https://astrea.linkeddata.es/report/0620946147>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#89a18b554fdcf77285b2e0d172137d64>
+        a            sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :date ;
+        sh:pattern   "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#c9ed4a7a03c32cd849bf486f1ba680b1>
+        a            sh:PropertyShape ;
+        sh:class     :Administrator ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :paperAssignmentFinalizedBy .
+
+<https://astrea.linkeddata.es/shapes#7a89d9ad637ef0e93ccf9dcdd95dfe40>
+        a            sh:PropertyShape ;
+        sh:class     :Author ;
+        sh:maxCount  1 ;
+        sh:nodeKind  sh:BlankNodeOrIRI , sh:IRIOrLiteral ;
+        sh:path      :hasAuthor .
+
+<https://astrea.linkeddata.es/shapes#bdd17b5677b997de36befd1d6c46f534>
+        a            sh:PropertyShape ;
+        sh:class     :Paper ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :readPaper .
+
+<https://astrea.linkeddata.es/shapes#355c1076be2189ac61e02b087bc1cd54>
+        a         sh:PropertyShape ;
+        sh:class  :Conference .
+
+<https://astrea.linkeddata.es/shapes#608824c9a471341777636aafd076c16b>
+        a               sh:PropertyShape ;
+        sh:class        :Paper ;
+        sh:inversePath  :writePaper ;
+        sh:maxCount     1 ;
+        sh:nodeKind     sh:IRIOrLiteral , sh:BlankNodeOrIRI ;
+        sh:path         :writePaper .
+
+<https://astrea.linkeddata.es/shapes#079aba5cad00f42a206bbef75087bbae>
+        a            sh:PropertyShape ;
+        sh:class     :Reviewer ;
+        sh:maxCount  1 ;
+        sh:nodeKind  sh:BlankNodeOrIRI , sh:IRIOrLiteral ;
+        sh:path      :assignedByReviewer .
+
+<https://astrea.linkeddata.es/shapes#7c3a48a80e9d16898ff49b5f6d7e7552>
+        a         sh:PropertyShape ;
+        sh:class  :AssociatedChair .
+
+<https://astrea.linkeddata.es/shapes#52cce6c387b2b850f6a1e63480c48609>
+        a            sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:maxCount  1 ;
+        sh:nodeKind  sh:Literal , sh:IRIOrLiteral ;
+        sh:path      :name ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#fbfedcbe21a7acecd694ef6a22a8a100>
+        a               sh:PropertyShape ;
+        sh:class        :Administrator ;
+        sh:inversePath  :acceptedBy ;
+        sh:maxCount     1 ;
+        sh:nodeKind     sh:BlankNodeOrIRI , sh:IRIOrLiteral ;
+        sh:path         :acceptedBy .
+
+<https://astrea.linkeddata.es/shapes#d022ae7cf2618fac78312bebfae3fd1e>
+        a         sh:PropertyShape ;
+        sh:class  :Decision .
+
+<https://astrea.linkeddata.es/shapes#90e2317dc35d91e23b1dd8abc7482cfc>
+        a            sh:PropertyShape ;
+        sh:class     :ConferenceMember ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasConferenceMember .
+
+<https://astrea.linkeddata.es/shapes#4822f38e7ebd669f0330bb7cdcf59eca>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#1d4ae018424cb9b5b2e2ab0b44e9defa> , <https://astrea.linkeddata.es/shapes#f12861afaeb0c28f7cb4da8bdcb7fede> ;
+        sh:property     <https://astrea.linkeddata.es/shapes#0bf3b538817ca36205c4dcf1ae2740ec> , <https://astrea.linkeddata.es/shapes#b775de5af5c4f545776b03e200f93144> , <https://astrea.linkeddata.es/shapes#bdd17b5677b997de36befd1d6c46f534> , <https://astrea.linkeddata.es/shapes#4f13eefa661596f9ae7151558a1b1ada> ;
+        sh:targetClass  :Reviewer .
+
+<https://astrea.linkeddata.es/shapes#0bc73b3b20a41e0d8b2c659bde81a4f6>
+        a                sh:PropertyShape ;
+        sh:datatype      xsd:unsignedLong ;
+        sh:maxCount      1 ;
+        sh:maxInclusive  18446744073709551615 ;
+        sh:minInclusive  0 ;
+        sh:nodeKind      sh:Literal , sh:IRIOrLiteral ;
+        sh:path          :paperID ;
+        sh:pattern       "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#d4d04162ceb48a9512a0b44ba1ce3264>
+        a            sh:PropertyShape ;
+        sh:class     :ProgramCommittee ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :memberOfProgramCommittee .
+
+<https://astrea.linkeddata.es/shapes#b7efe66bc61fc0f14efa7e0954b42ed1>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#5fcd99832f952abe6a358df75fca41cd> ;
+        sh:targetClass  :Co-author .
+
+<https://astrea.linkeddata.es/shapes#d47b9a9d6eb47bc1f9ca2ac72c7dd46f>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :PaperFullVersion .
+
+<https://astrea.linkeddata.es/shapes#a863a31a6b945ff569e99e8f48e0b7e1>
+        a         sh:PropertyShape ;
+        sh:class  :Rejection .
+
+<https://astrea.linkeddata.es/shapes#dafb486c839597663c4782553349fa19>
+        a               sh:PropertyShape ;
+        sh:class        :ExternalReviewer ;
+        sh:inversePath  :assignExternalReviewer ;
+        sh:maxCount     1 ;
+        sh:nodeKind     sh:IRIOrLiteral , sh:BlankNodeOrIRI ;
+        sh:path         :assignExternalReviewer .
+
+<https://astrea.linkeddata.es/shapes#da70e8733b85c128d8020af402471730>
+        a               sh:PropertyShape ;
+        sh:class        :Paper ;
+        sh:inversePath  :rejectPaper ;
+        sh:maxCount     1 ;
+        sh:nodeKind     sh:IRIOrLiteral , sh:BlankNodeOrIRI ;
+        sh:path         :rejectPaper .
+
+<https://astrea.linkeddata.es/shapes#7e5d826da4ba64cd13644fd6875bc497>
+        a               sh:NodeShape ;
+        sh:description  "An External Reviewer is a person that has been assigned to review a paper for another Reviewer, but is not themselves a Reviewer. " ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#2e2120d3d5a2b4d46e8cf57b17c9ea9b> ;
+        sh:property     <https://astrea.linkeddata.es/shapes#079aba5cad00f42a206bbef75087bbae> , <https://astrea.linkeddata.es/shapes#c2f77e95fe22f93bc2347f2f5784b5a6> ;
+        sh:targetClass  :ExternalReviewer .
+
+<https://astrea.linkeddata.es/shapes#4e86f27724c5fefe45cb69e9461357c5>
+        a            sh:PropertyShape ;
+        sh:class     :Co-author ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasCo-author .
+
+<https://astrea.linkeddata.es/shapes#4af3c1a896dc53dacdfc9be72a9dcade>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :User .
+
+<https://astrea.linkeddata.es/shapes#770ac8cf32ef474666675bc040723bcb>
+        a            sh:PropertyShape ;
+        sh:class     :Conference ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :memberOfConference .
+
+<https://astrea.linkeddata.es/shapes#96324bbbfc08dbf4b877209d2ff89d93>
+        a            sh:PropertyShape ;
+        sh:class     :Conference ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :startReviewerBidding .
+
+<https://astrea.linkeddata.es/shapes#4194ff4a5cd8a45196449a69d49b28a8>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :reviewsPerPaper .
+
+<https://astrea.linkeddata.es/shapes#47b4a35a346830f8d70449039caaaa10>
+        a            sh:PropertyShape ;
+        sh:class     :Conference ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :enableVirtualMeeting .
+
+<https://astrea.linkeddata.es/shapes#7c1efb6f94be460f2756785b9118205d>
+        a            sh:PropertyShape ;
+        sh:class     :Document ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasConflictOfInterest .
+
+<https://astrea.linkeddata.es/shapes#df2ec59e3a554d66cbf82aad91b7af42>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#a863a31a6b945ff569e99e8f48e0b7e1> ;
+        sh:targetClass  :Acceptance .
+
+<https://astrea.linkeddata.es/shapes#1ad9e28e9dc17d93c8c97f3e6bdae0ed>
+        a            sh:PropertyShape ;
+        sh:class     :Conference ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :enterConferenceDetails .
+
+<https://astrea.linkeddata.es/shapes#bc7fcfc707938a8845ed1ad6f51da21b>
+        a            sh:PropertyShape ;
+        sh:datatype  xsd:boolean ;
+        sh:maxCount  1 ;
+        sh:nodeKind  sh:Literal , sh:IRIOrLiteral ;
+        sh:path      :acceptsHardcopySubmissions ;
+        sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#3f7e343b77b7de41d84586b9923d91a8>
+        a            sh:PropertyShape ;
+        sh:class     :Reviewer ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :readByReviewer .
+
+<https://astrea.linkeddata.es/shapes#6ef89d0a4ee34b7b90f9a163ebaead99>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#355c1076be2189ac61e02b087bc1cd54> , <https://astrea.linkeddata.es/shapes#da738c69edd14dcb7bdccb8adba4a862> , <https://astrea.linkeddata.es/shapes#92cdc647bf59b01a2a2b2f8228c785de> , <https://astrea.linkeddata.es/shapes#7ea1c77d12498df559363870ef5a20be> , <https://astrea.linkeddata.es/shapes#052190b46332db433adf20126903dd09> , <https://astrea.linkeddata.es/shapes#6442297e89c58ec8dba965a518c10659> ;
+        sh:targetClass  :Decision .
+
+<https://astrea.linkeddata.es/shapes#0d4ee6057f5b789befa92306f7fc6ac0>
+        a            sh:PropertyShape ;
+        sh:class     :Conference ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :runPaperAssignmentTools .
+
+<https://astrea.linkeddata.es/shapes#e1d1ea26cdcda30832e6c659b275e148>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#ad42b9d36e5e2d8c029ab310d8fb1054> ;
+        sh:targetClass  :Rejection .
+
+<https://astrea.linkeddata.es/shapes#59d6dd3c44bbcb99708123fb65968ce2>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :PaperAbstract .
+
+<https://astrea.linkeddata.es/shapes#f12861afaeb0c28f7cb4da8bdcb7fede>
+        a         sh:PropertyShape ;
+        sh:class  :AuthorNotReviewer .
+
+<https://astrea.linkeddata.es/shapes#cb9b47ab1f927950d8e939e0c062778b>
+        a            sh:PropertyShape ;
+        sh:class     :Administrator ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :reviewCriteriaEnteredBy .
+
+<https://astrea.linkeddata.es/shapes#16f5a489feb9b288fd674300f050bbd4>
+        a            sh:PropertyShape ;
+        sh:datatype  xsd:anyURI ;
+        sh:maxCount  1 ;
+        sh:nodeKind  sh:Literal , sh:IRIOrLiteral ;
+        sh:path      :siteURL ;
+        sh:pattern   "^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\\?([^#]*))?(#(.*))?" .
+
+<https://astrea.linkeddata.es/shapes#ddf5dbc49437ce84c05a183047fb9ba8>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#7c3a48a80e9d16898ff49b5f6d7e7552> ;
+        sh:targetClass  :ConferenceChair .
+
+<https://astrea.linkeddata.es/shapes#5fcd99832f952abe6a358df75fca41cd>
+        a            sh:PropertyShape ;
+        sh:class     :Paper ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :co-writePaper .
+
+<https://astrea.linkeddata.es/shapes#7e8d8abbe8d54345a3df5e5b407acfca>
+        a            sh:PropertyShape ;
+        sh:class     :Conference ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :printHardcopyMailingManifests .
+
+<https://astrea.linkeddata.es/shapes#b0aa752811beb392db634c55eb423308>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#770ac8cf32ef474666675bc040723bcb> ;
+        sh:targetClass  :ConferenceMember .
+
+<https://astrea.linkeddata.es/shapes#9dfe708879866b8c84d5dcf536398885>
+        a            sh:PropertyShape ;
+        sh:class     :Reviewer ;
+        sh:maxCount  1 ;
+        sh:nodeKind  sh:BlankNodeOrIRI , sh:IRIOrLiteral ;
+        sh:path      :adjustedBy .
+
+<https://astrea.linkeddata.es/shapes#40cdc3d3bc359bf91f5dbd8c8076e789>
+        a            sh:PropertyShape ;
+        sh:class     :Conference ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :finalizePaperAssignment .
+
+<https://astrea.linkeddata.es/shapes#992992be61c0ef60d45300b90cf122b3>
+        a            sh:PropertyShape ;
+        sh:minCount  "1"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :date .
+
+<https://astrea.linkeddata.es/shapes#559cffd645de451271436b4d8365f90b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#7ea1c77d12498df559363870ef5a20be> , <https://astrea.linkeddata.es/shapes#6442297e89c58ec8dba965a518c10659> , <https://astrea.linkeddata.es/shapes#355c1076be2189ac61e02b087bc1cd54> , <https://astrea.linkeddata.es/shapes#92cdc647bf59b01a2a2b2f8228c785de> , <https://astrea.linkeddata.es/shapes#d022ae7cf2618fac78312bebfae3fd1e> , <https://astrea.linkeddata.es/shapes#da738c69edd14dcb7bdccb8adba4a862> ;
+        sh:targetClass  :Document .
+
+<https://astrea.linkeddata.es/shapes#72b009c46458c593fa024ee17871337b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :SubjectArea .
+
+<https://astrea.linkeddata.es/shapes#b79fec49efe9d8135e6eff10a8a789fb>
+        a            sh:PropertyShape ;
+        sh:class     :Conference ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :enterReviewCriteria .
+
+<https://astrea.linkeddata.es/shapes#0bf3b538817ca36205c4dcf1ae2740ec>
+        a            sh:PropertyShape ;
+        sh:class     :Administrator ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :assignedByAdministrator .
+
+<https://astrea.linkeddata.es/shapes#21ee4c5f58dd01a4470f6ec6ab4b47e8>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#e31974121289ac4b1cd1006333be99b3> , <https://astrea.linkeddata.es/shapes#4f13eefa661596f9ae7151558a1b1ada> ;
+        sh:targetClass  :Author .
+
+<https://astrea.linkeddata.es/shapes#e1199517b8d2f424eb4fc4dcec46429b>
+        a                sh:PropertyShape ;
+        sh:datatype      xsd:int ;
+        sh:maxCount      1 ;
+        sh:maxInclusive  2147483647 ;
+        sh:minInclusive  -2147483648 ;
+        sh:nodeKind      sh:Literal , sh:IRIOrLiteral ;
+        sh:path          :maxPapers ;
+        sh:pattern       "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#2aa99c9b7a09ed9367b3c5bf1957ee56>
+        a            sh:PropertyShape ;
+        sh:class     :Decision ;
+        sh:maxCount  1 ;
+        sh:nodeKind  sh:BlankNodeOrIRI , sh:IRIOrLiteral ;
+        sh:path      :hasDecision .
+
+<https://astrea.linkeddata.es/shapes#052190b46332db433adf20126903dd09>
+        a         sh:PropertyShape ;
+        sh:class  :Document .
+
+<https://astrea.linkeddata.es/shapes#c33cac684133507d1a71870f7bd67ef1>
+        a            sh:PropertyShape ;
+        sh:class     :SubjectArea ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasSubjectArea .
+
+<https://astrea.linkeddata.es/shapes#b0712e680ae879eb41dcb7146f2d8025>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#222060f6d1a98bbfb29b9f7e734394c3> ;
+        sh:property     <https://astrea.linkeddata.es/shapes#83bcb999b9ddc708bfb07563e793f85f> ;
+        sh:targetClass  :Review .
+
+<https://astrea.linkeddata.es/shapes#becc20eb610ad84e103a4b11e33370fa>
+        a            sh:PropertyShape ;
+        sh:class     :Administrator ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hardcopyMailingManifestsPrintedBy .
+
+<https://astrea.linkeddata.es/shapes#cd6ffcecaf3ab918bfec3d6d6469595f>
+        a            sh:PropertyShape ;
+        sh:class     :Administrator ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :reviewerBiddingStartedBy .
+
+<http://astrea.linkeddata.es/report>
+        a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#contains>
+                <https://astrea.linkeddata.es/shapes#341091709432f662494917876046ac87> , <https://astrea.linkeddata.es/shapes#e5a56f34101159a4b5f973fc499af8c4> , <https://astrea.linkeddata.es/shapes#777864a1365904731c03b8383bb6e5d5> , <https://astrea.linkeddata.es/shapes#4a963edf128dc80f88440191f7b621aa> , <https://astrea.linkeddata.es/shapes#9dfe708879866b8c84d5dcf536398885> , <https://astrea.linkeddata.es/shapes#e70179d57e2e1741be72d01d86ffe02b> , <https://astrea.linkeddata.es/shapes#b562091393a4148844b2c3814a1cd9ab> , <https://astrea.linkeddata.es/shapes#992992be61c0ef60d45300b90cf122b3> , <https://astrea.linkeddata.es/shapes#b0712e680ae879eb41dcb7146f2d8025> , <https://astrea.linkeddata.es/shapes#6442297e89c58ec8dba965a518c10659> , <https://astrea.linkeddata.es/shapes#cd6ffcecaf3ab918bfec3d6d6469595f> , <https://astrea.linkeddata.es/shapes#fbfedcbe21a7acecd694ef6a22a8a100> , <https://astrea.linkeddata.es/shapes#6ef89d0a4ee34b7b90f9a163ebaead99> , <https://astrea.linkeddata.es/shapes#0d4ee6057f5b789befa92306f7fc6ac0> , <https://astrea.linkeddata.es/shapes#355c1076be2189ac61e02b087bc1cd54> , <https://astrea.linkeddata.es/shapes#a863a31a6b945ff569e99e8f48e0b7e1> , <https://astrea.linkeddata.es/shapes#d2d4cf483b6064fe705e7945645335e2> , <https://astrea.linkeddata.es/shapes#16f5a489feb9b288fd674300f050bbd4> , <https://astrea.linkeddata.es/shapes#cb9b47ab1f927950d8e939e0c062778b> , <https://astrea.linkeddata.es/shapes#ebfc2177b406285ac876c397d40071ff> , <https://astrea.linkeddata.es/shapes#4194ff4a5cd8a45196449a69d49b28a8> , <https://astrea.linkeddata.es/shapes#6854d4e4c0236f485df6a32dedb8b283> , <https://astrea.linkeddata.es/shapes#1d4ae018424cb9b5b2e2ab0b44e9defa> , <https://astrea.linkeddata.es/shapes#fe26b1f87d65b4f944f140235d9663ba> , <https://astrea.linkeddata.es/shapes#b3fcd469f2579d1b4541aa1c710c4291> , <https://astrea.linkeddata.es/shapes#d022ae7cf2618fac78312bebfae3fd1e> , <https://astrea.linkeddata.es/shapes#8eadf5418beee04c8e0cb3edf2ab736a> , <https://astrea.linkeddata.es/shapes#4822f38e7ebd669f0330bb7cdcf59eca> , <https://astrea.linkeddata.es/shapes#746d2abe84944ad01279eaa27baa1666> , <https://astrea.linkeddata.es/shapes#47b4a35a346830f8d70449039caaaa10> , <https://astrea.linkeddata.es/shapes#59d6dd3c44bbcb99708123fb65968ce2> , <https://astrea.linkeddata.es/shapes#78cc7c1c7dd7be2399f587ab79026cd8> , <https://astrea.linkeddata.es/shapes#222060f6d1a98bbfb29b9f7e734394c3> , <https://astrea.linkeddata.es/shapes#21ee4c5f58dd01a4470f6ec6ab4b47e8> , <https://astrea.linkeddata.es/shapes#c2f77e95fe22f93bc2347f2f5784b5a6> , <https://astrea.linkeddata.es/shapes#b7efe66bc61fc0f14efa7e0954b42ed1> , <https://astrea.linkeddata.es/shapes#4f13eefa661596f9ae7151558a1b1ada> , <https://astrea.linkeddata.es/shapes#9683d83028a0fa6904a3e1deb96f3d54> , <https://astrea.linkeddata.es/shapes#7d7ba77a15597f772d741d76c67fa424> , <https://astrea.linkeddata.es/shapes#c9361c330b45e9e23cd73aa11aa5613c> , <https://astrea.linkeddata.es/shapes#770ac8cf32ef474666675bc040723bcb> , <https://astrea.linkeddata.es/shapes#72b009c46458c593fa024ee17871337b> , <https://astrea.linkeddata.es/shapes#052190b46332db433adf20126903dd09> , <https://astrea.linkeddata.es/shapes#f12861afaeb0c28f7cb4da8bdcb7fede> , <https://astrea.linkeddata.es/shapes#079aba5cad00f42a206bbef75087bbae> , <https://astrea.linkeddata.es/shapes#cb66519e49ec6eb32f9912515b4e8ac0> , <https://astrea.linkeddata.es/shapes#a49fc145a7dfec4b229262bc1ee09aab> , <https://astrea.linkeddata.es/shapes#df2ec59e3a554d66cbf82aad91b7af42> , <https://astrea.linkeddata.es/shapes#7e5d826da4ba64cd13644fd6875bc497> , <https://astrea.linkeddata.es/shapes#92cdc647bf59b01a2a2b2f8228c785de> , <https://astrea.linkeddata.es/shapes#62c2ad0650558b0a493239c2083c0cea> , <https://astrea.linkeddata.es/shapes#1cb1f553ca4ad43745110b7542873a02> , <https://astrea.linkeddata.es/shapes#96324bbbfc08dbf4b877209d2ff89d93> , <https://astrea.linkeddata.es/shapes#9f1156412a61723aa55151f68cd97f4c> , <https://astrea.linkeddata.es/shapes#dafb486c839597663c4782553349fa19> , <https://astrea.linkeddata.es/shapes#8a746f538ff3d3476b5cce48e83b9648> , <https://astrea.linkeddata.es/shapes#925b3ebf5344b1ceedeeb40cf972f04e> , <https://astrea.linkeddata.es/shapes#8451079a0a46a61cc13af4c758274f9a> , <https://astrea.linkeddata.es/shapes#559cffd645de451271436b4d8365f90b> , <https://astrea.linkeddata.es/shapes#56444fbbb5a3848d437f2061f141bbb9> , <https://astrea.linkeddata.es/shapes#b775de5af5c4f545776b03e200f93144> , <https://astrea.linkeddata.es/shapes#0bc73b3b20a41e0d8b2c659bde81a4f6> , <https://astrea.linkeddata.es/shapes#d927cf39878acd9f420dae28d1f554bb> , <https://astrea.linkeddata.es/shapes#11f6b8122d266bc38fbece6e0a539832> , <https://astrea.linkeddata.es/shapes#67718aa9b109c99384a6451bf373fb12> , <https://astrea.linkeddata.es/shapes#d47b9a9d6eb47bc1f9ca2ac72c7dd46f> , <https://astrea.linkeddata.es/shapes#e31974121289ac4b1cd1006333be99b3> , <https://astrea.linkeddata.es/shapes#3f7e343b77b7de41d84586b9923d91a8> , <https://astrea.linkeddata.es/shapes#b0aa752811beb392db634c55eb423308> , <https://astrea.linkeddata.es/shapes#2e2120d3d5a2b4d46e8cf57b17c9ea9b> , <https://astrea.linkeddata.es/shapes#a6ec890fbadee4d4b456bf7d3028212b> , <https://astrea.linkeddata.es/shapes#fa9b76e8336fa7dba7849a1a78e31ab5> , <https://astrea.linkeddata.es/shapes#becc20eb610ad84e103a4b11e33370fa> , <https://astrea.linkeddata.es/shapes#5fcd99832f952abe6a358df75fca41cd> , <https://astrea.linkeddata.es/shapes#525db6ab6fbe7a80c3f00dfab2baefdd> , <https://astrea.linkeddata.es/shapes#7a89d9ad637ef0e93ccf9dcdd95dfe40> , <https://astrea.linkeddata.es/shapes#d4d04162ceb48a9512a0b44ba1ce3264> , <https://astrea.linkeddata.es/shapes#7e8d8abbe8d54345a3df5e5b407acfca> , <https://astrea.linkeddata.es/shapes#da738c69edd14dcb7bdccb8adba4a862> , <https://astrea.linkeddata.es/shapes#084f62eebce23b0d4a1ac7a5e2265909> , <https://astrea.linkeddata.es/shapes#1ad9e28e9dc17d93c8c97f3e6bdae0ed> , <https://astrea.linkeddata.es/shapes#da70e8733b85c128d8020af402471730> , <https://astrea.linkeddata.es/shapes#e093e949248f62a9ab121852c126eb0c> , <https://astrea.linkeddata.es/shapes#ddf5dbc49437ce84c05a183047fb9ba8> , <https://astrea.linkeddata.es/shapes#f68a767107227a91f7706b4f15dea563> , <https://astrea.linkeddata.es/shapes#52cce6c387b2b850f6a1e63480c48609> , <https://astrea.linkeddata.es/shapes#83bcb999b9ddc708bfb07563e793f85f> , <https://astrea.linkeddata.es/shapes#bdd17b5677b997de36befd1d6c46f534> , <https://astrea.linkeddata.es/shapes#e1d1ea26cdcda30832e6c659b275e148> , <https://astrea.linkeddata.es/shapes#b79fec49efe9d8135e6eff10a8a789fb> , <https://astrea.linkeddata.es/shapes#7ea1c77d12498df559363870ef5a20be> , <https://astrea.linkeddata.es/shapes#c33cac684133507d1a71870f7bd67ef1> , <https://astrea.linkeddata.es/shapes#020b937a1a7e8796604cd82a89761166> , <https://astrea.linkeddata.es/shapes#89a18b554fdcf77285b2e0d172137d64> , <https://astrea.linkeddata.es/shapes#84f9a83070a73112a5bca090e4fe91d4> , <https://astrea.linkeddata.es/shapes#b66fdd270733eb964ecbea9149882d9e> , <https://astrea.linkeddata.es/shapes#7c1efb6f94be460f2756785b9118205d> , <https://astrea.linkeddata.es/shapes#e1199517b8d2f424eb4fc4dcec46429b> , <https://astrea.linkeddata.es/shapes#220668e77cde078abb1c83536ab4cb70> , <https://astrea.linkeddata.es/shapes#2aa99c9b7a09ed9367b3c5bf1957ee56> , <https://astrea.linkeddata.es/shapes#c9ed4a7a03c32cd849bf486f1ba680b1> , <https://astrea.linkeddata.es/shapes#ad42b9d36e5e2d8c029ab310d8fb1054> , <https://astrea.linkeddata.es/shapes#7c3a48a80e9d16898ff49b5f6d7e7552> , <https://astrea.linkeddata.es/shapes#4af3c1a896dc53dacdfc9be72a9dcade> , <https://astrea.linkeddata.es/shapes#90e2317dc35d91e23b1dd8abc7482cfc> , <https://astrea.linkeddata.es/shapes#608824c9a471341777636aafd076c16b> , <https://astrea.linkeddata.es/shapes#40cdc3d3bc359bf91f5dbd8c8076e789> , <https://astrea.linkeddata.es/shapes#bc7fcfc707938a8845ed1ad6f51da21b> , <https://astrea.linkeddata.es/shapes#0bf3b538817ca36205c4dcf1ae2740ec> , <https://astrea.linkeddata.es/shapes#b5c1348491a5782ee05e0872a12c7b60> , <https://astrea.linkeddata.es/shapes#14867e4608e1a1cb6044516c5b70abec> , <https://astrea.linkeddata.es/shapes#4e86f27724c5fefe45cb69e9461357c5> ;
+        <https://w3id.org/def/astrea#generatedShapesFrom>
+                <https://astrea.linkeddata.es/report/0620946147> .
+
+<https://astrea.linkeddata.es/shapes#4f13eefa661596f9ae7151558a1b1ada>
+        a               sh:PropertyShape ;
+        rdfs:label      "In CMT terms, a ‘Conflict of Interest’ is an association between a specific Reviewer and a specific Paper that states there is a conflict of interest between that Reviewer and that paper. Conflicts can be marked by Authors (during paper submission) or by Reviewers (in Phase 2) or by Chairmen (in Phase 3).\n\nBased on that conflict, the reviewer will not be able to bid on the paper, be assigned to that paper (either automatically by the system or manually by a Chairman) or view review submissions for that paper.\n" ;
+        sh:class        :Paper ;
+        sh:description  "In CMT terms, a ‘Conflict of Interest’ is an association between a specific Reviewer and a specific Paper that states there is a conflict of interest between that Reviewer and that paper. Conflicts can be marked by Authors (during paper submission) or by Reviewers (in Phase 2) or by Chairmen (in Phase 3).\n\nBased on that conflict, the reviewer will not be able to bid on the paper, be assigned to that paper (either automatically by the system or manually by a Chairman) or view review submissions for that paper.\n" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         :markConflictOfInterest .
+
+<https://astrea.linkeddata.es/shapes#b775de5af5c4f545776b03e200f93144>
+        a            sh:PropertyShape ;
+        sh:class     :Paper ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasBeenAssigned .
+
+<https://astrea.linkeddata.es/shapes#da738c69edd14dcb7bdccb8adba4a862>
+        a         sh:PropertyShape ;
+        sh:class  :Bid .
+
+<https://astrea.linkeddata.es/shapes#d927cf39878acd9f420dae28d1f554bb>
+        a            sh:PropertyShape ;
+        sh:class     :Administrator ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :detailsEnteredBy .
+
+<https://astrea.linkeddata.es/shapes#020b937a1a7e8796604cd82a89761166>
+        a         sh:PropertyShape ;
+        sh:class  :ProgramCommitteeMember .
+
+<https://astrea.linkeddata.es/shapes#14867e4608e1a1cb6044516c5b70abec>
+        a         sh:PropertyShape ;
+        sh:class  :Review .
+
+<https://astrea.linkeddata.es/shapes#e093e949248f62a9ab121852c126eb0c>
+        a            sh:PropertyShape ;
+        sh:class     :ProgramCommitteeMember ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasProgramCommitteeMember .
+
+<https://astrea.linkeddata.es/shapes#fe26b1f87d65b4f944f140235d9663ba>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :readByMeta-Reviewer .
+
+<https://astrea.linkeddata.es/shapes#fa9b76e8336fa7dba7849a1a78e31ab5>
+        a               sh:PropertyShape ;
+        sh:class        :Bid ;
+        sh:inversePath  :hasBid ;
+        sh:maxCount     1 ;
+        sh:nodeKind     sh:IRIOrLiteral , sh:BlankNodeOrIRI ;
+        sh:path         :hasBid .
+
+<https://astrea.linkeddata.es/shapes#67718aa9b109c99384a6451bf373fb12>
+        a            sh:PropertyShape ;
+        sh:class     :Reviewer ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :assignedTo .
+
+<https://astrea.linkeddata.es/shapes#b562091393a4148844b2c3814a1cd9ab>
+        a            sh:PropertyShape ;
+        sh:class     :Administrator ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :paperAssignmentToolsRunBy .
+
+<https://astrea.linkeddata.es/shapes#c2f77e95fe22f93bc2347f2f5784b5a6>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :assignedByReviewer .
+
+<https://astrea.linkeddata.es/shapes#9683d83028a0fa6904a3e1deb96f3d54>
+        a            sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:maxCount  1 ;
+        sh:nodeKind  sh:Literal , sh:IRIOrLiteral ;
+        sh:path      :title ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#925b3ebf5344b1ceedeeb40cf972f04e>
+        a            sh:PropertyShape ;
+        sh:class     :Reviewer ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :assignReviewer .
+
+<https://astrea.linkeddata.es/shapes#d2d4cf483b6064fe705e7945645335e2>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Meta-Review .
+
+<https://astrea.linkeddata.es/shapes#8eadf5418beee04c8e0cb3edf2ab736a>
+        a               sh:PropertyShape ;
+        sh:class        :Bid ;
+        sh:inversePath  :adjustBid ;
+        sh:maxCount     1 ;
+        sh:nodeKind     sh:IRIOrLiteral , sh:BlankNodeOrIRI ;
+        sh:path         :adjustBid .
+
+<https://astrea.linkeddata.es/shapes#b3fcd469f2579d1b4541aa1c710c4291>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#14867e4608e1a1cb6044516c5b70abec> ;
+        sh:property     <https://astrea.linkeddata.es/shapes#0bc73b3b20a41e0d8b2c659bde81a4f6> , <https://astrea.linkeddata.es/shapes#67718aa9b109c99384a6451bf373fb12> , <https://astrea.linkeddata.es/shapes#7a89d9ad637ef0e93ccf9dcdd95dfe40> , <https://astrea.linkeddata.es/shapes#4e86f27724c5fefe45cb69e9461357c5> , <https://astrea.linkeddata.es/shapes#4a963edf128dc80f88440191f7b621aa> , <https://astrea.linkeddata.es/shapes#6854d4e4c0236f485df6a32dedb8b283> , <https://astrea.linkeddata.es/shapes#c33cac684133507d1a71870f7bd67ef1> , <https://astrea.linkeddata.es/shapes#62c2ad0650558b0a493239c2083c0cea> , <https://astrea.linkeddata.es/shapes#fe26b1f87d65b4f944f140235d9663ba> , <https://astrea.linkeddata.es/shapes#b5c1348491a5782ee05e0872a12c7b60> , <https://astrea.linkeddata.es/shapes#2aa99c9b7a09ed9367b3c5bf1957ee56> , <https://astrea.linkeddata.es/shapes#3f7e343b77b7de41d84586b9923d91a8> , <https://astrea.linkeddata.es/shapes#9683d83028a0fa6904a3e1deb96f3d54> ;
+        sh:targetClass  :Paper .
+
+<https://astrea.linkeddata.es/shapes#4a963edf128dc80f88440191f7b621aa>
+        a            sh:PropertyShape ;
+        sh:minCount  "1"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :readByReviewer .
+
+<https://astrea.linkeddata.es/shapes#525db6ab6fbe7a80c3f00dfab2baefdd>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#2e2120d3d5a2b4d46e8cf57b17c9ea9b> , <https://astrea.linkeddata.es/shapes#020b937a1a7e8796604cd82a89761166> ;
+        sh:targetClass  :AuthorNotReviewer .
+
+<https://astrea.linkeddata.es/shapes#222060f6d1a98bbfb29b9f7e734394c3>
+        a         sh:PropertyShape ;
+        sh:class  :Paper .
+
+<https://astrea.linkeddata.es/shapes#a6ec890fbadee4d4b456bf7d3028212b>
+        a            sh:PropertyShape ;
+        sh:datatype  xsd:anyURI ;
+        sh:maxCount  1 ;
+        sh:nodeKind  sh:Literal , sh:IRIOrLiteral ;
+        sh:path      :logoURL ;
+        sh:pattern   "^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\\?([^#]*))?(#(.*))?" .

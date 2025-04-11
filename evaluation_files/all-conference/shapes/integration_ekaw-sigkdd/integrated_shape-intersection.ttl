@@ -1,0 +1,675 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix shape_int: <http://integratedshapes.es#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+shape_int:01239a45161ac560351ee1af2b4250ac0d926310 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Industrial_Paper> .
+
+shape_int:023b80db14cc73eed90c18c2e4f8581d858be07f a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Early-Registered_Participant> .
+
+shape_int:0b9b88d503e75f3c6426e54ae081e7f549affa01 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Proceedings_Publisher> .
+
+shape_int:0db76b3b4810c561e562043eef7f12ada51482d8 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Tutorial_Chair> .
+
+shape_int:0e5140bf174a66bcfe56656da83c3daa4cffbe95 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Conference_Trip> .
+
+shape_int:0eac7f98f19b6abb16bfe27acc8026e259c63639 a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Best_Student_Paper_Supporter> .
+
+shape_int:0ffd5789e3395aa34efba7d13b4d7ff3bc195e9f a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Demo_Session> .
+
+shape_int:13b8fe38a93b1e74be75932a7d667b18af065fa8 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Workshop> .
+
+shape_int:19ae3b9c4b8ec11376e5abe86f08acccad79c3d6 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Negative_Review> .
+
+shape_int:210437b3f487158b35b7f3102e8afee62083bcf8 a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Registration_Non-Member> .
+
+shape_int:21943fb7dd99c306a2860b6f1572fb419747c2a1 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Submitted_Paper> .
+
+shape_int:22d507f2ba74e43593de3ae3f550bf202c076adc a sh:NodeShape ;
+    sh:property shape_int:05d1be7ecf66d0dda445673bf02d7a355be1b518,
+        shape_int:6e001307e4cd3239d37a37e0a402415208cc4576,
+        shape_int:8589b85f5ecf9f8b55f4f32c5576665bc4acb0bd,
+        shape_int:a981f1a69787d53823d4e591e2e13ba894f6b45f,
+        shape_int:b03709d4e5b7ca7c3de295936424a34145c0f980 ;
+    sh:targetClass <http://ekaw#Paper>,
+        <http://sigkdd#Paper> .
+
+shape_int:22d6c6479685454837fcf6525441a7d66b491973 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#PC_Chair>,
+        <http://sigkdd#Program_Chair> .
+
+shape_int:2701a94c0eb55cbd958a87dff3e959673ff1bf53 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Tutorial> .
+
+shape_int:2b12f36924915fa2101627fa804a0746579a911d a sh:NodeShape ;
+    sh:property shape_int:307a2836bf23dabb519d85c2b4f67f8c14223cf2,
+        shape_int:62242a552af6d901335b71ff5ea70986927c553c ;
+    sh:targetClass <http://sigkdd#Deadline> .
+
+shape_int:2df622c6446763ea2f52151dfd44cc1bb97350f2 a sh:NodeShape ;
+    sh:property shape_int:872ea1caa307efe92d411cf5c6cf2d9cd5c262a7 ;
+    sh:targetClass <http://ekaw#Proceedings> .
+
+shape_int:335ea08ac46e2b0977b44513be03c14eb31c2a32 a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Main_office> .
+
+shape_int:3369a04f11eaedae82e89b8a2d1f7cff48ead0ad a sh:NodeShape ;
+    sh:description """Accepted paper to become part of proceedings. 
+Note that camera-ready paper is not considered as 'accepted paper', as it was accepted in a different form!""" ;
+    sh:property shape_int:6e001307e4cd3239d37a37e0a402415208cc4576 ;
+    sh:targetClass <http://ekaw#Accepted_Paper> .
+
+shape_int:369f4d949c7824906f14954621b476669f3e1a67 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Neutral_Review> .
+
+shape_int:37ea46b5942beaeb21bb4e06a14e4f7232d2a1b0 a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Listener> .
+
+shape_int:3a69789c38cbb605b68d38f533dafae61cfd7014 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Session_Chair> .
+
+shape_int:3deca5033ada35871cb2bf4e872b3c4730e80ce0 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#OC_Member>,
+        <http://sigkdd#Organizing_Committee_member> .
+
+shape_int:3e437c9e626c73eff1a914c6817a646b607a6874 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Rejected_Paper> .
+
+shape_int:40d0fb0d335e9e4093500269437c5157dc68543a a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Best_Paper_Awards_Committee> .
+
+shape_int:413c92eb1ae5fadd1e44cd74102440c756d0b274 a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Gold_Supporter> .
+
+shape_int:42b32794792b48313cd1be9ca11b690d3e614683 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Student> .
+
+shape_int:44c3614fc7ee52e134ad0f395977125393554609 a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#General_Chair> .
+
+shape_int:45b5d7133920668806a905a6de434e0980027350 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Scientific_Event> .
+
+shape_int:4ca3c285f0397d534766d0250452e42f91501e43 a sh:NodeShape ;
+    sh:property shape_int:ab1051f29d48d3bcf011242f33388541aefa11c3 ;
+    sh:targetClass <http://sigkdd#Author_of_paper_student> .
+
+shape_int:506ed02ae694517b4f82788d4f175c126d6ced0a a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Demo_Chair> .
+
+shape_int:560781fbb836b628a55ae47f7e46be33aa68e048 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Multi-author_Volume> .
+
+shape_int:56383e42cafc7fd04997847e9b3647a4c96725e2 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Social_Event> .
+
+shape_int:56955cd1c87dc47dbdc6ba420a4d2b44f0ce6d64 a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Registration_Student> .
+
+shape_int:57234ed0c6129627eb819b3adeee4d01eba31e83 a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Program_Committee> .
+
+shape_int:5b0b5d0d922225be485f480392881387cd71e458 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Research_Topic> .
+
+shape_int:5b4c6c96933c0872ab39fc7562b955baf4bdbbf6 a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Best_Student_Paper_Award> .
+
+shape_int:6132a8b7e106e0cb96215b7916f73889d5558539 a sh:NodeShape ;
+    sh:property shape_int:6822b8afb7f44276a73968b13231fe14f3a0a1b7 ;
+    sh:targetClass <http://ekaw#Conference_Session> .
+
+shape_int:62b2986bd44b8a03e9d234d0bdf06fa200f2fcc9 a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Deadline_Abstract_Submission> .
+
+shape_int:646c587186384113115966afd83f196b6446276c a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Poster_Paper> .
+
+shape_int:678a4ca44b0581f2801336d40bd3c9ca46a47b96 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Invited_Speaker>,
+        <http://sigkdd#Invited_Speaker> .
+
+shape_int:691f3638189ee1116a33e894988e260d2f433fa1 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Organising_Agency> .
+
+shape_int:6b29be8ad73563a0d1b82151a643af7daa0a567e a sh:NodeShape ;
+    sh:property shape_int:43f0fa2950bf7b69efdfbd161ceabc9fe1c3d374 ;
+    sh:targetClass <http://ekaw#Programme_Brochure> .
+
+shape_int:6c0981a4e4b2730be08b06e013e61410650b1ba5 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Workshop_Chair> .
+
+shape_int:6c3e09ed39a70261cb624818a2e5710ab6abb9ba a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Workshop_Session> .
+
+shape_int:6db03489051deafbfce02d76f8d61b1cf9ad0dd3 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Invited_Talk_Abstract> .
+
+shape_int:6e99c1d3b1502c090dcd07ad2e7110ed5c0118a9 a sh:NodeShape ;
+    sh:property shape_int:4f895b95b95b2ec658cac3e621289cc181ba5129 ;
+    sh:targetClass <http://ekaw#Organisation> .
+
+shape_int:6f35a9690affb8460cee9f37dcacd6b3cf5dc6d0 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Conference_Paper> .
+
+shape_int:715432dcf30be1042d0a59bfe45bed957aad7a9a a sh:NodeShape ;
+    sh:targetClass <http://ekaw#University> .
+
+shape_int:779943a369fc5c79b672bebcb0bbcfd188bd8f3c a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Organizing_Committee> .
+
+shape_int:7802aa59d825d8afa9557cdb2f0b8d1596325efb a sh:NodeShape ;
+    sh:property shape_int:43f0fa2950bf7b69efdfbd161ceabc9fe1c3d374 ;
+    sh:targetClass <http://ekaw#Web_Site> .
+
+shape_int:796e9569714e26f396d204481935cf4b897dcf39 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Poster_Session> .
+
+shape_int:7c23b0d99698b57c5cb21fafcb8a8daf127386c6 a sh:NodeShape ;
+    sh:property shape_int:254392317688520e45cc92e07812b3209d4841eb ;
+    sh:targetClass <http://sigkdd#Speaker> .
+
+shape_int:7df8729ace89a741a822c0259c92cbe30e78a340 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Research_Institute> .
+
+shape_int:7fc24a6b73df8c830b509366468c6bee8e7ca58c a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Conference_hall> .
+
+shape_int:811736270140a1e1a48b89c09e49ee22aab7c8ad a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Presenter> .
+
+shape_int:856d39132c484407c50f9a77643def0bc593ecec a sh:NodeShape ;
+    sh:property shape_int:6e001307e4cd3239d37a37e0a402415208cc4576 ;
+    sh:targetClass <http://ekaw#Evaluated_Paper> .
+
+shape_int:85d18fb02425811ac124d64326394380d66f2d01 a sh:NodeShape ;
+    sh:property shape_int:ab1051f29d48d3bcf011242f33388541aefa11c3 ;
+    sh:targetClass <http://sigkdd#Author_of_paper> .
+
+shape_int:86301b35b741a6b0bf9a33cdf42dd470048f17b4 a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Organizator> .
+
+shape_int:89459096ede31c707a08d08b3d522381df409c8d a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Flyer> .
+
+shape_int:8a1e29b3dd009e1104338701230be5d7a38b1fed a sh:NodeShape ;
+    sh:property shape_int:2412dd1ca31808f9cb580a65f6bb92b29822f16a,
+        shape_int:b49b8c73b311ab96242b62fd85eef45cbf0971ec,
+        shape_int:b6a52c950cc17492ee8bc1f958c501ec0ae8af2e,
+        shape_int:dd5641af872dbfff937835324a7be0ca907d9246,
+        shape_int:df00bd63bc93de3384c09a31338591a609ca2d87 ;
+    sh:targetClass <http://ekaw#Conference>,
+        <http://sigkdd#Conference> .
+
+shape_int:8c41ae88467fe5bbad09fcd488662b25c3ec5333 a sh:NodeShape ;
+    sh:property shape_int:2574d8748b74077fe98080cff99b577a59d09611,
+        shape_int:28fb16a0bb2bf1c6d86186272c99a0a0c3fde48e,
+        shape_int:4a666063005281c4a749c8357d4bc7d2e44adc98,
+        shape_int:4f895b95b95b2ec658cac3e621289cc181ba5129,
+        shape_int:52d6ec0733d59ccdaf5f365998d17b582f040cc2,
+        shape_int:64df91ab0cdfad820389cbb0b3dc23fed128aa43,
+        shape_int:bf7f7a303f99f18f7291e731ec0aceea93d85fa0 ;
+    sh:targetClass <http://ekaw#Person>,
+        <http://sigkdd#Person> .
+
+shape_int:8e3a4e6d79de822cebc9325a857edf19eeeae706 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#SC_Member> .
+
+shape_int:920548e28379fb7f645c8d6e7bcd84f7a8dd156d a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Regular_Session> .
+
+shape_int:9236076d68c921134d58010908c15747c2993803 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Positive_Review> .
+
+shape_int:933933bc4ece95b961b00300343ade8be0e0b268 a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Best_Research_Paper_Award> .
+
+shape_int:9c4ba7d047eb56093b34e5dc3e51e5fcc74603f4 a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Hotel> .
+
+shape_int:9c80c04c73c3ce340a17a93498b43a93c59882df a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Industrial_Session> .
+
+shape_int:9d9bb9c57c2ae55256a7ca795e2aa64923098ded a sh:NodeShape ;
+    sh:targetClass <http://ekaw#PC_Member> .
+
+shape_int:9f094fedb59140f952bc50b8fd0b3352afeac424 a sh:NodeShape ;
+    sh:property shape_int:88552b40e15528211b212bde1d05b413fd4871b7 ;
+    sh:targetClass <http://sigkdd#Award> .
+
+shape_int:a02cac530472a783bbacff56cf94cbd5796e7c10 a sh:NodeShape ;
+    sh:property shape_int:3b2c545283df159233209d8570fbc5f508489ffc ;
+    sh:targetClass <http://ekaw#Contributed_Talk> .
+
+shape_int:a6efaa1b2811d3c18b7a991f40c33495d9c590a4 a sh:NodeShape ;
+    sh:property shape_int:2e408cf5794d4d8cd6ad51203db4727df8897fa6,
+        shape_int:549cb2047834450cdaf250de8c885ac8cae509d3,
+        shape_int:5f4b2f074c90897c0ef01650803e55f69c915974 ;
+    sh:targetClass <http://sigkdd#Registration_fee> .
+
+shape_int:aa64bad217455f2e2bec910f4fd6711bf8d92ae3 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Conference_Banquet> .
+
+shape_int:ab5d4781d4f4a9183de71e85992e4091e9d3641a a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Registration_SIGMOD_Member> .
+
+shape_int:ad40f26fd5aaf745721cb3db6ca4b7aa4831455e a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Registration_SIGKDD_Member> .
+
+shape_int:ad8919ace091b14011c6439cfd5e1707b58f5abd a sh:NodeShape ;
+    sh:property shape_int:073de49214d65d8a33b5760b06d8990a2c7e6ea0,
+        shape_int:6822b8afb7f44276a73968b13231fe14f3a0a1b7,
+        shape_int:ae781370e1562e999d04001d62d421e7f017140f,
+        shape_int:b03709d4e5b7ca7c3de295936424a34145c0f980 ;
+    sh:targetClass <http://ekaw#Event> .
+
+shape_int:aec727a7ef6c6d467bcd040cfa1500ec94019a04 a sh:NodeShape ;
+    sh:property shape_int:0c36e1c7373eae4991a42943963c87d8e1699d7d,
+        shape_int:0eecb8b76fb26b5c7cd5d8d562f1845da4e860f4,
+        shape_int:2aa89b8dd8dd9e6e55b817c6c9e7bd804c15e57f ;
+    sh:targetClass <http://sigkdd#ACM_SIGKDD> .
+
+shape_int:af25de11965a510adf99937fce3e521faadb5fa1 a sh:NodeShape ;
+    sh:property shape_int:a9ee021f51557b437678dbec94b4759f4768062e ;
+    sh:targetClass <http://ekaw#Possible_Reviewer> .
+
+shape_int:b1c5a7af06ba8c911bcfd11f72d7463fed9a472d a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Track> .
+
+shape_int:b38f0b66394e39220e4b2e528ec71ef6e0b2a7e7 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Invited_Talk> .
+
+shape_int:b5146164b1f0b8ed0abbcca059745ccc3045e861 a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Platinum_Supporter> .
+
+shape_int:b9da3807d3630f966a8521e8c78b171e5326afde a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Tutorial_Abstract> .
+
+shape_int:bd306de3d4ad4c38cedc04e0a59d8e3c67b056c0 a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Sponzor_fee> .
+
+shape_int:be5e27871b345d75a8ad819dfbf73a7ce8c4297b a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Academic_Institution> .
+
+shape_int:c6312bb5607b3762069dc350199f9a90f498cea9 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Demo_Paper> .
+
+shape_int:c6e89c9caf21476cc928ffc4707e00550f300343 a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Fee> .
+
+shape_int:cd34ef6af6d3fdc6d5791dbe3722191916745884 a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Silver_Supporter> .
+
+shape_int:cde637039b3a87338afc52efa4f95564622d241a a sh:NodeShape ;
+    sh:property shape_int:a26d84c21efd099c4cf811a322e18e03da859551,
+        shape_int:b764e67f0b56280d2970db4e9441f36343d3982d,
+        shape_int:eda75a6f01eaedf2d8b85bc43ac813b1fbb97f63 ;
+    sh:targetClass <http://ekaw#Paper_Author>,
+        <http://sigkdd#Author> .
+
+shape_int:d090952303eb6bd50b51a72cd0b3028aedf2b138 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Individual_Presentation> .
+
+shape_int:d219c68101f532de10add2cf42fb9dbeca73d3be a sh:NodeShape ;
+    sh:property shape_int:1823b2a8102aff6223c4ecb686caf8f2013db868 ;
+    sh:targetClass <http://ekaw#Location>,
+        <http://sigkdd#Place> .
+
+shape_int:d5c11d19f5e724bed6a961eb1023a94ee0996c6e a sh:NodeShape ;
+    sh:property shape_int:872ea1caa307efe92d411cf5c6cf2d9cd5c262a7 ;
+    sh:targetClass <http://ekaw#Conference_Proceedings> .
+
+shape_int:d79da395b5d7a09c6439a5f2660d8c568186ab7e a sh:NodeShape ;
+    sh:property shape_int:05d1be7ecf66d0dda445673bf02d7a355be1b518,
+        shape_int:a981f1a69787d53823d4e591e2e13ba894f6b45f ;
+    sh:targetClass <http://ekaw#Abstract>,
+        <http://sigkdd#Abstract> .
+
+shape_int:d86049e5a76410d4d5e530d107502d10f49d2301 a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Program_Committee_member> .
+
+shape_int:dbeba0c8cad255e054600b7ac77942cafdaa20fc a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Webmaster> .
+
+shape_int:dcbe716c6640ddf3e4633c8a242ed6f60d585cf0 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Late-Registered_Participant> .
+
+shape_int:dd09b3c742ff37a9a668204247e0714f52ac0a89 a sh:NodeShape ;
+    sh:property shape_int:28fb16a0bb2bf1c6d86186272c99a0a0c3fde48e,
+        shape_int:621002dc0a8587af5721316323d8eb1df25d3cab,
+        shape_int:c1dcff296dc50df740e062f9a56705d52a8c33f4 ;
+    sh:targetClass <http://sigkdd#Sponzor> .
+
+shape_int:df2933c82edbe0b140c4d73f52430a76b6eb2b70 a sh:NodeShape ;
+    sh:property shape_int:8589b85f5ecf9f8b55f4f32c5576665bc4acb0bd ;
+    sh:targetClass <http://ekaw#Assigned_Paper> .
+
+shape_int:e0c7372138924f5b837519e42b156628f387a2e0 a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Best_Applications_Paper_Award> .
+
+shape_int:e214b8a29923056887b7edf6635d90dcbb2abe88 a sh:NodeShape ;
+    sh:property shape_int:05381337efb7a42a2ca002dbd7c7bf09d0088ca3,
+        shape_int:05d1be7ecf66d0dda445673bf02d7a355be1b518,
+        shape_int:2f14b34e6c031c5c449c1c7bdc0574e0e83b5710,
+        shape_int:97d77483342726b96ddca7d8f52c102bb26aabb4,
+        shape_int:f9253a11b0da653c9e58debb355dfcc72cf40891 ;
+    sh:targetClass <http://ekaw#Document>,
+        <http://sigkdd#Document> .
+
+shape_int:e29a79fe0c349724caeaa1762fa917f5543248ca a sh:NodeShape ;
+    sh:property shape_int:3f1e2f1a428645de46b45893f6bf08b170f61901,
+        shape_int:92ed303ddae96b02a54f748673d9cc920f736078 ;
+    sh:targetClass <http://ekaw#Review>,
+        <http://sigkdd#Review> .
+
+shape_int:e4c4ebae4546e7d0620c230a574213e1f2d3875a a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Agency_Staff_Member> .
+
+shape_int:e6d9add0568d1389b5b3e5ebe1e6a0d75a5cb8fd a sh:NodeShape ;
+    sh:targetClass <http://ekaw#OC_Chair> .
+
+shape_int:e982ab25ccbbc4a304822e11773324e7c2a09b34 a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Deadline_Paper_Submission> .
+
+shape_int:eafd49afdab5b29f0b4a91a0876e110bbf9c9c96 a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Bronze_Supporter> .
+
+shape_int:ecc133c566704dc685b098b5e82d982e1c0b439a a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Exhibitor> .
+
+shape_int:ed72f6d2f46b74af44aa548c41124a8b07227e65 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Workshop_Paper> .
+
+shape_int:f00488a8d0ac1097ebdd10629472e25d03ac8668 a sh:NodeShape ;
+    sh:property shape_int:05381337efb7a42a2ca002dbd7c7bf09d0088ca3,
+        shape_int:2f14b34e6c031c5c449c1c7bdc0574e0e83b5710 ;
+    sh:targetClass <http://ekaw#Camera_Ready_Paper> .
+
+shape_int:f02a0e47d99b4051d5dde50d4b62563a11d49c95 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Conference_Participant> .
+
+shape_int:f43dba5677dfd5e3e6793095b56bfab6f533b68f a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Committee> .
+
+shape_int:f5a4be8353eba0e9899074952904ba5d35804d6b a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Regular_Paper> .
+
+shape_int:f7f1997c6cd1aa051279675742272a956e7db628 a sh:NodeShape ;
+    sh:property shape_int:073de49214d65d8a33b5760b06d8990a2c7e6ea0,
+        shape_int:6822b8afb7f44276a73968b13231fe14f3a0a1b7 ;
+    sh:targetClass <http://ekaw#Session> .
+
+shape_int:fc6162d32d60dfa4f7fb7fd31fff408ce312ad2f a sh:NodeShape ;
+    sh:targetClass <http://sigkdd#Deadline_Author_notification> .
+
+shape_int:0c36e1c7373eae4991a42943963c87d8e1699d7d a sh:PropertyShape ;
+    sh:class <http://sigkdd#Sponzor> ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://sigkdd#search> .
+
+shape_int:0eecb8b76fb26b5c7cd5d8d562f1845da4e860f4 a sh:PropertyShape ;
+    sh:class <http://sigkdd#Conference> ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://sigkdd#hold> .
+
+shape_int:1823b2a8102aff6223c4ecb686caf8f2013db868 a sh:PropertyShape ;
+    sh:class <http://ekaw#Event> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://ekaw#locationOf> .
+
+shape_int:2412dd1ca31808f9cb580a65f6bb92b29822f16a a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://sigkdd#City_of_conference> ;
+    sh:pattern ".*" .
+
+shape_int:254392317688520e45cc92e07812b3209d4841eb a sh:PropertyShape ;
+    sh:class <http://sigkdd#Document> ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://sigkdd#presentation> ;
+    sh:qualifiedMinCount "1" .
+
+shape_int:2574d8748b74077fe98080cff99b577a59d09611 a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://sigkdd#Nation> ;
+    sh:pattern ".*" .
+
+shape_int:2aa89b8dd8dd9e6e55b817c6c9e7bd804c15e57f a sh:PropertyShape ;
+    sh:class <http://sigkdd#Deadline> ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://sigkdd#design> .
+
+shape_int:2e408cf5794d4d8cd6ad51203db4727df8897fa6 a sh:PropertyShape ;
+    sh:class <http://sigkdd#Person> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://sigkdd#payed_by> .
+
+shape_int:307a2836bf23dabb519d85c2b4f67f8c14223cf2 a sh:PropertyShape ;
+    sh:class <http://sigkdd#ACM_SIGKDD> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://sigkdd#designed_by> .
+
+shape_int:3b2c545283df159233209d8570fbc5f508489ffc a sh:PropertyShape ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://ekaw#presentationOfPaper> .
+
+shape_int:3f1e2f1a428645de46b45893f6bf08b170f61901 a sh:PropertyShape ;
+    sh:class <http://ekaw#Possible_Reviewer> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://ekaw#reviewWrittenBy> .
+
+shape_int:4a666063005281c4a749c8357d4bc7d2e44adc98 a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://sigkdd#E-mail> ;
+    sh:pattern ".*" .
+
+shape_int:52d6ec0733d59ccdaf5f365998d17b582f040cc2 a sh:PropertyShape ;
+    sh:class <http://ekaw#Document> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://ekaw#authorOf> .
+
+shape_int:549cb2047834450cdaf250de8c885ac8cae509d3 a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://sigkdd#Currency> ;
+    sh:pattern ".*" .
+
+shape_int:5f4b2f074c90897c0ef01650803e55f69c915974 a sh:PropertyShape ;
+    sh:datatype xsd:int ;
+    sh:maxInclusive "2147483647" ;
+    sh:minInclusive "-2147483648" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://sigkdd#Price> ;
+    sh:pattern "[\\-+]?[0-9]+" .
+
+shape_int:621002dc0a8587af5721316323d8eb1df25d3cab a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://sigkdd#Name_of_sponsor> ;
+    sh:pattern ".*" .
+
+shape_int:62242a552af6d901335b71ff5ea70986927c553c a sh:PropertyShape ;
+    sh:datatype xsd:dateTime ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://sigkdd#Date> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:64df91ab0cdfad820389cbb0b3dc23fed128aa43 a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://sigkdd#Name> ;
+    sh:pattern ".*" .
+
+shape_int:88552b40e15528211b212bde1d05b413fd4871b7 a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://sigkdd#awarded_by> ;
+    sh:qualifiedMinCount "1" .
+
+shape_int:92ed303ddae96b02a54f748673d9cc920f736078 a sh:PropertyShape ;
+    sh:class <http://ekaw#Paper> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://ekaw#reviewOfPaper> .
+
+shape_int:97d77483342726b96ddca7d8f52c102bb26aabb4 a sh:PropertyShape ;
+    sh:class <http://sigkdd#Speaker> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://sigkdd#presentationed_by> .
+
+shape_int:a26d84c21efd099c4cf811a322e18e03da859551 a sh:PropertyShape ;
+    sh:class <http://sigkdd#Award> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://sigkdd#obtain> .
+
+shape_int:a9ee021f51557b437678dbec94b4759f4768062e a sh:PropertyShape ;
+    sh:class <http://ekaw#Paper> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://ekaw#reviewerOfPaper> .
+
+shape_int:ae781370e1562e999d04001d62d421e7f017140f a sh:PropertyShape ;
+    sh:class <http://ekaw#Location> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://ekaw#heldIn> .
+
+shape_int:b49b8c73b311ab96242b62fd85eef45cbf0971ec a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://sigkdd#Name_of_conference> ;
+    sh:pattern ".*" .
+
+shape_int:b6a52c950cc17492ee8bc1f958c501ec0ae8af2e a sh:PropertyShape ;
+    sh:class <http://sigkdd#ACM_SIGKDD> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://sigkdd#holded_by> .
+
+shape_int:b764e67f0b56280d2970db4e9441f36343d3982d a sh:PropertyShape ;
+    sh:class <http://sigkdd#Paper> ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://sigkdd#submit> ;
+    sh:qualifiedMinCount "1" .
+
+shape_int:bf7f7a303f99f18f7291e731ec0aceea93d85fa0 a sh:PropertyShape ;
+    sh:class <http://sigkdd#Place> ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://sigkdd#can_stay_in> .
+
+shape_int:c1dcff296dc50df740e062f9a56705d52a8c33f4 a sh:PropertyShape ;
+    sh:class <http://sigkdd#ACM_SIGKDD> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://sigkdd#searched_by> .
+
+shape_int:dd5641af872dbfff937835324a7be0ca907d9246 a sh:PropertyShape ;
+    sh:datatype xsd:dateTime ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://sigkdd#End_of_conference> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:df00bd63bc93de3384c09a31338591a609ca2d87 a sh:PropertyShape ;
+    sh:datatype xsd:dateTime ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://sigkdd#Start_of_conference> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:eda75a6f01eaedf2d8b85bc43ac813b1fbb97f63 a sh:PropertyShape ;
+    sh:class <http://sigkdd#Deadline_Author_notification> ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://sigkdd#notification_until> .
+
+shape_int:f9253a11b0da653c9e58debb355dfcc72cf40891 a sh:PropertyShape ;
+    sh:class <http://ekaw#Document> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://ekaw#hasUpdatedVersion> .
+
+shape_int:05381337efb7a42a2ca002dbd7c7bf09d0088ca3 a sh:PropertyShape ;
+    sh:class <http://ekaw#Document> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://ekaw#updatedVersionOf> .
+
+shape_int:073de49214d65d8a33b5760b06d8990a2c7e6ea0 a sh:PropertyShape ;
+    sh:class <http://ekaw#Event> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://ekaw#hasEvent> .
+
+shape_int:28fb16a0bb2bf1c6d86186272c99a0a0c3fde48e a sh:PropertyShape ;
+    sh:class <http://sigkdd#Registration_fee> ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://sigkdd#pay> ;
+    sh:qualifiedMinCount "1" .
+
+shape_int:2f14b34e6c031c5c449c1c7bdc0574e0e83b5710 a sh:PropertyShape ;
+    sh:class <http://ekaw#Person> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://ekaw#writtenBy> .
+
+shape_int:43f0fa2950bf7b69efdfbd161ceabc9fe1c3d374 a sh:PropertyShape ;
+    sh:class <http://ekaw#Event> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://ekaw#listsEvent> .
+
+shape_int:4f895b95b95b2ec658cac3e621289cc181ba5129 a sh:PropertyShape ;
+    sh:class <http://ekaw#Event> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://ekaw#organises> .
+
+shape_int:8589b85f5ecf9f8b55f4f32c5576665bc4acb0bd a sh:PropertyShape ;
+    sh:class <http://ekaw#Possible_Reviewer> ;
+    sh:minCount "3" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://ekaw#hasReviewer> .
+
+shape_int:872ea1caa307efe92d411cf5c6cf2d9cd5c262a7 a sh:PropertyShape ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://ekaw#volumeContainsPaper> .
+
+shape_int:a981f1a69787d53823d4e591e2e13ba894f6b45f a sh:PropertyShape ;
+    sh:class <http://ekaw#Individual_Presentation> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://ekaw#paperPresentedAs> .
+
+shape_int:ab1051f29d48d3bcf011242f33388541aefa11c3 a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://sigkdd#award> .
+
+shape_int:b03709d4e5b7ca7c3de295936424a34145c0f980 a sh:PropertyShape ;
+    sh:class <http://ekaw#Research_Topic> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://ekaw#coversTopic> .
+
+shape_int:05d1be7ecf66d0dda445673bf02d7a355be1b518 a sh:PropertyShape ;
+    sh:class <http://sigkdd#Deadline> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://sigkdd#submit_until> ;
+    sh:qualifiedMinCount "1" .
+
+shape_int:6822b8afb7f44276a73968b13231fe14f3a0a1b7 a sh:PropertyShape ;
+    sh:class <http://ekaw#Event> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://ekaw#partOfEvent> .
+
+shape_int:6e001307e4cd3239d37a37e0a402415208cc4576 a sh:PropertyShape ;
+    sh:class <http://ekaw#Review> ;
+    sh:minCount "3" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://ekaw#hasReview> .
+

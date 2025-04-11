@@ -1,0 +1,10 @@
+@prefix inc: <http://inconsistence.es#> .
+@prefix inc_ex: <http://inconsistence_example.es/resource/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+inc_ex:3a8b0481-df06-4b44-a4ea-e34e085b2c86 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:IRI,
+        sh:Literal ;
+    inc:hasInconsistencyInClass <http://codata.jp/OML-MaterialInformation-reduced#Atmosphere> ;
+    inc:hasReport "sh:nodeKind not compatible" .
+

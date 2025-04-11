@@ -1,0 +1,25 @@
+@prefix inc: <http://inconsistence.es#> .
+@prefix inc_ex: <http://inconsistence_example.es/resource/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+inc_ex:155e5e29-1ac6-4af6-9e2c-2150f462f510 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://ontology.dumontierlab.com/MeasuredProperty> ;
+    inc:hasInconsistencyPath <http://ontology.dumontierlab.com/hasUnit> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:81e0b6d0-9ea4-4040-b816-52522457e32c a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://ontology.dumontierlab.com/Atom> ;
+    inc:hasInconsistencyPath <http://ontology.dumontierlab.com/hasAtomicNumber> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:853a30c9-ae48-48c8-b1b9-23ba36fee7a6 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://matonto.org/ontologies/matonto#PhaseEquilibrium> ;
+    inc:hasInconsistencyPath <http://matonto.org/ontologies/matonto#hasTemperature> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+

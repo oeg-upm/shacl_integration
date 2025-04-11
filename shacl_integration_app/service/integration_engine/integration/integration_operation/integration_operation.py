@@ -39,6 +39,7 @@ class IntegrationOperation:
     def execute_node_integration(self, node_list: list[NodeAxiomCluster]) -> list[NodeAxiomCluster]:
 
         new_node_list: list[NodeAxiomCluster] = []
+        flag: bool = False
         for node in node_list:
             if node.concept == 'http://www.w3.org/ns/shacl#nodeKind':
                 object_list: list = []
@@ -49,11 +50,14 @@ class IntegrationOperation:
                             logical_operator = axiom['logical_operator']
                         object_list.append(axiom['obj'])             
                     res = self.execute_nodekind_integration(nodekind_list=object_list)
-                    node.axiom_list = [{
-                        'logical_operator': logical_operator,
-                        'obj': res[0]
-                    }]
-            new_node_list.append(node)
+                    if res != None:
+                        flag = True
+                        node.axiom_list = [{
+                            'logical_operator': logical_operator,
+                            'obj': res[0]
+                        }]
+            if not flag:
+                new_node_list.append(node)
 
         return new_node_list
     
@@ -85,8 +89,9 @@ class IntegrationOperation:
                 for axiom in prop['axioms']:
                     if axiom['predicate'] == 'http://www.w3.org/ns/shacl#nodeKind':
                         res = self.execute_nodekind_integration(nodekind_list=axiom['objects'])
-                        axiom['objects'] = res
-                        new_prop_dict['axioms'].append(axiom)
+                        if res != None:
+                            axiom['objects'] = res
+                            new_prop_dict['axioms'].append(axiom)
                         
                     elif axiom['predicate'] == 'http://www.w3.org/ns/shacl#minCount':
                         res = self.execute_min_count_integration(min_count_list=axiom['objects'])
@@ -177,7 +182,12 @@ class IntegrationOperation:
         fact = rule_engine.Fact(list=nodekind_list)
         res = rule_library.rule_multiple.evaluate_multiple_rules_with_result([fact], rule_library.integrationNodeKindRules)
         # nodeKindDict: dict imported from constants.py
-        return [nodeKindDict[str(res) + "_" + self.integration_option]]
+
+        elem : str = str(res) + "_" + self.integration_option
+        if elem in nodeKindDict:
+            return [nodeKindDict[str(res) + "_" + self.integration_option]]
+        else:
+            return None
     
     def execute_min_count_integration(self, min_count_list: list) -> list:
         if self.integration_option == 'union':

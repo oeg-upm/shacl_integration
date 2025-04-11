@@ -1,0 +1,236 @@
+@prefix ns1: <http://example.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://codata.jp/OML-MaterialInformation-reduced#Atmosphere> a owl:Class,
+        owl:DatatypeProperty ;
+    ns1:similarTo <http://www.ifomis.org/bfo/1.0/snap#ObjectAggregate> ;
+    rdfs:range [ ] ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation-reduced#Environment> .
+
+<http://codata.jp/OML-MaterialInformation-reduced#ConcentrationOfSolvent> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Concentration> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation-reduced#Environment> .
+
+<http://codata.jp/OML-MaterialInformation-reduced#Conductivity> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/MeasuredProperty> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation-reduced#Environment> .
+
+<http://codata.jp/OML-MaterialInformation-reduced#Contents> a owl:Class ;
+    ns1:similarTo <http://www.ifomis.org/bfo/1.0/snap#Object> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation-reduced#Environment> .
+
+<http://codata.jp/OML-MaterialInformation-reduced#CorrosionPotential> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/MeasuredProperty> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation-reduced#Environment> .
+
+<http://codata.jp/OML-MaterialInformation-reduced#Current> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/ElectricCurrent> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation-reduced#Environment> .
+
+<http://codata.jp/OML-MaterialInformation-reduced#CurrentDensity> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/ElectricCurrentDensity> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation-reduced#Environment> .
+
+<http://codata.jp/OML-MaterialInformation-reduced#DissolvedOxygen> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Solute> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation-reduced#Environment> .
+
+<http://codata.jp/OML-MaterialInformation-reduced#ElectricPotential> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/MeasuredProperty> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation-reduced#Environment> .
+
+<http://codata.jp/OML-MaterialInformation-reduced#Electrolyte> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Compound> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation-reduced#Environment> .
+
+<http://codata.jp/OML-MaterialInformation-reduced#EnvironmentalPressure> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Pressure> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation-reduced#Environment> .
+
+<http://codata.jp/OML-MaterialInformation-reduced#EnvironmentalTemperature> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Temperature> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation-reduced#Environment> .
+
+<http://codata.jp/OML-MaterialInformation-reduced#FlowRate> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/MeasuredProperty> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation-reduced#Environment> .
+
+<http://codata.jp/OML-MaterialInformation-reduced#FlowState> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/MeasuredProperty> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation-reduced#Environment> .
+
+<http://codata.jp/OML-MaterialInformation-reduced#HoldingTime> a owl:Class,
+        owl:ObjectProperty ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Time> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation-reduced#Environment> .
+
+<http://codata.jp/OML-MaterialInformation-reduced#Humidity> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/MeasuredProperty> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation-reduced#Environment> .
+
+<http://codata.jp/OML-MaterialInformation-reduced#Irradiation> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/MeasuredProperty> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation-reduced#Environment> .
+
+<http://codata.jp/OML-MaterialInformation-reduced#IrradiationEnergy> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Energy> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation-reduced#Environment> .
+
+<http://codata.jp/OML-MaterialInformation-reduced#IrradiationTime> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Time> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation-reduced#Environment> .
+
+<http://codata.jp/OML-MaterialInformation-reduced#ManufacturingProcess> a owl:Class ;
+    ns1:similarTo <http://www.ifomis.org/bfo/1.0/span#Process> .
+
+<http://codata.jp/OML-MaterialInformation-reduced#Solvent> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Solvent> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation-reduced#Environment> .
+
+<http://codata.jp/OML-MaterialInformation-reduced#pH> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/pH> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation-reduced#Environment> .
+
+<http://ontology.dumontierlab.com/Compound> a owl:Class ;
+    rdfs:label "compound" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation-reduced#Electrolyte> ;
+    rdfs:comment "A substance made up of two or more elements covalently bonded together." ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/ChemicalSubstance> ;
+    owl:disjointWith <http://ontology.dumontierlab.com/PureSubstance> .
+
+<http://ontology.dumontierlab.com/ElectricCurrent> a owl:Class ;
+    rdfs:label "electric current" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation-reduced#Current> ;
+    rdfs:comment "A measure of the flow of electric charge." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/ElectricCurrentDensity> a owl:Class ;
+    rdfs:label "electric current density" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation-reduced#CurrentDensity> ;
+    rdfs:comment "A measure of the electric current per cross-sectional area." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Energy> a owl:Class ;
+    rdfs:label "energy" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation-reduced#IrradiationEnergy> ;
+    rdfs:comment "A measure of the amount of work a physical system can do on another." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Pressure> a owl:Class ;
+    rdfs:label "pressure" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation-reduced#EnvironmentalPressure> ;
+    rdfs:comment "A measure of the force per unit area applifed on a surface in a direction perpendicular to that surface." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Solute> a owl:Class ;
+    rdfs:label "solute" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation-reduced#DissolvedOxygen> ;
+    rdfs:comment "A substance that dissolves in a solvent." ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/ChemicalSubstance> .
+
+<http://ontology.dumontierlab.com/Solvent> a owl:Class ;
+    rdfs:label "solvent" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation-reduced#Solvent> ;
+    rdfs:comment "A substance that dissolves other substances, thus forming a solution." ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/ChemicalSubstance> .
+
+<http://ontology.dumontierlab.com/Temperature> a owl:Class ;
+    rdfs:label "temperature" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation-reduced#EnvironmentalTemperature> ;
+    rdfs:comment "A measure of the average kinetic energy of particles in a sample of matter." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/pH> a owl:Class ;
+    rdfs:label "pH" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation-reduced#pH> ;
+    rdfs:comment "A measure of the activity (effective concentration) of hydrogen ions in a solution." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/Concentration> .
+
+<http://www.ifomis.org/bfo/1.0/snap#Object> a owl:Class ;
+    rdfs:label "object" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation-reduced#Contents> ;
+    rdfs:comment "Definition: A independent continuant that is spatially extended, maximally self-connected and self-contained (the parts of a substance are not separated from each other by spatial gaps) and possesses an internal unity. The identity of substantial objects is independent of that of other entities and can be maintained through time and through loss and gain of parts and qualities.",
+        "Examples: an organism, a heart, a chair, a lung, an apple",
+        "Synonyms: substance" ;
+    rdfs:subClassOf <http://www.ifomis.org/bfo/1.0/snap#IndependentContinuant> ;
+    owl:disjointWith <http://www.ifomis.org/bfo/1.0/snap#ObjectAggregate>,
+        <http://www.ifomis.org/bfo/1.0/snap#ObjectBoundary>,
+        <http://www.ifomis.org/bfo/1.0/snap#Site> .
+
+<http://www.ifomis.org/bfo/1.0/span#Process> a owl:Class ;
+    rdfs:label "process" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation-reduced#ManufacturingProcess> ;
+    rdfs:comment "Definition: A processual entity that is a maximally connected spatio-temporal whole and has bona fide beginnings and endings corresponding to real discontinuities.",
+        "Examples: the life of an organism, the process of sleeping, the process of cell-division" ;
+    rdfs:subClassOf <http://www.ifomis.org/bfo/1.0/span#ProcessualEntity> ;
+    owl:disjointWith <http://www.ifomis.org/bfo/1.0/span#ProcessAggregate>,
+        <http://www.ifomis.org/bfo/1.0/span#ProcessBoundary>,
+        <http://www.ifomis.org/bfo/1.0/span#ProcessualContext> .
+
+<http://www.ifomis.org/bfo/1.0/span#SpatiotemporalRegion> a owl:Class ;
+    rdfs:label "spatiotemporal_region" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation-reduced#Environment> ;
+    rdfs:comment "Comment: This is the time and space within which occurrents exist. Occurrents exist in space and time in a different way from that in which continuants do and thus the space and time in which they exist is itself different. Spatiotemporal region's importance is primarily theoretical and it will not be used often in most domain ontology applications.",
+        "Definition: An occurrent at or in which processual entities can be located.",
+        "Examples: the spatiotemporal region occupied by a human life, the spatiotemporal region occupied by the development of a cancer tumor, the spatiotemporal context occupied by a process of cellular meiosis" ;
+    rdfs:subClassOf <http://www.ifomis.org/bfo/1.0/span#Occurrent> ;
+    owl:disjointWith <http://www.ifomis.org/bfo/1.0/span#TemporalRegion> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Concentration> a owl:Class ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation-reduced#ConcentrationOfSolvent> ;
+    rdfs:comment "A measure of some entity per unit volume." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Time> a owl:Class ;
+    rdfs:label "time" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation-reduced#HoldingTime>,
+        <http://codata.jp/OML-MaterialInformation-reduced#IrradiationTime> ;
+    rdfs:comment "The measure of temporal regions." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://www.ifomis.org/bfo/1.0/snap#ObjectAggregate> a owl:Class ;
+    rdfs:label "object_aggregate" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation-reduced#Atmosphere> ;
+    rdfs:comment "Definition: An independent continuant that is a mereological sum of separate objects and possesses non-connected boundaries.",
+        "Examples: a heap of stones, a group of commuters on the subway, a collection of random bacteria, a flock of geese, the patients in a hospital",
+        "Synonyms: substance aggregate" ;
+    rdfs:subClassOf <http://www.ifomis.org/bfo/1.0/snap#IndependentContinuant> ;
+    owl:disjointWith <http://www.ifomis.org/bfo/1.0/snap#ObjectBoundary>,
+        <http://www.ifomis.org/bfo/1.0/snap#Site> .
+
+<http://ontology.dumontierlab.com/MeasuredProperty> a owl:Class ;
+    rdfs:label "measured property" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation-reduced#Conductivity>,
+        <http://codata.jp/OML-MaterialInformation-reduced#CorrosionPotential>,
+        <http://codata.jp/OML-MaterialInformation-reduced#ElectricPotential>,
+        <http://codata.jp/OML-MaterialInformation-reduced#FlowRate>,
+        <http://codata.jp/OML-MaterialInformation-reduced#FlowState>,
+        <http://codata.jp/OML-MaterialInformation-reduced#Humidity>,
+        <http://codata.jp/OML-MaterialInformation-reduced#Irradiation> ;
+    rdfs:comment "A quality of a continuant that can be quantitatively determined." ;
+    rdfs:subClassOf [ ],
+        <http://www.ifomis.org/bfo/1.0/snap#Quality> .
+
+<http://codata.jp/OML-MaterialInformation-reduced#Environment> a owl:Class,
+        owl:ObjectProperty ;
+    ns1:similarTo <http://www.ifomis.org/bfo/1.0/span#SpatiotemporalRegion> ;
+    rdfs:range <http://codata.jp/OML-MaterialInformation-reduced#Environment> .
+

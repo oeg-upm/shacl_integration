@@ -1,0 +1,18 @@
+@prefix inc: <http://inconsistence.es#> .
+@prefix inc_ex: <http://inconsistence_example.es/resource/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+inc_ex:88e35c6d-0114-4c50-9782-925e7bd87a54 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://emmo.info/emmo/top/mereotopology#EMMO_2d2ecd97_067f_4d0e_950c_d746b7700a31> ;
+    inc:hasInconsistencyPath <http://emmo.info/emmo/top/mereotopology#EMMO_6b7276a4_4b9d_440a_b577_0277539c0fc4> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:e1fa692b-2052-4fff-91cf-0f86b1362bb1 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://emmo.info/emmo/middle/holistic#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce> ;
+    inc:hasInconsistencyPath <http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+

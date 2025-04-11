@@ -50,7 +50,7 @@ class Integration:
         """
         Execute the SHACL inconsistences filter process.
         """
-        inconsistences_report_path:str = self.common_path + '/inconsistences_report.ttl'
+        inconsistences_report_path:str = self.common_path + '/inconsistences_report-' + self.integration_option + '.ttl'
         try:
 
             # Execute inconsistency filter process
@@ -99,7 +99,7 @@ class Integration:
             # Execute SHACL unification process
             # input -> final_concept_clusters
             # output -> integrated_shape_path
-            integrated_shape_path: str = self.common_path + '/integrated_shape.ttl'
+            integrated_shape_path: str = self.common_path + '/integrated_shape-' + self.integration_option + '.ttl'
             shacl_unification = SHACLUnificationOperation(clusters=concept_clusters_integrated, integrated_shapes_path=integrated_shape_path)
             shacl_unification.unify()
             return integrated_shape_path

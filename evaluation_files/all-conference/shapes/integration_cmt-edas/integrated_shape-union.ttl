@@ -1,0 +1,739 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix shape_int: <http://integratedshapes.es#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+shape_int:00718a941691461435f00dd57100b1c8fff941da a sh:NodeShape ;
+    sh:targetClass <http://edas#SatelliteAndSpaceCommunicationsTopic> .
+
+shape_int:00b4f2cf02d06ac1e248132513e25672a7f0d211 a sh:NodeShape ;
+    sh:property shape_int:14550f0b872182de36d94007465cc943b1269599,
+        shape_int:17029522e34d2856fe4d72a97d0b712dbce0e5f0,
+        shape_int:469531de5ba5e267841732fd362478a42161c94c,
+        shape_int:e615a4bb69cffe910fcc3209efe6fd4aa6321345,
+        shape_int:f78223adbdade8d540d200ea1db0a38ab62b32da ;
+    sh:targetClass <http://edas#ContactInformation> .
+
+shape_int:054ab26fc420aa7d55fb7e159a7e4ac3711c597a a sh:NodeShape ;
+    sh:property shape_int:70f486783d73485c047b27df9f80263fa5b574d6 ;
+    sh:targetClass <http://edas#MealMenu> .
+
+shape_int:0a40d5643d7d9e25231689d2460c71bd138998cc a sh:NodeShape ;
+    sh:property shape_int:7d6d49aba278d71a8898617d000af8fa967ad94a ;
+    sh:targetClass <http://edas#AcceptedPaper> .
+
+shape_int:0e7e847bfb521fff7dd5df0107a5270e6b9b462d a sh:NodeShape ;
+    sh:targetClass <http://edas#ComputerNetworksOpticalTopic> .
+
+shape_int:13b8fe38a93b1e74be75932a7d667b18af065fa8 a sh:NodeShape ;
+    sh:targetClass <http://edas#Workshop> .
+
+shape_int:187ae0e367d35006e541c124802a3a71643c83d6 a sh:NodeShape ;
+    sh:targetClass <http://edas#TestOnlyTopic> .
+
+shape_int:1e61347437a2c0ce8a6229f5ac4d22dff1f119f6 a sh:NodeShape ;
+    sh:targetClass <http://edas#CryptographyTopic> .
+
+shape_int:1eda23758be9e36e5e0d2a6a87de584aaca0193f a sh:NodeShape ;
+    sh:property shape_int:1aa97d8b5a664df758ebfaf9d6225bd79741f154,
+        shape_int:2453f625f87507c9726a28e42d67574ca3a8ad88,
+        shape_int:4f2932852465d21927491384bb759773f524bf3f,
+        shape_int:67cdd98163eb3717cc2ff88b78a01e73b4db9e4b,
+        shape_int:910747d7b4a50d91df214697f76396af982bd6e1,
+        shape_int:97a66f2812b354696334b8ff6e995f8253048852,
+        shape_int:c3b8db2d82998726332687bb405271f1698044ea,
+        shape_int:f23d210321ffff578bd1421160cc05a639b97e31,
+        shape_int:f7dd49f3a922f9718f35bf35ed5638213cc1f737 ;
+    sh:targetClass <http://cmt#Administrator> .
+
+shape_int:1f9d027f1b73b7c43227191597dd736ec2289ac9 a sh:NodeShape ;
+    sh:targetClass <http://edas#RejectedPaper> .
+
+shape_int:20a7358c60fa6dcac0b971cf58ba02a701439519 a sh:NodeShape ;
+    sh:targetClass <http://edas#ConferenceVenuePlace> .
+
+shape_int:263f173bd698c56ee5d9b6f7404f752490e8c940 a sh:NodeShape ;
+    sh:targetClass <http://edas#WelcomeTalk> .
+
+shape_int:28a3efbdaa198e48f2b680d7d7a3bd5a98dfa43e a sh:NodeShape ;
+    sh:targetClass <http://edas#GovernmentOrganization> .
+
+shape_int:28e6f4962c7deb03d9e2c1036fe5fd979de52028 a sh:NodeShape ;
+    sh:targetClass <http://edas#TalkEvent> .
+
+shape_int:291a0a58dfa6c640a90c1d868d2af190775ea219 a sh:NodeShape ;
+    sh:property shape_int:70cb2a7d241edc5b15e40f0a6c22a74cc15de3ca,
+        shape_int:7325c9dde167eb808ec5a28df8901848302a58a2,
+        shape_int:ed639c0a3f796dbae13bca7b168ca8c37c2f35a2 ;
+    sh:targetClass <http://edas#Call> .
+
+shape_int:29986f1e8adec0c4452cffd06e162c8d659ebe04 a sh:NodeShape ;
+    sh:targetClass <http://edas#CommunicationTheoryTopic> .
+
+shape_int:29babed8a49ff260cdb59a47c3e861c6f2752759 a sh:NodeShape ;
+    sh:targetClass <http://edas#PerformanceTopic> .
+
+shape_int:3136cfcc7ded26ec87f15c68d82fbd6df5df9ecc a sh:NodeShape ;
+    sh:targetClass <http://edas#PersonalPublicationHistory> .
+
+shape_int:336baebd839c75513babd2a39ccdf8499c05590f a sh:NodeShape ;
+    sh:description "Call For Papers" ;
+    sh:targetClass <http://edas#CallForPapers> .
+
+shape_int:33ddca5caf978764fc5ddaeed2f2eb54f6f1bf44 a sh:NodeShape ;
+    sh:targetClass <http://edas#CoffeeBreak> .
+
+shape_int:39a46303854cb0c83112ca5f20e8cccb6e049092 a sh:NodeShape ;
+    sh:property shape_int:1fb524b1604f7d3fa81f692324c94e3a43a01e54,
+        shape_int:f788eaa890e4baf7d733ef8bb9ae10131640a80e ;
+    sh:targetClass <http://edas#TPCMember> .
+
+shape_int:3a2862bf6c138c9b53385a2ebbc05620df04962b a sh:NodeShape ;
+    sh:targetClass <http://edas#ConferenceDinner> .
+
+shape_int:3a94888dc4e7c6e627a03ad70b30dd29906be49c a sh:NodeShape ;
+    sh:property shape_int:2d066d4b8cd6e403bdbe36ad5d0fec36d0e75767 ;
+    sh:targetClass <http://edas#PersonalReviewHistory> .
+
+shape_int:3b18f789e6b65352671dcec317cd802e6fa2648e a sh:NodeShape ;
+    sh:targetClass <http://edas#AcceptRating> .
+
+shape_int:3b7df6002a606bc2e99b6c5101e09e48a7ae8d63 a sh:NodeShape ;
+    sh:property shape_int:c59ddb86013ffffbd27ac2bc5e1d26684391f85f ;
+    sh:targetClass <http://edas#MealEvent> .
+
+shape_int:40176124774ba51aac9acb0780c90d40135e8e7e a sh:NodeShape ;
+    sh:targetClass <http://edas#NumericalReviewQuestion> .
+
+shape_int:41d079e04c4725b81f21c9a9ac4c60c805b5fe59 a sh:NodeShape ;
+    sh:targetClass <http://edas#PendingPaper> .
+
+shape_int:42c04638e10c945ec10a6887aad2915c315c83fc a sh:NodeShape ;
+    sh:property shape_int:beb1c53fbc1b871a9fc726f1a0825969b431c419,
+        shape_int:d30efad49c67f1dbe1eb642f31e919497dcf905d ;
+    sh:targetClass <http://edas#AcademicEvent> .
+
+shape_int:43a01f74b38cac6cd0c3d933a6a5b9cc24ba0756 a sh:NodeShape ;
+    sh:targetClass <http://edas#SignalProcessingTopic> .
+
+shape_int:4603dbaf0b7a05ba14faa546c05d1041c1cda49c a sh:NodeShape ;
+    sh:targetClass <http://edas#FreeTimeBreak> .
+
+shape_int:47848bcb78ae55b5e4a98e003099af7f4f38b9e1 a sh:NodeShape ;
+    sh:targetClass <http://edas#OperatingTopicsystems> .
+
+shape_int:4b8891fe41fa94b9b816748470c5eadca9d44ec7 a sh:NodeShape ;
+    sh:targetClass <http://edas#ComputerNetworksSensorTopic> .
+
+shape_int:4bc3dbb2a147d9dcf14336f82b408f7e3526641a a sh:NodeShape ;
+    sh:targetClass <http://edas#RejectRating> .
+
+shape_int:4d13b9374b6e696d5c2728a6e3e73beac3771ac2 a sh:NodeShape ;
+    sh:targetClass <http://edas#ReviewRating> .
+
+shape_int:4d99422856cb8116849df3e983926b0cd98d2083 a sh:NodeShape ;
+    sh:property shape_int:beb1c53fbc1b871a9fc726f1a0825969b431c419 ;
+    sh:targetClass <http://edas#ConferenceSession> .
+
+shape_int:4df540b59ec56c6624b2f0feca04558eb73a4f02 a sh:NodeShape ;
+    sh:targetClass <http://edas#ComputerNetworksTopic> .
+
+shape_int:519255ae1f74ffc5ddd29979295c7572f048ad81 a sh:NodeShape ;
+    sh:property shape_int:bb81a1305d1047fb65ec920d4c9011452b88667e ;
+    sh:targetClass <http://edas#Organization> .
+
+shape_int:51d58fed20dbaa5791a0b042b8a24d5e0322d43b a sh:NodeShape ;
+    sh:targetClass <http://edas#TwoLevelConference> .
+
+shape_int:5531e88e8230e578c472efb569366fac4a648bef a sh:NodeShape ;
+    sh:targetClass <http://edas#SocialEvent> .
+
+shape_int:55d698b510bfb1d054ef27d3fe97cd2c08d6d061 a sh:NodeShape ;
+    sh:targetClass <http://edas#SlideSet> .
+
+shape_int:5688c0c53b87b8cf97986d68062cf6f19b251c71 a sh:NodeShape ;
+    sh:targetClass <http://edas#CommunicationsTopic> .
+
+shape_int:58b8eface2bbfc9b59e43d6a62b5637de5c84df8 a sh:NodeShape ;
+    sh:targetClass <http://edas#AccommodationPlace> .
+
+shape_int:5fda23d62015b99fb2a9f86b38bcdf2bdf7609c8 a sh:NodeShape ;
+    sh:property shape_int:750dc4e52e62c5745d37b281b5ca362811850a68,
+        shape_int:b621d86541c28ce30d847c0c31e08b3aa2cfd1d2,
+        shape_int:c59c6869ea74fd37ac7901ace07ddd02c960f974 ;
+    sh:targetClass <http://cmt#Author>,
+        <http://edas#Author> .
+
+shape_int:63f2b1b1216a528fa44dcda64872e15db9b62f5a a sh:NodeShape ;
+    sh:targetClass <http://edas#TextualReviewQuestion> .
+
+shape_int:6409270c1fd472c3e9b9f3d67fcb8f566acc0a0d a sh:NodeShape ;
+    sh:targetClass <http://edas#BreakEvent> .
+
+shape_int:651f3320eec36799ffdbe03ba3bee314bc47b719 a sh:NodeShape ;
+    sh:targetClass <http://edas#SecurityTopic> .
+
+shape_int:69a7b9948856f991b2895395d0460c0e65b953be a sh:NodeShape ;
+    sh:targetClass <http://edas#PublishedPaper> .
+
+shape_int:6a6f785c686a89db12ba6836d7c64b76d3a7a304 a sh:NodeShape ;
+    sh:property shape_int:c9abe34aeeccca58676e6aa173eb44ad6e98561f ;
+    sh:targetClass <http://cmt#ConferenceMember> .
+
+shape_int:6c071cc078c80966e21fc00a1e1a49409785a5c9 a sh:NodeShape ;
+    sh:targetClass <http://edas#ClosingTalk> .
+
+shape_int:6d24aab0d5eeb6f64c0c9e3842f6bd075668c6e9 a sh:NodeShape ;
+    sh:property shape_int:fc198ab96b0c27af22cf98089d7e6d37e6c25068 ;
+    sh:targetClass <http://cmt#Co-author> .
+
+shape_int:6f178e1fcd8a91b3171b21f73ac2d40bb2d4a1e0 a sh:NodeShape ;
+    sh:targetClass <http://cmt#Rejection> .
+
+shape_int:70fbccba5dd309dcd379071f67c0e5bb310b7585 a sh:NodeShape ;
+    sh:description "A special type of Reviewer.  There can be any number of Reviewers for a given paper, but only one Meta-Reviewer.  The Meta-Reviewer can go over all the reviews submitted for the paper and submit their own review.  Questions for the Meta-Reviewer can be different from those for a normal Reviewer.  Their role is to ensure that the reviews are good and consistent. The decision to use Meta-Reviewers is optional, and must be set before paper assignment occurs." ;
+    sh:targetClass <http://cmt#Meta-Reviewer> .
+
+shape_int:730d9215201a366f98a453ab4f8cf632c996b2f9 a sh:NodeShape ;
+    sh:property shape_int:abe57b4324d5fdfe6d4aafc963b2e24cbe76fdbe ;
+    sh:targetClass <http://edas#PaperPresentation> .
+
+shape_int:73c6d46e96ca5f8032215804dafc20f3d266766d a sh:NodeShape ;
+    sh:targetClass <http://edas#PowerlineTransmissionTopic> .
+
+shape_int:75367ef400b65ad19876ea80659285fd6e3babf4 a sh:NodeShape ;
+    sh:property shape_int:b621d86541c28ce30d847c0c31e08b3aa2cfd1d2 ;
+    sh:targetClass <http://cmt#Chairman> .
+
+shape_int:7ab4274cc66b38269fa2693877a204f1ce1c9dd6 a sh:NodeShape ;
+    sh:targetClass <http://edas#PersonalHistory> .
+
+shape_int:7ac789299d8f46a7b0ae0151aef5fa26903b5ce9 a sh:NodeShape ;
+    sh:targetClass <http://edas#ComputerNetworksSwitchingTopic> .
+
+shape_int:7e13bd176f89a12f0b614b55ffc19c14515ef920 a sh:NodeShape ;
+    sh:targetClass <http://edas#Topic> .
+
+shape_int:7ecfcbb41cd26c30fe1d6741632d611526ffa27e a sh:NodeShape ;
+    sh:property shape_int:b621d86541c28ce30d847c0c31e08b3aa2cfd1d2 ;
+    sh:targetClass <http://cmt#AssociatedChair> .
+
+shape_int:7f59a1f1d55a7cbd48c76e9f75723ccb6c63f3e0 a sh:NodeShape ;
+    sh:targetClass <http://cmt#Decision> .
+
+shape_int:80bdf4d816e088c895b2521bb3054f1e89ca72a0 a sh:NodeShape ;
+    sh:targetClass <http://edas#MealBreak> .
+
+shape_int:811736270140a1e1a48b89c09e49ee22aab7c8ad a sh:NodeShape ;
+    sh:targetClass <http://edas#Presenter> .
+
+shape_int:843ca1c16e445a3612cdea594607c47f99bd6f3c a sh:NodeShape ;
+    sh:targetClass <http://edas#ComputerNetworksAapplicationsTopic> .
+
+shape_int:8682d73e62dd322ed3f1c68245442c9c3ba39355 a sh:NodeShape ;
+    sh:property shape_int:fc687222aa574b07318770d5f5576ef8d909e87d ;
+    sh:targetClass <http://edas#Programme> .
+
+shape_int:87d9349bc05c04e599b696898eb93d75db6ee5d3 a sh:NodeShape ;
+    sh:targetClass <http://edas#ComputerNetworksManagementTopic> .
+
+shape_int:89151df17903af7adf1cbed40824d13cff424089 a sh:NodeShape ;
+    sh:targetClass <http://edas#MeetingRoomPlace> .
+
+shape_int:8a82f01ad791d8b6bf2b5c75a1dd0287e000a953 a sh:NodeShape ;
+    sh:targetClass <http://edas#WithdrawnPaper> .
+
+shape_int:8c41ae88467fe5bbad09fcd488662b25c3ec5333 a sh:NodeShape ;
+    sh:property shape_int:0a461b248f684f0f5e710807c874f905b5b252d3,
+        shape_int:11b104d56d08b453ebe281cf557c66aae0bd5b8f,
+        shape_int:3dd01ca6cac6c1e0eb4898996b0b6cd4564a47e1,
+        shape_int:3e341a66431532691b5102d16cdd30ebfe2f8a98,
+        shape_int:548e3fbcb6b883c25ee440465aea1c33d185d247,
+        shape_int:ba1a13e56a711732417de5b7cdc04d0bc82c901c,
+        shape_int:beb1c53fbc1b871a9fc726f1a0825969b431c419,
+        shape_int:c9abe34aeeccca58676e6aa173eb44ad6e98561f,
+        shape_int:e1591933ddb9b57408362f423f36e49beed9c3df,
+        shape_int:e615a4bb69cffe910fcc3209efe6fd4aa6321345 ;
+    sh:targetClass <http://cmt#Person>,
+        <http://edas#Person> .
+
+shape_int:8f4e6fc0a19e7b472335f064e8c9a2096cc214b3 a sh:NodeShape ;
+    sh:targetClass <http://edas#NonAcademicEvent> .
+
+shape_int:94b8865ca111fe38c42c0623df8a361ebd38564a a sh:NodeShape ;
+    sh:property shape_int:01f406efa4ca2b5454834a0e2b197a6c88e724b9,
+        shape_int:072a3a107bfe50ee301d3b8d749c344b55739e42,
+        shape_int:0cf5df4dfcceb705827fd6d1a68ee727542b8a16,
+        shape_int:231f91394ee3c4f22974710ec633bbba0c17972e,
+        shape_int:b17dbb0b1fd41c59abb63f47b146a0fa5f5295d4 ;
+    sh:targetClass <http://edas#ConferenceEvent> .
+
+shape_int:94ed2487ad3d7a3e9e5bc2ca660b2f93a4eac537 a sh:NodeShape ;
+    sh:targetClass <http://edas#MobileComputingTopic> .
+
+shape_int:9571c4fcfa16b942d8d306e0de4ce01097a0b9e6 a sh:NodeShape ;
+    sh:targetClass <http://edas#WirelessCommunicationsTopic> .
+
+shape_int:97d9b2888847bdab6c3bf47fe6a1af3b69aee3e2 a sh:NodeShape ;
+    sh:targetClass <http://cmt#Preference> .
+
+shape_int:97f315c2cbd5d74181d101782051593e58032ddb a sh:NodeShape ;
+    sh:targetClass <http://edas#ReviewQuestion> .
+
+shape_int:9870a21cbf471c61df598e88d4ccb872162f939d a sh:NodeShape ;
+    sh:property shape_int:1fb524b1604f7d3fa81f692324c94e3a43a01e54,
+        shape_int:f788eaa890e4baf7d733ef8bb9ae10131640a80e ;
+    sh:targetClass <http://edas#SessionChair> .
+
+shape_int:9f8a2389a20ca0752aa9e95093515517e90e194c a sh:NodeShape ;
+    sh:targetClass <http://cmt#User> .
+
+shape_int:a06a7e5383985145a42c4a0d58a9e59dd712fbe9 a sh:NodeShape ;
+    sh:targetClass <http://cmt#AuthorNotReviewer> .
+
+shape_int:a62cdcfdba01a872a65a3fdeb7e0d4ec84e29f64 a sh:NodeShape ;
+    sh:targetClass <http://edas#AcademiaOrganization> .
+
+shape_int:a69d9d5f9f4a0bdc804c32a2ee8bbadb72f7ff6e a sh:NodeShape ;
+    sh:targetClass <http://cmt#Acceptance> .
+
+shape_int:a74f16c11792da6a36979a58a1ba2b4333632f57 a sh:NodeShape ;
+    sh:property shape_int:066701024268ef075d14de14a29ccb21ac478418,
+        shape_int:1fb524b1604f7d3fa81f692324c94e3a43a01e54,
+        shape_int:795721601b0aa395d25c5fa395398e5a0cca1ce0,
+        shape_int:b621d86541c28ce30d847c0c31e08b3aa2cfd1d2,
+        shape_int:d402ac97d0f252c8bef2b7599de2ccb39bf02dbe ;
+    sh:targetClass <http://cmt#Reviewer>,
+        <http://edas#Reviewer> .
+
+shape_int:a756f1b90c2f895759714537f3c7324af7119b76 a sh:NodeShape ;
+    sh:targetClass <http://edas#OrganizationalMeeting> .
+
+shape_int:a7581a7127b99bdf3d1251ab5da926a751580ea9 a sh:NodeShape ;
+    sh:description "Call For Reviews" ;
+    sh:targetClass <http://edas#CallForReviews> .
+
+shape_int:a78ea5da2bcb0e0eff13ddf6679f39602b415ddd a sh:NodeShape ;
+    sh:targetClass <http://edas#MultimediaTopic> .
+
+shape_int:aabccb936e50c5abfd56642d2bef547035e69da3 a sh:NodeShape ;
+    sh:targetClass <http://edas#Attendee> .
+
+shape_int:ad84d11240c231ebfc3b19bb766f49a3ee2579cd a sh:NodeShape ;
+    sh:targetClass <http://edas#WeekRejectRating> .
+
+shape_int:b229536e1caf42d72832cdb97a06d429d52fb6e1 a sh:NodeShape ;
+    sh:targetClass <http://edas#NGO> .
+
+shape_int:b882643da2201ccf7e594cccbb94cc9ca0de6379 a sh:NodeShape ;
+    sh:targetClass <http://cmt#PaperAbstract> .
+
+shape_int:bac2ec832dc8a340f707be7c96119d95f1669de5 a sh:NodeShape ;
+    sh:targetClass <http://edas#AntennasTopic> .
+
+shape_int:bda4923ab0af429265fabd10432dda914cef4156 a sh:NodeShape ;
+    sh:targetClass <http://edas#ComputerNetworksSecurityTopic> .
+
+shape_int:c142d3f41f63e7be9b45b540bb1a14fa4f729212 a sh:NodeShape ;
+    sh:targetClass <http://edas#MicroelectronicsTopic> .
+
+shape_int:c2374d28375031db3077f4397976f8dc3deb4c81 a sh:NodeShape ;
+    sh:targetClass <http://edas#RadioCommunicationsTopic> .
+
+shape_int:c32a0147f2e47a52e082fe2dd4b6aaa36084a4cb a sh:NodeShape ;
+    sh:property shape_int:407cc09542b89f6779953f856a7cc0d06b9e06a9 ;
+    sh:targetClass <http://edas#Place> .
+
+shape_int:c65397a48bcd46916845a6f4050cf3a7362c5428 a sh:NodeShape ;
+    sh:targetClass <http://edas#ComputerNetworksEnterpriseTopic> .
+
+shape_int:c6bd6281eb60350da84739ad33865632bbb3f9a4 a sh:NodeShape ;
+    sh:targetClass <http://edas#ComputerArchitectureTopic> .
+
+shape_int:c7a6c979ef54254ae63ec614463445d0c6986077 a sh:NodeShape ;
+    sh:targetClass <http://edas#AccpetIfRoomRating> .
+
+shape_int:c91b19f6afc4ee6f0ef1225f3cc8f9f18e836f8d a sh:NodeShape ;
+    sh:targetClass <http://edas#TravelGrant> .
+
+shape_int:cd3719900d5cf206faac92478a6b0d281e99cb30 a sh:NodeShape ;
+    sh:targetClass <http://edas#DiningPlace> .
+
+shape_int:d4a889fa5b66b4a97e06eaad468f93dde844216c a sh:NodeShape ;
+    sh:targetClass <http://edas#MedicineTopic> .
+
+shape_int:d523ebbd10146cdfd39dee077f04c9d08468d0bc a sh:NodeShape ;
+    sh:targetClass <http://edas#Country> .
+
+shape_int:d5a947c33dcaf23ad579aa2e13b5dc7537c4a6e0 a sh:NodeShape ;
+    sh:targetClass <http://edas#SingleLevelConference> .
+
+shape_int:d928bfee825c93e2502c2b04eeeddd1ffaf790c6 a sh:NodeShape ;
+    sh:targetClass <http://edas#Reception> .
+
+shape_int:d9b2e9e7e6d50cf1a4bdfab1d8025b0843efb02e a sh:NodeShape ;
+    sh:targetClass <http://cmt#PaperFullVersion> .
+
+shape_int:d9d60c219ca62e59710912584d891bfdf25b8664 a sh:NodeShape ;
+    sh:property shape_int:5320764c2f98d009ecbdfc8fad3bb9f1aa82e3f8,
+        shape_int:6ea5832cefef253abfaa8f9fde4f8b87e6854592,
+        shape_int:d66a8a4a4e115f6c5a6652e5434f64f4e717578b ;
+    sh:targetClass <http://edas#Sponsorship> .
+
+shape_int:db8c74d8a90f0f58f084968b26fefcc63ac560ee a sh:NodeShape ;
+    sh:property shape_int:7dc8e891c63bc8ed6e03208a2da259fadc083f4e ;
+    sh:targetClass <http://edas#RatedPapers> .
+
+shape_int:dc9796e572e13207d4b74f68d56955951e001bf0 a sh:NodeShape ;
+    sh:targetClass <http://edas#CADTopic> .
+
+shape_int:de08da3d14144d58f7c7143bbd4cf8974183040b a sh:NodeShape ;
+    sh:targetClass <http://edas#ParallelAndDistributedComputingTopic> .
+
+shape_int:de7203660f56185c617e3fee21133b4e4c03ed61 a sh:NodeShape ;
+    sh:targetClass <http://edas#IndustryOrganization> .
+
+shape_int:df35eafa7dcb2264a4d2429b2fcc921191707c7e a sh:NodeShape ;
+    sh:targetClass <http://edas#ReviewForm> .
+
+shape_int:e214b8a29923056887b7edf6635d90dcbb2abe88 a sh:NodeShape ;
+    sh:targetClass <http://cmt#Document>,
+        <http://edas#Document> .
+
+shape_int:e4fff170260f03d16752551d539f68c79371b174 a sh:NodeShape ;
+    sh:description "Call For Manuscripts" ;
+    sh:targetClass <http://edas#CallForManuscripts> .
+
+shape_int:e5e0602ed42163a0fcd077b111ad27e31083e80a a sh:NodeShape ;
+    sh:targetClass <http://edas#Excursion> .
+
+shape_int:ec0b28943af6d44969575d670f8ebee5f541b31b a sh:NodeShape ;
+    sh:targetClass <http://cmt#SubjectArea> .
+
+shape_int:f65dbcfd7195ed982036bc4e1c080879f759e029 a sh:NodeShape ;
+    sh:property shape_int:17963ae3472fa3c174411e75174bba2c61d514e5 ;
+    sh:targetClass <http://cmt#ProgramCommittee> .
+
+shape_int:f914f9eacde25ba757f1a435fb85bf81e25f2be0 a sh:NodeShape ;
+    sh:property shape_int:b621d86541c28ce30d847c0c31e08b3aa2cfd1d2,
+        shape_int:fa582354def2bc0a828570dfcca42ea854ac6e41 ;
+    sh:targetClass <http://cmt#ProgramCommitteeChair> .
+
+shape_int:fa37e75f44e8862b0b3e75dfacf30144ba9e98ad a sh:NodeShape ;
+    sh:targetClass <http://edas#ComputerNetworksMeasurementsTopic> .
+
+shape_int:fa5f82ddc16bdadaf1295877c2102aa864ab83af a sh:NodeShape ;
+    sh:property shape_int:1fb524b1604f7d3fa81f692324c94e3a43a01e54,
+        shape_int:b621d86541c28ce30d847c0c31e08b3aa2cfd1d2,
+        shape_int:f788eaa890e4baf7d733ef8bb9ae10131640a80e ;
+    sh:targetClass <http://cmt#ConferenceChair>,
+        <http://edas#ConferenceChair> .
+
+shape_int:fad71daebc88dbe9dffc42cf995bfc70dba2e69d a sh:NodeShape ;
+    sh:targetClass <http://cmt#Meta-Review> .
+
+shape_int:01f406efa4ca2b5454834a0e2b197a6c88e724b9 a sh:PropertyShape ;
+    sh:datatype xsd:dateTime ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasEndDateTime> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:066701024268ef075d14de14a29ccb21ac478418 a sh:PropertyShape ;
+    sh:class <http://cmt#Administrator> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#assignedByAdministrator> .
+
+shape_int:072a3a107bfe50ee301d3b8d749c344b55739e42 a sh:PropertyShape ;
+    sh:datatype xsd:dateTime ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasStartDateTime> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:0a461b248f684f0f5e710807c874f905b5b252d3 a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://cmt#email> ;
+    sh:pattern ".*" .
+
+shape_int:0cf5df4dfcceb705827fd6d1a68ee727542b8a16 a sh:PropertyShape ;
+    sh:class <http://edas#Place> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasLocation> .
+
+shape_int:11b104d56d08b453ebe281cf557c66aae0bd5b8f a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://cmt#name> ;
+    sh:pattern ".*" .
+
+shape_int:14550f0b872182de36d94007465cc943b1269599 a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasCity> ;
+    sh:pattern ".*" .
+
+shape_int:17029522e34d2856fe4d72a97d0b712dbce0e5f0 a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasPhone> ;
+    sh:pattern ".*" .
+
+shape_int:17963ae3472fa3c174411e75174bba2c61d514e5 a sh:PropertyShape ;
+    sh:class <http://cmt#ProgramCommitteeMember> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#hasProgramCommitteeMember> .
+
+shape_int:1aa97d8b5a664df758ebfaf9d6225bd79741f154 a sh:PropertyShape ;
+    sh:class <http://cmt#Conference> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#printHardcopyMailingManifests> .
+
+shape_int:231f91394ee3c4f22974710ec633bbba0c17972e a sh:PropertyShape ;
+    sh:class <http://edas#Programme> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasProgramme> .
+
+shape_int:2453f625f87507c9726a28e42d67574ca3a8ad88 a sh:PropertyShape ;
+    sh:class <http://cmt#ProgramCommitteeMember> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#setMaxPapers> .
+
+shape_int:2d066d4b8cd6e403bdbe36ad5d0fec36d0e75767 a sh:PropertyShape ;
+    sh:class <http://edas#Reviewer> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#isReviewHistoryOf> .
+
+shape_int:3dd01ca6cac6c1e0eb4898996b0b6cd4564a47e1 a sh:PropertyShape ;
+    sh:class <http://cmt#Document> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#hasConflictOfInterest> .
+
+shape_int:3e341a66431532691b5102d16cdd30ebfe2f8a98 a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasBiography> ;
+    sh:pattern ".*" .
+
+shape_int:407cc09542b89f6779953f856a7cc0d06b9e06a9 a sh:PropertyShape ;
+    sh:class <http://edas#ConferenceEvent> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#isLocationOf> .
+
+shape_int:469531de5ba5e267841732fd362478a42161c94c a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasPostalCode> ;
+    sh:pattern ".*" .
+
+shape_int:4f2932852465d21927491384bb759773f524bf3f a sh:PropertyShape ;
+    sh:class <http://cmt#Reviewer> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#assignReviewer> .
+
+shape_int:5320764c2f98d009ecbdfc8fad3bb9f1aa82e3f8 a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasCostCurrency> ;
+    sh:pattern ".*" .
+
+shape_int:548e3fbcb6b883c25ee440465aea1c33d185d247 a sh:PropertyShape ;
+    sh:class <http://edas#ConferenceEvent> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#attendeeAt> .
+
+shape_int:67cdd98163eb3717cc2ff88b78a01e73b4db9e4b a sh:PropertyShape ;
+    sh:class <http://cmt#Conference> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#enableVirtualMeeting> .
+
+shape_int:6ea5832cefef253abfaa8f9fde4f8b87e6854592 a sh:PropertyShape ;
+    sh:class <http://edas#Organization> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#providedBy> .
+
+shape_int:70cb2a7d241edc5b15e40f0a6c22a74cc15de3ca a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://edas#hasSubmissionInstructions> ;
+    sh:pattern ".*" .
+
+shape_int:70f486783d73485c047b27df9f80263fa5b574d6 a sh:PropertyShape ;
+    sh:class <http://edas#MealEvent> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#isMenuOf> .
+
+shape_int:7325c9dde167eb808ec5a28df8901848302a58a2 a sh:PropertyShape ;
+    sh:datatype xsd:dateTime ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://edas#hasSubmissionDeadline> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:750dc4e52e62c5745d37b281b5ca362811850a68 a sh:PropertyShape ;
+    sh:class <http://cmt#Paper> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#submitPaper> .
+
+shape_int:795721601b0aa395d25c5fa395398e5a0cca1ce0 a sh:PropertyShape ;
+    sh:class <http://cmt#Paper> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#readPaper> .
+
+shape_int:7d6d49aba278d71a8898617d000af8fa967ad94a a sh:PropertyShape ;
+    sh:class <http://edas#PaperPresentation> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#relatedToEvent> .
+
+shape_int:7dc8e891c63bc8ed6e03208a2da259fadc083f4e a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://edas#hasRating> ;
+    sh:qualifiedMinCount "1" .
+
+shape_int:910747d7b4a50d91df214697f76396af982bd6e1 a sh:PropertyShape ;
+    sh:class <http://cmt#Conference> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#runPaperAssignmentTools> .
+
+shape_int:97a66f2812b354696334b8ff6e995f8253048852 a sh:PropertyShape ;
+    sh:class <http://cmt#Conference> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#finalizePaperAssignment> .
+
+shape_int:abe57b4324d5fdfe6d4aafc963b2e24cbe76fdbe a sh:PropertyShape ;
+    sh:class <http://edas#AcceptedPaper> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#relatedToPaper> .
+
+shape_int:b17dbb0b1fd41c59abb63f47b146a0fa5f5295d4 a sh:PropertyShape ;
+    sh:class <http://edas#Person> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasAttendee> .
+
+shape_int:ba1a13e56a711732417de5b7cdc04d0bc82c901c a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasFirstName> ;
+    sh:pattern ".*" .
+
+shape_int:bb81a1305d1047fb65ec920d4c9011452b88667e a sh:PropertyShape ;
+    sh:class <http://edas#Sponsorship> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#isProviderOf> .
+
+shape_int:c3b8db2d82998726332687bb405271f1698044ea a sh:PropertyShape ;
+    sh:class <http://cmt#Conference> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#startReviewerBidding> .
+
+shape_int:c59c6869ea74fd37ac7901ace07ddd02c960f974 a sh:PropertyShape ;
+    sh:class <http://edas#Paper> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasRelatedPaper> .
+
+shape_int:c59ddb86013ffffbd27ac2bc5e1d26684391f85f a sh:PropertyShape ;
+    sh:class <http://edas#MealMenu> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasMenu> .
+
+shape_int:d30efad49c67f1dbe1eb642f31e919497dcf905d a sh:PropertyShape ;
+    sh:class <http://edas#Call> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasCall> .
+
+shape_int:d402ac97d0f252c8bef2b7599de2ccb39bf02dbe a sh:PropertyShape ;
+    sh:class <http://edas#PersonalReviewHistory> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasReviewHistory> .
+
+shape_int:d66a8a4a4e115f6c5a6652e5434f64f4e717578b a sh:PropertyShape ;
+    sh:datatype xsd:int ;
+    sh:maxInclusive "2147483647" ;
+    sh:minInclusive "-2147483648" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasCostAmount> ;
+    sh:pattern "[\\-+]?[0-9]+" .
+
+shape_int:e1591933ddb9b57408362f423f36e49beed9c3df a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasLastName> ;
+    sh:pattern ".*" .
+
+shape_int:ed639c0a3f796dbae13bca7b168ca8c37c2f35a2 a sh:PropertyShape ;
+    sh:class <http://edas#AcademicEvent> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#forEvent> .
+
+shape_int:f23d210321ffff578bd1421160cc05a639b97e31 a sh:PropertyShape ;
+    sh:class <http://cmt#Conference> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#enterConferenceDetails> .
+
+shape_int:f78223adbdade8d540d200ea1db0a38ab62b32da a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasStreet> ;
+    sh:pattern ".*" .
+
+shape_int:f7dd49f3a922f9718f35bf35ed5638213cc1f737 a sh:PropertyShape ;
+    sh:class <http://cmt#Conference> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#enterReviewCriteria> .
+
+shape_int:fa582354def2bc0a828570dfcca42ea854ac6e41 a sh:PropertyShape ;
+    sh:class <http://cmt#Review> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#endReview> .
+
+shape_int:fc198ab96b0c27af22cf98089d7e6d37e6c25068 a sh:PropertyShape ;
+    sh:class <http://cmt#Paper> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#co-writePaper> .
+
+shape_int:fc687222aa574b07318770d5f5576ef8d909e87d a sh:PropertyShape ;
+    sh:class <http://edas#ConferenceEvent> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#belongsToEvent> .
+
+shape_int:c9abe34aeeccca58676e6aa173eb44ad6e98561f a sh:PropertyShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:or ( [ sh:class <http://edas#Conference> ] [ sh:class <http://cmt#Conference> ] ) ;
+    sh:path [ sh:alternativePath ( <http://cmt#memberOfConference> <http://edas#isMemberOf> ) ] .
+
+shape_int:e615a4bb69cffe910fcc3209efe6fd4aa6321345 a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasEmail> ;
+    sh:pattern ".*" .
+
+shape_int:beb1c53fbc1b871a9fc726f1a0825969b431c419 a sh:PropertyShape ;
+    sh:class <http://edas#Document> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasRelatedDocument> .
+
+shape_int:f788eaa890e4baf7d733ef8bb9ae10131640a80e a sh:PropertyShape ;
+    sh:class <http://edas#Call> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#initiates> .
+
+shape_int:1fb524b1604f7d3fa81f692324c94e3a43a01e54 a sh:PropertyShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:or ( [ sh:class <http://edas#Paper> ] [ sh:class [ rdf:rest ( <http://edas#Paper> <http://cmt#Paper> ) ] ] ) ;
+    sh:path [ sh:alternativePath ( <http://cmt#hasBeenAssigned> <http://edas#isReviewing> ) ] .
+
+shape_int:b621d86541c28ce30d847c0c31e08b3aa2cfd1d2 a sh:PropertyShape ;
+    rdfs:label """In CMT terms, a ‘Conflict of Interest’ is an association between a specific Reviewer and a specific Paper that states there is a conflict of interest between that Reviewer and that paper. Conflicts can be marked by Authors (during paper submission) or by Reviewers (in Phase 2) or by Chairmen (in Phase 3).
+
+Based on that conflict, the reviewer will not be able to bid on the paper, be assigned to that paper (either automatically by the system or manually by a Chairman) or view review submissions for that paper.
+""" ;
+    sh:class <http://cmt#Paper> ;
+    sh:description """In CMT terms, a ‘Conflict of Interest’ is an association between a specific Reviewer and a specific Paper that states there is a conflict of interest between that Reviewer and that paper. Conflicts can be marked by Authors (during paper submission) or by Reviewers (in Phase 2) or by Chairmen (in Phase 3).
+
+Based on that conflict, the reviewer will not be able to bid on the paper, be assigned to that paper (either automatically by the system or manually by a Chairman) or view review submissions for that paper.
+""" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#markConflictOfInterest> .
+

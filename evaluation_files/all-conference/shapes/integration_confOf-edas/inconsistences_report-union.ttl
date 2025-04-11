@@ -1,0 +1,105 @@
+@prefix inc: <http://inconsistence.es#> .
+@prefix inc_ex: <http://inconsistence_example.es/resource/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+inc_ex:4efd54cf-ed74-4e59-bc53-37a0916522b7 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://confOf#Working_event>,
+        <http://edas#AcademicEvent> ;
+    inc:hasInconsistencyPath <http://confOf#hasTopic> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:5daa9eda-9f91-49f0-8d72-0bb0d663da28 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://confOf#Author>,
+        <http://edas#Author> ;
+    inc:hasInconsistencyPath <http://confOf#writes>,
+        <http://edas#hasRelatedPaper> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:6eb49799-b436-4a80-a054-d992bd417d62 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://confOf#Organization>,
+        <http://edas#Organization> ;
+    inc:hasInconsistencyPath <http://confOf#hasCountry> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:95908608-bd9c-4f4a-a52c-461d1f8ce5e3 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://edas#Conference> ;
+    inc:hasInconsistencyPath <http://edas#hasCountry> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:98548ee9-74d1-4cb1-a7a7-bc1fa279ef69 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://confOf#Contribution> ;
+    inc:hasInconsistencyPath <http://confOf#dealsWith> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:9d908ef9-5d24-4eec-89fb-5e27de23751b a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://confOf#Person>,
+        <http://edas#Person> ;
+    inc:hasInconsistencyPath <http://confOf#hasCity> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:a3d0fd5f-b330-4b79-b3ba-a0546ebdee0f a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://confOf#Member_PC>,
+        <http://edas#TPCMember> ;
+    inc:hasInconsistencyPath <http://confOf#expertOn> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:bdff98f9-79bd-4b00-ae77-2c518a2f2d1e a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://confOf#Person>,
+        <http://edas#Person> ;
+    inc:hasInconsistencyPath <http://confOf#employedBy> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:c5c27761-1718-43f1-9181-02376773633d a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://confOf#Member_PC>,
+        <http://edas#TPCMember> ;
+    inc:hasInconsistencyPath <http://confOf#reviewes>,
+        <http://edas#isReviewing> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:e24f1329-0739-4f4a-b027-56dd1a27e02b a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://edas#ActivePaper> ;
+    inc:hasInconsistencyPath <http://edas#hasRating> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:eec19430-01a0-4563-a875-059f5aa64605 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://confOf#Person>,
+        <http://edas#Person> ;
+    inc:hasInconsistencyPath <http://confOf#hasCountry> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:fe3dd912-dd02-4b1e-8add-82178ab4d0d8 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://edas#Conference> ;
+    inc:hasInconsistencyPath <http://edas#hasTopic> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:ffe7428a-316b-4df3-8949-4993cad871bc a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://confOf#Scholar> ;
+    inc:hasInconsistencyPath <http://confOf#studyAt> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+

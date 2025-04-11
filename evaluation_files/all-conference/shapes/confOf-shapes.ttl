@@ -1,0 +1,843 @@
+@prefix :      <http://confOf#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://astrea.linkeddata.es/shapes#d61f97a026cb5c2feb6a534e8f603c6f>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :hasCity .
+
+<https://astrea.linkeddata.es/shapes#15cfde19aab546a64fcb14a49bbe5772>
+        a         sh:PropertyShape ;
+        sh:class  :Camera_Ready_event .
+
+<https://astrea.linkeddata.es/shapes#b877d8cdde7bb6878ced00b2ef5746a6>
+        a            sh:PropertyShape ;
+        sh:minCount  "1"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :hasPostalCode .
+
+<https://astrea.linkeddata.es/shapes#ee97e8ed9b6cf8df8914e9e70821aeec>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:datatype     xsd:string ;
+        sh:description  "confTool" ;
+        sh:maxCount     1 ;
+        sh:nodeKind     sh:Literal , sh:IRIOrLiteral ;
+        sh:path         :has_title ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#d43e21c85f053c025232ff6657f9b4b6>
+        a            sh:PropertyShape ;
+        sh:class     :Topic ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :dealsWith .
+
+<https://astrea.linkeddata.es/shapes#0cd6d67c03b35a1a43164f27fcdb7d1b>
+        a            sh:PropertyShape ;
+        sh:class     :Topic ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :hasTopic .
+
+<https://astrea.linkeddata.es/shapes#1ffb063c961e150c0d1609ee46d2f01a>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:datatype     xsd:string ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :hasKeyword ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#e734688c7f6f4d65aae11c0946f95d8d>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:class        :Organization ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         :employedBy .
+
+<https://astrea.linkeddata.es/shapes#545ae6cf6f07f89c4c32e3fc623309ed>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:class        :Contribution ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         :writes .
+
+<https://astrea.linkeddata.es/shapes#e5e932bcc3ba7f493f27aa957ce59564>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:class        :Topic ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         :dealsWith .
+
+<https://astrea.linkeddata.es/shapes#551957895974b3f6698c03a11f431b74>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#bd9f8a44c6cfb1e9c7a47ce9ea3b75e9> , <https://astrea.linkeddata.es/shapes#5267fb2ea4bae2ff73bb2ef43795e57d> ;
+        sh:property     <https://astrea.linkeddata.es/shapes#eabe09d27079835c84198a204e291b1e> , <https://astrea.linkeddata.es/shapes#1b714b45e772ae9bc63d100a1c284825> ;
+        sh:targetClass  :Administrative_event .
+
+<https://astrea.linkeddata.es/shapes#7434d2caac07df197af6a97bda3da3ac>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:datatype     xsd:string ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :hasStreet ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#50992ffad9b75e024e745e81f7379953>
+        a         sh:PropertyShape ;
+        sh:class  :Banquet .
+
+<https://astrea.linkeddata.es/shapes#b16780ab27848e8021bb782f57857eb5>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:datatype     xsd:string ;
+        sh:description  "confTool" ;
+        sh:maxCount     1 ;
+        sh:nodeKind     sh:Literal , sh:IRIOrLiteral ;
+        sh:path         :hasSurname ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#bff27a8febfe4ab52544af0ee68ee200>
+        a         sh:PropertyShape ;
+        sh:class  :Trip .
+
+<https://astrea.linkeddata.es/shapes#d5b4a2f8f75c00d26ab2f8037750b6ec>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :has_title .
+
+<https://astrea.linkeddata.es/shapes#413a8cfa173762b040d7dd591817dc42>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#5244d92eb07bb8006b36f5fda6aa611b> , <https://astrea.linkeddata.es/shapes#0e05fdbea4d332d8db737aee55e812a8> , <https://astrea.linkeddata.es/shapes#d37d905ca2e27b0a590ec9085d8fe2ab> , <https://astrea.linkeddata.es/shapes#b64dc27bbab40e1572630f4647b547e0> , <https://astrea.linkeddata.es/shapes#4851d52d83f7b4b23668ac13c3433562> , <https://astrea.linkeddata.es/shapes#127923aa3fc5777b8109377f653b5cf3> ;
+        sh:property     <https://astrea.linkeddata.es/shapes#740c07f742f72a90f13a72c78e0fa375> , <https://astrea.linkeddata.es/shapes#7434d2caac07df197af6a97bda3da3ac> , <https://astrea.linkeddata.es/shapes#56bca0807f0123a6389d1d70353e2285> , <https://astrea.linkeddata.es/shapes#61e92b00ea2881df40de27cd6887fe03> ;
+        sh:targetClass  :Organization .
+
+<https://astrea.linkeddata.es/shapes#0e05fdbea4d332d8db737aee55e812a8>
+        a         sh:PropertyShape ;
+        sh:class  :Contribution .
+
+<https://astrea.linkeddata.es/shapes#e79b90f3e41947344d240940ded2823d>
+        a            sh:PropertyShape ;
+        sh:class     :Contribution ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :reviewes .
+
+<https://astrea.linkeddata.es/shapes#41b81332a6b8e32c3580d13b5e8a9320>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :hasTitle .
+
+<https://astrea.linkeddata.es/shapes#a7585d23d9edd5d34c950013bb220651>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#b64dc27bbab40e1572630f4647b547e0> , <https://astrea.linkeddata.es/shapes#0e05fdbea4d332d8db737aee55e812a8> , <https://astrea.linkeddata.es/shapes#5244d92eb07bb8006b36f5fda6aa611b> , <https://astrea.linkeddata.es/shapes#ee81ddff416c8b68d2f911079edf1dee> , <https://astrea.linkeddata.es/shapes#4851d52d83f7b4b23668ac13c3433562> ;
+        sh:targetClass  :Country .
+
+<https://astrea.linkeddata.es/shapes#2f152af62a4c55ed8f83b16cf1f11e5e>
+        a               sh:NodeShape ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Member .
+
+<https://astrea.linkeddata.es/shapes#d37d905ca2e27b0a590ec9085d8fe2ab>
+        a         sh:PropertyShape ;
+        sh:class  :Country .
+
+<https://astrea.linkeddata.es/shapes#b831cb15cdb08dea809d6eaa1c33aefc>
+        a         sh:PropertyShape ;
+        sh:class  :Submission_event .
+
+<https://astrea.linkeddata.es/shapes#d6114aaa986527d926e6b1582009049f>
+        a         sh:PropertyShape ;
+        sh:class  :Reception .
+
+<https://astrea.linkeddata.es/shapes#d9c81c12b63e6a721e0fa69c732f9ce5>
+        a               sh:NodeShape ;
+        sh:description  "confTool" , "Reviewer" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#21309bacee61829495e8a03ca280174f> , <https://astrea.linkeddata.es/shapes#e79b90f3e41947344d240940ded2823d> , <https://astrea.linkeddata.es/shapes#06ca9205d9818705f2606f1aa81e088a> , <https://astrea.linkeddata.es/shapes#779ae19dbe8b3b3f6748421fc280bafb> ;
+        sh:targetClass  :Member_PC .
+
+<https://astrea.linkeddata.es/shapes#1f403aceec1a3fe4f9114d0d690765ee>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :hasSurname .
+
+<https://astrea.linkeddata.es/report/0620946147>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#a9e9f42d8d13bfa5a37edb86a6144f91>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:datatype     xsd:string ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :hasPhone ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#626ba4a52e4a7cb4a1b9b80bc642d9dd>
+        a               sh:NodeShape ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#5244d92eb07bb8006b36f5fda6aa611b> , <https://astrea.linkeddata.es/shapes#127923aa3fc5777b8109377f653b5cf3> , <https://astrea.linkeddata.es/shapes#0e05fdbea4d332d8db737aee55e812a8> , <https://astrea.linkeddata.es/shapes#d37d905ca2e27b0a590ec9085d8fe2ab> , <https://astrea.linkeddata.es/shapes#ee81ddff416c8b68d2f911079edf1dee> , <https://astrea.linkeddata.es/shapes#4851d52d83f7b4b23668ac13c3433562> ;
+        sh:targetClass  :Topic .
+
+<https://astrea.linkeddata.es/shapes#d35733e1c1116bb7d5c1f855a0bcc28f>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :hasCountry .
+
+<https://astrea.linkeddata.es/shapes#3908a2960ce13010262b8887e34102ec>
+        a               sh:NodeShape ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Administrator .
+
+<https://astrea.linkeddata.es/shapes#779ae19dbe8b3b3f6748421fc280bafb>
+        a            sh:PropertyShape ;
+        sh:class     :Contribution ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :reviewes .
+
+<https://astrea.linkeddata.es/shapes#3bce20c5af005e6593bf07d69db2e739>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :defaultChoice .
+
+<https://astrea.linkeddata.es/shapes#12f86b5d1c1c670690245ad8a906bfe0>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:class        :Author ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         :writtenBy .
+
+<https://astrea.linkeddata.es/shapes#34265e57254b078de049a55042af10fa>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#d6114aaa986527d926e6b1582009049f> , <https://astrea.linkeddata.es/shapes#50992ffad9b75e024e745e81f7379953> ;
+        sh:targetClass  :Trip .
+
+<https://astrea.linkeddata.es/shapes#71c58cde1d6ca20d9e1a30223b408794>
+        a         sh:PropertyShape ;
+        sh:class  :University .
+
+<https://astrea.linkeddata.es/shapes#b058aba8aa25085f2ee8d8d51c0c00d9>
+        a               sh:NodeShape ;
+        sh:description  "Registration of new ConfTool users" , "confTool" ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#2034b647cb8276ee6165e613cf45696a> , <https://astrea.linkeddata.es/shapes#b831cb15cdb08dea809d6eaa1c33aefc> , <https://astrea.linkeddata.es/shapes#8c25ec12b1743cd1274301965026f098> , <https://astrea.linkeddata.es/shapes#15cfde19aab546a64fcb14a49bbe5772> ;
+        sh:targetClass  :Registration_of_participants_event .
+
+<https://astrea.linkeddata.es/shapes#b4c69d77b109ab6888d681c88276027d>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :location .
+
+<https://astrea.linkeddata.es/shapes#eb9bea2694025a36550502f7bc0f6caf>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:datatype     xsd:string ;
+        sh:description  "confTool" ;
+        sh:maxCount     1 ;
+        sh:nodeKind     sh:Literal , sh:IRIOrLiteral ;
+        sh:path         :has_short_title ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#2d51d0fb8406d47f4b4060055c416a2a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#823c2800da73de33863ba36511fa3953> , <https://astrea.linkeddata.es/shapes#8ae799f7d68a1e88c78e6e050b5061bb> ;
+        sh:targetClass  :Tutorial .
+
+<https://astrea.linkeddata.es/shapes#285d9b664a337b2fa3bb8200e458376c>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :hasFirstName .
+
+<https://astrea.linkeddata.es/shapes#4e2fc7ecb52c1707d129e854b901f61c>
+        a            sh:PropertyShape ;
+        sh:minCount  "1"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :hasEmail .
+
+<https://astrea.linkeddata.es/shapes#16a3b45ead784ef53ab0d8c5ba2f037c>
+        a         sh:PropertyShape ;
+        sh:class  :Paper .
+
+<https://astrea.linkeddata.es/shapes#846d9de69155c2b11055118047e21103>
+        a               sh:NodeShape ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#4333d7172c3e6b1e497c04f1a95fa3a3> ;
+        sh:targetClass  :Participant .
+
+<https://astrea.linkeddata.es/shapes#4b483443b3ad1859f864690af4f882bd>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :has_title .
+
+<https://astrea.linkeddata.es/shapes#61e92b00ea2881df40de27cd6887fe03>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:class        :Country ;
+        sh:description  "confTool" ;
+        sh:maxCount     1 ;
+        sh:nodeKind     sh:BlankNodeOrIRI , sh:IRIOrLiteral ;
+        sh:path         :hasCountry .
+
+<https://astrea.linkeddata.es/shapes#99067e2de10d835258c9c598646d9cc6>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#97425c17085374bd1b6998e287aefcad> , <https://astrea.linkeddata.es/shapes#5267fb2ea4bae2ff73bb2ef43795e57d> ;
+        sh:property     <https://astrea.linkeddata.es/shapes#19f1b9f108403b2e7f0830f809b7be00> , <https://astrea.linkeddata.es/shapes#eb87fa1c069b032cc6c1d4e7456823d5> , <https://astrea.linkeddata.es/shapes#622a04bf36733ea867a69f84b2857f7f> , <https://astrea.linkeddata.es/shapes#4b483443b3ad1859f864690af4f882bd> , <https://astrea.linkeddata.es/shapes#ee97e8ed9b6cf8df8914e9e70821aeec> , <https://astrea.linkeddata.es/shapes#63790e816ed52edee2d7058c0b20a1b1> , <https://astrea.linkeddata.es/shapes#0cd6d67c03b35a1a43164f27fcdb7d1b> , <https://astrea.linkeddata.es/shapes#116f1fff4ebe62f1fa9b985857b76a1a> , <https://astrea.linkeddata.es/shapes#161bedc0e70b57c40536581151bbc2f9> , <https://astrea.linkeddata.es/shapes#3bce20c5af005e6593bf07d69db2e739> , <https://astrea.linkeddata.es/shapes#eb9bea2694025a36550502f7bc0f6caf> , <https://astrea.linkeddata.es/shapes#1f522de9fae06670dd8ae5a0f4d96aaf> , <https://astrea.linkeddata.es/shapes#d35f2c2a9b275a42b3860e74d5bc534c> ;
+        sh:targetClass  :Working_event .
+
+<https://astrea.linkeddata.es/shapes#740c07f742f72a90f13a72c78e0fa375>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:class        :City ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         :hasCity .
+
+<https://astrea.linkeddata.es/shapes#f1c7869645707c7f22637210f9d6f851>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:datatype     xsd:string ;
+        sh:description  "confTool" ;
+        sh:maxCount     1 ;
+        sh:nodeKind     sh:Literal , sh:IRIOrLiteral ;
+        sh:path         :abstract ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#ffff903847beb13f369890734d4cb203>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#c2ffaed2a9e01ad18b8c4d69e8326d47> , <https://astrea.linkeddata.es/shapes#8ae799f7d68a1e88c78e6e050b5061bb> ;
+        sh:targetClass  :Workshop .
+
+<https://astrea.linkeddata.es/shapes#fafb7d3c182c62017984f1ff53b307bc>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#71c58cde1d6ca20d9e1a30223b408794> ;
+        sh:targetClass  :Company .
+
+<https://astrea.linkeddata.es/shapes#f288235959b9f477244af8bcaf40c32d>
+        a               sh:NodeShape ;
+        sh:description  "confTool"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#b64dc27bbab40e1572630f4647b547e0> , <https://astrea.linkeddata.es/shapes#127923aa3fc5777b8109377f653b5cf3> , <https://astrea.linkeddata.es/shapes#5244d92eb07bb8006b36f5fda6aa611b> , <https://astrea.linkeddata.es/shapes#d37d905ca2e27b0a590ec9085d8fe2ab> , <https://astrea.linkeddata.es/shapes#ee81ddff416c8b68d2f911079edf1dee> , <https://astrea.linkeddata.es/shapes#4851d52d83f7b4b23668ac13c3433562> ;
+        sh:property     <https://astrea.linkeddata.es/shapes#1ffb063c961e150c0d1609ee46d2f01a> , <https://astrea.linkeddata.es/shapes#41b81332a6b8e32c3580d13b5e8a9320> , <https://astrea.linkeddata.es/shapes#d43e21c85f053c025232ff6657f9b4b6> , <https://astrea.linkeddata.es/shapes#12f86b5d1c1c670690245ad8a906bfe0> , <https://astrea.linkeddata.es/shapes#04a10255c8d0e019e071fc47f68b97fc> , <https://astrea.linkeddata.es/shapes#30dafccdc88317f6abfd85d3aeafdf01> , <https://astrea.linkeddata.es/shapes#e5e932bcc3ba7f493f27aa957ce59564> , <https://astrea.linkeddata.es/shapes#b4ed2551a26568bc0328ec6009e3aa03> , <https://astrea.linkeddata.es/shapes#c1bfcf7563d2566fd3eace034576cf1f> , <https://astrea.linkeddata.es/shapes#3fa0b99eb0dfb249b42a658e79b9561c> , <https://astrea.linkeddata.es/shapes#f1c7869645707c7f22637210f9d6f851> , <https://astrea.linkeddata.es/shapes#fad05bb0c8ea4b47dce32ac948a30e82> ;
+        sh:targetClass  :Contribution .
+
+<https://astrea.linkeddata.es/shapes#127923aa3fc5777b8109377f653b5cf3>
+        a         sh:PropertyShape ;
+        sh:class  :City .
+
+<https://astrea.linkeddata.es/shapes#4401f41dd1b3d8af0472252d0dc93bd6>
+        a         sh:PropertyShape ;
+        sh:class  :Registration_of_participants_event .
+
+<https://astrea.linkeddata.es/shapes#06ca9205d9818705f2606f1aa81e088a>
+        a            sh:PropertyShape ;
+        sh:class     :Topic ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :expertOn .
+
+<https://astrea.linkeddata.es/shapes#c2ffaed2a9e01ad18b8c4d69e8326d47>
+        a         sh:PropertyShape ;
+        sh:class  :Tutorial .
+
+<https://astrea.linkeddata.es/shapes#a97e1cf4c42b04a1eecebc5e7a5c7233>
+        a               sh:NodeShape ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Assistant .
+
+<https://astrea.linkeddata.es/shapes#b9d003877926df244a1dd29f2f5c9689>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#b64dc27bbab40e1572630f4647b547e0> , <https://astrea.linkeddata.es/shapes#4851d52d83f7b4b23668ac13c3433562> , <https://astrea.linkeddata.es/shapes#ee81ddff416c8b68d2f911079edf1dee> , <https://astrea.linkeddata.es/shapes#5244d92eb07bb8006b36f5fda6aa611b> , <https://astrea.linkeddata.es/shapes#0e05fdbea4d332d8db737aee55e812a8> ;
+        sh:targetClass  :City .
+
+<https://astrea.linkeddata.es/shapes#6dd8e306ad9a21b9e7ec56c379090908>
+        a               sh:NodeShape ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Chair_PC .
+
+<https://astrea.linkeddata.es/shapes#ee81ddff416c8b68d2f911079edf1dee>
+        a         sh:PropertyShape ;
+        sh:class  :Organization .
+
+<https://astrea.linkeddata.es/shapes#68974b71bba9a6fd01417c7565648364>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#8977fcc46e76f47e031635c1946f8c78> ;
+        sh:targetClass  :University .
+
+<https://astrea.linkeddata.es/shapes#14cf5308ec5c507618f41c0f8ec7193e>
+        a               sh:NodeShape ;
+        sh:description  "confTool" , "price category - scholar" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#e274264f3ac9a60d965ef04cd7bf03e1> , <https://astrea.linkeddata.es/shapes#889b39867b422e2bbaef7129240f2840> ;
+        sh:targetClass  :Scholar .
+
+<https://astrea.linkeddata.es/shapes#20b017364568a047d0971838701d9997>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" , "involved middle name" ;
+        sh:datatype     xsd:string ;
+        sh:description  "involved middle name" , "confTool" ;
+        sh:maxCount     1 ;
+        sh:nodeKind     sh:Literal , sh:IRIOrLiteral ;
+        sh:path         :hasFirstName ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#2f550f0e2da1efa0d6a16952b6cd2da5>
+        a               sh:NodeShape ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Student .
+
+<https://astrea.linkeddata.es/shapes#823c2800da73de33863ba36511fa3953>
+        a         sh:PropertyShape ;
+        sh:class  :Workshop .
+
+<https://astrea.linkeddata.es/shapes#203a6c6cce6e458ba2785aae826195a4>
+        a            sh:PropertyShape ;
+        sh:class     :Organization ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :employedBy .
+
+<https://astrea.linkeddata.es/shapes#16c1ade26ae81a752c63d0a4acc3006a>
+        a               sh:NodeShape ;
+        sh:description  "Final upload of accepted contributions" , "confTool" ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#b831cb15cdb08dea809d6eaa1c33aefc> , <https://astrea.linkeddata.es/shapes#8c25ec12b1743cd1274301965026f098> , <https://astrea.linkeddata.es/shapes#4401f41dd1b3d8af0472252d0dc93bd6> , <https://astrea.linkeddata.es/shapes#2034b647cb8276ee6165e613cf45696a> ;
+        sh:targetClass  :Camera_Ready_event .
+
+<https://astrea.linkeddata.es/shapes#0551b333636b3a4ee194cf42b3c15f8a>
+        a               sh:NodeShape ;
+        sh:description  "confTool" , "Reviewing procedure for submitted contributions" ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#b831cb15cdb08dea809d6eaa1c33aefc> , <https://astrea.linkeddata.es/shapes#4401f41dd1b3d8af0472252d0dc93bd6> , <https://astrea.linkeddata.es/shapes#8c25ec12b1743cd1274301965026f098> , <https://astrea.linkeddata.es/shapes#15cfde19aab546a64fcb14a49bbe5772> ;
+        sh:targetClass  :Reviewing_event .
+
+<https://astrea.linkeddata.es/shapes#8ae799f7d68a1e88c78e6e050b5061bb>
+        a         sh:PropertyShape ;
+        sh:class  :Conference .
+
+<https://astrea.linkeddata.es/shapes#c2fb325cc96242ce960babcace5691a9>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:datatype     xsd:string ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :hasFax ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#3fa0b99eb0dfb249b42a658e79b9561c>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:datatype     xsd:string ;
+        sh:description  "confTool" ;
+        sh:maxCount     1 ;
+        sh:nodeKind     sh:Literal , sh:IRIOrLiteral ;
+        sh:path         :hasTitle ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#7f5a0a4eab42b354ca7c5aad118d3748>
+        a         sh:PropertyShape ;
+        sh:class  :Poster .
+
+<https://astrea.linkeddata.es/shapes#fad05bb0c8ea4b47dce32ac948a30e82>
+        a            sh:PropertyShape ;
+        sh:minCount  "1"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :hasKeyword .
+
+<https://astrea.linkeddata.es/shapes#c00decb0175506c394c48b9131d94e7d>
+        a               sh:NodeShape ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#7f5a0a4eab42b354ca7c5aad118d3748> , <https://astrea.linkeddata.es/shapes#20498054898343ac4ddc97e47e07ebca> ;
+        sh:targetClass  :Paper .
+
+<https://astrea.linkeddata.es/shapes#b4332b9424c28d1d60e9f00be97c2f7d>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:datatype     xsd:string ;
+        sh:description  "confTool" ;
+        sh:maxCount     1 ;
+        sh:nodeKind     sh:Literal , sh:IRIOrLiteral ;
+        sh:path         :starts_on ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#e274264f3ac9a60d965ef04cd7bf03e1>
+        a            sh:PropertyShape ;
+        sh:class     :University ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :studyAt .
+
+<https://astrea.linkeddata.es/shapes#19f1b9f108403b2e7f0830f809b7be00>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:class        :Topic ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         :hasTopic .
+
+<https://astrea.linkeddata.es/shapes#7d8cf6eaa928b457fc335ef92fab330b>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:datatype     xsd:string ;
+        sh:description  "confTool" ;
+        sh:maxCount     1 ;
+        sh:nodeKind     sh:Literal , sh:IRIOrLiteral ;
+        sh:path         :ends_on ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#97425c17085374bd1b6998e287aefcad>
+        a         sh:PropertyShape ;
+        sh:class  :Administrative_event .
+
+<https://astrea.linkeddata.es/shapes#0caa8eb36dbd06908a398aa7be2e3ec3>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :defaultChoice .
+
+<https://astrea.linkeddata.es/shapes#b4ed2551a26568bc0328ec6009e3aa03>
+        a            sh:PropertyShape ;
+        sh:minCount  "1"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :contactEmail .
+
+<https://astrea.linkeddata.es/shapes#eabe09d27079835c84198a204e291b1e>
+        a            sh:PropertyShape ;
+        sh:class     :Administrative_event ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :follows .
+
+<https://astrea.linkeddata.es/shapes#42eb88559cc5a578e2fbe59ee91aad63>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#d6114aaa986527d926e6b1582009049f> , <https://astrea.linkeddata.es/shapes#bff27a8febfe4ab52544af0ee68ee200> ;
+        sh:targetClass  :Banquet .
+
+<https://astrea.linkeddata.es/shapes#21309bacee61829495e8a03ca280174f>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:class        :Topic ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         :expertOn .
+
+<https://astrea.linkeddata.es/shapes#c41484eeb39c36e5d9effdd18d6fc67d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#bff27a8febfe4ab52544af0ee68ee200> , <https://astrea.linkeddata.es/shapes#50992ffad9b75e024e745e81f7379953> ;
+        sh:targetClass  :Reception .
+
+<https://astrea.linkeddata.es/shapes#b64dc27bbab40e1572630f4647b547e0>
+        a         sh:PropertyShape ;
+        sh:class  :Topic .
+
+<https://astrea.linkeddata.es/shapes#70a29ec67d20aaee50c18caf7de23b19>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#823c2800da73de33863ba36511fa3953> , <https://astrea.linkeddata.es/shapes#c2ffaed2a9e01ad18b8c4d69e8326d47> ;
+        sh:targetClass  :Conference .
+
+<https://astrea.linkeddata.es/shapes#7d9927b25360c4e2abaf3bdf9d83f9ec>
+        a               sh:NodeShape ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#0e05fdbea4d332d8db737aee55e812a8> , <https://astrea.linkeddata.es/shapes#d37d905ca2e27b0a590ec9085d8fe2ab> , <https://astrea.linkeddata.es/shapes#4851d52d83f7b4b23668ac13c3433562> , <https://astrea.linkeddata.es/shapes#ee81ddff416c8b68d2f911079edf1dee> , <https://astrea.linkeddata.es/shapes#127923aa3fc5777b8109377f653b5cf3> , <https://astrea.linkeddata.es/shapes#b64dc27bbab40e1572630f4647b547e0> ;
+        sh:property     <https://astrea.linkeddata.es/shapes#7434d2caac07df197af6a97bda3da3ac> , <https://astrea.linkeddata.es/shapes#645e9a196a2525e07879ee0748d36ad3> , <https://astrea.linkeddata.es/shapes#61e92b00ea2881df40de27cd6887fe03> , <https://astrea.linkeddata.es/shapes#4e2fc7ecb52c1707d129e854b901f61c> , <https://astrea.linkeddata.es/shapes#1f403aceec1a3fe4f9114d0d690765ee> , <https://astrea.linkeddata.es/shapes#b16780ab27848e8021bb782f57857eb5> , <https://astrea.linkeddata.es/shapes#285d9b664a337b2fa3bb8200e458376c> , <https://astrea.linkeddata.es/shapes#e734688c7f6f4d65aae11c0946f95d8d> , <https://astrea.linkeddata.es/shapes#20b017364568a047d0971838701d9997> , <https://astrea.linkeddata.es/shapes#740c07f742f72a90f13a72c78e0fa375> , <https://astrea.linkeddata.es/shapes#5184685d3988f794108ad31821a3f720> , <https://astrea.linkeddata.es/shapes#d61f97a026cb5c2feb6a534e8f603c6f> , <https://astrea.linkeddata.es/shapes#203a6c6cce6e458ba2785aae826195a4> , <https://astrea.linkeddata.es/shapes#c2fb325cc96242ce960babcace5691a9> , <https://astrea.linkeddata.es/shapes#56bca0807f0123a6389d1d70353e2285> , <https://astrea.linkeddata.es/shapes#b877d8cdde7bb6878ced00b2ef5746a6> , <https://astrea.linkeddata.es/shapes#a81d91139643ca54e5848da5adb8fc96> , <https://astrea.linkeddata.es/shapes#d35733e1c1116bb7d5c1f855a0bcc28f> , <https://astrea.linkeddata.es/shapes#a9e9f42d8d13bfa5a37edb86a6144f91> ;
+        sh:targetClass  :Person .
+
+<https://astrea.linkeddata.es/shapes#d35f2c2a9b275a42b3860e74d5bc534c>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" , "where the event is being held" ;
+        sh:datatype     xsd:string ;
+        sh:description  "confTool" , "where the event is being held" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :location ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#889b39867b422e2bbaef7129240f2840>
+        a            sh:PropertyShape ;
+        sh:class     :University ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :studyAt .
+
+<https://astrea.linkeddata.es/shapes#1f522de9fae06670dd8ae5a0f4d96aaf>
+        a                sh:PropertyShape ;
+        rdfs:label       "confTool\n" ;
+        sh:datatype      xsd:positiveInteger ;
+        sh:description   "confTool\n" ;
+        sh:maxCount      1 ;
+        sh:minInclusive  1 ;
+        sh:nodeKind      sh:Literal , sh:IRIOrLiteral ;
+        sh:path          :maxChoice ;
+        sh:pattern       "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#4851d52d83f7b4b23668ac13c3433562>
+        a         sh:PropertyShape ;
+        sh:class  :Event .
+
+<https://astrea.linkeddata.es/shapes#645e9a196a2525e07879ee0748d36ad3>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:datatype     xsd:string ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :hasHomePage ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#4333d7172c3e6b1e497c04f1a95fa3a3>
+        a            sh:PropertyShape ;
+        sh:datatype  xsd:boolean ;
+        sh:maxCount  1 ;
+        sh:nodeKind  sh:Literal , sh:IRIOrLiteral ;
+        sh:path      :earlyRegistration ;
+        sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#0b09153730324e332104ea3b6f689eae>
+        a               sh:NodeShape ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#545ae6cf6f07f89c4c32e3fc623309ed> , <https://astrea.linkeddata.es/shapes#75818d264b5891dbb0fd9a6c387ea07d> ;
+        sh:targetClass  :Author .
+
+<https://astrea.linkeddata.es/shapes#4066a19f3f57f90f4845a5d6a57ff7be>
+        a               sh:NodeShape ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#16a3b45ead784ef53ab0d8c5ba2f037c> , <https://astrea.linkeddata.es/shapes#7f5a0a4eab42b354ca7c5aad118d3748> ;
+        sh:targetClass  :Short_paper .
+
+<http://astrea.linkeddata.es/report>
+        a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#contains>
+                <https://astrea.linkeddata.es/shapes#0cd6d67c03b35a1a43164f27fcdb7d1b> , <https://astrea.linkeddata.es/shapes#4e2fc7ecb52c1707d129e854b901f61c> , <https://astrea.linkeddata.es/shapes#889b39867b422e2bbaef7129240f2840> , <https://astrea.linkeddata.es/shapes#e734688c7f6f4d65aae11c0946f95d8d> , <https://astrea.linkeddata.es/shapes#7d8cf6eaa928b457fc335ef92fab330b> , <https://astrea.linkeddata.es/shapes#6dd8e306ad9a21b9e7ec56c379090908> , <https://astrea.linkeddata.es/shapes#8ae799f7d68a1e88c78e6e050b5061bb> , <https://astrea.linkeddata.es/shapes#eb87fa1c069b032cc6c1d4e7456823d5> , <https://astrea.linkeddata.es/shapes#a81d91139643ca54e5848da5adb8fc96> , <https://astrea.linkeddata.es/shapes#413a8cfa173762b040d7dd591817dc42> , <https://astrea.linkeddata.es/shapes#3908a2960ce13010262b8887e34102ec> , <https://astrea.linkeddata.es/shapes#626ba4a52e4a7cb4a1b9b80bc642d9dd> , <https://astrea.linkeddata.es/shapes#fafb7d3c182c62017984f1ff53b307bc> , <https://astrea.linkeddata.es/shapes#30dafccdc88317f6abfd85d3aeafdf01> , <https://astrea.linkeddata.es/shapes#20b017364568a047d0971838701d9997> , <https://astrea.linkeddata.es/shapes#116f1fff4ebe62f1fa9b985857b76a1a> , <https://astrea.linkeddata.es/shapes#b16780ab27848e8021bb782f57857eb5> , <https://astrea.linkeddata.es/shapes#4333d7172c3e6b1e497c04f1a95fa3a3> , <https://astrea.linkeddata.es/shapes#285d9b664a337b2fa3bb8200e458376c> , <https://astrea.linkeddata.es/shapes#779ae19dbe8b3b3f6748421fc280bafb> , <https://astrea.linkeddata.es/shapes#68974b71bba9a6fd01417c7565648364> , <https://astrea.linkeddata.es/shapes#ee81ddff416c8b68d2f911079edf1dee> , <https://astrea.linkeddata.es/shapes#a7585d23d9edd5d34c950013bb220651> , <https://astrea.linkeddata.es/shapes#0b09153730324e332104ea3b6f689eae> , <https://astrea.linkeddata.es/shapes#d37d905ca2e27b0a590ec9085d8fe2ab> , <https://astrea.linkeddata.es/shapes#c2ffaed2a9e01ad18b8c4d69e8326d47> , <https://astrea.linkeddata.es/shapes#846d9de69155c2b11055118047e21103> , <https://astrea.linkeddata.es/shapes#16a3b45ead784ef53ab0d8c5ba2f037c> , <https://astrea.linkeddata.es/shapes#2034b647cb8276ee6165e613cf45696a> , <https://astrea.linkeddata.es/shapes#b831cb15cdb08dea809d6eaa1c33aefc> , <https://astrea.linkeddata.es/shapes#bff27a8febfe4ab52544af0ee68ee200> , <https://astrea.linkeddata.es/shapes#12f86b5d1c1c670690245ad8a906bfe0> , <https://astrea.linkeddata.es/shapes#622a04bf36733ea867a69f84b2857f7f> , <https://astrea.linkeddata.es/shapes#a9e9f42d8d13bfa5a37edb86a6144f91> , <https://astrea.linkeddata.es/shapes#d61f97a026cb5c2feb6a534e8f603c6f> , <https://astrea.linkeddata.es/shapes#d5b4a2f8f75c00d26ab2f8037750b6ec> , <https://astrea.linkeddata.es/shapes#e79b90f3e41947344d240940ded2823d> , <https://astrea.linkeddata.es/shapes#61e92b00ea2881df40de27cd6887fe03> , <https://astrea.linkeddata.es/shapes#5184685d3988f794108ad31821a3f720> , <https://astrea.linkeddata.es/shapes#9dd39086fa5e613972655b48f48743fa> , <https://astrea.linkeddata.es/shapes#7613049e1a944d1ff02820aaaa89e414> , <https://astrea.linkeddata.es/shapes#5244d92eb07bb8006b36f5fda6aa611b> , <https://astrea.linkeddata.es/shapes#4401f41dd1b3d8af0472252d0dc93bd6> , <https://astrea.linkeddata.es/shapes#e274264f3ac9a60d965ef04cd7bf03e1> , <https://astrea.linkeddata.es/shapes#06ca9205d9818705f2606f1aa81e088a> , <https://astrea.linkeddata.es/shapes#99067e2de10d835258c9c598646d9cc6> , <https://astrea.linkeddata.es/shapes#127923aa3fc5777b8109377f653b5cf3> , <https://astrea.linkeddata.es/shapes#7f5a0a4eab42b354ca7c5aad118d3748> , <https://astrea.linkeddata.es/shapes#971fc751e7cd0ee2e4b653dd68495ee1> , <https://astrea.linkeddata.es/shapes#551957895974b3f6698c03a11f431b74> , <https://astrea.linkeddata.es/shapes#c2fb325cc96242ce960babcace5691a9> , <https://astrea.linkeddata.es/shapes#d2f9910ed8fc4be4e4dd01f9fc4d7807> , <https://astrea.linkeddata.es/shapes#d9c81c12b63e6a721e0fa69c732f9ce5> , <https://astrea.linkeddata.es/shapes#0551b333636b3a4ee194cf42b3c15f8a> , <https://astrea.linkeddata.es/shapes#15cfde19aab546a64fcb14a49bbe5772> , <https://astrea.linkeddata.es/shapes#19f1b9f108403b2e7f0830f809b7be00> , <https://astrea.linkeddata.es/shapes#d35733e1c1116bb7d5c1f855a0bcc28f> , <https://astrea.linkeddata.es/shapes#b058aba8aa25085f2ee8d8d51c0c00d9> , <https://astrea.linkeddata.es/shapes#8c25ec12b1743cd1274301965026f098> , <https://astrea.linkeddata.es/shapes#b4c69d77b109ab6888d681c88276027d> , <https://astrea.linkeddata.es/shapes#4b483443b3ad1859f864690af4f882bd> , <https://astrea.linkeddata.es/shapes#eabe09d27079835c84198a204e291b1e> , <https://astrea.linkeddata.es/shapes#1f522de9fae06670dd8ae5a0f4d96aaf> , <https://astrea.linkeddata.es/shapes#2d51d0fb8406d47f4b4060055c416a2a> , <https://astrea.linkeddata.es/shapes#d43e21c85f053c025232ff6657f9b4b6> , <https://astrea.linkeddata.es/shapes#3fa0b99eb0dfb249b42a658e79b9561c> , <https://astrea.linkeddata.es/shapes#0caa8eb36dbd06908a398aa7be2e3ec3> , <https://astrea.linkeddata.es/shapes#16c1ade26ae81a752c63d0a4acc3006a> , <https://astrea.linkeddata.es/shapes#97425c17085374bd1b6998e287aefcad> , <https://astrea.linkeddata.es/shapes#4851d52d83f7b4b23668ac13c3433562> , <https://astrea.linkeddata.es/shapes#d35f2c2a9b275a42b3860e74d5bc534c> , <https://astrea.linkeddata.es/shapes#161bedc0e70b57c40536581151bbc2f9> , <https://astrea.linkeddata.es/shapes#10cc8000bcce6eb4b1c583a43a2ecdc4> , <https://astrea.linkeddata.es/shapes#7566daace9d55f1f0a6190bbd9e63a6d> , <https://astrea.linkeddata.es/shapes#7d9927b25360c4e2abaf3bdf9d83f9ec> , <https://astrea.linkeddata.es/shapes#3bce20c5af005e6593bf07d69db2e739> , <https://astrea.linkeddata.es/shapes#bd9f8a44c6cfb1e9c7a47ce9ea3b75e9> , <https://astrea.linkeddata.es/shapes#823c2800da73de33863ba36511fa3953> , <https://astrea.linkeddata.es/shapes#04a10255c8d0e019e071fc47f68b97fc> , <https://astrea.linkeddata.es/shapes#1f403aceec1a3fe4f9114d0d690765ee> , <https://astrea.linkeddata.es/shapes#42eb88559cc5a578e2fbe59ee91aad63> , <https://astrea.linkeddata.es/shapes#203a6c6cce6e458ba2785aae826195a4> , <https://astrea.linkeddata.es/shapes#712483bae3e789adb7c24bb5ce9f33e1> , <https://astrea.linkeddata.es/shapes#a97e1cf4c42b04a1eecebc5e7a5c7233> , <https://astrea.linkeddata.es/shapes#740c07f742f72a90f13a72c78e0fa375> , <https://astrea.linkeddata.es/shapes#41b81332a6b8e32c3580d13b5e8a9320> , <https://astrea.linkeddata.es/shapes#7434d2caac07df197af6a97bda3da3ac> , <https://astrea.linkeddata.es/shapes#f288235959b9f477244af8bcaf40c32d> , <https://astrea.linkeddata.es/shapes#63790e816ed52edee2d7058c0b20a1b1> , <https://astrea.linkeddata.es/shapes#b4332b9424c28d1d60e9f00be97c2f7d> , <https://astrea.linkeddata.es/shapes#50992ffad9b75e024e745e81f7379953> , <https://astrea.linkeddata.es/shapes#56bca0807f0123a6389d1d70353e2285> , <https://astrea.linkeddata.es/shapes#21309bacee61829495e8a03ca280174f> , <https://astrea.linkeddata.es/shapes#71c58cde1d6ca20d9e1a30223b408794> , <https://astrea.linkeddata.es/shapes#fad05bb0c8ea4b47dce32ac948a30e82> , <https://astrea.linkeddata.es/shapes#b877d8cdde7bb6878ced00b2ef5746a6> , <https://astrea.linkeddata.es/shapes#2f550f0e2da1efa0d6a16952b6cd2da5> , <https://astrea.linkeddata.es/shapes#645e9a196a2525e07879ee0748d36ad3> , <https://astrea.linkeddata.es/shapes#c1bfcf7563d2566fd3eace034576cf1f> , <https://astrea.linkeddata.es/shapes#eb9bea2694025a36550502f7bc0f6caf> , <https://astrea.linkeddata.es/shapes#1b714b45e772ae9bc63d100a1c284825> , <https://astrea.linkeddata.es/shapes#ee97e8ed9b6cf8df8914e9e70821aeec> , <https://astrea.linkeddata.es/shapes#e5e932bcc3ba7f493f27aa957ce59564> , <https://astrea.linkeddata.es/shapes#34265e57254b078de049a55042af10fa> , <https://astrea.linkeddata.es/shapes#f1c7869645707c7f22637210f9d6f851> , <https://astrea.linkeddata.es/shapes#b9d003877926df244a1dd29f2f5c9689> , <https://astrea.linkeddata.es/shapes#20498054898343ac4ddc97e47e07ebca> , <https://astrea.linkeddata.es/shapes#14cf5308ec5c507618f41c0f8ec7193e> , <https://astrea.linkeddata.es/shapes#b64dc27bbab40e1572630f4647b547e0> , <https://astrea.linkeddata.es/shapes#70a29ec67d20aaee50c18caf7de23b19> , <https://astrea.linkeddata.es/shapes#545ae6cf6f07f89c4c32e3fc623309ed> , <https://astrea.linkeddata.es/shapes#75818d264b5891dbb0fd9a6c387ea07d> , <https://astrea.linkeddata.es/shapes#4066a19f3f57f90f4845a5d6a57ff7be> , <https://astrea.linkeddata.es/shapes#cc7f3a387ea5d3872eaba0a6cd553ebc> , <https://astrea.linkeddata.es/shapes#c00decb0175506c394c48b9131d94e7d> , <https://astrea.linkeddata.es/shapes#2f152af62a4c55ed8f83b16cf1f11e5e> , <https://astrea.linkeddata.es/shapes#1ffb063c961e150c0d1609ee46d2f01a> , <https://astrea.linkeddata.es/shapes#ffff903847beb13f369890734d4cb203> , <https://astrea.linkeddata.es/shapes#d6114aaa986527d926e6b1582009049f> , <https://astrea.linkeddata.es/shapes#8977fcc46e76f47e031635c1946f8c78> , <https://astrea.linkeddata.es/shapes#5267fb2ea4bae2ff73bb2ef43795e57d> , <https://astrea.linkeddata.es/shapes#c41484eeb39c36e5d9effdd18d6fc67d> , <https://astrea.linkeddata.es/shapes#b4ed2551a26568bc0328ec6009e3aa03> , <https://astrea.linkeddata.es/shapes#0e05fdbea4d332d8db737aee55e812a8> ;
+        <https://w3id.org/def/astrea#generatedShapesFrom>
+                <https://astrea.linkeddata.es/report/0620946147> .
+
+<https://astrea.linkeddata.es/shapes#c1bfcf7563d2566fd3eace034576cf1f>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:datatype     xsd:string ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :remark ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#8c25ec12b1743cd1274301965026f098>
+        a         sh:PropertyShape ;
+        sh:class  :Reviewing_results_event .
+
+<https://astrea.linkeddata.es/shapes#eb87fa1c069b032cc6c1d4e7456823d5>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :location .
+
+<https://astrea.linkeddata.es/shapes#56bca0807f0123a6389d1d70353e2285>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:datatype     xsd:string ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :hasPostalCode ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#5267fb2ea4bae2ff73bb2ef43795e57d>
+        a         sh:PropertyShape ;
+        sh:class  :Social_event .
+
+<https://astrea.linkeddata.es/shapes#2034b647cb8276ee6165e613cf45696a>
+        a         sh:PropertyShape ;
+        sh:class  :Reviewing_event .
+
+<https://astrea.linkeddata.es/shapes#75818d264b5891dbb0fd9a6c387ea07d>
+        a            sh:PropertyShape ;
+        sh:class     :Contribution ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :writes .
+
+<https://astrea.linkeddata.es/shapes#04a10255c8d0e019e071fc47f68b97fc>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:datatype     xsd:string ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :contactEmail ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#a81d91139643ca54e5848da5adb8fc96>
+        a            sh:PropertyShape ;
+        sh:minCount  "1"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :hasStreet .
+
+<https://astrea.linkeddata.es/shapes#1b714b45e772ae9bc63d100a1c284825>
+        a            sh:PropertyShape ;
+        sh:class     :Administrative_event ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :parallel_with .
+
+<https://astrea.linkeddata.es/shapes#5244d92eb07bb8006b36f5fda6aa611b>
+        a         sh:PropertyShape ;
+        sh:class  :Person .
+
+<https://astrea.linkeddata.es/shapes#7613049e1a944d1ff02820aaaa89e414>
+        a               sh:NodeShape ;
+        sh:description  "confTool" , "Results of the reviewing procedures, accessable to authors" ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#15cfde19aab546a64fcb14a49bbe5772> , <https://astrea.linkeddata.es/shapes#b831cb15cdb08dea809d6eaa1c33aefc> , <https://astrea.linkeddata.es/shapes#4401f41dd1b3d8af0472252d0dc93bd6> , <https://astrea.linkeddata.es/shapes#2034b647cb8276ee6165e613cf45696a> ;
+        sh:targetClass  :Reviewing_results_event .
+
+<https://astrea.linkeddata.es/shapes#10cc8000bcce6eb4b1c583a43a2ecdc4>
+        a               sh:NodeShape ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#127923aa3fc5777b8109377f653b5cf3> , <https://astrea.linkeddata.es/shapes#0e05fdbea4d332d8db737aee55e812a8> , <https://astrea.linkeddata.es/shapes#b64dc27bbab40e1572630f4647b547e0> , <https://astrea.linkeddata.es/shapes#5244d92eb07bb8006b36f5fda6aa611b> , <https://astrea.linkeddata.es/shapes#d37d905ca2e27b0a590ec9085d8fe2ab> , <https://astrea.linkeddata.es/shapes#ee81ddff416c8b68d2f911079edf1dee> ;
+        sh:property     <https://astrea.linkeddata.es/shapes#b4332b9424c28d1d60e9f00be97c2f7d> , <https://astrea.linkeddata.es/shapes#7d8cf6eaa928b457fc335ef92fab330b> ;
+        sh:targetClass  :Event .
+
+<https://astrea.linkeddata.es/shapes#9dd39086fa5e613972655b48f48743fa>
+        a               sh:NodeShape ;
+        sh:description  "price category - science worker" , "confTool" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Science_Worker .
+
+<https://astrea.linkeddata.es/shapes#d2f9910ed8fc4be4e4dd01f9fc4d7807>
+        a               sh:NodeShape ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Regular .
+
+<https://astrea.linkeddata.es/shapes#5184685d3988f794108ad31821a3f720>
+        a               sh:PropertyShape ;
+        rdfs:label      "confTool" ;
+        sh:datatype     xsd:string ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :hasEmail ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#cc7f3a387ea5d3872eaba0a6cd553ebc>
+        a               sh:NodeShape ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Volunteer .
+
+<https://astrea.linkeddata.es/shapes#971fc751e7cd0ee2e4b653dd68495ee1>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#97425c17085374bd1b6998e287aefcad> , <https://astrea.linkeddata.es/shapes#bd9f8a44c6cfb1e9c7a47ce9ea3b75e9> ;
+        sh:property     <https://astrea.linkeddata.es/shapes#ee97e8ed9b6cf8df8914e9e70821aeec> , <https://astrea.linkeddata.es/shapes#eb9bea2694025a36550502f7bc0f6caf> , <https://astrea.linkeddata.es/shapes#d5b4a2f8f75c00d26ab2f8037750b6ec> , <https://astrea.linkeddata.es/shapes#63790e816ed52edee2d7058c0b20a1b1> , <https://astrea.linkeddata.es/shapes#1f522de9fae06670dd8ae5a0f4d96aaf> , <https://astrea.linkeddata.es/shapes#d35f2c2a9b275a42b3860e74d5bc534c> , <https://astrea.linkeddata.es/shapes#0caa8eb36dbd06908a398aa7be2e3ec3> , <https://astrea.linkeddata.es/shapes#161bedc0e70b57c40536581151bbc2f9> , <https://astrea.linkeddata.es/shapes#b4c69d77b109ab6888d681c88276027d> , <https://astrea.linkeddata.es/shapes#116f1fff4ebe62f1fa9b985857b76a1a> ;
+        sh:targetClass  :Social_event .
+
+<https://astrea.linkeddata.es/shapes#7566daace9d55f1f0a6190bbd9e63a6d>
+        a               sh:NodeShape ;
+        sh:description  "confTool" , "Submission of contributions" ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#8c25ec12b1743cd1274301965026f098> , <https://astrea.linkeddata.es/shapes#2034b647cb8276ee6165e613cf45696a> , <https://astrea.linkeddata.es/shapes#15cfde19aab546a64fcb14a49bbe5772> , <https://astrea.linkeddata.es/shapes#4401f41dd1b3d8af0472252d0dc93bd6> ;
+        sh:targetClass  :Submission_event .
+
+<https://astrea.linkeddata.es/shapes#20498054898343ac4ddc97e47e07ebca>
+        a         sh:PropertyShape ;
+        sh:class  :Short_paper .
+
+<https://astrea.linkeddata.es/shapes#8977fcc46e76f47e031635c1946f8c78>
+        a         sh:PropertyShape ;
+        sh:class  :Company .
+
+<https://astrea.linkeddata.es/shapes#712483bae3e789adb7c24bb5ce9f33e1>
+        a               sh:NodeShape ;
+        sh:description  "confTool" ;
+        sh:nodeKind     sh:IRI ;
+        sh:not          <https://astrea.linkeddata.es/shapes#20498054898343ac4ddc97e47e07ebca> , <https://astrea.linkeddata.es/shapes#16a3b45ead784ef53ab0d8c5ba2f037c> ;
+        sh:targetClass  :Poster .
+
+<https://astrea.linkeddata.es/shapes#622a04bf36733ea867a69f84b2857f7f>
+        a            sh:PropertyShape ;
+        sh:class     :Administrative_event ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasAdministrativeEvent .
+
+<https://astrea.linkeddata.es/shapes#bd9f8a44c6cfb1e9c7a47ce9ea3b75e9>
+        a         sh:PropertyShape ;
+        sh:class  :Working_event .
+
+<https://astrea.linkeddata.es/shapes#63790e816ed52edee2d7058c0b20a1b1>
+        a                sh:PropertyShape ;
+        rdfs:label       "confTool\n" ;
+        sh:datatype      xsd:positiveInteger ;
+        sh:description   "confTool\n" ;
+        sh:minInclusive  1 ;
+        sh:nodeKind      sh:Literal ;
+        sh:path          :minChoice ;
+        sh:pattern       "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#161bedc0e70b57c40536581151bbc2f9>
+        a               sh:PropertyShape ;
+        rdfs:label      "value added tax\n" , "confTool" ;
+        sh:datatype     xsd:string ;
+        sh:description  "confTool" , "value added tax\n" ;
+        sh:maxCount     1 ;
+        sh:nodeKind     sh:Literal , sh:IRIOrLiteral ;
+        sh:path         :hasVAT ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#116f1fff4ebe62f1fa9b985857b76a1a>
+        a                sh:PropertyShape ;
+        rdfs:label       "confTool" ;
+        sh:datatype      xsd:positiveInteger ;
+        sh:description   "confTool" ;
+        sh:maxCount      1 ;
+        sh:minInclusive  1 ;
+        sh:nodeKind      sh:IRIOrLiteral , sh:Literal ;
+        sh:path          :defaultChoice ;
+        sh:pattern       "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#30dafccdc88317f6abfd85d3aeafdf01>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :abstract .

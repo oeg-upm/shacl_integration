@@ -1,0 +1,3215 @@
+@prefix :      <http://codata.jp/OML-MaterialInformation> .
+@prefix OML-MaterialInformation: <http://codata.jp/OML-MaterialInformation#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://astrea.linkeddata.es/shapes#a85a15a1725ebe05c9cdce277d46d750>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Structural .
+
+<https://astrea.linkeddata.es/shapes#7ab0e692303daa845a0551908b88db5b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Luminance .
+
+<https://astrea.linkeddata.es/shapes#77988cd7db61d16b433fd7c65924caab>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:ProcessingAndThermalHistory .
+
+<https://astrea.linkeddata.es/shapes#ff774b043af3aae7dae0b5597b465db1>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:InitialSlopeOfBc2AtTc .
+
+<https://astrea.linkeddata.es/shapes#ba896b8505cf3dac438cc8c66956c5b7>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:Elongation .
+
+<https://astrea.linkeddata.es/shapes#62ffdb6a31303e61dabdf59969f21301>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:RefiningProcess .
+
+<https://astrea.linkeddata.es/shapes#ebab6f0727ad20d8915d99918a276772>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:TemperatureDerivativeOfEnergyGapForDirectTransition .
+
+<https://astrea.linkeddata.es/shapes#1f1f9109575214fdcc8e37d9b0aca3bd>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Solvent .
+
+<https://astrea.linkeddata.es/shapes#64afd1451e2aee777937f930cd20f670>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Lr .
+
+<https://astrea.linkeddata.es/shapes#ca3a81410c4d2a9f39d36825e67d4d85>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MolarHeatCapacityAtConstantPressure .
+
+<https://astrea.linkeddata.es/shapes#e57e3c367a5b665cd771c98981e06cd3>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ThermalEnergyGap .
+
+<https://astrea.linkeddata.es/shapes#3a84e5804c75cd98a52aff9c74532046>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MediumCarbonSteel .
+
+<https://astrea.linkeddata.es/shapes#50ecb9de6e5f29ae43a8f246411e570b>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:Eq .
+
+<https://astrea.linkeddata.es/shapes#fc5fac3a3bec1c0e5be5fd74394a893e>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Polyanhydrides_Thioanhydrides .
+
+<https://astrea.linkeddata.es/shapes#0288240df9d5b7b0bd1554b222574edd>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Biological .
+
+<https://astrea.linkeddata.es/shapes#f9bbeb76e9b54d0ea3909d90d2b81418>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:LinearFrequency .
+
+<https://astrea.linkeddata.es/shapes#c60d3edb0ab6972f2086dbb77d8f3e0e>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:StaticPermittivity .
+
+<https://astrea.linkeddata.es/shapes#f80cb14a5619f15ace6e286eb04976dc>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Length .
+
+<https://astrea.linkeddata.es/shapes#fcd5bb4cf687b6db71bfadacc76e1129>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Ni .
+
+<https://astrea.linkeddata.es/shapes#73e3454b5e74397dc1a6504d02f1391c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ImaginaryPartOfPermittivity .
+
+<https://astrea.linkeddata.es/shapes#bba060e10a2046a835cac907927e134d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AmountOfSubstance .
+
+<https://astrea.linkeddata.es/shapes#454049fcdb8f03b416b81623ce8f3261>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Ir .
+
+<https://astrea.linkeddata.es/shapes#bb6a80943d0170f9a422bb9efbf026d5>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:OpticalAbsorptionCoefficient .
+
+<https://astrea.linkeddata.es/shapes#a99cbc9f0fb1ed021b32c29b944b48d2>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Bh .
+
+<https://astrea.linkeddata.es/shapes#e8c7d6256085d957bcda649f4d285119>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#feb7c23d5b1d1821129dcaa962b06cc6> ;
+        sh:targetClass  OML-MaterialInformation:Symbol .
+
+<https://astrea.linkeddata.es/shapes#b2ee114edc6ce2e1ca2f6b88bcac440d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Homopolymer .
+
+<https://astrea.linkeddata.es/shapes#3e44b4e5b9456a0dffd29ca8441e94f4>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:T300SeriesStainlessSteel .
+
+<https://astrea.linkeddata.es/shapes#3d40a0f818af577ffd2ec25ce081c6a6>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:other_wrought_Al_alloy .
+
+<https://astrea.linkeddata.es/shapes#bdbd6bcf6ddf3fdfcd878acb386ea964>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Kr .
+
+<https://astrea.linkeddata.es/shapes#bdfae002ca8c999a49c77f5955234fbc>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:NeelTemperature .
+
+<https://astrea.linkeddata.es/shapes#5765f90d05194b34f3d6b39d93a01309>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:WhiteCastIron .
+
+<https://astrea.linkeddata.es/shapes#3c86699b8f613d46308b98aceec4c4c3>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ElectronDensityOfStatesAtFermiLevelPerSpin .
+
+<https://astrea.linkeddata.es/shapes#1d14200075bfb2d218cc78c539c732ad>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Ti .
+
+<https://astrea.linkeddata.es/shapes#363a644c537d6419448c3a1d0978464b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:CurrentDensity .
+
+<https://astrea.linkeddata.es/shapes#73975071f6fe3ddba3fb942b022b1d84>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:CuttingPosition .
+
+<https://astrea.linkeddata.es/shapes#6e028f4eee8a3faebc7c012befed8c8d>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:Form .
+
+<https://astrea.linkeddata.es/shapes#bb6bd5a1020dd3c295a7c6415d2310ed>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Pm .
+
+<https://astrea.linkeddata.es/shapes#4e5246e51acdd61aabf04a321379148c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Pt .
+
+<https://astrea.linkeddata.es/shapes#4fb5b03db7ba9b2cb3b1990e62cefe9a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:PlanckMass .
+
+<https://astrea.linkeddata.es/shapes#06f47f4fa1e59770e1d7994aad45e23a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:PressuresForPhaseTransition .
+
+<https://astrea.linkeddata.es/shapes#24f7e81db14dfa3518623c7d201bfe1b>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:TypeOfMeasurement .
+
+<https://astrea.linkeddata.es/shapes#ce53a18ea634b5cf80019d274e3c6665>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Rf .
+
+<https://astrea.linkeddata.es/shapes#6451a3459d005eb4ee9d599d7891bbd8>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Zn .
+
+<https://astrea.linkeddata.es/shapes#634144d6a58ef27be3c07c2808fc59e7>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Nd .
+
+<https://astrea.linkeddata.es/shapes#1a0700391a7eb374ab6af640a8d798ae>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ElementalSubstance .
+
+<https://astrea.linkeddata.es/shapes#527ec947d2d8d6ed32cf78af953073ed>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Cn .
+
+<https://astrea.linkeddata.es/shapes#753f03e5d0bcd9f61e29ae4291d256c3>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:SpecificVolume .
+
+<https://astrea.linkeddata.es/shapes#45acda73912eeda82249c4d1ebbc4e5b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Substance .
+
+<https://astrea.linkeddata.es/shapes#3a76feb9e14e61967e464e015250e67a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Po .
+
+<https://astrea.linkeddata.es/shapes#89a4a8f5620cb7d1cd51b94bcfedec0e>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:HeatFluxDensity .
+
+<https://astrea.linkeddata.es/shapes#253d8b3aab5a44046f500ff90e904877>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:TemperatureDerivativeOfEnergyGap .
+
+<https://astrea.linkeddata.es/shapes#41ea87fc1d7886c71f8d48aa4a7aa07f>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:PressureForPhaseTransition .
+
+<https://astrea.linkeddata.es/shapes#0f1d171c516c8dbfb1a6855ad588fded>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Phosphide_Pnictide .
+
+<https://astrea.linkeddata.es/shapes#fb702f771cce65c2f006d7899547ff22>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:BetaTitaniumAlloy .
+
+<https://astrea.linkeddata.es/shapes#ddfd378ba96e9603dedf9157dbe327d4>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Polysiloxanes-Polysilanes .
+
+<https://astrea.linkeddata.es/shapes#fa585976de1a89beafd3bd814bb1e569>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:IrradiationTime .
+
+<https://astrea.linkeddata.es/shapes#004bd12e1558c552c0329e91c88926b7>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:FurnaceCapacity .
+
+<https://astrea.linkeddata.es/shapes#bf8f4c5e376faea8492ed0dbd0bc67b1>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Db .
+
+<https://astrea.linkeddata.es/shapes#e2926eebf25b1c91c266819a99d35a6e>
+        a            sh:PropertyShape ;
+        sh:class     OML-MaterialInformation:Time ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      OML-MaterialInformation:CreepTime .
+
+<https://astrea.linkeddata.es/shapes#47d8210ca04bc82f5a73a7eb52538aeb>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MolarEntropyOfFormation .
+
+<https://astrea.linkeddata.es/shapes#b1d866b3cb2b98edce558c6846bf0fdf>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Fm .
+
+<https://astrea.linkeddata.es/shapes#409d3d43d975bd40eeb15bb5d46026f4>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:RectangularParallelopiped .
+
+<https://astrea.linkeddata.es/shapes#349cbdbc6ef30b8357fa59909b120dc5>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Pyramid .
+
+<https://astrea.linkeddata.es/shapes#5b9dee03943b4409e942bb427079556a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Contents .
+
+<https://astrea.linkeddata.es/shapes#8916d34245ee935058f2c774d9189fcd>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:SpecificHeatCapacity .
+
+<https://astrea.linkeddata.es/shapes#37d6bad227ec5579cf11fb33264edf3d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Polyvinyls .
+
+<https://astrea.linkeddata.es/shapes#e4ecfca2c7cab10a5fc49bb76feb64a7>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:BulkModulus .
+
+<https://astrea.linkeddata.es/shapes#c65d807e5902592279f6e74deefb8b73>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Concentration .
+
+<https://astrea.linkeddata.es/shapes#437dae750376fa503109536d0553f00b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MomentOfForce .
+
+<https://astrea.linkeddata.es/shapes#fe302f91922f80ec0ba3fc601a5534bd>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Polyketones_Thioketones .
+
+<https://astrea.linkeddata.es/shapes#d5c8096cd84b4c161db464e8935d649f>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:StrainAtOnsetOfTertiaryCreep .
+
+<https://astrea.linkeddata.es/shapes#3f880bb5200b50d353d7788c047980b9>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:CoolingRate .
+
+<https://astrea.linkeddata.es/shapes#64a9ac741b031acd2d28f6e7126c0ea9>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Ceramic_MetallicCoating .
+
+<https://astrea.linkeddata.es/shapes#3d217ed705c19d7cb2e9f293cba0023d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AISI9000SeriesSteel .
+
+<https://astrea.linkeddata.es/shapes#655639485ad5f539e637583209682aa4>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:GrooveGeometry .
+
+<https://astrea.linkeddata.es/shapes#ff2ace13c44d7a73aad1124fa17632a5>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:PowerDensity .
+
+<https://astrea.linkeddata.es/shapes#3923ad13b53c37b29b38d9349bde0338>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:IntermetallicCompound .
+
+<https://astrea.linkeddata.es/shapes#cfbcd6cbac967ebc60ed2c0750585493>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Acceleration .
+
+<https://astrea.linkeddata.es/shapes#006d01e5d3f25147f440fdc7cb86c75c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:YoungsModulus .
+
+<https://astrea.linkeddata.es/shapes#bbb3c397ea61f97540b8dea9eb7549c5>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Compound .
+
+<https://astrea.linkeddata.es/shapes#b97795e33f245142cdccf63cb8e2520b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:SaturationVolumeMagnetization .
+
+<https://astrea.linkeddata.es/shapes#3a1cf121c7e04b2c474019d0ecb94a20>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Hexagons .
+
+<https://astrea.linkeddata.es/shapes#0064af594e158630a9313eb2a5572f2b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:FrustumOfPyramid .
+
+<https://astrea.linkeddata.es/shapes#3b05ffa40a5cb46f8911290c8d551aef>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ColdWorkSteel .
+
+<https://astrea.linkeddata.es/shapes#5d90f9923218af076406306a25a61219>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Circles .
+
+<https://astrea.linkeddata.es/shapes#695d408e46aabe1379028f11f0b151aa>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Frequency .
+
+<https://astrea.linkeddata.es/shapes#deecae6c76e32d7c76881080303729a8>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Ga .
+
+<https://astrea.linkeddata.es/shapes#c4f9411478924366701c42365cbb133b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:W .
+
+<https://astrea.linkeddata.es/shapes#65f3ba110a1cf6b9546691fc5480da9b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Octagons .
+
+<https://astrea.linkeddata.es/shapes#61d51a7414a60b02ccae3d74957c2c1c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Ar .
+
+<https://astrea.linkeddata.es/shapes#f411e5f7ab5a0aa97ddb01b66542faf8>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Hf .
+
+<https://astrea.linkeddata.es/shapes#3201a5478e7f7cf706aa0451ed4cd6d6>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Sc .
+
+<https://astrea.linkeddata.es/shapes#23fda0277144f27adec700508e5a1d2d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Microhardness .
+
+<https://astrea.linkeddata.es/shapes#21e02f8c386bfca62ad04d5c4135da64>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Time .
+
+<https://astrea.linkeddata.es/shapes#ab72476c0105385becd8ede51caa9b9f>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Cylinder .
+
+<https://astrea.linkeddata.es/shapes#2d39d15668c416a6d363bc00fb1ba629>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AluminumAlloy_1000Series .
+
+<https://astrea.linkeddata.es/shapes#cd9a6b52ebc3f8e9b8c79d98de03a3fc>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Boride .
+
+<https://astrea.linkeddata.es/shapes#f2ddc3d163fa74d2cbb16ff7dc288b51>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Oxide .
+
+<https://astrea.linkeddata.es/shapes#8c6a65a98a378a80961e1887c2cfce2b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Thermal .
+
+<https://astrea.linkeddata.es/shapes#51ba3770d39cc423cfe6543d0fb2aa3b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:WaveNumber .
+
+<https://astrea.linkeddata.es/shapes#42c71f41464ba3c5cd0bf72114a0e95a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Lu .
+
+<https://astrea.linkeddata.es/shapes#ce7da8aa49b62c3b6413f698ec64c00b>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:StrainRate .
+
+<https://astrea.linkeddata.es/shapes#5f71187bb8935ce5de7a82016f25eeff>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:SiliconOxide .
+
+<https://astrea.linkeddata.es/shapes#7e9c766fd0e0b1d7a1b5cb706f366054>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:PeritecticTemperature .
+
+<https://astrea.linkeddata.es/shapes#81f6c0670b8633980f841878692ca98f>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:EffectiveMassOfHolesInValenceBand .
+
+<https://astrea.linkeddata.es/shapes#3f0f922ae531484756747c0125db5dc5>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Cs .
+
+<https://astrea.linkeddata.es/shapes#c2a63d53cb01bc9b04610c65408ff3fa>
+        a               sh:PropertyShape , sh:NodeShape ;
+        sh:nodeKind     sh:IRI , sh:Literal ;
+        sh:path         OML-MaterialInformation:CommonName ;
+        sh:targetClass  OML-MaterialInformation:CommonName .
+
+<https://astrea.linkeddata.es/shapes#0149f714cdbc2da53886337113e24912>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Momentum .
+
+<https://astrea.linkeddata.es/shapes#17c3ee08c79adc5abc4677b2c599c98b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Rubber .
+
+<https://astrea.linkeddata.es/shapes#301d67c02ee817300d891b044a2caf2a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MassDensity .
+
+<https://astrea.linkeddata.es/shapes#52f07c0bbeba2fcc00d31bc9fa503af0>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:High-FrequencyPermittivity .
+
+<https://astrea.linkeddata.es/shapes#1f5d40cb807ff566b103e356883a1e4c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Bamboo .
+
+<https://astrea.linkeddata.es/shapes#5db7d9cf9b5d1104c1ee16400bc26108>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MassMagneticSusceptibility .
+
+<https://astrea.linkeddata.es/shapes#8a308dbc107cde726f1dd15f5710178c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Polyolefines .
+
+<https://astrea.linkeddata.es/shapes#49306f1c77e2530e186a247cf3529088>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:CompositeFibers .
+
+<https://astrea.linkeddata.es/shapes#fa7b65e59659a00a87aa37498571d490>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:Source .
+
+<https://astrea.linkeddata.es/shapes#411063d7eeff6d377801c5b326259b7d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Np .
+
+<https://astrea.linkeddata.es/shapes#03d0d73a20de0c42e669b1e56680158c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Rg .
+
+<https://astrea.linkeddata.es/shapes#a0fa58c6c9898b90197112481d454d29>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:LinearThermalExpansionCoefficient_D .
+
+<https://astrea.linkeddata.es/shapes#3df49cc426f9f77d1a787dd32557684a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:TitaniumAlloy .
+
+<https://astrea.linkeddata.es/shapes#db8c8594d6bf0a78d2272453f10406e5>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Thermoplastic .
+
+<https://astrea.linkeddata.es/shapes#8da3c5c13a5721fac30fd7b2041bce69>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ToolSteel .
+
+<https://astrea.linkeddata.es/shapes#6cf8dcfccc9a0ab9d7a66073425ad3c8>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:MaterialCharacteristics .
+
+<https://astrea.linkeddata.es/shapes#5a7b895a3f3339b22e1a3425f64ee51d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Sg .
+
+<https://astrea.linkeddata.es/shapes#6de1f898f6e0bb9d44f36b905ebf671a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:LongitudinalElasticCoefficient .
+
+<https://astrea.linkeddata.es/shapes#66a5cd4d600064a8f377bde6ddf3bd59>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Ho .
+
+<https://astrea.linkeddata.es/shapes#f41ab43cc5ca27f627362d50e29548b2>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Cu .
+
+<https://astrea.linkeddata.es/shapes#e4e5dfdba2e3da3d6a700b05f6531f02>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:SuperconductingTransitionTemperature .
+
+<https://astrea.linkeddata.es/shapes#58a62cb441e3c518c5414e85513d7d32>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Loading .
+
+<https://astrea.linkeddata.es/shapes#8ac82fe9c89519b289bf2881cb366b50>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:KnoopHardnessNumber .
+
+<https://astrea.linkeddata.es/shapes#2bb9a2e33526ae5a8fad3e4489802c6b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Ge .
+
+<https://astrea.linkeddata.es/shapes#6581cee7c99bef051a9cbb166265872c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:GlassCeramic .
+
+<https://astrea.linkeddata.es/shapes#9c247fd1de508cfb5435d37012b84265>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AluminumAlloy_2000Series .
+
+<https://astrea.linkeddata.es/shapes#d4debcfe85244412d6a5b78c87bf367a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ElectricConstant .
+
+<https://astrea.linkeddata.es/shapes#af4596cddda0a1feb6979290209f706b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Cd .
+
+<https://astrea.linkeddata.es/shapes#fbc4cdc3669321882f0c48275efd1fbe>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Pb .
+
+<https://astrea.linkeddata.es/shapes#9d85bcbd475b23f177edef9fa305ea69>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:FRM .
+
+<https://astrea.linkeddata.es/shapes#bcb932b79ee4ff8d3bb16f2de57def88>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Magnetic .
+
+<https://astrea.linkeddata.es/shapes#d6bc78be356cd8d3b238f39955f1a932>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Power .
+
+<https://astrea.linkeddata.es/shapes#db121888cb767277120175b1e7b26209>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Potting_CastingCeramic .
+
+<https://astrea.linkeddata.es/shapes#8c8f8f00d5a2a778808f0ec425865f15>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:pH .
+
+<https://astrea.linkeddata.es/shapes#13616d605b71be7216e7c3719b0de57c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Polyureas_Thioureas .
+
+<https://astrea.linkeddata.es/shapes#646bfe12a9d1f73784fe6f6998790614>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:PlaneAngle .
+
+<https://astrea.linkeddata.es/shapes#0d3e44929f4297dd851dcabc80fde85e>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Eu .
+
+<https://astrea.linkeddata.es/shapes#8d1b9c26c0b87eb410651ea79559fbc2>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:Dimension_Width .
+
+<https://astrea.linkeddata.es/shapes#befc56847c3a3e43d7d5065651a51747>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Sn .
+
+<https://astrea.linkeddata.es/shapes#893b222cf63fcec4f884e151e1b87c30>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Semiconductor .
+
+<https://astrea.linkeddata.es/shapes#f74e6590566d26dec83e4ad9d1023365>
+        a               sh:PropertyShape , sh:NodeShape ;
+        sh:nodeKind     sh:IRI , sh:Literal ;
+        sh:path         OML-MaterialInformation:Geometry ;
+        sh:targetClass  OML-MaterialInformation:Geometry .
+
+<https://astrea.linkeddata.es/shapes#b6cea0058a5def2e496d189c0604aaed>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MachinableCeramic .
+
+<https://astrea.linkeddata.es/shapes#a4b4e09f65b319ce5e04361a23abbeca>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ElectricCapacitance .
+
+<https://astrea.linkeddata.es/shapes#2a703af21a6ec5456b92b866e2f9cd31>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:DynamicViscosity .
+
+<https://astrea.linkeddata.es/shapes#60dcb0e3dd8b88d97fe849f4a368469c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:CompositeCoreMaterial .
+
+<https://astrea.linkeddata.es/shapes#197b90c231319adbc244a75dbdd43f0e>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AlloyCastIron .
+
+<https://astrea.linkeddata.es/shapes#a9c2ff22a84a1a11a77b6418e07dc4c1>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MomentOfInertia .
+
+<https://astrea.linkeddata.es/shapes#db8915a9168cdd6076242c44417b6e95>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:TS30000SeriesStainlessSteel .
+
+<https://astrea.linkeddata.es/shapes#6a60259299a3cc008a38b02baa49b6c5>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Nuclear .
+
+<https://astrea.linkeddata.es/shapes#95ce7ae1e366b761ec9d921e74dc146e>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Li .
+
+<https://astrea.linkeddata.es/shapes#ef4fcc80a9977960e163d075c5874e28>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ThermalConductivity .
+
+<https://astrea.linkeddata.es/shapes#e781adbc516d93bcc3e595b70398711e>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:PlanckTime .
+
+<https://astrea.linkeddata.es/shapes#8a35ecb9251ecbe250aabd99fd6fb8eb>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Electrolyte .
+
+<https://astrea.linkeddata.es/shapes#c094f44af27cf7de7eebc70ab16c61fd>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Area .
+
+<https://astrea.linkeddata.es/shapes#5761bcea4de321bb6ddf112c9be18206>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MolarEntropyChangeAtMeltingPoint .
+
+<https://astrea.linkeddata.es/shapes#13e69569087fa98cd536a0d86e2b4fc8>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ElectricInductance .
+
+<https://astrea.linkeddata.es/shapes#81e2517e5c48349075bc13ec11932382>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AISI5000SeriesSteel .
+
+<https://astrea.linkeddata.es/shapes#a1972a4f428ec8d43c166e4253cec0d5>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:ReductionOfArea .
+
+<https://astrea.linkeddata.es/shapes#f06b65562ae2fa89cfa55b7007eba7eb>
+        a               sh:NodeShape , sh:PropertyShape ;
+        sh:class        OML-MaterialInformation:Atom ;
+        sh:nodeKind     sh:IRI , sh:BlankNodeOrIRI ;
+        sh:path         OML-MaterialInformation:ChemicalComposition ;
+        sh:targetClass  OML-MaterialInformation:ChemicalComposition .
+
+<https://astrea.linkeddata.es/shapes#d45c08692ee4505b75bb53bc84e8aa11>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Illuminance .
+
+<https://astrea.linkeddata.es/shapes#03ee66ea8bf083a97cb7774e8e699260>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:HighTempCeramicResin .
+
+<https://astrea.linkeddata.es/shapes#fce60cdc02080e6990e61825b004a1ee>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MolarHeatCapacity .
+
+<https://astrea.linkeddata.es/shapes#db876bd06f7678c5c6a68b0d18fb12f4>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MagneticFieldStrength .
+
+<https://astrea.linkeddata.es/shapes#251776d4fb6a365fffe54610fd148578>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Pa .
+
+<https://astrea.linkeddata.es/shapes#86c6d6b8b74e5d6b3dbf407a8f9c0c9b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MolarElectronicHeatCapacityCoefficient .
+
+<https://astrea.linkeddata.es/shapes#05d848287f424a8c19922298c7446030>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:InorganicMetalloid .
+
+<https://astrea.linkeddata.es/shapes#f490b851324d3a8394ae93c54fad5801>
+        a            sh:PropertyShape ;
+        sh:class     OML-MaterialInformation:Atom ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      OML-MaterialInformation:RawMaterial .
+
+<https://astrea.linkeddata.es/shapes#b94fd653da4e44fe154e72c9a0312d58>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:OrganicMetalloid .
+
+<https://astrea.linkeddata.es/shapes#2bc7422d480f4003f5191cd53026d155>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Er .
+
+<https://astrea.linkeddata.es/shapes#3a952875eb78b65437136f39bfa77d4a>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:WeldingMethod .
+
+<https://astrea.linkeddata.es/shapes#50dd8da611637f9a0dc1a980ac4eea2d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Ce .
+
+<https://astrea.linkeddata.es/shapes#c4868789c6e3e76790bcdf5b6ea2e3b6>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Irradiation .
+
+<https://astrea.linkeddata.es/shapes#5e4d9d6d2fef32e249a50d704de7a481>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:SolderAlloy .
+
+<https://astrea.linkeddata.es/shapes#514d85481ada0fac22f9683c8c94ac78>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:HeatCapacity .
+
+<https://astrea.linkeddata.es/shapes#8cee2034a8bc86191981afbdb9ec8205>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:FRP .
+
+<https://astrea.linkeddata.es/shapes#a82521b730d7906118fe090946bb8adb>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Fr .
+
+<https://astrea.linkeddata.es/shapes#44729247c74207e27c429c8e6fbe34cc>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:PoissonRatio .
+
+<https://astrea.linkeddata.es/shapes#f19759a8d443e99b362ac95f209b0294>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:HallMobility .
+
+<https://astrea.linkeddata.es/shapes#37e6ce4b5e02c2b4ce0f31db0fe7af1a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AluminumAlloy_5000Series .
+
+<https://astrea.linkeddata.es/shapes#e7ec3e0280d6030f15e38c862acee842>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AdiabaticBulkModulusDiscontinuityAtNeelTemperature .
+
+<https://astrea.linkeddata.es/shapes#4bb1c1bc65300c687b05fd5a0de4af1e>
+        a               sh:NodeShape , sh:PropertyShape ;
+        sh:class        OML-MaterialInformation:Temperature ;
+        sh:nodeKind     sh:IRI , sh:BlankNodeOrIRI ;
+        sh:path         OML-MaterialInformation:Temperature ;
+        sh:targetClass  OML-MaterialInformation:Temperature .
+
+<https://astrea.linkeddata.es/shapes#93f39f692bb67c85e9721f6fb32493f2>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ASTMSteel .
+
+<https://astrea.linkeddata.es/shapes#e174ab23f356cbb9ce45e4fb022ebdb1>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:HighCarbonSteel .
+
+<https://astrea.linkeddata.es/shapes#87ed4343f985df4978dc39090bb393ac>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:IngotSize .
+
+<https://astrea.linkeddata.es/shapes#25c31235b3d04ce53cddd3222aaa8774>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:VolumeFlow .
+
+<https://astrea.linkeddata.es/shapes#26d80b545f8df648b38646bfdd9b945d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:PhaseTransitionAtHighPressure .
+
+<https://astrea.linkeddata.es/shapes#ec26c12e6be6c22faef5c17789bfa4ac>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Uup .
+
+<https://astrea.linkeddata.es/shapes#9ba09822c5a479af77c82f98b6cd6a01>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MagneticMoment .
+
+<https://astrea.linkeddata.es/shapes#df54bfa96eceb6ebdab52c0ce3d0451a>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:NumberOfPath .
+
+<https://astrea.linkeddata.es/shapes#1ed97bfca8d0e3fc9e8a5fabcdb53bb3>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Ne .
+
+<https://astrea.linkeddata.es/shapes#15e37a5fac467d188383a16a92081890>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Es .
+
+<https://astrea.linkeddata.es/shapes#c2a5aa43629a053159a402b3ad12536d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:PhysicalQuantity .
+
+<https://astrea.linkeddata.es/shapes#f7e30d83d45c4a363f1ef8668b5cac2a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:B .
+
+<https://astrea.linkeddata.es/shapes#a8fa212dcc3a4ef20b7b185641778a80>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:FlowRate .
+
+<https://astrea.linkeddata.es/shapes#9e3984399b9d8d6cd96d3ea51036947a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ActivationEnergy .
+
+<https://astrea.linkeddata.es/shapes#3844924b475a3a3e0ed6ffc8808524d7>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:LowCarbonSteel .
+
+<https://astrea.linkeddata.es/shapes#1720657fcacbbab328d65aa8680e8256>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:CriticalFieldForMagneticTransition .
+
+<https://astrea.linkeddata.es/shapes#8a100ba81d79f8c1dc78d671a88536de>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Rb .
+
+<https://astrea.linkeddata.es/shapes#737946b3b6a2e048eb4123e1cde4f353>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:SpecificHeatCapacityAtConstantPressure .
+
+<https://astrea.linkeddata.es/shapes#f1cb2474079409561deb4943b75dcdf2>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Tl .
+
+<https://astrea.linkeddata.es/shapes#9a283a7bdbb578f0678bcf20e742a5bd>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:SurfaceTension .
+
+<https://astrea.linkeddata.es/shapes#50ea3b08133d8f64546dc5e39ac31587>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MolarEnthalpyChangeAtPhaseTransition .
+
+<https://astrea.linkeddata.es/shapes#d6ed0cca708a2d378e68400ea5071de0>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:GrayCastIron .
+
+<https://astrea.linkeddata.es/shapes#74fd70aef8c17967dda749dcf4c98d1e>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Base .
+
+<https://astrea.linkeddata.es/shapes#2d4b7cd7e69994a5ffbd9b3ea1208e76>
+        a               sh:PropertyShape , sh:NodeShape ;
+        sh:nodeKind     sh:IRI , sh:Literal ;
+        sh:path         OML-MaterialInformation:Thickness ;
+        sh:targetClass  OML-MaterialInformation:Thickness .
+
+<https://astrea.linkeddata.es/shapes#bdc9d6e36d858fbcab3b836ff24354a7>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MeanValence .
+
+<https://astrea.linkeddata.es/shapes#7f523c837e2ae705f0a95fe2e6ad1f8d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Pr .
+
+<https://astrea.linkeddata.es/shapes#fbfa6ec2c0ee900b85de3491274df708>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:typeOfLiquid .
+
+<https://astrea.linkeddata.es/shapes#96cf4eaa428cec6d7e46b91d6815ed64>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:PolyhaloOlefins .
+
+<https://astrea.linkeddata.es/shapes#ae3bd2ebd594dd8743baa187952ac35e>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Xe .
+
+<https://astrea.linkeddata.es/shapes#b9dfd517ffe9effb52071620230052cc>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:CriticalTemperatureForMagneticTransition .
+
+<https://astrea.linkeddata.es/shapes#cf4d59abee10d28ce96be2b5ccfb7c9c>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:Reference .
+
+<https://astrea.linkeddata.es/shapes#5190fcd5ac9419a0b88c444e9719db38>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:TypeOfCastingAndSize .
+
+<https://astrea.linkeddata.es/shapes#71f80c08b5d497fe0cb9a04b7aa25c1d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Cl .
+
+<https://astrea.linkeddata.es/shapes#4d0a8e917607254c4e8da7b4424cf821>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ConcentrationOfSolvent .
+
+<https://astrea.linkeddata.es/shapes#6be589a43fa4336e8c51608eebceab6b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Glass .
+
+<https://astrea.linkeddata.es/shapes#8b41914df807a6683975e1fde9eca891>
+        a               sh:NodeShape , sh:PropertyShape ;
+        sh:class        OML-MaterialInformation:Pressure ;
+        sh:nodeKind     sh:IRI , sh:BlankNodeOrIRI ;
+        sh:path         OML-MaterialInformation:Pressure ;
+        sh:targetClass  OML-MaterialInformation:Pressure .
+
+<https://astrea.linkeddata.es/shapes#dbf1ea8da9657470eb42dd10b6e7a04a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Energy .
+
+<https://astrea.linkeddata.es/shapes#ce9dd5c69de9d2be50b879fdb5d5853d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Sphere .
+
+<https://astrea.linkeddata.es/shapes#c1e44e9c6b1cd2f74855962a5001d557>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#059f2ef5c5f12c053bf56fed3df7a7c4> , <https://astrea.linkeddata.es/shapes#a33fda830bebfa04907778f0b61297b0> ;
+        sh:targetClass  OML-MaterialInformation:PhysicalConstant .
+
+<https://astrea.linkeddata.es/shapes#e5956ecd574b8ec7ffdfd0ec2ef196d8>
+        a               sh:PropertyShape , sh:NodeShape ;
+        sh:nodeKind     sh:IRI , sh:Literal ;
+        sh:path         OML-MaterialInformation:Value ;
+        sh:targetClass  OML-MaterialInformation:Value .
+
+<https://astrea.linkeddata.es/shapes#559d6cfb1309f2bc227b987412fb3c08>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ElectricalConductivity .
+
+<https://astrea.linkeddata.es/shapes#b151d1ce866f8bb9a7d1e07e27ea1678>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Conductivity .
+
+<https://astrea.linkeddata.es/shapes#58fb3bee15e71bfff02a8958b2dd2b09>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:CurieTemperature .
+
+<https://astrea.linkeddata.es/shapes#28e5ea42015ead0aeb315eeea17eb262>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:SaturationMagneticMoment .
+
+<https://astrea.linkeddata.es/shapes#4788f1210162c397875ce9b62252918c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Irradiance .
+
+<https://astrea.linkeddata.es/shapes#8f261987a88e8a4369d0656062f0e0d9>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ZincAlloy .
+
+<https://astrea.linkeddata.es/shapes#7c52f92ed226da26ddad30b5a5dcd67f>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Non-MetalicCompound .
+
+<https://astrea.linkeddata.es/shapes#98b357cedc3ace63bd1ca4802c87c63f>
+        a               sh:PropertyShape , sh:NodeShape ;
+        sh:nodeKind     sh:IRI , sh:Literal ;
+        sh:or           ( OML-MaterialInformation:HeatTreatment OML-MaterialInformation:Welding ) ;
+        sh:path         OML-MaterialInformation:Atmosphere ;
+        sh:targetClass  OML-MaterialInformation:Atmosphere .
+
+<https://astrea.linkeddata.es/shapes#6a3d2908b39dd604a08805023d0ab4c8>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MaragingSteel .
+
+<https://astrea.linkeddata.es/shapes#7f9119bd4c66d45320cce59e474c1241>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Polyphenylenes .
+
+<https://astrea.linkeddata.es/shapes#04d297518923235e315af93b39320af9>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MeltingTemperature .
+
+<https://astrea.linkeddata.es/shapes#f1cb40e3d829d748ee650fe335709fcb>
+        a            sh:PropertyShape ;
+        sh:class     OML-MaterialInformation:Time ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      OML-MaterialInformation:TimeToTertiaryCreep .
+
+<https://astrea.linkeddata.es/shapes#4afc61ba9237c204d76c44b58d8cd3d7>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#04b37aed871531348810d77cada63529> , <https://astrea.linkeddata.es/shapes#30798c6709ed9377d27e3dedb58c5564> , <https://astrea.linkeddata.es/shapes#71f6593b68020fa0aba94a8c0c6898de> , <https://astrea.linkeddata.es/shapes#f14ad57ab5700fc5101c7bef084c32dd> , <https://astrea.linkeddata.es/shapes#05fed075f30bdaa41113c2e1fb5ac48a> , <https://astrea.linkeddata.es/shapes#e2926eebf25b1c91c266819a99d35a6e> , <https://astrea.linkeddata.es/shapes#44a97b16b4d706b7da5c9831eac66862> , <https://astrea.linkeddata.es/shapes#82a52560a37ec9f09ae45d25f56bf8e6> , <https://astrea.linkeddata.es/shapes#f1cb40e3d829d748ee650fe335709fcb> ;
+        sh:targetClass  OML-MaterialInformation:Creep .
+
+<https://astrea.linkeddata.es/shapes#8d4e40d144c8269dd320c57287d8f375>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:CreepCurve .
+
+<https://astrea.linkeddata.es/shapes#d434e33e5e75e0d63ad4a86680f3980d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:RefractiveIndex .
+
+<https://astrea.linkeddata.es/shapes#5e2d5a8c1859e5f315cd2af58ee360e5>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:TemperaturesForPhaseTransition .
+
+<https://astrea.linkeddata.es/shapes#cd3c0b6c9d2f6b094239c1b624970b14>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:ReductionRatio .
+
+<https://astrea.linkeddata.es/shapes#24af9ae30c42797209233ba5047bb7e7>
+        a            sh:PropertyShape ;
+        sh:class     OML-MaterialInformation:HeatTreatment ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      OML-MaterialInformation:HeatTreatmentProcess .
+
+<https://astrea.linkeddata.es/shapes#27b8e00fa1a13932f1524a1191e00bd0>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:UniversalConstant .
+
+<https://astrea.linkeddata.es/shapes#c8855470b106ab208dfedde6db3f11e0>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:CoherenceLengthAt0K .
+
+<https://astrea.linkeddata.es/shapes#c9960a78e6848249a6e203e513e582e9>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Humidity .
+
+<https://astrea.linkeddata.es/shapes#b7adb278a00a284694eff577cf3ad762>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Entropy .
+
+<https://astrea.linkeddata.es/shapes#656cba55b05aeb76634ef8aaadcf2082>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:I .
+
+<https://astrea.linkeddata.es/shapes#5e26d4d84cd9e1ef60e0aa66fbafcb3c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MagnesiumOxide .
+
+<https://astrea.linkeddata.es/shapes#a1ca5751cc1b5b78598873df3833d0ec>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Polysulfides .
+
+<https://astrea.linkeddata.es/shapes#be7a245720f54f19f47d8898bbc7d825>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Sulfide_Chalcogenide .
+
+<https://astrea.linkeddata.es/shapes#4e12cb41151ee1a07f78bf63de0c849c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:TS10000SeriesStainlessSteel .
+
+<https://astrea.linkeddata.es/shapes#e61a58f6f306d326c2739bae8431878c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:TemperatureDerivativeOfAdiabaticBulkModulus .
+
+<https://astrea.linkeddata.es/shapes#da4762a3c1cdad58a766a2b890ee21f4>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MetalMatrixComposite .
+
+<https://astrea.linkeddata.es/shapes#221a65800e0472f2d117ddcfe22575ad>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MalleableIron .
+
+<https://astrea.linkeddata.es/shapes#f14ad57ab5700fc5101c7bef084c32dd>
+        a            sh:PropertyShape ;
+        sh:class     OML-MaterialInformation:Time ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      OML-MaterialInformation:TimeToReachTotalStrain5.0 .
+
+<https://astrea.linkeddata.es/shapes#5c1e41113542b8a31fc7b8dcdb91c616>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Permittivity .
+
+<https://astrea.linkeddata.es/shapes#c495ccd9eb7289637e1c10b1da3389e6>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:SuperAlloy .
+
+<https://astrea.linkeddata.es/shapes#8773a77f6e5383863e4bc777c38ac67e>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Be .
+
+<https://astrea.linkeddata.es/shapes#16b0cc68864ff863d100afc9f5f2ee25>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:StainlessSteel .
+
+<https://astrea.linkeddata.es/shapes#9882b297d1306b865f09897b6cd915e5>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Superconducting .
+
+<https://astrea.linkeddata.es/shapes#afcf5e3ccdddef5722ed6189e5530fe9>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:MinimumContentRatio .
+
+<https://astrea.linkeddata.es/shapes#feb7c23d5b1d1821129dcaa962b06cc6>
+        a            sh:PropertyShape ;
+        sh:class     OML-MaterialInformation:Property ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      OML-MaterialInformation:PropertyName .
+
+<https://astrea.linkeddata.es/shapes#fa4318577272e0803bc572a23048d37e>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AluminumAlloy_6000Series .
+
+<https://astrea.linkeddata.es/shapes#1c8787d4d043142ed0a5ac98e4e6e1d5>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:CorrosionPotential .
+
+<https://astrea.linkeddata.es/shapes#cd99a0b25b7f0162fb8be7b65ee55214>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:O .
+
+<https://astrea.linkeddata.es/shapes#26c005403a207fcc61c276f05f13fcba>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:typeOfGas .
+
+<https://astrea.linkeddata.es/shapes#5fbe56cd33c4a68c27efeed2808c86b9>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:PhaseTransitionAtLowTemperature .
+
+<https://astrea.linkeddata.es/shapes#cbb451bdf9362029a045af295ec0a184>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Sr .
+
+<https://astrea.linkeddata.es/shapes#5a1d50e6fe014e34c780879035f0c1a1>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ElectronConcentration .
+
+<https://astrea.linkeddata.es/shapes#58cf905bf9c7245fb81510af0cac6e10>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Co .
+
+<https://astrea.linkeddata.es/shapes#466b154cf6a17bb57dfd1cf7c4d18509>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Rings .
+
+<https://astrea.linkeddata.es/shapes#4a6a2c1775922afe66e57e8bbaf0b8b6>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Sb .
+
+<https://astrea.linkeddata.es/shapes#4855b3c0f7c86a0faa0f6197bbf6394d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Chemical .
+
+<https://astrea.linkeddata.es/shapes#959db2efdc20d6d6db10ce7ce230b6b2>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#bed160f81cee0dbd239bed241e10512b> ;
+        sh:targetClass  OML-MaterialInformation:Welding .
+
+<https://astrea.linkeddata.es/shapes#db7c4b47f5b0616377025f6ee895ea40>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:PlanckTemperature .
+
+<https://astrea.linkeddata.es/shapes#62476d92e8a87fed72187d6a2ae20cfe>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Polyamides_Thioamides .
+
+<https://astrea.linkeddata.es/shapes#d060a748a7003286e4de709faa8d1971>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:EnergyGapForDirectTransition .
+
+<https://astrea.linkeddata.es/shapes#c914d85bff069ca782121acf2129cd1c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Unalloyed_ModifiedTitanium .
+
+<https://astrea.linkeddata.es/shapes#e1fd61c08976b8e287210ff8026e7981>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#f490b851324d3a8394ae93c54fad5801> , <https://astrea.linkeddata.es/shapes#618163425168a0366a6fc2ed163b1e43> ;
+        sh:targetClass  OML-MaterialInformation:ManufacturingProcess .
+
+<https://astrea.linkeddata.es/shapes#6acd5da25d6981d2f80af9f41c12e6f7>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Alpha_BetaTitaniumAlloy .
+
+<https://astrea.linkeddata.es/shapes#cff64f2817a9ab162b6e40942392e0ac>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Concrete .
+
+<https://astrea.linkeddata.es/shapes#d162a01fa817b12492a6b126f707c757>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:C .
+
+<https://astrea.linkeddata.es/shapes#d2c467d16b77bc144e57f081c6698c39>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Rounds .
+
+<https://astrea.linkeddata.es/shapes#0729c1f7b11710ed0095880ba07ed767>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:LondonPenetrationDepth .
+
+<https://astrea.linkeddata.es/shapes#04e33596b952a23c9eddb6ab424502e1>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Ag .
+
+<https://astrea.linkeddata.es/shapes#f7ecd3672f5dfad98d00bf824e4dfd6e>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:At .
+
+<https://astrea.linkeddata.es/shapes#bff4f99a906e3af059886dbeae3ddd85>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:DissolvedOxygen .
+
+<https://astrea.linkeddata.es/shapes#09a1f093fd2803d8ea9b786d597850e0>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Bi .
+
+<https://astrea.linkeddata.es/shapes#84d3af8f91c5800f6d3ccf82fbcdd39f>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:EnergyGap .
+
+<https://astrea.linkeddata.es/shapes#e12ebf6634b3bb5b756cb920ed5a0a18>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ElectricFieldStrength .
+
+<https://astrea.linkeddata.es/shapes#b01e13f4bb6564b26e1f37a7b567785f>
+        a            sh:PropertyShape ;
+        sh:class     OML-MaterialInformation:Temperature ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      OML-MaterialInformation:EndingTemperature .
+
+<https://astrea.linkeddata.es/shapes#fdbbb4f9573c8c8804603693108a20c8>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:State .
+
+<https://astrea.linkeddata.es/shapes#6cda268be76f0665ca0efc769a571cc4>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Tm .
+
+<https://astrea.linkeddata.es/shapes#703455eac1e97ec065edf33e12c59eae>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:CriticalMagneticFieldStrength .
+
+<https://astrea.linkeddata.es/shapes#bdace72d629451ff3b0d9a0de8419e66>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ElectricStrengthOfDielectric .
+
+<https://astrea.linkeddata.es/shapes#73e683caa615a0ede503ad3d435cd601>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:ConciseForm .
+
+<https://astrea.linkeddata.es/shapes#dd164d58b19e49056f10d5127563e028>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MagneticFluxDensity .
+
+<https://astrea.linkeddata.es/shapes#435c54463a1dc55af536e4529546067c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:T600_series_stainless_steel .
+
+<https://astrea.linkeddata.es/shapes#32b8178500f2992c5db7e770188a0bc0>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AngularAcceleration .
+
+<https://astrea.linkeddata.es/shapes#14458144a8015f67cb5e964eaafc59d4>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:JointShape .
+
+<https://astrea.linkeddata.es/shapes#1cdde619b3a128dcfdd4b1d4d7b5090f>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:UpperCriticalMagneticFieldStrength .
+
+<https://astrea.linkeddata.es/shapes#3e4eac4a277f70fee8786b7a4e5131cf>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ThermalExpansionCoefficient .
+
+<https://astrea.linkeddata.es/shapes#578ffc45789ddd414ad113c4d2914862>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ElectronMobility .
+
+<https://astrea.linkeddata.es/shapes#43af9cb6d008db98243615e84a351587>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Th .
+
+<https://astrea.linkeddata.es/shapes#e66ca8ea4cb6b4275b4209c78d5a6053>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ElectricFluxDensity .
+
+<https://astrea.linkeddata.es/shapes#d210ce54779e5b0b6177e5e0c37b39b5>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:CreepTestResults .
+
+<https://astrea.linkeddata.es/shapes#e52081484fedf0c8ce05ccc4a7863f44>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Clay .
+
+<https://astrea.linkeddata.es/shapes#afa14c2bde9e5f6e144b4b283d68d7d4>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:HoleConcentration .
+
+<https://astrea.linkeddata.es/shapes#30798c6709ed9377d27e3dedb58c5564>
+        a            sh:PropertyShape ;
+        sh:class     OML-MaterialInformation:Time ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      OML-MaterialInformation:TimeToReachTotalStrain2.0 .
+
+<https://astrea.linkeddata.es/shapes#e15ff60a8af55b79460473df897e1107>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ElectricCurrent .
+
+<https://astrea.linkeddata.es/shapes#84636f94c365d2e9564c91e86c609226>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ElectricConductance .
+
+<https://astrea.linkeddata.es/shapes#08590ec184ecd0f4b16ebef5fd84153d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:LinearCompressibility .
+
+<https://astrea.linkeddata.es/shapes#dcc7357eae23022b449a6f4ff378ae02>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:EffectiveCharge .
+
+<https://astrea.linkeddata.es/shapes#b5c46bb102f811c064d737bab68a2c6f>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:P .
+
+<https://astrea.linkeddata.es/shapes#81a54e701916bc957e138d4946880619>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Exposure .
+
+<https://astrea.linkeddata.es/shapes#b432be263b1a947c1f27e05938ccdb04>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Action .
+
+<https://astrea.linkeddata.es/shapes#57887b8a3b8a6f5e51b189ed4d4de40b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:In .
+
+<https://astrea.linkeddata.es/shapes#01c3d8fa72467125e79bd7b3c8656e65>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Radiance .
+
+<https://astrea.linkeddata.es/shapes#3d1bb6c821eff597952078e82fb04901>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Optical .
+
+<https://astrea.linkeddata.es/shapes#a45d6c0b2480bd74124fd4d21565f25a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Atom .
+
+<https://astrea.linkeddata.es/shapes#7034b770c4840847c4e52ee821e21ec1>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Br .
+
+<https://astrea.linkeddata.es/shapes#73521916528733f304c9d19087f8f63c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:NewtonianConstantOfGravitation .
+
+<https://astrea.linkeddata.es/shapes#e1396db8eca533fd4f4c57f23e03f3ab>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Os .
+
+<https://astrea.linkeddata.es/shapes#907f94b890b8ef683a3b0ee81b6edbcc>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AluminumAlloy_4000Series .
+
+<https://astrea.linkeddata.es/shapes#31398b4d6f0c3916fabd88e07a7a7be7>
+        a               sh:NodeShape , sh:PropertyShape ;
+        sh:class        OML-MaterialInformation:Time ;
+        sh:nodeKind     sh:IRI , sh:BlankNodeOrIRI ;
+        sh:path         OML-MaterialInformation:HoldingTime ;
+        sh:targetClass  OML-MaterialInformation:HoldingTime .
+
+<https://astrea.linkeddata.es/shapes#c081cd19fde857cb34b89225f98a3aba>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Bk .
+
+<https://astrea.linkeddata.es/shapes#399e7a3c4a9d1596105de1128962a7ff>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Sm .
+
+<https://astrea.linkeddata.es/shapes#0fd24a3e81a38ff7c27e78d877daa5e1>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MagneticAnisotropyField .
+
+<https://astrea.linkeddata.es/shapes#fde2faa820d8c4c86b217f709eeba5cf>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Density .
+
+<https://astrea.linkeddata.es/shapes#fa4664e130c83ff59a970e76121955a8>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MagneticConstant .
+
+<https://astrea.linkeddata.es/shapes#94ce19cd13e96fe081acbdcd24be60b8>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AluminumAlloy .
+
+<https://astrea.linkeddata.es/report/0620946147>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#455b5de762d411559c7e9480e3f3c4f0>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Current .
+
+<https://astrea.linkeddata.es/shapes#e5db04e1e33da20310c48bc752943e29>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Cf .
+
+<https://astrea.linkeddata.es/shapes#032f318ea9d39798e4a242ed72be8c46>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Si .
+
+<https://astrea.linkeddata.es/shapes#35f926ffcd14316345819dac869705d7>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Fe .
+
+<https://astrea.linkeddata.es/shapes#c2f577fc0b9efad3e968c7504ae31f11>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:StressDependenceOfTransitionTemperature .
+
+<https://astrea.linkeddata.es/shapes#879490a2e37264b6eb5fe28b3a5378d2>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Tb .
+
+<https://astrea.linkeddata.es/shapes#1292f85615fe97096631e35894ed5d40>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Ta .
+
+<https://astrea.linkeddata.es/shapes#c2dafffb402b82904a869c0e94574f84>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#24af9ae30c42797209233ba5047bb7e7> ;
+        sh:targetClass  OML-MaterialInformation:CarburizingAndNitrizing .
+
+<https://astrea.linkeddata.es/shapes#207ecafec1afed0b17dbde38854e6805>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:SurfaceEnergyDensity .
+
+<https://astrea.linkeddata.es/shapes#ec13770a82f3127034d4080657f9a9e1>
+        a            sh:PropertyShape ;
+        sh:class     OML-MaterialInformation:Temperature ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      OML-MaterialInformation:ProcessingTemperature .
+
+<https://astrea.linkeddata.es/shapes#5d8c4458aec97950338ffd5d7d3599cb>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MolarGibbsEnergyOfFormation .
+
+<https://astrea.linkeddata.es/shapes#1d9339fb6a60309c38c37ba82e048683>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:SI_units .
+
+<https://astrea.linkeddata.es/shapes#763df38bc88e951be256d954d33f7b33>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:CriticalMagneticFieldStrengthAt0K .
+
+<https://astrea.linkeddata.es/shapes#7d1db9bbd974addb07e3e5ebb44797ca>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Glass-Amorphous .
+
+<https://astrea.linkeddata.es/shapes#50c8890b94d30bd0fcacb88a9a783fd2>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AngularSpeed .
+
+<https://astrea.linkeddata.es/shapes#aad2760bb30fc19001c8b0a681f20caa>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:BerylliumAlloy .
+
+<https://astrea.linkeddata.es/shapes#2652739f6ceb167e5affd3bd289d1e97>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:LinearThermalExpansionCoefficient .
+
+<https://astrea.linkeddata.es/shapes#e224ca0e518d2bcbc7e0557642226d32>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:TS40000SeriesStainlessSteel .
+
+<https://astrea.linkeddata.es/shapes#618163425168a0366a6fc2ed163b1e43>
+        a               sh:NodeShape , sh:PropertyShape ;
+        sh:class        OML-MaterialInformation:Environment ;
+        sh:nodeKind     sh:IRI , sh:BlankNodeOrIRI ;
+        sh:or           ( OML-MaterialInformation:ManufacturingProcess OML-MaterialInformation:MeasurementMethod ) ;
+        sh:path         OML-MaterialInformation:Environment ;
+        sh:property     <https://astrea.linkeddata.es/shapes#a33fda830bebfa04907778f0b61297b0> , <https://astrea.linkeddata.es/shapes#059f2ef5c5f12c053bf56fed3df7a7c4> ;
+        sh:targetClass  OML-MaterialInformation:Environment .
+
+<https://astrea.linkeddata.es/shapes#7e33637f48cec532e42fcb2c1f7e9639>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:CharacteristicImpedanceOfVacuum .
+
+<https://astrea.linkeddata.es/shapes#ffe6aa288c1455b36d94cde7346cca60>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ElectricResistance .
+
+<https://astrea.linkeddata.es/shapes#04aaf18126f0141e54f239a1bb71210b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ElectricCharge .
+
+<https://astrea.linkeddata.es/shapes#9e7f97f2537edc83aa4e73ca79545b5d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Physico-chemicalConstant .
+
+<https://astrea.linkeddata.es/shapes#bdfa9b8d28e1eda70255a1f0af5c70fc>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Pu .
+
+<https://astrea.linkeddata.es/shapes#05847127f1d68800cac8e175471e1df6>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:MethodOfManufacture .
+
+<https://astrea.linkeddata.es/shapes#9fd69e48bbe36e93c75afdd7db1ed1cb>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Force .
+
+<https://astrea.linkeddata.es/shapes#756216cb23e8b011f28682824eff6609>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Polyimides_Thioimides .
+
+<https://astrea.linkeddata.es/shapes#bed160f81cee0dbd239bed241e10512b>
+        a            sh:PropertyShape ;
+        sh:class     OML-MaterialInformation:Temperature ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      OML-MaterialInformation:Pre-HeatingTemperature .
+
+<https://astrea.linkeddata.es/shapes#b508907f00f4db9f4e4b23b3cb6781e1>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Reflectivity .
+
+<https://astrea.linkeddata.es/shapes#a9b6c884439375be0120b68e07a1944d>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:Project .
+
+<https://astrea.linkeddata.es/shapes#168005989775c55326af7d6fd043c747>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Tubing .
+
+<https://astrea.linkeddata.es/shapes#a278c8c2286e1d20aed3a55743a48d35>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:VolumeThermalExpansionCoefficient_D .
+
+<https://astrea.linkeddata.es/shapes#b9116bef0154d9e9b3f2ddbaa4939e85>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AISI8000SeriesSteel .
+
+<https://astrea.linkeddata.es/shapes#8a31dcd0437540ebb2acdc7307e87078>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:VickersHardnessNumber .
+
+<https://astrea.linkeddata.es/shapes#71f6593b68020fa0aba94a8c0c6898de>
+        a            sh:PropertyShape ;
+        sh:class     OML-MaterialInformation:Time ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      OML-MaterialInformation:TimeToReachTotalStrain0.5 .
+
+<https://astrea.linkeddata.es/shapes#8d0cda40a6e75722ec707a8f7131d0d0>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Zr .
+
+<https://astrea.linkeddata.es/shapes#e5c36a78d18f5ec81f95026be64a6da8>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:TransverseSoundVelocity .
+
+<https://astrea.linkeddata.es/shapes#fd15685b4d1afc30d3d54af1c7dd6938>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:LongitudinalSoundVelocity .
+
+<https://astrea.linkeddata.es/shapes#ea1658e6c222ed6b6952ca7ecaad0d3a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#db90644c0be20f550516c87fd6950741> , <https://astrea.linkeddata.es/shapes#618163425168a0366a6fc2ed163b1e43> , <https://astrea.linkeddata.es/shapes#3401323c6f41fa6462d9d0c85b79a91d> , <https://astrea.linkeddata.es/shapes#785bd88d4ab4a4d821a952bd829276ac> ;
+        sh:targetClass  OML-MaterialInformation:MaterialProperty .
+
+<https://astrea.linkeddata.es/shapes#0a53503c282683036cd7f9059a62840c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Polyimines-Polyamines .
+
+<https://astrea.linkeddata.es/shapes#059f2ef5c5f12c053bf56fed3df7a7c4>
+        a               sh:NodeShape , sh:PropertyShape ;
+        sh:class        OML-MaterialInformation:UnitSystem ;
+        sh:nodeKind     sh:IRI , sh:BlankNodeOrIRI ;
+        sh:path         OML-MaterialInformation:UnitSystem ;
+        sh:targetClass  OML-MaterialInformation:UnitSystem .
+
+<https://astrea.linkeddata.es/shapes#4aaa6746ac635aa0fdbaa765ef422f1a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:CobaltBase .
+
+<https://astrea.linkeddata.es/shapes#30a3ca6530744bcc2081647e63e1629c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:InformationSource .
+
+<https://astrea.linkeddata.es/shapes#82a52560a37ec9f09ae45d25f56bf8e6>
+        a            sh:PropertyShape ;
+        sh:class     OML-MaterialInformation:Time ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      OML-MaterialInformation:TimeToRupture .
+
+<https://astrea.linkeddata.es/shapes#6ea65897f934e97e29f3ec183ce37888>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:PureSubstance .
+
+<https://astrea.linkeddata.es/shapes#efe41a54239571c9d58303b6e07063eb>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#ec13770a82f3127034d4080657f9a9e1> , <https://astrea.linkeddata.es/shapes#31398b4d6f0c3916fabd88e07a7a7be7> , <https://astrea.linkeddata.es/shapes#b01e13f4bb6564b26e1f37a7b567785f> ;
+        sh:targetClass  OML-MaterialInformation:HeatTreatment .
+
+<https://astrea.linkeddata.es/shapes#d09ef2a8712d893ea6b4bf5de4ccb63b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Ds .
+
+<https://astrea.linkeddata.es/shapes#0f0703033dafe42e75bce98c6d2d9e85>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:PrecipitationHardeningStainless .
+
+<https://astrea.linkeddata.es/shapes#8b41a47a55c3585aa06c09fca770dde6>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:He .
+
+<https://astrea.linkeddata.es/shapes#f59db0341715805ff050186c43e5dafb>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Hg .
+
+<https://astrea.linkeddata.es/shapes#b5e8c41f4cf95a0b75fe8b0feace03a3>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Speed .
+
+<https://astrea.linkeddata.es/shapes#c2e769995819aa6bba7c0622ed32b596>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:CompoundSubstance .
+
+<https://astrea.linkeddata.es/shapes#fc4530d9cf121be23a1dfa28665dc752>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#f06b65562ae2fa89cfa55b7007eba7eb> , <https://astrea.linkeddata.es/shapes#d91e04ecd81dbd458a79a33c5dc2cdab> , <https://astrea.linkeddata.es/shapes#6b91ba847d55b8aaada101c586c64a61> ;
+        sh:targetClass  OML-MaterialInformation:EngineeringMaterial .
+
+<https://astrea.linkeddata.es/shapes#b66e02d0ce8c07a46c1a372572937203>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:EffectiveBohrMagnetonNumber .
+
+<https://astrea.linkeddata.es/shapes#adb5b041207d179064d0e92516ed85e6>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Alpha_NearAlphaTitaniumAlloy .
+
+<https://astrea.linkeddata.es/shapes#0e475ef5a0ffbd3b323833ff4e0a5827>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Rock .
+
+<https://astrea.linkeddata.es/shapes#65c4197bfcafac4621177dbbdd1ee334>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:SpecificEnergy .
+
+<https://astrea.linkeddata.es/shapes#2caa507c4c7d71846037eb8bd40358d7>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MagneticFlux .
+
+<https://astrea.linkeddata.es/shapes#88d5a5a696aa8c516e63dae8d1f33e2e>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:FerrousAlloy .
+
+<https://astrea.linkeddata.es/shapes#b1590c86f7d02a4ad701c67a02d99a6f>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:DebyeTemperature .
+
+<https://astrea.linkeddata.es/shapes#9ddaee620473acf44fe0c50311596bb2>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ThermalConductance .
+
+<https://astrea.linkeddata.es/shapes#6b91ba847d55b8aaada101c586c64a61>
+        a            sh:PropertyShape ;
+        sh:class     OML-MaterialInformation:ManufacturingProcess ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      OML-MaterialInformation:ManufacturingMethod .
+
+<https://astrea.linkeddata.es/shapes#2459a4a25975efcca5feef2709be0c76>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Hs .
+
+<https://astrea.linkeddata.es/shapes#f3a3e8481b015e266aa07a1d428c72d6>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Copolymer .
+
+<https://astrea.linkeddata.es/shapes#b1509a0c93af8798d09443b295bd6392>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:Application .
+
+<https://astrea.linkeddata.es/shapes#3db1d5886c0629995361e215f060916d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:SlopeOfTcAt0GPa .
+
+<https://astrea.linkeddata.es/shapes#7813e578add78f1cd682ce7a48100ca4>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Cork .
+
+<https://astrea.linkeddata.es/shapes#6ab7dccee5a553fdf04f78612dc68073>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Ca .
+
+<https://astrea.linkeddata.es/shapes#511e540ead77b8701ec89568307b9fec>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:U .
+
+<https://astrea.linkeddata.es/shapes#30e61335fc850f9ec22378d1eb6d86af>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:DuctileIron .
+
+<https://astrea.linkeddata.es/shapes#db4baf08c5ce45c082f45b06f8660359>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Yb .
+
+<https://astrea.linkeddata.es/shapes#b39990ce97abafc80df02a6b468be194>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:NickelAlloy .
+
+<https://astrea.linkeddata.es/shapes#a1e9b521e27f6646ea30429c429e39d2>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:KinematicViscosity .
+
+<https://astrea.linkeddata.es/shapes#e196ea4155b82a3f341251ba83f5e100>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:TungstenAlloy .
+
+<https://astrea.linkeddata.es/shapes#22069f6b6cc19384578b7cf47e6896f4>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ElectricalResistivity .
+
+<https://astrea.linkeddata.es/shapes#b9aba0055fbcb812cdb4e7df1bc14c55>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Uuo .
+
+<https://astrea.linkeddata.es/shapes#0aba2b71eff0c2d4fd271ad381f55156>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:Normination .
+
+<https://astrea.linkeddata.es/shapes#87325642cf7eeace71741155609de002>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AISI6000SeriesSteel .
+
+<https://astrea.linkeddata.es/shapes#840a7f2a00d917e8651ce28138d6b739>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Tc .
+
+<https://astrea.linkeddata.es/shapes#2c6c17c9a1d46b1141534c16279bb82a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AtomicAndNuclearConstant .
+
+<https://astrea.linkeddata.es/shapes#04b37aed871531348810d77cada63529>
+        a            sh:PropertyShape ;
+        sh:class     OML-MaterialInformation:Time ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      OML-MaterialInformation:TimeToSecondaryCreep .
+
+<https://astrea.linkeddata.es/shapes#0b64be08ee9245e482d04c9eca861de9>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AluminumOxide .
+
+<https://astrea.linkeddata.es/shapes#ccb65a0b78e3547e2c949ce92e6eef6a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Se .
+
+<https://astrea.linkeddata.es/shapes#51d15833cf33c3df40b3e1f9e11be70d>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:MelthedWeight .
+
+<https://astrea.linkeddata.es/shapes#2853d36cc394cc66ae28277ca905698c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:EffectiveMassOfElectronsInConductionBand .
+
+<https://astrea.linkeddata.es/shapes#31f50aabb3a6f9ffd8c4e38df5a35f9a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Mg .
+
+<https://astrea.linkeddata.es/shapes#bd34352fdbb2c79c8424bec364344940>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AbsorbedDoseRate .
+
+<https://astrea.linkeddata.es/shapes#148f292e052b451b40d5bc35a187d4f9>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Cone .
+
+<https://astrea.linkeddata.es/shapes#edf73318e465a0bfea39a805b9aec17e>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AmorphousMetal .
+
+<https://astrea.linkeddata.es/shapes#86290809a02e35f25cc9319297427319>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Am .
+
+<https://astrea.linkeddata.es/shapes#eb9a9b40abc22609f36e5e5b4aa2f0f0>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Polymer_OrganicCompound .
+
+<https://astrea.linkeddata.es/shapes#e537c8ff1dc25e09645a8c8fe31e2ebb>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Polyacrylics .
+
+<https://astrea.linkeddata.es/shapes#9a9cb8001ddf8413ad6bb35d8dbd0d65>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:ProductFromAndSize .
+
+<https://astrea.linkeddata.es/shapes#c8bee4e42e626d27b242e325aae215dd>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MagnesiumAlloy .
+
+<https://astrea.linkeddata.es/shapes#b72c5494675de0595e6c2426236cfec6>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Mixture .
+
+<https://astrea.linkeddata.es/shapes#a306693d8b996887ac897536a4f76069>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Squares .
+
+<https://astrea.linkeddata.es/shapes#c64ffaf20b02507b08f1c80cf914be86>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:FibreComposites .
+
+<https://astrea.linkeddata.es/shapes#422b367242b74c60d0eab2a56cf0692c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Al .
+
+<https://astrea.linkeddata.es/shapes#3401323c6f41fa6462d9d0c85b79a91d>
+        a               sh:NodeShape , sh:PropertyShape ;
+        sh:class        OML-MaterialInformation:Equation ;
+        sh:nodeKind     sh:IRI , sh:BlankNodeOrIRI ;
+        sh:path         OML-MaterialInformation:Equation ;
+        sh:targetClass  OML-MaterialInformation:Equation .
+
+<https://astrea.linkeddata.es/shapes#4ca715acbcd94f5b0bb0eef1e17499cb>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Brass .
+
+<https://astrea.linkeddata.es/shapes#772df034e02ae1d2779063296e6f40fe>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:PhaseTransitionAtHighTemperature .
+
+<https://astrea.linkeddata.es/shapes#db1c8142f8740f04322e53fa15a9c4a2>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:LuminousFlux .
+
+<https://astrea.linkeddata.es/shapes#beee272e8bb8380516969d85a65eb72c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AdiabaticBulkModulus .
+
+<https://astrea.linkeddata.es/shapes#a58909e6ef8218ca6403f4a3f155412d>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:typeOfIrradiation .
+
+<https://astrea.linkeddata.es/shapes#a33dd7eb78b2fc628e3d0e5058df7896>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Grass .
+
+<https://astrea.linkeddata.es/shapes#5d8c07a5ae0c0f0b10d09d418e1430c9>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:T400SeriesStainlessSteel .
+
+<https://astrea.linkeddata.es/shapes#5197a14ab590766ebd5f598b104ed189>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:InstantaneousStrain .
+
+<https://astrea.linkeddata.es/shapes#4487fc10fb194fbab2692a35fa6d59f7>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Temperature-IndependentPartOfMagneticSusceptibility .
+
+<https://astrea.linkeddata.es/shapes#2a16c6c58ba05bec8841cc97651cd6fb>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:F .
+
+<https://astrea.linkeddata.es/shapes#ed2cbcc0d8faa197368172af1ad150de>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:Orientation .
+
+<https://astrea.linkeddata.es/shapes#1cb3c99df1ef77d5ccd358fd32c43784>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:FrustumOfCone .
+
+<https://astrea.linkeddata.es/shapes#18e3d22bc203c8e034974007cee6df49>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:LowerCriticalMagneticFieldStrength .
+
+<https://astrea.linkeddata.es/shapes#e965f5a68e058641e79405a0488c5ddc>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:MinimumCreepRate .
+
+<https://astrea.linkeddata.es/shapes#8008dea5a811194b8664b1ed7040ac22>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:ChemicalFormula .
+
+<https://astrea.linkeddata.es/shapes#1bb3fdfe09c57814074b370a378d4e48>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:UpperCriticalMagneticFieldStrengthAt0K .
+
+<https://astrea.linkeddata.es/shapes#9b7cb67f562cbf1a92b7e8356afd0520>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MolarGibbsEnergy .
+
+<https://astrea.linkeddata.es/shapes#1bbddf8e7a2a8cf1c36695be3cb3c64d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Polyurethanes_Thiourethanes .
+
+<https://astrea.linkeddata.es/shapes#a801424a408ff2e3ac787ba9e1b666a9>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:MaximalValue .
+
+<https://astrea.linkeddata.es/shapes#5dcc7189aadc8a929384657362756f37>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ParticulateComposites .
+
+<https://astrea.linkeddata.es/shapes#acf32a13431dd204fd461e5d29c737c8>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MolarEntropyChangeAtPhaseTransition .
+
+<https://astrea.linkeddata.es/shapes#9081b68f6e0096aa7ce6daea6a252597>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:CoherenceLength .
+
+<https://astrea.linkeddata.es/shapes#d8772d61d1e5c3c7280dce967dfa2780>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Foams .
+
+<https://astrea.linkeddata.es/shapes#957b9bde13e6fd676757841e42220966>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:NewtonianConstantOfGravitation_over_h-bar_c .
+
+<https://astrea.linkeddata.es/shapes#2bd157b060c5d15514a55651e38e28e7>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Wood .
+
+<https://astrea.linkeddata.es/shapes#502867012636b88e9b1a24c74021bee0>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Liquid .
+
+<https://astrea.linkeddata.es/shapes#f24e03e316f3ff289dbb3a3f5d30b3ed>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MolarEnthalpy .
+
+<https://astrea.linkeddata.es/shapes#a54bcad132ebbfd8322077ec273aa352>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:EnergyDensity .
+
+<https://astrea.linkeddata.es/shapes#b24a1f0be58899114956a23535b99ce2>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Mechanical .
+
+<https://astrea.linkeddata.es/shapes#6b6014eed265b7d3301b7cc1a9f3b49c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:VolumeCompressibility .
+
+<https://astrea.linkeddata.es/shapes#10fd9b158c9b73d0799a898056f2b330>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Electron-PhononInteractionParameter .
+
+<https://astrea.linkeddata.es/shapes#574f6030ba197597c2433a1cd4686754>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:VolumeMagnetization .
+
+<https://astrea.linkeddata.es/shapes#8c496cd2d4de2e2d1dcd0aded8394e0d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Rh .
+
+<https://astrea.linkeddata.es/shapes#da80ff290acd41af147d33c48e334882>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:La .
+
+<https://astrea.linkeddata.es/shapes#5ed745c8e82cb118a2e92f37d23533a8>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:DataCategory .
+
+<https://astrea.linkeddata.es/shapes#ad9e8c8e0005840b68af5ff59a5f1771>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MolarEnthalpyChangeAtMeltingPoint .
+
+<https://astrea.linkeddata.es/shapes#69a927ff260f74c4520980c2eefd8e57>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:HeatCapacityDiscontinuityAtPhaseTransition .
+
+<https://astrea.linkeddata.es/shapes#a2585db7e1955262ca0b171d3c8ce34a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ThermalExpansionCoefficient_D .
+
+<https://astrea.linkeddata.es/shapes#f8b4d54ffd7268b2006881cfdbcbf157>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:TypeOfManufacturing .
+
+<https://astrea.linkeddata.es/shapes#0101bdb6d50716e3fb68afc6c6a578c3>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Pd .
+
+<https://astrea.linkeddata.es/shapes#44a97b16b4d706b7da5c9831eac66862>
+        a            sh:PropertyShape ;
+        sh:class     OML-MaterialInformation:Time ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      OML-MaterialInformation:TimeToReachTotalStrain1.0 .
+
+<https://astrea.linkeddata.es/shapes#96139603f2c0717d4a1cfaadd12ee015>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Y .
+
+<https://astrea.linkeddata.es/shapes#ceaa6c459f9b91086bd19d9902b68d12>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Paper .
+
+<https://astrea.linkeddata.es/shapes#e4af6ec3c55ed14432d6b46eedcb74a3>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MolarEnthalpyOfFormation .
+
+<https://astrea.linkeddata.es/shapes#b7864dcf0964e0c48f3ac5e2b14da9a2>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:CGS_units .
+
+<https://astrea.linkeddata.es/shapes#0b7cce2b5f955d2444bc728f719e6d9c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ElectricPotential .
+
+<https://astrea.linkeddata.es/shapes#0ffeb65e620a10cf312015b40995a16b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Cube .
+
+<https://astrea.linkeddata.es/shapes#7347dd2fa12c2d8bd88ccab44ff039d7>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Ru .
+
+<https://astrea.linkeddata.es/shapes#c8b4a4b9dfea155bc28db43748b6ca5c>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:WeldingRod .
+
+<https://astrea.linkeddata.es/shapes#c329153b5af0247ea5deea46b881b7f0>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Thermoset .
+
+<https://astrea.linkeddata.es/shapes#a62a964a4686ebee2c9bf94ef85f1755>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Halide .
+
+<https://astrea.linkeddata.es/shapes#5961d56923cb025272ca0a62e4e0c5db>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ThermodynamicTemperature .
+
+<https://astrea.linkeddata.es/shapes#5bac7a467476ab680edd1935c491ff14>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:RelativeStandardUncertainty .
+
+<https://astrea.linkeddata.es/shapes#45948e08217ba2d637bb66ef3f2b59ec>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AISI4000SeriesSteel .
+
+<https://astrea.linkeddata.es/shapes#652e6a5e5cbede5145b4d34aa77b210c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Mt .
+
+<https://astrea.linkeddata.es/shapes#ef920c150e323543a1e0d6423682a4ba>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Ba .
+
+<https://astrea.linkeddata.es/shapes#65521d1a59881167ec5f0e543b594303>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Polycarbonates_Thiocarbonates .
+
+<https://astrea.linkeddata.es/shapes#611eac9d4a6f195c465bea7800ef40e3>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:LayerMethod .
+
+<https://astrea.linkeddata.es/shapes#28058edf945a5d4c0e8df6a0733295a9>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:SpontaneousMagneticMoment .
+
+<https://astrea.linkeddata.es/shapes#c5130a9387f181479ddff1bdc34f43f0>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:ProducedCondition .
+
+<https://astrea.linkeddata.es/shapes#9fd606e1268df67348bd73ae66f86b05>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Carbide .
+
+<https://astrea.linkeddata.es/shapes#f59b7a4b75f69b478248f2314ea3c518>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:MinimumValue .
+
+<https://astrea.linkeddata.es/shapes#fc21d2dfeeae1d2264754556c73af2e4>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:PlanckLength .
+
+<https://astrea.linkeddata.es/shapes#bbb2fcfa8a6d92ed35cdd23889d90e1a>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:StandardUncertainty .
+
+<https://astrea.linkeddata.es/shapes#660dc7bb6df4bcddf516a33e93604004>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:As .
+
+<https://astrea.linkeddata.es/shapes#08ff3275ebab70375a03301b79351ac5>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:LowestTemperatureForNormalConductivity .
+
+<https://astrea.linkeddata.es/shapes#80f06ec72d2e57b7fb80fd1cc2e0408c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AmountOfInformation .
+
+<https://astrea.linkeddata.es/shapes#7709121823f3bc69b44da3dd22d9cd58>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:N .
+
+<http://astrea.linkeddata.es/report>
+        a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#contains>
+                <https://astrea.linkeddata.es/shapes#2c6c17c9a1d46b1141534c16279bb82a> , <https://astrea.linkeddata.es/shapes#0a53503c282683036cd7f9059a62840c> , <https://astrea.linkeddata.es/shapes#b151d1ce866f8bb9a7d1e07e27ea1678> , <https://astrea.linkeddata.es/shapes#5c1e41113542b8a31fc7b8dcdb91c616> , <https://astrea.linkeddata.es/shapes#dbf1ea8da9657470eb42dd10b6e7a04a> , <https://astrea.linkeddata.es/shapes#43af9cb6d008db98243615e84a351587> , <https://astrea.linkeddata.es/shapes#756216cb23e8b011f28682824eff6609> , <https://astrea.linkeddata.es/shapes#1d14200075bfb2d218cc78c539c732ad> , <https://astrea.linkeddata.es/shapes#7e9c766fd0e0b1d7a1b5cb706f366054> , <https://astrea.linkeddata.es/shapes#58a62cb441e3c518c5414e85513d7d32> , <https://astrea.linkeddata.es/shapes#04b37aed871531348810d77cada63529> , <https://astrea.linkeddata.es/shapes#acb02bec323c7a95a89816235202d236> , <https://astrea.linkeddata.es/shapes#6c44a0a8f5ce77cc6cd806bda7fc79c4> , <https://astrea.linkeddata.es/shapes#4e5246e51acdd61aabf04a321379148c> , <https://astrea.linkeddata.es/shapes#3d40a0f818af577ffd2ec25ce081c6a6> , <https://astrea.linkeddata.es/shapes#c9960a78e6848249a6e203e513e582e9> , <https://astrea.linkeddata.es/shapes#26d80b545f8df648b38646bfdd9b945d> , <https://astrea.linkeddata.es/shapes#db8c8594d6bf0a78d2272453f10406e5> , <https://astrea.linkeddata.es/shapes#b5e8c41f4cf95a0b75fe8b0feace03a3> , <https://astrea.linkeddata.es/shapes#b72c5494675de0595e6c2426236cfec6> , <https://astrea.linkeddata.es/shapes#b50b1b3ff587a0812b052e40b0b31caf> , <https://astrea.linkeddata.es/shapes#26c005403a207fcc61c276f05f13fcba> , <https://astrea.linkeddata.es/shapes#cd9a6b52ebc3f8e9b8c79d98de03a3fc> , <https://astrea.linkeddata.es/shapes#b39990ce97abafc80df02a6b468be194> , <https://astrea.linkeddata.es/shapes#9fd606e1268df67348bd73ae66f86b05> , <https://astrea.linkeddata.es/shapes#f41ab43cc5ca27f627362d50e29548b2> , <https://astrea.linkeddata.es/shapes#8c6a65a98a378a80961e1887c2cfce2b> , <https://astrea.linkeddata.es/shapes#4bb1c1bc65300c687b05fd5a0de4af1e> , <https://astrea.linkeddata.es/shapes#96139603f2c0717d4a1cfaadd12ee015> , <https://astrea.linkeddata.es/shapes#03ee66ea8bf083a97cb7774e8e699260> , <https://astrea.linkeddata.es/shapes#8d3ead6dbf39fc80209386ef81a67454> , <https://astrea.linkeddata.es/shapes#0ffeb65e620a10cf312015b40995a16b> , <https://astrea.linkeddata.es/shapes#05847127f1d68800cac8e175471e1df6> , <https://astrea.linkeddata.es/shapes#207ecafec1afed0b17dbde38854e6805> , <https://astrea.linkeddata.es/shapes#becd1d8d7d1f11fecc9505b385462719> , <https://astrea.linkeddata.es/shapes#eb9a9b40abc22609f36e5e5b4aa2f0f0> , <https://astrea.linkeddata.es/shapes#9e3984399b9d8d6cd96d3ea51036947a> , <https://astrea.linkeddata.es/shapes#ef920c150e323543a1e0d6423682a4ba> , <https://astrea.linkeddata.es/shapes#3a1cf121c7e04b2c474019d0ecb94a20> , <https://astrea.linkeddata.es/shapes#e1396db8eca533fd4f4c57f23e03f3ab> , <https://astrea.linkeddata.es/shapes#8c496cd2d4de2e2d1dcd0aded8394e0d> , <https://astrea.linkeddata.es/shapes#1c8787d4d043142ed0a5ac98e4e6e1d5> , <https://astrea.linkeddata.es/shapes#ce0d62528045a3fd525c9d4a0fc7def2> , <https://astrea.linkeddata.es/shapes#22069f6b6cc19384578b7cf47e6896f4> , <https://astrea.linkeddata.es/shapes#f9bbeb76e9b54d0ea3909d90d2b81418> , <https://astrea.linkeddata.es/shapes#d6bc78be356cd8d3b238f39955f1a932> , <https://astrea.linkeddata.es/shapes#251776d4fb6a365fffe54610fd148578> , <https://astrea.linkeddata.es/shapes#5761bcea4de321bb6ddf112c9be18206> , <https://astrea.linkeddata.es/shapes#634144d6a58ef27be3c07c2808fc59e7> , <https://astrea.linkeddata.es/shapes#fdbbb4f9573c8c8804603693108a20c8> , <https://astrea.linkeddata.es/shapes#1bd1bda89af3abe5ae70f6132d708943> , <https://astrea.linkeddata.es/shapes#d318d20addceae535aad539bc3f81146> , <https://astrea.linkeddata.es/shapes#e66ca8ea4cb6b4275b4209c78d5a6053> , <https://astrea.linkeddata.es/shapes#0149f714cdbc2da53886337113e24912> , <https://astrea.linkeddata.es/shapes#466b154cf6a17bb57dfd1cf7c4d18509> , <https://astrea.linkeddata.es/shapes#bcb932b79ee4ff8d3bb16f2de57def88> , <https://astrea.linkeddata.es/shapes#28e5ea42015ead0aeb315eeea17eb262> , <https://astrea.linkeddata.es/shapes#c2e769995819aa6bba7c0622ed32b596> , <https://astrea.linkeddata.es/shapes#fc21d2dfeeae1d2264754556c73af2e4> , <https://astrea.linkeddata.es/shapes#b5a2030e876c7fa79c84ccef25e6146c> , <https://astrea.linkeddata.es/shapes#27b8e00fa1a13932f1524a1191e00bd0> , <https://astrea.linkeddata.es/shapes#bbb2fcfa8a6d92ed35cdd23889d90e1a> , <https://astrea.linkeddata.es/shapes#4ca715acbcd94f5b0bb0eef1e17499cb> , <https://astrea.linkeddata.es/shapes#fa4664e130c83ff59a970e76121955a8> , <https://astrea.linkeddata.es/shapes#7f523c837e2ae705f0a95fe2e6ad1f8d> , <https://astrea.linkeddata.es/shapes#95ce7ae1e366b761ec9d921e74dc146e> , <https://astrea.linkeddata.es/shapes#065159f1a334e890438408a4325b444b> , <https://astrea.linkeddata.es/shapes#753f03e5d0bcd9f61e29ae4291d256c3> , <https://astrea.linkeddata.es/shapes#c914d85bff069ca782121acf2129cd1c> , <https://astrea.linkeddata.es/shapes#3a952875eb78b65437136f39bfa77d4a> , <https://astrea.linkeddata.es/shapes#6b91ba847d55b8aaada101c586c64a61> , <https://astrea.linkeddata.es/shapes#6a3d2908b39dd604a08805023d0ab4c8> , <https://astrea.linkeddata.es/shapes#f80cb14a5619f15ace6e286eb04976dc> , <https://astrea.linkeddata.es/shapes#301d67c02ee817300d891b044a2caf2a> , <https://astrea.linkeddata.es/shapes#0aba2b71eff0c2d4fd271ad381f55156> , <https://astrea.linkeddata.es/shapes#5b9dee03943b4409e942bb427079556a> , <https://astrea.linkeddata.es/shapes#bdfae002ca8c999a49c77f5955234fbc> , <https://astrea.linkeddata.es/shapes#840a7f2a00d917e8651ce28138d6b739> , <https://astrea.linkeddata.es/shapes#a99cbc9f0fb1ed021b32c29b944b48d2> , <https://astrea.linkeddata.es/shapes#e965f5a68e058641e79405a0488c5ddc> , <https://astrea.linkeddata.es/shapes#e174ab23f356cbb9ce45e4fb022ebdb1> , <https://astrea.linkeddata.es/shapes#9ddbd7c811d68bbfae43b70fdec1bcf6> , <https://astrea.linkeddata.es/shapes#01c3d8fa72467125e79bd7b3c8656e65> , <https://astrea.linkeddata.es/shapes#6cda268be76f0665ca0efc769a571cc4> , <https://astrea.linkeddata.es/shapes#fc3c0f04fc357fca240254d2dfa46971> , <https://astrea.linkeddata.es/shapes#e5c36a78d18f5ec81f95026be64a6da8> , <https://astrea.linkeddata.es/shapes#bff4f99a906e3af059886dbeae3ddd85> , <https://astrea.linkeddata.es/shapes#3f880bb5200b50d353d7788c047980b9> , <https://astrea.linkeddata.es/shapes#411063d7eeff6d377801c5b326259b7d> , <https://astrea.linkeddata.es/shapes#e52081484fedf0c8ce05ccc4a7863f44> , <https://astrea.linkeddata.es/shapes#3a76feb9e14e61967e464e015250e67a> , <https://astrea.linkeddata.es/shapes#4d0a8e917607254c4e8da7b4424cf821> , <https://astrea.linkeddata.es/shapes#66c8cf921eb54e01c1cbd09563220173> , <https://astrea.linkeddata.es/shapes#25bbcd6672b010b2b07c526035ac36c8> , <https://astrea.linkeddata.es/shapes#41ea87fc1d7886c71f8d48aa4a7aa07f> , <https://astrea.linkeddata.es/shapes#c0cd605c1e9c8219dfa06150f214f1df> , <https://astrea.linkeddata.es/shapes#50ecb9de6e5f29ae43a8f246411e570b> , <https://astrea.linkeddata.es/shapes#4fb5b03db7ba9b2cb3b1990e62cefe9a> , <https://astrea.linkeddata.es/shapes#a0fa58c6c9898b90197112481d454d29> , <https://astrea.linkeddata.es/shapes#50ea3b08133d8f64546dc5e39ac31587> , <https://astrea.linkeddata.es/shapes#db8915a9168cdd6076242c44417b6e95> , <https://astrea.linkeddata.es/shapes#65521d1a59881167ec5f0e543b594303> , <https://astrea.linkeddata.es/shapes#a54bcad132ebbfd8322077ec273aa352> , <https://astrea.linkeddata.es/shapes#9ddaee620473acf44fe0c50311596bb2> , <https://astrea.linkeddata.es/shapes#73e3454b5e74397dc1a6504d02f1391c> , <https://astrea.linkeddata.es/shapes#3b82c161afa0ef6582fa32ff8d816464> , <https://astrea.linkeddata.es/shapes#bb6bd5a1020dd3c295a7c6415d2310ed> , <https://astrea.linkeddata.es/shapes#2d4b7cd7e69994a5ffbd9b3ea1208e76> , <https://astrea.linkeddata.es/shapes#09ffb125d87ce6987513a5185b53d246> , <https://astrea.linkeddata.es/shapes#2caa507c4c7d71846037eb8bd40358d7> , <https://astrea.linkeddata.es/shapes#1720657fcacbbab328d65aa8680e8256> , <https://astrea.linkeddata.es/shapes#660dc7bb6df4bcddf516a33e93604004> , <https://astrea.linkeddata.es/shapes#bdace72d629451ff3b0d9a0de8419e66> , <https://astrea.linkeddata.es/shapes#3201a5478e7f7cf706aa0451ed4cd6d6> , <https://astrea.linkeddata.es/shapes#31398b4d6f0c3916fabd88e07a7a7be7> , <https://astrea.linkeddata.es/shapes#fd15685b4d1afc30d3d54af1c7dd6938> , <https://astrea.linkeddata.es/shapes#0c1307a78aec536d8428651e2f278d1c> , <https://astrea.linkeddata.es/shapes#168005989775c55326af7d6fd043c747> , <https://astrea.linkeddata.es/shapes#3d1bb6c821eff597952078e82fb04901> , <https://astrea.linkeddata.es/shapes#5765f90d05194b34f3d6b39d93a01309> , <https://astrea.linkeddata.es/shapes#fc5fac3a3bec1c0e5be5fd74394a893e> , <https://astrea.linkeddata.es/shapes#ec13770a82f3127034d4080657f9a9e1> , <https://astrea.linkeddata.es/shapes#8008dea5a811194b8664b1ed7040ac22> , <https://astrea.linkeddata.es/shapes#ad9e8c8e0005840b68af5ff59a5f1771> , <https://astrea.linkeddata.es/shapes#03d0d73a20de0c42e669b1e56680158c> , <https://astrea.linkeddata.es/shapes#f490b851324d3a8394ae93c54fad5801> , <https://astrea.linkeddata.es/shapes#8728ffdd7f965c87046e415cd1f1860a> , <https://astrea.linkeddata.es/shapes#574f6030ba197597c2433a1cd4686754> , <https://astrea.linkeddata.es/shapes#0288240df9d5b7b0bd1554b222574edd> , <https://astrea.linkeddata.es/shapes#fdf2a9d4c3ea80956764bb15554e85ba> , <https://astrea.linkeddata.es/shapes#652e6a5e5cbede5145b4d34aa77b210c> , <https://astrea.linkeddata.es/shapes#3f0f922ae531484756747c0125db5dc5> , <https://astrea.linkeddata.es/shapes#fbfa6ec2c0ee900b85de3491274df708> , <https://astrea.linkeddata.es/shapes#bb6a80943d0170f9a422bb9efbf026d5> , <https://astrea.linkeddata.es/shapes#7347dd2fa12c2d8bd88ccab44ff039d7> , <https://astrea.linkeddata.es/shapes#fbc4cdc3669321882f0c48275efd1fbe> , <https://astrea.linkeddata.es/shapes#3a84e5804c75cd98a52aff9c74532046> , <https://astrea.linkeddata.es/shapes#5d8c4458aec97950338ffd5d7d3599cb> , <https://astrea.linkeddata.es/shapes#e224ca0e518d2bcbc7e0557642226d32> , <https://astrea.linkeddata.es/shapes#dd794f7a4ac9c62ede62b20fd7dd736e> , <https://astrea.linkeddata.es/shapes#c2a63d53cb01bc9b04610c65408ff3fa> , <https://astrea.linkeddata.es/shapes#05c602a12800c46a3a0f3c279bd81e54> , <https://astrea.linkeddata.es/shapes#2652739f6ceb167e5affd3bd289d1e97> , <https://astrea.linkeddata.es/shapes#b0c6a53febe9b14ff0df2c788473ac8d> , <https://astrea.linkeddata.es/shapes#bef04343c141b6a828ed5e41c4ea1524> , <https://astrea.linkeddata.es/shapes#73521916528733f304c9d19087f8f63c> , <https://astrea.linkeddata.es/shapes#5aeefaf104e04aae86068146a5a35c09> , <https://astrea.linkeddata.es/shapes#94ce19cd13e96fe081acbdcd24be60b8> , <https://astrea.linkeddata.es/shapes#6acd5da25d6981d2f80af9f41c12e6f7> , <https://astrea.linkeddata.es/shapes#4a6a2c1775922afe66e57e8bbaf0b8b6> , <https://astrea.linkeddata.es/shapes#ef4fcc80a9977960e163d075c5874e28> , <https://astrea.linkeddata.es/shapes#db90644c0be20f550516c87fd6950741> , <https://astrea.linkeddata.es/shapes#0b7cce2b5f955d2444bc728f719e6d9c> , <https://astrea.linkeddata.es/shapes#581d09d2b620dd0599602b2c70b6b888> , <https://astrea.linkeddata.es/shapes#2e0c19df36abd00ac78eea00c6dc45bb> , <https://astrea.linkeddata.es/shapes#040bc83aa94356854856c455e7d89b1c> , <https://astrea.linkeddata.es/shapes#f1cb2474079409561deb4943b75dcdf2> , <https://astrea.linkeddata.es/shapes#49306f1c77e2530e186a247cf3529088> , <https://astrea.linkeddata.es/shapes#b8777be993594603368431b4c5f13c3e> , <https://astrea.linkeddata.es/shapes#ba896b8505cf3dac438cc8c66956c5b7> , <https://astrea.linkeddata.es/shapes#58fb3bee15e71bfff02a8958b2dd2b09> , <https://astrea.linkeddata.es/shapes#3b05ffa40a5cb46f8911290c8d551aef> , <https://astrea.linkeddata.es/shapes#273713397bbb4d612d4acfd71e0c3e0b> , <https://astrea.linkeddata.es/shapes#825481a089f0398db9553623a8c79ae6> , <https://astrea.linkeddata.es/shapes#0f0703033dafe42e75bce98c6d2d9e85> , <https://astrea.linkeddata.es/shapes#ae3bd2ebd594dd8743baa187952ac35e> , <https://astrea.linkeddata.es/shapes#86290809a02e35f25cc9319297427319> , <https://astrea.linkeddata.es/shapes#18e3d22bc203c8e034974007cee6df49> , <https://astrea.linkeddata.es/shapes#e8c7d6256085d957bcda649f4d285119> , <https://astrea.linkeddata.es/shapes#8a35ecb9251ecbe250aabd99fd6fb8eb> , <https://astrea.linkeddata.es/shapes#3e44b4e5b9456a0dffd29ca8441e94f4> , <https://astrea.linkeddata.es/shapes#e12ebf6634b3bb5b756cb920ed5a0a18> , <https://astrea.linkeddata.es/shapes#4e4482d21be3cf812b31c7046fa7b8ba> , <https://astrea.linkeddata.es/shapes#9e7f97f2537edc83aa4e73ca79545b5d> , <https://astrea.linkeddata.es/shapes#a45d6c0b2480bd74124fd4d21565f25a> , <https://astrea.linkeddata.es/shapes#8b41a47a55c3585aa06c09fca770dde6> , <https://astrea.linkeddata.es/shapes#65c4197bfcafac4621177dbbdd1ee334> , <https://astrea.linkeddata.es/shapes#bbb3c397ea61f97540b8dea9eb7549c5> , <https://astrea.linkeddata.es/shapes#14458144a8015f67cb5e964eaafc59d4> , <https://astrea.linkeddata.es/shapes#c495ccd9eb7289637e1c10b1da3389e6> , <https://astrea.linkeddata.es/shapes#9c247fd1de508cfb5435d37012b84265> , <https://astrea.linkeddata.es/shapes#2daa6065ed1197afb4a974ed96a85de2> , <https://astrea.linkeddata.es/shapes#2398c62a0912c1337471ab19019c88fa> , <https://astrea.linkeddata.es/shapes#399e7a3c4a9d1596105de1128962a7ff> , <https://astrea.linkeddata.es/shapes#23fda0277144f27adec700508e5a1d2d> , <https://astrea.linkeddata.es/shapes#e1fd61c08976b8e287210ff8026e7981> , <https://astrea.linkeddata.es/shapes#e4af6ec3c55ed14432d6b46eedcb74a3> , <https://astrea.linkeddata.es/shapes#15e37a5fac467d188383a16a92081890> , <https://astrea.linkeddata.es/shapes#deecae6c76e32d7c76881080303729a8> , <https://astrea.linkeddata.es/shapes#50c8890b94d30bd0fcacb88a9a783fd2> , <https://astrea.linkeddata.es/shapes#58a30acb8e6c177812cf10dc447b3d67> , <https://astrea.linkeddata.es/shapes#e6d9d46ada671befe79ef294136b05a6> , <https://astrea.linkeddata.es/shapes#0729c1f7b11710ed0095880ba07ed767> , <https://astrea.linkeddata.es/shapes#bdfa9b8d28e1eda70255a1f0af5c70fc> , <https://astrea.linkeddata.es/shapes#b1d866b3cb2b98edce558c6846bf0fdf> , <https://astrea.linkeddata.es/shapes#737946b3b6a2e048eb4123e1cde4f353> , <https://astrea.linkeddata.es/shapes#61af656d76fe0392ad99d8346e07b60a> , <https://astrea.linkeddata.es/shapes#e2926eebf25b1c91c266819a99d35a6e> , <https://astrea.linkeddata.es/shapes#84a0620191783ed880909454080d35f8> , <https://astrea.linkeddata.es/shapes#d7f3e0b406a70b20a37dd81df788320b> , <https://astrea.linkeddata.es/shapes#25c31235b3d04ce53cddd3222aaa8774> , <https://astrea.linkeddata.es/shapes#454049fcdb8f03b416b81623ce8f3261> , <https://astrea.linkeddata.es/shapes#7ab0e692303daa845a0551908b88db5b> , <https://astrea.linkeddata.es/shapes#aad2760bb30fc19001c8b0a681f20caa> , <https://astrea.linkeddata.es/shapes#f14ad57ab5700fc5101c7bef084c32dd> , <https://astrea.linkeddata.es/shapes#837cddbbe638e08dc6e6fa9d624dc504> , <https://astrea.linkeddata.es/shapes#0f1d171c516c8dbfb1a6855ad588fded> , <https://astrea.linkeddata.es/shapes#a82521b730d7906118fe090946bb8adb> , <https://astrea.linkeddata.es/shapes#959db2efdc20d6d6db10ce7ce230b6b2> , <https://astrea.linkeddata.es/shapes#253d8b3aab5a44046f500ff90e904877> , <https://astrea.linkeddata.es/shapes#05d848287f424a8c19922298c7446030> , <https://astrea.linkeddata.es/shapes#1ed97bfca8d0e3fc9e8a5fabcdb53bb3> , <https://astrea.linkeddata.es/shapes#73975071f6fe3ddba3fb942b022b1d84> , <https://astrea.linkeddata.es/shapes#e196ea4155b82a3f341251ba83f5e100> , <https://astrea.linkeddata.es/shapes#5a7b895a3f3339b22e1a3425f64ee51d> , <https://astrea.linkeddata.es/shapes#bdbd6bcf6ddf3fdfcd878acb386ea964> , <https://astrea.linkeddata.es/shapes#66a5cd4d600064a8f377bde6ddf3bd59> , <https://astrea.linkeddata.es/shapes#d09ef2a8712d893ea6b4bf5de4ccb63b> , <https://astrea.linkeddata.es/shapes#3df49cc426f9f77d1a787dd32557684a> , <https://astrea.linkeddata.es/shapes#763df38bc88e951be256d954d33f7b33> , <https://astrea.linkeddata.es/shapes#1f634876753255de448d5f6f825a70c3> , <https://astrea.linkeddata.es/shapes#4487fc10fb194fbab2692a35fa6d59f7> , <https://astrea.linkeddata.es/shapes#4e12cb41151ee1a07f78bf63de0c849c> , <https://astrea.linkeddata.es/shapes#422b367242b74c60d0eab2a56cf0692c> , <https://astrea.linkeddata.es/shapes#60dcb0e3dd8b88d97fe849f4a368469c> , <https://astrea.linkeddata.es/shapes#28058edf945a5d4c0e8df6a0733295a9> , <https://astrea.linkeddata.es/shapes#511e540ead77b8701ec89568307b9fec> , <https://astrea.linkeddata.es/shapes#527ec947d2d8d6ed32cf78af953073ed> , <https://astrea.linkeddata.es/shapes#455b5de762d411559c7e9480e3f3c4f0> , <https://astrea.linkeddata.es/shapes#d6e72cde0515d13ca220e2958c54ade7> , <https://astrea.linkeddata.es/shapes#4aaa6746ac635aa0fdbaa765ef422f1a> , <https://astrea.linkeddata.es/shapes#04e33596b952a23c9eddb6ab424502e1> , <https://astrea.linkeddata.es/shapes#58cf905bf9c7245fb81510af0cac6e10> , <https://astrea.linkeddata.es/shapes#a2585db7e1955262ca0b171d3c8ce34a> , <https://astrea.linkeddata.es/shapes#f06b65562ae2fa89cfa55b7007eba7eb> , <https://astrea.linkeddata.es/shapes#44a97b16b4d706b7da5c9831eac66862> , <https://astrea.linkeddata.es/shapes#cbb451bdf9362029a045af295ec0a184> , <https://astrea.linkeddata.es/shapes#b432be263b1a947c1f27e05938ccdb04> , <https://astrea.linkeddata.es/shapes#81a54e701916bc957e138d4946880619> , <https://astrea.linkeddata.es/shapes#8cee2034a8bc86191981afbdb9ec8205> , <https://astrea.linkeddata.es/shapes#afa14c2bde9e5f6e144b4b283d68d7d4> , <https://astrea.linkeddata.es/shapes#5f71187bb8935ce5de7a82016f25eeff> , <https://astrea.linkeddata.es/shapes#a306693d8b996887ac897536a4f76069> , <https://astrea.linkeddata.es/shapes#5d8c07a5ae0c0f0b10d09d418e1430c9> , <https://astrea.linkeddata.es/shapes#197b90c231319adbc244a75dbdd43f0e> , <https://astrea.linkeddata.es/shapes#e7bc4c825ea68553c41525b7f84d7353> , <https://astrea.linkeddata.es/shapes#08590ec184ecd0f4b16ebef5fd84153d> , <https://astrea.linkeddata.es/shapes#d4debcfe85244412d6a5b78c87bf367a> , <https://astrea.linkeddata.es/shapes#a85a15a1725ebe05c9cdce277d46d750> , <https://astrea.linkeddata.es/shapes#8d1b9c26c0b87eb410651ea79559fbc2> , <https://astrea.linkeddata.es/shapes#9882b297d1306b865f09897b6cd915e5> , <https://astrea.linkeddata.es/shapes#b9aba0055fbcb812cdb4e7df1bc14c55> , <https://astrea.linkeddata.es/shapes#a6a55af33f9f0ce04d3c51c7014290db> , <https://astrea.linkeddata.es/shapes#6ea65897f934e97e29f3ec183ce37888> , <https://astrea.linkeddata.es/shapes#b24a1f0be58899114956a23535b99ce2> , <https://astrea.linkeddata.es/shapes#5dcc7189aadc8a929384657362756f37> , <https://astrea.linkeddata.es/shapes#349cbdbc6ef30b8357fa59909b120dc5> , <https://astrea.linkeddata.es/shapes#8a31dcd0437540ebb2acdc7307e87078> , <https://astrea.linkeddata.es/shapes#6ab7dccee5a553fdf04f78612dc68073> , <https://astrea.linkeddata.es/shapes#af4596cddda0a1feb6979290209f706b> , <https://astrea.linkeddata.es/shapes#5f84d1a2b8ca9a9fbb604d5dbff58edd> , <https://astrea.linkeddata.es/shapes#b7864dcf0964e0c48f3ac5e2b14da9a2> , <https://astrea.linkeddata.es/shapes#64a9ac741b031acd2d28f6e7126c0ea9> , <https://astrea.linkeddata.es/shapes#1d9339fb6a60309c38c37ba82e048683> , <https://astrea.linkeddata.es/shapes#907f94b890b8ef683a3b0ee81b6edbcc> , <https://astrea.linkeddata.es/shapes#04aaf18126f0141e54f239a1bb71210b> , <https://astrea.linkeddata.es/shapes#13e69569087fa98cd536a0d86e2b4fc8> , <https://astrea.linkeddata.es/shapes#24af9ae30c42797209233ba5047bb7e7> , <https://astrea.linkeddata.es/shapes#7f9119bd4c66d45320cce59e474c1241> , <https://astrea.linkeddata.es/shapes#3d217ed705c19d7cb2e9f293cba0023d> , <https://astrea.linkeddata.es/shapes#cfbcd6cbac967ebc60ed2c0750585493> , <https://astrea.linkeddata.es/shapes#006d01e5d3f25147f440fdc7cb86c75c> , <https://astrea.linkeddata.es/shapes#37d6bad227ec5579cf11fb33264edf3d> , <https://astrea.linkeddata.es/shapes#7c52f92ed226da26ddad30b5a5dcd67f> , <https://astrea.linkeddata.es/shapes#21e02f8c386bfca62ad04d5c4135da64> , <https://astrea.linkeddata.es/shapes#695d408e46aabe1379028f11f0b151aa> , <https://astrea.linkeddata.es/shapes#efe41a54239571c9d58303b6e07063eb> , <https://astrea.linkeddata.es/shapes#8f261987a88e8a4369d0656062f0e0d9> , <https://astrea.linkeddata.es/shapes#cf4d59abee10d28ce96be2b5ccfb7c9c> , <https://astrea.linkeddata.es/shapes#5e26d4d84cd9e1ef60e0aa66fbafcb3c> , <https://astrea.linkeddata.es/shapes#fce60cdc02080e6990e61825b004a1ee> , <https://astrea.linkeddata.es/shapes#d060a748a7003286e4de709faa8d1971> , <https://astrea.linkeddata.es/shapes#fcd5bb4cf687b6db71bfadacc76e1129> , <https://astrea.linkeddata.es/shapes#81e2517e5c48349075bc13ec11932382> , <https://astrea.linkeddata.es/shapes#5190fcd5ac9419a0b88c444e9719db38> , <https://astrea.linkeddata.es/shapes#9183eb5f9aac6bf09e4087edee923e12> , <https://astrea.linkeddata.es/shapes#5deb2a1861e4b984103e43cfcdc08e62> , <https://astrea.linkeddata.es/shapes#e61a58f6f306d326c2739bae8431878c> , <https://astrea.linkeddata.es/shapes#ddfd378ba96e9603dedf9157dbe327d4> , <https://astrea.linkeddata.es/shapes#35f926ffcd14316345819dac869705d7> , <https://astrea.linkeddata.es/shapes#c64ffaf20b02507b08f1c80cf914be86> , <https://astrea.linkeddata.es/shapes#c329153b5af0247ea5deea46b881b7f0> , <https://astrea.linkeddata.es/shapes#5b62aaf006ef3286eb7cdac909b40083> , <https://astrea.linkeddata.es/shapes#ce9dd5c69de9d2be50b879fdb5d5853d> , <https://astrea.linkeddata.es/shapes#43a46889d4f012f0b3f233fc31ed5862> , <https://astrea.linkeddata.es/shapes#1a0700391a7eb374ab6af640a8d798ae> , <https://astrea.linkeddata.es/shapes#83c5e2c85f7b2a5254c18ab9c75d2e23> , <https://astrea.linkeddata.es/shapes#2a16c6c58ba05bec8841cc97651cd6fb> , <https://astrea.linkeddata.es/shapes#e5db04e1e33da20310c48bc752943e29> , <https://astrea.linkeddata.es/shapes#36c1fde418126d350ce567c018efa663> , <https://astrea.linkeddata.es/shapes#93f39f692bb67c85e9721f6fb32493f2> , <https://astrea.linkeddata.es/shapes#9a283a7bdbb578f0678bcf20e742a5bd> , <https://astrea.linkeddata.es/shapes#31f50aabb3a6f9ffd8c4e38df5a35f9a> , <https://astrea.linkeddata.es/shapes#790f5f46d9cd40fcf2d57bcbecc71341> , <https://astrea.linkeddata.es/shapes#4805f8b0281a14cb786a966a0e931f73> , <https://astrea.linkeddata.es/shapes#26aec489105d8899bd297147b160c72a> , <https://astrea.linkeddata.es/shapes#646bfe12a9d1f73784fe6f6998790614> , <https://astrea.linkeddata.es/shapes#1cb3c99df1ef77d5ccd358fd32c43784> , <https://astrea.linkeddata.es/shapes#62c5b2df3fda73abe0f4dd3e5c5f72f1> , <https://astrea.linkeddata.es/shapes#f3a3e8481b015e266aa07a1d428c72d6> , <https://astrea.linkeddata.es/shapes#6bb09edab3d303a8b394fc20a4782d0e> , <https://astrea.linkeddata.es/shapes#ec88863a0a3fbc22f501971639e8625c> , <https://astrea.linkeddata.es/shapes#f59b7a4b75f69b478248f2314ea3c518> , <https://astrea.linkeddata.es/shapes#e781adbc516d93bcc3e595b70398711e> , <https://astrea.linkeddata.es/shapes#a90f8d9302d3d0d842d253513c3f7465> , <https://astrea.linkeddata.es/shapes#8b41914df807a6683975e1fde9eca891> , <https://astrea.linkeddata.es/shapes#2d39d15668c416a6d363bc00fb1ba629> , <https://astrea.linkeddata.es/shapes#6451a3459d005eb4ee9d599d7891bbd8> , <https://astrea.linkeddata.es/shapes#0b64be08ee9245e482d04c9eca861de9> , <https://astrea.linkeddata.es/shapes#6b6014eed265b7d3301b7cc1a9f3b49c> , <https://astrea.linkeddata.es/shapes#2853d36cc394cc66ae28277ca905698c> , <https://astrea.linkeddata.es/shapes#96cf4eaa428cec6d7e46b91d6815ed64> , <https://astrea.linkeddata.es/shapes#51d15833cf33c3df40b3e1f9e11be70d> , <https://astrea.linkeddata.es/shapes#1bbddf8e7a2a8cf1c36695be3cb3c64d> , <https://astrea.linkeddata.es/shapes#b9dfd517ffe9effb52071620230052cc> , <https://astrea.linkeddata.es/shapes#99048d8e68b812e7581817a066b380e0> , <https://astrea.linkeddata.es/shapes#c92fc20082eeab9f80c218ad5ba42192> , <https://astrea.linkeddata.es/shapes#c4868789c6e3e76790bcdf5b6ea2e3b6> , <https://astrea.linkeddata.es/shapes#47d8210ca04bc82f5a73a7eb52538aeb> , <https://astrea.linkeddata.es/shapes#c65d807e5902592279f6e74deefb8b73> , <https://astrea.linkeddata.es/shapes#c8bee4e42e626d27b242e325aae215dd> , <https://astrea.linkeddata.es/shapes#b7adb278a00a284694eff577cf3ad762> , <https://astrea.linkeddata.es/shapes#57887b8a3b8a6f5e51b189ed4d4de40b> , <https://astrea.linkeddata.es/shapes#30a3ca6530744bcc2081647e63e1629c> , <https://astrea.linkeddata.es/shapes#b5c46bb102f811c064d737bab68a2c6f> , <https://astrea.linkeddata.es/shapes#435c54463a1dc55af536e4529546067c> , <https://astrea.linkeddata.es/shapes#9fd69e48bbe36e93c75afdd7db1ed1cb> , <https://astrea.linkeddata.es/shapes#fa585976de1a89beafd3bd814bb1e569> , <https://astrea.linkeddata.es/shapes#2d7be547993b80a29d181e7053895467> , <https://astrea.linkeddata.es/shapes#f19759a8d443e99b362ac95f209b0294> , <https://astrea.linkeddata.es/shapes#bf8f4c5e376faea8492ed0dbd0bc67b1> , <https://astrea.linkeddata.es/shapes#fa4318577272e0803bc572a23048d37e> , <https://astrea.linkeddata.es/shapes#befc56847c3a3e43d7d5065651a51747> , <https://astrea.linkeddata.es/shapes#a1e9b521e27f6646ea30429c429e39d2> , <https://astrea.linkeddata.es/shapes#3e4eac4a277f70fee8786b7a4e5131cf> , <https://astrea.linkeddata.es/shapes#f35bc3b9e19e34473201fc2ad51e5be5> , <https://astrea.linkeddata.es/shapes#5d90f9923218af076406306a25a61219> , <https://astrea.linkeddata.es/shapes#db7c4b47f5b0616377025f6ee895ea40> , <https://astrea.linkeddata.es/shapes#06f47f4fa1e59770e1d7994aad45e23a> , <https://astrea.linkeddata.es/shapes#cd3c0b6c9d2f6b094239c1b624970b14> , <https://astrea.linkeddata.es/shapes#edf73318e465a0bfea39a805b9aec17e> , <https://astrea.linkeddata.es/shapes#d6ed3be35f6c2cd36d7bb3f4a261084a> , <https://astrea.linkeddata.es/shapes#cff64f2817a9ab162b6e40942392e0ac> , <https://astrea.linkeddata.es/shapes#1cdde619b3a128dcfdd4b1d4d7b5090f> , <https://astrea.linkeddata.es/shapes#80f06ec72d2e57b7fb80fd1cc2e0408c> , <https://astrea.linkeddata.es/shapes#82a52560a37ec9f09ae45d25f56bf8e6> , <https://astrea.linkeddata.es/shapes#3db1d5886c0629995361e215f060916d> , <https://astrea.linkeddata.es/shapes#62ffdb6a31303e61dabdf59969f21301> , <https://astrea.linkeddata.es/shapes#f59db0341715805ff050186c43e5dafb> , <https://astrea.linkeddata.es/shapes#a827eeac357f51754b5b0b174d0c0b88> , <https://astrea.linkeddata.es/shapes#ff774b043af3aae7dae0b5597b465db1> , <https://astrea.linkeddata.es/shapes#8d0cda40a6e75722ec707a8f7131d0d0> , <https://astrea.linkeddata.es/shapes#0d3e44929f4297dd851dcabc80fde85e> , <https://astrea.linkeddata.es/shapes#a58909e6ef8218ca6403f4a3f155412d> , <https://astrea.linkeddata.es/shapes#3b5e6d453dc78b7193411646de308dfb> , <https://astrea.linkeddata.es/shapes#4f3ea8eed186d572b9196d03127b57f7> , <https://astrea.linkeddata.es/shapes#81a5ca3b0bc17682c6ddc9d546f5f3d9> , <https://astrea.linkeddata.es/shapes#45948e08217ba2d637bb66ef3f2b59ec> , <https://astrea.linkeddata.es/shapes#ea1658e6c222ed6b6952ca7ecaad0d3a> , <https://astrea.linkeddata.es/shapes#1292f85615fe97096631e35894ed5d40> , <https://astrea.linkeddata.es/shapes#a041459edc045910b81470649afc461f> , <https://astrea.linkeddata.es/shapes#f74e6590566d26dec83e4ad9d1023365> , <https://astrea.linkeddata.es/shapes#c8b4a4b9dfea155bc28db43748b6ca5c> , <https://astrea.linkeddata.es/shapes#8c8f8f00d5a2a778808f0ec425865f15> , <https://astrea.linkeddata.es/shapes#87ed4343f985df4978dc39090bb393ac> , <https://astrea.linkeddata.es/shapes#42c71f41464ba3c5cd0bf72114a0e95a> , <https://astrea.linkeddata.es/shapes#ff2ace13c44d7a73aad1124fa17632a5> , <https://astrea.linkeddata.es/shapes#5e4d9d6d2fef32e249a50d704de7a481> , <https://astrea.linkeddata.es/shapes#0064af594e158630a9313eb2a5572f2b> , <https://astrea.linkeddata.es/shapes#df54bfa96eceb6ebdab52c0ce3d0451a> , <https://astrea.linkeddata.es/shapes#37fef6b435cac96445cb537185307fe9> , <https://astrea.linkeddata.es/shapes#032f318ea9d39798e4a242ed72be8c46> , <https://astrea.linkeddata.es/shapes#b1509a0c93af8798d09443b295bd6392> , <https://astrea.linkeddata.es/shapes#957b9bde13e6fd676757841e42220966> , <https://astrea.linkeddata.es/shapes#fe302f91922f80ec0ba3fc601a5534bd> , <https://astrea.linkeddata.es/shapes#a0517b9aad06fe104fb28336d551622a> , <https://astrea.linkeddata.es/shapes#c094f44af27cf7de7eebc70ab16c61fd> , <https://astrea.linkeddata.es/shapes#b1590c86f7d02a4ad701c67a02d99a6f> , <https://astrea.linkeddata.es/shapes#df694b0d1ebc78f01794f0ce166666c5> , <https://astrea.linkeddata.es/shapes#da80ff290acd41af147d33c48e334882> , <https://astrea.linkeddata.es/shapes#8d4e40d144c8269dd320c57287d8f375> , <https://astrea.linkeddata.es/shapes#3844924b475a3a3e0ed6ffc8808524d7> , <https://astrea.linkeddata.es/shapes#e7ec3e0280d6030f15e38c862acee842> , <https://astrea.linkeddata.es/shapes#3c86699b8f613d46308b98aceec4c4c3> , <https://astrea.linkeddata.es/shapes#7e33637f48cec532e42fcb2c1f7e9639> , <https://astrea.linkeddata.es/shapes#028f357305b27638b55b2d4314f56f88> , <https://astrea.linkeddata.es/shapes#74fd70aef8c17967dda749dcf4c98d1e> , <https://astrea.linkeddata.es/shapes#156a52e5a5cd763ddeeb1a9f6bd5a617> , <https://astrea.linkeddata.es/shapes#a9c2ff22a84a1a11a77b6418e07dc4c1> , <https://astrea.linkeddata.es/shapes#a9b6c884439375be0120b68e07a1944d> , <https://astrea.linkeddata.es/shapes#acf32a13431dd204fd461e5d29c737c8> , <https://astrea.linkeddata.es/shapes#fde2faa820d8c4c86b217f709eeba5cf> , <https://astrea.linkeddata.es/shapes#44729247c74207e27c429c8e6fbe34cc> , <https://astrea.linkeddata.es/shapes#0e475ef5a0ffbd3b323833ff4e0a5827> , <https://astrea.linkeddata.es/shapes#ed2cbcc0d8faa197368172af1ad150de> , <https://astrea.linkeddata.es/shapes#6581cee7c99bef051a9cbb166265872c> , <https://astrea.linkeddata.es/shapes#514d85481ada0fac22f9683c8c94ac78> , <https://astrea.linkeddata.es/shapes#feb7c23d5b1d1821129dcaa962b06cc6> , <https://astrea.linkeddata.es/shapes#b6cea0058a5def2e496d189c0604aaed> , <https://astrea.linkeddata.es/shapes#9d85bcbd475b23f177edef9fa305ea69> , <https://astrea.linkeddata.es/shapes#b66e02d0ce8c07a46c1a372572937203> , <https://astrea.linkeddata.es/shapes#9a9cb8001ddf8413ad6bb35d8dbd0d65> , <https://astrea.linkeddata.es/shapes#1bb3fdfe09c57814074b370a378d4e48> , <https://astrea.linkeddata.es/shapes#98b357cedc3ace63bd1ca4802c87c63f> , <https://astrea.linkeddata.es/shapes#d434e33e5e75e0d63ad4a86680f3980d> , <https://astrea.linkeddata.es/shapes#42d7625ebd4b2b67e39ed4dc40446ae0> , <https://astrea.linkeddata.es/shapes#b01e13f4bb6564b26e1f37a7b567785f> , <https://astrea.linkeddata.es/shapes#62476d92e8a87fed72187d6a2ae20cfe> , <https://astrea.linkeddata.es/shapes#2fd2a6a6387f5c992ffad0ac6a2b7c53> , <https://astrea.linkeddata.es/shapes#9b31df91345a36656671c50d7bc18c2d> , <https://astrea.linkeddata.es/shapes#db121888cb767277120175b1e7b26209> , <https://astrea.linkeddata.es/shapes#89a4a8f5620cb7d1cd51b94bcfedec0e> , <https://astrea.linkeddata.es/shapes#bba060e10a2046a835cac907927e134d> , <https://astrea.linkeddata.es/shapes#adb5b041207d179064d0e92516ed85e6> , <https://astrea.linkeddata.es/shapes#9081b68f6e0096aa7ce6daea6a252597> , <https://astrea.linkeddata.es/shapes#a801424a408ff2e3ac787ba9e1b666a9> , <https://astrea.linkeddata.es/shapes#f7e30d83d45c4a363f1ef8668b5cac2a> , <https://astrea.linkeddata.es/shapes#2bcc936e0e37803c8e99178ca5ba8840> , <https://astrea.linkeddata.es/shapes#a0a1889403f7a1743b75cd3aac367f09> , <https://astrea.linkeddata.es/shapes#91385b12280a80270fd5c1bb53c0fef9> , <https://astrea.linkeddata.es/shapes#a4b4e09f65b319ce5e04361a23abbeca> , <https://astrea.linkeddata.es/shapes#73e683caa615a0ede503ad3d435cd601> , <https://astrea.linkeddata.es/shapes#30e61335fc850f9ec22378d1eb6d86af> , <https://astrea.linkeddata.es/shapes#656cba55b05aeb76634ef8aaadcf2082> , <https://astrea.linkeddata.es/shapes#7709121823f3bc69b44da3dd22d9cd58> , <https://astrea.linkeddata.es/shapes#71f6593b68020fa0aba94a8c0c6898de> , <https://astrea.linkeddata.es/shapes#fb702f771cce65c2f006d7899547ff22> , <https://astrea.linkeddata.es/shapes#3923ad13b53c37b29b38d9349bde0338> , <https://astrea.linkeddata.es/shapes#c78993ea4ff7e12412036313261dc83f> , <https://astrea.linkeddata.es/shapes#7933ab8d12ca302d4c65c99cc3ea01ba> , <https://astrea.linkeddata.es/shapes#16b0cc68864ff863d100afc9f5f2ee25> , <https://astrea.linkeddata.es/shapes#589fadb963a5743c14e768f3d86b79c9> , <https://astrea.linkeddata.es/shapes#f453e2c8fcec3ed33bde580ec0cf429c> , <https://astrea.linkeddata.es/shapes#c2a5aa43629a053159a402b3ad12536d> , <https://astrea.linkeddata.es/shapes#8ac82fe9c89519b289bf2881cb366b50> , <https://astrea.linkeddata.es/shapes#d2c467d16b77bc144e57f081c6698c39> , <https://astrea.linkeddata.es/shapes#ebab6f0727ad20d8915d99918a276772> , <https://astrea.linkeddata.es/shapes#6de1f898f6e0bb9d44f36b905ebf671a> , <https://astrea.linkeddata.es/shapes#53015f9c0c579fc831a649216e232e37> , <https://astrea.linkeddata.es/shapes#61d51a7414a60b02ccae3d74957c2c1c> , <https://astrea.linkeddata.es/shapes#1c5edad9e1c10b0f1874353469e11b6d> , <https://astrea.linkeddata.es/shapes#c2f577fc0b9efad3e968c7504ae31f11> , <https://astrea.linkeddata.es/shapes#c5130a9387f181479ddff1bdc34f43f0> , <https://astrea.linkeddata.es/shapes#4469a24cb2efbc5c2b1bd4af3d7f5da4> , <https://astrea.linkeddata.es/shapes#5fbe56cd33c4a68c27efeed2808c86b9> , <https://astrea.linkeddata.es/shapes#8a308dbc107cde726f1dd15f5710178c> , <https://astrea.linkeddata.es/shapes#f411e5f7ab5a0aa97ddb01b66542faf8> , <https://astrea.linkeddata.es/shapes#71f80c08b5d497fe0cb9a04b7aa25c1d> , <https://astrea.linkeddata.es/shapes#5e2d5a8c1859e5f315cd2af58ee360e5> , <https://astrea.linkeddata.es/shapes#b4ab63ba2721035561befe81ad9bf864> , <https://astrea.linkeddata.es/shapes#2ca200a051b684408ff32e91f1f14c91> , <https://astrea.linkeddata.es/shapes#f2ddc3d163fa74d2cbb16ff7dc288b51> , <https://astrea.linkeddata.es/shapes#363a644c537d6419448c3a1d0978464b> , <https://astrea.linkeddata.es/shapes#bee9d433786553149ebac0fcf8b844fd> , <https://astrea.linkeddata.es/shapes#0101bdb6d50716e3fb68afc6c6a578c3> , <https://astrea.linkeddata.es/shapes#be7a245720f54f19f47d8898bbc7d825> , <https://astrea.linkeddata.es/shapes#c4e8493df865aa3b546f85d2dc784684> , <https://astrea.linkeddata.es/shapes#5bac7a467476ab680edd1935c491ff14> , <https://astrea.linkeddata.es/shapes#fcea2ecc101cf7bbf543fe62b7bf4b07> , <https://astrea.linkeddata.es/shapes#cd99a0b25b7f0162fb8be7b65ee55214> , <https://astrea.linkeddata.es/shapes#32b8178500f2992c5db7e770188a0bc0> , <https://astrea.linkeddata.es/shapes#2bc7422d480f4003f5191cd53026d155> , <https://astrea.linkeddata.es/shapes#477f5e0e7427fbab34a684533b8095e9> , <https://astrea.linkeddata.es/shapes#db4baf08c5ce45c082f45b06f8660359> , <https://astrea.linkeddata.es/shapes#db876bd06f7678c5c6a68b0d18fb12f4> , <https://astrea.linkeddata.es/shapes#a33fda830bebfa04907778f0b61297b0> , <https://astrea.linkeddata.es/shapes#772df034e02ae1d2779063296e6f40fe> , <https://astrea.linkeddata.es/shapes#2459a4a25975efcca5feef2709be0c76> , <https://astrea.linkeddata.es/shapes#5f6f2e0cef7bb0a998c5ac23f1d76ccf> , <https://astrea.linkeddata.es/shapes#a8fa212dcc3a4ef20b7b185641778a80> , <https://astrea.linkeddata.es/shapes#ab72476c0105385becd8ede51caa9b9f> , <https://astrea.linkeddata.es/shapes#ec26c12e6be6c22faef5c17789bfa4ac> , <https://astrea.linkeddata.es/shapes#d702b8b19f2b23300f33026552b3443a> , <https://astrea.linkeddata.es/shapes#578ffc45789ddd414ad113c4d2914862> , <https://astrea.linkeddata.es/shapes#d5c8096cd84b4c161db464e8935d649f> , <https://astrea.linkeddata.es/shapes#b508907f00f4db9f4e4b23b3cb6781e1> , <https://astrea.linkeddata.es/shapes#efdf2f7827df060d4e16a938e9b60cd6> , <https://astrea.linkeddata.es/shapes#502867012636b88e9b1a24c74021bee0> , <https://astrea.linkeddata.es/shapes#0fd24a3e81a38ff7c27e78d877daa5e1> , <https://astrea.linkeddata.es/shapes#f1cb40e3d829d748ee650fe335709fcb> , <https://astrea.linkeddata.es/shapes#64afd1451e2aee777937f930cd20f670> , <https://astrea.linkeddata.es/shapes#5a1d50e6fe014e34c780879035f0c1a1> , <https://astrea.linkeddata.es/shapes#b2ee114edc6ce2e1ca2f6b88bcac440d> , <https://astrea.linkeddata.es/shapes#5db7d9cf9b5d1104c1ee16400bc26108> , <https://astrea.linkeddata.es/shapes#ceaa6c459f9b91086bd19d9902b68d12> , <https://astrea.linkeddata.es/shapes#449397a07bbf88e0e3bf75d94fb03ee7> , <https://astrea.linkeddata.es/shapes#ec1e75689d7f32cac5490439dd3580fa> , <https://astrea.linkeddata.es/shapes#6a60259299a3cc008a38b02baa49b6c5> , <https://astrea.linkeddata.es/shapes#8fe907deac7b070d62f53720d70fe349> , <https://astrea.linkeddata.es/shapes#a33dd7eb78b2fc628e3d0e5058df7896> , <https://astrea.linkeddata.es/shapes#f24e03e316f3ff289dbb3a3f5d30b3ed> , <https://astrea.linkeddata.es/shapes#2bd157b060c5d15514a55651e38e28e7> , <https://astrea.linkeddata.es/shapes#da4762a3c1cdad58a766a2b890ee21f4> , <https://astrea.linkeddata.es/shapes#ce53a18ea634b5cf80019d274e3c6665> , <https://astrea.linkeddata.es/shapes#7035465990661a1ad086e59d91902d64> , <https://astrea.linkeddata.es/shapes#e4e5dfdba2e3da3d6a700b05f6531f02> , <https://astrea.linkeddata.es/shapes#87325642cf7eeace71741155609de002> , <https://astrea.linkeddata.es/shapes#25b8e5d2c37a112ff6806d6d3e9a01ae> , <https://astrea.linkeddata.es/shapes#65f3ba110a1cf6b9546691fc5480da9b> , <https://astrea.linkeddata.es/shapes#879490a2e37264b6eb5fe28b3a5378d2> , <https://astrea.linkeddata.es/shapes#bdc9d6e36d858fbcab3b836ff24354a7> , <https://astrea.linkeddata.es/shapes#8773a77f6e5383863e4bc777c38ac67e> , <https://astrea.linkeddata.es/shapes#a62a964a4686ebee2c9bf94ef85f1755> , <https://astrea.linkeddata.es/shapes#6be589a43fa4336e8c51608eebceab6b> , <https://astrea.linkeddata.es/shapes#d6ed0cca708a2d378e68400ea5071de0> , <https://astrea.linkeddata.es/shapes#b121e3db9357857bce7143afefbf4391> , <https://astrea.linkeddata.es/shapes#2a703af21a6ec5456b92b866e2f9cd31> , <https://astrea.linkeddata.es/shapes#24f7e81db14dfa3518623c7d201bfe1b> , <https://astrea.linkeddata.es/shapes#fde5d5526799288a3dd0e476713e94f9> , <https://astrea.linkeddata.es/shapes#52f07c0bbeba2fcc00d31bc9fa503af0> , <https://astrea.linkeddata.es/shapes#6e028f4eee8a3faebc7c012befed8c8d> , <https://astrea.linkeddata.es/shapes#618163425168a0366a6fc2ed163b1e43> , <https://astrea.linkeddata.es/shapes#3401323c6f41fa6462d9d0c85b79a91d> , <https://astrea.linkeddata.es/shapes#ccb65a0b78e3547e2c949ce92e6eef6a> , <https://astrea.linkeddata.es/shapes#d45c08692ee4505b75bb53bc84e8aa11> , <https://astrea.linkeddata.es/shapes#559d6cfb1309f2bc227b987412fb3c08> , <https://astrea.linkeddata.es/shapes#09a1f093fd2803d8ea9b786d597850e0> , <https://astrea.linkeddata.es/shapes#059f2ef5c5f12c053bf56fed3df7a7c4> , <https://astrea.linkeddata.es/shapes#9b7cb67f562cbf1a92b7e8356afd0520> , <https://astrea.linkeddata.es/shapes#5961d56923cb025272ca0a62e4e0c5db> , <https://astrea.linkeddata.es/shapes#16846f3da98b09620b5616ba41fd59ed> , <https://astrea.linkeddata.es/shapes#81f6c0670b8633980f841878692ca98f> , <https://astrea.linkeddata.es/shapes#05fed075f30bdaa41113c2e1fb5ac48a> , <https://astrea.linkeddata.es/shapes#7c4d0760741c6a18b2040f1af4616a18> , <https://astrea.linkeddata.es/shapes#bd34352fdbb2c79c8424bec364344940> , <https://astrea.linkeddata.es/shapes#c081cd19fde857cb34b89225f98a3aba> , <https://astrea.linkeddata.es/shapes#e0ec353999ed3ef41c066d80ee43616f> , <https://astrea.linkeddata.es/shapes#afcf5e3ccdddef5722ed6189e5530fe9> , <https://astrea.linkeddata.es/shapes#7813e578add78f1cd682ce7a48100ca4> , <https://astrea.linkeddata.es/shapes#c4f9411478924366701c42365cbb133b> , <https://astrea.linkeddata.es/shapes#409d3d43d975bd40eeb15bb5d46026f4> , <https://astrea.linkeddata.es/shapes#ffe6aa288c1455b36d94cde7346cca60> , <https://astrea.linkeddata.es/shapes#c60d3edb0ab6972f2086dbb77d8f3e0e> , <https://astrea.linkeddata.es/shapes#8916d34245ee935058f2c774d9189fcd> , <https://astrea.linkeddata.es/shapes#a721facafa0765e620a0bc947f0349ea> , <https://astrea.linkeddata.es/shapes#fc4530d9cf121be23a1dfa28665dc752> , <https://astrea.linkeddata.es/shapes#50dd8da611637f9a0dc1a980ac4eea2d> , <https://astrea.linkeddata.es/shapes#893b222cf63fcec4f884e151e1b87c30> , <https://astrea.linkeddata.es/shapes#45acda73912eeda82249c4d1ebbc4e5b> , <https://astrea.linkeddata.es/shapes#4788f1210162c397875ce9b62252918c> , <https://astrea.linkeddata.es/shapes#1f5d40cb807ff566b103e356883a1e4c> , <https://astrea.linkeddata.es/shapes#4855b3c0f7c86a0faa0f6197bbf6394d> , <https://astrea.linkeddata.es/shapes#b9116bef0154d9e9b3f2ddbaa4939e85> , <https://astrea.linkeddata.es/shapes#221a65800e0472f2d117ddcfe22575ad> , <https://astrea.linkeddata.es/shapes#b372341b3ab27e58272da18c64bb7b0d> , <https://astrea.linkeddata.es/shapes#5ed745c8e82cb118a2e92f37d23533a8> , <https://astrea.linkeddata.es/shapes#f9d5df784080b9617c4cb11eba49160c> , <https://astrea.linkeddata.es/shapes#148f292e052b451b40d5bc35a187d4f9> , <https://astrea.linkeddata.es/shapes#e4ecfca2c7cab10a5fc49bb76feb64a7> , <https://astrea.linkeddata.es/shapes#c2dafffb402b82904a869c0e94574f84> , <https://astrea.linkeddata.es/shapes#9863ce8635f7a3ed2f5d09fa21a6372c> , <https://astrea.linkeddata.es/shapes#0d69d9386119a571d664adcee46dda43> , <https://astrea.linkeddata.es/shapes#c1e44e9c6b1cd2f74855962a5001d557> , <https://astrea.linkeddata.es/shapes#e5956ecd574b8ec7ffdfd0ec2ef196d8> , <https://astrea.linkeddata.es/shapes#88d5a5a696aa8c516e63dae8d1f33e2e> , <https://astrea.linkeddata.es/shapes#ce7da8aa49b62c3b6413f698ec64c00b> , <https://astrea.linkeddata.es/shapes#785bd88d4ab4a4d821a952bd829276ac> , <https://astrea.linkeddata.es/shapes#d210ce54779e5b0b6177e5e0c37b39b5> , <https://astrea.linkeddata.es/shapes#1f1f9109575214fdcc8e37d9b0aca3bd> , <https://astrea.linkeddata.es/shapes#fa7b65e59659a00a87aa37498571d490> , <https://astrea.linkeddata.es/shapes#a1972a4f428ec8d43c166e4253cec0d5> , <https://astrea.linkeddata.es/shapes#d91e04ecd81dbd458a79a33c5dc2cdab> , <https://astrea.linkeddata.es/shapes#beee272e8bb8380516969d85a65eb72c> , <https://astrea.linkeddata.es/shapes#e57e3c367a5b665cd771c98981e06cd3> , <https://astrea.linkeddata.es/shapes#37e6ce4b5e02c2b4ce0f31db0fe7af1a> , <https://astrea.linkeddata.es/shapes#d162a01fa817b12492a6b126f707c757> , <https://astrea.linkeddata.es/shapes#a1ca5751cc1b5b78598873df3833d0ec> , <https://astrea.linkeddata.es/shapes#dd164d58b19e49056f10d5127563e028> , <https://astrea.linkeddata.es/shapes#c40c06339013706427350192b78ee9a1> , <https://astrea.linkeddata.es/shapes#4890ba35e405a5dfb08d10bdd645283e> , <https://astrea.linkeddata.es/shapes#84d3af8f91c5800f6d3ccf82fbcdd39f> , <https://astrea.linkeddata.es/shapes#4afc61ba9237c204d76c44b58d8cd3d7> , <https://astrea.linkeddata.es/shapes#86c6d6b8b74e5d6b3dbf407a8f9c0c9b> , <https://astrea.linkeddata.es/shapes#db8b404a2435386d97cbdcb3e95a2976> , <https://astrea.linkeddata.es/shapes#b97795e33f245142cdccf63cb8e2520b> , <https://astrea.linkeddata.es/shapes#61c56e422a5a9ba2ae55c459a4c82d49> , <https://astrea.linkeddata.es/shapes#bed160f81cee0dbd239bed241e10512b> , <https://astrea.linkeddata.es/shapes#04d297518923235e315af93b39320af9> , <https://astrea.linkeddata.es/shapes#a278c8c2286e1d20aed3a55743a48d35> , <https://astrea.linkeddata.es/shapes#c77f272ebe60d05f70c0b09953e3d57c> , <https://astrea.linkeddata.es/shapes#6cf8dcfccc9a0ab9d7a66073425ad3c8> , <https://astrea.linkeddata.es/shapes#703455eac1e97ec065edf33e12c59eae> , <https://astrea.linkeddata.es/shapes#f7ecd3672f5dfad98d00bf824e4dfd6e> , <https://astrea.linkeddata.es/shapes#9ba09822c5a479af77c82f98b6cd6a01> , <https://astrea.linkeddata.es/shapes#c8855470b106ab208dfedde6db3f11e0> , <https://astrea.linkeddata.es/shapes#b94fd653da4e44fe154e72c9a0312d58> , <https://astrea.linkeddata.es/shapes#711cc196cebe6d1c3fc265b59565541a> , <https://astrea.linkeddata.es/shapes#84636f94c365d2e9564c91e86c609226> , <https://astrea.linkeddata.es/shapes#30798c6709ed9377d27e3dedb58c5564> , <https://astrea.linkeddata.es/shapes#dd42edc483b9ec8d8ea04a52c41fef08> , <https://astrea.linkeddata.es/shapes#7034b770c4840847c4e52ee821e21ec1> , <https://astrea.linkeddata.es/shapes#ca3a81410c4d2a9f39d36825e67d4d85> , <https://astrea.linkeddata.es/shapes#437dae750376fa503109536d0553f00b> , <https://astrea.linkeddata.es/shapes#10fd9b158c9b73d0799a898056f2b330> , <https://astrea.linkeddata.es/shapes#8a100ba81d79f8c1dc78d671a88536de> , <https://astrea.linkeddata.es/shapes#08ff3275ebab70375a03301b79351ac5> , <https://astrea.linkeddata.es/shapes#dcc7357eae23022b449a6f4ff378ae02> , <https://astrea.linkeddata.es/shapes#7d1db9bbd974addb07e3e5ebb44797ca> , <https://astrea.linkeddata.es/shapes#774cadfd7f05ce44291d55a684795f3f> , <https://astrea.linkeddata.es/shapes#db1c8142f8740f04322e53fa15a9c4a2> , <https://astrea.linkeddata.es/shapes#004bd12e1558c552c0329e91c88926b7> , <https://astrea.linkeddata.es/shapes#13616d605b71be7216e7c3719b0de57c> , <https://astrea.linkeddata.es/shapes#e15ff60a8af55b79460473df897e1107> , <https://astrea.linkeddata.es/shapes#17c3ee08c79adc5abc4677b2c599c98b> , <https://astrea.linkeddata.es/shapes#e537c8ff1dc25e09645a8c8fe31e2ebb> , <https://astrea.linkeddata.es/shapes#69a927ff260f74c4520980c2eefd8e57> , <https://astrea.linkeddata.es/shapes#51ba3770d39cc423cfe6543d0fb2aa3b> , <https://astrea.linkeddata.es/shapes#b0b7f5bba04d51940f4745d137f474e6> , <https://astrea.linkeddata.es/shapes#f8b4d54ffd7268b2006881cfdbcbf157> , <https://astrea.linkeddata.es/shapes#611eac9d4a6f195c465bea7800ef40e3> , <https://astrea.linkeddata.es/shapes#77988cd7db61d16b433fd7c65924caab> , <https://astrea.linkeddata.es/shapes#d8772d61d1e5c3c7280dce967dfa2780> , <https://astrea.linkeddata.es/shapes#8da3c5c13a5721fac30fd7b2041bce69> , <https://astrea.linkeddata.es/shapes#1c1f1225e67d42955af929f56db8cc87> , <https://astrea.linkeddata.es/shapes#655639485ad5f539e637583209682aa4> , <https://astrea.linkeddata.es/shapes#2bb9a2e33526ae5a8fad3e4489802c6b> , <https://astrea.linkeddata.es/shapes#5197a14ab590766ebd5f598b104ed189> ;
+        <https://w3id.org/def/astrea#generatedShapesFrom>
+                <https://astrea.linkeddata.es/report/0620946147> .
+
+<https://astrea.linkeddata.es/shapes#4890ba35e405a5dfb08d10bdd645283e>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:OpticalConductivitySopt .
+
+<https://astrea.linkeddata.es/shapes#3b82c161afa0ef6582fa32ff8d816464>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Flats .
+
+<https://astrea.linkeddata.es/shapes#b121e3db9357857bce7143afefbf4391>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ElectronDensityOfStatesAtFermiLevel .
+
+<https://astrea.linkeddata.es/shapes#ec88863a0a3fbc22f501971639e8625c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:PressureDependenceOfPiezoresistivity .
+
+<https://astrea.linkeddata.es/shapes#273713397bbb4d612d4acfd71e0c3e0b>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:ProcessImage .
+
+<https://astrea.linkeddata.es/shapes#9ddbd7c811d68bbfae43b70fdec1bcf6>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:HeatCapacityDiscontinuity .
+
+<https://astrea.linkeddata.es/shapes#8fe907deac7b070d62f53720d70fe349>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:LuminousIntensity .
+
+<https://astrea.linkeddata.es/shapes#a0517b9aad06fe104fb28336d551622a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:IrradiationEnergy .
+
+<https://astrea.linkeddata.es/shapes#dd794f7a4ac9c62ede62b20fd7dd736e>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ElasticStiffnessCoefficient .
+
+<https://astrea.linkeddata.es/shapes#449397a07bbf88e0e3bf75d94fb03ee7>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Polyethers .
+
+<https://astrea.linkeddata.es/shapes#d6ed3be35f6c2cd36d7bb3f4a261084a>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:Strain .
+
+<https://astrea.linkeddata.es/shapes#6bb09edab3d303a8b394fc20a4782d0e>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Monomer .
+
+<https://astrea.linkeddata.es/shapes#5b62aaf006ef3286eb7cdac909b40083>
+        a               sh:NodeShape , sh:PropertyShape ;
+        sh:nodeKind     sh:IRI , sh:BlankNodeOrIRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#618163425168a0366a6fc2ed163b1e43> ;
+        sh:targetClass  OML-MaterialInformation:MeasurementMethod .
+
+<https://astrea.linkeddata.es/shapes#df694b0d1ebc78f01794f0ce166666c5>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Bronze .
+
+<https://astrea.linkeddata.es/shapes#4469a24cb2efbc5c2b1bd4af3d7f5da4>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Air-HardeningSteel .
+
+<https://astrea.linkeddata.es/shapes#c78993ea4ff7e12412036313261dc83f>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:SpecimenSize .
+
+<https://astrea.linkeddata.es/shapes#b4ab63ba2721035561befe81ad9bf864>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Te .
+
+<https://astrea.linkeddata.es/shapes#bee9d433786553149ebac0fcf8b844fd>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Electronic_MagneticAlloy .
+
+<https://astrea.linkeddata.es/shapes#a33fda830bebfa04907778f0b61297b0>
+        a               sh:NodeShape , sh:PropertyShape ;
+        sh:class        OML-MaterialInformation:UnitDimension ;
+        sh:nodeKind     sh:IRI , sh:BlankNodeOrIRI ;
+        sh:path         OML-MaterialInformation:UnitDimension ;
+        sh:targetClass  OML-MaterialInformation:UnitDimension .
+
+<https://astrea.linkeddata.es/shapes#7035465990661a1ad086e59d91902d64>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Md .
+
+<https://astrea.linkeddata.es/shapes#fcea2ecc101cf7bbf543fe62b7bf4b07>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ParamagneticCurieTemperature .
+
+<https://astrea.linkeddata.es/shapes#ec1e75689d7f32cac5490439dd3580fa>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:PhaseTransition .
+
+<https://astrea.linkeddata.es/shapes#b50b1b3ff587a0812b052e40b0b31caf>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:ContentRatio .
+
+<https://astrea.linkeddata.es/shapes#37fef6b435cac96445cb537185307fe9>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:LowAlloySteel .
+
+<https://astrea.linkeddata.es/shapes#91385b12280a80270fd5c1bb53c0fef9>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:BohrMagneton .
+
+<https://astrea.linkeddata.es/shapes#9b31df91345a36656671c50d7bc18c2d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#8b41914df807a6683975e1fde9eca891> ;
+        sh:targetClass  OML-MaterialInformation:EnvironmentalPressure .
+
+<https://astrea.linkeddata.es/shapes#2d7be547993b80a29d181e7053895467>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:IsothermalVolumeCompressibility .
+
+<https://astrea.linkeddata.es/shapes#2ca200a051b684408ff32e91f1f14c91>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:PhaseTransitionAtLowPressure .
+
+<https://astrea.linkeddata.es/shapes#2daa6065ed1197afb4a974ed96a85de2>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:PlanckConstant .
+
+<https://astrea.linkeddata.es/shapes#e6d9d46ada671befe79ef294136b05a6>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:TitaniumOxide .
+
+<https://astrea.linkeddata.es/shapes#b0b7f5bba04d51940f4745d137f474e6>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:H .
+
+<https://astrea.linkeddata.es/shapes#84a0620191783ed880909454080d35f8>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Metal .
+
+<https://astrea.linkeddata.es/shapes#05c602a12800c46a3a0f3c279bd81e54>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:EnergyGapForIndirectTransition .
+
+<https://astrea.linkeddata.es/shapes#4f3ea8eed186d572b9196d03127b57f7>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:SpeedOfLight_in_vacuum .
+
+<https://astrea.linkeddata.es/shapes#b0c6a53febe9b14ff0df2c788473ac8d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:SoundVelocity .
+
+<https://astrea.linkeddata.es/shapes#028f357305b27638b55b2d4314f56f88>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ZirconiumOxide .
+
+<https://astrea.linkeddata.es/shapes#99048d8e68b812e7581817a066b380e0>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:CopperAlloy .
+
+<https://astrea.linkeddata.es/shapes#1f634876753255de448d5f6f825a70c3>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:Dimension_Depth .
+
+<https://astrea.linkeddata.es/shapes#c40c06339013706427350192b78ee9a1>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Nitride .
+
+<https://astrea.linkeddata.es/shapes#c0cd605c1e9c8219dfa06150f214f1df>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:SpontaneousMagnetization .
+
+<https://astrea.linkeddata.es/shapes#065159f1a334e890438408a4325b444b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Polydienes .
+
+<https://astrea.linkeddata.es/shapes#fc3c0f04fc357fca240254d2dfa46971>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Prismatoid .
+
+<https://astrea.linkeddata.es/shapes#62c5b2df3fda73abe0f4dd3e5c5f72f1>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:HallCoefficient .
+
+<https://astrea.linkeddata.es/shapes#8728ffdd7f965c87046e415cd1f1860a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:VolumeThermalExpansionCoefficient .
+
+<https://astrea.linkeddata.es/shapes#b5a2030e876c7fa79c84ccef25e6146c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Au .
+
+<https://astrea.linkeddata.es/shapes#fdf2a9d4c3ea80956764bb15554e85ba>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Shell .
+
+<https://astrea.linkeddata.es/shapes#785bd88d4ab4a4d821a952bd829276ac>
+        a               sh:NodeShape , sh:PropertyShape ;
+        sh:class        OML-MaterialInformation:Property ;
+        sh:nodeKind     sh:IRI , sh:BlankNodeOrIRI ;
+        sh:path         OML-MaterialInformation:Property ;
+        sh:property     <https://astrea.linkeddata.es/shapes#059f2ef5c5f12c053bf56fed3df7a7c4> , <https://astrea.linkeddata.es/shapes#a33fda830bebfa04907778f0b61297b0> ;
+        sh:targetClass  OML-MaterialInformation:Property .
+
+<https://astrea.linkeddata.es/shapes#ce0d62528045a3fd525c9d4a0fc7def2>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:NickelBase .
+
+<https://astrea.linkeddata.es/shapes#36c1fde418126d350ce567c018efa663>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Permeability .
+
+<https://astrea.linkeddata.es/shapes#25bbcd6672b010b2b07c526035ac36c8>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:Standard .
+
+<https://astrea.linkeddata.es/shapes#156a52e5a5cd763ddeeb1a9f6bd5a617>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:TypeOfHeatTreatment .
+
+<https://astrea.linkeddata.es/shapes#7c4d0760741c6a18b2040f1af4616a18>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Cm .
+
+<https://astrea.linkeddata.es/shapes#837cddbbe638e08dc6e6fa9d624dc504>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Ac .
+
+<https://astrea.linkeddata.es/shapes#790f5f46d9cd40fcf2d57bcbecc71341>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:HoleMobility .
+
+<https://astrea.linkeddata.es/shapes#2bcc936e0e37803c8e99178ca5ba8840>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Gas .
+
+<https://astrea.linkeddata.es/shapes#1c5edad9e1c10b0f1874353469e11b6d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:IngotFormProcess .
+
+<https://astrea.linkeddata.es/shapes#5f6f2e0cef7bb0a998c5ac23f1d76ccf>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:WorkingRate .
+
+<https://astrea.linkeddata.es/shapes#5f84d1a2b8ca9a9fbb604d5dbff58edd>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Cr .
+
+<https://astrea.linkeddata.es/shapes#477f5e0e7427fbab34a684533b8095e9>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:No .
+
+<https://astrea.linkeddata.es/shapes#83c5e2c85f7b2a5254c18ab9c75d2e23>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:IronBase .
+
+<https://astrea.linkeddata.es/shapes#e7bc4c825ea68553c41525b7f84d7353>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:SolidSolution .
+
+<https://astrea.linkeddata.es/shapes#774cadfd7f05ce44291d55a684795f3f>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Volume .
+
+<https://astrea.linkeddata.es/shapes#2398c62a0912c1337471ab19019c88fa>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:GlassFiber .
+
+<https://astrea.linkeddata.es/shapes#bef04343c141b6a828ed5e41c4ea1524>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:UnitOfRatio .
+
+<https://astrea.linkeddata.es/shapes#581d09d2b620dd0599602b2c70b6b888>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Ellipsoid .
+
+<https://astrea.linkeddata.es/shapes#589fadb963a5743c14e768f3d86b79c9>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ElectronicAndElectrical .
+
+<https://astrea.linkeddata.es/shapes#becd1d8d7d1f11fecc9505b385462719>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:K .
+
+<https://astrea.linkeddata.es/shapes#825481a089f0398db9553623a8c79ae6>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AluminumCastingAlloy .
+
+<https://astrea.linkeddata.es/shapes#1c1f1225e67d42955af929f56db8cc87>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:V .
+
+<https://astrea.linkeddata.es/shapes#09ffb125d87ce6987513a5185b53d246>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Ra .
+
+<https://astrea.linkeddata.es/shapes#d6e72cde0515d13ca220e2958c54ade7>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Alloy .
+
+<https://astrea.linkeddata.es/shapes#26aec489105d8899bd297147b160c72a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:SolidAngle .
+
+<https://astrea.linkeddata.es/shapes#a90f8d9302d3d0d842d253513c3f7465>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#4bb1c1bc65300c687b05fd5a0de4af1e> ;
+        sh:targetClass  OML-MaterialInformation:EnvironmentalTemperature .
+
+<https://astrea.linkeddata.es/shapes#efdf2f7827df060d4e16a938e9b60cd6>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:SpecificEntropy .
+
+<https://astrea.linkeddata.es/shapes#2e0c19df36abd00ac78eea00c6dc45bb>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MolarEnergy .
+
+<https://astrea.linkeddata.es/shapes#d7f3e0b406a70b20a37dd81df788320b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:LinearMassDensity .
+
+<https://astrea.linkeddata.es/shapes#66c8cf921eb54e01c1cbd09563220173>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Prism .
+
+<https://astrea.linkeddata.es/shapes#a721facafa0765e620a0bc947f0349ea>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Na .
+
+<https://astrea.linkeddata.es/shapes#61c56e422a5a9ba2ae55c459a4c82d49>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Vacuum .
+
+<https://astrea.linkeddata.es/shapes#25b8e5d2c37a112ff6806d6d3e9a01ae>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Re .
+
+<https://astrea.linkeddata.es/shapes#05fed075f30bdaa41113c2e1fb5ac48a>
+        a            sh:PropertyShape ;
+        sh:class     OML-MaterialInformation:Temperature ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      OML-MaterialInformation:TestTemperature .
+
+<https://astrea.linkeddata.es/shapes#a6a55af33f9f0ce04d3c51c7014290db>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ElectromagneticConstant .
+
+<https://astrea.linkeddata.es/shapes#040bc83aa94356854856c455e7d89b1c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ThermoelectricPower .
+
+<https://astrea.linkeddata.es/shapes#16846f3da98b09620b5616ba41fd59ed>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Polyesters_Thioesters .
+
+<https://astrea.linkeddata.es/shapes#c92fc20082eeab9f80c218ad5ba42192>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:Notation .
+
+<https://astrea.linkeddata.es/shapes#d91e04ecd81dbd458a79a33c5dc2cdab>
+        a            sh:PropertyShape ;
+        sh:class     OML-MaterialInformation:Substance ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      OML-MaterialInformation:SubstanceClass .
+
+<https://astrea.linkeddata.es/shapes#db90644c0be20f550516c87fd6950741>
+        a               sh:NodeShape , sh:PropertyShape ;
+        sh:class        OML-MaterialInformation:EngineeringMaterial ;
+        sh:nodeKind     sh:IRI , sh:BlankNodeOrIRI ;
+        sh:path         OML-MaterialInformation:Specimen ;
+        sh:targetClass  OML-MaterialInformation:Specimen .
+
+<https://astrea.linkeddata.es/shapes#43a46889d4f012f0b3f233fc31ed5862>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ElectricChargeDensity .
+
+<https://astrea.linkeddata.es/shapes#f9d5df784080b9617c4cb11eba49160c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Uut .
+
+<https://astrea.linkeddata.es/shapes#f35bc3b9e19e34473201fc2ad51e5be5>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:TS20000SeriesStainlessSteel .
+
+<https://astrea.linkeddata.es/shapes#81a5ca3b0bc17682c6ddc9d546f5f3d9>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:AppliedStress .
+
+<https://astrea.linkeddata.es/shapes#acb02bec323c7a95a89816235202d236>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AISI1000SeriesSteel .
+
+<https://astrea.linkeddata.es/shapes#0c1307a78aec536d8428651e2f278d1c>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:Size .
+
+<https://astrea.linkeddata.es/shapes#dd42edc483b9ec8d8ea04a52c41fef08>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MaterialInformation .
+
+<https://astrea.linkeddata.es/shapes#d318d20addceae535aad539bc3f81146>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Rn .
+
+<https://astrea.linkeddata.es/shapes#61af656d76fe0392ad99d8346e07b60a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Dy .
+
+<https://astrea.linkeddata.es/shapes#a0a1889403f7a1743b75cd3aac367f09>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AluminumAlloy_3000Series .
+
+<https://astrea.linkeddata.es/shapes#711cc196cebe6d1c3fc265b59565541a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:RadiantIntensity .
+
+<https://astrea.linkeddata.es/shapes#0d69d9386119a571d664adcee46dda43>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:FlowState .
+
+<https://astrea.linkeddata.es/shapes#53015f9c0c579fc831a649216e232e37>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:MaximumContentRatio .
+
+<https://astrea.linkeddata.es/shapes#2fd2a6a6387f5c992ffad0ac6a2b7c53>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Glaze .
+
+<https://astrea.linkeddata.es/shapes#b8777be993594603368431b4c5f13c3e>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:DeoxidationProcess .
+
+<https://astrea.linkeddata.es/shapes#3b5e6d453dc78b7193411646de308dfb>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Polysulfones_Sulfoxides_Sulfonates_Suloamides .
+
+<https://astrea.linkeddata.es/shapes#6c44a0a8f5ce77cc6cd806bda7fc79c4>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Polystyrenes .
+
+<https://astrea.linkeddata.es/shapes#4805f8b0281a14cb786a966a0e931f73>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Fl .
+
+<https://astrea.linkeddata.es/shapes#9863ce8635f7a3ed2f5d09fa21a6372c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Torus .
+
+<https://astrea.linkeddata.es/shapes#58a30acb8e6c177812cf10dc447b3d67>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ParaboloidalSegment .
+
+<https://astrea.linkeddata.es/shapes#5aeefaf104e04aae86068146a5a35c09>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:S .
+
+<https://astrea.linkeddata.es/shapes#1bd1bda89af3abe5ae70f6132d708943>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Gd .
+
+<https://astrea.linkeddata.es/shapes#4e4482d21be3cf812b31c7046fa7b8ba>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ElectricPotentialDifference .
+
+<https://astrea.linkeddata.es/shapes#db8b404a2435386d97cbdcb3e95a2976>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Physical .
+
+<https://astrea.linkeddata.es/shapes#f453e2c8fcec3ed33bde580ec0cf429c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Non-FerrousAlloy .
+
+<https://astrea.linkeddata.es/shapes#c77f272ebe60d05f70c0b09953e3d57c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Mass .
+
+<https://astrea.linkeddata.es/shapes#fde5d5526799288a3dd0e476713e94f9>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Mn .
+
+<https://astrea.linkeddata.es/shapes#b372341b3ab27e58272da18c64bb7b0d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MolarEntropy .
+
+<https://astrea.linkeddata.es/shapes#9183eb5f9aac6bf09e4087edee923e12>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Mo .
+
+<https://astrea.linkeddata.es/shapes#7933ab8d12ca302d4c65c99cc3ea01ba>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Nb .
+
+<https://astrea.linkeddata.es/shapes#a827eeac357f51754b5b0b174d0c0b88>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:CarbonSteel .
+
+<https://astrea.linkeddata.es/shapes#a041459edc045910b81470649afc461f>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:ShearModulus .
+
+<https://astrea.linkeddata.es/shapes#e0ec353999ed3ef41c066d80ee43616f>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:SurfacePowerDensity .
+
+<https://astrea.linkeddata.es/shapes#c4e8493df865aa3b546f85d2dc784684>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:AluminumAlloy_7000Series .
+
+<https://astrea.linkeddata.es/shapes#d702b8b19f2b23300f33026552b3443a>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      OML-MaterialInformation:CoolingMethod .
+
+<https://astrea.linkeddata.es/shapes#42d7625ebd4b2b67e39ed4dc40446ae0>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:MolarMagneticSusceptibility .
+
+<https://astrea.linkeddata.es/shapes#8d3ead6dbf39fc80209386ef81a67454>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Lv .
+
+<https://astrea.linkeddata.es/shapes#5deb2a1861e4b984103e43cfcdc08e62>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  OML-MaterialInformation:Uus .

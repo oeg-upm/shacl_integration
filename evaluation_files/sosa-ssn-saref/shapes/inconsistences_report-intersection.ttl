@@ -1,0 +1,11 @@
+@prefix inc: <http://inconsistence.es#> .
+@prefix inc_ex: <http://inconsistence_example.es/resource/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+
+inc_ex:fac24785-f81b-437f-9819-804d51db13d2 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:or ;
+    inc:hasInconsistencyInClass ssn:System,
+        <https://saref.etsi.org/saref4syst/System> ;
+    inc:hasReport "Logical constraints not compatible for intersection operation." .
+

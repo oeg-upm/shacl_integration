@@ -1,0 +1,595 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix shape_int: <http://integratedshapes.es#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+shape_int:01239a45161ac560351ee1af2b4250ac0d926310 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Industrial_Paper> .
+
+shape_int:0b9b88d503e75f3c6426e54ae081e7f549affa01 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Proceedings_Publisher> .
+
+shape_int:0db76b3b4810c561e562043eef7f12ada51482d8 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Tutorial_Chair> .
+
+shape_int:0e5140bf174a66bcfe56656da83c3daa4cffbe95 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Conference_Trip> .
+
+shape_int:0ffd5789e3395aa34efba7d13b4d7ff3bc195e9f a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Demo_Session> .
+
+shape_int:13b8fe38a93b1e74be75932a7d667b18af065fa8 a sh:NodeShape ;
+    sh:targetClass <http://conference#Workshop>,
+        <http://ekaw#Workshop> .
+
+shape_int:171cb3f1acafee7ac11a7383ee2fdf5d308039fd a sh:NodeShape ;
+    sh:targetClass <http://conference#Organizing_committee> .
+
+shape_int:19ae3b9c4b8ec11376e5abe86f08acccad79c3d6 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Negative_Review> .
+
+shape_int:22d507f2ba74e43593de3ae3f550bf202c076adc a sh:NodeShape ;
+    sh:property shape_int:3e9949f71bb27cbcecfc83e336993b5d3339abd5,
+        shape_int:6e001307e4cd3239d37a37e0a402415208cc4576,
+        shape_int:a981f1a69787d53823d4e591e2e13ba894f6b45f,
+        shape_int:b03709d4e5b7ca7c3de295936424a34145c0f980 ;
+    sh:targetClass <http://conference#Paper>,
+        <http://ekaw#Paper> .
+
+shape_int:22d6c6479685454837fcf6525441a7d66b491973 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#PC_Chair> .
+
+shape_int:26d7fbc6daf4a441508410bb57bb10643654d8b1 a sh:NodeShape ;
+    sh:targetClass <http://conference#Call_for_paper> .
+
+shape_int:2701a94c0eb55cbd958a87dff3e959673ff1bf53 a sh:NodeShape ;
+    sh:targetClass <http://conference#Tutorial>,
+        <http://ekaw#Tutorial> .
+
+shape_int:2df622c6446763ea2f52151dfd44cc1bb97350f2 a sh:NodeShape ;
+    sh:property shape_int:872ea1caa307efe92d411cf5c6cf2d9cd5c262a7 ;
+    sh:targetClass <http://ekaw#Proceedings> .
+
+shape_int:3369a04f11eaedae82e89b8a2d1f7cff48ead0ad a sh:NodeShape ;
+    sh:description """Accepted paper to become part of proceedings. 
+Note that camera-ready paper is not considered as 'accepted paper', as it was accepted in a different form!""" ;
+    sh:property shape_int:6e001307e4cd3239d37a37e0a402415208cc4576 ;
+    sh:targetClass <http://conference#Accepted_contribution>,
+        <http://ekaw#Accepted_Paper> .
+
+shape_int:3445cce34e34e8acb6e880f56bd75e0d311b278f a sh:NodeShape ;
+    sh:targetClass <http://conference#Regular_author>,
+        <http://ekaw#Paper_Author> .
+
+shape_int:369f4d949c7824906f14954621b476669f3e1a67 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Neutral_Review> .
+
+shape_int:38a51d77c773092a180392b9c16271bc2caf2720 a sh:NodeShape ;
+    sh:targetClass <http://conference#Conference_contributor> .
+
+shape_int:3a69789c38cbb605b68d38f533dafae61cfd7014 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Session_Chair> .
+
+shape_int:3bf160cc841881d641677ea11b185581c3903405 a sh:NodeShape ;
+    sh:property shape_int:0b0396e194d56feb9b2a876b2b54f0b746c280c0 ;
+    sh:targetClass <http://conference#Conference_contribution> .
+
+shape_int:3deca5033ada35871cb2bf4e872b3c4730e80ce0 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#OC_Member> .
+
+shape_int:42b32794792b48313cd1be9ca11b690d3e614683 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Student> .
+
+shape_int:45b5d7133920668806a905a6de434e0980027350 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Scientific_Event> .
+
+shape_int:506ed02ae694517b4f82788d4f175c126d6ced0a a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Demo_Chair> .
+
+shape_int:560781fbb836b628a55ae47f7e46be33aa68e048 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Multi-author_Volume> .
+
+shape_int:56383e42cafc7fd04997847e9b3647a4c96725e2 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Social_Event> .
+
+shape_int:5d9416492786135087b04a55d3fce1ae567509dd a sh:NodeShape ;
+    sh:property shape_int:0b0396e194d56feb9b2a876b2b54f0b746c280c0 ;
+    sh:targetClass <http://conference#Invited_talk> .
+
+shape_int:5f96294685a5f0b9cf2bb0a403157a61b67bcb26 a sh:NodeShape ;
+    sh:targetClass <http://conference#Late_paid_applicant>,
+        <http://ekaw#Late-Registered_Participant> .
+
+shape_int:6132a8b7e106e0cb96215b7916f73889d5558539 a sh:NodeShape ;
+    sh:property shape_int:6822b8afb7f44276a73968b13231fe14f3a0a1b7 ;
+    sh:targetClass <http://ekaw#Conference_Session> .
+
+shape_int:61d70d6e8feec4a24094f690826f6c474b69a22c a sh:NodeShape ;
+    sh:property shape_int:0f64a77c4c2a3ccd190750969702d58eb0b58ddb ;
+    sh:targetClass <http://conference#Publisher> .
+
+shape_int:626e3baf05c0d17a7172e57af0ce3f3cc4b6684f a sh:NodeShape ;
+    sh:targetClass <http://conference#Program_committee> .
+
+shape_int:678a4ca44b0581f2801336d40bd3c9ca46a47b96 a sh:NodeShape ;
+    sh:property shape_int:52d6ec0733d59ccdaf5f365998d17b582f040cc2 ;
+    sh:targetClass <http://conference#Invited_speaker>,
+        <http://ekaw#Invited_Speaker> .
+
+shape_int:691f3638189ee1116a33e894988e260d2f433fa1 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Organising_Agency> .
+
+shape_int:6b29be8ad73563a0d1b82151a643af7daa0a567e a sh:NodeShape ;
+    sh:property shape_int:43f0fa2950bf7b69efdfbd161ceabc9fe1c3d374 ;
+    sh:targetClass <http://conference#Information_for_participants>,
+        <http://ekaw#Programme_Brochure> .
+
+shape_int:6c3e09ed39a70261cb624818a2e5710ab6abb9ba a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Workshop_Session> .
+
+shape_int:6ccfd84518e774540aa028a44b24f745188126f3 a sh:NodeShape ;
+    sh:targetClass <http://conference#Conference_participant> .
+
+shape_int:6db03489051deafbfce02d76f8d61b1cf9ad0dd3 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Invited_Talk_Abstract> .
+
+shape_int:6e875951a6f9aa1374d93572de657c12ded57355 a sh:NodeShape ;
+    sh:property shape_int:0b0396e194d56feb9b2a876b2b54f0b746c280c0 ;
+    sh:targetClass <http://conference#Presentation> .
+
+shape_int:6e99c1d3b1502c090dcd07ad2e7110ed5c0118a9 a sh:NodeShape ;
+    sh:property shape_int:4f895b95b95b2ec658cac3e621289cc181ba5129 ;
+    sh:targetClass <http://conference#Organization>,
+        <http://ekaw#Organisation> .
+
+shape_int:6ea195458b5cd737b7566564e3dd60b843951292 a sh:NodeShape ;
+    sh:targetClass <http://conference#Contribution_co-author> .
+
+shape_int:6f091f093d089a6bad34f5c7f9787f15dc7d599b a sh:NodeShape ;
+    sh:property shape_int:220522ff180f32825e3a4b34575f2c1e388fd420 ;
+    sh:targetClass <http://conference#Active_conference_participant> .
+
+shape_int:6f35a9690affb8460cee9f37dcacd6b3cf5dc6d0 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Conference_Paper> .
+
+shape_int:715432dcf30be1042d0a59bfe45bed957aad7a9a a sh:NodeShape ;
+    sh:targetClass <http://ekaw#University> .
+
+shape_int:7802aa59d825d8afa9557cdb2f0b8d1596325efb a sh:NodeShape ;
+    sh:property shape_int:43f0fa2950bf7b69efdfbd161ceabc9fe1c3d374,
+        shape_int:a478f02e513c3cc769942a8c6cd0aee2cbfb4dc6 ;
+    sh:targetClass <http://conference#Conference_www>,
+        <http://ekaw#Web_Site> .
+
+shape_int:793207b1882603cb8538cfd48516a549d89fe18f a sh:NodeShape ;
+    sh:targetClass <http://conference#Early_paid_applicant>,
+        <http://ekaw#Early-Registered_Participant> .
+
+shape_int:796e9569714e26f396d204481935cf4b897dcf39 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Poster_Session> .
+
+shape_int:7df8729ace89a741a822c0259c92cbe30e78a340 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Research_Institute> .
+
+shape_int:7e13bd176f89a12f0b614b55ffc19c14515ef920 a sh:NodeShape ;
+    sh:property shape_int:0f64a77c4c2a3ccd190750969702d58eb0b58ddb,
+        shape_int:a3a078f5a6aeb0d838525ea1f56be19681328628 ;
+    sh:targetClass <http://conference#Topic>,
+        <http://ekaw#Research_Topic> .
+
+shape_int:7eb36940b51728c5f4a526495e887e70ad6f3c0a a sh:NodeShape ;
+    sh:targetClass <http://conference#Conference_announcement> .
+
+shape_int:811736270140a1e1a48b89c09e49ee22aab7c8ad a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Presenter> .
+
+shape_int:863d17f02d6d8eb86694543977130cff3e73903d a sh:NodeShape ;
+    sh:targetClass <http://conference#Extended_abstract> .
+
+shape_int:89459096ede31c707a08d08b3d522381df409c8d a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Flyer> .
+
+shape_int:8a1e29b3dd009e1104338701230be5d7a38b1fed a sh:NodeShape ;
+    sh:property shape_int:0f64a77c4c2a3ccd190750969702d58eb0b58ddb ;
+    sh:targetClass <http://conference#Conference> .
+
+shape_int:8c41ae88467fe5bbad09fcd488662b25c3ec5333 a sh:NodeShape ;
+    sh:property shape_int:4f895b95b95b2ec658cac3e621289cc181ba5129,
+        shape_int:52d6ec0733d59ccdaf5f365998d17b582f040cc2,
+        shape_int:b09cb6531dab08038c91477752b8d2588bffdb7f,
+        shape_int:cdf6ca16be2aca0eedade6bad565ee45972b4b3b,
+        shape_int:e508f166aa658aa54c63f3df5637f32d609f0111 ;
+    sh:targetClass <http://conference#Person>,
+        <http://ekaw#Person> .
+
+shape_int:8d1bb6ccadfc7aac69f330d0085467180c7958f4 a sh:NodeShape ;
+    sh:targetClass <http://conference#Conference_fees> .
+
+shape_int:8e3a4e6d79de822cebc9325a857edf19eeeae706 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#SC_Member> .
+
+shape_int:8ee79f37775876baac8fd290fbbad90d17352796 a sh:NodeShape ;
+    sh:targetClass <http://conference#Camera_ready_contribution> .
+
+shape_int:920548e28379fb7f645c8d6e7bcd84f7a8dd156d a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Regular_Session> .
+
+shape_int:9236076d68c921134d58010908c15747c2993803 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Positive_Review> .
+
+shape_int:9253ecd8bf96649ed64d26e02732d4fce8c98b54 a sh:NodeShape ;
+    sh:targetClass <http://conference#Contribution_1th-author> .
+
+shape_int:94afa7c8e5f0181642548e2f0358bb856c21fd81 a sh:NodeShape ;
+    sh:property shape_int:0b0396e194d56feb9b2a876b2b54f0b746c280c0 ;
+    sh:targetClass <http://conference#Written_contribution> .
+
+shape_int:9c80c04c73c3ce340a17a93498b43a93c59882df a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Industrial_Session> .
+
+shape_int:9d9bb9c57c2ae55256a7ca795e2aa64923098ded a sh:NodeShape ;
+    sh:targetClass <http://ekaw#PC_Member> .
+
+shape_int:9f40ce1c192d7a22c8540938ee30642e877d3dba a sh:NodeShape ;
+    sh:targetClass <http://conference#Submitted_contribution>,
+        <http://ekaw#Submitted_Paper> .
+
+shape_int:9feb5376c5dd9ae7c638891c8c2597e637b6709d a sh:NodeShape ;
+    sh:property shape_int:c9a2526666d9c2cfaafdd3cae8346635201ac5a5 ;
+    sh:targetClass <http://conference#Chair> .
+
+shape_int:a02cac530472a783bbacff56cf94cbd5796e7c10 a sh:NodeShape ;
+    sh:property shape_int:3b2c545283df159233209d8570fbc5f508489ffc ;
+    sh:targetClass <http://ekaw#Contributed_Talk> .
+
+shape_int:a74f16c11792da6a36979a58a1ba2b4333632f57 a sh:NodeShape ;
+    sh:property shape_int:4ceec3f44276328862b8795c8b78aa2b5635664a,
+        shape_int:6b220828cd5c806e19177354d8d1b2dac2cca65e ;
+    sh:targetClass <http://conference#Reviewer> .
+
+shape_int:a8a987bb78614002835c2b15bd97d1943928a141 a sh:NodeShape ;
+    sh:property shape_int:0b0396e194d56feb9b2a876b2b54f0b746c280c0 ;
+    sh:targetClass <http://conference#Regular_contribution> .
+
+shape_int:aa64bad217455f2e2bec910f4fd6711bf8d92ae3 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Conference_Banquet> .
+
+shape_int:ab625835b4fd6221d57e8c1aa7d53a487742585f a sh:NodeShape ;
+    sh:targetClass <http://conference#Passive_conference_participant> .
+
+shape_int:ad8919ace091b14011c6439cfd5e1707b58f5abd a sh:NodeShape ;
+    sh:property shape_int:073de49214d65d8a33b5760b06d8990a2c7e6ea0,
+        shape_int:291b4ba51291b47fbc10ede13ca5d3428274c249,
+        shape_int:6822b8afb7f44276a73968b13231fe14f3a0a1b7,
+        shape_int:b03709d4e5b7ca7c3de295936424a34145c0f980 ;
+    sh:targetClass <http://ekaw#Event> .
+
+shape_int:af25de11965a510adf99937fce3e521faadb5fa1 a sh:NodeShape ;
+    sh:property shape_int:f7d9254671f0b1d22b8c877ba2f0dee13418562c ;
+    sh:targetClass <http://ekaw#Possible_Reviewer> .
+
+shape_int:b1512abbdde09973d42f367434ab3a24c808be12 a sh:NodeShape ;
+    sh:targetClass <http://conference#Registeered_applicant> .
+
+shape_int:b1c5a7af06ba8c911bcfd11f72d7463fed9a472d a sh:NodeShape ;
+    sh:targetClass <http://conference#Track>,
+        <http://ekaw#Track> .
+
+shape_int:b38f0b66394e39220e4b2e528ec71ef6e0b2a7e7 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Invited_Talk> .
+
+shape_int:b4045b8865f0427856cf035c7aa7d172b0713412 a sh:NodeShape ;
+    sh:property shape_int:1dde5fe43dcbcab538494222f7aac53d336794c3,
+        shape_int:ae891e2e6abcd089123949c45a8b66f8169115e7,
+        shape_int:cef0aec7e62f85a3e8e5f39a2cbf0f4320c45164,
+        shape_int:dfbd385e3a1a821ed2c7dbfe564576fc73480f2d,
+        shape_int:e4dbe05d3c8288960fd73ee55ed2327e969e51ae,
+        shape_int:ee2313dbd1058d8a8acf0cc2b6ab645681626566 ;
+    sh:targetClass <http://conference#Important_dates> .
+
+shape_int:b9da3807d3630f966a8521e8c78b171e5326afde a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Tutorial_Abstract> .
+
+shape_int:be5e27871b345d75a8ad819dfbf73a7ce8c4297b a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Academic_Institution> .
+
+shape_int:c48755263e53ee8ea4418e14c983fd28bd2721fb a sh:NodeShape ;
+    sh:targetClass <http://conference#Conference_applicant> .
+
+shape_int:c6312bb5607b3762069dc350199f9a90f498cea9 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Demo_Paper> .
+
+shape_int:d090952303eb6bd50b51a72cd0b3028aedf2b138 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Individual_Presentation> .
+
+shape_int:d219c68101f532de10add2cf42fb9dbeca73d3be a sh:NodeShape ;
+    sh:property shape_int:6efb719d12d563633911959afe6df0c14cd90ea9 ;
+    sh:targetClass <http://ekaw#Location> .
+
+shape_int:d534c8241ae785acc4a780aa8ff1a122ed59bb18 a sh:NodeShape ;
+    sh:property shape_int:6e001307e4cd3239d37a37e0a402415208cc4576 ;
+    sh:targetClass <http://conference#Reviewed_contribution>,
+        <http://ekaw#Evaluated_Paper> .
+
+shape_int:d79da395b5d7a09c6439a5f2660d8c568186ab7e a sh:NodeShape ;
+    sh:property shape_int:a981f1a69787d53823d4e591e2e13ba894f6b45f ;
+    sh:targetClass <http://conference#Abstract>,
+        <http://ekaw#Abstract> .
+
+shape_int:db6b74e8da30424bc86b8abbd1d94042242f1f4d a sh:NodeShape ;
+    sh:targetClass <http://conference#Call_for_participation> .
+
+shape_int:debd172028cd911a06d10b0cea578e6248911b95 a sh:NodeShape ;
+    sh:targetClass <http://conference#Organizer> .
+
+shape_int:df2933c82edbe0b140c4d73f52430a76b6eb2b70 a sh:NodeShape ;
+    sh:property shape_int:3e9949f71bb27cbcecfc83e336993b5d3339abd5 ;
+    sh:targetClass <http://ekaw#Assigned_Paper> .
+
+shape_int:e214b8a29923056887b7edf6635d90dcbb2abe88 a sh:NodeShape ;
+    sh:property shape_int:05381337efb7a42a2ca002dbd7c7bf09d0088ca3,
+        shape_int:0e557aa06f6969a04fa3c2f1482aa74e29b96cf5,
+        shape_int:2712fe288f6cffbbbb9ccd0cfd23851e4f7f7c15,
+        shape_int:2f14b34e6c031c5c449c1c7bdc0574e0e83b5710,
+        shape_int:f9253a11b0da653c9e58debb355dfcc72cf40891 ;
+    sh:targetClass <http://conference#Conference_document>,
+        <http://ekaw#Document> .
+
+shape_int:e4c4ebae4546e7d0620c230a574213e1f2d3875a a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Agency_Staff_Member> .
+
+shape_int:e6d9add0568d1389b5b3e5ebe1e6a0d75a5cb8fd a sh:NodeShape ;
+    sh:targetClass <http://ekaw#OC_Chair> .
+
+shape_int:e994506de17160baa0796d088d7f4be92cb0c0d6 a sh:NodeShape ;
+    sh:targetClass <http://conference#Steering_committee> .
+
+shape_int:ed72f6d2f46b74af44aa548c41124a8b07227e65 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Workshop_Paper> .
+
+shape_int:f00488a8d0ac1097ebdd10629472e25d03ac8668 a sh:NodeShape ;
+    sh:property shape_int:05381337efb7a42a2ca002dbd7c7bf09d0088ca3,
+        shape_int:2f14b34e6c031c5c449c1c7bdc0574e0e83b5710 ;
+    sh:targetClass <http://ekaw#Camera_Ready_Paper> .
+
+shape_int:f02a0e47d99b4051d5dde50d4b62563a11d49c95 a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Conference_Participant> .
+
+shape_int:f5a4be8353eba0e9899074952904ba5d35804d6b a sh:NodeShape ;
+    sh:targetClass <http://ekaw#Regular_Paper> .
+
+shape_int:f7f1997c6cd1aa051279675742272a956e7db628 a sh:NodeShape ;
+    sh:property shape_int:073de49214d65d8a33b5760b06d8990a2c7e6ea0,
+        shape_int:6822b8afb7f44276a73968b13231fe14f3a0a1b7 ;
+    sh:targetClass <http://ekaw#Session> .
+
+shape_int:f8f5a5bc1acf26f4c2fc4c22a0a1a9fb4ebf6256 a sh:NodeShape ;
+    sh:targetClass <http://conference#Paid_applicant> .
+
+shape_int:fc94dc6a89f8e4dea61d4f6bd4503abe3a07e732 a sh:NodeShape ;
+    sh:targetClass <http://conference#Rejected_contribution>,
+        <http://ekaw#Rejected_Paper> .
+
+shape_int:ff3cbea2075773c7713c5625599c60b8728ab183 a sh:NodeShape ;
+    sh:property shape_int:cc9241fc59846a6c7b286c496f1742e3fc3c8537 ;
+    sh:targetClass <http://conference#Track-workshop_chair>,
+        <http://ekaw#Workshop_Chair> .
+
+shape_int:0e557aa06f6969a04fa3c2f1482aa74e29b96cf5 a sh:PropertyShape ;
+    sh:class <http://conference#Person> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://conference#has_authors> .
+
+shape_int:1dde5fe43dcbcab538494222f7aac53d336794c3 a sh:PropertyShape ;
+    sh:datatype xsd:date ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://conference#is_a_date_of_camera_ready_paper_submission> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:220522ff180f32825e3a4b34575f2c1e388fd420 a sh:PropertyShape ;
+    sh:class <http://conference#Presentation> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://conference#gives_presentations> .
+
+shape_int:2712fe288f6cffbbbb9ccd0cfd23851e4f7f7c15 a sh:PropertyShape ;
+    sh:datatype xsd:date ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://conference#has_a_date_of_issue> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:291b4ba51291b47fbc10ede13ca5d3428274c249 a sh:PropertyShape ;
+    sh:class <http://ekaw#Location> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://ekaw#heldIn> .
+
+shape_int:3b2c545283df159233209d8570fbc5f508489ffc a sh:PropertyShape ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://ekaw#presentationOfPaper> .
+
+shape_int:4ceec3f44276328862b8795c8b78aa2b5635664a a sh:PropertyShape ;
+    sh:class <http://conference#Reviewer> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://conference#invited_by> .
+
+shape_int:6b220828cd5c806e19177354d8d1b2dac2cca65e a sh:PropertyShape ;
+    sh:class <http://conference#Reviewer> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://conference#invites_co-reviewers> .
+
+shape_int:6efb719d12d563633911959afe6df0c14cd90ea9 a sh:PropertyShape ;
+    sh:class <http://ekaw#Event> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://ekaw#locationOf> .
+
+shape_int:872ea1caa307efe92d411cf5c6cf2d9cd5c262a7 a sh:PropertyShape ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://ekaw#volumeContainsPaper> .
+
+shape_int:a3a078f5a6aeb0d838525ea1f56be19681328628 a sh:PropertyShape ;
+    sh:class <http://conference#Conference_part> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://conference#is_a_topis_of_conference_parts> .
+
+shape_int:a478f02e513c3cc769942a8c6cd0aee2cbfb4dc6 a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://conference#has_a_URL> ;
+    sh:pattern ".*" .
+
+shape_int:ae891e2e6abcd089123949c45a8b66f8169115e7 a sh:PropertyShape ;
+    sh:datatype xsd:date ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://conference#is_an_ending_date> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:b09cb6531dab08038c91477752b8d2588bffdb7f a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://conference#has_the_first_name> ;
+    sh:pattern ".*" .
+
+shape_int:c9a2526666d9c2cfaafdd3cae8346635201ac5a5 a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://conference#was_a_committee_chair_of> ;
+    sh:qualifiedMinCount "1" .
+
+shape_int:cc9241fc59846a6c7b286c496f1742e3fc3c8537 a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://conference#was_a_track-workshop_chair_of> ;
+    sh:qualifiedMinCount "1" .
+
+shape_int:cdf6ca16be2aca0eedade6bad565ee45972b4b3b a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://conference#has_an_email> ;
+    sh:pattern ".*" .
+
+shape_int:cef0aec7e62f85a3e8e5f39a2cbf0f4320c45164 a sh:PropertyShape ;
+    sh:datatype xsd:date ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://conference#is_a_date_of_acceptance_announcement> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:dfbd385e3a1a821ed2c7dbfe564576fc73480f2d a sh:PropertyShape ;
+    sh:datatype xsd:date ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://conference#is_a_starting_date> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:e4dbe05d3c8288960fd73ee55ed2327e969e51ae a sh:PropertyShape ;
+    sh:datatype xsd:date ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://conference#is_an_abstract_submission_date> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:e508f166aa658aa54c63f3df5637f32d609f0111 a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://conference#has_the_last_name> ;
+    sh:pattern ".*" .
+
+shape_int:ee2313dbd1058d8a8acf0cc2b6ab645681626566 a sh:PropertyShape ;
+    sh:datatype xsd:date ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://conference#is_a_full_paper_submission_date> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:f7d9254671f0b1d22b8c877ba2f0dee13418562c a sh:PropertyShape ;
+    sh:class <http://ekaw#Paper> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://ekaw#reviewerOfPaper> .
+
+shape_int:f9253a11b0da653c9e58debb355dfcc72cf40891 a sh:PropertyShape ;
+    sh:class <http://ekaw#Document> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://ekaw#hasUpdatedVersion> .
+
+shape_int:05381337efb7a42a2ca002dbd7c7bf09d0088ca3 a sh:PropertyShape ;
+    sh:class <http://ekaw#Document> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://ekaw#updatedVersionOf> .
+
+shape_int:073de49214d65d8a33b5760b06d8990a2c7e6ea0 a sh:PropertyShape ;
+    sh:class <http://ekaw#Event> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://ekaw#hasEvent> .
+
+shape_int:2f14b34e6c031c5c449c1c7bdc0574e0e83b5710 a sh:PropertyShape ;
+    sh:class <http://ekaw#Person> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://ekaw#writtenBy> .
+
+shape_int:3e9949f71bb27cbcecfc83e336993b5d3339abd5 a sh:PropertyShape ;
+    sh:class <http://ekaw#Possible_Reviewer> ;
+    sh:minCount "3" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://ekaw#hasReviewer> .
+
+shape_int:43f0fa2950bf7b69efdfbd161ceabc9fe1c3d374 a sh:PropertyShape ;
+    sh:class <http://ekaw#Event> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://ekaw#listsEvent> .
+
+shape_int:4f895b95b95b2ec658cac3e621289cc181ba5129 a sh:PropertyShape ;
+    sh:class <http://ekaw#Event> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://ekaw#organises> .
+
+shape_int:52d6ec0733d59ccdaf5f365998d17b582f040cc2 a sh:PropertyShape ;
+    sh:class [ rdf:rest ( <http://ekaw#Document> <http://conference#Conference_document> ) ] ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path [ sh:alternativePath ( <http://conference#contributes> <http://ekaw#authorOf> ) ] ;
+    sh:qualifiedMinCount "1" .
+
+shape_int:a981f1a69787d53823d4e591e2e13ba894f6b45f a sh:PropertyShape ;
+    sh:class <http://ekaw#Individual_Presentation> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://ekaw#paperPresentedAs> .
+
+shape_int:b03709d4e5b7ca7c3de295936424a34145c0f980 a sh:PropertyShape ;
+    sh:class <http://ekaw#Research_Topic> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://ekaw#coversTopic> .
+
+shape_int:0f64a77c4c2a3ccd190750969702d58eb0b58ddb a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://conference#has_a_name> ;
+    sh:pattern ".*" .
+
+shape_int:6822b8afb7f44276a73968b13231fe14f3a0a1b7 a sh:PropertyShape ;
+    sh:class <http://ekaw#Event> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://ekaw#partOfEvent> .
+
+shape_int:6e001307e4cd3239d37a37e0a402415208cc4576 a sh:PropertyShape ;
+    sh:class <http://ekaw#Review> ;
+    sh:minCount "3" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path [ sh:alternativePath ( <http://conference#has_a_review> <http://ekaw#hasReview> ) ] .
+
+shape_int:0b0396e194d56feb9b2a876b2b54f0b746c280c0 a sh:PropertyShape ;
+    sh:class <http://conference#Conference_volume> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://conference#is_submitted_at> .
+

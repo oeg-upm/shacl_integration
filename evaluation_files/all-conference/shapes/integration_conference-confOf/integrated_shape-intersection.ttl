@@ -1,0 +1,995 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix shape_int: <http://integratedshapes.es#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+shape_int:13b8fe38a93b1e74be75932a7d667b18af065fa8 a sh:NodeShape ;
+    sh:targetClass <http://confOf#Workshop>,
+        <http://conference#Workshop> .
+
+shape_int:171cb3f1acafee7ac11a7383ee2fdf5d308039fd a sh:NodeShape ;
+    sh:property shape_int:041dcb720292ce4e6efec4f9f55054f4ec903847,
+        shape_int:18c439b536a4b3b36182ce0c5d569a7fe60d275d,
+        shape_int:625b4c1269046d15203f246c0d9f4552985a6733,
+        shape_int:c245b25baa1055a056a488a789afd7c59f5bb42a ;
+    sh:targetClass <http://conference#Organizing_committee> .
+
+shape_int:1eda23758be9e36e5e0d2a6a87de584aaca0193f a sh:NodeShape ;
+    sh:targetClass <http://confOf#Administrator> .
+
+shape_int:1f851e954227e686b1fb5a996d78e3aa52dda88f a sh:NodeShape ;
+    sh:targetClass <http://confOf#Banquet> .
+
+shape_int:1ff7c2ba3964a56bc44208ab3db99db4106fb6d2 a sh:NodeShape ;
+    sh:description "Submission of contributions",
+        "confTool" ;
+    sh:targetClass <http://confOf#Submission_event> .
+
+shape_int:2193fcd90ae3a2b3498bb3a09cee0b536bc94cf2 a sh:NodeShape ;
+    sh:property shape_int:2769bba963ce779a0a35f78fe71081cbaac674a5,
+        shape_int:ef4d1f29ecdcc89584524c4de0c4ff14f3c5ff06 ;
+    sh:targetClass <http://conference#Review_expertise> .
+
+shape_int:22d507f2ba74e43593de3ae3f550bf202c076adc a sh:NodeShape ;
+    sh:property shape_int:c0dd1ec253396007b6baba2ad87d9228306b6f2e ;
+    sh:targetClass <http://confOf#Paper>,
+        <http://conference#Paper> .
+
+shape_int:2588cbf561fb4d8122b27e244ada8e68ab2c048c a sh:NodeShape ;
+    sh:property shape_int:0f64a77c4c2a3ccd190750969702d58eb0b58ddb,
+        shape_int:3aec3d7a10658e723b204da66affb317e5d71812,
+        shape_int:da6349804bb5efed014f938fa8c8b94074edf0e5,
+        shape_int:e2db5458593e144dfd881f3d88bff6f508c8beeb ;
+    sh:targetClass <http://conference#Conference_proceedings> .
+
+shape_int:26d7fbc6daf4a441508410bb57bb10643654d8b1 a sh:NodeShape ;
+    sh:targetClass <http://conference#Call_for_paper> .
+
+shape_int:2701a94c0eb55cbd958a87dff3e959673ff1bf53 a sh:NodeShape ;
+    sh:targetClass <http://confOf#Tutorial>,
+        <http://conference#Tutorial> .
+
+shape_int:38a51d77c773092a180392b9c16271bc2caf2720 a sh:NodeShape ;
+    sh:targetClass <http://conference#Conference_contributor> .
+
+shape_int:3bf160cc841881d641677ea11b185581c3903405 a sh:NodeShape ;
+    sh:property shape_int:0b0396e194d56feb9b2a876b2b54f0b746c280c0,
+        shape_int:38f9f0c6f83078c66b0f87094262d744daab33d0,
+        shape_int:529cd3d64231667aa8d01f2eee503b4ddf29e554,
+        shape_int:64beb30a7ebd81eceec4041332e367760fc14bba,
+        shape_int:ced97bb065c0c231b01856077f4990836bd9f52a,
+        shape_int:d7145be5c6c3ebe3c6298ba679ee0a4791a28df0,
+        shape_int:f4eca27b4536b3990438468b1ca1bfe9c0abc3fe,
+        shape_int:f718a1667690dbff04cd54563a516208667cba00 ;
+    sh:targetClass <http://confOf#Contribution>,
+        <http://conference#Conference_contribution> .
+
+shape_int:3c479754a656219ea93170f219805bb427633eaf a sh:NodeShape ;
+    sh:description "confTool",
+        "price category - scholar" ;
+    sh:property shape_int:b3d1f1fc6941c422e7eebc85130b6f9bcefef1b1 ;
+    sh:targetClass <http://confOf#Scholar> .
+
+shape_int:3db7a78a415db407a0d887d8849b65e9f2694060 a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:targetClass <http://confOf#Short_paper> .
+
+shape_int:4153b9c0a6b9e1b192a3fec6734530635cc66c49 a sh:NodeShape ;
+    sh:property shape_int:0e557aa06f6969a04fa3c2f1482aa74e29b96cf5,
+        shape_int:2712fe288f6cffbbbb9ccd0cfd23851e4f7f7c15 ;
+    sh:targetClass <http://conference#Conference_document> .
+
+shape_int:4271627f4f0bef6104a95cca7bb21cda4d74503e a sh:NodeShape ;
+    sh:targetClass <http://confOf#City> .
+
+shape_int:42b32794792b48313cd1be9ca11b690d3e614683 a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:targetClass <http://confOf#Student> .
+
+shape_int:4439de3964fbb9ebaa4c359b73a8ae0ff27d1743 a sh:NodeShape ;
+    sh:property shape_int:a478f02e513c3cc769942a8c6cd0aee2cbfb4dc6 ;
+    sh:targetClass <http://conference#Conference_www> .
+
+shape_int:519255ae1f74ffc5ddd29979295c7572f048ad81 a sh:NodeShape ;
+    sh:property shape_int:201552d5fe1a546de7d212847a6840992e1baf12,
+        shape_int:475714e22431e89e2e50dc07201dde9549a573a0,
+        shape_int:735723bd55bd23d924ea85a380ffb1980bd34e5a,
+        shape_int:cacd6433e7bd86c391e82c6d4bc1c5970af8e550 ;
+    sh:targetClass <http://confOf#Organization>,
+        <http://conference#Organization> .
+
+shape_int:5d9416492786135087b04a55d3fce1ae567509dd a sh:NodeShape ;
+    sh:property shape_int:0b0396e194d56feb9b2a876b2b54f0b746c280c0 ;
+    sh:targetClass <http://conference#Invited_talk> .
+
+shape_int:5ef13827fe0d3996c7c31a108e779b8b99ecf61b a sh:NodeShape ;
+    sh:property shape_int:06d4d8d918e3ba5a56507b85beb8f683678fea8e,
+        shape_int:37ba79e36fd66df8dc1031e036ff37e4db7aa0fd ;
+    sh:targetClass <http://confOf#Member_PC> .
+
+shape_int:5f96294685a5f0b9cf2bb0a403157a61b67bcb26 a sh:NodeShape ;
+    sh:targetClass <http://conference#Late_paid_applicant> .
+
+shape_int:5fda23d62015b99fb2a9f86b38bcdf2bdf7609c8 a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:property shape_int:c8ba1db9a2e97d80836f4b12886f5aa4a89f5eb9 ;
+    sh:targetClass <http://confOf#Author>,
+        <http://conference#Regular_author> .
+
+shape_int:61d70d6e8feec4a24094f690826f6c474b69a22c a sh:NodeShape ;
+    sh:property shape_int:0f64a77c4c2a3ccd190750969702d58eb0b58ddb ;
+    sh:targetClass <http://conference#Publisher> .
+
+shape_int:626e3baf05c0d17a7172e57af0ce3f3cc4b6684f a sh:NodeShape ;
+    sh:property shape_int:041dcb720292ce4e6efec4f9f55054f4ec903847,
+        shape_int:18c439b536a4b3b36182ce0c5d569a7fe60d275d,
+        shape_int:625b4c1269046d15203f246c0d9f4552985a6733,
+        shape_int:c245b25baa1055a056a488a789afd7c59f5bb42a ;
+    sh:targetClass <http://conference#Program_committee> .
+
+shape_int:6853c98a6f4358bbfed1b3b9c81d308649299b0f a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:targetClass <http://confOf#Member> .
+
+shape_int:6bf0c0785ceb768e59bf1bb97944fce145955fac a sh:NodeShape ;
+    sh:property shape_int:981d51fb64c1b9a20a3a20b891b25f06fd46aa40 ;
+    sh:targetClass <http://conference#Invited_speaker> .
+
+shape_int:6ccfd84518e774540aa028a44b24f745188126f3 a sh:NodeShape ;
+    sh:property shape_int:77f3525935c53e2a9ded2138da33b4acff1afaba ;
+    sh:targetClass <http://confOf#Participant>,
+        <http://conference#Conference_participant> .
+
+shape_int:6e875951a6f9aa1374d93572de657c12ded57355 a sh:NodeShape ;
+    sh:property shape_int:0b0396e194d56feb9b2a876b2b54f0b746c280c0,
+        shape_int:3384a9588c7478cc3827815c7f8c194690eb27aa,
+        shape_int:c0dd1ec253396007b6baba2ad87d9228306b6f2e ;
+    sh:targetClass <http://conference#Presentation> .
+
+shape_int:6ea195458b5cd737b7566564e3dd60b843951292 a sh:NodeShape ;
+    sh:targetClass <http://conference#Contribution_co-author> .
+
+shape_int:6f091f093d089a6bad34f5c7f9787f15dc7d599b a sh:NodeShape ;
+    sh:property shape_int:220522ff180f32825e3a4b34575f2c1e388fd420 ;
+    sh:targetClass <http://conference#Active_conference_participant> .
+
+shape_int:715432dcf30be1042d0a59bfe45bed957aad7a9a a sh:NodeShape ;
+    sh:targetClass <http://confOf#University> .
+
+shape_int:793207b1882603cb8538cfd48516a549d89fe18f a sh:NodeShape ;
+    sh:targetClass <http://conference#Early_paid_applicant> .
+
+shape_int:79ac8537098272d7fc138daf46a70b309613a7fe a sh:NodeShape ;
+    sh:targetClass <http://conference#Accepted_contribution> .
+
+shape_int:7a1994999d181deea68e4304b3346e78f838ecb7 a sh:NodeShape ;
+    sh:targetClass <http://confOf#Company> .
+
+shape_int:7d7129544f1ef637112942a6ce3666edb1916975 a sh:NodeShape ;
+    sh:property shape_int:0f64a77c4c2a3ccd190750969702d58eb0b58ddb,
+        shape_int:c03f70f6dfac7a458313c898dde43fe54b59e3f0,
+        shape_int:e74d1b262ca1745bc3b2f14bfd2fb0fe490cd673,
+        shape_int:f69aed2a4ea8f66e45e9384e1de6d3ab0ce5cd79 ;
+    sh:targetClass <http://conference#Conference_part> .
+
+shape_int:7e13bd176f89a12f0b614b55ffc19c14515ef920 a sh:NodeShape ;
+    sh:property shape_int:0f64a77c4c2a3ccd190750969702d58eb0b58ddb,
+        shape_int:a3a078f5a6aeb0d838525ea1f56be19681328628 ;
+    sh:targetClass <http://confOf#Topic>,
+        <http://conference#Topic> .
+
+shape_int:7eb36940b51728c5f4a526495e887e70ad6f3c0a a sh:NodeShape ;
+    sh:targetClass <http://conference#Conference_announcement> .
+
+shape_int:8010d1f4d0696ce16febddf3dda682cb3e5060c3 a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:targetClass <http://confOf#Assistant> .
+
+shape_int:863d17f02d6d8eb86694543977130cff3e73903d a sh:NodeShape ;
+    sh:targetClass <http://conference#Extended_abstract> .
+
+shape_int:8a1e29b3dd009e1104338701230be5d7a38b1fed a sh:NodeShape ;
+    sh:property shape_int:0f64a77c4c2a3ccd190750969702d58eb0b58ddb,
+        shape_int:15e5bc38cfea73d3875b9cc28e8555b779eec946,
+        shape_int:333fefccd2b5a05dc3dd717bd788fffa99e650ba,
+        shape_int:3f1538e24fa9ad29cc19c42d8e0910e9a69f2125,
+        shape_int:5e0f0f593c004b3ffcb50e45111d89da681b7c7e,
+        shape_int:7dab6777553983f6eb715d3662c6519d49800301,
+        shape_int:87857f668849d365feb4e625eebcf3cfd7df9a81,
+        shape_int:8d01687c37d395ffea5f151915e0b67411408681,
+        shape_int:9256c76ea013a9182b634ceb745e4f1315ffee4f,
+        shape_int:ba06c6562e7a3d836c67878bc234517b8bb1be15,
+        shape_int:ed1b13536e4328739bbc20e40d53ba86c0f6d9fa,
+        shape_int:f9a9c30e0228bd45fea04b80bdd18c8823386d6e ;
+    sh:targetClass <http://confOf#Conference>,
+        <http://conference#Conference>,
+        <http://conference#Conference_volume> .
+
+shape_int:8b14eacea95cd32c821d01b863123d9a329cbce6 a sh:NodeShape ;
+    sh:targetClass <http://confOf#Science_Worker> .
+
+shape_int:8c41ae88467fe5bbad09fcd488662b25c3ec5333 a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:property shape_int:1ad71c6131aa4218e90a808ad9e2292bb8a94843,
+        shape_int:201552d5fe1a546de7d212847a6840992e1baf12,
+        shape_int:475714e22431e89e2e50dc07201dde9549a573a0,
+        shape_int:735723bd55bd23d924ea85a380ffb1980bd34e5a,
+        shape_int:80ae5e5ef5415c0ed7a7ad2838a39ddacb719f0e,
+        shape_int:981d51fb64c1b9a20a3a20b891b25f06fd46aa40,
+        shape_int:b09cb6531dab08038c91477752b8d2588bffdb7f,
+        shape_int:cacd6433e7bd86c391e82c6d4bc1c5970af8e550,
+        shape_int:cdf6ca16be2aca0eedade6bad565ee45972b4b3b,
+        shape_int:e508f166aa658aa54c63f3df5637f32d609f0111,
+        shape_int:ed734665a23982e510520bc9af2633413bed6cb5,
+        shape_int:f842f0800440d926733cdf568fb342f402aa75ff ;
+    sh:targetClass <http://confOf#Person>,
+        <http://conference#Person> .
+
+shape_int:8d1bb6ccadfc7aac69f330d0085467180c7958f4 a sh:NodeShape ;
+    sh:targetClass <http://conference#Conference_fees> .
+
+shape_int:8d4e4ef3ea5252ec5235e4b1dd463ae9c302422c a sh:NodeShape ;
+    sh:targetClass <http://confOf#Regular> .
+
+shape_int:8ee79f37775876baac8fd290fbbad90d17352796 a sh:NodeShape ;
+    sh:targetClass <http://conference#Camera_ready_contribution> .
+
+shape_int:9253ecd8bf96649ed64d26e02732d4fce8c98b54 a sh:NodeShape ;
+    sh:targetClass <http://conference#Contribution_1th-author> .
+
+shape_int:94afa7c8e5f0181642548e2f0358bb856c21fd81 a sh:NodeShape ;
+    sh:property shape_int:0b0396e194d56feb9b2a876b2b54f0b746c280c0 ;
+    sh:targetClass <http://conference#Written_contribution> .
+
+shape_int:9d6ef3b1e64e38fa9c417343a224346184f26e05 a sh:NodeShape ;
+    sh:property shape_int:2d29b61423d78c65a70123f4878497612e71d9b0,
+        shape_int:98ab7dccdc4c9133deea3f2d118b920f21c9462d ;
+    sh:targetClass <http://confOf#Administrative_event> .
+
+shape_int:9dda9aa776653be989f44d12e9d628d418077f33 a sh:NodeShape ;
+    sh:targetClass <http://confOf#Trip> .
+
+shape_int:9f40ce1c192d7a22c8540938ee30642e877d3dba a sh:NodeShape ;
+    sh:targetClass <http://conference#Submitted_contribution> .
+
+shape_int:9f7021d7f6f13f7a53ffda6a4490bbe5129bf474 a sh:NodeShape ;
+    sh:property shape_int:0be3d697e2e7ffda29fc4b878c862097b985d1c8,
+        shape_int:17e53ed0fb8dfdf23109b5e24c547470073b73e4,
+        shape_int:285ee6c866a512ba282c7bf0cab973592bb91394,
+        shape_int:735452db0beecfdf1c1c1dd83c3193549c5171e4,
+        shape_int:858c68b52542d982b07e6da64b492318a2038ebc,
+        shape_int:9177343c26850eef82d0c88134a76f9d021977ab,
+        shape_int:c8a452bd95edfe37b9e75f845fc267a7b18a8111 ;
+    sh:targetClass <http://confOf#Social_event> .
+
+shape_int:9feb5376c5dd9ae7c638891c8c2597e637b6709d a sh:NodeShape ;
+    sh:property shape_int:c9a2526666d9c2cfaafdd3cae8346635201ac5a5 ;
+    sh:targetClass <http://conference#Chair> .
+
+shape_int:a33539ca77a6c42fd7a1e50aef1516b3a87d7c85 a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:property shape_int:0b0396e194d56feb9b2a876b2b54f0b746c280c0,
+        shape_int:c0dd1ec253396007b6baba2ad87d9228306b6f2e ;
+    sh:targetClass <http://confOf#Poster>,
+        <http://conference#Poster> .
+
+shape_int:a74f16c11792da6a36979a58a1ba2b4333632f57 a sh:NodeShape ;
+    sh:property shape_int:4ceec3f44276328862b8795c8b78aa2b5635664a,
+        shape_int:6b220828cd5c806e19177354d8d1b2dac2cca65e ;
+    sh:targetClass <http://conference#Reviewer> .
+
+shape_int:a8a987bb78614002835c2b15bd97d1943928a141 a sh:NodeShape ;
+    sh:property shape_int:0b0396e194d56feb9b2a876b2b54f0b746c280c0 ;
+    sh:targetClass <http://conference#Regular_contribution> .
+
+shape_int:ab625835b4fd6221d57e8c1aa7d53a487742585f a sh:NodeShape ;
+    sh:targetClass <http://conference#Passive_conference_participant> .
+
+shape_int:ad8919ace091b14011c6439cfd5e1707b58f5abd a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:property shape_int:f3265fa7ca9c040c2ef1e4513fc008febb1ac7f4,
+        shape_int:fa8841e25eace879532596731238a06bcbaa7105 ;
+    sh:targetClass <http://confOf#Event> .
+
+shape_int:ade3631d5fe3d7c3b437937f25c95ea6f4bbf032 a sh:NodeShape ;
+    sh:property shape_int:0be3d697e2e7ffda29fc4b878c862097b985d1c8,
+        shape_int:17e53ed0fb8dfdf23109b5e24c547470073b73e4,
+        shape_int:285ee6c866a512ba282c7bf0cab973592bb91394,
+        shape_int:3040e255b2b55c5011e638d6839407fe043adfad,
+        shape_int:735452db0beecfdf1c1c1dd83c3193549c5171e4,
+        shape_int:858c68b52542d982b07e6da64b492318a2038ebc,
+        shape_int:9177343c26850eef82d0c88134a76f9d021977ab,
+        shape_int:c8a452bd95edfe37b9e75f845fc267a7b18a8111,
+        shape_int:e74d1b262ca1745bc3b2f14bfd2fb0fe490cd673 ;
+    sh:targetClass <http://confOf#Working_event> .
+
+shape_int:adfb03aad8a7ead9c8d7176adb61544609e8b20e a sh:NodeShape ;
+    sh:description "Reviewing procedure for submitted contributions",
+        "confTool" ;
+    sh:targetClass <http://confOf#Reviewing_event> .
+
+shape_int:b1512abbdde09973d42f367434ab3a24c808be12 a sh:NodeShape ;
+    sh:targetClass <http://conference#Registeered_applicant> .
+
+shape_int:b1c5a7af06ba8c911bcfd11f72d7463fed9a472d a sh:NodeShape ;
+    sh:targetClass <http://conference#Track> .
+
+shape_int:b268e899dce5e3284b67eaac0e9840baba2e0d04 a sh:NodeShape ;
+    sh:description "Registration of new ConfTool users",
+        "confTool" ;
+    sh:targetClass <http://confOf#Registration_of_participants_event> .
+
+shape_int:b4045b8865f0427856cf035c7aa7d172b0713412 a sh:NodeShape ;
+    sh:property shape_int:1dde5fe43dcbcab538494222f7aac53d336794c3,
+        shape_int:ae891e2e6abcd089123949c45a8b66f8169115e7,
+        shape_int:cef0aec7e62f85a3e8e5f39a2cbf0f4320c45164,
+        shape_int:dfbd385e3a1a821ed2c7dbfe564576fc73480f2d,
+        shape_int:e4dbe05d3c8288960fd73ee55ed2327e969e51ae,
+        shape_int:ee2313dbd1058d8a8acf0cc2b6ab645681626566 ;
+    sh:targetClass <http://conference#Important_dates> .
+
+shape_int:bce0fd1c3a274771914c8eb5909faba61a4655e8 a sh:NodeShape ;
+    sh:targetClass <http://conference#Information_for_participants> .
+
+shape_int:c48755263e53ee8ea4418e14c983fd28bd2721fb a sh:NodeShape ;
+    sh:targetClass <http://conference#Conference_applicant> .
+
+shape_int:cbf217d4cfea1647891d6270c640d24f61b29e12 a sh:NodeShape ;
+    sh:targetClass <http://confOf#Volunteer> .
+
+shape_int:ceee32dfb44dbc2b396d5659cb92839522e14aa2 a sh:NodeShape ;
+    sh:description "Results of the reviewing procedures, accessable to authors",
+        "confTool" ;
+    sh:targetClass <http://confOf#Reviewing_results_event> .
+
+shape_int:d523ebbd10146cdfd39dee077f04c9d08468d0bc a sh:NodeShape ;
+    sh:targetClass <http://confOf#Country> .
+
+shape_int:d52cdf2f190018aa1adc6eb9ce57b40dae9530c9 a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:targetClass <http://confOf#Chair_PC> .
+
+shape_int:d534c8241ae785acc4a780aa8ff1a122ed59bb18 a sh:NodeShape ;
+    sh:targetClass <http://conference#Reviewed_contribution> .
+
+shape_int:d79da395b5d7a09c6439a5f2660d8c568186ab7e a sh:NodeShape ;
+    sh:targetClass <http://conference#Abstract> .
+
+shape_int:d928bfee825c93e2502c2b04eeeddd1ffaf790c6 a sh:NodeShape ;
+    sh:targetClass <http://confOf#Reception> .
+
+shape_int:db6b74e8da30424bc86b8abbd1d94042242f1f4d a sh:NodeShape ;
+    sh:targetClass <http://conference#Call_for_participation> .
+
+shape_int:dcc824ba666d6257c0f28d59ede9cdd79687e441 a sh:NodeShape ;
+    sh:property shape_int:18aa6d36bf0460611ab6fe4fae25c986ae5612e4 ;
+    sh:targetClass <http://conference#Co-chair> .
+
+shape_int:debd172028cd911a06d10b0cea578e6248911b95 a sh:NodeShape ;
+    sh:targetClass <http://conference#Organizer> .
+
+shape_int:e29a79fe0c349724caeaa1762fa917f5543248ca a sh:NodeShape ;
+    sh:property shape_int:0e557aa06f6969a04fa3c2f1482aa74e29b96cf5,
+        shape_int:7829aa46b3b902c9da5b6a289429ca093f57a553 ;
+    sh:targetClass <http://conference#Review> .
+
+shape_int:e994506de17160baa0796d088d7f4be92cb0c0d6 a sh:NodeShape ;
+    sh:property shape_int:041dcb720292ce4e6efec4f9f55054f4ec903847,
+        shape_int:18c439b536a4b3b36182ce0c5d569a7fe60d275d,
+        shape_int:625b4c1269046d15203f246c0d9f4552985a6733,
+        shape_int:c245b25baa1055a056a488a789afd7c59f5bb42a ;
+    sh:targetClass <http://conference#Steering_committee> .
+
+shape_int:e9ebd1b0ea620496a3fe44bae2cb7e168a33ae85 a sh:NodeShape ;
+    sh:targetClass <http://confOf#Camera_Ready_event> .
+
+shape_int:f3cc59c189ad5cb1efc7ce7707a191ff8f593e47 a sh:NodeShape ;
+    sh:property shape_int:fad94116f4967d09948441c1b727056ef834646e ;
+    sh:targetClass <http://conference#Committee_member> .
+
+shape_int:f43dba5677dfd5e3e6793095b56bfab6f533b68f a sh:NodeShape ;
+    sh:property shape_int:041dcb720292ce4e6efec4f9f55054f4ec903847,
+        shape_int:18c439b536a4b3b36182ce0c5d569a7fe60d275d,
+        shape_int:625b4c1269046d15203f246c0d9f4552985a6733,
+        shape_int:c245b25baa1055a056a488a789afd7c59f5bb42a ;
+    sh:targetClass <http://conference#Committee> .
+
+shape_int:f63f7104e5cea1ae12f38876c607a78501572271 a sh:NodeShape ;
+    sh:property shape_int:192fe37bf08db0dd67a60eee351f918dadb67536,
+        shape_int:4def07d6d1bad149da7748d796cf09b74f435058,
+        shape_int:ef4d1f29ecdcc89584524c4de0c4ff14f3c5ff06 ;
+    sh:targetClass <http://conference#Review_preference> .
+
+shape_int:f8f5a5bc1acf26f4c2fc4c22a0a1a9fb4ebf6256 a sh:NodeShape ;
+    sh:targetClass <http://conference#Paid_applicant> .
+
+shape_int:fc94dc6a89f8e4dea61d4f6bd4503abe3a07e732 a sh:NodeShape ;
+    sh:targetClass <http://conference#Rejected_contribution> .
+
+shape_int:ff3cbea2075773c7713c5625599c60b8728ab183 a sh:NodeShape ;
+    sh:property shape_int:cc9241fc59846a6c7b286c496f1742e3fc3c8537 ;
+    sh:targetClass <http://conference#Track-workshop_chair> .
+
+shape_int:06d4d8d918e3ba5a56507b85beb8f683678fea8e a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class <http://confOf#Topic> ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://confOf#expertOn> .
+
+shape_int:15e5bc38cfea73d3875b9cc28e8555b779eec946 a sh:PropertyShape ;
+    sh:class <http://conference#Organizing_committee> ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://conference#has_an_organizing_committee> .
+
+shape_int:18aa6d36bf0460611ab6fe4fae25c986ae5612e4 a sh:PropertyShape ;
+    sh:class <http://conference#Committee> ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://conference#was_a_committe_co-chair_of> ;
+    sh:qualifiedMinCount "1" .
+
+shape_int:192fe37bf08db0dd67a60eee351f918dadb67536 a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://conference#has_a_topic_or_a_submission_contribution> .
+
+shape_int:1ad71c6131aa4218e90a808ad9e2292bb8a94843 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#hasPhone> ;
+    sh:pattern ".*" .
+
+shape_int:1dde5fe43dcbcab538494222f7aac53d336794c3 a sh:PropertyShape ;
+    sh:datatype xsd:date ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://conference#is_a_date_of_camera_ready_paper_submission> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:220522ff180f32825e3a4b34575f2c1e388fd420 a sh:PropertyShape ;
+    sh:class <http://conference#Presentation> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://conference#gives_presentations> .
+
+shape_int:2712fe288f6cffbbbb9ccd0cfd23851e4f7f7c15 a sh:PropertyShape ;
+    sh:datatype xsd:date ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://conference#has_a_date_of_issue> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:2769bba963ce779a0a35f78fe71081cbaac674a5 a sh:PropertyShape ;
+    sh:class <http://conference#Submitted_contribution> ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://conference#has_a_submitted_contribution> .
+
+shape_int:2d29b61423d78c65a70123f4878497612e71d9b0 a sh:PropertyShape ;
+    sh:class <http://confOf#Administrative_event> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://confOf#parallel_with> .
+
+shape_int:3040e255b2b55c5011e638d6839407fe043adfad a sh:PropertyShape ;
+    sh:class <http://confOf#Administrative_event> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://confOf#hasAdministrativeEvent> .
+
+shape_int:333fefccd2b5a05dc3dd717bd788fffa99e650ba a sh:PropertyShape ;
+    sh:class <http://conference#Steering_committee> ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://conference#has_a_steering_committee> .
+
+shape_int:3384a9588c7478cc3827815c7f8c194690eb27aa a sh:PropertyShape ;
+    sh:class <http://conference#Active_conference_participant> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://conference#is_given_by> .
+
+shape_int:37ba79e36fd66df8dc1031e036ff37e4db7aa0fd a sh:PropertyShape ;
+    sh:class <http://confOf#Contribution> ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://confOf#reviewes> .
+
+shape_int:38f9f0c6f83078c66b0f87094262d744daab33d0 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#hasKeyword> ;
+    sh:pattern ".*" .
+
+shape_int:3aec3d7a10658e723b204da66affb317e5d71812 a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://conference#has_an_ISBN> ;
+    sh:pattern ".*" .
+
+shape_int:3f1538e24fa9ad29cc19c42d8e0910e9a69f2125 a sh:PropertyShape ;
+    sh:class <http://conference#Program_committee> ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://conference#has_a_program_committee> .
+
+shape_int:4ceec3f44276328862b8795c8b78aa2b5635664a a sh:PropertyShape ;
+    sh:class <http://conference#Reviewer> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://conference#invited_by> .
+
+shape_int:4def07d6d1bad149da7748d796cf09b74f435058 a sh:PropertyShape ;
+    sh:datatype xsd:int ;
+    sh:maxCount "1" ;
+    sh:maxInclusive "2147483647" ;
+    sh:minInclusive "-2147483648" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://conference#has_a_degree> ;
+    sh:pattern "[\\-+]?[0-9]+" .
+
+shape_int:529cd3d64231667aa8d01f2eee503b4ddf29e554 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#abstract> ;
+    sh:pattern ".*" .
+
+shape_int:5e0f0f593c004b3ffcb50e45111d89da681b7c7e a sh:PropertyShape ;
+    sh:class <http://conference#Committee> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://conference#has_a_commtitee> .
+
+shape_int:64beb30a7ebd81eceec4041332e367760fc14bba a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#hasTitle> ;
+    sh:pattern ".*" .
+
+shape_int:6b220828cd5c806e19177354d8d1b2dac2cca65e a sh:PropertyShape ;
+    sh:class <http://conference#Reviewer> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://conference#invites_co-reviewers> .
+
+shape_int:77f3525935c53e2a9ded2138da33b4acff1afaba a sh:PropertyShape ;
+    sh:datatype xsd:boolean ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#earlyRegistration> ;
+    sh:pattern "true|false|0|1" .
+
+shape_int:7829aa46b3b902c9da5b6a289429ca093f57a553 a sh:PropertyShape ;
+    sh:class <http://conference#Reviewed_contribution> ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://conference#reviews> .
+
+shape_int:7dab6777553983f6eb715d3662c6519d49800301 a sh:PropertyShape ;
+    sh:class <http://conference#Conference_part> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://conference#has_parts> .
+
+shape_int:80ae5e5ef5415c0ed7a7ad2838a39ddacb719f0e a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#hasFax> ;
+    sh:pattern ".*" .
+
+shape_int:87857f668849d365feb4e625eebcf3cfd7df9a81 a sh:PropertyShape ;
+    sh:class <http://conference#Conference_contribution> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://conference#has_contributions> .
+
+shape_int:8d01687c37d395ffea5f151915e0b67411408681 a sh:PropertyShape ;
+    sh:class <http://conference#Workshop> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://conference#has_workshops> .
+
+shape_int:9256c76ea013a9182b634ceb745e4f1315ffee4f a sh:PropertyShape ;
+    sh:class <http://conference#Important_dates> ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://conference#has_important_dates> .
+
+shape_int:98ab7dccdc4c9133deea3f2d118b920f21c9462d a sh:PropertyShape ;
+    sh:class <http://confOf#Administrative_event> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://confOf#follows> .
+
+shape_int:a3a078f5a6aeb0d838525ea1f56be19681328628 a sh:PropertyShape ;
+    sh:class <http://conference#Conference_part> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://conference#is_a_topis_of_conference_parts> .
+
+shape_int:a478f02e513c3cc769942a8c6cd0aee2cbfb4dc6 a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://conference#has_a_URL> ;
+    sh:pattern ".*" .
+
+shape_int:ae891e2e6abcd089123949c45a8b66f8169115e7 a sh:PropertyShape ;
+    sh:datatype xsd:date ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://conference#is_an_ending_date> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:b09cb6531dab08038c91477752b8d2588bffdb7f a sh:PropertyShape ;
+    rdfs:label "confTool",
+        "involved middle name" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool",
+        "involved middle name" ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path [ sh:alternativePath ( <http://confOf#hasFirstName> <http://conference#has_the_first_name> ) ] ;
+    sh:pattern ".*" .
+
+shape_int:b3d1f1fc6941c422e7eebc85130b6f9bcefef1b1 a sh:PropertyShape ;
+    sh:class <http://confOf#University> ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://confOf#studyAt> .
+
+shape_int:ba06c6562e7a3d836c67878bc234517b8bb1be15 a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://conference#has_a_location> ;
+    sh:pattern ".*" .
+
+shape_int:c03f70f6dfac7a458313c898dde43fe54b59e3f0 a sh:PropertyShape ;
+    sh:class <http://conference#Conference_volume> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://conference#is_part_of_conference_volumes> .
+
+shape_int:c8ba1db9a2e97d80836f4b12886f5aa4a89f5eb9 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class <http://confOf#Contribution> ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://confOf#writes> .
+
+shape_int:c9a2526666d9c2cfaafdd3cae8346635201ac5a5 a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://conference#was_a_committee_chair_of> ;
+    sh:qualifiedMinCount "1" .
+
+shape_int:cc9241fc59846a6c7b286c496f1742e3fc3c8537 a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://conference#was_a_track-workshop_chair_of> ;
+    sh:qualifiedMinCount "1" .
+
+shape_int:cdf6ca16be2aca0eedade6bad565ee45972b4b3b a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path [ sh:alternativePath ( <http://confOf#hasEmail> <http://conference#has_an_email> ) ] ;
+    sh:pattern ".*" .
+
+shape_int:ced97bb065c0c231b01856077f4990836bd9f52a a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class <http://confOf#Author> ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://confOf#writtenBy> .
+
+shape_int:cef0aec7e62f85a3e8e5f39a2cbf0f4320c45164 a sh:PropertyShape ;
+    sh:datatype xsd:date ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://conference#is_a_date_of_acceptance_announcement> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:d7145be5c6c3ebe3c6298ba679ee0a4791a28df0 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class <http://confOf#Topic> ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://confOf#dealsWith> .
+
+shape_int:da6349804bb5efed014f938fa8c8b94074edf0e5 a sh:PropertyShape ;
+    sh:datatype xsd:int ;
+    sh:maxCount "1" ;
+    sh:maxInclusive "2147483647" ;
+    sh:minInclusive "-2147483648" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://conference#has_a_volume> ;
+    sh:pattern "[\\-+]?[0-9]+" .
+
+shape_int:dfbd385e3a1a821ed2c7dbfe564576fc73480f2d a sh:PropertyShape ;
+    sh:datatype xsd:date ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://conference#is_a_starting_date> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:e2db5458593e144dfd881f3d88bff6f508c8beeb a sh:PropertyShape ;
+    sh:class <http://conference#Publisher> ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://conference#has_a_publisher> .
+
+shape_int:e4dbe05d3c8288960fd73ee55ed2327e969e51ae a sh:PropertyShape ;
+    sh:datatype xsd:date ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://conference#is_an_abstract_submission_date> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:e508f166aa658aa54c63f3df5637f32d609f0111 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path [ sh:alternativePath ( <http://confOf#hasSurname> <http://conference#has_the_last_name> ) ] ;
+    sh:pattern ".*" .
+
+shape_int:ed1b13536e4328739bbc20e40d53ba86c0f6d9fa a sh:PropertyShape ;
+    sh:class <http://conference#Tutorial> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://conference#has_tutorials> .
+
+shape_int:ed734665a23982e510520bc9af2633413bed6cb5 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#hasHomePage> ;
+    sh:pattern ".*" .
+
+shape_int:ee2313dbd1058d8a8acf0cc2b6ab645681626566 a sh:PropertyShape ;
+    sh:datatype xsd:date ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://conference#is_a_full_paper_submission_date> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:f3265fa7ca9c040c2ef1e4513fc008febb1ac7f4 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#starts_on> ;
+    sh:pattern ".*" .
+
+shape_int:f4eca27b4536b3990438468b1ca1bfe9c0abc3fe a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#remark> ;
+    sh:pattern ".*" .
+
+shape_int:f69aed2a4ea8f66e45e9384e1de6d3ab0ce5cd79 a sh:PropertyShape ;
+    sh:class <http://conference#Track-workshop_chair> ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://conference#has_a_track-workshop-tutorial_chair> .
+
+shape_int:f718a1667690dbff04cd54563a516208667cba00 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#contactEmail> ;
+    sh:pattern ".*" .
+
+shape_int:f842f0800440d926733cdf568fb342f402aa75ff a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class <http://confOf#Organization> ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://confOf#employedBy> .
+
+shape_int:f9a9c30e0228bd45fea04b80bdd18c8823386d6e a sh:PropertyShape ;
+    sh:class <http://conference#Track> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://conference#has_tracks> .
+
+shape_int:fa8841e25eace879532596731238a06bcbaa7105 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#ends_on> ;
+    sh:pattern ".*" .
+
+shape_int:fad94116f4967d09948441c1b727056ef834646e a sh:PropertyShape ;
+    sh:class <http://conference#Committee> ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://conference#was_a_member_of> ;
+    sh:qualifiedMinCount "1" .
+
+shape_int:0be3d697e2e7ffda29fc4b878c862097b985d1c8 a sh:PropertyShape ;
+    rdfs:label "confTool",
+        """value added tax
+""" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool",
+        """value added tax
+""" ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#hasVAT> ;
+    sh:pattern ".*" .
+
+shape_int:0e557aa06f6969a04fa3c2f1482aa74e29b96cf5 a sh:PropertyShape ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:or ( [ sh:class <http://conference#Person> ] [ sh:class <http://conference#Reviewer> ] ) ;
+    sh:path <http://conference#has_authors> .
+
+shape_int:17e53ed0fb8dfdf23109b5e24c547470073b73e4 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#has_short_title> ;
+    sh:pattern ".*" .
+
+shape_int:201552d5fe1a546de7d212847a6840992e1baf12 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class <http://confOf#Country> ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://confOf#hasCountry> .
+
+shape_int:285ee6c866a512ba282c7bf0cab973592bb91394 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#has_title> ;
+    sh:pattern ".*" .
+
+shape_int:475714e22431e89e2e50dc07201dde9549a573a0 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#hasStreet> ;
+    sh:pattern ".*" .
+
+shape_int:735452db0beecfdf1c1c1dd83c3193549c5171e4 a sh:PropertyShape ;
+    rdfs:label """confTool
+""" ;
+    sh:datatype xsd:positiveInteger ;
+    sh:description """confTool
+""" ;
+    sh:minInclusive "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#minChoice> ;
+    sh:pattern "[\\-+]?[0-9]+" .
+
+shape_int:735723bd55bd23d924ea85a380ffb1980bd34e5a a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#hasPostalCode> ;
+    sh:pattern ".*" .
+
+shape_int:858c68b52542d982b07e6da64b492318a2038ebc a sh:PropertyShape ;
+    rdfs:label "confTool",
+        "where the event is being held" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool",
+        "where the event is being held" ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#location> ;
+    sh:pattern ".*" .
+
+shape_int:9177343c26850eef82d0c88134a76f9d021977ab a sh:PropertyShape ;
+    rdfs:label """confTool
+""" ;
+    sh:datatype xsd:positiveInteger ;
+    sh:description """confTool
+""" ;
+    sh:maxCount "1" ;
+    sh:minInclusive "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#maxChoice> ;
+    sh:pattern "[\\-+]?[0-9]+" .
+
+shape_int:981d51fb64c1b9a20a3a20b891b25f06fd46aa40 a sh:PropertyShape ;
+    sh:class <http://conference#Conference_document> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://conference#contributes> ;
+    sh:qualifiedMinCount "1" .
+
+shape_int:c8a452bd95edfe37b9e75f845fc267a7b18a8111 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:positiveInteger ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:minInclusive "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#defaultChoice> ;
+    sh:pattern "[\\-+]?[0-9]+" .
+
+shape_int:cacd6433e7bd86c391e82c6d4bc1c5970af8e550 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class <http://confOf#City> ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://confOf#hasCity> .
+
+shape_int:e74d1b262ca1745bc3b2f14bfd2fb0fe490cd673 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:or ( [ sh:class <http://conference#Topic> ] [ sh:class <http://confOf#Topic> ] ) ;
+    sh:path [ sh:alternativePath ( <http://confOf#hasTopic> <http://conference#has_a_track-workshop-tutorial_topic> ) ] .
+
+shape_int:ef4d1f29ecdcc89584524c4de0c4ff14f3c5ff06 a sh:PropertyShape ;
+    sh:class <http://conference#Reviewer> ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://conference#belongs_to_reviewers> .
+
+shape_int:c0dd1ec253396007b6baba2ad87d9228306b6f2e a sh:PropertyShape ;
+    sh:class <http://conference#Abstract> ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://conference#has_an_abstract> .
+
+shape_int:041dcb720292ce4e6efec4f9f55054f4ec903847 a sh:PropertyShape ;
+    sh:class <http://conference#Chair> ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://conference#has_a_committee_chair> .
+
+shape_int:18c439b536a4b3b36182ce0c5d569a7fe60d275d a sh:PropertyShape ;
+    sh:class <http://conference#Co-chair> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://conference#has_a_committee_co-chair> .
+
+shape_int:625b4c1269046d15203f246c0d9f4552985a6733 a sh:PropertyShape ;
+    sh:class <http://conference#Conference_volume> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://conference#was_a_committee_of> .
+
+shape_int:c245b25baa1055a056a488a789afd7c59f5bb42a a sh:PropertyShape ;
+    sh:class <http://conference#Committee_member> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://conference#has_members> .
+
+shape_int:0f64a77c4c2a3ccd190750969702d58eb0b58ddb a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://conference#has_a_name> ;
+    sh:pattern ".*" .
+
+shape_int:0b0396e194d56feb9b2a876b2b54f0b746c280c0 a sh:PropertyShape ;
+    sh:class <http://conference#Conference_volume> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://conference#is_submitted_at> .
+

@@ -1,0 +1,1411 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix shape_int: <http://integratedshapes.es#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+shape_int:00718a941691461435f00dd57100b1c8fff941da a sh:NodeShape ;
+    sh:targetClass <http://edas#SatelliteAndSpaceCommunicationsTopic> .
+
+shape_int:00b4f2cf02d06ac1e248132513e25672a7f0d211 a sh:NodeShape ;
+    sh:property shape_int:14550f0b872182de36d94007465cc943b1269599,
+        shape_int:17029522e34d2856fe4d72a97d0b712dbce0e5f0,
+        shape_int:469531de5ba5e267841732fd362478a42161c94c,
+        shape_int:e615a4bb69cffe910fcc3209efe6fd4aa6321345,
+        shape_int:f78223adbdade8d540d200ea1db0a38ab62b32da ;
+    sh:targetClass <http://edas#ContactInformation> .
+
+shape_int:0525ee6bc301dacaa1fd700ea668c59e697774bb a sh:NodeShape ;
+    sh:property shape_int:e53758d74aed3f4812da11b953a4045edd943d4d ;
+    sh:targetClass <http://iasted#Final_manuscript> .
+
+shape_int:054ab26fc420aa7d55fb7e159a7e4ac3711c597a a sh:NodeShape ;
+    sh:property shape_int:70f486783d73485c047b27df9f80263fa5b574d6 ;
+    sh:targetClass <http://edas#MealMenu> .
+
+shape_int:058993bdc19f2594b753b73de34ce6f7b70622a2 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Non_speaker> .
+
+shape_int:0643da08c6881c503be591c9026aaa92fde24b22 a sh:NodeShape ;
+    sh:property shape_int:abd49da335755a843bcb807ff003b9e4f7dee868 ;
+    sh:targetClass <http://iasted#Conference_airport> .
+
+shape_int:06a1f89b5f4bc25c8abc9795f9f2a834e8cf1120 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Camera_ready_manuscript_deadline> .
+
+shape_int:0945fab641be324466306575a70f5567edaa734c a sh:NodeShape ;
+    sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
+    sh:targetClass <http://iasted#Memeber_registration_fee> .
+
+shape_int:0a40d5643d7d9e25231689d2460c71bd138998cc a sh:NodeShape ;
+    sh:property shape_int:7d6d49aba278d71a8898617d000af8fa967ad94a ;
+    sh:targetClass <http://edas#AcceptedPaper> .
+
+shape_int:0a9a13d7407d98a132bc64ac70698123817675c3 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Departure> .
+
+shape_int:0c5595e55649371346906edb7f8350afb3c3aaee a sh:NodeShape ;
+    sh:property shape_int:310a721df1ac28db50168b9e6f30ae5f2f08ae00 ;
+    sh:targetClass <http://iasted#Conference_city> .
+
+shape_int:0d857f2511e5ced6bfae4e308a71dcc1777ba14e a sh:NodeShape ;
+    sh:property shape_int:833bdb57a1fc0623381fb60caa78fdd0e2f40fb0 ;
+    sh:targetClass <http://iasted#Author_attendee_book_registration_fee> .
+
+shape_int:0e7e847bfb521fff7dd5df0107a5270e6b9b462d a sh:NodeShape ;
+    sh:targetClass <http://edas#ComputerNetworksOpticalTopic> .
+
+shape_int:0ea0d14cdc6cc10d29be4ee9c7751072ab3564e2 a sh:NodeShape ;
+    sh:property shape_int:a237b956ea5642c9effd8807a3b39865ea6bff90 ;
+    sh:targetClass <http://iasted#Sponsor_city> .
+
+shape_int:10f6a5a3fb490591f219975fc9e1c054e44a116e a sh:NodeShape ;
+    sh:property shape_int:abd49da335755a843bcb807ff003b9e4f7dee868,
+        shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
+    sh:targetClass <http://iasted#Conference_hotel> .
+
+shape_int:12c11fe80dcec4e5e92ce0fee52a1957febee630 a sh:NodeShape ;
+    sh:property shape_int:e53758d74aed3f4812da11b953a4045edd943d4d ;
+    sh:targetClass <http://iasted#Technical_commitee> .
+
+shape_int:13b8fe38a93b1e74be75932a7d667b18af065fa8 a sh:NodeShape ;
+    sh:targetClass <http://edas#Workshop> .
+
+shape_int:1671c64859bd6429de22dde1e92e8b2473547308 a sh:NodeShape ;
+    sh:property shape_int:0c345a76730911df3b9bd4ad2faeb0c6eb698a10,
+        shape_int:d1a3ed512028d495359a8b7d0c99ee7e2acf19f7 ;
+    sh:targetClass <http://iasted#Tutorial_speaker> .
+
+shape_int:187ae0e367d35006e541c124802a3a71643c83d6 a sh:NodeShape ;
+    sh:targetClass <http://edas#TestOnlyTopic> .
+
+shape_int:18b0f6d8e1388e38bb299001d0bd92791d189324 a sh:NodeShape ;
+    sh:property shape_int:ca8a90f8e4d4ee8784ba55cca35228fcc96b07bd ;
+    sh:targetClass <http://iasted#Activity_before_conference> .
+
+shape_int:1a852057171842452b228ca5b6eb137d9a75c21a a sh:NodeShape ;
+    sh:targetClass <http://iasted#Bank_transfer> .
+
+shape_int:1dc043bb8eb5646851ff808477bb5d3573739f1c a sh:NodeShape ;
+    sh:property shape_int:265f5abd38e8844c6d1f6a03efccdcfe162dc352,
+        shape_int:3c5075c3362d85b5536845741459f569384dd6d0,
+        shape_int:829a17cedb28cf8186b6bec68fe7868b20e8ca06,
+        shape_int:fa147342f6c4a1dfb343115ca6c31e92e6689b10 ;
+    sh:targetClass <http://iasted#Money> .
+
+shape_int:1e61347437a2c0ce8a6229f5ac4d22dff1f119f6 a sh:NodeShape ;
+    sh:targetClass <http://edas#CryptographyTopic> .
+
+shape_int:1f9d027f1b73b7c43227191597dd736ec2289ac9 a sh:NodeShape ;
+    sh:targetClass <http://edas#RejectedPaper> .
+
+shape_int:2056c89b09c84b39fbffb2794f5802efe558d840 a sh:NodeShape ;
+    sh:property shape_int:abd49da335755a843bcb807ff003b9e4f7dee868 ;
+    sh:targetClass <http://iasted#Presenter_university> .
+
+shape_int:206a17c02c1d3895194375926bd3de04882ff529 a sh:NodeShape ;
+    sh:property shape_int:12c2844990d5a596585fc63b727dbaf4debfd1da ;
+    sh:targetClass <http://iasted#Hotel_registration_form> .
+
+shape_int:20a7358c60fa6dcac0b971cf58ba02a701439519 a sh:NodeShape ;
+    sh:property shape_int:a237b956ea5642c9effd8807a3b39865ea6bff90,
+        shape_int:abd49da335755a843bcb807ff003b9e4f7dee868 ;
+    sh:targetClass <http://edas#ConferenceVenuePlace>,
+        <http://iasted#Conference_building> .
+
+shape_int:2473e96bc614a911821242119918a241a41836d6 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Introduction> .
+
+shape_int:259593314d92cb805e8e9d14390b4dc187fd2154 a sh:NodeShape ;
+    sh:targetClass <http://iasted#LCD_projector> .
+
+shape_int:25d317705c8da50754a8c63e3cdf442021f793b6 a sh:NodeShape ;
+    sh:targetClass <http://iasted#PowerPoint_presentation> .
+
+shape_int:263f173bd698c56ee5d9b6f7404f752490e8c940 a sh:NodeShape ;
+    sh:targetClass <http://edas#WelcomeTalk>,
+        <http://iasted#Welcome_address> .
+
+shape_int:2701a94c0eb55cbd958a87dff3e959673ff1bf53 a sh:NodeShape ;
+    sh:property shape_int:1106c27fbfb8b3221125823066195bccafde80d9 ;
+    sh:targetClass <http://iasted#Tutorial> .
+
+shape_int:28a3efbdaa198e48f2b680d7d7a3bd5a98dfa43e a sh:NodeShape ;
+    sh:targetClass <http://edas#GovernmentOrganization> .
+
+shape_int:28e6f4962c7deb03d9e2c1036fe5fd979de52028 a sh:NodeShape ;
+    sh:targetClass <http://edas#TalkEvent> .
+
+shape_int:28e8e77dbc55b15b12d74e5c39fb0b46f5c925b0 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Student_lecturer> .
+
+shape_int:290f11950188a92cdcdfcca62535ebf2f2901bb4 a sh:NodeShape ;
+    sh:property shape_int:e53758d74aed3f4812da11b953a4045edd943d4d ;
+    sh:targetClass <http://iasted#Initial_manuscipt> .
+
+shape_int:291a0a58dfa6c640a90c1d868d2af190775ea219 a sh:NodeShape ;
+    sh:property shape_int:70cb2a7d241edc5b15e40f0a6c22a74cc15de3ca,
+        shape_int:7325c9dde167eb808ec5a28df8901848302a58a2,
+        shape_int:ed639c0a3f796dbae13bca7b168ca8c37c2f35a2 ;
+    sh:targetClass <http://edas#Call> .
+
+shape_int:29986f1e8adec0c4452cffd06e162c8d659ebe04 a sh:NodeShape ;
+    sh:targetClass <http://edas#CommunicationTheoryTopic> .
+
+shape_int:29babed8a49ff260cdb59a47c3e861c6f2752759 a sh:NodeShape ;
+    sh:targetClass <http://edas#PerformanceTopic> .
+
+shape_int:2b12f36924915fa2101627fa804a0746579a911d a sh:NodeShape ;
+    sh:property shape_int:2b8a6ed45b20eef46f323ffbbb66480417d00f67,
+        shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
+    sh:targetClass <http://iasted#Deadline> .
+
+shape_int:2c3c9c9824bcbde358c8b9db132a1bb6a4831d59 a sh:NodeShape ;
+    sh:property shape_int:310a721df1ac28db50168b9e6f30ae5f2f08ae00 ;
+    sh:targetClass <http://iasted#Conference_state> .
+
+shape_int:3136cfcc7ded26ec87f15c68d82fbd6df5df9ecc a sh:NodeShape ;
+    sh:targetClass <http://edas#PersonalPublicationHistory> .
+
+shape_int:335ea08ac46e2b0977b44513be03c14eb31c2a32 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Main_office> .
+
+shape_int:336baebd839c75513babd2a39ccdf8499c05590f a sh:NodeShape ;
+    sh:description "Call For Papers" ;
+    sh:targetClass <http://edas#CallForPapers> .
+
+shape_int:33ddca5caf978764fc5ddaeed2f2eb54f6f1bf44 a sh:NodeShape ;
+    sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
+    sh:targetClass <http://edas#CoffeeBreak>,
+        <http://iasted#Coffee_break> .
+
+shape_int:36c3084b662b16229a128185c4c895bdc4d3782c a sh:NodeShape ;
+    sh:property shape_int:3c5075c3362d85b5536845741459f569384dd6d0 ;
+    sh:targetClass <http://iasted#Hotel_fee> .
+
+shape_int:36e3cf36bdea81df9b88a7be3e4f949587a25879 a sh:NodeShape ;
+    sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
+    sh:targetClass <http://iasted#Payment_document> .
+
+shape_int:37ea46b5942beaeb21bb4e06a14e4f7232d2a1b0 a sh:NodeShape ;
+    sh:property shape_int:1164fe9d0048baf4da98e42c5f5134c1866083f7,
+        shape_int:dc909f874bc5d71384a8af0f6791180170fc555a ;
+    sh:targetClass <http://iasted#Listener> .
+
+shape_int:39a46303854cb0c83112ca5f20e8cccb6e049092 a sh:NodeShape ;
+    sh:property shape_int:0a628308d479d3fb6dc62a8cb1ab44c1261ec0c0,
+        shape_int:f788eaa890e4baf7d733ef8bb9ae10131640a80e ;
+    sh:targetClass <http://edas#TPCMember> .
+
+shape_int:3a2862bf6c138c9b53385a2ebbc05620df04962b a sh:NodeShape ;
+    sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
+    sh:targetClass <http://edas#ConferenceDinner>,
+        <http://iasted#Dinner_banquet> .
+
+shape_int:3a94888dc4e7c6e627a03ad70b30dd29906be49c a sh:NodeShape ;
+    sh:property shape_int:2d066d4b8cd6e403bdbe36ad5d0fec36d0e75767 ;
+    sh:targetClass <http://edas#PersonalReviewHistory> .
+
+shape_int:3b18f789e6b65352671dcec317cd802e6fa2648e a sh:NodeShape ;
+    sh:targetClass <http://edas#AcceptRating> .
+
+shape_int:3b7a2371716c01970f23dc9c07944a5c1282945b a sh:NodeShape ;
+    sh:targetClass <http://iasted#One_conference_day> .
+
+shape_int:3b7df6002a606bc2e99b6c5101e09e48a7ae8d63 a sh:NodeShape ;
+    sh:property shape_int:c59ddb86013ffffbd27ac2bc5e1d26684391f85f ;
+    sh:targetClass <http://edas#MealEvent> .
+
+shape_int:3bdb363e1c06900786860df45800ec3b5a8775ec a sh:NodeShape ;
+    sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
+    sh:targetClass <http://iasted#Lecture> .
+
+shape_int:3d910025a630772d7b35cb1b95722bc5da49b657 a sh:NodeShape ;
+    sh:property shape_int:11c75b793a3ed711c3ff09d664fca9ac288d6109 ;
+    sh:targetClass <http://iasted#Student_non_speaker> .
+
+shape_int:3f05bb85639b46cf8f81c3664bf88696257c2df1 a sh:NodeShape ;
+    sh:property shape_int:abd49da335755a843bcb807ff003b9e4f7dee868,
+        shape_int:e4d7c74dafe0f99f751716b472f2a1bd5adc9850 ;
+    sh:targetClass <http://iasted#Session_room> .
+
+shape_int:40176124774ba51aac9acb0780c90d40135e8e7e a sh:NodeShape ;
+    sh:targetClass <http://edas#NumericalReviewQuestion> .
+
+shape_int:41d079e04c4725b81f21c9a9ac4c60c805b5fe59 a sh:NodeShape ;
+    sh:targetClass <http://edas#PendingPaper> .
+
+shape_int:4271627f4f0bef6104a95cca7bb21cda4d74503e a sh:NodeShape ;
+    sh:property shape_int:310a721df1ac28db50168b9e6f30ae5f2f08ae00,
+        shape_int:a237b956ea5642c9effd8807a3b39865ea6bff90,
+        shape_int:abd49da335755a843bcb807ff003b9e4f7dee868 ;
+    sh:targetClass <http://iasted#City> .
+
+shape_int:42c04638e10c945ec10a6887aad2915c315c83fc a sh:NodeShape ;
+    sh:property shape_int:beb1c53fbc1b871a9fc726f1a0825969b431c419,
+        shape_int:d30efad49c67f1dbe1eb642f31e919497dcf905d ;
+    sh:targetClass <http://edas#AcademicEvent> .
+
+shape_int:43a01f74b38cac6cd0c3d933a6a5b9cc24ba0756 a sh:NodeShape ;
+    sh:targetClass <http://edas#SignalProcessingTopic> .
+
+shape_int:4603dbaf0b7a05ba14faa546c05d1041c1cda49c a sh:NodeShape ;
+    sh:targetClass <http://edas#FreeTimeBreak> .
+
+shape_int:47848bcb78ae55b5e4a98e003099af7f4f38b9e1 a sh:NodeShape ;
+    sh:targetClass <http://edas#OperatingTopicsystems> .
+
+shape_int:489d075371c939ef5e0ff7647126aa2f43090c0b a sh:NodeShape ;
+    sh:targetClass <http://iasted#Book_proceeding> .
+
+shape_int:4a7a0edaa5757f649775519df6d67c9fcae54f6c a sh:NodeShape ;
+    sh:property shape_int:a237b956ea5642c9effd8807a3b39865ea6bff90 ;
+    sh:targetClass <http://iasted#Presenter_city> .
+
+shape_int:4b8891fe41fa94b9b816748470c5eadca9d44ec7 a sh:NodeShape ;
+    sh:targetClass <http://edas#ComputerNetworksSensorTopic> .
+
+shape_int:4bc3dbb2a147d9dcf14336f82b408f7e3526641a a sh:NodeShape ;
+    sh:targetClass <http://edas#RejectRating> .
+
+shape_int:4d13b9374b6e696d5c2728a6e3e73beac3771ac2 a sh:NodeShape ;
+    sh:targetClass <http://edas#ReviewRating> .
+
+shape_int:4d4ce73b15660f20977ad7efab2283c51bdae008 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Card> .
+
+shape_int:4d99422856cb8116849df3e983926b0cd98d2083 a sh:NodeShape ;
+    sh:property shape_int:beb1c53fbc1b871a9fc726f1a0825969b431c419 ;
+    sh:targetClass <http://edas#ConferenceSession> .
+
+shape_int:4df540b59ec56c6624b2f0feca04558eb73a4f02 a sh:NodeShape ;
+    sh:targetClass <http://edas#ComputerNetworksTopic> .
+
+shape_int:503294f357f5891549da2aefb8e3b254b7c3a2f6 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Cd_proceening> .
+
+shape_int:519255ae1f74ffc5ddd29979295c7572f048ad81 a sh:NodeShape ;
+    sh:property shape_int:bb81a1305d1047fb65ec920d4c9011452b88667e ;
+    sh:targetClass <http://edas#Organization> .
+
+shape_int:51d58fed20dbaa5791a0b042b8a24d5e0322d43b a sh:NodeShape ;
+    sh:targetClass <http://edas#TwoLevelConference> .
+
+shape_int:5206de3fd728da56ac7daaa1867938b8e68c47e9 a sh:NodeShape ;
+    sh:property shape_int:e53758d74aed3f4812da11b953a4045edd943d4d ;
+    sh:targetClass <http://iasted#Conference_Hiker> .
+
+shape_int:53139aa1560ff4c53454ba7df797eec96d31346e a sh:NodeShape ;
+    sh:targetClass <http://iasted#Overhead_projector> .
+
+shape_int:53f28176929a98c0237635a925c7ba0a9677c89b a sh:NodeShape ;
+    sh:property shape_int:a237b956ea5642c9effd8807a3b39865ea6bff90,
+        shape_int:abd49da335755a843bcb807ff003b9e4f7dee868 ;
+    sh:targetClass <http://iasted#Sponsor_company_house> .
+
+shape_int:5422287208272044fb20d6a22e558fd4a019d2ae a sh:NodeShape ;
+    sh:property shape_int:abd49da335755a843bcb807ff003b9e4f7dee868,
+        shape_int:e6356f7c9a85fa1beb1ca712053a68cd47ee34fd ;
+    sh:targetClass <http://iasted#Record_of_attendance> .
+
+shape_int:5531e88e8230e578c472efb569366fac4a648bef a sh:NodeShape ;
+    sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
+    sh:targetClass <http://edas#SocialEvent>,
+        <http://iasted#Social_program> .
+
+shape_int:55e94241c71b148abf5a97761067aa5cbf8968a3 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Hotel_presenter> .
+
+shape_int:5688c0c53b87b8cf97986d68062cf6f19b251c71 a sh:NodeShape ;
+    sh:targetClass <http://edas#CommunicationsTopic> .
+
+shape_int:56a7d68c09a5249027d643f66d44c93dbb5f3a34 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Shuttle_bus> .
+
+shape_int:5887bd49cff23a00137a22ebdd5493c7b998d028 a sh:NodeShape ;
+    sh:property shape_int:a237b956ea5642c9effd8807a3b39865ea6bff90,
+        shape_int:abd49da335755a843bcb807ff003b9e4f7dee868 ;
+    sh:targetClass <http://iasted#Presenter_house> .
+
+shape_int:58b8eface2bbfc9b59e43d6a62b5637de5c84df8 a sh:NodeShape ;
+    sh:targetClass <http://edas#AccommodationPlace> .
+
+shape_int:5c6f56c66b5172a4231721ba8502ece38c35554c a sh:NodeShape ;
+    sh:targetClass <http://iasted#Double_hotel_room> .
+
+shape_int:5c804b8bdd7b052cbde90fa12b1be1e54c91e4ab a sh:NodeShape ;
+    sh:property shape_int:554af1b0ed3abdcf4d752da6d6621af90688967c ;
+    sh:targetClass <http://edas#ActivePaper> .
+
+shape_int:5f4188d8c137a3a5ba82b5e4b1a42bc58bae8002 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Introduction_of_speaker> .
+
+shape_int:5fda23d62015b99fb2a9f86b38bcdf2bdf7609c8 a sh:NodeShape ;
+    sh:property shape_int:1b3906b8f608de0adb44752f446db6aa0dc3f236,
+        shape_int:596756a98415fcbb9d78ae42d79435faf2e5cfa1,
+        shape_int:d1a3ed512028d495359a8b7d0c99ee7e2acf19f7 ;
+    sh:targetClass <http://edas#Author>,
+        <http://iasted#Author> .
+
+shape_int:6103ed39ffd09401ab1554174ad08e660f117105 a sh:NodeShape ;
+    sh:property shape_int:a237b956ea5642c9effd8807a3b39865ea6bff90,
+        shape_int:abd49da335755a843bcb807ff003b9e4f7dee868 ;
+    sh:targetClass <http://edas#DiningPlace>,
+        <http://iasted#Conference_restaurant> .
+
+shape_int:62db6a8abc61f1245d10b2a1459479824ae245f1 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Modelling> .
+
+shape_int:63f2b1b1216a528fa44dcda64872e15db9b62f5a a sh:NodeShape ;
+    sh:targetClass <http://edas#TextualReviewQuestion> .
+
+shape_int:6409270c1fd472c3e9b9f3d67fcb8f566acc0a0d a sh:NodeShape ;
+    sh:targetClass <http://edas#BreakEvent> .
+
+shape_int:651be4df72dbe53a3f540af4e6fc2abdc2c15d37 a sh:NodeShape ;
+    sh:property shape_int:11c75b793a3ed711c3ff09d664fca9ac288d6109 ;
+    sh:targetClass <http://iasted#IASTED_member> .
+
+shape_int:651f3320eec36799ffdbe03ba3bee314bc47b719 a sh:NodeShape ;
+    sh:targetClass <http://edas#SecurityTopic> .
+
+shape_int:69a7b9948856f991b2895395d0460c0e65b953be a sh:NodeShape ;
+    sh:targetClass <http://edas#PublishedPaper> .
+
+shape_int:6c071cc078c80966e21fc00a1e1a49409785a5c9 a sh:NodeShape ;
+    sh:targetClass <http://edas#ClosingTalk> .
+
+shape_int:6c0a1363765f6c9cccfd09e2d29a472249341a6a a sh:NodeShape ;
+    sh:targetClass <http://iasted#Cheque> .
+
+shape_int:6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b a sh:NodeShape ;
+    sh:targetClass <http://iasted#Time> .
+
+shape_int:6e875951a6f9aa1374d93572de657c12ded57355 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Presentation> .
+
+shape_int:6ef3c915807e59e86583df6ef73526e878ecc3f2 a sh:NodeShape ;
+    sh:property shape_int:a237b956ea5642c9effd8807a3b39865ea6bff90 ;
+    sh:targetClass <http://iasted#Presenter_state> .
+
+shape_int:70f68d0f611541bb377d885225a741146018c380 a sh:NodeShape ;
+    sh:property shape_int:1106c27fbfb8b3221125823066195bccafde80d9 ;
+    sh:targetClass <http://iasted#Plenary_lecture> .
+
+shape_int:730d9215201a366f98a453ab4f8cf632c996b2f9 a sh:NodeShape ;
+    sh:property shape_int:abe57b4324d5fdfe6d4aafc963b2e24cbe76fdbe ;
+    sh:targetClass <http://edas#PaperPresentation> .
+
+shape_int:73c6d46e96ca5f8032215804dafc20f3d266766d a sh:NodeShape ;
+    sh:targetClass <http://edas#PowerlineTransmissionTopic> .
+
+shape_int:75cc72f54be6305b2f08fb9031935475ef389d04 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Single_hotel_room> .
+
+shape_int:7860c1f8b6ea024e33dceb197663d9d2527f2659 a sh:NodeShape ;
+    sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
+    sh:targetClass <http://iasted#Credit_card> .
+
+shape_int:7a27a887632881791b8c295f3d03a8e6c58b9e05 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Deadline_for_notification_of_acceptance> .
+
+shape_int:7a667feb31b3c64ce1ed98a2565ae3131f76ecea a sh:NodeShape ;
+    sh:targetClass <http://iasted#Accepting_manuscript> .
+
+shape_int:7ab4274cc66b38269fa2693877a204f1ce1c9dd6 a sh:NodeShape ;
+    sh:targetClass <http://edas#PersonalHistory> .
+
+shape_int:7ab90459782314e3cefbf168b0358196d104c35e a sh:NodeShape ;
+    sh:targetClass <http://iasted#Van> .
+
+shape_int:7ac789299d8f46a7b0ae0151aef5fa26903b5ce9 a sh:NodeShape ;
+    sh:targetClass <http://edas#ComputerNetworksSwitchingTopic> .
+
+shape_int:7be1cbae6d330322a50b68027af9c0cda53d5190 a sh:NodeShape ;
+    sh:property shape_int:f9a0ba563982b3001294ffee55a7761a6e671bfc ;
+    sh:targetClass <http://iasted#Renting> .
+
+shape_int:7c23b0d99698b57c5cb21fafcb8a8daf127386c6 a sh:NodeShape ;
+    sh:property shape_int:434f3b59fe3c335c4f7df77c9f021657fccc5e61,
+        shape_int:d1a3ed512028d495359a8b7d0c99ee7e2acf19f7 ;
+    sh:targetClass <http://iasted#Speaker> .
+
+shape_int:7cb338a916152e13525f9822a4d915c168c521f0 a sh:NodeShape ;
+    sh:property shape_int:dbec133cc262823a985599a5107e645c9dcbc6e2 ;
+    sh:targetClass <http://edas#SlideSet>,
+        <http://iasted#Transparency> .
+
+shape_int:7d1c8a12633268f584e21940d55c5a451f8a5a43 a sh:NodeShape ;
+    sh:property shape_int:34c24e9ee62cb21f44211b9d55ef7543b4cc2ec0,
+        shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
+    sh:targetClass <http://iasted#Full_day_tour> .
+
+shape_int:7ddb133d531b9671d79794a284a9bc2d3a305f96 a sh:NodeShape ;
+    sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
+    sh:targetClass <http://iasted#Nonmember_registration_fee> .
+
+shape_int:7e13bd176f89a12f0b614b55ffc19c14515ef920 a sh:NodeShape ;
+    sh:targetClass <http://edas#Topic> .
+
+shape_int:7fc24a6b73df8c830b509366468c6bee8e7ca58c a sh:NodeShape ;
+    sh:property shape_int:abd49da335755a843bcb807ff003b9e4f7dee868 ;
+    sh:targetClass <http://iasted#Conference_hall> .
+
+shape_int:80446347ede53cf9ce56b3d59fda4b5c96dc25c4 a sh:NodeShape ;
+    sh:property shape_int:58348512c7431d9296aa59345f94d319fef6d2b0 ;
+    sh:targetClass <http://iasted#Form> .
+
+shape_int:80bdf4d816e088c895b2521bb3054f1e89ca72a0 a sh:NodeShape ;
+    sh:targetClass <http://edas#MealBreak> .
+
+shape_int:811736270140a1e1a48b89c09e49ee22aab7c8ad a sh:NodeShape ;
+    sh:targetClass <http://edas#Presenter> .
+
+shape_int:81c0d915fa6d82fd30661c5e66e204cea52bb2b5 a sh:NodeShape ;
+    sh:property shape_int:1106c27fbfb8b3221125823066195bccafde80d9,
+        shape_int:2b19888ce2d40ae64d0f2af419efc8cbfa3f87d0,
+        shape_int:b54060c54287d74ff4d3d6b474ff0902297cdab3,
+        shape_int:ca8a90f8e4d4ee8784ba55cca35228fcc96b07bd ;
+    sh:targetClass <http://iasted#Activity> .
+
+shape_int:82e2b91027511aadd8b52aa9401729c10793ba39 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Taxi> .
+
+shape_int:843ca1c16e445a3612cdea594607c47f99bd6f3c a sh:NodeShape ;
+    sh:targetClass <http://edas#ComputerNetworksAapplicationsTopic> .
+
+shape_int:85d27544d940ead0a63363316f6b86c8afc5880e a sh:NodeShape ;
+    sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
+    sh:targetClass <http://iasted#Nonauthor_registration_fee> .
+
+shape_int:85f01c9bcc1f862a264744c3567cce209bd5a9f5 a sh:NodeShape ;
+    sh:property shape_int:aaa2c47f8ebde67d556ddbf55078d09dba31c8e9 ;
+    sh:targetClass <http://iasted#Author_book_proceedings_included> .
+
+shape_int:8682d73e62dd322ed3f1c68245442c9c3ba39355 a sh:NodeShape ;
+    sh:property shape_int:fc687222aa574b07318770d5f5576ef8d909e87d ;
+    sh:targetClass <http://edas#Programme> .
+
+shape_int:87d9349bc05c04e599b696898eb93d75db6ee5d3 a sh:NodeShape ;
+    sh:targetClass <http://edas#ComputerNetworksManagementTopic> .
+
+shape_int:89151df17903af7adf1cbed40824d13cff424089 a sh:NodeShape ;
+    sh:targetClass <http://edas#MeetingRoomPlace> .
+
+shape_int:8a1e29b3dd009e1104338701230be5d7a38b1fed a sh:NodeShape ;
+    sh:property shape_int:03f4eccff693a19ff719c29a092a5adbd8545bc0,
+        shape_int:20f7d922076019d9eb078f43ca8cc74c4e02940b,
+        shape_int:2768f0a2969b0f1855fa4adc28358cc0c0d2a848,
+        shape_int:3e5040acceacb7e0338e8fe241d192eaa279bd21,
+        shape_int:4de465a85a82e836271bc87ee5a62bd7ad33d2f2,
+        shape_int:a6dc4144189d0db43cae0b554e134507e25aaa2f,
+        shape_int:a70783e07565adf6cb312566a71723f4214d910a,
+        shape_int:beb1c53fbc1b871a9fc726f1a0825969b431c419,
+        shape_int:cdb5080218728f60734290497343edcdc488e29d,
+        shape_int:eb4ea87398268775d4fc3f2f5a6be7990f81028b ;
+    sh:targetClass <http://edas#Conference> .
+
+shape_int:8a59ca1f7188120f91eeb1187a16cda7a298a9a7 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Speaker_lecture> .
+
+shape_int:8a82f01ad791d8b6bf2b5c75a1dd0287e000a953 a sh:NodeShape ;
+    sh:targetClass <http://edas#WithdrawnPaper> .
+
+shape_int:8c41ae88467fe5bbad09fcd488662b25c3ec5333 a sh:NodeShape ;
+    sh:property shape_int:1164fe9d0048baf4da98e42c5f5134c1866083f7,
+        shape_int:11c75b793a3ed711c3ff09d664fca9ac288d6109,
+        shape_int:1b3906b8f608de0adb44752f446db6aa0dc3f236,
+        shape_int:392a0c04bada65367244507bcdf8c620d78b1e0b,
+        shape_int:3e341a66431532691b5102d16cdd30ebfe2f8a98,
+        shape_int:434f3b59fe3c335c4f7df77c9f021657fccc5e61,
+        shape_int:4dec40421a17aefbed121f5ac4c7fbfda0a19934,
+        shape_int:548e3fbcb6b883c25ee440465aea1c33d185d247,
+        shape_int:7183394b71548717ad496ccfb500849e74740274,
+        shape_int:9ac9a40103914ae09a9a7ab7efab42aa7471ee7d,
+        shape_int:9f7ee7308180af25a055414a34c475121701c9bc,
+        shape_int:aaa2c47f8ebde67d556ddbf55078d09dba31c8e9,
+        shape_int:beb1c53fbc1b871a9fc726f1a0825969b431c419,
+        shape_int:c29a0126df972e0db04729235c94feba33eacde8,
+        shape_int:e615a4bb69cffe910fcc3209efe6fd4aa6321345 ;
+    sh:targetClass <http://edas#Person>,
+        <http://iasted#Person> .
+
+shape_int:8f4e6fc0a19e7b472335f064e8c9a2096cc214b3 a sh:NodeShape ;
+    sh:targetClass <http://edas#NonAcademicEvent> .
+
+shape_int:90cb08b3e752dcf9a2d9c033b00b22384d622a07 a sh:NodeShape ;
+    sh:property shape_int:3c5075c3362d85b5536845741459f569384dd6d0,
+        shape_int:833bdb57a1fc0623381fb60caa78fdd0e2f40fb0 ;
+    sh:targetClass <http://iasted#Fee_for_extra_trip> .
+
+shape_int:92143caaf8b18c41449118f6d1adff7464a89ef2 a sh:NodeShape ;
+    sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
+    sh:targetClass <http://iasted#Student_registration_fee> .
+
+shape_int:924645b3e345a600bf94ae78f01c5886cc320a89 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Computer> .
+
+shape_int:93d8b5b3be59da8c0e7a9f3b403666e7d7760c4b a sh:NodeShape ;
+    sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
+    sh:targetClass <http://iasted#Departure_tax> .
+
+shape_int:94131ee276ffcd179dd8330c0f2e073526096c8b a sh:NodeShape ;
+    sh:property shape_int:4163c827d0008088b379b26f8a3335deaa0a67be,
+        shape_int:abd49da335755a843bcb807ff003b9e4f7dee868,
+        shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
+    sh:targetClass <http://iasted#Audiovisual_equipment> .
+
+shape_int:94b8865ca111fe38c42c0623df8a361ebd38564a a sh:NodeShape ;
+    sh:property shape_int:01f406efa4ca2b5454834a0e2b197a6c88e724b9,
+        shape_int:072a3a107bfe50ee301d3b8d749c344b55739e42,
+        shape_int:231f91394ee3c4f22974710ec633bbba0c17972e,
+        shape_int:34c24e9ee62cb21f44211b9d55ef7543b4cc2ec0,
+        shape_int:ae781370e1562e999d04001d62d421e7f017140f,
+        shape_int:b17dbb0b1fd41c59abb63f47b146a0fa5f5295d4 ;
+    sh:targetClass <http://edas#ConferenceEvent>,
+        <http://iasted#Conference_activity> .
+
+shape_int:94ed2487ad3d7a3e9e5bc2ca660b2f93a4eac537 a sh:NodeShape ;
+    sh:targetClass <http://edas#MobileComputingTopic> .
+
+shape_int:951db38c972512b803f27696d1e7aa853d3394c5 a sh:NodeShape ;
+    sh:property shape_int:310a721df1ac28db50168b9e6f30ae5f2f08ae00 ;
+    sh:targetClass <http://iasted#Trip_city> .
+
+shape_int:9571c4fcfa16b942d8d306e0de4ce01097a0b9e6 a sh:NodeShape ;
+    sh:targetClass <http://edas#WirelessCommunicationsTopic> .
+
+shape_int:95cc2a9b31edcbd91b7e2daa458c5cad0a363d9f a sh:NodeShape ;
+    sh:property shape_int:1106c27fbfb8b3221125823066195bccafde80d9,
+        shape_int:58348512c7431d9296aa59345f94d319fef6d2b0 ;
+    sh:targetClass <http://iasted#Brief_introduction_for_Session_chair> .
+
+shape_int:97a5836084daf7af45466abf16356ac7edca4ae7 a sh:NodeShape ;
+    sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
+    sh:targetClass <http://iasted#Trip_day> .
+
+shape_int:97f315c2cbd5d74181d101782051593e58032ddb a sh:NodeShape ;
+    sh:targetClass <http://edas#ReviewQuestion> .
+
+shape_int:9be70f66f8dd4da98c04e092dd7dc12331ce3e09 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Tax> .
+
+shape_int:9d0c8210ee4c87958202f148ef3c5b4cd959b1f8 a sh:NodeShape ;
+    sh:property shape_int:abd49da335755a843bcb807ff003b9e4f7dee868,
+        shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
+    sh:targetClass <http://iasted#Hotel_room> .
+
+shape_int:9d914bfcf1c5bc9e6b83d3232349cae23d392f30 a sh:NodeShape ;
+    sh:property shape_int:310a721df1ac28db50168b9e6f30ae5f2f08ae00,
+        shape_int:a237b956ea5642c9effd8807a3b39865ea6bff90 ;
+    sh:targetClass <http://iasted#Building> .
+
+shape_int:a03c02df1d06162c6b9e133b4cdfb28095ffbbb5 a sh:NodeShape ;
+    sh:property shape_int:aaa2c47f8ebde67d556ddbf55078d09dba31c8e9 ;
+    sh:targetClass <http://iasted#Author_cd_proceedings_included> .
+
+shape_int:a62cdcfdba01a872a65a3fdeb7e0d4ec84e29f64 a sh:NodeShape ;
+    sh:targetClass <http://edas#AcademiaOrganization> .
+
+shape_int:a6efaa1b2811d3c18b7a991f40c33495d9c590a4 a sh:NodeShape ;
+    sh:property shape_int:3c5075c3362d85b5536845741459f569384dd6d0,
+        shape_int:833bdb57a1fc0623381fb60caa78fdd0e2f40fb0 ;
+    sh:targetClass <http://iasted#Registration_fee> .
+
+shape_int:a74f16c11792da6a36979a58a1ba2b4333632f57 a sh:NodeShape ;
+    sh:property shape_int:0a628308d479d3fb6dc62a8cb1ab44c1261ec0c0,
+        shape_int:d1a3ed512028d495359a8b7d0c99ee7e2acf19f7,
+        shape_int:d402ac97d0f252c8bef2b7599de2ccb39bf02dbe ;
+    sh:targetClass <http://edas#Reviewer>,
+        <http://iasted#Reviewer> .
+
+shape_int:a756f1b90c2f895759714537f3c7324af7119b76 a sh:NodeShape ;
+    sh:targetClass <http://edas#OrganizationalMeeting> .
+
+shape_int:a7581a7127b99bdf3d1251ab5da926a751580ea9 a sh:NodeShape ;
+    sh:targetClass <http://edas#CallForReviews> .
+
+shape_int:a78ea5da2bcb0e0eff13ddf6679f39602b415ddd a sh:NodeShape ;
+    sh:targetClass <http://edas#MultimediaTopic> .
+
+shape_int:a9cf76582a331d183ad930e2a1f1a008ee700d1d a sh:NodeShape ;
+    sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
+    sh:targetClass <http://iasted#Mailing_list> .
+
+shape_int:a9d3431c3ef177c7ab5a0d8dfdd0258645606b71 a sh:NodeShape ;
+    sh:property shape_int:0a628308d479d3fb6dc62a8cb1ab44c1261ec0c0,
+        shape_int:aaa2c47f8ebde67d556ddbf55078d09dba31c8e9,
+        shape_int:e53758d74aed3f4812da11b953a4045edd943d4d,
+        shape_int:f788eaa890e4baf7d733ef8bb9ae10131640a80e ;
+    sh:targetClass <http://edas#SessionChair>,
+        <http://iasted#Session_chair> .
+
+shape_int:a9f2074b6f9828d244315ea50a59c92096c16396 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Submissions_deadline> .
+
+shape_int:aabca766de9f225cb8acdcaa7fdf727d58fc248a a sh:NodeShape ;
+    sh:property shape_int:11c75b793a3ed711c3ff09d664fca9ac288d6109 ;
+    sh:targetClass <http://iasted#IASTED_non_member> .
+
+shape_int:aabccb936e50c5abfd56642d2bef547035e69da3 a sh:NodeShape ;
+    sh:property shape_int:11c75b793a3ed711c3ff09d664fca9ac288d6109,
+        shape_int:4dec40421a17aefbed121f5ac4c7fbfda0a19934,
+        shape_int:aaa2c47f8ebde67d556ddbf55078d09dba31c8e9,
+        shape_int:b3b05f02ae2fa3d21cc0437bcc32c38f0c2fd168,
+        shape_int:c29a0126df972e0db04729235c94feba33eacde8 ;
+    sh:targetClass <http://edas#Attendee>,
+        <http://iasted#Delegate> .
+
+shape_int:ab6041ad53828a207b0af44e27addb113f510485 a sh:NodeShape ;
+    sh:property shape_int:0c345a76730911df3b9bd4ad2faeb0c6eb698a10,
+        shape_int:d1a3ed512028d495359a8b7d0c99ee7e2acf19f7 ;
+    sh:targetClass <http://iasted#Plenary_lecture_speaker> .
+
+shape_int:ad84d11240c231ebfc3b19bb766f49a3ee2579cd a sh:NodeShape ;
+    sh:targetClass <http://edas#WeekRejectRating> .
+
+shape_int:ae27da9276c621da1e5fa4bb1ab4d8aa1c1ceefd a sh:NodeShape ;
+    sh:property shape_int:1106c27fbfb8b3221125823066195bccafde80d9 ;
+    sh:targetClass <http://iasted#Technic_activity> .
+
+shape_int:b19c19c0e8f1719fb5a6e0630ce1f90e11282495 a sh:NodeShape ;
+    sh:property shape_int:12c2844990d5a596585fc63b727dbaf4debfd1da,
+        shape_int:b3f814fd0b0be53ea730873ed63b0042647d54ea ;
+    sh:targetClass <http://iasted#Registration_form> .
+
+shape_int:b229536e1caf42d72832cdb97a06d429d52fb6e1 a sh:NodeShape ;
+    sh:targetClass <http://edas#NGO> .
+
+shape_int:b233e775d63bb8b86cf031776d4caea613f59cda a sh:NodeShape ;
+    sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
+    sh:targetClass <http://iasted#Registration> .
+
+shape_int:b57a6bd742a9696559dcd584788d8d4a0a78482f a sh:NodeShape ;
+    sh:property shape_int:7183394b71548717ad496ccfb500849e74740274 ;
+    sh:targetClass <http://iasted#One_day_presenter> .
+
+shape_int:b7e9610e06b262f5f9a1c3f059830371bc84f95c a sh:NodeShape ;
+    sh:targetClass <http://iasted#Time_zone> .
+
+shape_int:bac2ec832dc8a340f707be7c96119d95f1669de5 a sh:NodeShape ;
+    sh:targetClass <http://edas#AntennasTopic> .
+
+shape_int:bc47a3dce0c7627010946f0a17b5ec88707f2b34 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Car> .
+
+shape_int:bda4923ab0af429265fabd10432dda914cef4156 a sh:NodeShape ;
+    sh:targetClass <http://edas#ComputerNetworksSecurityTopic> .
+
+shape_int:be601df25eea91eaaf0d5e80263930143af345be a sh:NodeShape ;
+    sh:targetClass <http://iasted#Research> .
+
+shape_int:bfb190910a78c6aa1cc133eefeb312bb51c89775 a sh:NodeShape ;
+    sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
+    sh:targetClass <http://iasted#Invitation_letter> .
+
+shape_int:c142d3f41f63e7be9b45b540bb1a14fa4f729212 a sh:NodeShape ;
+    sh:targetClass <http://edas#MicroelectronicsTopic> .
+
+shape_int:c2374d28375031db3077f4397976f8dc3deb4c81 a sh:NodeShape ;
+    sh:targetClass <http://edas#RadioCommunicationsTopic> .
+
+shape_int:c32a0147f2e47a52e082fe2dd4b6aaa36084a4cb a sh:NodeShape ;
+    sh:property shape_int:1823b2a8102aff6223c4ecb686caf8f2013db868,
+        shape_int:abd49da335755a843bcb807ff003b9e4f7dee868,
+        shape_int:e4d7c74dafe0f99f751716b472f2a1bd5adc9850 ;
+    sh:targetClass <http://edas#Place>,
+        <http://iasted#Place> .
+
+shape_int:c466984aa6ec2647abb64fa9701b4cc890c1c723 a sh:NodeShape ;
+    sh:property shape_int:2b19888ce2d40ae64d0f2af419efc8cbfa3f87d0 ;
+    sh:targetClass <http://iasted#Activity_after_conference> .
+
+shape_int:c65397a48bcd46916845a6f4050cf3a7362c5428 a sh:NodeShape ;
+    sh:targetClass <http://edas#ComputerNetworksEnterpriseTopic> .
+
+shape_int:c6bd6281eb60350da84739ad33865632bbb3f9a4 a sh:NodeShape ;
+    sh:targetClass <http://edas#ComputerArchitectureTopic> .
+
+shape_int:c6e89c9caf21476cc928ffc4707e00550f300343 a sh:NodeShape ;
+    sh:property shape_int:829a17cedb28cf8186b6bec68fe7868b20e8ca06 ;
+    sh:targetClass <http://iasted#Fee> .
+
+shape_int:c7a6c979ef54254ae63ec614463445d0c6986077 a sh:NodeShape ;
+    sh:targetClass <http://edas#AccpetIfRoomRating> .
+
+shape_int:c7c11c1dedd278f3b348d8a59f522daa4593d2d8 a sh:NodeShape ;
+    sh:property shape_int:511b18dfeeb72f91f16fc70b45ad5b590b0847fc,
+        shape_int:65414805893c3139c21026723cbe474865474121,
+        shape_int:a70783e07565adf6cb312566a71723f4214d910a ;
+    sh:targetClass <http://edas#Paper>,
+        <http://iasted#Submission> .
+
+shape_int:c840574acb5fd831c222ca9676e7b83125d88d6c a sh:NodeShape ;
+    sh:targetClass <http://iasted#Video_cassette_player> .
+
+shape_int:c91b19f6afc4ee6f0ef1225f3cc8f9f18e836f8d a sh:NodeShape ;
+    sh:targetClass <http://edas#TravelGrant> .
+
+shape_int:cd0f1048496123378d04de31b91938cb0c716028 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Registation_deadline> .
+
+shape_int:cf49b47ecba198ba2db458cf555001c24d8d026c a sh:NodeShape ;
+    sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
+    sh:targetClass <http://iasted#Conference_days> .
+
+shape_int:d025c70e5ac10a66606a1054591e8c9de0f96671 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Deadline_hotel_reservation> .
+
+shape_int:d19ceca501465c339e3bcf2bc0d8ff02bb697d6c a sh:NodeShape ;
+    sh:property shape_int:fa147342f6c4a1dfb343115ca6c31e92e6689b10 ;
+    sh:targetClass <http://iasted#Tip> .
+
+shape_int:d4a889fa5b66b4a97e06eaad468f93dde844216c a sh:NodeShape ;
+    sh:targetClass <http://edas#MedicineTopic> .
+
+shape_int:d523ebbd10146cdfd39dee077f04c9d08468d0bc a sh:NodeShape ;
+    sh:property shape_int:310a721df1ac28db50168b9e6f30ae5f2f08ae00,
+        shape_int:a237b956ea5642c9effd8807a3b39865ea6bff90 ;
+    sh:targetClass <http://edas#Country>,
+        <http://iasted#State> .
+
+shape_int:d5a947c33dcaf23ad579aa2e13b5dc7537c4a6e0 a sh:NodeShape ;
+    sh:targetClass <http://edas#SingleLevelConference> .
+
+shape_int:d68a0c8ee83734f4cf22019195c0aa2f8aeb51c4 a sh:NodeShape ;
+    sh:property shape_int:833bdb57a1fc0623381fb60caa78fdd0e2f40fb0 ;
+    sh:targetClass <http://iasted#Author_attendee_cd_registration_fee> .
+
+shape_int:d928bfee825c93e2502c2b04eeeddd1ffaf790c6 a sh:NodeShape ;
+    sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
+    sh:targetClass <http://edas#Reception>,
+        <http://iasted#Coctail_reception> .
+
+shape_int:d9d60c219ca62e59710912584d891bfdf25b8664 a sh:NodeShape ;
+    sh:property shape_int:3c5075c3362d85b5536845741459f569384dd6d0,
+        shape_int:5320764c2f98d009ecbdfc8fad3bb9f1aa82e3f8,
+        shape_int:6ea5832cefef253abfaa8f9fde4f8b87e6854592,
+        shape_int:d66a8a4a4e115f6c5a6652e5434f64f4e717578b ;
+    sh:targetClass <http://edas#Sponsorship>,
+        <http://iasted#Sponzorship> .
+
+shape_int:db8c74d8a90f0f58f084968b26fefcc63ac560ee a sh:NodeShape ;
+    sh:property shape_int:554af1b0ed3abdcf4d752da6d6621af90688967c ;
+    sh:targetClass <http://edas#RatedPapers> .
+
+shape_int:dc9796e572e13207d4b74f68d56955951e001bf0 a sh:NodeShape ;
+    sh:targetClass <http://edas#CADTopic> .
+
+shape_int:de08da3d14144d58f7c7143bbd4cf8974183040b a sh:NodeShape ;
+    sh:targetClass <http://edas#ParallelAndDistributedComputingTopic> .
+
+shape_int:de7203660f56185c617e3fee21133b4e4c03ed61 a sh:NodeShape ;
+    sh:targetClass <http://edas#IndustryOrganization> .
+
+shape_int:df35eafa7dcb2264a4d2429b2fcc921191707c7e a sh:NodeShape ;
+    sh:targetClass <http://edas#ReviewForm> .
+
+shape_int:e00441c49bf6cb62a4a537860a47c6b85de694f6 a sh:NodeShape ;
+    sh:property shape_int:d59b635667e9caa3f62e8541596a01cb8e5c1bc9 ;
+    sh:targetClass <http://iasted#Publication> .
+
+shape_int:e070de224434a2acd352b35cec46f34f9e08e1b2 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Currency> .
+
+shape_int:e214b8a29923056887b7edf6635d90dcbb2abe88 a sh:NodeShape ;
+    sh:targetClass <http://edas#Document>,
+        <http://iasted#Document> .
+
+shape_int:e29a79fe0c349724caeaa1762fa917f5543248ca a sh:NodeShape ;
+    sh:property shape_int:65414805893c3139c21026723cbe474865474121 ;
+    sh:targetClass <http://edas#Review>,
+        <http://iasted#Review> .
+
+shape_int:e396e1603df698c2790c6fc772b2e258a6234b23 a sh:NodeShape ;
+    sh:property shape_int:0c345a76730911df3b9bd4ad2faeb0c6eb698a10,
+        shape_int:d1a3ed512028d495359a8b7d0c99ee7e2acf19f7 ;
+    sh:targetClass <http://iasted#Lecturer> .
+
+shape_int:e3c32fed3758cb7cf3d89b2ff9e62c869774d870 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Value_added_tax> .
+
+shape_int:e485afaccb964869ec1196daece4f54340d655b7 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Worker_lecturer> .
+
+shape_int:e4fff170260f03d16752551d539f68c79371b174 a sh:NodeShape ;
+    sh:targetClass <http://edas#CallForManuscripts> .
+
+shape_int:e5e0602ed42163a0fcd077b111ad27e31083e80a a sh:NodeShape ;
+    sh:targetClass <http://edas#Excursion> .
+
+shape_int:e8ddcf7374769e3e2a0f95aaa9e4453aa634940d a sh:NodeShape ;
+    sh:targetClass <http://iasted#Receiving_manuscript> .
+
+shape_int:ea80b6f84004cb01ac3ea25ecdce75ffff2cfdf0 a sh:NodeShape ;
+    sh:property shape_int:11c75b793a3ed711c3ff09d664fca9ac288d6109 ;
+    sh:targetClass <http://iasted#Worker_non_speaker> .
+
+shape_int:eb346168597dd5fa0b621804d1215d888a0f6339 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Refusing_manuscript> .
+
+shape_int:ecdda59aea5ee67d7d854c969ccf7f4f4b4a4c54 a sh:NodeShape ;
+    sh:property shape_int:1106c27fbfb8b3221125823066195bccafde80d9,
+        shape_int:12c2844990d5a596585fc63b727dbaf4debfd1da,
+        shape_int:4163c827d0008088b379b26f8a3335deaa0a67be,
+        shape_int:58348512c7431d9296aa59345f94d319fef6d2b0,
+        shape_int:65414805893c3139c21026723cbe474865474121,
+        shape_int:7a4fc6de718207abbd3487cf6c9e44047d5c03b4,
+        shape_int:b3f814fd0b0be53ea730873ed63b0042647d54ea,
+        shape_int:c90bb0bfbefd004f3cb416b8c3fd19e8fa4b6fd5,
+        shape_int:d59b635667e9caa3f62e8541596a01cb8e5c1bc9,
+        shape_int:dbec133cc262823a985599a5107e645c9dcbc6e2,
+        shape_int:e53758d74aed3f4812da11b953a4045edd943d4d,
+        shape_int:e6356f7c9a85fa1beb1ca712053a68cd47ee34fd ;
+    sh:targetClass <http://iasted#Item> .
+
+shape_int:ed5797b33d2432cfedf20d614bba5084d6ee4d1a a sh:NodeShape ;
+    sh:property shape_int:7a4fc6de718207abbd3487cf6c9e44047d5c03b4 ;
+    sh:targetClass <http://iasted#Viza> .
+
+shape_int:eff6b29f6d6a0912bf2b34a82e3a71defc1e3a3a a sh:NodeShape ;
+    sh:property shape_int:c90bb0bfbefd004f3cb416b8c3fd19e8fa4b6fd5 ;
+    sh:targetClass <http://iasted#Author_information_form> .
+
+shape_int:f19999906bd06934956ee2885572f146333f884e a sh:NodeShape ;
+    sh:property shape_int:4163c827d0008088b379b26f8a3335deaa0a67be ;
+    sh:targetClass <http://iasted#Transport_vehicle> .
+
+shape_int:f7afa82b8fb98ea40a971537bcad246d1eee34d1 a sh:NodeShape ;
+    sh:targetClass <http://iasted#Simulating> .
+
+shape_int:f7f1997c6cd1aa051279675742272a956e7db628 a sh:NodeShape ;
+    sh:property shape_int:1106c27fbfb8b3221125823066195bccafde80d9,
+        shape_int:34c24e9ee62cb21f44211b9d55ef7543b4cc2ec0 ;
+    sh:targetClass <http://iasted#Session> .
+
+shape_int:fa37e75f44e8862b0b3e75dfacf30144ba9e98ad a sh:NodeShape ;
+    sh:targetClass <http://edas#ComputerNetworksMeasurementsTopic> .
+
+shape_int:fa5f82ddc16bdadaf1295877c2102aa864ab83af a sh:NodeShape ;
+    sh:property shape_int:0a628308d479d3fb6dc62a8cb1ab44c1261ec0c0,
+        shape_int:f788eaa890e4baf7d733ef8bb9ae10131640a80e ;
+    sh:targetClass <http://edas#ConferenceChair> .
+
+shape_int:fa96a006d69269ea4459ad301b899102dbe6146b a sh:NodeShape ;
+    sh:targetClass <http://iasted#Sponsor_state> .
+
+shape_int:fd0b743b62904a6ea1fdc45de0541da77e0fa720 a sh:NodeShape ;
+    sh:property shape_int:b3b05f02ae2fa3d21cc0437bcc32c38f0c2fd168,
+        shape_int:d1a3ed512028d495359a8b7d0c99ee7e2acf19f7 ;
+    sh:targetClass <http://iasted#Sponsor> .
+
+shape_int:ffc9f55cf761aacca8922a4872c159a10967d97a a sh:NodeShape ;
+    sh:targetClass <http://iasted#Video_presentation> .
+
+shape_int:01f406efa4ca2b5454834a0e2b197a6c88e724b9 a sh:PropertyShape ;
+    sh:datatype xsd:dateTime ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasEndDateTime> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:03f4eccff693a19ff719c29a092a5adbd8545bc0 a sh:PropertyShape ;
+    rdfs:label "Conference Start Date and Time" ;
+    sh:datatype xsd:dateTime ;
+    sh:description "Conference Start Date and Time" ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#startDate> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:072a3a107bfe50ee301d3b8d749c344b55739e42 a sh:PropertyShape ;
+    sh:datatype xsd:dateTime ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasStartDateTime> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:14550f0b872182de36d94007465cc943b1269599 a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasCity> ;
+    sh:pattern ".*" .
+
+shape_int:17029522e34d2856fe4d72a97d0b712dbce0e5f0 a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasPhone> ;
+    sh:pattern ".*" .
+
+shape_int:1823b2a8102aff6223c4ecb686caf8f2013db868 a sh:PropertyShape ;
+    sh:class <http://edas#ConferenceEvent> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#isLocationOf> .
+
+shape_int:20f7d922076019d9eb078f43ca8cc74c4e02940b a sh:PropertyShape ;
+    rdfs:label "Conference Full Name" ;
+    sh:datatype xsd:string ;
+    sh:description "Conference Full Name" ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasName> ;
+    sh:pattern ".*" .
+
+shape_int:231f91394ee3c4f22974710ec633bbba0c17972e a sh:PropertyShape ;
+    sh:class <http://edas#Programme> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasProgramme> .
+
+shape_int:265f5abd38e8844c6d1f6a03efccdcfe162dc352 a sh:PropertyShape ;
+    sh:datatype xsd:int ;
+    sh:maxInclusive "2147483647" ;
+    sh:minInclusive "-2147483648" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://iasted#has_amount_of> ;
+    sh:pattern "[\\-+]?[0-9]+" .
+
+shape_int:2768f0a2969b0f1855fa4adc28358cc0c0d2a848 a sh:PropertyShape ;
+    sh:class <http://edas#Country> ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://edas#hasCountry> .
+
+shape_int:2b8a6ed45b20eef46f323ffbbb66480417d00f67 a sh:PropertyShape ;
+    sh:datatype xsd:date ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://iasted#done_till> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:2d066d4b8cd6e403bdbe36ad5d0fec36d0e75767 a sh:PropertyShape ;
+    sh:class <http://edas#Reviewer> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#isReviewHistoryOf> .
+
+shape_int:392a0c04bada65367244507bcdf8c620d78b1e0b a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasFirstName> ;
+    sh:pattern ".*" .
+
+shape_int:3e341a66431532691b5102d16cdd30ebfe2f8a98 a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasBiography> ;
+    sh:pattern ".*" .
+
+shape_int:3e5040acceacb7e0338e8fe241d192eaa279bd21 a sh:PropertyShape ;
+    rdfs:label "Conference Paper Date and Time Deadline" ;
+    sh:datatype xsd:dateTime ;
+    sh:description "Conference Paper Date and Time Deadline" ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#paperDueOn> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:469531de5ba5e267841732fd362478a42161c94c a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasPostalCode> ;
+    sh:pattern ".*" .
+
+shape_int:4de465a85a82e836271bc87ee5a62bd7ad33d2f2 a sh:PropertyShape ;
+    sh:class <http://edas#Person> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasMember> .
+
+shape_int:511b18dfeeb72f91f16fc70b45ad5b590b0847fc a sh:PropertyShape ;
+    sh:class <http://edas#Author> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#isWrittenBy> .
+
+shape_int:5320764c2f98d009ecbdfc8fad3bb9f1aa82e3f8 a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasCostCurrency> ;
+    sh:pattern ".*" .
+
+shape_int:548e3fbcb6b883c25ee440465aea1c33d185d247 a sh:PropertyShape ;
+    sh:class <http://edas#ConferenceEvent> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#attendeeAt> .
+
+shape_int:596756a98415fcbb9d78ae42d79435faf2e5cfa1 a sh:PropertyShape ;
+    sh:class <http://edas#Paper> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasRelatedPaper> .
+
+shape_int:6ea5832cefef253abfaa8f9fde4f8b87e6854592 a sh:PropertyShape ;
+    sh:class <http://edas#Organization> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#providedBy> .
+
+shape_int:70cb2a7d241edc5b15e40f0a6c22a74cc15de3ca a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasSubmissionInstructions> ;
+    sh:pattern ".*" .
+
+shape_int:70f486783d73485c047b27df9f80263fa5b574d6 a sh:PropertyShape ;
+    sh:class <http://edas#MealEvent> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#isMenuOf> .
+
+shape_int:7325c9dde167eb808ec5a28df8901848302a58a2 a sh:PropertyShape ;
+    sh:datatype xsd:dateTime ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasSubmissionDeadline> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:7d6d49aba278d71a8898617d000af8fa967ad94a a sh:PropertyShape ;
+    sh:class <http://edas#PaperPresentation> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#relatedToEvent> .
+
+shape_int:9ac9a40103914ae09a9a7ab7efab42aa7471ee7d a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasLastName> ;
+    sh:pattern ".*" .
+
+shape_int:9f7ee7308180af25a055414a34c475121701c9bc a sh:PropertyShape ;
+    sh:class <http://edas#Conference> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#isMemberOf> .
+
+shape_int:a6dc4144189d0db43cae0b554e134507e25aaa2f a sh:PropertyShape ;
+    rdfs:label "Conference End Date and Time" ;
+    sh:datatype xsd:dateTime ;
+    sh:description "Conference End Date and Time" ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#endDate> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:abe57b4324d5fdfe6d4aafc963b2e24cbe76fdbe a sh:PropertyShape ;
+    sh:class <http://edas#AcceptedPaper> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#relatedToPaper> .
+
+shape_int:ae781370e1562e999d04001d62d421e7f017140f a sh:PropertyShape ;
+    sh:class <http://edas#Place> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasLocation> .
+
+shape_int:b17dbb0b1fd41c59abb63f47b146a0fa5f5295d4 a sh:PropertyShape ;
+    sh:class <http://edas#Person> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasAttendee> .
+
+shape_int:b54060c54287d74ff4d3d6b474ff0902297cdab3 a sh:PropertyShape ;
+    sh:datatype xsd:dateTime ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://iasted#is_dated_on> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:bb81a1305d1047fb65ec920d4c9011452b88667e a sh:PropertyShape ;
+    sh:class <http://edas#Sponsorship> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#isProviderOf> .
+
+shape_int:c59ddb86013ffffbd27ac2bc5e1d26684391f85f a sh:PropertyShape ;
+    sh:class <http://edas#MealMenu> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasMenu> .
+
+shape_int:cdb5080218728f60734290497343edcdc488e29d a sh:PropertyShape ;
+    rdfs:label "Conference Registration Date and Time Deadline" ;
+    sh:datatype xsd:dateTime ;
+    sh:description "Conference Registration Date and Time Deadline" ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#registrationDueOn> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:d30efad49c67f1dbe1eb642f31e919497dcf905d a sh:PropertyShape ;
+    sh:class <http://edas#Call> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasCall> .
+
+shape_int:d402ac97d0f252c8bef2b7599de2ccb39bf02dbe a sh:PropertyShape ;
+    sh:class <http://edas#PersonalReviewHistory> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasReviewHistory> .
+
+shape_int:d66a8a4a4e115f6c5a6652e5434f64f4e717578b a sh:PropertyShape ;
+    sh:datatype xsd:int ;
+    sh:maxInclusive "2147483647" ;
+    sh:minInclusive "-2147483648" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasCostAmount> ;
+    sh:pattern "[\\-+]?[0-9]+" .
+
+shape_int:dc909f874bc5d71384a8af0f6791180170fc555a a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_present_in> .
+
+shape_int:eb4ea87398268775d4fc3f2f5a6be7990f81028b a sh:PropertyShape ;
+    rdfs:label "Conference Manuscript Date and Time Deadline" ;
+    sh:datatype xsd:dateTime ;
+    sh:description "Conference Manuscript Date and Time Deadline" ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#manuscriptDueOn> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:ed639c0a3f796dbae13bca7b168ca8c37c2f35a2 a sh:PropertyShape ;
+    sh:class <http://edas#AcademicEvent> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#forEvent> .
+
+shape_int:f78223adbdade8d540d200ea1db0a38ab62b32da a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasStreet> ;
+    sh:pattern ".*" .
+
+shape_int:f9a0ba563982b3001294ffee55a7761a6e671bfc a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_connected_with> .
+
+shape_int:fc687222aa574b07318770d5f5576ef8d909e87d a sh:PropertyShape ;
+    sh:class <http://edas#ConferenceEvent> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#belongsToEvent> .
+
+shape_int:1164fe9d0048baf4da98e42c5f5134c1866083f7 a sh:PropertyShape ;
+    sh:class <http://iasted#Item> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#sign> .
+
+shape_int:1b3906b8f608de0adb44752f446db6aa0dc3f236 a sh:PropertyShape ;
+    sh:class <http://iasted#Item> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#prepare> .
+
+shape_int:2b19888ce2d40ae64d0f2af419efc8cbfa3f87d0 a sh:PropertyShape ;
+    sh:class <http://iasted#Time> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_held_after> .
+
+shape_int:434f3b59fe3c335c4f7df77c9f021657fccc5e61 a sh:PropertyShape ;
+    sh:class <http://iasted#Item> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#write> .
+
+shape_int:4dec40421a17aefbed121f5ac4c7fbfda0a19934 a sh:PropertyShape ;
+    sh:class <http://iasted#Item> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#need> .
+
+shape_int:554af1b0ed3abdcf4d752da6d6621af90688967c a sh:PropertyShape ;
+    sh:class <http://edas#ReviewRating> ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://edas#hasRating> ;
+    sh:qualifiedMinCount "1" .
+
+shape_int:7183394b71548717ad496ccfb500849e74740274 a sh:PropertyShape ;
+    sh:class <http://iasted#Time> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_present> .
+
+shape_int:7a4fc6de718207abbd3487cf6c9e44047d5c03b4 a sh:PropertyShape ;
+    sh:class <http://iasted#Person> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_needed_for> .
+
+shape_int:829a17cedb28cf8186b6bec68fe7868b20e8ca06 a sh:PropertyShape ;
+    sh:class <http://iasted#Item> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_paid_with> .
+
+shape_int:a70783e07565adf6cb312566a71723f4214d910a a sh:PropertyShape ;
+    sh:class <http://edas#Topic> ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasTopic> .
+
+shape_int:b3b05f02ae2fa3d21cc0437bcc32c38f0c2fd168 a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://iasted#occupy> .
+
+shape_int:b3f814fd0b0be53ea730873ed63b0042647d54ea a sh:PropertyShape ;
+    sh:class <http://iasted#Person> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_sent_by> .
+
+shape_int:c29a0126df972e0db04729235c94feba33eacde8 a sh:PropertyShape ;
+    sh:class <http://iasted#Item> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#send> .
+
+shape_int:c90bb0bfbefd004f3cb416b8c3fd19e8fa4b6fd5 a sh:PropertyShape ;
+    sh:class <http://iasted#Time> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_sent_after> .
+
+shape_int:ca8a90f8e4d4ee8784ba55cca35228fcc96b07bd a sh:PropertyShape ;
+    sh:class <http://iasted#Time> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_held_before> .
+
+shape_int:d59b635667e9caa3f62e8541596a01cb8e5c1bc9 a sh:PropertyShape ;
+    sh:class <http://iasted#Item> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_made_from> .
+
+shape_int:dbec133cc262823a985599a5107e645c9dcbc6e2 a sh:PropertyShape ;
+    sh:class <http://iasted#Person> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_prepared_by> .
+
+shape_int:e4d7c74dafe0f99f751716b472f2a1bd5adc9850 a sh:PropertyShape ;
+    sh:class <http://iasted#Item> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_equipped_by> .
+
+shape_int:e615a4bb69cffe910fcc3209efe6fd4aa6321345 a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasEmail> ;
+    sh:pattern ".*" .
+
+shape_int:e6356f7c9a85fa1beb1ca712053a68cd47ee34fd a sh:PropertyShape ;
+    sh:class <http://iasted#Person> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_signed_by> .
+
+shape_int:fa147342f6c4a1dfb343115ca6c31e92e6689b10 a sh:PropertyShape ;
+    sh:class <http://iasted#Building> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_paid_in> .
+
+shape_int:0c345a76730911df3b9bd4ad2faeb0c6eb698a10 a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://iasted#speak_in> .
+
+shape_int:12c2844990d5a596585fc63b727dbaf4debfd1da a sh:PropertyShape ;
+    sh:class <http://iasted#Time> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_sent_before> .
+
+shape_int:34c24e9ee62cb21f44211b9d55ef7543b4cc2ec0 a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_held_in> .
+
+shape_int:4163c827d0008088b379b26f8a3335deaa0a67be a sh:PropertyShape ;
+    sh:class <http://iasted#Person> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_used_by> .
+
+shape_int:58348512c7431d9296aa59345f94d319fef6d2b0 a sh:PropertyShape ;
+    sh:class <http://iasted#Person> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_given_to> .
+
+shape_int:65414805893c3139c21026723cbe474865474121 a sh:PropertyShape ;
+    sh:class <http://iasted#Person> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_writen_by> .
+
+shape_int:f788eaa890e4baf7d733ef8bb9ae10131640a80e a sh:PropertyShape ;
+    sh:class <http://edas#Call> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#initiates> .
+
+shape_int:0a628308d479d3fb6dc62a8cb1ab44c1261ec0c0 a sh:PropertyShape ;
+    sh:class <http://edas#Paper> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#isReviewing> .
+
+shape_int:833bdb57a1fc0623381fb60caa78fdd0e2f40fb0 a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_paid_for> .
+
+shape_int:beb1c53fbc1b871a9fc726f1a0825969b431c419 a sh:PropertyShape ;
+    sh:class <http://edas#Document> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasRelatedDocument> .
+
+shape_int:3c5075c3362d85b5536845741459f569384dd6d0 a sh:PropertyShape ;
+    sh:class <http://iasted#Person> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_paid_by> ;
+    sh:qualifiedMinCount "1" .
+
+shape_int:aaa2c47f8ebde67d556ddbf55078d09dba31c8e9 a sh:PropertyShape ;
+    sh:class <http://iasted#Item> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#obtain> .
+
+shape_int:11c75b793a3ed711c3ff09d664fca9ac288d6109 a sh:PropertyShape ;
+    sh:class <http://iasted#Money> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#pay> ;
+    sh:qualifiedMinCount "1" .
+
+shape_int:310a721df1ac28db50168b9e6f30ae5f2f08ae00 a sh:PropertyShape ;
+    sh:class <http://iasted#Person> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_visited_by> .
+
+shape_int:e53758d74aed3f4812da11b953a4045edd943d4d a sh:PropertyShape ;
+    sh:class <http://iasted#Activity> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#go_through> ;
+    sh:qualifiedMinCount "1" .
+
+shape_int:1106c27fbfb8b3221125823066195bccafde80d9 a sh:PropertyShape ;
+    sh:class <http://iasted#Person> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_given_by> ;
+    sh:qualifiedMinCount "1" .
+
+shape_int:d1a3ed512028d495359a8b7d0c99ee7e2acf19f7 a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://iasted#give> ;
+    sh:qualifiedMinCount "1" .
+
+shape_int:a237b956ea5642c9effd8807a3b39865ea6bff90 a sh:PropertyShape ;
+    sh:class <http://iasted#Person> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_occupied_by> .
+
+shape_int:abd49da335755a843bcb807ff003b9e4f7dee868 a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_situated_in> .
+
+shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://iasted#is_designed_for> .
+

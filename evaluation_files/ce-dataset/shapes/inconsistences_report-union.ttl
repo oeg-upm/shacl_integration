@@ -1,0 +1,49 @@
+@prefix inc: <http://inconsistence.es#> .
+@prefix inc_ex: <http://inconsistence_example.es/resource/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+inc_ex:2b68069f-5b5f-42da-97c9-666a416c84ff a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://w3id.org/CEON/ontology/product/MatterComposition> ;
+    inc:hasInconsistencyPath <http://w3id.org/CEON/ontology/product/associatedWithMatter> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:400a1eb3-65f9-4e84-9f90-b8293e5c8784 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://ontorion.com/namespace#Good>,
+        <http://ontorion.com/namespace#Product>,
+        <http://w3id.org/CEON/ontology/product/ProductObject> ;
+    inc:hasInconsistencyPath <http://w3id.org/CEON/ontology/product/modelledBy> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:5d248f05-9b85-46b3-b483-7cce44f9360b a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://w3id.org/CEON/ontology/product/ProductObject> ;
+    inc:hasInconsistencyPath <http://w3id.org/CEON/ontology/product/modelledBy> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:8143496e-3500-4555-bd98-9a32e810d4be a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://w3id.org/CEON/ontology/product/Product> ;
+    inc:hasInconsistencyPath <http://w3id.org/CEON/ontology/product/hasComposition> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:e17982c2-78c6-4450-b77b-9da4de2f7642 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://w3id.org/CEON/ontology/product/ProductComposition> ;
+    inc:hasInconsistencyPath <http://w3id.org/CEON/ontology/product/associatedWithProductModel> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+
+inc_ex:f70acc1d-9305-425d-bb3d-28604b199a72 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    inc:hasInconsistencyInClass <http://ontorion.com/namespace#Material>,
+        <http://w3id.org/CEON/ontology/material/Material> ;
+    inc:hasInconsistencyPath <http://w3id.org/CEON/ontology/material/hasChemicalEntity> ;
+    inc:hasReport "sh:nodeKind not compatible for union operator." .
+

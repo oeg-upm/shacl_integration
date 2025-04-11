@@ -1,0 +1,2086 @@
+@prefix :      <http://w3id.org/CEON/ontology/full/0.1#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix cpannotationschema: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix odp:   <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://astrea.linkeddata.es/shapes#bc069824e2379a841507c34e0961dcd4>
+        a               sh:NodeShape ;
+        rdfs:label      "MaterialComponent"@en ;
+        sh:description  "A material component is a part of a material."@en ;
+        sh:name         "MaterialComponent"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/material/MaterialComponent> .
+
+<https://astrea.linkeddata.es/shapes#34f4e1fa4ec5dc89ec579d2e4ab7052a>
+        a               sh:PropertyShape ;
+        rdfs:label      "hasBatch"@en , "hasBatch intends to represent that a set of objects can be captured by a number of batches where each batch contains a number of physical objects."@en ;
+        sh:class        <http://w3id.org/CEON/ontology/resourceODP/BatchOfObjects> ;
+        sh:description  "hasBatch intends to represent that a set of objects can be captured by a number of batches where each batch contains a number of physical objects."@en ;
+        sh:name         "hasBatch"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/resourceODP/hasBatch> .
+
+<https://astrea.linkeddata.es/shapes#e94062716d8a24f40dd8b6e9407f72ba>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "qualifiedRevision" , "If this Entity prov:wasRevisionOf Entity :e, then it can qualify how it was revised using prov:qualifiedRevision [ a prov:Revision;  prov:entity :e; :foo :bar ]."@en ;
+        sh:class          prov:Revision ;
+        sh:description    "If this Entity prov:wasRevisionOf Entity :e, then it can qualify how it was revised using prov:qualifiedRevision [ a prov:Revision;  prov:entity :e; :foo :bar ]."@en ;
+        sh:name           "qualifiedRevision" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:qualifiedRevision .
+
+<https://astrea.linkeddata.es/shapes#6adf3ef00af94076036d73424352c09c>
+        a               sh:NodeShape ;
+        rdfs:label      "Material"@en ;
+        rdfs:seeAlso    "https://w3id.org/mdo/core/Material" , "http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94" ;
+        sh:description  "Material as a sub-concept of Matter, can be a substance or a collection of substance which a physical object is composed of."@en ;
+        sh:name         "Material"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#5559021944f37256796b8c17e85f3377> , <https://astrea.linkeddata.es/shapes#737ab248123172156c6687f276bad2b0> , <https://astrea.linkeddata.es/shapes#11639b470d1edc3876157bc78bcc5d9a> ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/material/Material> .
+
+<https://astrea.linkeddata.es/shapes#9f2ff5983022ea06b50937eb453e6746>
+        a               sh:NodeShape ;
+        rdfs:label      "Transformation" ;
+        sh:description  "A process that transforms some situation into another situation, i.e. changes the state of affairs of some actor, resource etc." ;
+        sh:name         "Transformation" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#07c413cea8f6f3dfcf474bef67d3d659> , <https://astrea.linkeddata.es/shapes#0edcd8ceb781364e4c57d4446c25920c> ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/processODP/Transformation> .
+
+<https://astrea.linkeddata.es/shapes#8985e9eaa36ba43dc285bcd9c2797fb1>
+        a               sh:PropertyShape ;
+        rdfs:label      "is the setting for" , "The thing(s) that this situation is the setting for, e.g. a resource that is in a certain state." ;
+        sh:description  "The thing(s) that this situation is the setting for, e.g. a resource that is in a certain state." ;
+        sh:name         "is the setting for" ;
+        sh:nodeKind     sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#dc0adbdfc2ea4da7569686cae85802ef>
+        a               sh:NodeShape ;
+        rdfs:label      "Reuse Process" ;
+        sh:name         "Reuse Process" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/ReuseProcess> .
+
+<https://astrea.linkeddata.es/shapes#32584b180b87c84a3db9816419174d32>
+        a               sh:PropertyShape ;
+        rdfs:label      "AnonymousFormula represents that a molecular entity has the anonymous formula in a string."@en ;
+        rdfs:seeAlso    "https://w3id.org/mdo/structure/AnonymousFormula" ;
+        sh:description  "AnonymousFormula represents that a molecular entity has the anonymous formula in a string."@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         <http://w3id.org/CEON/ontology/material/AnonymousFormula> .
+
+<https://astrea.linkeddata.es/shapes#c219d8e18b38970896e59d3c8c5ec2a8>
+        a               sh:NodeShape ;
+        rdfs:label      "Collaboration participation" ;
+        sh:description  "The relation involving the role of a certain actor with respect to a value network or a process in such a network, e.g. an organisation (actor) acting as the recycler (role) in a glass recycling value netowrk (network) at a specific point or period in time. Or an organisation (actor) acting as the dismantler (role) in a dismantling step of a building deconstruction process (process step) at a specific point or period in time." ;
+        sh:name         "Collaboration participation" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#8b1ca2ba6f0af73125e912a9391dcdce> ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actorODP/CollaborationParticipation> .
+
+<https://astrea.linkeddata.es/shapes#eedda19a1accb656bb6d2d48336dc64c>
+        a               sh:NodeShape ;
+        rdfs:label      "Supplying resource" ;
+        sh:description  "The relation where the role of the actor is the supplier of a certain resource." ;
+        sh:name         "Supplying resource" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actor/SupplyingResource> .
+
+<https://astrea.linkeddata.es/shapes#4a9cebb06392acf3b2dd8926e08ef100>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      <http://w3id.org/CEON/ontology/actorODP/participationIn> .
+
+<https://astrea.linkeddata.es/shapes#524b11eb1bd2efab02d5d9106ac4d4b0>
+        a               sh:NodeShape ;
+        rdfs:label      "Resell Process" ;
+        sh:name         "Resell Process" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/ResellProcess> .
+
+<https://astrea.linkeddata.es/report/0488287264>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#source>
+                "http://w3id.org/CEON/ontology/resourceODP/0.1/" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#47511281e6c593a219296a38e0b696e1>
+        a               sh:PropertyShape ;
+        rdfs:label      "needed resource relations" , "In order for an actor to have a capability, it needs to have certain resources, e.g. materials, infrastrucutre, know-how, information etc." ;
+        sh:description  "In order for an actor to have a capability, it needs to have certain resources, e.g. materials, infrastrucutre, know-how, information etc." ;
+        sh:name         "needed resource relations" ;
+        sh:nodeKind     sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#85951a71d82aa5c391b052ac6c4af85d>
+        a            sh:PropertyShape ;
+        sh:class     <http://w3id.org/CEON/ontology/cvn/CircularStrategy> ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      <http://w3id.org/CEON/ontology/cvn/implementsStrategy> .
+
+<https://astrea.linkeddata.es/shapes#fe046c7725e6cec8d50201ebd8bf1be1>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "wasEndedBy" , "End is when an activity is deemed to have ended. An end may refer to an entity, known as trigger, that terminated the activity."@en ;
+        sh:class          prov:Entity ;
+        sh:description    "End is when an activity is deemed to have ended. An end may refer to an entity, known as trigger, that terminated the activity."@en ;
+        sh:name           "wasEndedBy" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:wasEndedBy .
+
+<https://astrea.linkeddata.es/shapes#be9967e653e04a76660895f4c48a4796>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "qualifiedEnd" , "If this Activity prov:wasEndedBy Entity :e1, then it can qualify how it was ended using prov:qualifiedEnd [ a prov:End;  prov:entity :e1; :foo :bar ]."@en ;
+        sh:class          prov:End ;
+        sh:description    "If this Activity prov:wasEndedBy Entity :e1, then it can qualify how it was ended using prov:qualifiedEnd [ a prov:End;  prov:entity :e1; :foo :bar ]."@en ;
+        sh:name           "qualifiedEnd" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:qualifiedEnd .
+
+<https://astrea.linkeddata.es/shapes#f16be92d549f1a5334c97a17c328b860>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "The _optional_ Activity of an Influence, which used, generated, invalidated, or was the responsibility of some Entity. This property is _not_ used by ActivityInfluence (use prov:activity instead)."@en , "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>." , "hadActivity" ;
+        sh:class          prov:Activity ;
+        sh:description    "The _optional_ Activity of an Influence, which used, generated, invalidated, or was the responsibility of some Entity. This property is _not_ used by ActivityInfluence (use prov:activity instead)."@en , "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>." ;
+        sh:name           "hadActivity" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:hadActivity .
+
+<https://astrea.linkeddata.es/shapes#41a49a60d34660d62e0a789087c9adef>
+        a               sh:PropertyShape ;
+        rdfs:label      "has actor type" , "The type of the actor." ;
+        sh:class        <http://w3id.org/CEON/ontology/actorODP/ActorType> ;
+        sh:description  "The type of the actor." ;
+        sh:name         "has actor type" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/actorODP/actorType> .
+
+<https://astrea.linkeddata.es/shapes#6a12fe06778e62114ece0acb56dbde35>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "qualifiedAttribution" , "If this Entity prov:wasAttributedTo Agent :ag, then it can qualify how it was influenced using prov:qualifiedAttribution [ a prov:Attribution;  prov:agent :ag; :foo :bar ]."@en ;
+        sh:class          prov:Attribution ;
+        sh:description    "If this Entity prov:wasAttributedTo Agent :ag, then it can qualify how it was influenced using prov:qualifiedAttribution [ a prov:Attribution;  prov:agent :ag; :foo :bar ]."@en ;
+        sh:name           "qualifiedAttribution" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:qualifiedAttribution .
+
+<https://astrea.linkeddata.es/shapes#e903a6e0ea34800b190bbaf7193ddcf3>
+        a               sh:PropertyShape ;
+        rdfs:label      "HillFormula represents that a composition has the hill formula in a string."@en ;
+        rdfs:seeAlso    "https://w3id.org/mdo/structure/HillFormula" ;
+        sh:description  "HillFormula represents that a composition has the hill formula in a string."@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         <http://w3id.org/CEON/ontology/material/HillFormula> .
+
+<https://astrea.linkeddata.es/shapes#f22ce93d0249c47b1cfa20098aa89e23>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "qualifiedStart" , "If this Activity prov:wasStartedBy Entity :e1, then it can qualify how it was started using prov:qualifiedStart [ a prov:Start;  prov:entity :e1; :foo :bar ]."@en ;
+        sh:class          prov:Start ;
+        sh:description    "If this Activity prov:wasStartedBy Entity :e1, then it can qualify how it was started using prov:qualifiedStart [ a prov:Start;  prov:entity :e1; :foo :bar ]."@en ;
+        sh:name           "qualifiedStart" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:qualifiedStart .
+
+<https://astrea.linkeddata.es/shapes#0092c946ee944c5d8593b94847147994>
+        a               sh:PropertyShape ;
+        rdfs:label      "time point" , "The point in time when something took place or was valid." ;
+        sh:description  "The point in time when something took place or was valid." ;
+        sh:name         "time point" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         <http://w3id.org/CEON/ontology/actorODP/participationTimePoint> .
+
+<https://astrea.linkeddata.es/shapes#84e0eac538b8e168f2278ad31a5e6a61>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "EntityInfluence" ;
+        rdfs:seeAlso      prov:entity ;
+        sh:description    "It is not recommended that the type EntityInfluence be asserted without also asserting one of its more specific subclasses."@en , "EntityInfluence provides additional descriptions of an Entity's binary influence upon any other kind of resource. Instances of EntityInfluence use the prov:entity property to cite the influencing Entity."@en ;
+        sh:name           "EntityInfluence" ;
+        sh:nodeKind       sh:IRI ;
+        sh:property       <https://astrea.linkeddata.es/shapes#8c6c260690c1a411419b565230eb5c9c> ;
+        sh:targetClass    prov:EntityInfluence .
+
+<https://astrea.linkeddata.es/shapes#759d87b2c441dd1d65536bc348d8b60d>
+        a               sh:NodeShape ;
+        rdfs:label      "ChemicalEntity"@en ;
+        rdfs:seeAlso    "http://purl.obolibrary.org/obo/chebi#24431" , "http://emmo.info/emmo#EMMO_47338839_6cca_4a8e_b565_3c4d5517e2c0" ;
+        sh:description  "A chemical entity is an abstraction of entities that can compose matter. For instance, a chemical entity can be a molecular entity or a chemical substance."@en ;
+        sh:name         "ChemicalEntity"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/material/ChemicalEntity> .
+
+<https://astrea.linkeddata.es/shapes#218fa57bd1a31594345b3eb29b6056a4>
+        a               sh:NodeShape ;
+        rdfs:label      "Information"@en ;
+        rdfs:seeAlso    "http://emmo.info/emmo#EMMO_64c72d00_7582_44ea_a0b5_3a14e50acc36" , "Information is an abstract concept that represents any kind of interpretations. For instance, information can be data generated by software systems or data used by people for communications."@en ;
+        sh:name         "Information"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#f5304f71074ccfee836be83abf5ba533> ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/resourceODP/Information> .
+
+<https://astrea.linkeddata.es/shapes#623827bfacb9cfe772f674bcd8c5d797>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "hadUsage" , "The _optional_ Usage involved in an Entity's Derivation."@en ;
+        sh:class          prov:Usage ;
+        sh:description    "The _optional_ Usage involved in an Entity's Derivation."@en ;
+        sh:name           "hadUsage" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:hadUsage .
+
+<https://astrea.linkeddata.es/shapes#5f9853339ada422d80d6e6c4765d2293>
+        a               sh:PropertyShape ;
+        rdfs:label      "statement about" , "Generic property to express what the statement is about, i.e. what is involved in the statement." ;
+        sh:description  "Generic property to express what the statement is about, i.e. what is involved in the statement." ;
+        sh:name         "statement about" ;
+        sh:nodeKind     sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#38b8d11496613ed08df638055e2710f5>
+        a               sh:NodeShape ;
+        rdfs:label      "Participation" ;
+        sh:name         "Participation" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#091286625d18b251cdbe7fbc7b529fe2> , <https://astrea.linkeddata.es/shapes#844f3005973a6a1a6270bec1559d13c5> , <https://astrea.linkeddata.es/shapes#2b089ea29b5d2c034cff7e743d698ae6> ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actorODP/Participation> .
+
+<https://astrea.linkeddata.es/shapes#b0eb521269e68cd1544810fa1247efbc>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal .
+
+<https://astrea.linkeddata.es/shapes#6442abe8d7c140353404ac4f9a049209>
+        a               sh:NodeShape ;
+        rdfs:label      "Actor collaboration role" ;
+        sh:description  "The roles of an actor involved in a collaboration." ;
+        sh:name         "Actor collaboration role" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actor/ActorCollaborationRole> .
+
+<https://astrea.linkeddata.es/shapes#79ab56626ae696b9b1bd5ba01da87af3>
+        a               sh:PropertyShape ;
+        rdfs:label      "end time" , "The end of a time interval." ;
+        sh:description  "The end of a time interval." ;
+        sh:name         "end time" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         <http://w3id.org/CEON/ontology/actorODP/participationEndTime> .
+
+<https://astrea.linkeddata.es/shapes#b42daad3d3872a17a8aaaf1adecb416b>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "alternateOf" ;
+        rdfs:seeAlso      prov:specializationOf ;
+        sh:class          prov:Entity ;
+        sh:name           "alternateOf" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:alternateOf .
+
+<https://astrea.linkeddata.es/shapes#c0ded217d6fb42058615671adbc50169>
+        a               sh:PropertyShape ;
+        rdfs:label      "hasComposition intends to represent that a product model or physical object can have compostition information."@en ;
+        sh:class        <http://w3id.org/CEON/ontology/resourceODP/Composition> ;
+        sh:description  "hasComposition intends to represent that a product model or physical object can have compostition information."@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/product/hasComposition> .
+
+<https://astrea.linkeddata.es/shapes#0edcd8ceb781364e4c57d4446c25920c>
+        a               sh:PropertyShape ;
+        rdfs:label      "resulting situation" , "The situation after the execution of a process." ;
+        sh:class        <http://w3id.org/CEON/ontology/processODP/Situation> ;
+        sh:description  "The situation after the execution of a process." ;
+        sh:name         "resulting situation" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/processODP/resultingSituation> .
+
+<https://astrea.linkeddata.es/shapes#8039c5b998ce5507fef3f197592cfe07>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "Association" ;
+        sh:description    "An instance of prov:Association provides additional descriptions about the binary prov:wasAssociatedWith relation from an prov:Activity to some prov:Agent that had some responsiblity for it. For example, :baking prov:wasAssociatedWith :baker; prov:qualifiedAssociation [ a prov:Association; prov:agent :baker; :foo :bar ]."@en ;
+        sh:name           "Association" ;
+        sh:nodeKind       sh:IRI ;
+        sh:property       <https://astrea.linkeddata.es/shapes#23f29c3c88729cbbfdca4f8d496ac5c5> , <https://astrea.linkeddata.es/shapes#50ee12d03373a78308e5484bd860ad98> ;
+        sh:targetClass    prov:Association .
+
+<https://astrea.linkeddata.es/shapes#ed0421f26a73b6bfcb56508ef602f04d>
+        a               sh:NodeShape ;
+        rdfs:label      "Matter"@en ;
+        rdfs:seeAlso    "http://emmo.info/emmo#EMMO_5b2222df_4da6_442f_8244_96e9e45887d1" ;
+        sh:description  "A matter is a physical substance."@en ;
+        sh:name         "Matter"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/resourceODP/Matter> .
+
+<https://astrea.linkeddata.es/shapes#02593da342b5a364b87413f58db28026>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "qualifiedUsage" , "If this Activity prov:used Entity :e, then it can qualify how it used it using prov:qualifiedUsage [ a prov:Usage; prov:entity :e; :foo :bar ]."@en ;
+        sh:class          prov:Usage ;
+        sh:description    "If this Activity prov:used Entity :e, then it can qualify how it used it using prov:qualifiedUsage [ a prov:Usage; prov:entity :e; :foo :bar ]."@en ;
+        sh:name           "qualifiedUsage" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:qualifiedUsage .
+
+<https://astrea.linkeddata.es/shapes#880bd27facd6ed453d3ba0a7b69536cd>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "wasAssociatedWith" , "An prov:Agent that had some (unspecified) responsibility for the occurrence of this prov:Activity."@en ;
+        sh:class          prov:Agent ;
+        sh:description    "An prov:Agent that had some (unspecified) responsibility for the occurrence of this prov:Activity."@en ;
+        sh:name           "wasAssociatedWith" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:wasAssociatedWith .
+
+<https://astrea.linkeddata.es/shapes#737ab248123172156c6687f276bad2b0>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      <http://w3id.org/CEON/ontology/material/hasChemicalEntity> .
+
+<https://astrea.linkeddata.es/shapes#0251d08e2da15fc80cf27a139a9cdf9e>
+        a               sh:PropertyShape ;
+        rdfs:label      "batchOfProduct"@en , "batchOfProduct intends to represent what is the model product of a batch of objects."@en ;
+        sh:description  "batchOfProduct intends to represent what is the model product of a batch of objects."@en ;
+        sh:name         "batchOfProduct"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/product/batchOfProduct> .
+
+<https://astrea.linkeddata.es/shapes#d8a866e4747ffbb40f3535c089a72037>
+        a               sh:NodeShape ;
+        rdfs:label      "Product Model"@en ;
+        sh:description  "A product model is a model that is used for manufacturing products."@en ;
+        sh:name         "Product Model"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#c0ded217d6fb42058615671adbc50169> , <https://astrea.linkeddata.es/shapes#53519cc64615fc2727319c2a6943d5e5> ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/product/Product> .
+
+<https://astrea.linkeddata.es/shapes#bd3f68b2fd6f4c67fb2d835f5de23802>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "activity" ;
+        sh:class          prov:Activity ;
+        sh:name           "activity" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:activity .
+
+<https://astrea.linkeddata.es/shapes#091286625d18b251cdbe7fbc7b529fe2>
+        a               sh:PropertyShape ;
+        rdfs:label      "has participant role" , "Holds the value of the role of the participant in this participation relation." ;
+        sh:class        <http://w3id.org/CEON/ontology/actorODP/Role> ;
+        sh:description  "Holds the value of the role of the participant in this participation relation." ;
+        sh:name         "has participant role" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/actorODP/participantRole> .
+
+<https://astrea.linkeddata.es/shapes#2cc6e173d55aa5783d44ad88a28d4a44>
+        a               sh:NodeShape ;
+        rdfs:label      "Refurbishment Process" ;
+        sh:name         "Refurbishment Process" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/RefurbishmentProcess> .
+
+<https://astrea.linkeddata.es/shapes#bf692e48e6da06b7b378a173c954191a>
+        a               sh:NodeShape ;
+        rdfs:label      "Owning resource" ;
+        sh:description  "The relation where the role of the actor is the owner of a certain resource." ;
+        sh:name         "Owning resource" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actor/OwningResource> .
+
+<https://astrea.linkeddata.es/shapes#c41d4da95170cac42f55bca1e3619591>
+        a               sh:NodeShape ;
+        rdfs:label      "Circular Value Network Participation" ;
+        sh:description  "A participation-relation, that represents the participation of an actor in a CVN with a certain role. For instance, a specific company playing the role of recycler in a certain flow of a CVN. The participation may also be related to a certain time (or time interval)." ;
+        sh:name         "Circular Value Network Participation" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actor/CVNParticipation> .
+
+<https://astrea.linkeddata.es/shapes#46354dfb3c12c2efeed509b8dafdc1c0>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "specializationOf" ;
+        rdfs:seeAlso      prov:alternateOf ;
+        sh:class          prov:Entity ;
+        sh:name           "specializationOf" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:specializationOf .
+
+<https://astrea.linkeddata.es/shapes#f1569d82a24734f2d5df36acdacf01bc>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "InstantaneousEvent" ;
+        sh:description    "An instantaneous event, or event for short, happens in the world and marks a change in the world, in its activities and in its entities. The term 'event' is commonly used in process algebra with a similar meaning. Events represent communications or interactions; they are assumed to be atomic and instantaneous."@en ;
+        sh:name           "InstantaneousEvent" ;
+        sh:nodeKind       sh:IRI ;
+        sh:property       <https://astrea.linkeddata.es/shapes#50ee12d03373a78308e5484bd860ad98> , <https://astrea.linkeddata.es/shapes#196ea8d0591502158fa42bcdeb09377d> , <https://astrea.linkeddata.es/shapes#ad37c34a735811937bada118cc65cc69> ;
+        sh:targetClass    prov:InstantaneousEvent .
+
+<https://astrea.linkeddata.es/shapes#7fc73836cc801eef1867f3123fa59704>
+        a               sh:NodeShape ;
+        rdfs:label      "Circular Value Network Blueprint" ;
+        sh:description  "A plan or a pattern of a CVN configuration that can then be filled with actual actors and processes. The blueprint can be used to capture a desired setup of a network, or for reusing patterns of CVNs." ;
+        sh:name         "Circular Value Network Blueprint" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#78878444a8f39bf5d9b93121ea1a9d6f> , <https://astrea.linkeddata.es/shapes#330e95c2241d685cdee32c689234e96e> ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/cvn/CVNBlueprint> .
+
+<https://astrea.linkeddata.es/shapes#34b0ec6a3b71ee045725684d306fba44>
+        a               sh:PropertyShape ;
+        rdfs:label      "hasProductComponent"@en , "hasProductComponent intends to represent that a product can have other product components."@en ;
+        sh:class        <http://w3id.org/CEON/ontology/product/ProductObject> ;
+        sh:description  "hasProductComponent intends to represent that a product can have other product components."@en ;
+        sh:name         "hasProductComponent"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/product/hasProductComponent> .
+
+<https://astrea.linkeddata.es/shapes#7aa09273a917128a690a39f444a805bf>
+        a               sh:PropertyShape ;
+        rdfs:label      "occurs in location" , "The location in which a transformation takes place, e.g. the factory location where something is manufactured." ;
+        sh:description  "The location in which a transformation takes place, e.g. the factory location where something is manufactured." ;
+        sh:name         "occurs in location" ;
+        sh:nodeKind     sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#a027b48f797990265e180d8c447196a5>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "qualifiedDelegation" , "If this Agent prov:actedOnBehalfOf Agent :ag, then it can qualify how with prov:qualifiedResponsibility [ a prov:Responsibility;  prov:agent :ag; :foo :bar ]."@en ;
+        sh:class          prov:Delegation ;
+        sh:description    "If this Agent prov:actedOnBehalfOf Agent :ag, then it can qualify how with prov:qualifiedResponsibility [ a prov:Responsibility;  prov:agent :ag; :foo :bar ]."@en ;
+        sh:name           "qualifiedDelegation" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:qualifiedDelegation .
+
+<https://astrea.linkeddata.es/shapes#8b1ca2ba6f0af73125e912a9391dcdce>
+        a               sh:PropertyShape ;
+        rdfs:label      "based on capability" , "An actor participates in a collaboration based on that it has some capability that is useful for the collaboration." ;
+        sh:class        <http://w3id.org/CEON/ontology/actorODP/Capability> ;
+        sh:description  "An actor participates in a collaboration based on that it has some capability that is useful for the collaboration." ;
+        sh:name         "based on capability" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/actorODP/basedOnCapability> .
+
+<https://astrea.linkeddata.es/shapes#f5bd92c5a8e6f31b638785bf00e1e44e>
+        a               sh:NodeShape ;
+        rdfs:label      "Constituent"@en ;
+        rdfs:seeAlso    "http://emmo.info/emmo#EMMO_ceaaf9f7_fd11_424b_8fda_9afa186af186" ;
+        sh:description  "A constituent is a component of object."@en ;
+        sh:name         "Constituent"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/resourceODP/Constituent> .
+
+<https://astrea.linkeddata.es/shapes#5cb42d8b23325cf29189d69c0e1d05ec>
+        a               sh:NodeShape ;
+        rdfs:label      "Producing resource" ;
+        sh:description  "The relation where the role of the actor is the producer of a certain resource." ;
+        sh:name         "Producing resource" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actor/ProducingResource> .
+
+<https://astrea.linkeddata.es/shapes#cbdd83028fff6b8bbd067d6abd095476>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "wasGeneratedBy" ;
+        sh:class          prov:Activity ;
+        sh:name           "wasGeneratedBy" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:wasGeneratedBy .
+
+<https://astrea.linkeddata.es/shapes#5f6a96140d38beac438e892e7e7178a8>
+        a               sh:NodeShape ;
+        rdfs:label      "Share Resource Process" ;
+        sh:name         "Share Resource Process" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/ShareResourceProcess> .
+
+<https://astrea.linkeddata.es/shapes#6406494d29bf8b5b2d85e2a04fb433f2>
+        a               sh:NodeShape ;
+        rdfs:seeAlso    "Batch Of Objects"@en ;
+        sh:description  "A batch of object is a collection of physical objects that are of the same type."@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#aed0be8bfa390344e773d2b2f711ef1f> , <https://astrea.linkeddata.es/shapes#42a6b64189f4bf5b3e03fb3ef5fbb82d> , <https://astrea.linkeddata.es/shapes#d9f6d8e636bd311f8a61f53cf9cc3d49> , <https://astrea.linkeddata.es/shapes#b3e857450a4cfcb2397b1a8d11582aae> ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/resourceODP/BatchOfObjects> .
+
+<https://astrea.linkeddata.es/shapes#7ca538054f2ef0ee0ca33c6c70507897>
+        a               sh:PropertyShape ;
+        rdfs:label      "next process" , "A relation between one process and the next one following it in some sequence of processes, e.g. a sequence of transformations in a material flow." ;
+        sh:class        <http://w3id.org/CEON/ontology/processODP/Process> ;
+        sh:description  "A relation between one process and the next one following it in some sequence of processes, e.g. a sequence of transformations in a material flow." ;
+        sh:name         "next process" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/processODP/nextProcess> .
+
+<https://astrea.linkeddata.es/shapes#b91884ed41d41396429315286b013c6b>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "qualifiedInvalidation" , "If this Entity prov:wasInvalidatedBy Activity :a, then it can qualify how it was invalidated using prov:qualifiedInvalidation [ a prov:Invalidation;  prov:activity :a; :foo :bar ]."@en ;
+        sh:class          prov:Invalidation ;
+        sh:description    "If this Entity prov:wasInvalidatedBy Activity :a, then it can qualify how it was invalidated using prov:qualifiedInvalidation [ a prov:Invalidation;  prov:activity :a; :foo :bar ]."@en ;
+        sh:name           "qualifiedInvalidation" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:qualifiedInvalidation .
+
+<https://astrea.linkeddata.es/shapes#a870441e0531236e6884c770b0108d9f>
+        a               sh:PropertyShape ;
+        rdfs:label      "has part" , "A process can consists of several part, which are sub-processes." ;
+        sh:class        <http://w3id.org/CEON/ontology/processODP/Process> ;
+        sh:description  "A process can consists of several part, which are sub-processes." ;
+        sh:name         "has part" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/processODP/hasPart> .
+
+<https://astrea.linkeddata.es/shapes#ad37c34a735811937bada118cc65cc69>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "atTime" , "The time at which an InstantaneousEvent occurred, in the form of xsd:dateTime."@en ;
+        sh:datatype       xsd:dateTime ;
+        sh:description    "The time at which an InstantaneousEvent occurred, in the form of xsd:dateTime."@en ;
+        sh:name           "atTime" ;
+        sh:nodeKind       sh:Literal ;
+        sh:path           prov:atTime ;
+        sh:pattern        "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#f58bd8ec708d71ebe65947c10992aca7>
+        a               sh:PropertyShape ;
+        rdfs:label      "composed of" , "Both a CVN and a process can be composed of other CVNs or processes." ;
+        sh:description  "Both a CVN and a process can be composed of other CVNs or processes." ;
+        sh:name         "composed of" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:or           ( [ sh:class  <http://w3id.org/CEON/ontology/cvn/CVN> ;
+                            sh:path   <http://w3id.org/CEON/ontology/cvn/composedOf>
+                          ]
+                          [ sh:class  <http://w3id.org/CEON/ontology/process/Process> ;
+                            sh:path   <http://w3id.org/CEON/ontology/cvn/composedOf>
+                          ]
+                        ) .
+
+<https://astrea.linkeddata.es/shapes#bdbf6ec27ee0cfab014b1c297a55b715>
+        a               sh:PropertyShape ;
+        rdfs:label      "ReducedChemicalFormula represents that a molecular entity has the reduced chemical formula in a string."@en ;
+        rdfs:seeAlso    "https://w3id.org/mdo/structure/ReducedFormula" ;
+        sh:description  "ReducedChemicalFormula represents that a molecular entity has the reduced chemical formula in a string."@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         <http://w3id.org/CEON/ontology/material/ReducedChemicalFormula> .
+
+<https://astrea.linkeddata.es/shapes#caba1d6abfcdf5b1e3085188f4db2a98>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "Activity" ;
+        sh:name           "Activity" ;
+        sh:nodeKind       sh:IRI ;
+        sh:not            <https://astrea.linkeddata.es/shapes#575fba19c3d01370075e04647f571640> ;
+        sh:property       <https://astrea.linkeddata.es/shapes#02593da342b5a364b87413f58db28026> , <https://astrea.linkeddata.es/shapes#e19a16d1c0b26ad48604c0987879fd5a> , <https://astrea.linkeddata.es/shapes#5d0e27a10f755e8b845321ffc3e82361> , <https://astrea.linkeddata.es/shapes#5a9206803db160bd9e016cc72e257fbc> , <https://astrea.linkeddata.es/shapes#682193f88fb7d007707c6d260bff6090> , <https://astrea.linkeddata.es/shapes#2de597cb7d80eaba04f3978aa12b7927> , <https://astrea.linkeddata.es/shapes#6a1974d815a5f075748325cb36ce0c52> , <https://astrea.linkeddata.es/shapes#fe046c7725e6cec8d50201ebd8bf1be1> , <https://astrea.linkeddata.es/shapes#196ea8d0591502158fa42bcdeb09377d> , <https://astrea.linkeddata.es/shapes#f22ce93d0249c47b1cfa20098aa89e23> , <https://astrea.linkeddata.es/shapes#b35aeacc9e82b413789511fd15997611> , <https://astrea.linkeddata.es/shapes#564c4f38e42665fd1f1febce682c48f7> , <https://astrea.linkeddata.es/shapes#55ad425f2ce15142da1b679c17bb5545> , <https://astrea.linkeddata.es/shapes#be9967e653e04a76660895f4c48a4796> , <https://astrea.linkeddata.es/shapes#d18a97a852a607a0308fb5f8582bafcd> , <https://astrea.linkeddata.es/shapes#880bd27facd6ed453d3ba0a7b69536cd> ;
+        sh:targetClass    prov:Activity .
+
+<https://astrea.linkeddata.es/shapes#f77a49b53125e599b5cbc0b3c440c1c6>
+        a               sh:PropertyShape ;
+        rdfs:label      "statement value" , "Generic property to express values, e.g. literals, that are involved in this statement." ;
+        sh:description  "Generic property to express values, e.g. literals, that are involved in this statement." ;
+        sh:name         "statement value" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         <http://w3id.org/CEON/ontology/provenance/statementValue> .
+
+<https://astrea.linkeddata.es/shapes#96edc25eebdf111f16f7f7451264560c>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "Revision" ;
+        sh:description    "An instance of prov:Revision provides additional descriptions about the binary prov:wasRevisionOf relation from some newer prov:Entity to an earlier prov:Entity. For example, :draft_2 prov:wasRevisionOf :draft_1; prov:qualifiedRevision [ a prov:Revision; prov:entity :draft_1; :foo :bar ]."@en ;
+        sh:name           "Revision" ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    prov:Revision .
+
+<https://astrea.linkeddata.es/shapes#dab6128c87685f0af5592704bb3bc5f1>
+        a               sh:NodeShape ;
+        rdfs:label      "Deconstruction Process" ;
+        sh:name         "Deconstruction Process" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/DeconstructionProcess> .
+
+<https://astrea.linkeddata.es/shapes#cc8018c59c77581114aff38b36cf4907>
+        a               sh:NodeShape ;
+        rdfs:label      "ProcessType"@en ;
+        sh:description  "The type of a process."@en ;
+        sh:name         "ProcessType"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/processODP/ProcessType> .
+
+<https://astrea.linkeddata.es/shapes#25df33cfdc1276613589a72dbafe9bc6>
+        a               sh:NodeShape ;
+        rdfs:label      "Remove Resource Process" ;
+        sh:name         "Remove Resource Process" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/RemoveResourceProcess> .
+
+<https://astrea.linkeddata.es/shapes#e1fc6adf1ecea11239af6be6f604723b>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "Communication" ;
+        sh:description    "An instance of prov:Communication provides additional descriptions about the binary prov:wasInformedBy relation from an informed prov:Activity to the prov:Activity that informed it. For example, :you_jumping_off_bridge prov:wasInformedBy :everyone_else_jumping_off_bridge; prov:qualifiedCommunication [ a prov:Communication; prov:activity :everyone_else_jumping_off_bridge; :foo :bar ]."@en ;
+        sh:name           "Communication" ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    prov:Communication .
+
+<https://astrea.linkeddata.es/shapes#fadac7ceeeb747176ed685af535ebc3f>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "qualifiedGeneration" , "If this Activity prov:generated Entity :e, then it can qualify how it performed the Generation using prov:qualifiedGeneration [ a prov:Generation;  prov:entity :e; :foo :bar ]."@en ;
+        sh:class          prov:Generation ;
+        sh:description    "If this Activity prov:generated Entity :e, then it can qualify how it performed the Generation using prov:qualifiedGeneration [ a prov:Generation;  prov:entity :e; :foo :bar ]."@en ;
+        sh:name           "qualifiedGeneration" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:qualifiedGeneration .
+
+<https://astrea.linkeddata.es/shapes#59ca7909bf818880257c21c5ab6e0b3e>
+        a               sh:NodeShape ;
+        rdfs:label      "Offset Process" ;
+        sh:name         "Offset Process" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/OffsetProcess> .
+
+<https://astrea.linkeddata.es/shapes#351a85cc7bf3a227a1d43f5dbdd8c2b1>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "influenced" ;
+        sh:name           "influenced" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:influenced .
+
+<https://astrea.linkeddata.es/shapes#8f11952191e3a00a23ecd9ffcb0db41a>
+        a               sh:PropertyShape ;
+        rdfs:label      "modelledBy"@en , "modelledBy intends to represent that product objects follow particular product models."@en ;
+        sh:class        <http://w3id.org/CEON/ontology/product/Product> ;
+        sh:description  "modelledBy intends to represent that product objects follow particular product models."@en ;
+        sh:name         "modelledBy"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/product/modelledBy> .
+
+<https://astrea.linkeddata.es/shapes#29c7a83af62dae90eb14cf15a6f405b1>
+        a               sh:NodeShape ;
+        rdfs:label      "Actor Circular Value Network role" ;
+        sh:description  "The role(s) of an actor in a Circular Value Network, which is a specific type of collaboration." ;
+        sh:name         "Actor Circular Value Network role" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actor/ActorCVNRole> .
+
+<https://astrea.linkeddata.es/shapes#b58af12353d5ab287b1d474400c77d17>
+        a               sh:PropertyShape ;
+        rdfs:label      "capability property" , "Relates some properties to the capability, such as the parameters of it, or the needed resources." ;
+        sh:description  "Relates some properties to the capability, such as the parameters of it, or the needed resources." ;
+        sh:name         "capability property" ;
+        sh:nodeKind     sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#e1f33209247ac6680cb19a492d35d0c2>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "agent" ;
+        sh:class          prov:Agent ;
+        sh:name           "agent" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:agent .
+
+<https://astrea.linkeddata.es/shapes#330e95c2241d685cdee32c689234e96e>
+        a               sh:PropertyShape ;
+        rdfs:label      "aims at value" , "The value proposition that the planned abstract CVN configuration, or concrete network wants to achieve." ;
+        sh:class        <http://w3id.org/CEON/ontology/value/ValueProposition> ;
+        sh:description  "The value proposition that the planned abstract CVN configuration, or concrete network wants to achieve." ;
+        sh:name         "aims at value" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/cvn/aimsAtValue> .
+
+<https://astrea.linkeddata.es/shapes#ba004e0f18aeedd876d530e27a962908>
+        a               sh:NodeShape ;
+        rdfs:label      "Take Back Process" ;
+        sh:name         "Take Back Process" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/TakeBackProcess> .
+
+<https://astrea.linkeddata.es/shapes#87b784a349c8aad658391cdb3840404d>
+        a               sh:PropertyShape ;
+        rdfs:label      "needs energy" , "The energy needed to perform a certain process." ;
+        sh:class        <http://w3id.org/CEON/ontology/process/Energy> ;
+        sh:description  "The energy needed to perform a certain process." ;
+        sh:name         "needs energy" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/process/needsEnergy> .
+
+<https://astrea.linkeddata.es/shapes#0f6bb768b9664112e6a6f628f3f9901b>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "value" ;
+        sh:name           "value" ;
+        sh:nodeKind       sh:Literal ;
+        sh:path           prov:value .
+
+<https://astrea.linkeddata.es/shapes#d818390ef42301db3daa328201d4df5a>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "Quotation" ;
+        sh:description    "An instance of prov:Quotation provides additional descriptions about the binary prov:wasQuotedFrom relation from some taken prov:Entity from an earlier, larger prov:Entity. For example, :here_is_looking_at_you_kid prov:wasQuotedFrom :casablanca_script; prov:qualifiedQuotation [ a prov:Quotation; prov:entity :casablanca_script; :foo :bar ]."@en ;
+        sh:name           "Quotation" ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    prov:Quotation .
+
+<https://astrea.linkeddata.es/shapes#99e27caefde800d55a4167fbeee11e6f>
+        a               sh:NodeShape ;
+        rdfs:label      "Buying resource" ;
+        sh:description  "The relation where the role of the actor is the buyer of a certain resource." ;
+        sh:name         "Buying resource" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actor/BuyingResource> .
+
+<https://astrea.linkeddata.es/shapes#5a9206803db160bd9e016cc72e257fbc>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "wasInformedBy" , "An activity a2 is dependent on or informed by another activity a1, by way of some unspecified entity that is generated by a1 and used by a2."@en ;
+        sh:class          prov:Activity ;
+        sh:description    "An activity a2 is dependent on or informed by another activity a1, by way of some unspecified entity that is generated by a1 and used by a2."@en ;
+        sh:name           "wasInformedBy" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:wasInformedBy .
+
+<https://astrea.linkeddata.es/shapes#df5a4bd673d32c5600c5e00fea16ed81>
+        a               sh:NodeShape ;
+        rdfs:label      "Actor" ;
+        sh:description  "An agent able to act in the context of a circular value network, e.g. an organisation, person." ;
+        sh:name         "Actor" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#41a49a60d34660d62e0a789087c9adef> ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actorODP/Actor> .
+
+<https://astrea.linkeddata.es/shapes#23262dfb269b716c32d41b945177d5cc>
+        a            sh:PropertyShape ;
+        sh:maxCount  "0"^^xsd:nonNegativeInteger ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      prov:hadActivity .
+
+<https://astrea.linkeddata.es/shapes#564c4f38e42665fd1f1febce682c48f7>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "used" , "A prov:Entity that was used by this prov:Activity. For example, :baking prov:used :spoon, :egg, :oven ."@en ;
+        sh:class          prov:Entity ;
+        sh:description    "A prov:Entity that was used by this prov:Activity. For example, :baking prov:used :spoon, :egg, :oven ."@en ;
+        sh:name           "used" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:used .
+
+<https://astrea.linkeddata.es/shapes#a623ee1236e0141d1f25df0c64a6f062>
+        a               sh:PropertyShape ;
+        rdfs:label      "is a participation in" , "The collaboration or process that this participation relates to." ;
+        sh:description  "The collaboration or process that this participation relates to." ;
+        sh:name         "is a participation in" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:or           ( [ sh:class  <http://w3id.org/CEON/ontology/cvn/Collaboration> ;
+                            sh:path   <http://w3id.org/CEON/ontology/actorODP/participationIn>
+                          ]
+                          [ sh:class  <http://w3id.org/CEON/ontology/process/Process> ;
+                            sh:path   <http://w3id.org/CEON/ontology/actorODP/participationIn>
+                          ]
+                        ) .
+
+<https://astrea.linkeddata.es/shapes#498cf9f9952c45e9faedb05ffab36d32>
+        a               sh:NodeShape ;
+        rdfs:label      "Assembling Process" ;
+        sh:name         "Assembling Process" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/AssemblingProcess> .
+
+<https://astrea.linkeddata.es/shapes#bf6ce2dfa58223ad4576e25be1cfd88a>
+        a               sh:PropertyShape ;
+        rdfs:label      "has input" , "The situation before the transformation takes place, i.e. the state of affairs before the process takes places, such as the set of components before they are assembled into a product." ;
+        sh:description  "The situation before the transformation takes place, i.e. the state of affairs before the process takes places, such as the set of components before they are assembled into a product." ;
+        sh:name         "has input" ;
+        sh:nodeKind     sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#b6cfda6378dea2fbd008d180f74c22b7>
+        a               sh:NodeShape ;
+        rdfs:label      "statement" ;
+        sh:description  "Generic class representing the concept of a statement, i.e. some piece of information, fact etc that is expressed in the data. Effectively used to reify relations (triples) in the data, and express information about them." ;
+        sh:name         "statement" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/provenance/Statement> .
+
+<https://astrea.linkeddata.es/shapes#a6d6dba55ddce3542552ca452502629a>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "Organization" ;
+        sh:name           "Organization" ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    prov:Organization .
+
+<https://astrea.linkeddata.es/shapes#976030c8af974daa5e85c863ad286819>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "Delegation" ;
+        sh:description    "An instance of prov:Delegation provides additional descriptions about the binary prov:actedOnBehalfOf relation from a performing prov:Agent to some prov:Agent for whom it was performed. For example, :mixing prov:wasAssociatedWith :toddler . :toddler prov:actedOnBehalfOf :mother; prov:qualifiedDelegation [ a prov:Delegation; prov:entity :mother; :foo :bar ]."@en ;
+        sh:name           "Delegation" ;
+        sh:nodeKind       sh:IRI ;
+        sh:property       <https://astrea.linkeddata.es/shapes#f16be92d549f1a5334c97a17c328b860> ;
+        sh:targetClass    prov:Delegation .
+
+<https://astrea.linkeddata.es/shapes#7cc7066d3798f8eacf28937518ae24dc>
+        a               sh:PropertyShape ;
+        rdfs:label      "associatedWithMatter"@en , "associatedWithMatter intends to represent the matter to which a matter compopsition information regards to."@en ;
+        sh:class        <http://w3id.org/CEON/ontology/resourceODP/Matter> ;
+        sh:description  "associatedWithMatter intends to represent the matter to which a matter compopsition information regards to."@en ;
+        sh:name         "associatedWithMatter"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/product/associatedWithMatter> .
+
+<https://astrea.linkeddata.es/shapes#d8b72a4eaaa24d6edb810ff2a4a3379a>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "hadPrimarySource" ;
+        sh:class          prov:Entity ;
+        sh:name           "hadPrimarySource" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:hadPrimarySource .
+
+<https://astrea.linkeddata.es/shapes#5c5ac3a8b9a633daa78120a87ad81167>
+        a               sh:NodeShape ;
+        rdfs:label      "Selling resource" ;
+        sh:description  "The relation where the role of the actor is the seller of a certain resource." ;
+        sh:name         "Selling resource" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actor/SellingResource> .
+
+<https://astrea.linkeddata.es/shapes#42613b85e2428234ac45b57ddf065457>
+        a               sh:NodeShape ;
+        rdfs:label      "Updating resource" ;
+        sh:description  "The relation where the role of the actor is the updater of a certain resource." ;
+        sh:name         "Updating resource" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actor/UpdatingResource> .
+
+<https://astrea.linkeddata.es/shapes#26e76ddc29db60c58434778afc4528eb>
+        a               sh:NodeShape ;
+        rdfs:label      "ProductComposition"@en ;
+        sh:description  "A product composition is the composed information of a product in terms of a specific component, in which such a component is also a product."@en ;
+        sh:name         "ProductComposition"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#73e421d093e74ea63f364e2faa721970> , <https://astrea.linkeddata.es/shapes#f9338a8db405ebf63fa7520e6b0980cc> ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/product/ProductComposition> .
+
+<https://astrea.linkeddata.es/shapes#e81f6b37e0c8be676866d4660f30d45d>
+        a               sh:NodeShape ;
+        rdfs:label      "Buy Resource Process" ;
+        sh:name         "Buy Resource Process" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/BuyResourceProcess> .
+
+<https://astrea.linkeddata.es/report/0620946147>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#0c7a6782b7789e420087704ad89674ef>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "Agent" ;
+        sh:name           "Agent" ;
+        sh:nodeKind       sh:IRI ;
+        sh:not            <https://astrea.linkeddata.es/shapes#3e3eb125f4c49b5c7078aec3641b370e> ;
+        sh:property       <https://astrea.linkeddata.es/shapes#196ea8d0591502158fa42bcdeb09377d> , <https://astrea.linkeddata.es/shapes#55ad425f2ce15142da1b679c17bb5545> , <https://astrea.linkeddata.es/shapes#a027b48f797990265e180d8c447196a5> , <https://astrea.linkeddata.es/shapes#080c994f008182ae0438f0e8c4ef7c26> ;
+        sh:targetClass    prov:Agent .
+
+<https://astrea.linkeddata.es/shapes#b7b94ba169138ec72437bf4e68d1b9a4>
+        a               sh:NodeShape ;
+        rdfs:label      "MatterComposition"@en ;
+        sh:description  "A product composition is the composed information of a product in terms of a specific component, in which such a component is also a matter."@en ;
+        sh:name         "MatterComposition"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#7cc7066d3798f8eacf28937518ae24dc> , <https://astrea.linkeddata.es/shapes#10383e87ded8a99db400b063623e9dd1> ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/product/MatterComposition> .
+
+<https://astrea.linkeddata.es/shapes#5d8d7b2654e10107de09e7646407caa5>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  owl:Thing .
+
+<https://astrea.linkeddata.es/shapes#eafdf3594e784d85493b04c0a5ed43c9>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "wasDerivedFrom" , "The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable."@en ;
+        sh:class          prov:Entity ;
+        sh:description    "The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable."@en ;
+        sh:name           "wasDerivedFrom" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:wasDerivedFrom .
+
+<https://astrea.linkeddata.es/shapes#5559021944f37256796b8c17e85f3377>
+        a               sh:PropertyShape ;
+        rdfs:label      "hasMaterialComponent"@en , "hasMaterialComponent intends to represent that a material can have a collection of components."@en ;
+        sh:class        <http://w3id.org/CEON/ontology/material/MaterialComponent> ;
+        sh:description  "hasMaterialComponent intends to represent that a material can have a collection of components."@en ;
+        sh:name         "hasMaterialComponent"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/material/hasMaterialComponent> .
+
+<https://astrea.linkeddata.es/shapes#046c268057b81fac73ee5e42029405d2>
+        a               sh:NodeShape ;
+        rdfs:label      "Providing resource" ;
+        sh:description  "The relation where the role of the actor is the provider of a certain resource." ;
+        sh:name         "Providing resource" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actor/ProvidingResource> .
+
+<https://astrea.linkeddata.es/shapes#927112fd84edf3dc389568e23fa29f40>
+        a               sh:NodeShape ;
+        rdfs:label      "Process Participation" ;
+        sh:description  "Participation of a certain actor in a certain process, with a certain role. For instance, a certain department of a recycling company having the role of quality controllant, or material sorter, in a certain recycling process. The participation may also be given a time, e.g. a start and end time." ;
+        sh:name         "Process Participation" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#4a9cebb06392acf3b2dd8926e08ef100> ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actor/ProcessParticipation> .
+
+<https://astrea.linkeddata.es/shapes#6a1974d815a5f075748325cb36ce0c52>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "qualifiedAssociation" , "If this Activity prov:wasAssociatedWith Agent :ag, then it can qualify the Association using prov:qualifiedAssociation [ a prov:Association;  prov:agent :ag; :foo :bar ]."@en ;
+        sh:class          prov:Association ;
+        sh:description    "If this Activity prov:wasAssociatedWith Agent :ag, then it can qualify the Association using prov:qualifiedAssociation [ a prov:Association;  prov:agent :ag; :foo :bar ]."@en ;
+        sh:name           "qualifiedAssociation" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:qualifiedAssociation .
+
+<https://astrea.linkeddata.es/shapes#b8840ae319dd17775a4c3ff2c43caeca>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal .
+
+<https://astrea.linkeddata.es/shapes#2fa75411d6aea2838c7476fce4411605>
+        a               sh:PropertyShape ;
+        rdfs:label      "uses cathalyst" , "The cathalyst used in a process." ;
+        sh:class        <http://w3id.org/CEON/ontology/process/Cathalyst> ;
+        sh:description  "The cathalyst used in a process." ;
+        sh:name         "uses cathalyst" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/process/usesCathalyst> .
+
+<https://astrea.linkeddata.es/shapes#b84bf3e03fb67d4848c1eb874e0aa192>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "Invalidation" ;
+        sh:description    "An instance of prov:Invalidation provides additional descriptions about the binary prov:wasInvalidatedBy relation from an invalidated prov:Entity to the prov:Activity that invalidated it. For example, :uncracked_egg prov:wasInvalidatedBy :baking; prov:qualifiedInvalidation [ a prov:Invalidation; prov:activity :baking; :foo :bar ]."@en ;
+        sh:name           "Invalidation" ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    prov:Invalidation .
+
+<https://astrea.linkeddata.es/shapes#d486dc2c50e1370c09b80d9d65ec6094>
+        a               sh:NodeShape ;
+        rdfs:label      "Issuing Certificate Process" ;
+        sh:name         "Issuing Certificate Process" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/IssuingCertificateProcess> .
+
+<https://astrea.linkeddata.es/shapes#4d9ab0bf3f09b18a09f2bf5a9011df43>
+        a               sh:PropertyShape ;
+        rdfs:label      "produces CO2" , "The CO2 released or produced by the process." ;
+        sh:class        <http://w3id.org/CEON/ontology/process/CO2Emission> ;
+        sh:description  "The CO2 released or produced by the process." ;
+        sh:name         "produces CO2" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/process/producesCO2> .
+
+<https://astrea.linkeddata.es/shapes#dc2d760975dc058295ef4996e423c13a>
+        a               sh:PropertyShape ;
+        rdfs:label      "has output" , "The output situation of a transformation, i.e. the state of affairs after the transformation took place." ;
+        sh:description  "The output situation of a transformation, i.e. the state of affairs after the transformation took place." ;
+        sh:name         "has output" ;
+        sh:nodeKind     sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#e377721cc806de9d5491450cd1524648>
+        a               sh:PropertyShape ;
+        rdfs:label      "Participating subject in a resource participation" ;
+        sh:description  "Participating subject in a resource participation" ;
+        sh:nodeKind     sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#a5f52ceebf74d6d42a986871ca4fd22a>
+        a               sh:NodeShape ;
+        rdfs:label      "ProductObject"@en ;
+        sh:description  "A product object is a physical object put into a market for sale. The product can be a thing that grows naturally or produced through some chemical or manufacturing processes."@en ;
+        sh:name         "ProductObject"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#34b0ec6a3b71ee045725684d306fba44> , <https://astrea.linkeddata.es/shapes#8f11952191e3a00a23ecd9ffcb0db41a> , <https://astrea.linkeddata.es/shapes#80432e2ebb3c73136ec06984fc0bc22c> ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/product/ProductObject> .
+
+<https://astrea.linkeddata.es/shapes#708b594767959d50e585a3c8190dd5c1>
+        a               sh:NodeShape ;
+        rdfs:label      "Viewing resource" ;
+        sh:description  "The relation where the role of the actor is the viewer of a certain resource." ;
+        sh:name         "Viewing resource" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actor/ViewingResource> .
+
+<https://astrea.linkeddata.es/shapes#991318eb0e85e1faf5cbe050f01f16a8>
+        a               sh:NodeShape ;
+        rdfs:label      "Production Process" ;
+        sh:name         "Production Process" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/ProductionProcess> .
+
+<https://astrea.linkeddata.es/shapes#682193f88fb7d007707c6d260bff6090>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "startedAtTime" , "The time at which an activity started. See also prov:endedAtTime."@en ;
+        sh:datatype       xsd:dateTime ;
+        sh:description    "The time at which an activity started. See also prov:endedAtTime."@en ;
+        sh:name           "startedAtTime" ;
+        sh:nodeKind       sh:Literal ;
+        sh:path           prov:startedAtTime ;
+        sh:pattern        "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#89874beae2d95ced16882b2ab8e2bfc2>
+        a               sh:PropertyShape ;
+        rdfs:label      "has participating resource" , "The resource that this participation relation relates to, i.e. for which the actor holds the specified role." ;
+        sh:class        <http://w3id.org/CEON/ontology/resourceODP/Resource> ;
+        sh:description  "The resource that this participation relation relates to, i.e. for which the actor holds the specified role." ;
+        sh:name         "has participating resource" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/actorODP/participatingResource> .
+
+<https://astrea.linkeddata.es/shapes#aac6b927072d723f64fa45d4136dc0de>
+        a               sh:NodeShape ;
+        rdfs:label      "Actor process role" ;
+        sh:description  "The role(s) of an actor involved in a process." ;
+        sh:name         "Actor process role" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actor/ActorProcessRole> .
+
+<https://astrea.linkeddata.es/shapes#63ed9be7fc6258ee0741121895a853ff>
+        a               sh:PropertyShape ;
+        rdfs:label      "DescriptiveFormula represents that a molecular entity has the descriptive formula in a string."@en ;
+        rdfs:seeAlso    "https://w3id.org/mdo/structure/DescriptiveFormula" ;
+        sh:description  "DescriptiveFormula represents that a molecular entity has the descriptive formula in a string."@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         <http://w3id.org/CEON/ontology/material/DescriptiveFormula> .
+
+<https://astrea.linkeddata.es/shapes#dfcd5fc30011d551739f9877c244fb84>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "Entity" ;
+        sh:name           "Entity" ;
+        sh:nodeKind       sh:IRI ;
+        sh:not            <https://astrea.linkeddata.es/shapes#3e3eb125f4c49b5c7078aec3641b370e> ;
+        sh:property       <https://astrea.linkeddata.es/shapes#cbdd83028fff6b8bbd067d6abd095476> , <https://astrea.linkeddata.es/shapes#b42daad3d3872a17a8aaaf1adecb416b> , <https://astrea.linkeddata.es/shapes#91bdb733f5c5f8b68ed72a7c77d5360b> , <https://astrea.linkeddata.es/shapes#23d0fc727546dee2eb47f5cc8205f898> , <https://astrea.linkeddata.es/shapes#6a12fe06778e62114ece0acb56dbde35> , <https://astrea.linkeddata.es/shapes#fdaa8c6ec863698bc5d2dfdd9bc5decb> , <https://astrea.linkeddata.es/shapes#e94062716d8a24f40dd8b6e9407f72ba> , <https://astrea.linkeddata.es/shapes#4c778ffb347ed9f2dc734b0082e1c19a> , <https://astrea.linkeddata.es/shapes#196ea8d0591502158fa42bcdeb09377d> , <https://astrea.linkeddata.es/shapes#b91884ed41d41396429315286b013c6b> , <https://astrea.linkeddata.es/shapes#d86d39fe22d383728eb67f8caebf5274> , <https://astrea.linkeddata.es/shapes#46354dfb3c12c2efeed509b8dafdc1c0> , <https://astrea.linkeddata.es/shapes#d225535f5e00ff684d8fef2d8132d3fc> , <https://astrea.linkeddata.es/shapes#5913f72a078e5af1dcaa733fce6b46f6> , <https://astrea.linkeddata.es/shapes#d8b72a4eaaa24d6edb810ff2a4a3379a> , <https://astrea.linkeddata.es/shapes#6b9038cdae642483bf87853d93c46b60> , <https://astrea.linkeddata.es/shapes#55ad425f2ce15142da1b679c17bb5545> , <https://astrea.linkeddata.es/shapes#eafdf3594e784d85493b04c0a5ed43c9> , <https://astrea.linkeddata.es/shapes#fadac7ceeeb747176ed685af535ebc3f> , <https://astrea.linkeddata.es/shapes#1e4b18a5bd47914de5037ef0bb5f98e5> ;
+        sh:targetClass    prov:Entity .
+
+<https://astrea.linkeddata.es/shapes#575fba19c3d01370075e04647f571640>
+        a         sh:PropertyShape ;
+        sh:class  prov:Entity .
+
+<https://astrea.linkeddata.es/shapes#55ad425f2ce15142da1b679c17bb5545>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "qualifiedInfluence" , "Because prov:qualifiedInfluence is a broad relation, the more specific relations (qualifiedCommunication, qualifiedDelegation, qualifiedEnd, etc.) should be used when applicable."@en ;
+        sh:class          prov:Influence ;
+        sh:description    "Because prov:qualifiedInfluence is a broad relation, the more specific relations (qualifiedCommunication, qualifiedDelegation, qualifiedEnd, etc.) should be used when applicable."@en ;
+        sh:name           "qualifiedInfluence" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:qualifiedInfluence .
+
+<https://astrea.linkeddata.es/shapes#3e3eb125f4c49b5c7078aec3641b370e>
+        a         sh:PropertyShape ;
+        sh:class  prov:InstantaneousEvent .
+
+<https://astrea.linkeddata.es/shapes#0dc2cae44ddf5f8d290c7f7fcca506c9>
+        a               sh:NodeShape ;
+        rdfs:label      "ProcessExecution"@en ;
+        sh:description  "An execution of a specific process."@en ;
+        sh:name         "ProcessExecution"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/processODP/ProcessExecution> .
+
+<https://astrea.linkeddata.es/shapes#080c994f008182ae0438f0e8c4ef7c26>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "actedOnBehalfOf" , "An object property to express the accountability of an agent towards another agent. The subordinate agent acted on behalf of the responsible agent in an actual activity. "@en ;
+        sh:class          prov:Agent ;
+        sh:description    "An object property to express the accountability of an agent towards another agent. The subordinate agent acted on behalf of the responsible agent in an actual activity. "@en ;
+        sh:name           "actedOnBehalfOf" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:actedOnBehalfOf .
+
+<https://astrea.linkeddata.es/shapes#1e4b18a5bd47914de5037ef0bb5f98e5>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "invalidatedAtTime" , "The time at which an entity was invalidated (i.e., no longer usable)."@en ;
+        sh:datatype       xsd:dateTime ;
+        sh:description    "The time at which an entity was invalidated (i.e., no longer usable)."@en ;
+        sh:name           "invalidatedAtTime" ;
+        sh:nodeKind       sh:Literal ;
+        sh:path           prov:invalidatedAtTime ;
+        sh:pattern        "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#d2d6ec1b2c8351002142b79fec459c44>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "Attribution" ;
+        sh:description    "An instance of prov:Attribution provides additional descriptions about the binary prov:wasAttributedTo relation from an prov:Entity to some prov:Agent that had some responsible for it. For example, :cake prov:wasAttributedTo :baker; prov:qualifiedAttribution [ a prov:Attribution; prov:entity :baker; :foo :bar ]."@en ;
+        sh:name           "Attribution" ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    prov:Attribution .
+
+<https://astrea.linkeddata.es/shapes#5c588d1c5e09d3aefd5e2de5377575cd>
+        a               sh:NodeShape ;
+        rdfs:label      "MolecularEntity"@en ;
+        rdfs:seeAlso    "http://purl.obolibrary.org/obo/chebi#23367" , "http://emmo.info/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a" ;
+        sh:description  "A molecular entity means a singular/distinguishable entity. It can be for instance, atom, ion."@en ;
+        sh:name         "MolecularEntity"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/material/MolecularEntity> .
+
+<https://astrea.linkeddata.es/shapes#f9338a8db405ebf63fa7520e6b0980cc>
+        a                       sh:PropertyShape ;
+        sh:nodeKind             sh:IRIOrLiteral ;
+        sh:path                 <http://w3id.org/CEON/ontology/product/associatedWithProductModel> ;
+        sh:qualifiedMaxCount    "1"^^xsd:nonNegativeInteger ;
+        sh:qualifiedMinCount    "1"^^xsd:nonNegativeInteger ;
+        sh:qualifiedValueShape  [ sh:class  <http://w3id.org/CEON/ontology/product/Product> ] .
+
+<https://astrea.linkeddata.es/shapes#e19a16d1c0b26ad48604c0987879fd5a>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "invalidated" ;
+        sh:class          prov:Entity ;
+        sh:name           "invalidated" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:invalidated .
+
+<https://astrea.linkeddata.es/shapes#11639b470d1edc3876157bc78bcc5d9a>
+        a               sh:PropertyShape ;
+        rdfs:label      "hasChemicalEntity"@en , "hasChemicalEntity intends to represent that a material can have a collection of chemical entities."@en ;
+        sh:class        <http://w3id.org/CEON/ontology/material/ChemicalEntity> ;
+        sh:description  "hasChemicalEntity intends to represent that a material can have a collection of chemical entities."@en ;
+        sh:name         "hasChemicalEntity"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/material/hasChemicalEntity> .
+
+<https://astrea.linkeddata.es/shapes#e7a8363a85dae3d5627b9b01b71fc5a6>
+        a               sh:NodeShape ;
+        rdfs:label      "Service Process" ;
+        sh:name         "Service Process" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/ServiceProcess> .
+
+<https://astrea.linkeddata.es/shapes#0f189ae645e9656f6dbb5df69dd806e6>
+        a               sh:PropertyShape ;
+        rdfs:label      "hasMatter"@en , "hasMatter intends to represent that a physical object can have a collection of matter."@en ;
+        sh:class        <http://w3id.org/CEON/ontology/resourceODP/Matter> ;
+        sh:description  "hasMatter intends to represent that a physical object can have a collection of matter."@en ;
+        sh:name         "hasMatter"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/resourceODP/hasMatter> .
+
+<https://astrea.linkeddata.es/shapes#aed0be8bfa390344e773d2b2f711ef1f>
+        a                sh:PropertyShape ;
+        rdfs:label       "batchSize"@en , "batchSize intends to repsent how many physical objects are belong to a batch of objects."@en ;
+        sh:datatype      xsd:nonNegativeInteger ;
+        sh:description   "batchSize intends to repsent how many physical objects are belong to a batch of objects."@en ;
+        sh:minInclusive  0 ;
+        sh:name          "batchSize"@en ;
+        sh:nodeKind      sh:Literal ;
+        sh:path          <http://w3id.org/CEON/ontology/resourceODP/batchSize> ;
+        sh:pattern       "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#736b53e65cbae5f3150193333ee5b022>
+        a               sh:NodeShape ;
+        rdfs:label      "Consuming resource" ;
+        sh:description  "The relation where the role of the actor is the consumer of a certain resource." ;
+        sh:name         "Consuming resource" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actor/ConsumingResource> .
+
+<https://astrea.linkeddata.es/shapes#8b0cb3bf380efdabee357227ed8cf445>
+        a               sh:NodeShape ;
+        rdfs:label      "CO2 emission" ;
+        sh:description  "An amount of CO2." ;
+        sh:name         "CO2 emission" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/CO2Emission> .
+
+<https://astrea.linkeddata.es/shapes#868bd41b98037470317a92c0a78d9d6b>
+        a               sh:NodeShape ;
+        rdfs:label      "Manufacturing Process" ;
+        sh:name         "Manufacturing Process" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/ManufacturingProcess> .
+
+<https://astrea.linkeddata.es/shapes#8d0995ee671377cd80a53f4b6be193a5>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "Person" ;
+        sh:name           "Person" ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    prov:Person .
+
+<https://astrea.linkeddata.es/shapes#24627557e3a540c52c94b0d864748b23>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/value/ValueProposition> .
+
+<https://astrea.linkeddata.es/shapes#08e7b41188e48ea1adc00cf02695e639>
+        a               sh:NodeShape ;
+        rdfs:label      "Circular Strategy" ;
+        sh:description  "A circular strategy, such as to reccycle, reuse or refurbish something." ;
+        sh:name         "Circular Strategy" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/cvn/CircularStrategy> .
+
+<https://astrea.linkeddata.es/shapes#07c413cea8f6f3dfcf474bef67d3d659>
+        a               sh:PropertyShape ;
+        rdfs:label      "initial situation" , "The situation before executing a process." ;
+        sh:class        <http://w3id.org/CEON/ontology/processODP/Situation> ;
+        sh:description  "The situation before executing a process." ;
+        sh:name         "initial situation" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/processODP/intialSituation> .
+
+<https://astrea.linkeddata.es/shapes#c6f53d10d323d929a8e9e365b3616ebd>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "Plan" ;
+        sh:description    "There exist no prescriptive requirement on the nature of plans, their representation, the actions or steps they consist of, or their intended goals. Since plans may evolve over time, it may become necessary to track their provenance, so plans themselves are entities. Representing the plan explicitly in the provenance can be useful for various tasks: for example, to validate the execution as represented in the provenance record, to manage expectation failures, or to provide explanations."@en ;
+        sh:name           "Plan" ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    prov:Plan .
+
+<https://astrea.linkeddata.es/shapes#cfd065ed2495ebe40f74102dd52d947e>
+        a               sh:PropertyShape ;
+        rdfs:label      "start time" , "The start of a time interval." ;
+        sh:description  "The start of a time interval." ;
+        sh:name         "start time" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         <http://w3id.org/CEON/ontology/actorODP/participationStartTime> .
+
+<https://astrea.linkeddata.es/shapes#e68828ad68e76dc5259840a1dab4a73f>
+        a               sh:PropertyShape ;
+        rdfs:label      "hasProcessType"@en , "The type of the process."@en ;
+        sh:class        <http://w3id.org/CEON/ontology/processODP/ProcessType> ;
+        sh:description  "The type of the process."@en ;
+        sh:name         "hasProcessType"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/processODP/hasProcessType> .
+
+<https://astrea.linkeddata.es/shapes#ff95cae48951c90a8e6e22cd8c162be3>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "SoftwareAgent" ;
+        sh:name           "SoftwareAgent" ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    prov:SoftwareAgent .
+
+<https://astrea.linkeddata.es/shapes#ef943e7daa824b545ae1e9ca1ea616d4>
+        a               sh:NodeShape ;
+        rdfs:label      "Repair Process" ;
+        sh:name         "Repair Process" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/RepairProcess> .
+
+<https://astrea.linkeddata.es/shapes#8c6c260690c1a411419b565230eb5c9c>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "entity" ;
+        sh:class          prov:Entity ;
+        sh:name           "entity" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:entity .
+
+<https://astrea.linkeddata.es/shapes#f5304f71074ccfee836be83abf5ba533>
+        a               sh:PropertyShape ;
+        rdfs:label      "contains information" , "Indicating that some piece of information is contained in a larger collection of information, e.g. a data sheet contains a statement about a certain parameter of a product." ;
+        sh:class        <http://w3id.org/CEON/ontology/resourceODP/Information> ;
+        sh:description  "Indicating that some piece of information is contained in a larger collection of information, e.g. a data sheet contains a statement about a certain parameter of a product." ;
+        sh:name         "contains information" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/resourceODP/containsInformation> .
+
+<http://astrea.linkeddata.es/report>
+        a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#contains>
+                <https://astrea.linkeddata.es/shapes#0c7a6782b7789e420087704ad89674ef> , <https://astrea.linkeddata.es/shapes#23f29c3c88729cbbfdca4f8d496ac5c5> , <https://astrea.linkeddata.es/shapes#cfd065ed2495ebe40f74102dd52d947e> , <https://astrea.linkeddata.es/shapes#50ee12d03373a78308e5484bd860ad98> , <https://astrea.linkeddata.es/shapes#f1569d82a24734f2d5df36acdacf01bc> , <https://astrea.linkeddata.es/shapes#d2d6ec1b2c8351002142b79fec459c44> , <https://astrea.linkeddata.es/shapes#5559021944f37256796b8c17e85f3377> , <https://astrea.linkeddata.es/shapes#4edfe15ab9ff439f6a0945a2ba8028b8> , <https://astrea.linkeddata.es/shapes#e377721cc806de9d5491450cd1524648> , <https://astrea.linkeddata.es/shapes#34b0ec6a3b71ee045725684d306fba44> , <https://astrea.linkeddata.es/shapes#57641836fd88fb7d8ec56dfe026fc923> , <https://astrea.linkeddata.es/shapes#8350b3940061fa0d65fef2e3b7c01f2a> , <https://astrea.linkeddata.es/shapes#b35aeacc9e82b413789511fd15997611> , <https://astrea.linkeddata.es/shapes#c376b79e77bc46c5735eddd924128a2b> , <https://astrea.linkeddata.es/shapes#575fba19c3d01370075e04647f571640> , <https://astrea.linkeddata.es/shapes#351a85cc7bf3a227a1d43f5dbdd8c2b1> , <https://astrea.linkeddata.es/shapes#6a12fe06778e62114ece0acb56dbde35> , <https://astrea.linkeddata.es/shapes#6442abe8d7c140353404ac4f9a049209> , <https://astrea.linkeddata.es/shapes#4dd4a23131d2d2fc87b6bd4f3732f134> , <https://astrea.linkeddata.es/shapes#5d8d7b2654e10107de09e7646407caa5> , <https://astrea.linkeddata.es/shapes#c41d4da95170cac42f55bca1e3619591> , <https://astrea.linkeddata.es/shapes#17958b51a2296d25f7be1ff1ec14ed2b> , <https://astrea.linkeddata.es/shapes#196ea8d0591502158fa42bcdeb09377d> , <https://astrea.linkeddata.es/shapes#73e421d093e74ea63f364e2faa721970> , <https://astrea.linkeddata.es/shapes#218fa57bd1a31594345b3eb29b6056a4> , <https://astrea.linkeddata.es/shapes#0092c946ee944c5d8593b94847147994> , <https://astrea.linkeddata.es/shapes#b64eeed0df5a23ee298e7564f3e409ac> , <https://astrea.linkeddata.es/shapes#f77a49b53125e599b5cbc0b3c440c1c6> , <https://astrea.linkeddata.es/shapes#23262dfb269b716c32d41b945177d5cc> , <https://astrea.linkeddata.es/shapes#8c6c260690c1a411419b565230eb5c9c> , <https://astrea.linkeddata.es/shapes#d818390ef42301db3daa328201d4df5a> , <https://astrea.linkeddata.es/shapes#08e7b41188e48ea1adc00cf02695e639> , <https://astrea.linkeddata.es/shapes#4a9cebb06392acf3b2dd8926e08ef100> , <https://astrea.linkeddata.es/shapes#a6d6dba55ddce3542552ca452502629a> , <https://astrea.linkeddata.es/shapes#8039c5b998ce5507fef3f197592cfe07> , <https://astrea.linkeddata.es/shapes#dc0adbdfc2ea4da7569686cae85802ef> , <https://astrea.linkeddata.es/shapes#7dcbf46a1a3c4869d557b9de33169b95> , <https://astrea.linkeddata.es/shapes#25df33cfdc1276613589a72dbafe9bc6> , <https://astrea.linkeddata.es/shapes#2286bf379b477ab0f75c404c66183102> , <https://astrea.linkeddata.es/shapes#0edcd8ceb781364e4c57d4446c25920c> , <https://astrea.linkeddata.es/shapes#caba1d6abfcdf5b1e3085188f4db2a98> , <https://astrea.linkeddata.es/shapes#736b53e65cbae5f3150193333ee5b022> , <https://astrea.linkeddata.es/shapes#b844c2904cb870fe394b1a284195d1c0> , <https://astrea.linkeddata.es/shapes#708b594767959d50e585a3c8190dd5c1> , <https://astrea.linkeddata.es/shapes#96edc25eebdf111f16f7f7451264560c> , <https://astrea.linkeddata.es/shapes#7e97fbdac2ee15ffb0f7fac161364ee5> , <https://astrea.linkeddata.es/shapes#15b5731f62bde1fd7d1866b51e7a4b88> , <https://astrea.linkeddata.es/shapes#23d0fc727546dee2eb47f5cc8205f898> , <https://astrea.linkeddata.es/shapes#fe046c7725e6cec8d50201ebd8bf1be1> , <https://astrea.linkeddata.es/shapes#d18a97a852a607a0308fb5f8582bafcd> , <https://astrea.linkeddata.es/shapes#c3f9ad797cddd09aa6044f1989e6f160> , <https://astrea.linkeddata.es/shapes#b6cfda6378dea2fbd008d180f74c22b7> , <https://astrea.linkeddata.es/shapes#b0eb521269e68cd1544810fa1247efbc> , <https://astrea.linkeddata.es/shapes#10383e87ded8a99db400b063623e9dd1> , <https://astrea.linkeddata.es/shapes#a623ee1236e0141d1f25df0c64a6f062> , <https://astrea.linkeddata.es/shapes#f5bd92c5a8e6f31b638785bf00e1e44e> , <https://astrea.linkeddata.es/shapes#eafdf3594e784d85493b04c0a5ed43c9> , <https://astrea.linkeddata.es/shapes#9cae688614a8970fd4d47715f0238610> , <https://astrea.linkeddata.es/shapes#e1f33209247ac6680cb19a492d35d0c2> , <https://astrea.linkeddata.es/shapes#aac6b927072d723f64fa45d4136dc0de> , <https://astrea.linkeddata.es/shapes#19441766b6f6a238b86cb80ed7ebc073> , <https://astrea.linkeddata.es/shapes#4d9ab0bf3f09b18a09f2bf5a9011df43> , <https://astrea.linkeddata.es/shapes#abe97903e09c3c2cf39b82303b20e8af> , <https://astrea.linkeddata.es/shapes#46354dfb3c12c2efeed509b8dafdc1c0> , <https://astrea.linkeddata.es/shapes#7aa09273a917128a690a39f444a805bf> , <https://astrea.linkeddata.es/shapes#a870441e0531236e6884c770b0108d9f> , <https://astrea.linkeddata.es/shapes#c219d8e18b38970896e59d3c8c5ec2a8> , <https://astrea.linkeddata.es/shapes#89874beae2d95ced16882b2ab8e2bfc2> , <https://astrea.linkeddata.es/shapes#a027b48f797990265e180d8c447196a5> , <https://astrea.linkeddata.es/shapes#38b8d11496613ed08df638055e2710f5> , <https://astrea.linkeddata.es/shapes#759d87b2c441dd1d65536bc348d8b60d> , <https://astrea.linkeddata.es/shapes#5c5ac3a8b9a633daa78120a87ad81167> , <https://astrea.linkeddata.es/shapes#7cc7066d3798f8eacf28937518ae24dc> , <https://astrea.linkeddata.es/shapes#991318eb0e85e1faf5cbe050f01f16a8> , <https://astrea.linkeddata.es/shapes#091286625d18b251cdbe7fbc7b529fe2> , <https://astrea.linkeddata.es/shapes#6adf3ef00af94076036d73424352c09c> , <https://astrea.linkeddata.es/shapes#7fc73836cc801eef1867f3123fa59704> , <https://astrea.linkeddata.es/shapes#59ca7909bf818880257c21c5ab6e0b3e> , <https://astrea.linkeddata.es/shapes#0251d08e2da15fc80cf27a139a9cdf9e> , <https://astrea.linkeddata.es/shapes#96894bd79929838d7b289227b2a17c97> , <https://astrea.linkeddata.es/shapes#79ab56626ae696b9b1bd5ba01da87af3> , <https://astrea.linkeddata.es/shapes#e7a8363a85dae3d5627b9b01b71fc5a6> , <https://astrea.linkeddata.es/shapes#3e3eb125f4c49b5c7078aec3641b370e> , <https://astrea.linkeddata.es/shapes#df5a4bd673d32c5600c5e00fea16ed81> , <https://astrea.linkeddata.es/shapes#4c3a4210ff18a2d650bf31fbcf92a529> , <https://astrea.linkeddata.es/shapes#53519cc64615fc2727319c2a6943d5e5> , <https://astrea.linkeddata.es/shapes#a109159c24172f2b6a8843694205a23e> , <https://astrea.linkeddata.es/shapes#41e966ced2cc79b17001b48028b195e9> , <https://astrea.linkeddata.es/shapes#5a9206803db160bd9e016cc72e257fbc> , <https://astrea.linkeddata.es/shapes#cc8018c59c77581114aff38b36cf4907> , <https://astrea.linkeddata.es/shapes#99e27caefde800d55a4167fbeee11e6f> , <https://astrea.linkeddata.es/shapes#aed0be8bfa390344e773d2b2f711ef1f> , <https://astrea.linkeddata.es/shapes#b458b09abd9bd6203f7badd5219ae293> , <https://astrea.linkeddata.es/shapes#9527c744c336f0833845006dd3df5b50> , <https://astrea.linkeddata.es/shapes#046c268057b81fac73ee5e42029405d2> , <https://astrea.linkeddata.es/shapes#02c2571310a7e683b371f14a60cd5af1> , <https://astrea.linkeddata.es/shapes#6783b79be2979079174909c7402ac0d7> , <https://astrea.linkeddata.es/shapes#5c588d1c5e09d3aefd5e2de5377575cd> , <https://astrea.linkeddata.es/shapes#927112fd84edf3dc389568e23fa29f40> , <https://astrea.linkeddata.es/shapes#38d2b22e0b5e00b3f0400161454df4f6> , <https://astrea.linkeddata.es/shapes#737ab248123172156c6687f276bad2b0> , <https://astrea.linkeddata.es/shapes#0f6bb768b9664112e6a6f628f3f9901b> , <https://astrea.linkeddata.es/shapes#63ed9be7fc6258ee0741121895a853ff> , <https://astrea.linkeddata.es/shapes#b69e9cd68f0bdebae9928048b7152ff7> , <https://astrea.linkeddata.es/shapes#5f6a96140d38beac438e892e7e7178a8> , <https://astrea.linkeddata.es/shapes#f5304f71074ccfee836be83abf5ba533> , <https://astrea.linkeddata.es/shapes#d8b72a4eaaa24d6edb810ff2a4a3379a> , <https://astrea.linkeddata.es/shapes#b84bf3e03fb67d4848c1eb874e0aa192> , <https://astrea.linkeddata.es/shapes#1e4b18a5bd47914de5037ef0bb5f98e5> , <https://astrea.linkeddata.es/shapes#dfcd5fc30011d551739f9877c244fb84> , <https://astrea.linkeddata.es/shapes#498cf9f9952c45e9faedb05ffab36d32> , <https://astrea.linkeddata.es/shapes#4c778ffb347ed9f2dc734b0082e1c19a> , <https://astrea.linkeddata.es/shapes#85951a71d82aa5c391b052ac6c4af85d> , <https://astrea.linkeddata.es/shapes#330e95c2241d685cdee32c689234e96e> , <https://astrea.linkeddata.es/shapes#f58bd8ec708d71ebe65947c10992aca7> , <https://astrea.linkeddata.es/shapes#7ca538054f2ef0ee0ca33c6c70507897> , <https://astrea.linkeddata.es/shapes#5eb4c8b6bd3b6edcfdd6c1ef14c951d3> , <https://astrea.linkeddata.es/shapes#e1fc6adf1ecea11239af6be6f604723b> , <https://astrea.linkeddata.es/shapes#950090ab5808da1ab24e5f13f4406efc> , <https://astrea.linkeddata.es/shapes#682193f88fb7d007707c6d260bff6090> , <https://astrea.linkeddata.es/shapes#b91884ed41d41396429315286b013c6b> , <https://astrea.linkeddata.es/shapes#1a96fd9ff8f95d340bc3178f4fa780fd> , <https://astrea.linkeddata.es/shapes#aa84f03c9b056a437f94fc73f7bc5a65> , <https://astrea.linkeddata.es/shapes#564c4f38e42665fd1f1febce682c48f7> , <https://astrea.linkeddata.es/shapes#be9967e653e04a76660895f4c48a4796> , <https://astrea.linkeddata.es/shapes#8b0cb3bf380efdabee357227ed8cf445> , <https://astrea.linkeddata.es/shapes#a25d2c40a2b65a3d3bbfa446af913b52> , <https://astrea.linkeddata.es/shapes#d97a9d4be829825aa4df6be09f26e298> , <https://astrea.linkeddata.es/shapes#5a244487a28bab8e95619b149bb3fe6a> , <https://astrea.linkeddata.es/shapes#42613b85e2428234ac45b57ddf065457> , <https://astrea.linkeddata.es/shapes#2de597cb7d80eaba04f3978aa12b7927> , <https://astrea.linkeddata.es/shapes#fadac7ceeeb747176ed685af535ebc3f> , <https://astrea.linkeddata.es/shapes#b0f3386c4dea19a594ffaa6eaff8eee4> , <https://astrea.linkeddata.es/shapes#8d022ef1ee38250305580a3054378a68> , <https://astrea.linkeddata.es/shapes#bd3f68b2fd6f4c67fb2d835f5de23802> , <https://astrea.linkeddata.es/shapes#26e76ddc29db60c58434778afc4528eb> , <https://astrea.linkeddata.es/shapes#844f3005973a6a1a6270bec1559d13c5> , <https://astrea.linkeddata.es/shapes#c0ded217d6fb42058615671adbc50169> , <https://astrea.linkeddata.es/shapes#5e3e70f703355041e62e5d95e1076a9a> , <https://astrea.linkeddata.es/shapes#d9f6d8e636bd311f8a61f53cf9cc3d49> , <https://astrea.linkeddata.es/shapes#fdaa8c6ec863698bc5d2dfdd9bc5decb> , <https://astrea.linkeddata.es/shapes#55ad425f2ce15142da1b679c17bb5545> , <https://astrea.linkeddata.es/shapes#868bd41b98037470317a92c0a78d9d6b> , <https://astrea.linkeddata.es/shapes#b7b94ba169138ec72437bf4e68d1b9a4> , <https://astrea.linkeddata.es/shapes#e903a6e0ea34800b190bbaf7193ddcf3> , <https://astrea.linkeddata.es/shapes#623827bfacb9cfe772f674bcd8c5d797> , <https://astrea.linkeddata.es/shapes#34f4e1fa4ec5dc89ec579d2e4ab7052a> , <https://astrea.linkeddata.es/shapes#e842f133c48c090a125bfb901e3bd488> , <https://astrea.linkeddata.es/shapes#718a7d9333c9c7ccab7a6dfcfa2d5038> , <https://astrea.linkeddata.es/shapes#6ca4480095c83f9268c312e1feb1197c> , <https://astrea.linkeddata.es/shapes#07c413cea8f6f3dfcf474bef67d3d659> , <https://astrea.linkeddata.es/shapes#78878444a8f39bf5d9b93121ea1a9d6f> , <https://astrea.linkeddata.es/shapes#d86d39fe22d383728eb67f8caebf5274> , <https://astrea.linkeddata.es/shapes#976030c8af974daa5e85c863ad286819> , <https://astrea.linkeddata.es/shapes#8985e9eaa36ba43dc285bcd9c2797fb1> , <https://astrea.linkeddata.es/shapes#87b784a349c8aad658391cdb3840404d> , <https://astrea.linkeddata.es/shapes#f22ce93d0249c47b1cfa20098aa89e23> , <https://astrea.linkeddata.es/shapes#84e0eac538b8e168f2278ad31a5e6a61> , <https://astrea.linkeddata.es/shapes#880bd27facd6ed453d3ba0a7b69536cd> , <https://astrea.linkeddata.es/shapes#fcfc2aa101f217466e61b4a36127a0ad> , <https://astrea.linkeddata.es/shapes#3202ede944c26f29668ad1ace1a35891> , <https://astrea.linkeddata.es/shapes#32584b180b87c84a3db9816419174d32> , <https://astrea.linkeddata.es/shapes#d225535f5e00ff684d8fef2d8132d3fc> , <https://astrea.linkeddata.es/shapes#38f3744dfd93022775f3615faf950833> , <https://astrea.linkeddata.es/shapes#52e93b303a73212260be339e9ea35128> , <https://astrea.linkeddata.es/shapes#524b11eb1bd2efab02d5d9106ac4d4b0> , <https://astrea.linkeddata.es/shapes#59b49617891dcda2f293ffedb2f7d31a> , <https://astrea.linkeddata.es/shapes#ad37c34a735811937bada118cc65cc69> , <https://astrea.linkeddata.es/shapes#1a7c784e5e70c83e4dba28abe2d151c9> , <https://astrea.linkeddata.es/shapes#d797577eeedbbe38c6d0bc2da064e813> , <https://astrea.linkeddata.es/shapes#5f9853339ada422d80d6e6c4765d2293> , <https://astrea.linkeddata.es/shapes#898b860c05f5288556bca7c76c90377f> , <https://astrea.linkeddata.es/shapes#6bb267cbb64f03143fb07589a150ee5d> , <https://astrea.linkeddata.es/shapes#2418b3a52b1ea4159710f1ee06a2369c> , <https://astrea.linkeddata.es/shapes#b8840ae319dd17775a4c3ff2c43caeca> , <https://astrea.linkeddata.es/shapes#e81f6b37e0c8be676866d4660f30d45d> , <https://astrea.linkeddata.es/shapes#832e48f6362587f704051e405d495b54> , <https://astrea.linkeddata.es/shapes#bf692e48e6da06b7b378a173c954191a> , <https://astrea.linkeddata.es/shapes#42a6b64189f4bf5b3e03fb3ef5fbb82d> , <https://astrea.linkeddata.es/shapes#11639b470d1edc3876157bc78bcc5d9a> , <https://astrea.linkeddata.es/shapes#bc069824e2379a841507c34e0961dcd4> , <https://astrea.linkeddata.es/shapes#f000a1466c0cf79b1fbf45a97914f291> , <https://astrea.linkeddata.es/shapes#5cb42d8b23325cf29189d69c0e1d05ec> , <https://astrea.linkeddata.es/shapes#bf6ce2dfa58223ad4576e25be1cfd88a> , <https://astrea.linkeddata.es/shapes#b071ad65b723810940cc57e36109f7ef> , <https://astrea.linkeddata.es/shapes#bdbf6ec27ee0cfab014b1c297a55b715> , <https://astrea.linkeddata.es/shapes#e4e51583abf90f437db8bd82e28f3c58> , <https://astrea.linkeddata.es/shapes#0dc2cae44ddf5f8d290c7f7fcca506c9> , <https://astrea.linkeddata.es/shapes#41a49a60d34660d62e0a789087c9adef> , <https://astrea.linkeddata.es/shapes#9f2ff5983022ea06b50937eb453e6746> , <https://astrea.linkeddata.es/shapes#91bdb733f5c5f8b68ed72a7c77d5360b> , <https://astrea.linkeddata.es/shapes#d486dc2c50e1370c09b80d9d65ec6094> , <https://astrea.linkeddata.es/shapes#f16be92d549f1a5334c97a17c328b860> , <https://astrea.linkeddata.es/shapes#80432e2ebb3c73136ec06984fc0bc22c> , <https://astrea.linkeddata.es/shapes#37c510c41a7e3d10c8a8d5249e3559f1> , <https://astrea.linkeddata.es/shapes#8d0995ee671377cd80a53f4b6be193a5> , <https://astrea.linkeddata.es/shapes#ff95cae48951c90a8e6e22cd8c162be3> , <https://astrea.linkeddata.es/shapes#f9338a8db405ebf63fa7520e6b0980cc> , <https://astrea.linkeddata.es/shapes#d8a866e4747ffbb40f3535c089a72037> , <https://astrea.linkeddata.es/shapes#8b1ca2ba6f0af73125e912a9391dcdce> , <https://astrea.linkeddata.es/shapes#2fa75411d6aea2838c7476fce4411605> , <https://astrea.linkeddata.es/shapes#fb2c2372a56f59bbb95f993f697f4edc> , <https://astrea.linkeddata.es/shapes#91a0e7f271b1a59666d7c93482d3d907> , <https://astrea.linkeddata.es/shapes#b3e857450a4cfcb2397b1a8d11582aae> , <https://astrea.linkeddata.es/shapes#ef943e7daa824b545ae1e9ca1ea616d4> , <https://astrea.linkeddata.es/shapes#d9faaf56986c00a494d4b1c414908b29> , <https://astrea.linkeddata.es/shapes#6b9038cdae642483bf87853d93c46b60> , <https://astrea.linkeddata.es/shapes#ed0421f26a73b6bfcb56508ef602f04d> , <https://astrea.linkeddata.es/shapes#7c0e86ac0986516a9a12a460e26d7b1a> , <https://astrea.linkeddata.es/shapes#eedda19a1accb656bb6d2d48336dc64c> , <https://astrea.linkeddata.es/shapes#080c994f008182ae0438f0e8c4ef7c26> , <https://astrea.linkeddata.es/shapes#2b089ea29b5d2c034cff7e743d698ae6> , <https://astrea.linkeddata.es/shapes#5913f72a078e5af1dcaa733fce6b46f6> , <https://astrea.linkeddata.es/shapes#6406494d29bf8b5b2d85e2a04fb433f2> , <https://astrea.linkeddata.es/shapes#0f189ae645e9656f6dbb5df69dd806e6> , <https://astrea.linkeddata.es/shapes#6d6d6aec07cf7b7ea4d3ecc7616181dc> , <https://astrea.linkeddata.es/shapes#b05cc576efd2431a32d0bffa5fcbecaa> , <https://astrea.linkeddata.es/shapes#b5cf0640f94ad65c3fbdc591c1894d2f> , <https://astrea.linkeddata.es/shapes#8f11952191e3a00a23ecd9ffcb0db41a> , <https://astrea.linkeddata.es/shapes#b58af12353d5ab287b1d474400c77d17> , <https://astrea.linkeddata.es/shapes#a5f52ceebf74d6d42a986871ca4fd22a> , <https://astrea.linkeddata.es/shapes#e19a16d1c0b26ad48604c0987879fd5a> , <https://astrea.linkeddata.es/shapes#47511281e6c593a219296a38e0b696e1> , <https://astrea.linkeddata.es/shapes#24627557e3a540c52c94b0d864748b23> , <https://astrea.linkeddata.es/shapes#e68828ad68e76dc5259840a1dab4a73f> , <https://astrea.linkeddata.es/shapes#e94062716d8a24f40dd8b6e9407f72ba> , <https://astrea.linkeddata.es/shapes#dab6128c87685f0af5592704bb3bc5f1> , <https://astrea.linkeddata.es/shapes#be17722992a627285429477025140940> , <https://astrea.linkeddata.es/shapes#cbdd83028fff6b8bbd067d6abd095476> , <https://astrea.linkeddata.es/shapes#af0dcee41400d6d266b52ca3337dd234> , <https://astrea.linkeddata.es/shapes#6a1974d815a5f075748325cb36ce0c52> , <https://astrea.linkeddata.es/shapes#44e7a3bde9484b2a57ed1788173ff232> , <https://astrea.linkeddata.es/shapes#5d0e27a10f755e8b845321ffc3e82361> , <https://astrea.linkeddata.es/shapes#dc2d760975dc058295ef4996e423c13a> , <https://astrea.linkeddata.es/shapes#c6f53d10d323d929a8e9e365b3616ebd> , <https://astrea.linkeddata.es/shapes#ba004e0f18aeedd876d530e27a962908> , <https://astrea.linkeddata.es/shapes#02593da342b5a364b87413f58db28026> , <https://astrea.linkeddata.es/shapes#b42daad3d3872a17a8aaaf1adecb416b> , <https://astrea.linkeddata.es/shapes#2cc6e173d55aa5783d44ad88a28d4a44> , <https://astrea.linkeddata.es/shapes#ad89e8dc7487648b0158a2f47b7303e3> , <https://astrea.linkeddata.es/shapes#29c7a83af62dae90eb14cf15a6f405b1> ;
+        <https://w3id.org/def/astrea#generatedShapesFrom>
+                <https://astrea.linkeddata.es/report/0620946147> , <https://astrea.linkeddata.es/report/01132022088> , <https://astrea.linkeddata.es/report/0488287264> .
+
+<https://astrea.linkeddata.es/shapes#59b49617891dcda2f293ffedb2f7d31a>
+        a               sh:NodeShape ;
+        rdfs:label      "Circular Value Network" ;
+        sh:description  "An instantiation of a circular value network, i.e. a concrete network of different actors collaborating to achieve some goal." , "A collaboration between actors that constitute a Circular Value Newtworks, implicitly or explicitly set up." ;
+        sh:name         "Circular Value Network" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#85951a71d82aa5c391b052ac6c4af85d> , <https://astrea.linkeddata.es/shapes#330e95c2241d685cdee32c689234e96e> , <https://astrea.linkeddata.es/shapes#898b860c05f5288556bca7c76c90377f> , <https://astrea.linkeddata.es/shapes#2b089ea29b5d2c034cff7e743d698ae6> ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/cvn/CVN> .
+
+<https://astrea.linkeddata.es/shapes#e842f133c48c090a125bfb901e3bd488>
+        a               sh:PropertyShape ;
+        rdfs:label      "capability extent" , "The extent of this capability, e.g. stating whether there are limist to the capability, such as a maximum amount or size of something." ;
+        sh:description  "The extent of this capability, e.g. stating whether there are limist to the capability, such as a maximum amount or size of something." ;
+        sh:name         "capability extent" ;
+        sh:nodeKind     sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#91bdb733f5c5f8b68ed72a7c77d5360b>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "wasAttributedTo" , "Attribution is the ascribing of an entity to an agent."@en ;
+        sh:class          prov:Agent ;
+        sh:description    "Attribution is the ascribing of an entity to an agent."@en ;
+        sh:name           "wasAttributedTo" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:wasAttributedTo .
+
+<https://astrea.linkeddata.es/shapes#b69e9cd68f0bdebae9928048b7152ff7>
+        a               sh:NodeShape ;
+        rdfs:label      "digital object"@en ;
+        sh:description  "A digital object, e.g. a computer file, that is located on some server, hard drive, or on the web. Most often the digital object is the realization of some piece of information." ;
+        sh:name         "digital object"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/resourceODP/DigitalObject> .
+
+<https://astrea.linkeddata.es/shapes#5913f72a078e5af1dcaa733fce6b46f6>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "qualifiedPrimarySource" , "If this Entity prov:hadPrimarySource Entity :e, then it can qualify how using prov:qualifiedPrimarySource [ a prov:PrimarySource; prov:entity :e; :foo :bar ]."@en ;
+        sh:class          prov:PrimarySource ;
+        sh:description    "If this Entity prov:hadPrimarySource Entity :e, then it can qualify how using prov:qualifiedPrimarySource [ a prov:PrimarySource; prov:entity :e; :foo :bar ]."@en ;
+        sh:name           "qualifiedPrimarySource" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:qualifiedPrimarySource .
+
+<https://astrea.linkeddata.es/shapes#718a7d9333c9c7ccab7a6dfcfa2d5038>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "Usage" ;
+        sh:description    "An instance of prov:Usage provides additional descriptions about the binary prov:used relation from some prov:Activity to an prov:Entity that it used. For example, :keynote prov:used :podium; prov:qualifiedUsage [ a prov:Usage; prov:entity :podium; :foo :bar ]."@en ;
+        sh:name           "Usage" ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    prov:Usage .
+
+<https://astrea.linkeddata.es/shapes#5e3e70f703355041e62e5d95e1076a9a>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "PrimarySource" ;
+        sh:description    "An instance of prov:PrimarySource provides additional descriptions about the binary prov:hadPrimarySource relation from some secondary prov:Entity to an earlier, primary prov:Entity. For example, :blog prov:hadPrimarySource :newsArticle; prov:qualifiedPrimarySource [ a prov:PrimarySource; prov:entity :newsArticle; :foo :bar ] ."@en ;
+        sh:name           "PrimarySource" ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    prov:PrimarySource .
+
+<https://astrea.linkeddata.es/shapes#b5cf0640f94ad65c3fbdc591c1894d2f>
+        a               sh:PropertyShape ;
+        rdfs:label      "hasConstituent"@en , "hasConstitutent intends to represent that a physical object can have a collection of composing components."@en ;
+        sh:class        <http://w3id.org/CEON/ontology/resourceODP/Constituent> ;
+        sh:description  "hasConstitutent intends to represent that a physical object can have a collection of composing components."@en ;
+        sh:name         "hasConstituent"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/resourceODP/hasConstituent> .
+
+<https://astrea.linkeddata.es/shapes#1a7c784e5e70c83e4dba28abe2d151c9>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      <http://w3id.org/CEON/ontology/product/compositionQuantity> .
+
+<https://astrea.linkeddata.es/shapes#af0dcee41400d6d266b52ca3337dd234>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "Derivation" ;
+        sh:description    "The more specific forms of prov:Derivation (i.e., prov:Revision, prov:Quotation, prov:PrimarySource) should be asserted if they apply."@en , "An instance of prov:Derivation provides additional descriptions about the binary prov:wasDerivedFrom relation from some derived prov:Entity to another prov:Entity from which it was derived. For example, :chewed_bubble_gum prov:wasDerivedFrom :unwrapped_bubble_gum; prov:qualifiedDerivation [ a prov:Derivation; prov:entity :unwrapped_bubble_gum; :foo :bar ]."@en ;
+        sh:name           "Derivation" ;
+        sh:nodeKind       sh:IRI ;
+        sh:property       <https://astrea.linkeddata.es/shapes#623827bfacb9cfe772f674bcd8c5d797> , <https://astrea.linkeddata.es/shapes#f16be92d549f1a5334c97a17c328b860> , <https://astrea.linkeddata.es/shapes#b05cc576efd2431a32d0bffa5fcbecaa> ;
+        sh:targetClass    prov:Derivation .
+
+<https://astrea.linkeddata.es/shapes#37c510c41a7e3d10c8a8d5249e3559f1>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "Influence" ;
+        sh:description    "Because prov:Influence is a broad relation, its most specific subclasses (e.g. prov:Communication, prov:Delegation, prov:End, prov:Revision, etc.) should be used when applicable."@en , "An instance of prov:Influence provides additional descriptions about the binary prov:wasInfluencedBy relation from some influenced Activity, Entity, or Agent to the influencing Activity, Entity, or Agent. For example, :stomach_ache prov:wasInfluencedBy :spoon; prov:qualifiedInfluence [ a prov:Influence; prov:entity :spoon; :foo :bar ] . Because prov:Influence is a broad relation, the more specific relations (Communication, Delegation, End, etc.) should be used when applicable."@en ;
+        sh:name           "Influence" ;
+        sh:nodeKind       sh:IRI ;
+        sh:property       <https://astrea.linkeddata.es/shapes#1a96fd9ff8f95d340bc3178f4fa780fd> , <https://astrea.linkeddata.es/shapes#50ee12d03373a78308e5484bd860ad98> , <https://astrea.linkeddata.es/shapes#f16be92d549f1a5334c97a17c328b860> ;
+        sh:targetClass    prov:Influence .
+
+<https://astrea.linkeddata.es/shapes#196ea8d0591502158fa42bcdeb09377d>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>." , "atLocation" , "The Location of any resource."@en ;
+        sh:class          prov:Location ;
+        sh:description    "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>." , "The Location of any resource."@en ;
+        sh:name           "atLocation" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:atLocation .
+
+<https://astrea.linkeddata.es/shapes#73e421d093e74ea63f364e2faa721970>
+        a               sh:PropertyShape ;
+        rdfs:label      "associatedWithProductModel"@en , "associatedWithProductModel intends to represent the matter to which a product compopsition information regards to."@en ;
+        sh:class        <http://w3id.org/CEON/ontology/product/Product> ;
+        sh:description  "associatedWithProductModel intends to represent the matter to which a product compopsition information regards to."@en ;
+        sh:name         "associatedWithProductModel"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/product/associatedWithProductModel> .
+
+<https://astrea.linkeddata.es/shapes#b3e857450a4cfcb2397b1a8d11582aae>
+        a               sh:PropertyShape ;
+        rdfs:label      "hasPhysicalObject"@en , "hasPhysicalObject intends to represent that a batch of objects or a set of objects can have composing components of physical objects."@en ;
+        sh:class        <http://w3id.org/CEON/ontology/resourceODP/PhysicalObject> ;
+        sh:description  "hasPhysicalObject intends to represent that a batch of objects or a set of objects can have composing components of physical objects."@en ;
+        sh:name         "hasPhysicalObject"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/resourceODP/hasPhysicalObject> .
+
+<https://astrea.linkeddata.es/shapes#7c0e86ac0986516a9a12a460e26d7b1a>
+        a               sh:NodeShape ;
+        rdfs:label      "Energy" ;
+        sh:description  "An amount of energy." ;
+        sh:name         "Energy" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/Energy> .
+
+<https://astrea.linkeddata.es/shapes#52e93b303a73212260be339e9ea35128>
+        a               sh:NodeShape ;
+        rdfs:label      "Remove Process" ;
+        sh:name         "Remove Process" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/RemoveProcess> .
+
+<https://astrea.linkeddata.es/shapes#9cae688614a8970fd4d47715f0238610>
+        a               sh:NodeShape ;
+        rdfs:label      "Role" ;
+        sh:description  "A role that an actor can take in a specific context. Applies both to roles in the context of resources, such as owner, manufacturer, reseller etc. of that resource, as well as roles in relation to a circular value network, such as recycler, dismantler, transporter etc., in relation to a material flow." ;
+        sh:name         "Role" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actorODP/Role> .
+
+<https://astrea.linkeddata.es/shapes#4edfe15ab9ff439f6a0945a2ba8028b8>
+        a               sh:NodeShape ;
+        rdfs:label      "Composition"@en ;
+        sh:description  "A composition is used to represent what composing a physical object."@en ;
+        sh:name         "Composition"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#1a7c784e5e70c83e4dba28abe2d151c9> ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/resourceODP/Composition> .
+
+<https://astrea.linkeddata.es/shapes#b0f3386c4dea19a594ffaa6eaff8eee4>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "Start" ;
+        sh:description    "An instance of prov:Start provides additional descriptions about the binary prov:wasStartedBy relation from some started prov:Activity to an prov:Entity that started it. For example, :foot_race prov:wasStartedBy :bang; prov:qualifiedStart [ a prov:Start; prov:entity :bang; :foo :bar; prov:atTime '2012-03-09T08:05:08-05:00'^^xsd:dateTime ] ."@en ;
+        sh:name           "Start" ;
+        sh:nodeKind       sh:IRI ;
+        sh:property       <https://astrea.linkeddata.es/shapes#f16be92d549f1a5334c97a17c328b860> ;
+        sh:targetClass    prov:Start .
+
+<https://astrea.linkeddata.es/shapes#9527c744c336f0833845006dd3df5b50>
+        a               sh:PropertyShape ;
+        rdfs:label      "hasProcessExecution"@en , "A process can have  specific executions."@en ;
+        sh:class        <http://w3id.org/CEON/ontology/processODP/ProcessExecution> ;
+        sh:description  "A process can have  specific executions."@en ;
+        sh:name         "hasProcessExecution"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/processODP/hasProcessExecution> .
+
+<https://astrea.linkeddata.es/shapes#23f29c3c88729cbbfdca4f8d496ac5c5>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "hadPlan" , "The _optional_ Plan adopted by an Agent in Association with some Activity. Plan specifications are out of the scope of this specification."@en ;
+        sh:class          prov:Plan ;
+        sh:description    "The _optional_ Plan adopted by an Agent in Association with some Activity. Plan specifications are out of the scope of this specification."@en ;
+        sh:name           "hadPlan" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:hadPlan .
+
+<https://astrea.linkeddata.es/shapes#d225535f5e00ff684d8fef2d8132d3fc>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "qualifiedQuotation" , "If this Entity prov:wasQuotedFrom Entity :e, then it can qualify how using prov:qualifiedQuotation [ a prov:Quotation;  prov:entity :e; :foo :bar ]."@en ;
+        sh:class          prov:Quotation ;
+        sh:description    "If this Entity prov:wasQuotedFrom Entity :e, then it can qualify how using prov:qualifiedQuotation [ a prov:Quotation;  prov:entity :e; :foo :bar ]."@en ;
+        sh:name           "qualifiedQuotation" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:qualifiedQuotation .
+
+<https://astrea.linkeddata.es/shapes#3202ede944c26f29668ad1ace1a35891>
+        a               sh:NodeShape ;
+        rdfs:label      "Issuing resource" ;
+        sh:description  "The relation where the role of the actor is the issuer of a certain resource." ;
+        sh:name         "Issuing resource" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actor/IssuingResource> .
+
+<https://astrea.linkeddata.es/shapes#4c3a4210ff18a2d650bf31fbcf92a529>
+        a               sh:NodeShape ;
+        rdfs:label      "Change Resource Process" ;
+        sh:name         "Change Resource Process" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/ChangeResourceProcess> .
+
+<https://astrea.linkeddata.es/shapes#57641836fd88fb7d8ec56dfe026fc923>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal .
+
+<https://astrea.linkeddata.es/shapes#d97a9d4be829825aa4df6be09f26e298>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actorODP/ResourceParticipation> .
+
+<https://astrea.linkeddata.es/shapes#abe97903e09c3c2cf39b82303b20e8af>
+        a               sh:PropertyShape ;
+        rdfs:label      "compositionQuantity"@en , "compositionQuantity intends to represent the quantity value of composed elements of a composition. The quantity value can be the number of a element or the percentage of a element."@en ;
+        sh:description  "compositionQuantity intends to represent the quantity value of composed elements of a composition. The quantity value can be the number of a element or the percentage of a element."@en ;
+        sh:name         "compositionQuantity"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         <http://w3id.org/CEON/ontology/product/compositionQuantity> .
+
+<https://astrea.linkeddata.es/shapes#44e7a3bde9484b2a57ed1788173ff232>
+        a               sh:NodeShape ;
+        rdfs:label      "Resource Relation" ;
+        sh:description  "The relation involving the role of a certain actor with respect to a certain resource, e.g. an organisation or individual (actor) owning (role) a specific product (resource) at a specific point or period in time." , "A relation between a resource, an actor, and the role the actor has in relation to the resource. For instance, the role of owner that a certain actor takes for a certain resource for a certain period of time. Or the seller of a certain resource, until that resource has been sold, and the actor no longer has that role in relation to the resource." ;
+        sh:name         "Resource Relation" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#89874beae2d95ced16882b2ab8e2bfc2> ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actorODP/ResourceRelation> .
+
+<https://astrea.linkeddata.es/shapes#ad89e8dc7487648b0158a2f47b7303e3>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "Bundle" ;
+        sh:description    "Note that there are kinds of bundles (e.g. handwritten letters, audio recordings, etc.) that are not expressed in PROV-O, but can be still be described by PROV-O."@en ;
+        sh:name           "Bundle" ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    prov:Bundle .
+
+<https://astrea.linkeddata.es/shapes#d9faaf56986c00a494d4b1c414908b29>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "hadMember" ;
+        sh:class          prov:Entity ;
+        sh:name           "hadMember" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:hadMember .
+
+<https://astrea.linkeddata.es/report/01132022088>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#source>
+                "http://w3id.org/CEON/ontology/actor/0.1/" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#2de597cb7d80eaba04f3978aa12b7927>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "endedAtTime" , "The time at which an activity ended. See also prov:startedAtTime."@en ;
+        sh:datatype       xsd:dateTime ;
+        sh:description    "The time at which an activity ended. See also prov:startedAtTime."@en ;
+        sh:name           "endedAtTime" ;
+        sh:nodeKind       sh:Literal ;
+        sh:path           prov:endedAtTime ;
+        sh:pattern        "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#80432e2ebb3c73136ec06984fc0bc22c>
+        a                       sh:PropertyShape ;
+        sh:nodeKind             sh:IRIOrLiteral ;
+        sh:path                 <http://w3id.org/CEON/ontology/product/modelledBy> ;
+        sh:qualifiedMaxCount    "1"^^xsd:nonNegativeInteger ;
+        sh:qualifiedMinCount    "1"^^xsd:nonNegativeInteger ;
+        sh:qualifiedValueShape  [ sh:class  <http://w3id.org/CEON/ontology/product/Product> ] .
+
+<https://astrea.linkeddata.es/shapes#2418b3a52b1ea4159710f1ee06a2369c>
+        a               sh:NodeShape ;
+        rdfs:label      "Contact Process" ;
+        sh:name         "Contact Process" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/ContactProcess> .
+
+<https://astrea.linkeddata.es/shapes#fb2c2372a56f59bbb95f993f697f4edc>
+        a               sh:NodeShape ;
+        rdfs:label      "Actor resource role" ;
+        sh:description  "The role(s) of an actor in relation to a resource." ;
+        sh:name         "Actor resource role" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actor/ActorResourceRole> .
+
+<https://astrea.linkeddata.es/shapes#6b9038cdae642483bf87853d93c46b60>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "generatedAtTime" , "The time at which an entity was completely created and is available for use."@en ;
+        sh:datatype       xsd:dateTime ;
+        sh:description    "The time at which an entity was completely created and is available for use."@en ;
+        sh:name           "generatedAtTime" ;
+        sh:nodeKind       sh:Literal ;
+        sh:path           prov:generatedAtTime ;
+        sh:pattern        "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#4dd4a23131d2d2fc87b6bd4f3732f134>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "EmptyCollection"@en ;
+        sh:name           "EmptyCollection"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    prov:EmptyCollection .
+
+<https://astrea.linkeddata.es/shapes#898b860c05f5288556bca7c76c90377f>
+        a               sh:PropertyShape ;
+        rdfs:label      "implements blueprint" , "The blueprint (or plan) that this concrete CVN is an instance of." ;
+        sh:class        <http://w3id.org/CEON/ontology/cvn/CVNBlueprint> ;
+        sh:description  "The blueprint (or plan) that this concrete CVN is an instance of." ;
+        sh:name         "implements blueprint" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/cvn/implementsBlueprint> .
+
+<https://astrea.linkeddata.es/shapes#b35aeacc9e82b413789511fd15997611>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "qualifiedCommunication" , "If this Activity prov:wasInformedBy Activity :a, then it can qualify how it was influenced using prov:qualifiedCommunication [ a prov:Communication;  prov:activity :a; :foo :bar ]."@en ;
+        sh:class          prov:Communication ;
+        sh:description    "If this Activity prov:wasInformedBy Activity :a, then it can qualify how it was influenced using prov:qualifiedCommunication [ a prov:Communication;  prov:activity :a; :foo :bar ]."@en ;
+        sh:name           "qualifiedCommunication" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:qualifiedCommunication .
+
+<https://astrea.linkeddata.es/shapes#aa84f03c9b056a437f94fc73f7bc5a65>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "AgentInfluence" ;
+        rdfs:seeAlso      prov:agent ;
+        sh:description    "AgentInfluence provides additional descriptions of an Agent's binary influence upon any other kind of resource. Instances of AgentInfluence use the prov:agent property to cite the influencing Agent."@en , "It is not recommended that the type AgentInfluence be asserted without also asserting one of its more specific subclasses."@en ;
+        sh:name           "AgentInfluence" ;
+        sh:nodeKind       sh:IRI ;
+        sh:property       <https://astrea.linkeddata.es/shapes#e1f33209247ac6680cb19a492d35d0c2> ;
+        sh:targetClass    prov:AgentInfluence .
+
+<https://astrea.linkeddata.es/shapes#f000a1466c0cf79b1fbf45a97914f291>
+        a               sh:NodeShape ;
+        rdfs:label      "Actor Type" ;
+        sh:description  "The type of an actor, e.g. the type of company, or a specific subtype based on the organisations capabilities." ;
+        sh:name         "Actor Type" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actorODP/ActorType> .
+
+<https://astrea.linkeddata.es/shapes#53519cc64615fc2727319c2a6943d5e5>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      <http://w3id.org/CEON/ontology/product/hasComposition> .
+
+<https://astrea.linkeddata.es/shapes#950090ab5808da1ab24e5f13f4406efc>
+        a               sh:PropertyShape ;
+        rdfs:label      "Participating object in a resource participation" ;
+        sh:description  "Participating object in a resource participation" ;
+        sh:nodeKind     sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#c3f9ad797cddd09aa6044f1989e6f160>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "ActivityInfluence" ;
+        rdfs:seeAlso      prov:activity ;
+        sh:description    "It is not recommended that the type ActivityInfluence be asserted without also asserting one of its more specific subclasses."@en , "ActivityInfluence provides additional descriptions of an Activity's binary influence upon any other kind of resource. Instances of ActivityInfluence use the prov:activity property to cite the influencing Activity."@en ;
+        sh:name           "ActivityInfluence" ;
+        sh:nodeKind       sh:IRI ;
+        sh:not            <https://astrea.linkeddata.es/shapes#38d2b22e0b5e00b3f0400161454df4f6> ;
+        sh:property       <https://astrea.linkeddata.es/shapes#bd3f68b2fd6f4c67fb2d835f5de23802> , <https://astrea.linkeddata.es/shapes#23262dfb269b716c32d41b945177d5cc> ;
+        sh:targetClass    prov:ActivityInfluence .
+
+<https://astrea.linkeddata.es/shapes#02c2571310a7e683b371f14a60cd5af1>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "Location" ;
+        rdfs:seeAlso      prov:atLocation ;
+        sh:name           "Location" ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    prov:Location .
+
+<https://astrea.linkeddata.es/shapes#b071ad65b723810940cc57e36109f7ef>
+        a               sh:NodeShape ;
+        rdfs:label      "PhysicalObject"@en ;
+        sh:description  "A physical object is a collection of matter."@en ;
+        sh:name         "PhysicalObject"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#0f189ae645e9656f6dbb5df69dd806e6> , <https://astrea.linkeddata.es/shapes#c0ded217d6fb42058615671adbc50169> , <https://astrea.linkeddata.es/shapes#b5cf0640f94ad65c3fbdc591c1894d2f> ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/resourceODP/PhysicalObject> .
+
+<https://astrea.linkeddata.es/shapes#d18a97a852a607a0308fb5f8582bafcd>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "generated" ;
+        sh:class          prov:Entity ;
+        sh:name           "generated" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:generated .
+
+<https://astrea.linkeddata.es/shapes#d797577eeedbbe38c6d0bc2da064e813>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "Because prov:wasInfluencedBy is a broad relation, its more specific subproperties (e.g. prov:wasInformedBy, prov:actedOnBehalfOf, prov:wasEndedBy, etc.) should be used when applicable."@en , "wasInfluencedBy" , "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>." ;
+        sh:description    "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>." , "Because prov:wasInfluencedBy is a broad relation, its more specific subproperties (e.g. prov:wasInformedBy, prov:actedOnBehalfOf, prov:wasEndedBy, etc.) should be used when applicable."@en ;
+        sh:name           "wasInfluencedBy" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:or             ( [ sh:class  prov:Activity ;
+                              sh:path   prov:wasInfluencedBy
+                            ]
+                            [ sh:class  prov:Agent ;
+                              sh:path   prov:wasInfluencedBy
+                            ]
+                            [ sh:class  prov:Entity ;
+                              sh:path   prov:wasInfluencedBy
+                            ]
+                          ) .
+
+<https://astrea.linkeddata.es/shapes#b05cc576efd2431a32d0bffa5fcbecaa>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "hadGeneration" , "The _optional_ Generation involved in an Entity's Derivation."@en ;
+        sh:class          prov:Generation ;
+        sh:description    "The _optional_ Generation involved in an Entity's Derivation."@en ;
+        sh:name           "hadGeneration" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:hadGeneration .
+
+<https://astrea.linkeddata.es/shapes#1a96fd9ff8f95d340bc3178f4fa780fd>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "influencer" , "Subproperties of prov:influencer are used to cite the object of an unqualified PROV-O triple whose predicate is a subproperty of prov:wasInfluencedBy (e.g. prov:used, prov:wasGeneratedBy). prov:influencer is used much like rdf:object is used."@en ;
+        sh:class          owl:Thing ;
+        sh:description    "Subproperties of prov:influencer are used to cite the object of an unqualified PROV-O triple whose predicate is a subproperty of prov:wasInfluencedBy (e.g. prov:used, prov:wasGeneratedBy). prov:influencer is used much like rdf:object is used."@en ;
+        sh:name           "influencer" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:influencer .
+
+<https://astrea.linkeddata.es/shapes#b64eeed0df5a23ee298e7564f3e409ac>
+        a               sh:NodeShape ;
+        rdfs:label      "ChemicalSubstance"@en ;
+        rdfs:seeAlso    "http://purl.obolibrary.org/obo/chebi#59999" , "http://emmo.info/emmo#EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea" ;
+        sh:description  "A chemical substance is made up of a collection of molecular entities."@en ;
+        sh:name         "ChemicalSubstance"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/material/ChemicalSubstance> .
+
+<https://astrea.linkeddata.es/shapes#5eb4c8b6bd3b6edcfdd6c1ef14c951d3>
+        a               sh:NodeShape ;
+        rdfs:label      "Data Sheet" ;
+        sh:description  "A data sheet is a collection of data about something, e.g. a set of facts about a product." ;
+        sh:name         "Data Sheet" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/datasheet/DataSheet> .
+
+<https://astrea.linkeddata.es/shapes#be17722992a627285429477025140940>
+        a               sh:NodeShape ;
+        rdfs:label      "Collaboration" ;
+        sh:description  "Some collaboration to achieve a goal." , "Collaboration" , "A collaboration between a set of actors." ;
+        sh:name         "Collaboration" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/cvn/Collaboration> .
+
+<https://astrea.linkeddata.es/shapes#19441766b6f6a238b86cb80ed7ebc073>
+        a               sh:PropertyShape ;
+        rdfs:label      "resulting product" , "The resource that is the output (product, i.e. what is produced) from a certain process." ;
+        sh:class        <http://w3id.org/CEON/ontology/resourceODP/Resource> ;
+        sh:description  "The resource that is the output (product, i.e. what is produced) from a certain process." ;
+        sh:name         "resulting product" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/process/resultingProduct> .
+
+<https://astrea.linkeddata.es/shapes#6d6d6aec07cf7b7ea4d3ecc7616181dc>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "Collection" ;
+        sh:name           "Collection" ;
+        sh:nodeKind       sh:IRI ;
+        sh:property       <https://astrea.linkeddata.es/shapes#d9faaf56986c00a494d4b1c414908b29> ;
+        sh:targetClass    prov:Collection .
+
+<https://astrea.linkeddata.es/shapes#7e97fbdac2ee15ffb0f7fac161364ee5>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      <http://w3id.org/CEON/ontology/resourceODP/hasPart> .
+
+<https://astrea.linkeddata.es/shapes#42a6b64189f4bf5b3e03fb3ef5fbb82d>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      <http://w3id.org/CEON/ontology/resourceODP/batchSize> .
+
+<https://astrea.linkeddata.es/shapes#15b5731f62bde1fd7d1866b51e7a4b88>
+        a               sh:NodeShape ;
+        rdfs:label      "Recycle Process" ;
+        sh:name         "Recycle Process" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/RecycleProcess> .
+
+<https://astrea.linkeddata.es/shapes#41e966ced2cc79b17001b48028b195e9>
+        a               sh:NodeShape ;
+        rdfs:label      "Set Of Objects"@en ;
+        sh:description  "A set of object is a set of physical objects that can be different types."@en ;
+        sh:name         "Set Of Objects"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#34f4e1fa4ec5dc89ec579d2e4ab7052a> , <https://astrea.linkeddata.es/shapes#b3e857450a4cfcb2397b1a8d11582aae> ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/resourceODP/SetOfObjects> .
+
+<https://astrea.linkeddata.es/shapes#fdaa8c6ec863698bc5d2dfdd9bc5decb>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "wasInvalidatedBy" ;
+        sh:class          prov:Activity ;
+        sh:name           "wasInvalidatedBy" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:wasInvalidatedBy .
+
+<https://astrea.linkeddata.es/shapes#2286bf379b477ab0f75c404c66183102>
+        a               sh:NodeShape ;
+        rdfs:label      "Ensure Claim Process" ;
+        sh:name         "Ensure Claim Process" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/EnsureClaimProcess> .
+
+<https://astrea.linkeddata.es/shapes#c376b79e77bc46c5735eddd924128a2b>
+        a               sh:PropertyShape ;
+        rdfs:label      "is realization of"@en , "Relates a thing, e.g. a digital object, or a physical object, to the information it is a realization of. C.f. a physical book that is the realization of a novel, or a pdf or Excel-file that is a realization of a certain data sheet." ;
+        sh:class        <http://w3id.org/CEON/ontology/resourceODP/Information> ;
+        sh:description  "Relates a thing, e.g. a digital object, or a physical object, to the information it is a realization of. C.f. a physical book that is the realization of a novel, or a pdf or Excel-file that is a realization of a certain data sheet." ;
+        sh:name         "is realization of"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/resourceODP/isRealizationOf> .
+
+<https://astrea.linkeddata.es/shapes#832e48f6362587f704051e405d495b54>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "Generation" ;
+        sh:description    "An instance of prov:Generation provides additional descriptions about the binary prov:wasGeneratedBy relation from a generated prov:Entity to the prov:Activity that generated it. For example, :cake prov:wasGeneratedBy :baking; prov:qualifiedGeneration [ a prov:Generation; prov:activity :baking; :foo :bar ]."@en ;
+        sh:name           "Generation" ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    prov:Generation .
+
+<https://astrea.linkeddata.es/shapes#4c778ffb347ed9f2dc734b0082e1c19a>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "qualifiedDerivation" , "If this Entity prov:wasDerivedFrom Entity :e, then it can qualify how it was derived using prov:qualifiedDerivation [ a prov:Derivation;  prov:entity :e; :foo :bar ]."@en ;
+        sh:class          prov:Derivation ;
+        sh:description    "If this Entity prov:wasDerivedFrom Entity :e, then it can qualify how it was derived using prov:qualifiedDerivation [ a prov:Derivation;  prov:entity :e; :foo :bar ]."@en ;
+        sh:name           "qualifiedDerivation" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:qualifiedDerivation .
+
+<https://astrea.linkeddata.es/shapes#a25d2c40a2b65a3d3bbfa446af913b52>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "Role" ;
+        rdfs:seeAlso      prov:hadRole ;
+        sh:name           "Role" ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    prov:Role .
+
+<https://astrea.linkeddata.es/shapes#38f3744dfd93022775f3615faf950833>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#2b089ea29b5d2c034cff7e743d698ae6> ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/Process> .
+
+<https://astrea.linkeddata.es/shapes#8350b3940061fa0d65fef2e3b7c01f2a>
+        a               sh:NodeShape ;
+        rdfs:label      "Cathalyst" ;
+        sh:description  "A resource that is needed as a cathalyst by a process, but that is not considered the direct input or output of it." ;
+        sh:name         "Cathalyst" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/Cathalyst> .
+
+<https://astrea.linkeddata.es/shapes#6ca4480095c83f9268c312e1feb1197c>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "End" ;
+        sh:description    "An instance of prov:End provides additional descriptions about the binary prov:wasEndedBy relation from some ended prov:Activity to an prov:Entity that ended it. For example, :ball_game prov:wasEndedBy :buzzer; prov:qualifiedEnd [ a prov:End; prov:entity :buzzer; :foo :bar; prov:atTime '2012-03-09T08:05:08-05:00'^^xsd:dateTime ]."@en ;
+        sh:name           "End" ;
+        sh:nodeKind       sh:IRI ;
+        sh:property       <https://astrea.linkeddata.es/shapes#f16be92d549f1a5334c97a17c328b860> ;
+        sh:targetClass    prov:End .
+
+<https://astrea.linkeddata.es/shapes#38d2b22e0b5e00b3f0400161454df4f6>
+        a         sh:PropertyShape ;
+        sh:class  prov:EntityInfluence .
+
+<https://astrea.linkeddata.es/shapes#fcfc2aa101f217466e61b4a36127a0ad>
+        a               sh:NodeShape ;
+        rdfs:label      "Situation" ;
+        sh:description  "A situation that may involve some resources and actors, i.e. a state of affairs at a certain point in time." ;
+        sh:name         "Situation" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/processODP/Situation> .
+
+<https://astrea.linkeddata.es/shapes#2b089ea29b5d2c034cff7e743d698ae6>
+        a               sh:PropertyShape ;
+        rdfs:label      "creates value" , "Value creation can be captured at the actor level, i.e. value created by an actor's participation in a collaboration, or at the process or complete CVN level." ;
+        sh:class        <http://w3id.org/CEON/ontology/value/Value> ;
+        sh:description  "Value creation can be captured at the actor level, i.e. value created by an actor's participation in a collaboration, or at the process or complete CVN level." ;
+        sh:name         "creates value" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/cvn/createsValue> .
+
+<https://astrea.linkeddata.es/shapes#a109159c24172f2b6a8843694205a23e>
+        a               sh:PropertyShape ;
+        rdfs:label      "related strategy" , "A strategy that is targeted by this CVN or CVN blueprint." ;
+        sh:description  "A strategy that is targeted by this CVN or CVN blueprint." ;
+        sh:name         "related strategy" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/cvn/relatedStrategy> .
+
+<https://astrea.linkeddata.es/shapes#8d022ef1ee38250305580a3054378a68>
+        a               sh:PropertyShape ;
+        rdfs:label      "is about" , "Connecting the information to the object (physical, virtual, imaginary) that the information is about." ;
+        sh:description  "Connecting the information to the object (physical, virtual, imaginary) that the information is about." ;
+        sh:name         "is about" ;
+        sh:nodeKind     sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#6bb267cbb64f03143fb07589a150ee5d>
+        a               sh:NodeShape ;
+        rdfs:label      "Dismantle Process" ;
+        sh:name         "Dismantle Process" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/DismantleProcess> .
+
+<https://astrea.linkeddata.es/shapes#b458b09abd9bd6203f7badd5219ae293>
+        a               sh:NodeShape ;
+        rdfs:label      "Resource"@en ;
+        sh:description  "A resource able to be handled in the context of a circular value network, e.g. data generated by software systems in the CVN, materials or prooducts as physical objects handled in the CVN."@en ;
+        sh:name         "Resource"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/resourceODP/Resource> .
+
+<https://astrea.linkeddata.es/shapes#17958b51a2296d25f7be1ff1ec14ed2b>
+        a               sh:NodeShape ;
+        rdfs:label      "Process"@en ;
+        sh:description  "An activity in the context of a circular value network, handling resources."@en ;
+        sh:name         "Process"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#9527c744c336f0833845006dd3df5b50> , <https://astrea.linkeddata.es/shapes#7ca538054f2ef0ee0ca33c6c70507897> , <https://astrea.linkeddata.es/shapes#a870441e0531236e6884c770b0108d9f> , <https://astrea.linkeddata.es/shapes#e68828ad68e76dc5259840a1dab4a73f> ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/processODP/Process> .
+
+<https://astrea.linkeddata.es/shapes#7dcbf46a1a3c4869d557b9de33169b95>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#78878444a8f39bf5d9b93121ea1a9d6f>
+        a            sh:PropertyShape ;
+        sh:class     <http://w3id.org/CEON/ontology/cvn/CircularStrategy> ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      <http://w3id.org/CEON/ontology/cvn/plansToImplementStrategy> .
+
+<https://astrea.linkeddata.es/shapes#6783b79be2979079174909c7402ac0d7>
+        a               sh:NodeShape ;
+        rdfs:label      "Using resource" ;
+        sh:description  "The relation where the role of the actor is the user of a certain resource." ;
+        sh:name         "Using resource" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actor/UsingResource> .
+
+<https://astrea.linkeddata.es/shapes#96894bd79929838d7b289227b2a17c97>
+        a               sh:NodeShape ;
+        rdfs:label      "Sell Resource Process" ;
+        sh:name         "Sell Resource Process" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/process/SellResourceProcess> .
+
+<https://astrea.linkeddata.es/shapes#5d0e27a10f755e8b845321ffc3e82361>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "wasStartedBy" , "Start is when an activity is deemed to have started. A start may refer to an entity, known as trigger, that initiated the activity."@en ;
+        sh:class          prov:Entity ;
+        sh:description    "Start is when an activity is deemed to have started. A start may refer to an entity, known as trigger, that initiated the activity."@en ;
+        sh:name           "wasStartedBy" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:wasStartedBy .
+
+<https://astrea.linkeddata.es/shapes#91a0e7f271b1a59666d7c93482d3d907>
+        a               sh:NodeShape ;
+        rdfs:label      "Capability" ;
+        sh:description  "Something that the actor is capable of doing, e.g. perfomring a certain role in a process, based on some properties, such as access to infrastructure, resources and know-how." ;
+        sh:name         "Capability" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#5a244487a28bab8e95619b149bb3fe6a> ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actorODP/Capability> .
+
+<https://astrea.linkeddata.es/shapes#10383e87ded8a99db400b063623e9dd1>
+        a                       sh:PropertyShape ;
+        sh:nodeKind             sh:IRIOrLiteral ;
+        sh:path                 <http://w3id.org/CEON/ontology/product/associatedWithMatter> ;
+        sh:qualifiedMaxCount    "1"^^xsd:nonNegativeInteger ;
+        sh:qualifiedMinCount    "1"^^xsd:nonNegativeInteger ;
+        sh:qualifiedValueShape  [ sh:class  <http://w3id.org/CEON/ontology/resourceODP/Matter> ] .
+
+<https://astrea.linkeddata.es/shapes#d9f6d8e636bd311f8a61f53cf9cc3d49>
+        a                       sh:PropertyShape ;
+        sh:nodeKind             sh:IRIOrLiteral ;
+        sh:path                 <http://w3id.org/CEON/ontology/product/batchOfProduct> ;
+        sh:qualifiedMaxCount    "1"^^xsd:nonNegativeInteger ;
+        sh:qualifiedMinCount    "1"^^xsd:nonNegativeInteger ;
+        sh:qualifiedValueShape  [ sh:class  <http://w3id.org/CEON/ontology/product/Product> ] .
+
+<https://astrea.linkeddata.es/shapes#e4e51583abf90f437db8bd82e28f3c58>
+        a               sh:NodeShape ;
+        rdfs:label      "Reselling resource" ;
+        sh:description  "The relation where the role of the actor is the reseller of a certain resource." ;
+        sh:name         "Reselling resource" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/actor/ResellingResource> .
+
+<https://astrea.linkeddata.es/shapes#b844c2904cb870fe394b1a284195d1c0>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://w3id.org/CEON/ontology/value/Value> .
+
+<https://astrea.linkeddata.es/shapes#23d0fc727546dee2eb47f5cc8205f898>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "wasQuotedFrom" , "An entity is derived from an original entity by copying, or 'quoting', some or all of it."@en ;
+        sh:class          prov:Entity ;
+        sh:description    "An entity is derived from an original entity by copying, or 'quoting', some or all of it."@en ;
+        sh:name           "wasQuotedFrom" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:wasQuotedFrom .
+
+<https://astrea.linkeddata.es/shapes#5a244487a28bab8e95619b149bb3fe6a>
+        a            sh:PropertyShape ;
+        rdfs:label   "capability of" , "Relates to the actor holding the capability." ;
+        sh:class     <http://w3id.org/CEON/ontology/actorODP/Actor> ;
+        sh:name      "capability of" , "Relates to the actor holding the capability." ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      <http://w3id.org/CEON/ontology/actorODP/capabilityOf> .
+
+<https://astrea.linkeddata.es/shapes#d86d39fe22d383728eb67f8caebf5274>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "wasRevisionOf" , "A revision is a derivation that revises an entity into a revised version."@en ;
+        sh:class          prov:Entity ;
+        sh:description    "A revision is a derivation that revises an entity into a revised version."@en ;
+        sh:name           "wasRevisionOf" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:wasRevisionOf .
+
+<https://astrea.linkeddata.es/shapes#844f3005973a6a1a6270bec1559d13c5>
+        a               sh:PropertyShape ;
+        rdfs:label      "has participating actor" , "Holds the value of the actor involved in this participation relation." ;
+        sh:class        <http://w3id.org/CEON/ontology/actorODP/Actor> ;
+        sh:description  "Holds the value of the actor involved in this participation relation." ;
+        sh:name         "has participating actor" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         <http://w3id.org/CEON/ontology/actorODP/participatingActor> .
+
+<https://astrea.linkeddata.es/shapes#50ee12d03373a78308e5484bd860ad98>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+        rdfs:label        "hadRole" , "The _optional_ Role that an Entity assumed in the context of an Activity. For example, :baking prov:used :spoon; prov:qualified [ a prov:Usage; prov:entity :spoon; prov:hadRole roles:mixing_implement ]."@en , "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>." ;
+        sh:class          prov:Role ;
+        sh:description    "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>." , "The _optional_ Role that an Entity assumed in the context of an Activity. For example, :baking prov:used :spoon; prov:qualified [ a prov:Usage; prov:entity :spoon; prov:hadRole roles:mixing_implement ]."@en ;
+        sh:name           "hadRole" ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           prov:hadRole .

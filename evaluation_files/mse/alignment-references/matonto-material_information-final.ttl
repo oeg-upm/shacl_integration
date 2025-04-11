@@ -1,0 +1,2787 @@
+@prefix ns1: <http://example.com/> .
+@prefix ns2: <http://matonto.org/ontologies/matonto#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://codata.jp/OML-MaterialInformation#AbsorbedDoseRate> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/AbsorbedDoseRate> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#Acceleration> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Acceleration> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#Alloy> a owl:Class ;
+    ns1:similarTo ns2:Alloy ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#CompoundSubstance>,
+        <http://codata.jp/OML-MaterialInformation#Mixture> .
+
+<http://codata.jp/OML-MaterialInformation#AmountOfSubstance> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/AmountOfSubstance> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Base> .
+
+<http://codata.jp/OML-MaterialInformation#AngularAcceleration> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/AngularAcceleration> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#Area> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Area> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#BulkModulus> a owl:Class ;
+    ns1:similarTo ns2:BulkModulus ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Mechanical> .
+
+<http://codata.jp/OML-MaterialInformation#CommonName> a owl:Class,
+        owl:DatatypeProperty ;
+    ns1:similarTo <http://ontology.dumontierlab.com/TraditionalName> ;
+    rdfs:domain <http://codata.jp/OML-MaterialInformation#EngineeringMaterial> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#EngineeringMaterial> .
+
+<http://codata.jp/OML-MaterialInformation#Concentration> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Concentration> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#Conductivity> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Conduction> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Environment> .
+
+<http://codata.jp/OML-MaterialInformation#CurrentDensity> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/ElectricCurrentDensity> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound>,
+        <http://codata.jp/OML-MaterialInformation#Environment> .
+
+<http://codata.jp/OML-MaterialInformation#Density> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Density> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Structural> .
+
+<http://codata.jp/OML-MaterialInformation#Ds> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Darmstadtium> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#ElectricCapacitance> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Capacitance> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Base> .
+
+<http://codata.jp/OML-MaterialInformation#ElectricCharge> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/ElectricCharge> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Base> .
+
+<http://codata.jp/OML-MaterialInformation#ElectricChargeDensity> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/ElectricChargeDensity> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#ElectricConductance> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/ElectricConductance> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Base> .
+
+<http://codata.jp/OML-MaterialInformation#ElectricCurrent> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/ElectricCurrent> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Base> .
+
+<http://codata.jp/OML-MaterialInformation#ElectricFieldStrength> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/ElectricFieldStrength> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#ElectricFluxDensity> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/ElectricFluxDensity> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#ElectricInductance> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Inductance> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Base> .
+
+<http://codata.jp/OML-MaterialInformation#ElectricPotentialDifference> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/PotentialDifference> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Base> .
+
+<http://codata.jp/OML-MaterialInformation#ElectricResistance> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/ElectricResistance> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Base> .
+
+<http://codata.jp/OML-MaterialInformation#Energy> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Energy> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Base> .
+
+<http://codata.jp/OML-MaterialInformation#EnergyDensity> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/EnergyDensity> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#EnergyGap> a owl:Class ;
+    ns1:similarTo ns2:BandGap ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#ElectronicAndElectrical>,
+        <http://codata.jp/OML-MaterialInformation#Superconducting> .
+
+<http://codata.jp/OML-MaterialInformation#Entropy> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Entropy> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#Exposure> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Exposure> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#Force> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Force> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Base> .
+
+<http://codata.jp/OML-MaterialInformation#Frequency> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Frequency> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Base> .
+
+<http://codata.jp/OML-MaterialInformation#Glass> a owl:Class ;
+    ns1:similarTo ns2:Glasses ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#CompoundSubstance> .
+
+<http://codata.jp/OML-MaterialInformation#HeatCapacity> a owl:Class ;
+    ns1:similarTo ns2:HeatCapacity ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#Illuminance> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Illuminance> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Base> .
+
+<http://codata.jp/OML-MaterialInformation#Irradiance> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Irradiance> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#Length> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Length> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Base> .
+
+<http://codata.jp/OML-MaterialInformation#LinearMassDensity> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/LinearDensity> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#Luminance> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Luminance> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#LuminousFlux> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/LuminousFlux> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Base> .
+
+<http://codata.jp/OML-MaterialInformation#LuminousIntensity> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/LuminousIntensity> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Base> .
+
+<http://codata.jp/OML-MaterialInformation#MagneticFieldStrength> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/MagneticFieldStrength> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#MagneticFlux> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/MagneticFlux> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Base> .
+
+<http://codata.jp/OML-MaterialInformation#MagneticFluxDensity> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/MagneticFluxDensity> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Base>,
+        <http://codata.jp/OML-MaterialInformation#Magnetic> .
+
+<http://codata.jp/OML-MaterialInformation#Mass> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Mass> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Base> .
+
+<http://codata.jp/OML-MaterialInformation#MassDensity> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/VolumeDensity> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#Metal> a owl:Class ;
+    ns1:similarTo ns2:Metals ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#ElementalSubstance> .
+
+<http://codata.jp/OML-MaterialInformation#MolarEnergy> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/MolarEnergy> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#MolarEntropy> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/MolarEntropy> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound>,
+        <http://codata.jp/OML-MaterialInformation#Thermal> .
+
+<http://codata.jp/OML-MaterialInformation#MomentOfForce> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/MomentOfForce> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#Permeability> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Permeability> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#Permittivity> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Permittivity> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound>,
+        <http://codata.jp/OML-MaterialInformation#StaticPermittivity> .
+
+<http://codata.jp/OML-MaterialInformation#PlaneAngle> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/PlaneAngle> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Base> .
+
+<http://codata.jp/OML-MaterialInformation#Power> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Power> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Base> .
+
+<http://codata.jp/OML-MaterialInformation#Radiance> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Radiance> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#RadiantIntensity> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/RadiantIntensity> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#Rg> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Roentgenium> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#ShearModulus> a owl:Class ;
+    ns1:similarTo ns2:ShearModulus ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Mechanical> .
+
+<http://codata.jp/OML-MaterialInformation#SolidAngle> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/SolidAngle> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Base> .
+
+<http://codata.jp/OML-MaterialInformation#Solvent> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Solvent> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Environment> .
+
+<http://codata.jp/OML-MaterialInformation#SpecificEnergy> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/SpecificEnergy> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#SpecificEntropy> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/SpecificEntropy> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#SpecificHeatCapacity> a owl:Class ;
+    ns1:similarTo ns2:SpecificHeat ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#SpecificVolume> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/SpecificVolume> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#SurfaceTension> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/SurfaceTension> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#ThermalConductivity> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/ThermalConductivity> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound>,
+        <http://codata.jp/OML-MaterialInformation#Thermal> .
+
+<http://codata.jp/OML-MaterialInformation#Time> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Time> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Base>,
+        <http://codata.jp/OML-MaterialInformation#PhysicalQuantity> .
+
+<http://codata.jp/OML-MaterialInformation#Volume> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Volume> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#WaveNumber> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Wavenumber> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Compound> .
+
+<http://codata.jp/OML-MaterialInformation#YoungsModulus> a owl:Class ;
+    ns1:similarTo ns2:YoungsModulus ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Mechanical> .
+
+<http://codata.jp/OML-MaterialInformation#pH> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/pH> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Environment> .
+
+ns2:Alloy a owl:Class ;
+    rdfs:label "Alloy"@en ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Alloy> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Solution> .
+
+ns2:BandGap a owl:Class ;
+    rdfs:label "band gap" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#EnergyGap> ;
+    rdfs:comment "The energy difference between the top of the valence band and the botto of the conduction band in insulators and semiconductors" ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+ns2:BulkModulus a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:label "bulk modulus" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#BulkModulus> ;
+    ns2:hasCommonSymbol "K" ;
+    rdfs:comment "The bulk modulus describes volumetric elasticity, or the tendency of an object to deform in all directions when uniformly loaded in all directions; it is defined as volumetric stress over volumetric strain, and is the inverse of compressibility. The bulk modulus is an extension of Young's modulus to three dimensions." ;
+    rdfs:subClassOf ns2:ElasticModulus .
+
+ns2:Glasses a owl:Class ;
+    rdfs:label "glasses" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Glass> ;
+    rdfs:subClassOf ns2:MaterialCategory .
+
+ns2:HeatCapacity a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:label "heat capacity" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#HeatCapacity> ;
+    ns2:hasCommonSymbol "C" ;
+    rdfs:comment "Heat capacity is the measurable physical quantity of heat energy required to change the temperature of an object by a given amount." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        ns2:ExtensiveProperty ;
+    skos:altLabel "thermal capacity" .
+
+ns2:Metals a owl:Class ;
+    rdfs:label "metals" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Metal> ;
+    rdfs:subClassOf ns2:MaterialCategory .
+
+ns2:ShearModulus a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:label "shear modulus" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#ShearModulus> ;
+    ns2:hasCommonSymbol "G" ;
+    rdfs:comment "The shear modulus describes an object's tendency to shear (the deformation of shape at constant volume) when acted upon by opposing forces; it is defined as shear stress over shear strain. The shear modulus is part of the derivation of viscosity." ;
+    rdfs:subClassOf ns2:ElasticModulus ;
+    skos:altLabel "modulus of rigidity" .
+
+ns2:SpecificHeat a owl:Class ;
+    rdfs:label "specific heat" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#SpecificHeatCapacity> ;
+    rdfs:comment "Specific heat is the heat capacity per unit mass of a material." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        ns2:IntensiveProperty ;
+    skos:altLabel "specific heat capacity" .
+
+ns2:YoungsModulus a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:label "youngs modulus" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#YoungsModulus> ;
+    ns2:hasCommonSymbol "E" ;
+    rdfs:comment "Young's modulus is a measure of the stiffness of an elastic isotropic material and is a quantity used to characterize materials. It is defined as the ratio of the stress along an axis over the strain along that axis in the range of stress in which Hooke's law holds." ;
+    rdfs:subClassOf ns2:ElasticModulus ;
+    skos:altLabel "Young's modulus",
+        "tensile modulus" .
+
+<http://ontology.dumontierlab.com/AbsorbedDoseRate> a owl:Class ;
+    rdfs:label "absorbed dose rate" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#AbsorbedDoseRate> ;
+    rdfs:comment "The measure of the rate of energy deposited in a medium by ionising radiation." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/Radiation> .
+
+<http://ontology.dumontierlab.com/Acceleration> a owl:Class ;
+    rdfs:label "acceleration" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Acceleration> ;
+    rdfs:comment "The measure of the rate at which an object's velocity is changing." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Actinium> a owl:Class ;
+    rdfs:label "Actinium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ac> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/ActiniumAtom> a owl:Class ;
+    rdfs:label "Actinium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ac> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Aluminium> a owl:Class ;
+    rdfs:label "Aluminium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Al> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/AluminiumAtom> a owl:Class ;
+    rdfs:label "Aluminium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Al> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Americium> a owl:Class ;
+    rdfs:label "Americium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Am> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/AmericiumAtom> a owl:Class ;
+    rdfs:label "Americium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Am> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/AmountOfSubstance> a owl:Class ;
+    rdfs:label "amount of substance" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#AmountOfSubstance> ;
+    rdfs:comment "The measure of the number of elementary entities in the object." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/AngularAcceleration> a owl:Class ;
+    rdfs:label "angular acceleration" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#AngularAcceleration> ;
+    rdfs:comment "The measure of the rate of change of angular velocity over time." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Antimony> a owl:Class ;
+    rdfs:label "Antimony" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Sb> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/AntimonyAtom> a owl:Class ;
+    rdfs:label "Antimony Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Sb> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Area> a owl:Class ;
+    rdfs:label "area" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Area> ;
+    rdfs:comment "A measure of the space enclosed within a plane." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Argon> a owl:Class ;
+    rdfs:label "Argon" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ar> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/ArgonAtom> a owl:Class ;
+    rdfs:label "Argon Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ar> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Arsenic> a owl:Class ;
+    rdfs:label "Arsenic" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#As> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/ArsenicAtom> a owl:Class ;
+    rdfs:label "Arsenic Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#As> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Astatine> a owl:Class ;
+    rdfs:label "Astatine" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#At> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/AstatineAtom> a owl:Class ;
+    rdfs:label "Astatine Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#At> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:disjointWith <http://ontology.dumontierlab.com/BromineAtom>,
+        <http://ontology.dumontierlab.com/CarbonAtom>,
+        <http://ontology.dumontierlab.com/ChlorineAtom>,
+        <http://ontology.dumontierlab.com/FluorineAtom>,
+        <http://ontology.dumontierlab.com/HydrogenAtom>,
+        <http://ontology.dumontierlab.com/IodineAtom>,
+        <http://ontology.dumontierlab.com/NitrogenAtom>,
+        <http://ontology.dumontierlab.com/OxygenAtom>,
+        <http://ontology.dumontierlab.com/PhosphorusAtom>,
+        <http://ontology.dumontierlab.com/SulfurAtom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Barium> a owl:Class ;
+    rdfs:label "Barium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ba> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/BariumAtom> a owl:Class ;
+    rdfs:label "Barium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ba> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Berkelium> a owl:Class ;
+    rdfs:label "Berkelium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Bk> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/BerkeliumAtom> a owl:Class ;
+    rdfs:label "Berkelium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Bk> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Beryllium> a owl:Class ;
+    rdfs:label "Beryllium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Be> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/BerylliumAtom> a owl:Class ;
+    rdfs:label "Beryllium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Be> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Bismuth> a owl:Class ;
+    rdfs:label "Bismuth" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Bi> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/BismuthAtom> a owl:Class ;
+    rdfs:label "Bismuth Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Bi> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Bohrium> a owl:Class ;
+    rdfs:label "Bohrium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Bh> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/BohriumAtom> a owl:Class ;
+    rdfs:label "Bohrium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Bh> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Boron> a owl:Class ;
+    rdfs:label "Boron" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#B> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/BoronAtom> a owl:Class ;
+    rdfs:label "Boron Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#B> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Bromine> a owl:Class ;
+    rdfs:label "Bromine" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Br> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/Cadmium> a owl:Class ;
+    rdfs:label "Cadmium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Cd> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/CadmiumAtom> a owl:Class ;
+    rdfs:label "Cadmium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Cd> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Caesium> a owl:Class ;
+    rdfs:label "Caesium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Cs> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/CaesiumAtom> a owl:Class ;
+    rdfs:label "Caesium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Cs> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Calcium> a owl:Class ;
+    rdfs:label "Calcium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ca> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/CalciumAtom> a owl:Class ;
+    rdfs:label "Calcium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ca> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Californium> a owl:Class ;
+    rdfs:label "Californium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Cf> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/CaliforniumAtom> a owl:Class ;
+    rdfs:label "Californium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Cf> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Capacitance> a owl:Class ;
+    rdfs:label "capacitance" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#ElectricCapacitance> ;
+    rdfs:comment "The measure of the amount of electric charge stored for a given electric potential." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Carbon> a owl:Class ;
+    rdfs:label "Carbon" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#C> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/Cerium> a owl:Class ;
+    rdfs:label "Cerium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ce> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/CeriumAtom> a owl:Class ;
+    rdfs:label "Cerium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ce> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Chlorine> a owl:Class ;
+    rdfs:label "Chlorine" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Cl> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/Chromium> a owl:Class ;
+    rdfs:label "Chromium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Cr> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/ChromiumAtom> a owl:Class ;
+    rdfs:label "Chromium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Cr> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Cobalt> a owl:Class ;
+    rdfs:label "Cobalt" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Co> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/CobaltAtom> a owl:Class ;
+    rdfs:label "Cobalt Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Co> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Compound> a owl:Class ;
+    rdfs:label "compound" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#CompoundSubstance> ;
+    rdfs:comment "A substance made up of two or more elements covalently bonded together." ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/ChemicalSubstance> ;
+    owl:disjointWith <http://ontology.dumontierlab.com/PureSubstance> .
+
+<http://ontology.dumontierlab.com/Copper> a owl:Class ;
+    rdfs:label "Copper" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Cu> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/CopperAtom> a owl:Class ;
+    rdfs:label "Copper Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Cu> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Curium> a owl:Class ;
+    rdfs:label "Curium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Cm> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/CuriumAtom> a owl:Class ;
+    rdfs:label "Curium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Cm> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Darmstadtium> a owl:Class ;
+    rdfs:label "Darmstadtium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ds> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/Dubnium> a owl:Class ;
+    rdfs:label "Dubnium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Db> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/DubniumAtom> a owl:Class ;
+    rdfs:label "Dubnium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Db> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Dysprosium> a owl:Class ;
+    rdfs:label "Dysprosium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Dy> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/DysprosiumAtom> a owl:Class ;
+    rdfs:label "Dysprosium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Dy> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Einsteinium> a owl:Class ;
+    rdfs:label "Einsteinium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Es> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/EinsteiniumAtom> a owl:Class ;
+    rdfs:label "Einsteinium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Es> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/ElectricCharge> a owl:Class ;
+    rdfs:label "electric charge" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#ElectricCharge> ;
+    rdfs:comment "A measure of a fundamental conserved property of some subatomic particles. The electric charge of a macroscopic object is the sum of the electric charges of its constituent particles.",
+        "The quality of having an imbalance of electric charge." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/ChemicalQuality>,
+        <http://ontology.dumontierlab.com/MeasuredProperty> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/ElectricChargeDensity> a owl:Class ;
+    rdfs:label "electric charge density" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#ElectricChargeDensity> ;
+    rdfs:comment "A measure of the amount of electric charge in a line, surface or volume." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/ElectricConductance> a owl:Class ;
+    rdfs:label "electric conduction" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#ElectricConductance> ;
+    rdfs:comment "A measure of the ease with which electricity flows along a certain path in an electrical element." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/Conduction> .
+
+<http://ontology.dumontierlab.com/ElectricCurrent> a owl:Class ;
+    rdfs:label "electric current" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#ElectricCurrent> ;
+    rdfs:comment "A measure of the flow of electric charge." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/ElectricCurrentDensity> a owl:Class ;
+    rdfs:label "electric current density" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#CurrentDensity> ;
+    rdfs:comment "A measure of the electric current per cross-sectional area." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/ElectricFieldStrength> a owl:Class ;
+    rdfs:label "electric field strength" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#ElectricFieldStrength> ;
+    rdfs:comment "A measure of the force exerted on electrically charged objects by an electric charge." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/ElectricFluxDensity> a owl:Class ;
+    rdfs:label "electric flux density" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#ElectricFluxDensity> ;
+    rdfs:comment "A measure of the amount of electric charge over a plane." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/ElectricResistance> a owl:Class ;
+    rdfs:label "electric resistance" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#ElectricResistance> ;
+    rdfs:comment "A measure of the potential difference with respect the current." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Energy> a owl:Class ;
+    rdfs:label "energy" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Energy> ;
+    rdfs:comment "A measure of the amount of work a physical system can do on another." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/EnergyDensity> a owl:Class ;
+    rdfs:label "energy density" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#EnergyDensity> ;
+    rdfs:comment "A measure of the amount of energy in a region of space per unit volume or mass." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Entropy> a owl:Class ;
+    rdfs:label "entropy" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Entropy> ;
+    rdfs:comment "A measure of the possible configurations of the system." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Erbium> a owl:Class ;
+    rdfs:label "Erbium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Er> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/ErbiumAtom> a owl:Class ;
+    rdfs:label "Erbium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Er> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Europium> a owl:Class ;
+    rdfs:label "Europium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Eu> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/EuropiumAtom> a owl:Class ;
+    rdfs:label "Europium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Eu> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Exposure> a owl:Class ;
+    rdfs:label "exposure" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Exposure> ;
+    rdfs:comment "A measure of the amount of radiation detected." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/Radiation> .
+
+<http://ontology.dumontierlab.com/Fermium> a owl:Class ;
+    rdfs:label "Fermium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Fm> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/FermiumAtom> a owl:Class ;
+    rdfs:label "Fermium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Fm> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Fluorine> a owl:Class ;
+    rdfs:label "Fluorine" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#F> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/Force> a owl:Class ;
+    rdfs:label "force" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Force> ;
+    rdfs:comment "A measure of the rate of change of the momentum of a body." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Francium> a owl:Class ;
+    rdfs:label "Francium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Fr> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/FranciumAtom> a owl:Class ;
+    rdfs:label "Francium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Fr> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Frequency> a owl:Class ;
+    rdfs:label "frequency" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Frequency> ;
+    rdfs:comment "A measure of the number of number of occurrences of a repeated event per unit of time." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Gadolinium> a owl:Class ;
+    rdfs:label "Gadolinium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Gd> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/GadoliniumAtom> a owl:Class ;
+    rdfs:label "Gadolinium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Gd> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Gallium> a owl:Class ;
+    rdfs:label "Gallium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ga> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/GalliumAtom> a owl:Class ;
+    rdfs:label "Gallium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ga> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Germanium> a owl:Class ;
+    rdfs:label "Germanium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ge> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/GermaniumAtom> a owl:Class ;
+    rdfs:label "Germanium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ge> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Gold> a owl:Class ;
+    rdfs:label "Gold" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Au> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/GoldAtom> a owl:Class ;
+    rdfs:label "Gold Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Au> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Hafnium> a owl:Class ;
+    rdfs:label "Hafnium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Hf> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/HafniumAtom> a owl:Class ;
+    rdfs:label "Hafnium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Hf> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Hassium> a owl:Class ;
+    rdfs:label "Hassium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Hs> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/HassiumAtom> a owl:Class ;
+    rdfs:label "Hassium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Hs> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Helium> a owl:Class ;
+    rdfs:label "Helium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#He> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/HeliumAtom> a owl:Class ;
+    rdfs:label "Helium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#He> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Holmium> a owl:Class ;
+    rdfs:label "Holmium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ho> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/HolmiumAtom> a owl:Class ;
+    rdfs:label "Holmium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ho> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Hydrogen> a owl:Class ;
+    rdfs:label "Hydrogen" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#H> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/Illuminance> a owl:Class ;
+    rdfs:label "illuminance" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Illuminance> ;
+    rdfs:comment "A measure of the total luminous flux incident on a surface per unit area." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/ElectromagneticRadiation> .
+
+<http://ontology.dumontierlab.com/Indium> a owl:Class ;
+    rdfs:label "Indium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#In> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/IndiumAtom> a owl:Class ;
+    rdfs:label "Indium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#In> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Inductance> a owl:Class ;
+    rdfs:label "inductance" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#ElectricInductance> ;
+    rdfs:comment "A measure of the amount of magnetic flux for a given electric current." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Iodine> a owl:Class ;
+    rdfs:label "Iodine" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#I> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/Iridium> a owl:Class ;
+    rdfs:label "Iridium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ir> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/IridiumAtom> a owl:Class ;
+    rdfs:label "Iridium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ir> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Iron> a owl:Class ;
+    rdfs:label "Iron" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Fe> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/IronAtom> a owl:Class ;
+    rdfs:label "Iron Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Fe> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Irradiance> a owl:Class ;
+    rdfs:label "irradiance" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Irradiance> ;
+    rdfs:comment "A measure of the power of electromagnetic radiation at a surface." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/ElectromagneticRadiation> .
+
+<http://ontology.dumontierlab.com/Krypton> a owl:Class ;
+    rdfs:label "Krypton" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Kr> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/KryptonAtom> a owl:Class ;
+    rdfs:label "Krypton Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Kr> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Lanthanum> a owl:Class ;
+    rdfs:label "Lanthanum" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#La> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/LanthanumAtom> a owl:Class ;
+    rdfs:label "Lanthanum Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#La> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Lawrencium> a owl:Class ;
+    rdfs:label "Lawrencium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Lr> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/LawrenciumAtom> a owl:Class ;
+    rdfs:label "Lawrencium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Lr> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Lead> a owl:Class ;
+    rdfs:label "Lead" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Pb> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/LeadAtom> a owl:Class ;
+    rdfs:label "Lead Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Pb> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Length> a owl:Class ;
+    rdfs:label "length" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Length> ;
+    rdfs:comment "A measure of one dimension." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/LinearDensity> a owl:Class ;
+    rdfs:label "linear density" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#LinearMassDensity> ;
+    rdfs:comment "A measure of mass per unit length." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/Density> .
+
+<http://ontology.dumontierlab.com/Lithium> a owl:Class ;
+    rdfs:label "Lithium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Li> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/LithiumAtom> a owl:Class ;
+    rdfs:label "Lithium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Li> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Luminance> a owl:Class ;
+    rdfs:label "luminance" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Luminance> ;
+    rdfs:comment "A measure of the density of luminous intensity in a given direction." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/ElectromagneticRadiation> .
+
+<http://ontology.dumontierlab.com/LuminousFlux> a owl:Class ;
+    rdfs:label "luminous flux" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#LuminousFlux> ;
+    rdfs:comment "A measure of the perceived power of light." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/ElectromagneticRadiation> .
+
+<http://ontology.dumontierlab.com/LuminousIntensity> a owl:Class ;
+    rdfs:label "luminous intensity" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#LuminousIntensity> ;
+    rdfs:comment "A measure of the power emitted by a light source in a particular direction." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/ElectromagneticRadiation> .
+
+<http://ontology.dumontierlab.com/Lutetium> a owl:Class ;
+    rdfs:label "Lutetium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Lu> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/LutetiumAtom> a owl:Class ;
+    rdfs:label "Lutetium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Lu> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Magnesium> a owl:Class ;
+    rdfs:label "Magnesium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Mg> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/MagnesiumAtom> a owl:Class ;
+    rdfs:label "Magnesium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Mg> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/MagneticFieldStrength> a owl:Class ;
+    rdfs:label "magnetic field strength" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#MagneticFieldStrength> ;
+    rdfs:comment "A measure of the intensity of a magnetic field at a point." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/MagneticFlux> a owl:Class ;
+    rdfs:label "magnetic flux" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#MagneticFlux> ;
+    rdfs:comment "A measure of the strength and extent of a magnetic field." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/MagneticFluxDensity> a owl:Class ;
+    rdfs:label "magnetic flux density" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#MagneticFluxDensity> ;
+    rdfs:comment "A measure of the magnetic flux in an area perpendicular to the direction of magnetic flow." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Manganese> a owl:Class ;
+    rdfs:label "Manganese" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Mn> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/ManganeseAtom> a owl:Class ;
+    rdfs:label "Manganese Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Mn> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Mass> a owl:Class ;
+    rdfs:label "mass" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Mass> ;
+    rdfs:comment "A measure of the amount of matter and energy." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Meitnerium> a owl:Class ;
+    rdfs:label "Meitnerium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Mt> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/MeitneriumAtom> a owl:Class ;
+    rdfs:label "Meitnerium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Mt> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Mendelevium> a owl:Class ;
+    rdfs:label "Mendelevium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Md> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/MendeleviumAtom> a owl:Class ;
+    rdfs:label "Mendelevium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Md> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Mercury> a owl:Class ;
+    rdfs:label "Mercury" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Hg> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/MercuryAtom> a owl:Class ;
+    rdfs:label "Mercury Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Hg> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Mixture> a owl:Class ;
+    rdfs:label "mixture" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Mixture> ;
+    rdfs:comment "A substance consisting of two or more substances mixed together." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://www.ifomis.org/bfo/1.0/snap#Object> .
+
+<http://ontology.dumontierlab.com/MolarEnergy> a owl:Class ;
+    rdfs:label "molar energy" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#MolarEnergy> ;
+    rdfs:comment "A measure of the amount of energy per amount of substance." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/MolarEntropy> a owl:Class ;
+    rdfs:label "molar entropy" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#MolarEntropy> ;
+    rdfs:comment "A measure of the entropy content of one mole of substance." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Molybdenum> a owl:Class ;
+    rdfs:label "Molybdenum" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Mo> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/MolybdenumAtom> a owl:Class ;
+    rdfs:label "Molybdenum Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Mo> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/MomentOfForce> a owl:Class ;
+    rdfs:label "moment of force" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#MomentOfForce> ;
+    rdfs:comment "A measure of the magnitude of force applied to a rotational system at a distance from the axis of rotation." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Neodymium> a owl:Class ;
+    rdfs:label "Neodymium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Nd> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/NeodymiumAtom> a owl:Class ;
+    rdfs:label "Neodymium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Nd> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Neon> a owl:Class ;
+    rdfs:label "Neon" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ne> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/NeonAtom> a owl:Class ;
+    rdfs:label "Neon Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ne> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Neptunium> a owl:Class ;
+    rdfs:label "Neptunium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Np> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/NeptuniumAtom> a owl:Class ;
+    rdfs:label "Neptunium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Np> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Nickel> a owl:Class ;
+    rdfs:label "Nickel" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ni> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/NickelAtom> a owl:Class ;
+    rdfs:label "Nickel Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ni> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Niobium> a owl:Class ;
+    rdfs:label "Niobium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Nb> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/NiobiumAtom> a owl:Class ;
+    rdfs:label "Niobium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Nb> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Nitrogen> a owl:Class ;
+    rdfs:label "Nitrogen" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#N> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/Nobelium> a owl:Class ;
+    rdfs:label "Nobelium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#No> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/NobeliumAtom> a owl:Class ;
+    rdfs:label "Nobelium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#No> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Osmium> a owl:Class ;
+    rdfs:label "Osmium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Os> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/OsmiumAtom> a owl:Class ;
+    rdfs:label "Osmium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Os> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Oxygen> a owl:Class ;
+    rdfs:label "Oxygen" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#O> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/Palladium> a owl:Class ;
+    rdfs:label "Palladium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Pd> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/PalladiumAtom> a owl:Class ;
+    rdfs:label "Palladium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Pd> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Permeability> a owl:Class ;
+    rdfs:label "permeability" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Permeability> ;
+    rdfs:comment "A measure of the degree of magnetization of a materia in response to a magnetic field." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Permittivity> a owl:Class ;
+    rdfs:label "permittivity" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Permittivity> ;
+    rdfs:comment "A measure of a material's ability to transmit an electric field." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Phosphorus> a owl:Class ;
+    rdfs:label "Phosphorus" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#P> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/PlaneAngle> a owl:Class ;
+    rdfs:label "plane angle" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#PlaneAngle> ;
+    rdfs:comment "The measure of the amount of rotation of a ray about a fixed ray." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/Angle> .
+
+<http://ontology.dumontierlab.com/Platinum> a owl:Class ;
+    rdfs:label "Platinum" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Pt> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/PlatinumAtom> a owl:Class ;
+    rdfs:label "Platinum Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Pt> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Plutonium> a owl:Class ;
+    rdfs:label "Plutonium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Pu> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/PlutoniumAtom> a owl:Class ;
+    rdfs:label "Plutonium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Pu> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Polonium> a owl:Class ;
+    rdfs:label "Polonium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Po> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/PoloniumAtom> a owl:Class ;
+    rdfs:label "Polonium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Po> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Potassium> a owl:Class ;
+    rdfs:label "Potassium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#K> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/PotassiumAtom> a owl:Class ;
+    rdfs:label "Potassium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#K> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/PotentialDifference> a owl:Class ;
+    rdfs:label "potential difference" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#ElectricPotentialDifference> ;
+    rdfs:comment "A measure of the amount of energy required to move an electric charge against an electrostatic field." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Power> a owl:Class ;
+    rdfs:label "power" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Power> ;
+    rdfs:comment "A measure of the energy transferred per unit time." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Praseodymium> a owl:Class ;
+    rdfs:label "Praseodymium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Pr> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/PraseodymiumAtom> a owl:Class ;
+    rdfs:label "Praseodymium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Pr> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Pressure> a owl:Class ;
+    rdfs:label "pressure" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Pressure> ;
+    rdfs:comment "A measure of the force per unit area applifed on a surface in a direction perpendicular to that surface." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Promethium> a owl:Class ;
+    rdfs:label "Promethium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Pm> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/PromethiumAtom> a owl:Class ;
+    rdfs:label "Promethium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Pm> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Protactinium> a owl:Class ;
+    rdfs:label "Protactinium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Pa> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/ProtactiniumAtom> a owl:Class ;
+    rdfs:label "Protactinium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Pa> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Radiance> a owl:Class ;
+    rdfs:label "radiance" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Radiance> ;
+    rdfs:comment "A measure of the amount of light that passes through or is emitted from a particular area." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/ElectromagneticRadiation> .
+
+<http://ontology.dumontierlab.com/RadiantIntensity> a owl:Class ;
+    rdfs:label "radiant intensity" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#RadiantIntensity> ;
+    rdfs:comment "A measure of the intensity of electromagnetic radiation." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/ElectromagneticRadiation> .
+
+<http://ontology.dumontierlab.com/Radium> a owl:Class ;
+    rdfs:label "Radium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ra> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/RadiumAtom> a owl:Class ;
+    rdfs:label "Radium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ra> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Radon> a owl:Class ;
+    rdfs:label "Radon" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Rn> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/RadonAtom> a owl:Class ;
+    rdfs:label "Radon Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Rn> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Rhenium> a owl:Class ;
+    rdfs:label "Rhenium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Re> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/RheniumAtom> a owl:Class ;
+    rdfs:label "Rhenium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Re> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Rhodium> a owl:Class ;
+    rdfs:label "Rhodium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Rh> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/RhodiumAtom> a owl:Class ;
+    rdfs:label "Rhodium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Rh> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Roentgenium> a owl:Class ;
+    rdfs:label "Roentgenium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Rg> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/Rubidium> a owl:Class ;
+    rdfs:label "Rubidium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Rb> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/RubidiumAtom> a owl:Class ;
+    rdfs:label "Rubidium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Rb> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Ruthenium> a owl:Class ;
+    rdfs:label "Ruthenium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ru> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/RutheniumAtom> a owl:Class ;
+    rdfs:label "Ruthenium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ru> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Rutherfordium> a owl:Class ;
+    rdfs:label "Rutherfordium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Rf> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/RutherfordiumAtom> a owl:Class ;
+    rdfs:label "Rutherfordium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Rf> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Samarium> a owl:Class ;
+    rdfs:label "Samarium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Sm> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/SamariumAtom> a owl:Class ;
+    rdfs:label "Samarium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Sm> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Scandium> a owl:Class ;
+    rdfs:label "Scandium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Sc> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/ScandiumAtom> a owl:Class ;
+    rdfs:label "Scandium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Sc> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Seaborgium> a owl:Class ;
+    rdfs:label "Seaborgium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Sg> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/SeaborgiumAtom> a owl:Class ;
+    rdfs:label "Seaborgium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Sg> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Selenium> a owl:Class ;
+    rdfs:label "Selenium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Se> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/SeleniumAtom> a owl:Class ;
+    rdfs:label "Selenium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Se> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Silicon> a owl:Class ;
+    rdfs:label "Silicon" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Si> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/SiliconAtom> a owl:Class ;
+    rdfs:label "Silicon Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Si> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Silver> a owl:Class ;
+    rdfs:label "Silver" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ag> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/SilverAtom> a owl:Class ;
+    rdfs:label "Silver Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ag> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Sodium> a owl:Class ;
+    rdfs:label "Sodium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Na> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/SodiumAtom> a owl:Class ;
+    rdfs:label "Sodium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Na> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/SolidAngle> a owl:Class ;
+    rdfs:label "solid angle" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#SolidAngle> ;
+    rdfs:comment "A measure of the angle formed by three or more planes intersecting at a comment point." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/Angle> .
+
+<http://ontology.dumontierlab.com/Solvent> a owl:Class ;
+    rdfs:label "solvent" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Solvent> ;
+    rdfs:comment "A substance that dissolves other substances, thus forming a solution." ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/ChemicalSubstance> .
+
+<http://ontology.dumontierlab.com/SpecificEnergy> a owl:Class ;
+    rdfs:label "specific energy" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#SpecificEnergy> ;
+    rdfs:comment "A measure of the energy per unit mass." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/SpecificEntropy> a owl:Class ;
+    rdfs:label "specific entropy" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#SpecificEntropy> ;
+    rdfs:comment "A measure of the entropy of the mass of the system." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/SpecificVolume> a owl:Class ;
+    rdfs:label "specific volume" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#SpecificVolume> ;
+    rdfs:comment "A measure of the volume occupied by a unit of mass of a meterial." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Strontium> a owl:Class ;
+    rdfs:label "Strontium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Sr> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/StrontiumAtom> a owl:Class ;
+    rdfs:label "Strontium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Sr> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Sulfur> a owl:Class ;
+    rdfs:label "Sulfur" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#S> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/SurfaceTension> a owl:Class ;
+    rdfs:label "surface tension" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#SurfaceTension> ;
+    rdfs:comment "A measure of the attraction between molecules at the surface of a liquid." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Tantalum> a owl:Class ;
+    rdfs:label "Tantalum" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ta> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/TantalumAtom> a owl:Class ;
+    rdfs:label "Tantalum Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ta> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Technetium> a owl:Class ;
+    rdfs:label "Technetium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Tc> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/TechnetiumAtom> a owl:Class ;
+    rdfs:label "Technetium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Tc> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Tellurium> a owl:Class ;
+    rdfs:label "Tellurium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Te> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/TelluriumAtom> a owl:Class ;
+    rdfs:label "Tellurium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Te> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Temperature> a owl:Class ;
+    rdfs:label "temperature" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Temperature> ;
+    rdfs:comment "A measure of the average kinetic energy of particles in a sample of matter." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Terbium> a owl:Class ;
+    rdfs:label "Terbium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Tb> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/TerbiumAtom> a owl:Class ;
+    rdfs:label "Terbium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Tb> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Thallium> a owl:Class ;
+    rdfs:label "Thallium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Tl> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/ThalliumAtom> a owl:Class ;
+    rdfs:label "Thallium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Tl> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/ThermalConductivity> a owl:Class ;
+    rdfs:label "thermal conduction" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#ThermalConductivity> ;
+    rdfs:comment "A measure of the ability of a substance to transfer heat." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/Conduction> .
+
+<http://ontology.dumontierlab.com/Thorium> a owl:Class ;
+    rdfs:label "Thorium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Th> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/ThoriumAtom> a owl:Class ;
+    rdfs:label "Thorium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Th> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Thulium> a owl:Class ;
+    rdfs:label "Thulium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Tm> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/ThuliumAtom> a owl:Class ;
+    rdfs:label "Thulium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Tm> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Time> a owl:Class ;
+    rdfs:label "time" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Time> ;
+    rdfs:comment "The measure of temporal regions." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Tin> a owl:Class ;
+    rdfs:label "Tin" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Sn> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/TinAtom> a owl:Class ;
+    rdfs:label "Tin Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Sn> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Titanium> a owl:Class ;
+    rdfs:label "Titanium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ti> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/TitaniumAtom> a owl:Class ;
+    rdfs:label "Titanium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Ti> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/TraditionalName> a owl:Class ;
+    rdfs:label "traditional name" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#CommonName> ;
+    rdfs:comment "A name that is traditionally used to label an entity." ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Name> .
+
+<http://ontology.dumontierlab.com/Tungsten> a owl:Class ;
+    rdfs:label "Tungsten" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#W> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/TungstenAtom> a owl:Class ;
+    rdfs:label "Tungsten Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#W> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Ununoctium> a owl:Class ;
+    rdfs:label "Ununoctium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Uuo> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/UnunoctiumAtom> a owl:Class ;
+    rdfs:label "Ununoctium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Uuo> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Ununpentium> a owl:Class ;
+    rdfs:label "Ununpentium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Uup> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/UnunpentiumAtom> a owl:Class ;
+    rdfs:label "Ununpentium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Uup> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Ununseptium> a owl:Class ;
+    rdfs:label "Ununseptium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Uus> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/UnunseptiumAtom> a owl:Class ;
+    rdfs:label "Ununseptium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Uus> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Ununtrium> a owl:Class ;
+    rdfs:label "Ununtrium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Uut> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/UnuntriumAtom> a owl:Class ;
+    rdfs:label "Ununtrium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Uut> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Uranium> a owl:Class ;
+    rdfs:label "Uranium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#U> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/UraniumAtom> a owl:Class ;
+    rdfs:label "Uranium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#U> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Vanadium> a owl:Class ;
+    rdfs:label "Vanadium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#V> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/VanadiumAtom> a owl:Class ;
+    rdfs:label "Vanadium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#V> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Volume> a owl:Class ;
+    rdfs:label "volume" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Volume> ;
+    rdfs:comment "The measure of how much space an occurant occupies in three-dimensional space." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/VolumeDensity> a owl:Class ;
+    rdfs:label "mass density" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#MassDensity> ;
+    rdfs:comment "A measure of mass per unit volume." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/Density> .
+
+<http://ontology.dumontierlab.com/Wavenumber> a owl:Class ;
+    rdfs:label "wavenumber" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#WaveNumber> ;
+    rdfs:comment "The measure of a frequency in space." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Xenon> a owl:Class ;
+    rdfs:label "Xenon" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Xe> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/XenonAtom> a owl:Class ;
+    rdfs:label "Xenon Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Xe> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Ytterbium> a owl:Class ;
+    rdfs:label "Ytterbium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Yb> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/YtterbiumAtom> a owl:Class ;
+    rdfs:label "Ytterbium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Yb> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Yttrium> a owl:Class ;
+    rdfs:label "Yttrium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Y> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/YttriumAtom> a owl:Class ;
+    rdfs:label "Yttrium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Y> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Zinc> a owl:Class ;
+    rdfs:label "Zinc" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Zn> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/ZincAtom> a owl:Class ;
+    rdfs:label "Zinc Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Zn> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Zirconium> a owl:Class ;
+    rdfs:label "Zirconium" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Zr> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Element> .
+
+<http://ontology.dumontierlab.com/ZirconiumAtom> a owl:Class ;
+    rdfs:label "Zirconium Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Zr> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/pH> a owl:Class ;
+    rdfs:label "pH" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#pH> ;
+    rdfs:comment "A measure of the activity (effective concentration) of hydrogen ions in a solution." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/Concentration> .
+
+<http://codata.jp/OML-MaterialInformation#Ac> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Actinium>,
+        <http://ontology.dumontierlab.com/ActiniumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Ag> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Silver>,
+        <http://ontology.dumontierlab.com/SilverAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Al> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Aluminium>,
+        <http://ontology.dumontierlab.com/AluminiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Am> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Americium>,
+        <http://ontology.dumontierlab.com/AmericiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Ar> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Argon>,
+        <http://ontology.dumontierlab.com/ArgonAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#As> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Arsenic>,
+        <http://ontology.dumontierlab.com/ArsenicAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#At> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Astatine>,
+        <http://ontology.dumontierlab.com/AstatineAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Au> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Gold>,
+        <http://ontology.dumontierlab.com/GoldAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#B> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Boron>,
+        <http://ontology.dumontierlab.com/BoronAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Ba> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Barium>,
+        <http://ontology.dumontierlab.com/BariumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Be> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Beryllium>,
+        <http://ontology.dumontierlab.com/BerylliumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Bh> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Bohrium>,
+        <http://ontology.dumontierlab.com/BohriumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Bi> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Bismuth>,
+        <http://ontology.dumontierlab.com/BismuthAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Bk> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Berkelium>,
+        <http://ontology.dumontierlab.com/BerkeliumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Br> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Bromine>,
+        <http://ontology.dumontierlab.com/BromineAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#C> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Carbon>,
+        <http://ontology.dumontierlab.com/CarbonAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Ca> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Calcium>,
+        <http://ontology.dumontierlab.com/CalciumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Cd> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Cadmium>,
+        <http://ontology.dumontierlab.com/CadmiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Ce> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Cerium>,
+        <http://ontology.dumontierlab.com/CeriumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Cf> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Californium>,
+        <http://ontology.dumontierlab.com/CaliforniumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Cl> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Chlorine>,
+        <http://ontology.dumontierlab.com/ChlorineAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Cm> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Curium>,
+        <http://ontology.dumontierlab.com/CuriumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Co> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Cobalt>,
+        <http://ontology.dumontierlab.com/CobaltAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Cr> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Chromium>,
+        <http://ontology.dumontierlab.com/ChromiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Cs> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Caesium>,
+        <http://ontology.dumontierlab.com/CaesiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Cu> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Copper>,
+        <http://ontology.dumontierlab.com/CopperAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Db> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Dubnium>,
+        <http://ontology.dumontierlab.com/DubniumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Dy> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Dysprosium>,
+        <http://ontology.dumontierlab.com/DysprosiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Er> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Erbium>,
+        <http://ontology.dumontierlab.com/ErbiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Es> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Einsteinium>,
+        <http://ontology.dumontierlab.com/EinsteiniumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Eu> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Europium>,
+        <http://ontology.dumontierlab.com/EuropiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#F> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Fluorine>,
+        <http://ontology.dumontierlab.com/FluorineAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Fe> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Iron>,
+        <http://ontology.dumontierlab.com/IronAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Fm> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Fermium>,
+        <http://ontology.dumontierlab.com/FermiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Fr> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Francium>,
+        <http://ontology.dumontierlab.com/FranciumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Ga> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Gallium>,
+        <http://ontology.dumontierlab.com/GalliumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Gd> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Gadolinium>,
+        <http://ontology.dumontierlab.com/GadoliniumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Ge> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Germanium>,
+        <http://ontology.dumontierlab.com/GermaniumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#H> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Hydrogen>,
+        <http://ontology.dumontierlab.com/HydrogenAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#He> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Helium>,
+        <http://ontology.dumontierlab.com/HeliumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Hf> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Hafnium>,
+        <http://ontology.dumontierlab.com/HafniumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Hg> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Mercury>,
+        <http://ontology.dumontierlab.com/MercuryAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Ho> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Holmium>,
+        <http://ontology.dumontierlab.com/HolmiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Hs> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Hassium>,
+        <http://ontology.dumontierlab.com/HassiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#I> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Iodine>,
+        <http://ontology.dumontierlab.com/IodineAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#In> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Indium>,
+        <http://ontology.dumontierlab.com/IndiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Ir> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Iridium>,
+        <http://ontology.dumontierlab.com/IridiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#K> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Potassium>,
+        <http://ontology.dumontierlab.com/PotassiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Kr> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Krypton>,
+        <http://ontology.dumontierlab.com/KryptonAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#La> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Lanthanum>,
+        <http://ontology.dumontierlab.com/LanthanumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Li> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Lithium>,
+        <http://ontology.dumontierlab.com/LithiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Lr> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Lawrencium>,
+        <http://ontology.dumontierlab.com/LawrenciumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Lu> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Lutetium>,
+        <http://ontology.dumontierlab.com/LutetiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Md> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Mendelevium>,
+        <http://ontology.dumontierlab.com/MendeleviumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Mg> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Magnesium>,
+        <http://ontology.dumontierlab.com/MagnesiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Mixture> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Mixture> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Substance> .
+
+<http://codata.jp/OML-MaterialInformation#Mn> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Manganese>,
+        <http://ontology.dumontierlab.com/ManganeseAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Mo> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Molybdenum>,
+        <http://ontology.dumontierlab.com/MolybdenumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Mt> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Meitnerium>,
+        <http://ontology.dumontierlab.com/MeitneriumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#N> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Nitrogen>,
+        <http://ontology.dumontierlab.com/NitrogenAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Na> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Sodium>,
+        <http://ontology.dumontierlab.com/SodiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Nb> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Niobium>,
+        <http://ontology.dumontierlab.com/NiobiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Nd> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Neodymium>,
+        <http://ontology.dumontierlab.com/NeodymiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Ne> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Neon>,
+        <http://ontology.dumontierlab.com/NeonAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Ni> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Nickel>,
+        <http://ontology.dumontierlab.com/NickelAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#No> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Nobelium>,
+        <http://ontology.dumontierlab.com/NobeliumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Np> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Neptunium>,
+        <http://ontology.dumontierlab.com/NeptuniumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#O> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Oxygen>,
+        <http://ontology.dumontierlab.com/OxygenAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Os> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Osmium>,
+        <http://ontology.dumontierlab.com/OsmiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#P> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Phosphorus>,
+        <http://ontology.dumontierlab.com/PhosphorusAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Pa> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Protactinium>,
+        <http://ontology.dumontierlab.com/ProtactiniumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Pb> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Lead>,
+        <http://ontology.dumontierlab.com/LeadAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Pd> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Palladium>,
+        <http://ontology.dumontierlab.com/PalladiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Pm> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Promethium>,
+        <http://ontology.dumontierlab.com/PromethiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Po> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Polonium>,
+        <http://ontology.dumontierlab.com/PoloniumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Pr> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Praseodymium>,
+        <http://ontology.dumontierlab.com/PraseodymiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Pressure> a owl:Class,
+        owl:ObjectProperty ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Pressure> ;
+    rdfs:domain <http://codata.jp/OML-MaterialInformation#EnvironmentalPressure> ;
+    rdfs:range <http://codata.jp/OML-MaterialInformation#Pressure> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Base>,
+        <http://codata.jp/OML-MaterialInformation#PhysicalQuantity> .
+
+<http://codata.jp/OML-MaterialInformation#Pt> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Platinum>,
+        <http://ontology.dumontierlab.com/PlatinumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Pu> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Plutonium>,
+        <http://ontology.dumontierlab.com/PlutoniumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Ra> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Radium>,
+        <http://ontology.dumontierlab.com/RadiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Rb> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Rubidium>,
+        <http://ontology.dumontierlab.com/RubidiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Re> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Rhenium>,
+        <http://ontology.dumontierlab.com/RheniumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Rf> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Rutherfordium>,
+        <http://ontology.dumontierlab.com/RutherfordiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Rh> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Rhodium>,
+        <http://ontology.dumontierlab.com/RhodiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Rn> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Radon>,
+        <http://ontology.dumontierlab.com/RadonAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Ru> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Ruthenium>,
+        <http://ontology.dumontierlab.com/RutheniumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#S> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Sulfur>,
+        <http://ontology.dumontierlab.com/SulfurAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Sb> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Antimony>,
+        <http://ontology.dumontierlab.com/AntimonyAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Sc> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Scandium>,
+        <http://ontology.dumontierlab.com/ScandiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Se> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Selenium>,
+        <http://ontology.dumontierlab.com/SeleniumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Sg> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Seaborgium>,
+        <http://ontology.dumontierlab.com/SeaborgiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Si> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Silicon>,
+        <http://ontology.dumontierlab.com/SiliconAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Sm> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Samarium>,
+        <http://ontology.dumontierlab.com/SamariumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Sn> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Tin>,
+        <http://ontology.dumontierlab.com/TinAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Sr> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Strontium>,
+        <http://ontology.dumontierlab.com/StrontiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Substance> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/ChemicalSubstance> .
+
+<http://codata.jp/OML-MaterialInformation#Ta> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Tantalum>,
+        <http://ontology.dumontierlab.com/TantalumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Tb> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Terbium>,
+        <http://ontology.dumontierlab.com/TerbiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Tc> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Technetium>,
+        <http://ontology.dumontierlab.com/TechnetiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Te> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Tellurium>,
+        <http://ontology.dumontierlab.com/TelluriumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Temperature> a owl:Class,
+        owl:ObjectProperty ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Temperature> ;
+    rdfs:domain <http://codata.jp/OML-MaterialInformation#EnvironmentalTemperature> ;
+    rdfs:range <http://codata.jp/OML-MaterialInformation#Temperature> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#PhysicalQuantity> .
+
+<http://codata.jp/OML-MaterialInformation#Th> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Thorium>,
+        <http://ontology.dumontierlab.com/ThoriumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Ti> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Titanium>,
+        <http://ontology.dumontierlab.com/TitaniumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Tl> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Thallium>,
+        <http://ontology.dumontierlab.com/ThalliumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Tm> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Thulium>,
+        <http://ontology.dumontierlab.com/ThuliumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#U> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Uranium>,
+        <http://ontology.dumontierlab.com/UraniumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Uuo> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Ununoctium>,
+        <http://ontology.dumontierlab.com/UnunoctiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Uup> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Ununpentium>,
+        <http://ontology.dumontierlab.com/UnunpentiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Uus> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Ununseptium>,
+        <http://ontology.dumontierlab.com/UnunseptiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Uut> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Ununtrium>,
+        <http://ontology.dumontierlab.com/UnuntriumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#V> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Vanadium>,
+        <http://ontology.dumontierlab.com/VanadiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#W> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Tungsten>,
+        <http://ontology.dumontierlab.com/TungstenAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Xe> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Xenon>,
+        <http://ontology.dumontierlab.com/XenonAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Y> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Yttrium>,
+        <http://ontology.dumontierlab.com/YttriumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Yb> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Ytterbium>,
+        <http://ontology.dumontierlab.com/YtterbiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Zn> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Zinc>,
+        <http://ontology.dumontierlab.com/ZincAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://codata.jp/OML-MaterialInformation#Zr> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Zirconium>,
+        <http://ontology.dumontierlab.com/ZirconiumAtom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#Atom> .
+
+<http://ontology.dumontierlab.com/BromineAtom> a owl:Class ;
+    rdfs:label "Bromine Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Br> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:disjointWith <http://ontology.dumontierlab.com/CarbonAtom>,
+        <http://ontology.dumontierlab.com/ChlorineAtom>,
+        <http://ontology.dumontierlab.com/FluorineAtom>,
+        <http://ontology.dumontierlab.com/HydrogenAtom>,
+        <http://ontology.dumontierlab.com/IodineAtom>,
+        <http://ontology.dumontierlab.com/NitrogenAtom>,
+        <http://ontology.dumontierlab.com/OxygenAtom>,
+        <http://ontology.dumontierlab.com/PhosphorusAtom>,
+        <http://ontology.dumontierlab.com/SulfurAtom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Concentration> a owl:Class ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Concentration> ;
+    rdfs:comment "A measure of some entity per unit volume." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://codata.jp/OML-MaterialInformation#CompoundSubstance> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Compound> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#PureSubstance> .
+
+<http://codata.jp/OML-MaterialInformation#ElementalSubstance> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Element> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#PureSubstance> .
+
+<http://ontology.dumontierlab.com/CarbonAtom> a owl:Class ;
+    rdfs:label "Carbon Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#C> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:disjointWith <http://ontology.dumontierlab.com/ChlorineAtom>,
+        <http://ontology.dumontierlab.com/FluorineAtom>,
+        <http://ontology.dumontierlab.com/HydrogenAtom>,
+        <http://ontology.dumontierlab.com/IodineAtom>,
+        <http://ontology.dumontierlab.com/NitrogenAtom>,
+        <http://ontology.dumontierlab.com/OxygenAtom>,
+        <http://ontology.dumontierlab.com/PhosphorusAtom>,
+        <http://ontology.dumontierlab.com/SulfurAtom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/ChemicalSubstance> a owl:Class ;
+    rdfs:label "chemical substance" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Substance> ;
+    rdfs:comment "Any material with a definite chemical composition." ;
+    rdfs:subClassOf <http://www.ifomis.org/bfo/1.0/snap#Object> .
+
+<http://ontology.dumontierlab.com/Conduction> a owl:Class ;
+    rdfs:label "conduction" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Conductivity> ;
+    rdfs:comment "The measure of the transmission of heat or electricity or sound." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/Density> a owl:Class ;
+    rdfs:label "density" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Density> ;
+    rdfs:comment "A measure of mass per some dimension." ;
+    rdfs:subClassOf [ ],
+        [ ],
+        <http://ontology.dumontierlab.com/MeasuredProperty> .
+
+<http://ontology.dumontierlab.com/ChlorineAtom> a owl:Class ;
+    rdfs:label "Chlorine Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Cl> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:disjointWith <http://ontology.dumontierlab.com/FluorineAtom>,
+        <http://ontology.dumontierlab.com/HydrogenAtom>,
+        <http://ontology.dumontierlab.com/IodineAtom>,
+        <http://ontology.dumontierlab.com/NitrogenAtom>,
+        <http://ontology.dumontierlab.com/OxygenAtom>,
+        <http://ontology.dumontierlab.com/PhosphorusAtom>,
+        <http://ontology.dumontierlab.com/SulfurAtom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/FluorineAtom> a owl:Class ;
+    rdfs:label "Fluorine Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#F> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:disjointWith <http://ontology.dumontierlab.com/HydrogenAtom>,
+        <http://ontology.dumontierlab.com/IodineAtom>,
+        <http://ontology.dumontierlab.com/NitrogenAtom>,
+        <http://ontology.dumontierlab.com/OxygenAtom>,
+        <http://ontology.dumontierlab.com/PhosphorusAtom>,
+        <http://ontology.dumontierlab.com/SulfurAtom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/HydrogenAtom> a owl:Class ;
+    rdfs:label "Hydrogen Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#H> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:disjointWith <http://ontology.dumontierlab.com/IodineAtom>,
+        <http://ontology.dumontierlab.com/NitrogenAtom>,
+        <http://ontology.dumontierlab.com/OxygenAtom>,
+        <http://ontology.dumontierlab.com/PhosphorusAtom>,
+        <http://ontology.dumontierlab.com/SulfurAtom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/IodineAtom> a owl:Class ;
+    rdfs:label "Iodine Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#I> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:disjointWith <http://ontology.dumontierlab.com/NitrogenAtom>,
+        <http://ontology.dumontierlab.com/OxygenAtom>,
+        <http://ontology.dumontierlab.com/PhosphorusAtom>,
+        <http://ontology.dumontierlab.com/SulfurAtom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/NitrogenAtom> a owl:Class ;
+    rdfs:label "Nitrogen Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#N> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:disjointWith <http://ontology.dumontierlab.com/OxygenAtom>,
+        <http://ontology.dumontierlab.com/PhosphorusAtom>,
+        <http://ontology.dumontierlab.com/SulfurAtom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/OxygenAtom> a owl:Class ;
+    rdfs:label "Oxygen Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#O> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:disjointWith <http://ontology.dumontierlab.com/PhosphorusAtom>,
+        <http://ontology.dumontierlab.com/SulfurAtom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/PhosphorusAtom> a owl:Class ;
+    rdfs:label "Phosphorus Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#P> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:disjointWith <http://ontology.dumontierlab.com/SulfurAtom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/SulfurAtom> a owl:Class ;
+    rdfs:label "Sulfur Atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#S> ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/Atom> ;
+    owl:equivalentClass [ ] .
+
+<http://ontology.dumontierlab.com/Atom> a owl:Class ;
+    rdfs:label "atom" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#Atom> ;
+    rdfs:comment "A particle that retains all the chemical properties of a given element." ;
+    rdfs:subClassOf [ ],
+        <http://www.ifomis.org/bfo/1.0/snap#Object> ;
+    owl:disjointUnionOf [ ] ;
+    owl:disjointWith <http://ontology.dumontierlab.com/AtomProperty>,
+        <http://ontology.dumontierlab.com/ChemicalBond>,
+        <http://ontology.dumontierlab.com/OrganicCompound>,
+        <http://ontology.dumontierlab.com/Ring> .
+
+<http://codata.jp/OML-MaterialInformation#Atom> a owl:Class ;
+    ns1:similarTo <http://ontology.dumontierlab.com/Atom> ;
+    rdfs:subClassOf <http://codata.jp/OML-MaterialInformation#ElementalSubstance> .
+
+<http://ontology.dumontierlab.com/Element> a owl:Class ;
+    rdfs:label "",
+        "element" ;
+    ns1:similarTo <http://codata.jp/OML-MaterialInformation#ElementalSubstance> ;
+    rdfs:comment "A pure substance that cannot be decomposed or transformed into other chemical substances by ordinary chemical processes. An element is made up of atoms with the same atomic number." ;
+    rdfs:subClassOf <http://ontology.dumontierlab.com/PureSubstance> .
+

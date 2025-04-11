@@ -1,0 +1,378 @@
+@prefix :      <http://codata.jp/OML-MaterialInformation-reduced> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://astrea.linkeddata.es/shapes#ff4d69bb4d2dba8fcba00a6016a0b06f>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#MelthedWeight> .
+
+<https://astrea.linkeddata.es/shapes#ecb3c60bd49e48ca7e5edc6f26267ac1>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#RefiningProcess> .
+
+<https://astrea.linkeddata.es/shapes#e440d4020b09b0ddd3cf04bbe5c046ae>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#Electrolyte> .
+
+<https://astrea.linkeddata.es/shapes#841fb93e27827fa05b123c04b3b57325>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#ElectricPotential> .
+
+<https://astrea.linkeddata.es/shapes#398a003ce991ce0233fdc06b1f3d2162>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#CarburizingAndNitrizing> .
+
+<https://astrea.linkeddata.es/shapes#fa75644a25d06b464c551375c964ad18>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#FlowState> .
+
+<https://astrea.linkeddata.es/shapes#a3954f0ac56f257bdc28e83760b5ee54>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#CoolingMethod> .
+
+<https://astrea.linkeddata.es/shapes#9966aa44ebf61bd78aab6ca3f05cb604>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#IrradiationTime> .
+
+<https://astrea.linkeddata.es/shapes#ac6730864492b5694d8734480c89f650>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#WeldingRod> .
+
+<https://astrea.linkeddata.es/shapes#396fda8ac1c7eb814fdd5e3b9b0a5553>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#DeoxidationProcess> .
+
+<https://astrea.linkeddata.es/shapes#59fb1e89f3e7005a98aa977fc7e367aa>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#CurrentDensity> .
+
+<https://astrea.linkeddata.es/shapes#089e65b2f15dbaa853cec234258b1390>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#DissolvedOxygen> .
+
+<https://astrea.linkeddata.es/shapes#9980a61cb27518db9253c652f35255a8>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#CorrosionPotential> .
+
+<https://astrea.linkeddata.es/shapes#2b77b2457d02e725f143ec829b23ef89>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#d28c91637bc7b9ae44f40faa6582dd7a>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#80f510ed3f05c3bcc33905089a4208d1>
+        a               sh:PropertyShape , sh:NodeShape ;
+        sh:nodeKind     sh:IRI , sh:Literal ;
+        sh:path         <http://codata.jp/OML-MaterialInformation-reduced#Atmosphere> ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#Atmosphere> .
+
+<https://astrea.linkeddata.es/shapes#c55b7f3381dbfa662500cd1b1ed4637f>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#WorkingRate> .
+
+<https://astrea.linkeddata.es/shapes#517f3a5203458ae26f9b48b09d5f7654>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#Welding> .
+
+<https://astrea.linkeddata.es/shapes#126b5924f788792a0815e34a7a38ae1d>
+        a               sh:NodeShape , sh:PropertyShape ;
+        sh:nodeKind     sh:IRI , sh:BlankNodeOrIRI ;
+        sh:path         <http://codata.jp/OML-MaterialInformation-reduced#HoldingTime> ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#HoldingTime> .
+
+<https://astrea.linkeddata.es/shapes#29d63735c13d38d932514115d2c64624>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#Humidity> .
+
+<https://astrea.linkeddata.es/shapes#879b79e770a117f5dd97b95d7b6f613a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#Conductivity> .
+
+<https://astrea.linkeddata.es/shapes#664a3d6ad679d62e2a33406a3850f731>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#NumberOfPath> .
+
+<https://astrea.linkeddata.es/shapes#9e9396725f3783bdef08c49ccc8c6428>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#TypeOfCastingAndSize> .
+
+<https://astrea.linkeddata.es/report/0620946147>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#2c4cc9aa0b2c9f10c2bee52d663e44ec>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#Contents> .
+
+<https://astrea.linkeddata.es/shapes#fc4f54a3ed64e9f5fc43cc170194bedc>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#ProcessingTemperature> .
+
+<https://astrea.linkeddata.es/shapes#0987a4b272705a2d106461594844747a>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#ReductionRatio> .
+
+<https://astrea.linkeddata.es/shapes#1fe26fcf6773d6dbaf1807f6e9429358>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#Dimension_Depth> .
+
+<https://astrea.linkeddata.es/shapes#a2edea009be51491230021ba4188ffec>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#WeldingMethod> .
+
+<https://astrea.linkeddata.es/shapes#17686bee61b8242be5a91329d12a4db6>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#pH> .
+
+<https://astrea.linkeddata.es/shapes#c7a88f6e53f666b21162bfdb0f8d8591>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#TypeOfManufacturing> .
+
+<https://astrea.linkeddata.es/shapes#40dd3b16ccab09d5f462a0760166214e>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#typeOfGas> .
+
+<https://astrea.linkeddata.es/shapes#1528a40d75585e71fde34135a8e6868c>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#typeOfLiquid> .
+
+<https://astrea.linkeddata.es/shapes#a9a311a9f2be1ca6e2de0851282502ec>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#Loading> .
+
+<https://astrea.linkeddata.es/shapes#d1e018ae72238643392ce7e4303870af>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#ManufacturingProcess> .
+
+<https://astrea.linkeddata.es/shapes#d8d12dd96fbb8191784149d2081c755b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#Equation> .
+
+<https://astrea.linkeddata.es/shapes#94d0503c3f3e0061d40660a4cd238f2f>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#FurnaceCapacity> .
+
+<https://astrea.linkeddata.es/shapes#e6137e266211d9ee61d2d9feaf80862d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#Gas> .
+
+<https://astrea.linkeddata.es/shapes#70bc63dfcf1612fc32d8405ed60a7554>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#9ec5d6df2b42a186172dc229ba818893>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#Irradiation> .
+
+<https://astrea.linkeddata.es/shapes#6d7a8e10e253799f46133da7a915c3ec>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#ProcessImage> .
+
+<https://astrea.linkeddata.es/shapes#e1e5f261a37a543666fb7f01b6e68f37>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#IngotFormProcess> .
+
+<https://astrea.linkeddata.es/shapes#30b87dbeb2d00e5470b609c54e061c9f>
+        a               sh:NodeShape , sh:PropertyShape ;
+        sh:class        <http://codata.jp/OML-MaterialInformation-reduced#Environment> ;
+        sh:nodeKind     sh:IRI , sh:BlankNodeOrIRI ;
+        sh:path         <http://codata.jp/OML-MaterialInformation-reduced#Environment> ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#Environment> .
+
+<https://astrea.linkeddata.es/shapes#b352422019e0aff3d224748b4c1116e2>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#ProcessingAndThermalHistory> .
+
+<https://astrea.linkeddata.es/shapes#74f5f77e8384e63f930257791c76942d>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#FlowRate> .
+
+<https://astrea.linkeddata.es/shapes#b5168d2c28c30baedadb986b303da3d0>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#JointShape> .
+
+<https://astrea.linkeddata.es/shapes#6580290c17226fa4570a3805708245e5>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#typeOfIrradiation> .
+
+<https://astrea.linkeddata.es/shapes#1cdc7ad52cb461c7a184df8bce81b15b>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#EndingTemperature> .
+
+<https://astrea.linkeddata.es/shapes#fc3beba7429b4b729394cbbd32569d33>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#Normination> .
+
+<https://astrea.linkeddata.es/shapes#065525669ea57f7bd17bc208ae731848>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#8bbf4696febec50e730206377b006d4a>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#ProductFromAndSize> .
+
+<https://astrea.linkeddata.es/shapes#3809d172f8aa7e64f3c2c39ac702a8ea>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#TypeOfHeatTreatment> .
+
+<https://astrea.linkeddata.es/shapes#e848501ee6150d98e02a0ce7497045c0>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#CoolingRate> .
+
+<https://astrea.linkeddata.es/shapes#ce1cb821757d98bd33a007edebb0ce9e>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#Dimension_Width> .
+
+<https://astrea.linkeddata.es/shapes#58d6276f0656096987eeeb6ec3692f4c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#Liquid> .
+
+<https://astrea.linkeddata.es/shapes#752e1e1ace70602d856c0b9495000372>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#d81dffd8feadb58ab0dc7db053ad5ea5>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#LayerMethod> .
+
+<https://astrea.linkeddata.es/shapes#99ac042b66b4fdc09b1befd5906f1317>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#Thickness> .
+
+<https://astrea.linkeddata.es/shapes#a164205b66478a173f50dea0be32bfe4>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#9fb2d62f5d5544526474846f8275b302>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#ConcentrationOfSolvent> .
+
+<http://astrea.linkeddata.es/report>
+        a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#contains>
+                <https://astrea.linkeddata.es/shapes#e1e5f261a37a543666fb7f01b6e68f37> , <https://astrea.linkeddata.es/shapes#e440d4020b09b0ddd3cf04bbe5c046ae> , <https://astrea.linkeddata.es/shapes#99ac042b66b4fdc09b1befd5906f1317> , <https://astrea.linkeddata.es/shapes#c55b7f3381dbfa662500cd1b1ed4637f> , <https://astrea.linkeddata.es/shapes#feab7bbac318c8f4690864880d6ee8ba> , <https://astrea.linkeddata.es/shapes#fc6293e0d251633ba25a12c7cf6588b0> , <https://astrea.linkeddata.es/shapes#1528a40d75585e71fde34135a8e6868c> , <https://astrea.linkeddata.es/shapes#9fb2d62f5d5544526474846f8275b302> , <https://astrea.linkeddata.es/shapes#2c653463802b67de10ab2b98cf1db2a6> , <https://astrea.linkeddata.es/shapes#74f5f77e8384e63f930257791c76942d> , <https://astrea.linkeddata.es/shapes#9966aa44ebf61bd78aab6ca3f05cb604> , <https://astrea.linkeddata.es/shapes#9e9396725f3783bdef08c49ccc8c6428> , <https://astrea.linkeddata.es/shapes#ac1a51c29a9e32211ca64d0a2916ac86> , <https://astrea.linkeddata.es/shapes#841fb93e27827fa05b123c04b3b57325> , <https://astrea.linkeddata.es/shapes#879b79e770a117f5dd97b95d7b6f613a> , <https://astrea.linkeddata.es/shapes#ce1cb821757d98bd33a007edebb0ce9e> , <https://astrea.linkeddata.es/shapes#c7a88f6e53f666b21162bfdb0f8d8591> , <https://astrea.linkeddata.es/shapes#8bbf4696febec50e730206377b006d4a> , <https://astrea.linkeddata.es/shapes#1cdc7ad52cb461c7a184df8bce81b15b> , <https://astrea.linkeddata.es/shapes#17686bee61b8242be5a91329d12a4db6> , <https://astrea.linkeddata.es/shapes#3d0a63d824b2a637bb93c9fa495c1875> , <https://astrea.linkeddata.es/shapes#065525669ea57f7bd17bc208ae731848> , <https://astrea.linkeddata.es/shapes#39110536ebd44371611edef35b2f020c> , <https://astrea.linkeddata.es/shapes#fa75644a25d06b464c551375c964ad18> , <https://astrea.linkeddata.es/shapes#70bc63dfcf1612fc32d8405ed60a7554> , <https://astrea.linkeddata.es/shapes#fc4f54a3ed64e9f5fc43cc170194bedc> , <https://astrea.linkeddata.es/shapes#40dd3b16ccab09d5f462a0760166214e> , <https://astrea.linkeddata.es/shapes#1b9ccfd0cc90b3bde7f9a03b15d7c36e> , <https://astrea.linkeddata.es/shapes#59fb1e89f3e7005a98aa977fc7e367aa> , <https://astrea.linkeddata.es/shapes#6580290c17226fa4570a3805708245e5> , <https://astrea.linkeddata.es/shapes#664a3d6ad679d62e2a33406a3850f731> , <https://astrea.linkeddata.es/shapes#d28c91637bc7b9ae44f40faa6582dd7a> , <https://astrea.linkeddata.es/shapes#e6137e266211d9ee61d2d9feaf80862d> , <https://astrea.linkeddata.es/shapes#396fda8ac1c7eb814fdd5e3b9b0a5553> , <https://astrea.linkeddata.es/shapes#29d63735c13d38d932514115d2c64624> , <https://astrea.linkeddata.es/shapes#ac6730864492b5694d8734480c89f650> , <https://astrea.linkeddata.es/shapes#fc3beba7429b4b729394cbbd32569d33> , <https://astrea.linkeddata.es/shapes#ff4d69bb4d2dba8fcba00a6016a0b06f> , <https://astrea.linkeddata.es/shapes#e3b7c2fb457685afc208bb0fad7a4483> , <https://astrea.linkeddata.es/shapes#e848501ee6150d98e02a0ce7497045c0> , <https://astrea.linkeddata.es/shapes#e498a5bcb16c70599bab16d094a80a8f> , <https://astrea.linkeddata.es/shapes#0987a4b272705a2d106461594844747a> , <https://astrea.linkeddata.es/shapes#517f3a5203458ae26f9b48b09d5f7654> , <https://astrea.linkeddata.es/shapes#a3954f0ac56f257bdc28e83760b5ee54> , <https://astrea.linkeddata.es/shapes#9ec5d6df2b42a186172dc229ba818893> , <https://astrea.linkeddata.es/shapes#4b9c9dbd0fd7a60bd5e30b2a7a66bac3> , <https://astrea.linkeddata.es/shapes#d1e018ae72238643392ce7e4303870af> , <https://astrea.linkeddata.es/shapes#752e1e1ace70602d856c0b9495000372> , <https://astrea.linkeddata.es/shapes#2c4cc9aa0b2c9f10c2bee52d663e44ec> , <https://astrea.linkeddata.es/shapes#b352422019e0aff3d224748b4c1116e2> , <https://astrea.linkeddata.es/shapes#439778a548f786d3bbaf91d07e4f15f0> , <https://astrea.linkeddata.es/shapes#1fe26fcf6773d6dbaf1807f6e9429358> , <https://astrea.linkeddata.es/shapes#58d6276f0656096987eeeb6ec3692f4c> , <https://astrea.linkeddata.es/shapes#126b5924f788792a0815e34a7a38ae1d> , <https://astrea.linkeddata.es/shapes#a164205b66478a173f50dea0be32bfe4> , <https://astrea.linkeddata.es/shapes#94d0503c3f3e0061d40660a4cd238f2f> , <https://astrea.linkeddata.es/shapes#3809d172f8aa7e64f3c2c39ac702a8ea> , <https://astrea.linkeddata.es/shapes#089e65b2f15dbaa853cec234258b1390> , <https://astrea.linkeddata.es/shapes#ecb3c60bd49e48ca7e5edc6f26267ac1> , <https://astrea.linkeddata.es/shapes#aaa180fc4860f6878845793d1a433f9a> , <https://astrea.linkeddata.es/shapes#b5168d2c28c30baedadb986b303da3d0> , <https://astrea.linkeddata.es/shapes#2b77b2457d02e725f143ec829b23ef89> , <https://astrea.linkeddata.es/shapes#d8d12dd96fbb8191784149d2081c755b> , <https://astrea.linkeddata.es/shapes#a9a311a9f2be1ca6e2de0851282502ec> , <https://astrea.linkeddata.es/shapes#30b87dbeb2d00e5470b609c54e061c9f> , <https://astrea.linkeddata.es/shapes#a2edea009be51491230021ba4188ffec> , <https://astrea.linkeddata.es/shapes#d81dffd8feadb58ab0dc7db053ad5ea5> , <https://astrea.linkeddata.es/shapes#80f510ed3f05c3bcc33905089a4208d1> , <https://astrea.linkeddata.es/shapes#398a003ce991ce0233fdc06b1f3d2162> , <https://astrea.linkeddata.es/shapes#ea4daa304c9ad57bbda43a4e1d2dcec3> , <https://astrea.linkeddata.es/shapes#9980a61cb27518db9253c652f35255a8> , <https://astrea.linkeddata.es/shapes#6d7a8e10e253799f46133da7a915c3ec> ;
+        <https://w3id.org/def/astrea#generatedShapesFrom>
+                <https://astrea.linkeddata.es/report/0620946147> .
+
+<https://astrea.linkeddata.es/shapes#ac1a51c29a9e32211ca64d0a2916ac86>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#Current> .
+
+<https://astrea.linkeddata.es/shapes#e498a5bcb16c70599bab16d094a80a8f>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#Solvent> .
+
+<https://astrea.linkeddata.es/shapes#1b9ccfd0cc90b3bde7f9a03b15d7c36e>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#EnvironmentalTemperature> .
+
+<https://astrea.linkeddata.es/shapes#4b9c9dbd0fd7a60bd5e30b2a7a66bac3>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#GrooveGeometry> .
+
+<https://astrea.linkeddata.es/shapes#ea4daa304c9ad57bbda43a4e1d2dcec3>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#TypeOfMeasurement> .
+
+<https://astrea.linkeddata.es/shapes#39110536ebd44371611edef35b2f020c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#Symbol> .
+
+<https://astrea.linkeddata.es/shapes#fc6293e0d251633ba25a12c7cf6588b0>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#IngotSize> .
+
+<https://astrea.linkeddata.es/shapes#3d0a63d824b2a637bb93c9fa495c1875>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#MethodOfManufacture> .
+
+<https://astrea.linkeddata.es/shapes#439778a548f786d3bbaf91d07e4f15f0>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#IrradiationEnergy> .
+
+<https://astrea.linkeddata.es/shapes#aaa180fc4860f6878845793d1a433f9a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#EnvironmentalPressure> .
+
+<https://astrea.linkeddata.es/shapes#feab7bbac318c8f4690864880d6ee8ba>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://codata.jp/OML-MaterialInformation-reduced#ProducedCondition> .
+
+<https://astrea.linkeddata.es/shapes#e3b7c2fb457685afc208bb0fad7a4483>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://codata.jp/OML-MaterialInformation-reduced#Vacuum> .
+
+<https://astrea.linkeddata.es/shapes#2c653463802b67de10ab2b98cf1db2a6>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:BlankNodeOrIRI .
