@@ -41,10 +41,11 @@ class Filter_Library():
         # NodeKind filter rules
         self.nodeKindUnionLiteralFilter: Rule = Rule(condition=self.condition_library.nodeKindUnionLiteral, action=self.action_library.returnTrue)
         self.nodeKindUnionBlankNodeFilter: Rule = Rule(condition=self.condition_library.nodeKindUnionBlankNode, action=self.action_library.returnTrue)
-        self.nodeKindUnionBlankNodeOrLiteralFilter: Rule = Rule(condition=self.condition_library.nodeKindUnionBlankNodeOrLiteral, action=self.action_library.returnTrue)
-        self.nodeKindUnionBlankNodeOrIRIFilter: Rule = Rule(condition=self.condition_library.nodeKindUnionBlankNodeOrIRI, action=self.action_library.returnTrue)
-        self.nodeKindUnionIRIOrLiteralFilter: Rule = Rule(condition=self.condition_library.nodeKindUnionIRIOrLiteral, action=self.action_library.returnTrue)
-        self.nodeKindUnionFilter = [self.nodeKindUnionLiteralFilter, self.nodeKindUnionBlankNodeFilter, self.nodeKindUnionBlankNodeOrLiteralFilter, self.nodeKindUnionBlankNodeOrIRIFilter, self.nodeKindUnionIRIOrLiteralFilter]
+        # self.nodeKindUnionBlankNodeOrLiteralFilter: Rule = Rule(condition=self.condition_library.nodeKindUnionBlankNodeOrLiteral, action=self.action_library.returnTrue)
+        # self.nodeKindUnionBlankNodeOrIRIFilter: Rule = Rule(condition=self.condition_library.nodeKindUnionBlankNodeOrIRI, action=self.action_library.returnTrue)
+        # self.nodeKindUnionIRIOrLiteralFilter: Rule = Rule(condition=self.condition_library.nodeKindUnionIRIOrLiteral, action=self.action_library.returnTrue)
+        # self.nodeKindUnionFilter = [self.nodeKindUnionLiteralFilter, self.nodeKindUnionBlankNodeFilter, self.nodeKindUnionBlankNodeOrLiteralFilter, self.nodeKindUnionBlankNodeOrIRIFilter, self.nodeKindUnionIRIOrLiteralFilter]
+        self.nodeKindUnionFilter = [self.nodeKindUnionLiteralFilter, self.nodeKindUnionBlankNodeFilter]
 
         self.nodeKindIntersectionLiteralFilter: Rule = Rule(condition=self.condition_library.nodeKindIntersectionLiteral, action=self.action_library.returnTrue)
         self.nodeKindIntersectionIRIFilter: Rule = Rule(condition=self.condition_library.nodeKindIntersectionIRI, action=self.action_library.returnTrue)

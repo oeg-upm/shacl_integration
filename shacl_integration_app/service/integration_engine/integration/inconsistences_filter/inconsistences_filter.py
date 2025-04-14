@@ -43,9 +43,6 @@ class InconsistencesFilter:
         """
         list_inconsistencies: list[bool] = []
 
-        # print(f'Node: {list_node}')
-        # print('\n')
-
         filter_dict: list[dict] = [
             {
                 'filter' : ['http://www.w3.org/ns/shacl#nodeKind'],

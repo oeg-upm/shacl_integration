@@ -56,6 +56,8 @@ class IntegrationOperation:
                             'logical_operator': logical_operator,
                             'obj': res[0]
                         }]
+                        new_node_list.append(node)
+                        flag = False
             if not flag:
                 new_node_list.append(node)
 
@@ -185,7 +187,7 @@ class IntegrationOperation:
 
         elem : str = str(res) + "_" + self.integration_option
         if elem in nodeKindDict:
-            return [nodeKindDict[str(res) + "_" + self.integration_option]]
+            return nodeKindDict[str(res) + "_" + self.integration_option]
         else:
             return None
     

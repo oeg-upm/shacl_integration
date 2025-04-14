@@ -51,6 +51,10 @@ class SHACLUnificationOperation:
                                 self.integrated_shacl_shape.add((URIRef(f'http://integratedshapes.es#{cluster.id}'), URIRef(f'http://www.w3.org/ns/shacl#{lo}'), or_node))
                         else:
                             obj = axiom['obj']
+                            if predicate=='http://www.w3.org/ns/shacl#nodeKind':
+                                print(f'Cluster id: {cluster.id}')
+                                print(f'Predicate: {predicate}')
+                                print(f'Object: {obj}')
                             if obj != None:
                                 if isinstance(obj, str) and obj.startswith("http"):
                                     self.integrated_shacl_shape.add((URIRef(f'http://integratedshapes.es#{cluster.id}'), URIRef(predicate), URIRef(obj)))
