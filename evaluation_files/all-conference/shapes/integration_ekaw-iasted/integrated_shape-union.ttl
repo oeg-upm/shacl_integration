@@ -3,62 +3,79 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 shape_int:01239a45161ac560351ee1af2b4250ac0d926310 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Industrial_Paper> .
 
 shape_int:023b80db14cc73eed90c18c2e4f8581d858be07f a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Early-Registered_Participant> .
 
 shape_int:0525ee6bc301dacaa1fd700ea668c59e697774bb a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:e53758d74aed3f4812da11b953a4045edd943d4d ;
     sh:targetClass <http://iasted#Final_manuscript> .
 
 shape_int:058993bdc19f2594b753b73de34ce6f7b70622a2 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Non_speaker> .
 
 shape_int:0643da08c6881c503be591c9026aaa92fde24b22 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:abd49da335755a843bcb807ff003b9e4f7dee868 ;
     sh:targetClass <http://iasted#Conference_airport> .
 
 shape_int:06a1f89b5f4bc25c8abc9795f9f2a834e8cf1120 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Camera_ready_manuscript_deadline> .
 
 shape_int:0945fab641be324466306575a70f5567edaa734c a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
     sh:targetClass <http://iasted#Memeber_registration_fee> .
 
 shape_int:0a9a13d7407d98a132bc64ac70698123817675c3 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Departure> .
 
 shape_int:0b9b88d503e75f3c6426e54ae081e7f549affa01 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Proceedings_Publisher> .
 
 shape_int:0c5595e55649371346906edb7f8350afb3c3aaee a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:310a721df1ac28db50168b9e6f30ae5f2f08ae00 ;
     sh:targetClass <http://iasted#Conference_city> .
 
 shape_int:0d857f2511e5ced6bfae4e308a71dcc1777ba14e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:833bdb57a1fc0623381fb60caa78fdd0e2f40fb0 ;
     sh:targetClass <http://iasted#Author_attendee_book_registration_fee> .
 
 shape_int:0db76b3b4810c561e562043eef7f12ada51482d8 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Tutorial_Chair> .
 
 shape_int:0e5140bf174a66bcfe56656da83c3daa4cffbe95 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Conference_Trip> .
 
 shape_int:0ea0d14cdc6cc10d29be4ee9c7751072ab3564e2 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:a237b956ea5642c9effd8807a3b39865ea6bff90 ;
     sh:targetClass <http://iasted#Sponsor_city> .
 
 shape_int:0ffd5789e3395aa34efba7d13b4d7ff3bc195e9f a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Demo_Session> .
 
 shape_int:10f6a5a3fb490591f219975fc9e1c054e44a116e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:abd49da335755a843bcb807ff003b9e4f7dee868,
         shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
     sh:targetClass <http://iasted#Conference_hotel> .
 
 shape_int:12ab214df85e4910f7e4400eea924b9565854a9f a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:11c75b793a3ed711c3ff09d664fca9ac288d6109,
         shape_int:4dec40421a17aefbed121f5ac4c7fbfda0a19934,
         shape_int:aaa2c47f8ebde67d556ddbf55078d09dba31c8e9,
@@ -67,31 +84,39 @@ shape_int:12ab214df85e4910f7e4400eea924b9565854a9f a sh:NodeShape ;
     sh:targetClass <http://iasted#Delegate> .
 
 shape_int:12c11fe80dcec4e5e92ce0fee52a1957febee630 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:e53758d74aed3f4812da11b953a4045edd943d4d ;
     sh:targetClass <http://iasted#Technical_commitee> .
 
 shape_int:13164e74d1dc3ddf115f776b570d27002a9ce10a a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Welcome_address> .
 
 shape_int:13b8fe38a93b1e74be75932a7d667b18af065fa8 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Workshop> .
 
 shape_int:1671c64859bd6429de22dde1e92e8b2473547308 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:0c345a76730911df3b9bd4ad2faeb0c6eb698a10,
         shape_int:d1a3ed512028d495359a8b7d0c99ee7e2acf19f7 ;
     sh:targetClass <http://iasted#Tutorial_speaker> .
 
 shape_int:18b0f6d8e1388e38bb299001d0bd92791d189324 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:ca8a90f8e4d4ee8784ba55cca35228fcc96b07bd ;
     sh:targetClass <http://iasted#Activity_before_conference> .
 
 shape_int:19ae3b9c4b8ec11376e5abe86f08acccad79c3d6 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Negative_Review> .
 
 shape_int:1a852057171842452b228ca5b6eb137d9a75c21a a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Bank_transfer> .
 
 shape_int:1dc043bb8eb5646851ff808477bb5d3573739f1c a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:265f5abd38e8844c6d1f6a03efccdcfe162dc352,
         shape_int:3c5075c3362d85b5536845741459f569384dd6d0,
         shape_int:829a17cedb28cf8186b6bec68fe7868b20e8ca06,
@@ -99,326 +124,412 @@ shape_int:1dc043bb8eb5646851ff808477bb5d3573739f1c a sh:NodeShape ;
     sh:targetClass <http://iasted#Money> .
 
 shape_int:2056c89b09c84b39fbffb2794f5802efe558d840 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:abd49da335755a843bcb807ff003b9e4f7dee868 ;
     sh:targetClass <http://iasted#Presenter_university> .
 
 shape_int:206a17c02c1d3895194375926bd3de04882ff529 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:12c2844990d5a596585fc63b727dbaf4debfd1da ;
     sh:targetClass <http://iasted#Hotel_registration_form> .
 
 shape_int:21943fb7dd99c306a2860b6f1572fb419747c2a1 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Submitted_Paper> .
 
 shape_int:22d507f2ba74e43593de3ae3f550bf202c076adc a sh:NodeShape ;
-    sh:property shape_int:6e001307e4cd3239d37a37e0a402415208cc4576,
-        shape_int:8589b85f5ecf9f8b55f4f32c5576665bc4acb0bd,
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:3e9949f71bb27cbcecfc83e336993b5d3339abd5,
         shape_int:a981f1a69787d53823d4e591e2e13ba894f6b45f,
-        shape_int:b03709d4e5b7ca7c3de295936424a34145c0f980 ;
+        shape_int:b03709d4e5b7ca7c3de295936424a34145c0f980,
+        shape_int:c18c066a69d0a15b3d5ed2b524c1ea54d439007b ;
     sh:targetClass <http://ekaw#Paper> .
 
 shape_int:22d6c6479685454837fcf6525441a7d66b491973 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#PC_Chair> .
 
 shape_int:2473e96bc614a911821242119918a241a41836d6 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Introduction> .
 
 shape_int:259593314d92cb805e8e9d14390b4dc187fd2154 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#LCD_projector> .
 
 shape_int:25d317705c8da50754a8c63e3cdf442021f793b6 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#PowerPoint_presentation> .
 
 shape_int:2701a94c0eb55cbd958a87dff3e959673ff1bf53 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:1106c27fbfb8b3221125823066195bccafde80d9 ;
     sh:targetClass <http://ekaw#Tutorial>,
         <http://iasted#Tutorial> .
 
 shape_int:28e8e77dbc55b15b12d74e5c39fb0b46f5c925b0 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Student_lecturer> .
 
 shape_int:290f11950188a92cdcdfcca62535ebf2f2901bb4 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:e53758d74aed3f4812da11b953a4045edd943d4d ;
     sh:targetClass <http://iasted#Initial_manuscipt> .
 
 shape_int:2b12f36924915fa2101627fa804a0746579a911d a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:2b8a6ed45b20eef46f323ffbbb66480417d00f67,
         shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
     sh:targetClass <http://iasted#Deadline> .
 
 shape_int:2c3c9c9824bcbde358c8b9db132a1bb6a4831d59 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:310a721df1ac28db50168b9e6f30ae5f2f08ae00 ;
     sh:targetClass <http://iasted#Conference_state> .
 
 shape_int:2df622c6446763ea2f52151dfd44cc1bb97350f2 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:872ea1caa307efe92d411cf5c6cf2d9cd5c262a7 ;
     sh:targetClass <http://ekaw#Proceedings> .
 
 shape_int:335ea08ac46e2b0977b44513be03c14eb31c2a32 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Main_office> .
 
 shape_int:3369a04f11eaedae82e89b8a2d1f7cff48ead0ad a sh:NodeShape ;
     sh:description """Accepted paper to become part of proceedings. 
 Note that camera-ready paper is not considered as 'accepted paper', as it was accepted in a different form!""" ;
-    sh:property shape_int:6e001307e4cd3239d37a37e0a402415208cc4576 ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:c18c066a69d0a15b3d5ed2b524c1ea54d439007b ;
     sh:targetClass <http://ekaw#Accepted_Paper> .
 
 shape_int:369f4d949c7824906f14954621b476669f3e1a67 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Neutral_Review> .
 
 shape_int:36c3084b662b16229a128185c4c895bdc4d3782c a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:3c5075c3362d85b5536845741459f569384dd6d0 ;
     sh:targetClass <http://iasted#Hotel_fee> .
 
 shape_int:36e3cf36bdea81df9b88a7be3e4f949587a25879 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
     sh:targetClass <http://iasted#Payment_document> .
 
 shape_int:37ea46b5942beaeb21bb4e06a14e4f7232d2a1b0 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:1164fe9d0048baf4da98e42c5f5134c1866083f7,
         shape_int:dc909f874bc5d71384a8af0f6791180170fc555a ;
     sh:targetClass <http://iasted#Listener> .
 
 shape_int:3b7a2371716c01970f23dc9c07944a5c1282945b a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#One_conference_day> .
 
 shape_int:3bdb363e1c06900786860df45800ec3b5a8775ec a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
     sh:targetClass <http://iasted#Lecture> .
 
 shape_int:3d910025a630772d7b35cb1b95722bc5da49b657 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:11c75b793a3ed711c3ff09d664fca9ac288d6109 ;
     sh:targetClass <http://iasted#Student_non_speaker> .
 
 shape_int:3deca5033ada35871cb2bf4e872b3c4730e80ce0 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#OC_Member> .
 
 shape_int:3e437c9e626c73eff1a914c6817a646b607a6874 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Rejected_Paper> .
 
 shape_int:3f05bb85639b46cf8f81c3664bf88696257c2df1 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:abd49da335755a843bcb807ff003b9e4f7dee868,
         shape_int:e4d7c74dafe0f99f751716b472f2a1bd5adc9850 ;
     sh:targetClass <http://iasted#Session_room> .
 
 shape_int:4111560d0bda322f965d4fbc2ad8834dfe162d6e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:34c24e9ee62cb21f44211b9d55ef7543b4cc2ec0 ;
     sh:targetClass <http://iasted#Conference_activity> .
 
 shape_int:4271627f4f0bef6104a95cca7bb21cda4d74503e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:310a721df1ac28db50168b9e6f30ae5f2f08ae00,
         shape_int:a237b956ea5642c9effd8807a3b39865ea6bff90,
         shape_int:abd49da335755a843bcb807ff003b9e4f7dee868 ;
     sh:targetClass <http://iasted#City> .
 
 shape_int:42b32794792b48313cd1be9ca11b690d3e614683 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Student> .
 
 shape_int:45b5d7133920668806a905a6de434e0980027350 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Scientific_Event> .
 
 shape_int:489d075371c939ef5e0ff7647126aa2f43090c0b a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Book_proceeding> .
 
 shape_int:4a7a0edaa5757f649775519df6d67c9fcae54f6c a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:a237b956ea5642c9effd8807a3b39865ea6bff90 ;
     sh:targetClass <http://iasted#Presenter_city> .
 
 shape_int:4d4ce73b15660f20977ad7efab2283c51bdae008 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Card> .
 
 shape_int:503294f357f5891549da2aefb8e3b254b7c3a2f6 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Cd_proceening> .
 
 shape_int:506ed02ae694517b4f82788d4f175c126d6ced0a a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Demo_Chair> .
 
 shape_int:5206de3fd728da56ac7daaa1867938b8e68c47e9 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:e53758d74aed3f4812da11b953a4045edd943d4d ;
     sh:targetClass <http://iasted#Conference_Hiker> .
 
 shape_int:53139aa1560ff4c53454ba7df797eec96d31346e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Overhead_projector> .
 
 shape_int:53f28176929a98c0237635a925c7ba0a9677c89b a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:a237b956ea5642c9effd8807a3b39865ea6bff90,
         shape_int:abd49da335755a843bcb807ff003b9e4f7dee868 ;
     sh:targetClass <http://iasted#Sponsor_company_house> .
 
 shape_int:5422287208272044fb20d6a22e558fd4a019d2ae a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:abd49da335755a843bcb807ff003b9e4f7dee868,
         shape_int:e6356f7c9a85fa1beb1ca712053a68cd47ee34fd ;
     sh:targetClass <http://iasted#Record_of_attendance> .
 
 shape_int:55e94241c71b148abf5a97761067aa5cbf8968a3 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Hotel_presenter> .
 
 shape_int:560781fbb836b628a55ae47f7e46be33aa68e048 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Multi-author_Volume> .
 
 shape_int:56383e42cafc7fd04997847e9b3647a4c96725e2 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Social_Event> .
 
 shape_int:56a7d68c09a5249027d643f66d44c93dbb5f3a34 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Shuttle_bus> .
 
 shape_int:57504d97d35039b10a288fd4f8a951df56843e11 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
     sh:targetClass <http://iasted#Coffee_break> .
 
 shape_int:5887bd49cff23a00137a22ebdd5493c7b998d028 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:a237b956ea5642c9effd8807a3b39865ea6bff90,
         shape_int:abd49da335755a843bcb807ff003b9e4f7dee868 ;
     sh:targetClass <http://iasted#Presenter_house> .
 
 shape_int:5b0b5d0d922225be485f480392881387cd71e458 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Research_Topic> .
 
 shape_int:5c6f56c66b5172a4231721ba8502ece38c35554c a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Double_hotel_room> .
 
 shape_int:5f4188d8c137a3a5ba82b5e4b1a42bc58bae8002 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Introduction_of_speaker> .
 
 shape_int:5fda23d62015b99fb2a9f86b38bcdf2bdf7609c8 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:1b3906b8f608de0adb44752f446db6aa0dc3f236,
         shape_int:d1a3ed512028d495359a8b7d0c99ee7e2acf19f7 ;
     sh:targetClass <http://ekaw#Paper_Author>,
         <http://iasted#Author> .
 
 shape_int:6103ed39ffd09401ab1554174ad08e660f117105 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:a237b956ea5642c9effd8807a3b39865ea6bff90,
         shape_int:abd49da335755a843bcb807ff003b9e4f7dee868 ;
     sh:targetClass <http://iasted#Conference_restaurant> .
 
 shape_int:6132a8b7e106e0cb96215b7916f73889d5558539 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:6822b8afb7f44276a73968b13231fe14f3a0a1b7 ;
     sh:targetClass <http://ekaw#Conference_Session> .
 
 shape_int:62db6a8abc61f1245d10b2a1459479824ae245f1 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Modelling> .
 
 shape_int:646c587186384113115966afd83f196b6446276c a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Poster_Paper> .
 
 shape_int:651be4df72dbe53a3f540af4e6fc2abdc2c15d37 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:11c75b793a3ed711c3ff09d664fca9ac288d6109 ;
     sh:targetClass <http://iasted#IASTED_member> .
 
 shape_int:678a4ca44b0581f2801336d40bd3c9ca46a47b96 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Invited_Speaker> .
 
 shape_int:691f3638189ee1116a33e894988e260d2f433fa1 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Organising_Agency> .
 
 shape_int:6b29be8ad73563a0d1b82151a643af7daa0a567e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:43f0fa2950bf7b69efdfbd161ceabc9fe1c3d374 ;
     sh:targetClass <http://ekaw#Programme_Brochure> .
 
 shape_int:6c0981a4e4b2730be08b06e013e61410650b1ba5 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Workshop_Chair> .
 
 shape_int:6c0a1363765f6c9cccfd09e2d29a472249341a6a a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Cheque> .
 
 shape_int:6c3e09ed39a70261cb624818a2e5710ab6abb9ba a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Workshop_Session> .
 
 shape_int:6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Time> .
 
 shape_int:6db03489051deafbfce02d76f8d61b1cf9ad0dd3 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Invited_Talk_Abstract> .
 
 shape_int:6e875951a6f9aa1374d93572de657c12ded57355 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Presentation> .
 
 shape_int:6e99c1d3b1502c090dcd07ad2e7110ed5c0118a9 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:4f895b95b95b2ec658cac3e621289cc181ba5129 ;
     sh:targetClass <http://ekaw#Organisation> .
 
 shape_int:6ef3c915807e59e86583df6ef73526e878ecc3f2 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:a237b956ea5642c9effd8807a3b39865ea6bff90 ;
     sh:targetClass <http://iasted#Presenter_state> .
 
 shape_int:6f35a9690affb8460cee9f37dcacd6b3cf5dc6d0 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Conference_Paper> .
 
 shape_int:70f68d0f611541bb377d885225a741146018c380 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:1106c27fbfb8b3221125823066195bccafde80d9 ;
     sh:targetClass <http://iasted#Plenary_lecture> .
 
 shape_int:715432dcf30be1042d0a59bfe45bed957aad7a9a a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#University> .
 
 shape_int:75cc72f54be6305b2f08fb9031935475ef389d04 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Single_hotel_room> .
 
 shape_int:7802aa59d825d8afa9557cdb2f0b8d1596325efb a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:43f0fa2950bf7b69efdfbd161ceabc9fe1c3d374 ;
     sh:targetClass <http://ekaw#Web_Site> .
 
 shape_int:7860c1f8b6ea024e33dceb197663d9d2527f2659 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
     sh:targetClass <http://iasted#Credit_card> .
 
 shape_int:796e9569714e26f396d204481935cf4b897dcf39 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Poster_Session> .
 
 shape_int:7a27a887632881791b8c295f3d03a8e6c58b9e05 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Deadline_for_notification_of_acceptance> .
 
 shape_int:7a667feb31b3c64ce1ed98a2565ae3131f76ecea a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Accepting_manuscript> .
 
 shape_int:7ab90459782314e3cefbf168b0358196d104c35e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Van> .
 
 shape_int:7be1cbae6d330322a50b68027af9c0cda53d5190 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:f9a0ba563982b3001294ffee55a7761a6e671bfc ;
     sh:targetClass <http://iasted#Renting> .
 
 shape_int:7c23b0d99698b57c5cb21fafcb8a8daf127386c6 a sh:NodeShape ;
-    sh:property shape_int:434f3b59fe3c335c4f7df77c9f021657fccc5e61,
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:97c4c8c925766eb51bc5439fde8909910e21f1e1,
         shape_int:d1a3ed512028d495359a8b7d0c99ee7e2acf19f7 ;
     sh:targetClass <http://iasted#Speaker> .
 
 shape_int:7cb338a916152e13525f9822a4d915c168c521f0 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:dbec133cc262823a985599a5107e645c9dcbc6e2 ;
     sh:targetClass <http://iasted#Transparency> .
 
 shape_int:7d1c8a12633268f584e21940d55c5a451f8a5a43 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:34c24e9ee62cb21f44211b9d55ef7543b4cc2ec0,
         shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
     sh:targetClass <http://iasted#Full_day_tour> .
 
 shape_int:7dc639b308e4775f868acb29ab709e6a5aba364e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
     sh:targetClass <http://iasted#Coctail_reception> .
 
 shape_int:7ddb133d531b9671d79794a284a9bc2d3a305f96 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
     sh:targetClass <http://iasted#Nonmember_registration_fee> .
 
 shape_int:7df8729ace89a741a822c0259c92cbe30e78a340 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Research_Institute> .
 
 shape_int:7fc24a6b73df8c830b509366468c6bee8e7ca58c a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:abd49da335755a843bcb807ff003b9e4f7dee868 ;
     sh:targetClass <http://iasted#Conference_hall> .
 
 shape_int:80446347ede53cf9ce56b3d59fda4b5c96dc25c4 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:58348512c7431d9296aa59345f94d319fef6d2b0 ;
     sh:targetClass <http://iasted#Form> .
 
 shape_int:811736270140a1e1a48b89c09e49ee22aab7c8ad a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Presenter> .
 
 shape_int:81c0d915fa6d82fd30661c5e66e204cea52bb2b5 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:073de49214d65d8a33b5760b06d8990a2c7e6ea0,
         shape_int:1106c27fbfb8b3221125823066195bccafde80d9,
+        shape_int:291b4ba51291b47fbc10ede13ca5d3428274c249,
         shape_int:2b19888ce2d40ae64d0f2af419efc8cbfa3f87d0,
         shape_int:6822b8afb7f44276a73968b13231fe14f3a0a1b7,
-        shape_int:ae781370e1562e999d04001d62d421e7f017140f,
         shape_int:b03709d4e5b7ca7c3de295936424a34145c0f980,
         shape_int:b54060c54287d74ff4d3d6b474ff0902297cdab3,
         shape_int:ca8a90f8e4d4ee8784ba55cca35228fcc96b07bd ;
@@ -426,273 +537,342 @@ shape_int:81c0d915fa6d82fd30661c5e66e204cea52bb2b5 a sh:NodeShape ;
         <http://iasted#Activity> .
 
 shape_int:82e2b91027511aadd8b52aa9401729c10793ba39 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Taxi> .
 
 shape_int:856d39132c484407c50f9a77643def0bc593ecec a sh:NodeShape ;
-    sh:property shape_int:6e001307e4cd3239d37a37e0a402415208cc4576 ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:c18c066a69d0a15b3d5ed2b524c1ea54d439007b ;
     sh:targetClass <http://ekaw#Evaluated_Paper> .
 
 shape_int:85d27544d940ead0a63363316f6b86c8afc5880e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
     sh:targetClass <http://iasted#Nonauthor_registration_fee> .
 
 shape_int:85f01c9bcc1f862a264744c3567cce209bd5a9f5 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:aaa2c47f8ebde67d556ddbf55078d09dba31c8e9 ;
     sh:targetClass <http://iasted#Author_book_proceedings_included> .
 
 shape_int:89459096ede31c707a08d08b3d522381df409c8d a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Flyer> .
 
 shape_int:8a1e29b3dd009e1104338701230be5d7a38b1fed a sh:NodeShape ;
+    sh:description "One edition of a conference" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Conference> .
 
 shape_int:8a59ca1f7188120f91eeb1187a16cda7a298a9a7 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Speaker_lecture> .
 
 shape_int:8c41ae88467fe5bbad09fcd488662b25c3ec5333 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:1164fe9d0048baf4da98e42c5f5134c1866083f7,
         shape_int:11c75b793a3ed711c3ff09d664fca9ac288d6109,
         shape_int:1b3906b8f608de0adb44752f446db6aa0dc3f236,
-        shape_int:434f3b59fe3c335c4f7df77c9f021657fccc5e61,
         shape_int:4dec40421a17aefbed121f5ac4c7fbfda0a19934,
         shape_int:4f895b95b95b2ec658cac3e621289cc181ba5129,
-        shape_int:52d6ec0733d59ccdaf5f365998d17b582f040cc2,
+        shape_int:66a5fb2a2d494b472d08dba1456fc74e389947be,
         shape_int:7183394b71548717ad496ccfb500849e74740274,
+        shape_int:97c4c8c925766eb51bc5439fde8909910e21f1e1,
         shape_int:aaa2c47f8ebde67d556ddbf55078d09dba31c8e9,
         shape_int:c29a0126df972e0db04729235c94feba33eacde8 ;
     sh:targetClass <http://ekaw#Person>,
         <http://iasted#Person> .
 
 shape_int:8e3a4e6d79de822cebc9325a857edf19eeeae706 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#SC_Member> .
 
 shape_int:90cb08b3e752dcf9a2d9c033b00b22384d622a07 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:3c5075c3362d85b5536845741459f569384dd6d0,
         shape_int:833bdb57a1fc0623381fb60caa78fdd0e2f40fb0 ;
     sh:targetClass <http://iasted#Fee_for_extra_trip> .
 
 shape_int:920548e28379fb7f645c8d6e7bcd84f7a8dd156d a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Regular_Session> .
 
 shape_int:92143caaf8b18c41449118f6d1adff7464a89ef2 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
     sh:targetClass <http://iasted#Student_registration_fee> .
 
 shape_int:9236076d68c921134d58010908c15747c2993803 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Positive_Review> .
 
 shape_int:924645b3e345a600bf94ae78f01c5886cc320a89 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Computer> .
 
 shape_int:93d8b5b3be59da8c0e7a9f3b403666e7d7760c4b a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
     sh:targetClass <http://iasted#Departure_tax> .
 
 shape_int:94131ee276ffcd179dd8330c0f2e073526096c8b a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:4163c827d0008088b379b26f8a3335deaa0a67be,
         shape_int:abd49da335755a843bcb807ff003b9e4f7dee868,
         shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
     sh:targetClass <http://iasted#Audiovisual_equipment> .
 
 shape_int:951db38c972512b803f27696d1e7aa853d3394c5 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:310a721df1ac28db50168b9e6f30ae5f2f08ae00 ;
     sh:targetClass <http://iasted#Trip_city> .
 
 shape_int:95cc2a9b31edcbd91b7e2daa458c5cad0a363d9f a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:1106c27fbfb8b3221125823066195bccafde80d9,
         shape_int:58348512c7431d9296aa59345f94d319fef6d2b0 ;
     sh:targetClass <http://iasted#Brief_introduction_for_Session_chair> .
 
 shape_int:97a5836084daf7af45466abf16356ac7edca4ae7 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
     sh:targetClass <http://iasted#Trip_day> .
 
 shape_int:9be70f66f8dd4da98c04e092dd7dc12331ce3e09 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Tax> .
 
 shape_int:9c80c04c73c3ce340a17a93498b43a93c59882df a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Industrial_Session> .
 
 shape_int:9d0c8210ee4c87958202f148ef3c5b4cd959b1f8 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:abd49da335755a843bcb807ff003b9e4f7dee868,
         shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
     sh:targetClass <http://iasted#Hotel_room> .
 
 shape_int:9d914bfcf1c5bc9e6b83d3232349cae23d392f30 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:310a721df1ac28db50168b9e6f30ae5f2f08ae00,
         shape_int:a237b956ea5642c9effd8807a3b39865ea6bff90 ;
     sh:targetClass <http://iasted#Building> .
 
 shape_int:9d9bb9c57c2ae55256a7ca795e2aa64923098ded a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#PC_Member> .
 
 shape_int:a02cac530472a783bbacff56cf94cbd5796e7c10 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:3b2c545283df159233209d8570fbc5f508489ffc ;
     sh:targetClass <http://ekaw#Contributed_Talk> .
 
 shape_int:a03c02df1d06162c6b9e133b4cdfb28095ffbbb5 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:aaa2c47f8ebde67d556ddbf55078d09dba31c8e9 ;
     sh:targetClass <http://iasted#Author_cd_proceedings_included> .
 
 shape_int:a6efaa1b2811d3c18b7a991f40c33495d9c590a4 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:3c5075c3362d85b5536845741459f569384dd6d0,
         shape_int:833bdb57a1fc0623381fb60caa78fdd0e2f40fb0 ;
     sh:targetClass <http://iasted#Registration_fee> .
 
 shape_int:a72502067518684f9deeec70cf119fd26326cd33 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:310a721df1ac28db50168b9e6f30ae5f2f08ae00,
         shape_int:a237b956ea5642c9effd8807a3b39865ea6bff90 ;
     sh:targetClass <http://iasted#State> .
 
 shape_int:a74f16c11792da6a36979a58a1ba2b4333632f57 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:d1a3ed512028d495359a8b7d0c99ee7e2acf19f7 ;
     sh:targetClass <http://iasted#Reviewer> .
 
 shape_int:a9cf76582a331d183ad930e2a1f1a008ee700d1d a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
     sh:targetClass <http://iasted#Mailing_list> .
 
 shape_int:a9d3431c3ef177c7ab5a0d8dfdd0258645606b71 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:aaa2c47f8ebde67d556ddbf55078d09dba31c8e9,
         shape_int:e53758d74aed3f4812da11b953a4045edd943d4d ;
     sh:targetClass <http://ekaw#Session_Chair>,
         <http://iasted#Session_chair> .
 
 shape_int:a9f2074b6f9828d244315ea50a59c92096c16396 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Submissions_deadline> .
 
 shape_int:aabca766de9f225cb8acdcaa7fdf727d58fc248a a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:11c75b793a3ed711c3ff09d664fca9ac288d6109 ;
     sh:targetClass <http://iasted#IASTED_non_member> .
 
 shape_int:ab6041ad53828a207b0af44e27addb113f510485 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:0c345a76730911df3b9bd4ad2faeb0c6eb698a10,
         shape_int:d1a3ed512028d495359a8b7d0c99ee7e2acf19f7 ;
     sh:targetClass <http://iasted#Plenary_lecture_speaker> .
 
 shape_int:ae27da9276c621da1e5fa4bb1ab4d8aa1c1ceefd a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:1106c27fbfb8b3221125823066195bccafde80d9 ;
     sh:targetClass <http://iasted#Technic_activity> .
 
 shape_int:af25de11965a510adf99937fce3e521faadb5fa1 a sh:NodeShape ;
-    sh:property shape_int:a9ee021f51557b437678dbec94b4759f4768062e ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:f7d9254671f0b1d22b8c877ba2f0dee13418562c ;
     sh:targetClass <http://ekaw#Possible_Reviewer> .
 
 shape_int:b19c19c0e8f1719fb5a6e0630ce1f90e11282495 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:12c2844990d5a596585fc63b727dbaf4debfd1da,
         shape_int:b3f814fd0b0be53ea730873ed63b0042647d54ea ;
     sh:targetClass <http://iasted#Registration_form> .
 
 shape_int:b1c5a7af06ba8c911bcfd11f72d7463fed9a472d a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Track> .
 
 shape_int:b1f4a30a35a567d8f7977bcadce1c186dae2b6a3 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
     sh:targetClass <http://iasted#Social_program> .
 
 shape_int:b233e775d63bb8b86cf031776d4caea613f59cda a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
     sh:targetClass <http://iasted#Registration> .
 
 shape_int:b38f0b66394e39220e4b2e528ec71ef6e0b2a7e7 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Invited_Talk> .
 
 shape_int:b57a6bd742a9696559dcd584788d8d4a0a78482f a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:7183394b71548717ad496ccfb500849e74740274 ;
     sh:targetClass <http://iasted#One_day_presenter> .
 
 shape_int:b7e9610e06b262f5f9a1c3f059830371bc84f95c a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Time_zone> .
 
 shape_int:b9da3807d3630f966a8521e8c78b171e5326afde a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Tutorial_Abstract> .
 
 shape_int:bc47a3dce0c7627010946f0a17b5ec88707f2b34 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Car> .
 
 shape_int:bd8d9d46a0b8028ef3f42cfa306afa327d3a1235 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:3c5075c3362d85b5536845741459f569384dd6d0 ;
     sh:targetClass <http://iasted#Sponzorship> .
 
 shape_int:be5e27871b345d75a8ad819dfbf73a7ce8c4297b a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Academic_Institution> .
 
 shape_int:be601df25eea91eaaf0d5e80263930143af345be a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Research> .
 
 shape_int:bfb190910a78c6aa1cc133eefeb312bb51c89775 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
     sh:targetClass <http://iasted#Invitation_letter> .
 
 shape_int:c32a0147f2e47a52e082fe2dd4b6aaa36084a4cb a sh:NodeShape ;
-    sh:property shape_int:1823b2a8102aff6223c4ecb686caf8f2013db868,
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:6efb719d12d563633911959afe6df0c14cd90ea9,
         shape_int:abd49da335755a843bcb807ff003b9e4f7dee868,
         shape_int:e4d7c74dafe0f99f751716b472f2a1bd5adc9850 ;
     sh:targetClass <http://ekaw#Location>,
         <http://iasted#Place> .
 
 shape_int:c466984aa6ec2647abb64fa9701b4cc890c1c723 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:2b19888ce2d40ae64d0f2af419efc8cbfa3f87d0 ;
     sh:targetClass <http://iasted#Activity_after_conference> .
 
 shape_int:c6312bb5607b3762069dc350199f9a90f498cea9 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Demo_Paper> .
 
 shape_int:c6e89c9caf21476cc928ffc4707e00550f300343 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:829a17cedb28cf8186b6bec68fe7868b20e8ca06 ;
     sh:targetClass <http://iasted#Fee> .
 
 shape_int:c7c11c1dedd278f3b348d8a59f522daa4593d2d8 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:65414805893c3139c21026723cbe474865474121 ;
     sh:targetClass <http://iasted#Submission> .
 
 shape_int:c840574acb5fd831c222ca9676e7b83125d88d6c a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Video_cassette_player> .
 
 shape_int:cd0f1048496123378d04de31b91938cb0c716028 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Registation_deadline> .
 
 shape_int:cf49b47ecba198ba2db458cf555001c24d8d026c a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
     sh:targetClass <http://iasted#Conference_days> .
 
 shape_int:d025c70e5ac10a66606a1054591e8c9de0f96671 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Deadline_hotel_reservation> .
 
 shape_int:d090952303eb6bd50b51a72cd0b3028aedf2b138 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Individual_Presentation> .
 
 shape_int:d19ceca501465c339e3bcf2bc0d8ff02bb697d6c a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:fa147342f6c4a1dfb343115ca6c31e92e6689b10 ;
     sh:targetClass <http://iasted#Tip> .
 
 shape_int:d5c11d19f5e724bed6a961eb1023a94ee0996c6e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:872ea1caa307efe92d411cf5c6cf2d9cd5c262a7 ;
     sh:targetClass <http://ekaw#Conference_Proceedings> .
 
 shape_int:d68a0c8ee83734f4cf22019195c0aa2f8aeb51c4 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:833bdb57a1fc0623381fb60caa78fdd0e2f40fb0 ;
     sh:targetClass <http://iasted#Author_attendee_cd_registration_fee> .
 
 shape_int:d79da395b5d7a09c6439a5f2660d8c568186ab7e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:a981f1a69787d53823d4e591e2e13ba894f6b45f ;
     sh:targetClass <http://ekaw#Abstract> .
 
 shape_int:dcbe716c6640ddf3e4633c8a242ed6f60d585cf0 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Late-Registered_Participant> .
 
 shape_int:df2933c82edbe0b140c4d73f52430a76b6eb2b70 a sh:NodeShape ;
-    sh:property shape_int:8589b85f5ecf9f8b55f4f32c5576665bc4acb0bd ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:3e9949f71bb27cbcecfc83e336993b5d3339abd5 ;
     sh:targetClass <http://ekaw#Assigned_Paper> .
 
 shape_int:e00441c49bf6cb62a4a537860a47c6b85de694f6 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:d59b635667e9caa3f62e8541596a01cb8e5c1bc9 ;
     sh:targetClass <http://iasted#Publication> .
 
 shape_int:e070de224434a2acd352b35cec46f34f9e08e1b2 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Currency> .
 
 shape_int:e214b8a29923056887b7edf6635d90dcbb2abe88 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:05381337efb7a42a2ca002dbd7c7bf09d0088ca3,
         shape_int:2f14b34e6c031c5c449c1c7bdc0574e0e83b5710,
         shape_int:f9253a11b0da653c9e58debb355dfcc72cf40891 ;
@@ -700,6 +880,7 @@ shape_int:e214b8a29923056887b7edf6635d90dcbb2abe88 a sh:NodeShape ;
         <http://iasted#Document> .
 
 shape_int:e29a79fe0c349724caeaa1762fa917f5543248ca a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:3f1e2f1a428645de46b45893f6bf08b170f61901,
         shape_int:65414805893c3139c21026723cbe474865474121,
         shape_int:92ed303ddae96b02a54f748673d9cc920f736078 ;
@@ -707,33 +888,42 @@ shape_int:e29a79fe0c349724caeaa1762fa917f5543248ca a sh:NodeShape ;
         <http://iasted#Review> .
 
 shape_int:e396e1603df698c2790c6fc772b2e258a6234b23 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:0c345a76730911df3b9bd4ad2faeb0c6eb698a10,
         shape_int:d1a3ed512028d495359a8b7d0c99ee7e2acf19f7 ;
     sh:targetClass <http://iasted#Lecturer> .
 
 shape_int:e3c32fed3758cb7cf3d89b2ff9e62c869774d870 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Value_added_tax> .
 
 shape_int:e485afaccb964869ec1196daece4f54340d655b7 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Worker_lecturer> .
 
 shape_int:e4c4ebae4546e7d0620c230a574213e1f2d3875a a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Agency_Staff_Member> .
 
 shape_int:e6d9add0568d1389b5b3e5ebe1e6a0d75a5cb8fd a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#OC_Chair> .
 
 shape_int:e8ddcf7374769e3e2a0f95aaa9e4453aa634940d a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Receiving_manuscript> .
 
 shape_int:ea80b6f84004cb01ac3ea25ecdce75ffff2cfdf0 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:11c75b793a3ed711c3ff09d664fca9ac288d6109 ;
     sh:targetClass <http://iasted#Worker_non_speaker> .
 
 shape_int:eb346168597dd5fa0b621804d1215d888a0f6339 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Refusing_manuscript> .
 
 shape_int:ecdda59aea5ee67d7d854c969ccf7f4f4b4a4c54 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:1106c27fbfb8b3221125823066195bccafde80d9,
         shape_int:12c2844990d5a596585fc63b727dbaf4debfd1da,
         shape_int:4163c827d0008088b379b26f8a3335deaa0a67be,
@@ -749,40 +939,50 @@ shape_int:ecdda59aea5ee67d7d854c969ccf7f4f4b4a4c54 a sh:NodeShape ;
     sh:targetClass <http://iasted#Item> .
 
 shape_int:ed5797b33d2432cfedf20d614bba5084d6ee4d1a a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:7a4fc6de718207abbd3487cf6c9e44047d5c03b4 ;
     sh:targetClass <http://iasted#Viza> .
 
 shape_int:ed72f6d2f46b74af44aa548c41124a8b07227e65 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Workshop_Paper> .
 
 shape_int:eff6b29f6d6a0912bf2b34a82e3a71defc1e3a3a a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:c90bb0bfbefd004f3cb416b8c3fd19e8fa4b6fd5 ;
     sh:targetClass <http://iasted#Author_information_form> .
 
 shape_int:f00488a8d0ac1097ebdd10629472e25d03ac8668 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:05381337efb7a42a2ca002dbd7c7bf09d0088ca3,
         shape_int:2f14b34e6c031c5c449c1c7bdc0574e0e83b5710 ;
     sh:targetClass <http://ekaw#Camera_Ready_Paper> .
 
 shape_int:f02a0e47d99b4051d5dde50d4b62563a11d49c95 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Conference_Participant> .
 
 shape_int:f19999906bd06934956ee2885572f146333f884e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:4163c827d0008088b379b26f8a3335deaa0a67be ;
     sh:targetClass <http://iasted#Transport_vehicle> .
 
 shape_int:f1fbfaa521c0f86bd05d9df552a4aa400f15620b a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:e2273652dd0f9ed0caa1fa6b54a64539e4e54008 ;
     sh:targetClass <http://ekaw#Conference_Banquet>,
         <http://iasted#Dinner_banquet> .
 
 shape_int:f5a4be8353eba0e9899074952904ba5d35804d6b a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://ekaw#Regular_Paper> .
 
 shape_int:f7afa82b8fb98ea40a971537bcad246d1eee34d1 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Simulating> .
 
 shape_int:f7f1997c6cd1aa051279675742272a956e7db628 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:073de49214d65d8a33b5760b06d8990a2c7e6ea0,
         shape_int:1106c27fbfb8b3221125823066195bccafde80d9,
         shape_int:34c24e9ee62cb21f44211b9d55ef7543b4cc2ec0,
@@ -791,25 +991,24 @@ shape_int:f7f1997c6cd1aa051279675742272a956e7db628 a sh:NodeShape ;
         <http://iasted#Session> .
 
 shape_int:f9fa6a6dad018c482e7e39670bc33f133df66bad a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:a237b956ea5642c9effd8807a3b39865ea6bff90,
         shape_int:abd49da335755a843bcb807ff003b9e4f7dee868 ;
     sh:targetClass <http://iasted#Conference_building> .
 
 shape_int:fa96a006d69269ea4459ad301b899102dbe6146b a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Sponsor_state> .
 
 shape_int:fd0b743b62904a6ea1fdc45de0541da77e0fa720 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:b3b05f02ae2fa3d21cc0437bcc32c38f0c2fd168,
         shape_int:d1a3ed512028d495359a8b7d0c99ee7e2acf19f7 ;
     sh:targetClass <http://iasted#Sponsor> .
 
 shape_int:ffc9f55cf761aacca8922a4872c159a10967d97a a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://iasted#Video_presentation> .
-
-shape_int:1823b2a8102aff6223c4ecb686caf8f2013db868 a sh:PropertyShape ;
-    sh:class <http://ekaw#Event> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://ekaw#locationOf> .
 
 shape_int:265f5abd38e8844c6d1f6a03efccdcfe162dc352 a sh:PropertyShape ;
     sh:datatype xsd:int ;
@@ -818,6 +1017,11 @@ shape_int:265f5abd38e8844c6d1f6a03efccdcfe162dc352 a sh:PropertyShape ;
     sh:nodeKind sh:Literal ;
     sh:path <http://iasted#has_amount_of> ;
     sh:pattern "[\\-+]?[0-9]+" .
+
+shape_int:291b4ba51291b47fbc10ede13ca5d3428274c249 a sh:PropertyShape ;
+    sh:class <http://ekaw#Location> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://ekaw#heldIn> .
 
 shape_int:2b8a6ed45b20eef46f323ffbbb66480417d00f67 a sh:PropertyShape ;
     sh:datatype xsd:date ;
@@ -836,25 +1040,20 @@ shape_int:3f1e2f1a428645de46b45893f6bf08b170f61901 a sh:PropertyShape ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path <http://ekaw#reviewWrittenBy> .
 
-shape_int:52d6ec0733d59ccdaf5f365998d17b582f040cc2 a sh:PropertyShape ;
+shape_int:66a5fb2a2d494b472d08dba1456fc74e389947be a sh:PropertyShape ;
     sh:class <http://ekaw#Document> ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path <http://ekaw#authorOf> .
+
+shape_int:6efb719d12d563633911959afe6df0c14cd90ea9 a sh:PropertyShape ;
+    sh:class <http://ekaw#Event> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://ekaw#locationOf> .
 
 shape_int:92ed303ddae96b02a54f748673d9cc920f736078 a sh:PropertyShape ;
     sh:class <http://ekaw#Paper> ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path <http://ekaw#reviewOfPaper> .
-
-shape_int:a9ee021f51557b437678dbec94b4759f4768062e a sh:PropertyShape ;
-    sh:class <http://ekaw#Paper> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://ekaw#reviewerOfPaper> .
-
-shape_int:ae781370e1562e999d04001d62d421e7f017140f a sh:PropertyShape ;
-    sh:class <http://ekaw#Location> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://ekaw#heldIn> .
 
 shape_int:b54060c54287d74ff4d3d6b474ff0902297cdab3 a sh:PropertyShape ;
     sh:datatype xsd:dateTime ;
@@ -865,6 +1064,11 @@ shape_int:b54060c54287d74ff4d3d6b474ff0902297cdab3 a sh:PropertyShape ;
 shape_int:dc909f874bc5d71384a8af0f6791180170fc555a a sh:PropertyShape ;
     sh:nodeKind sh:IRIOrLiteral ;
     sh:path <http://iasted#is_present_in> .
+
+shape_int:f7d9254671f0b1d22b8c877ba2f0dee13418562c a sh:PropertyShape ;
+    sh:class <http://ekaw#Paper> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://ekaw#reviewerOfPaper> .
 
 shape_int:f9253a11b0da653c9e58debb355dfcc72cf40891 a sh:PropertyShape ;
     sh:class <http://ekaw#Document> ;
@@ -911,11 +1115,12 @@ shape_int:2f14b34e6c031c5c449c1c7bdc0574e0e83b5710 a sh:PropertyShape ;
         sh:IRIOrLiteral ;
     sh:path <http://ekaw#writtenBy> .
 
-shape_int:434f3b59fe3c335c4f7df77c9f021657fccc5e61 a sh:PropertyShape ;
-    sh:class <http://iasted#Item> ;
+shape_int:3e9949f71bb27cbcecfc83e336993b5d3339abd5 a sh:PropertyShape ;
+    sh:class <http://ekaw#Possible_Reviewer> ;
+    sh:minCount "3" ;
     sh:nodeKind sh:BlankNodeOrIRI,
         sh:IRIOrLiteral ;
-    sh:path <http://iasted#write> .
+    sh:path <http://ekaw#hasReviewer> .
 
 shape_int:43f0fa2950bf7b69efdfbd161ceabc9fe1c3d374 a sh:PropertyShape ;
     sh:class <http://ekaw#Event> ;
@@ -951,17 +1156,16 @@ shape_int:829a17cedb28cf8186b6bec68fe7868b20e8ca06 a sh:PropertyShape ;
         sh:IRIOrLiteral ;
     sh:path <http://iasted#is_paid_with> .
 
-shape_int:8589b85f5ecf9f8b55f4f32c5576665bc4acb0bd a sh:PropertyShape ;
-    sh:class <http://ekaw#Possible_Reviewer> ;
-    sh:minCount "3" ;
-    sh:nodeKind sh:BlankNodeOrIRI,
-        sh:IRIOrLiteral ;
-    sh:path <http://ekaw#hasReviewer> .
-
 shape_int:872ea1caa307efe92d411cf5c6cf2d9cd5c262a7 a sh:PropertyShape ;
     sh:minCount "1" ;
     sh:nodeKind sh:IRIOrLiteral ;
     sh:path <http://ekaw#volumeContainsPaper> .
+
+shape_int:97c4c8c925766eb51bc5439fde8909910e21f1e1 a sh:PropertyShape ;
+    sh:class <http://iasted#Item> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://iasted#write> .
 
 shape_int:a981f1a69787d53823d4e591e2e13ba894f6b45f a sh:PropertyShape ;
     sh:class <http://ekaw#Individual_Presentation> ;
@@ -1069,7 +1273,7 @@ shape_int:6822b8afb7f44276a73968b13231fe14f3a0a1b7 a sh:PropertyShape ;
         sh:IRIOrLiteral ;
     sh:path <http://ekaw#partOfEvent> .
 
-shape_int:6e001307e4cd3239d37a37e0a402415208cc4576 a sh:PropertyShape ;
+shape_int:c18c066a69d0a15b3d5ed2b524c1ea54d439007b a sh:PropertyShape ;
     sh:class <http://ekaw#Review> ;
     sh:minCount "3" ;
     sh:nodeKind sh:BlankNodeOrIRI,

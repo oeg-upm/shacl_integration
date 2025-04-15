@@ -3,7 +3,7 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix ssn: <http://www.w3.org/ns/ssn/> .
 
-inc_ex:fac24785-f81b-437f-9819-804d51db13d2 a inc:Inconsistency ;
+inc_ex:949fbfe6-dc1b-41c7-807f-6b7c3e2af8d5 a inc:Inconsistency ;
     inc:hasInconsistencyAxiom sh:or ;
     inc:hasInconsistencyInClass ssn:System,
         <https://saref.etsi.org/saref4syst/System> ;

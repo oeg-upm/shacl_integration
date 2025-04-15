@@ -5,9 +5,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 shape_int:00718a941691461435f00dd57100b1c8fff941da a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#SatelliteAndSpaceCommunicationsTopic> .
 
 shape_int:00b4f2cf02d06ac1e248132513e25672a7f0d211 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:14550f0b872182de36d94007465cc943b1269599,
         shape_int:17029522e34d2856fe4d72a97d0b712dbce0e5f0,
         shape_int:469531de5ba5e267841732fd362478a42161c94c,
@@ -16,143 +18,229 @@ shape_int:00b4f2cf02d06ac1e248132513e25672a7f0d211 a sh:NodeShape ;
     sh:targetClass <http://edas#ContactInformation> .
 
 shape_int:054ab26fc420aa7d55fb7e159a7e4ac3711c597a a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:70f486783d73485c047b27df9f80263fa5b574d6 ;
     sh:targetClass <http://edas#MealMenu> .
 
 shape_int:0a40d5643d7d9e25231689d2460c71bd138998cc a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:7d6d49aba278d71a8898617d000af8fa967ad94a ;
     sh:targetClass <http://edas#AcceptedPaper> .
 
 shape_int:0e7e847bfb521fff7dd5df0107a5270e6b9b462d a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#ComputerNetworksOpticalTopic> .
 
 shape_int:13b8fe38a93b1e74be75932a7d667b18af065fa8 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Workshop>,
         <http://edas#Workshop> .
 
 shape_int:187ae0e367d35006e541c124802a3a71643c83d6 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#TestOnlyTopic> .
 
 shape_int:1e61347437a2c0ce8a6229f5ac4d22dff1f119f6 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#CryptographyTopic> .
 
 shape_int:1eda23758be9e36e5e0d2a6a87de584aaca0193f a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Administrator> .
 
 shape_int:1f851e954227e686b1fb5a996d78e3aa52dda88f a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Banquet> .
 
 shape_int:1f9d027f1b73b7c43227191597dd736ec2289ac9 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#RejectedPaper> .
 
 shape_int:1ff7c2ba3964a56bc44208ab3db99db4106fb6d2 a sh:NodeShape ;
     sh:description "Submission of contributions",
         "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Submission_event> .
 
 shape_int:20a7358c60fa6dcac0b971cf58ba02a701439519 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#ConferenceVenuePlace> .
 
 shape_int:22d507f2ba74e43593de3ae3f550bf202c076adc a sh:NodeShape ;
-    sh:property shape_int:511b18dfeeb72f91f16fc70b45ad5b590b0847fc,
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:094474411f65c28a8d1d33c17905ebabfc445d72,
         shape_int:a70783e07565adf6cb312566a71723f4214d910a ;
     sh:targetClass <http://confOf#Paper>,
         <http://edas#Paper> .
 
 shape_int:263f173bd698c56ee5d9b6f7404f752490e8c940 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#WelcomeTalk> .
 
 shape_int:2701a94c0eb55cbd958a87dff3e959673ff1bf53 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Tutorial> .
 
 shape_int:28a3efbdaa198e48f2b680d7d7a3bd5a98dfa43e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#GovernmentOrganization> .
 
 shape_int:28e6f4962c7deb03d9e2c1036fe5fd979de52028 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#TalkEvent> .
 
 shape_int:291a0a58dfa6c640a90c1d868d2af190775ea219 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:70cb2a7d241edc5b15e40f0a6c22a74cc15de3ca,
         shape_int:7325c9dde167eb808ec5a28df8901848302a58a2,
         shape_int:ed639c0a3f796dbae13bca7b168ca8c37c2f35a2 ;
     sh:targetClass <http://edas#Call> .
 
 shape_int:29986f1e8adec0c4452cffd06e162c8d659ebe04 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#CommunicationTheoryTopic> .
 
 shape_int:29babed8a49ff260cdb59a47c3e861c6f2752759 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#PerformanceTopic> .
 
 shape_int:3136cfcc7ded26ec87f15c68d82fbd6df5df9ecc a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#PersonalPublicationHistory> .
 
 shape_int:336baebd839c75513babd2a39ccdf8499c05590f a sh:NodeShape ;
     sh:description "Call For Papers" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#CallForPapers> .
 
 shape_int:33ddca5caf978764fc5ddaeed2f2eb54f6f1bf44 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#CoffeeBreak> .
 
+shape_int:39a46303854cb0c83112ca5f20e8cccb6e049092 a sh:NodeShape ;
+    sh:description "Reviewer",
+        "confTool" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:06d4d8d918e3ba5a56507b85beb8f683678fea8e,
+        shape_int:0aee9c287e81819d0a7005cdadd087bb5fda04a2,
+        shape_int:f788eaa890e4baf7d733ef8bb9ae10131640a80e ;
+    sh:targetClass <http://confOf#Member_PC>,
+        <http://edas#TPCMember> .
+
 shape_int:3a2862bf6c138c9b53385a2ebbc05620df04962b a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#ConferenceDinner> .
 
 shape_int:3a94888dc4e7c6e627a03ad70b30dd29906be49c a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:2d066d4b8cd6e403bdbe36ad5d0fec36d0e75767 ;
     sh:targetClass <http://edas#PersonalReviewHistory> .
 
 shape_int:3b18f789e6b65352671dcec317cd802e6fa2648e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#AcceptRating> .
 
 shape_int:3b7df6002a606bc2e99b6c5101e09e48a7ae8d63 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:c59ddb86013ffffbd27ac2bc5e1d26684391f85f ;
     sh:targetClass <http://edas#MealEvent> .
 
+shape_int:3c479754a656219ea93170f219805bb427633eaf a sh:NodeShape ;
+    sh:description "confTool",
+        "price category - scholar" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:b3d1f1fc6941c422e7eebc85130b6f9bcefef1b1 ;
+    sh:targetClass <http://confOf#Scholar> .
+
 shape_int:3db7a78a415db407a0d887d8849b65e9f2694060 a sh:NodeShape ;
     sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Short_paper> .
 
 shape_int:40176124774ba51aac9acb0780c90d40135e8e7e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#NumericalReviewQuestion> .
 
 shape_int:41d079e04c4725b81f21c9a9ac4c60c805b5fe59 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#PendingPaper> .
 
 shape_int:4271627f4f0bef6104a95cca7bb21cda4d74503e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#City> .
 
 shape_int:42b32794792b48313cd1be9ca11b690d3e614683 a sh:NodeShape ;
     sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Student> .
 
+shape_int:42c04638e10c945ec10a6887aad2915c315c83fc a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:0be3d697e2e7ffda29fc4b878c862097b985d1c8,
+        shape_int:17e53ed0fb8dfdf23109b5e24c547470073b73e4,
+        shape_int:285ee6c866a512ba282c7bf0cab973592bb91394,
+        shape_int:3040e255b2b55c5011e638d6839407fe043adfad,
+        shape_int:5fb79fe96b0f2ee5b22d8c05dc98b5d8a18e5368,
+        shape_int:735452db0beecfdf1c1c1dd83c3193549c5171e4,
+        shape_int:858c68b52542d982b07e6da64b492318a2038ebc,
+        shape_int:9177343c26850eef82d0c88134a76f9d021977ab,
+        shape_int:beb1c53fbc1b871a9fc726f1a0825969b431c419,
+        shape_int:c8a452bd95edfe37b9e75f845fc267a7b18a8111,
+        shape_int:d30efad49c67f1dbe1eb642f31e919497dcf905d ;
+    sh:targetClass <http://confOf#Working_event>,
+        <http://edas#AcademicEvent> .
+
 shape_int:43a01f74b38cac6cd0c3d933a6a5b9cc24ba0756 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#SignalProcessingTopic> .
 
 shape_int:4603dbaf0b7a05ba14faa546c05d1041c1cda49c a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#FreeTimeBreak> .
 
 shape_int:47848bcb78ae55b5e4a98e003099af7f4f38b9e1 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#OperatingTopicsystems> .
 
 shape_int:4b8891fe41fa94b9b816748470c5eadca9d44ec7 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#ComputerNetworksSensorTopic> .
 
 shape_int:4bc3dbb2a147d9dcf14336f82b408f7e3526641a a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#RejectRating> .
 
 shape_int:4d13b9374b6e696d5c2728a6e3e73beac3771ac2 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#ReviewRating> .
 
 shape_int:4d99422856cb8116849df3e983926b0cd98d2083 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:beb1c53fbc1b871a9fc726f1a0825969b431c419 ;
     sh:targetClass <http://edas#ConferenceSession> .
 
 shape_int:4df540b59ec56c6624b2f0feca04558eb73a4f02 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#ComputerNetworksTopic> .
 
+shape_int:519255ae1f74ffc5ddd29979295c7572f048ad81 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:201552d5fe1a546de7d212847a6840992e1baf12,
+        shape_int:475714e22431e89e2e50dc07201dde9549a573a0,
+        shape_int:735723bd55bd23d924ea85a380ffb1980bd34e5a,
+        shape_int:bb81a1305d1047fb65ec920d4c9011452b88667e,
+        shape_int:cacd6433e7bd86c391e82c6d4bc1c5970af8e550 ;
+    sh:targetClass <http://confOf#Organization>,
+        <http://edas#Organization> .
+
 shape_int:51d58fed20dbaa5791a0b042b8a24d5e0322d43b a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#TwoLevelConference> .
 
 shape_int:5531e88e8230e578c472efb569366fac4a648bef a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:0be3d697e2e7ffda29fc4b878c862097b985d1c8,
         shape_int:17e53ed0fb8dfdf23109b5e24c547470073b73e4,
         shape_int:285ee6c866a512ba282c7bf0cab973592bb91394,
@@ -164,149 +252,255 @@ shape_int:5531e88e8230e578c472efb569366fac4a648bef a sh:NodeShape ;
         <http://edas#SocialEvent> .
 
 shape_int:55d698b510bfb1d054ef27d3fe97cd2c08d6d061 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#SlideSet> .
 
 shape_int:5688c0c53b87b8cf97986d68062cf6f19b251c71 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#CommunicationsTopic> .
 
 shape_int:58b8eface2bbfc9b59e43d6a62b5637de5c84df8 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#AccommodationPlace> .
 
+shape_int:5c804b8bdd7b052cbde90fa12b1be1e54c91e4ab a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:554af1b0ed3abdcf4d752da6d6621af90688967c ;
+    sh:targetClass <http://edas#ActivePaper> .
+
+shape_int:5fda23d62015b99fb2a9f86b38bcdf2bdf7609c8 a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:a1bd3c2e3fe9f93b6ffa71aebf12957a8f733c48 ;
+    sh:targetClass <http://confOf#Author>,
+        <http://edas#Author> .
+
 shape_int:63f2b1b1216a528fa44dcda64872e15db9b62f5a a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#TextualReviewQuestion> .
 
 shape_int:6409270c1fd472c3e9b9f3d67fcb8f566acc0a0d a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#BreakEvent> .
 
 shape_int:651f3320eec36799ffdbe03ba3bee314bc47b719 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#SecurityTopic> .
 
 shape_int:6853c98a6f4358bbfed1b3b9c81d308649299b0f a sh:NodeShape ;
     sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Member> .
 
 shape_int:69a7b9948856f991b2895395d0460c0e65b953be a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#PublishedPaper> .
 
 shape_int:6c071cc078c80966e21fc00a1e1a49409785a5c9 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#ClosingTalk> .
 
 shape_int:715432dcf30be1042d0a59bfe45bed957aad7a9a a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#University> .
 
 shape_int:730d9215201a366f98a453ab4f8cf632c996b2f9 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:abe57b4324d5fdfe6d4aafc963b2e24cbe76fdbe ;
     sh:targetClass <http://edas#PaperPresentation> .
 
 shape_int:73c6d46e96ca5f8032215804dafc20f3d266766d a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#PowerlineTransmissionTopic> .
 
 shape_int:7a1994999d181deea68e4304b3346e78f838ecb7 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Company> .
 
 shape_int:7ab4274cc66b38269fa2693877a204f1ce1c9dd6 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#PersonalHistory> .
 
 shape_int:7ac789299d8f46a7b0ae0151aef5fa26903b5ce9 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#ComputerNetworksSwitchingTopic> .
 
 shape_int:7e13bd176f89a12f0b614b55ffc19c14515ef920 a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Topic>,
         <http://edas#Topic> .
 
 shape_int:8010d1f4d0696ce16febddf3dda682cb3e5060c3 a sh:NodeShape ;
     sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Assistant> .
 
 shape_int:80bdf4d816e088c895b2521bb3054f1e89ca72a0 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#MealBreak> .
 
 shape_int:811736270140a1e1a48b89c09e49ee22aab7c8ad a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#Presenter> .
 
 shape_int:843ca1c16e445a3612cdea594607c47f99bd6f3c a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#ComputerNetworksAapplicationsTopic> .
 
 shape_int:8682d73e62dd322ed3f1c68245442c9c3ba39355 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:fc687222aa574b07318770d5f5576ef8d909e87d ;
     sh:targetClass <http://edas#Programme> .
 
 shape_int:87d9349bc05c04e599b696898eb93d75db6ee5d3 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#ComputerNetworksManagementTopic> .
 
 shape_int:89151df17903af7adf1cbed40824d13cff424089 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#MeetingRoomPlace> .
 
 shape_int:8a1e29b3dd009e1104338701230be5d7a38b1fed a sh:NodeShape ;
-    sh:targetClass <http://confOf#Conference> .
+    sh:description "Conference" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:2768f0a2969b0f1855fa4adc28358cc0c0d2a848,
+        shape_int:3e5040acceacb7e0338e8fe241d192eaa279bd21,
+        shape_int:640e04e533bafccfd3148beb86f3942a0648860b,
+        shape_int:8f08d0ca3672a17f9fa5fa9498e31443de77af26,
+        shape_int:a70783e07565adf6cb312566a71723f4214d910a,
+        shape_int:b49b8c73b311ab96242b62fd85eef45cbf0971ec,
+        shape_int:beb1c53fbc1b871a9fc726f1a0825969b431c419,
+        shape_int:cdb5080218728f60734290497343edcdc488e29d,
+        shape_int:df00bd63bc93de3384c09a31338591a609ca2d87,
+        shape_int:eb4ea87398268775d4fc3f2f5a6be7990f81028b ;
+    sh:targetClass <http://confOf#Conference>,
+        <http://edas#Conference> .
 
 shape_int:8a82f01ad791d8b6bf2b5c75a1dd0287e000a953 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#WithdrawnPaper> .
 
 shape_int:8b14eacea95cd32c821d01b863123d9a329cbce6 a sh:NodeShape ;
+    sh:description "confTool",
+        "price category - science worker" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Science_Worker> .
 
+shape_int:8c41ae88467fe5bbad09fcd488662b25c3ec5333 a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:1ad71c6131aa4218e90a808ad9e2292bb8a94843,
+        shape_int:201552d5fe1a546de7d212847a6840992e1baf12,
+        shape_int:3e341a66431532691b5102d16cdd30ebfe2f8a98,
+        shape_int:475714e22431e89e2e50dc07201dde9549a573a0,
+        shape_int:548e3fbcb6b883c25ee440465aea1c33d185d247,
+        shape_int:735723bd55bd23d924ea85a380ffb1980bd34e5a,
+        shape_int:80ae5e5ef5415c0ed7a7ad2838a39ddacb719f0e,
+        shape_int:85109ce46f16f2043f2dd4ea305e51c3f089bb52,
+        shape_int:a423ca40fbd44299f2340501a50dfbac3890ea84,
+        shape_int:beb1c53fbc1b871a9fc726f1a0825969b431c419,
+        shape_int:cacd6433e7bd86c391e82c6d4bc1c5970af8e550,
+        shape_int:e615a4bb69cffe910fcc3209efe6fd4aa6321345,
+        shape_int:ed734665a23982e510520bc9af2633413bed6cb5,
+        shape_int:ef2430866bd5e8c9da9b0ed8b9edc8b414e799f8,
+        shape_int:f62b27cc94b618d66808bed184118e4fe6143bd2,
+        shape_int:f842f0800440d926733cdf568fb342f402aa75ff ;
+    sh:targetClass <http://confOf#Person>,
+        <http://edas#Person> .
+
 shape_int:8d4e4ef3ea5252ec5235e4b1dd463ae9c302422c a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Regular> .
 
 shape_int:8f4e6fc0a19e7b472335f064e8c9a2096cc214b3 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#NonAcademicEvent> .
 
 shape_int:94ed2487ad3d7a3e9e5bc2ca660b2f93a4eac537 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#MobileComputingTopic> .
 
 shape_int:9571c4fcfa16b942d8d306e0de4ce01097a0b9e6 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#WirelessCommunicationsTopic> .
 
 shape_int:97f315c2cbd5d74181d101782051593e58032ddb a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#ReviewQuestion> .
 
+shape_int:982d5a73469ace67d9bb8ac42b0697256070bb9a a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:094474411f65c28a8d1d33c17905ebabfc445d72,
+        shape_int:38f9f0c6f83078c66b0f87094262d744daab33d0,
+        shape_int:529cd3d64231667aa8d01f2eee503b4ddf29e554,
+        shape_int:5b986781761f900573d0af209eec7d98db80fc8b,
+        shape_int:ca56cdef03061f6f6bea96bb635ca96ea0bdb630,
+        shape_int:f4eca27b4536b3990438468b1ca1bfe9c0abc3fe,
+        shape_int:f718a1667690dbff04cd54563a516208667cba00 ;
+    sh:targetClass <http://confOf#Contribution> .
+
 shape_int:9870a21cbf471c61df598e88d4ccb872162f939d a sh:NodeShape ;
-    sh:property shape_int:0a628308d479d3fb6dc62a8cb1ab44c1261ec0c0,
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:0aee9c287e81819d0a7005cdadd087bb5fda04a2,
         shape_int:f788eaa890e4baf7d733ef8bb9ae10131640a80e ;
     sh:targetClass <http://edas#SessionChair> .
 
 shape_int:9d6ef3b1e64e38fa9c417343a224346184f26e05 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:2d29b61423d78c65a70123f4878497612e71d9b0,
         shape_int:98ab7dccdc4c9133deea3f2d118b920f21c9462d ;
     sh:targetClass <http://confOf#Administrative_event> .
 
 shape_int:9dda9aa776653be989f44d12e9d628d418077f33 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Trip>,
         <http://edas#Excursion> .
 
 shape_int:a33539ca77a6c42fd7a1e50aef1516b3a87d7c85 a sh:NodeShape ;
     sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Poster> .
 
 shape_int:a62cdcfdba01a872a65a3fdeb7e0d4ec84e29f64 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#AcademiaOrganization> .
 
 shape_int:a74f16c11792da6a36979a58a1ba2b4333632f57 a sh:NodeShape ;
-    sh:property shape_int:0a628308d479d3fb6dc62a8cb1ab44c1261ec0c0,
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:0aee9c287e81819d0a7005cdadd087bb5fda04a2,
         shape_int:d402ac97d0f252c8bef2b7599de2ccb39bf02dbe ;
     sh:targetClass <http://edas#Reviewer> .
 
 shape_int:a756f1b90c2f895759714537f3c7324af7119b76 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#OrganizationalMeeting> .
 
 shape_int:a7581a7127b99bdf3d1251ab5da926a751580ea9 a sh:NodeShape ;
+    sh:description "Call For Reviews" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#CallForReviews> .
 
 shape_int:a77366e97a2bf514bbc87a66e670fd0ba7173892 a sh:NodeShape ;
     sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:77f3525935c53e2a9ded2138da33b4acff1afaba ;
     sh:targetClass <http://confOf#Participant>,
         <http://edas#Attendee> .
 
 shape_int:a78ea5da2bcb0e0eff13ddf6679f39602b415ddd a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#MultimediaTopic> .
 
 shape_int:ad84d11240c231ebfc3b19bb766f49a3ee2579cd a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#WeekRejectRating> .
 
 shape_int:ad8919ace091b14011c6439cfd5e1707b58f5abd a sh:NodeShape ;
     sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:01f406efa4ca2b5454834a0e2b197a6c88e724b9,
         shape_int:072a3a107bfe50ee301d3b8d749c344b55739e42,
         shape_int:0cf5df4dfcceb705827fd6d1a68ee727542b8a16,
@@ -320,112 +514,148 @@ shape_int:ad8919ace091b14011c6439cfd5e1707b58f5abd a sh:NodeShape ;
 shape_int:adfb03aad8a7ead9c8d7176adb61544609e8b20e a sh:NodeShape ;
     sh:description "Reviewing procedure for submitted contributions",
         "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Reviewing_event> .
 
 shape_int:b229536e1caf42d72832cdb97a06d429d52fb6e1 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#NGO> .
 
 shape_int:b268e899dce5e3284b67eaac0e9840baba2e0d04 a sh:NodeShape ;
     sh:description "Registration of new ConfTool users",
         "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Registration_of_participants_event> .
 
 shape_int:bac2ec832dc8a340f707be7c96119d95f1669de5 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#AntennasTopic> .
 
 shape_int:bda4923ab0af429265fabd10432dda914cef4156 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#ComputerNetworksSecurityTopic> .
 
 shape_int:c142d3f41f63e7be9b45b540bb1a14fa4f729212 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#MicroelectronicsTopic> .
 
 shape_int:c2374d28375031db3077f4397976f8dc3deb4c81 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#RadioCommunicationsTopic> .
 
 shape_int:c32a0147f2e47a52e082fe2dd4b6aaa36084a4cb a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:407cc09542b89f6779953f856a7cc0d06b9e06a9 ;
     sh:targetClass <http://edas#Place> .
 
 shape_int:c65397a48bcd46916845a6f4050cf3a7362c5428 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#ComputerNetworksEnterpriseTopic> .
 
 shape_int:c6bd6281eb60350da84739ad33865632bbb3f9a4 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#ComputerArchitectureTopic> .
 
 shape_int:c7a6c979ef54254ae63ec614463445d0c6986077 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#AccpetIfRoomRating> .
 
 shape_int:c91b19f6afc4ee6f0ef1225f3cc8f9f18e836f8d a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#TravelGrant> .
 
 shape_int:cbf217d4cfea1647891d6270c640d24f61b29e12 a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Volunteer> .
 
 shape_int:cd3719900d5cf206faac92478a6b0d281e99cb30 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#DiningPlace> .
 
 shape_int:ceee32dfb44dbc2b396d5659cb92839522e14aa2 a sh:NodeShape ;
     sh:description "Results of the reviewing procedures, accessable to authors",
         "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Reviewing_results_event> .
 
 shape_int:d4a889fa5b66b4a97e06eaad468f93dde844216c a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#MedicineTopic> .
 
 shape_int:d523ebbd10146cdfd39dee077f04c9d08468d0bc a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Country>,
         <http://edas#Country> .
 
 shape_int:d52cdf2f190018aa1adc6eb9ce57b40dae9530c9 a sh:NodeShape ;
     sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Chair_PC> .
 
 shape_int:d5a947c33dcaf23ad579aa2e13b5dc7537c4a6e0 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#SingleLevelConference> .
 
 shape_int:d928bfee825c93e2502c2b04eeeddd1ffaf790c6 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Reception>,
         <http://edas#Reception> .
 
 shape_int:d9d60c219ca62e59710912584d891bfdf25b8664 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:5320764c2f98d009ecbdfc8fad3bb9f1aa82e3f8,
-        shape_int:6ea5832cefef253abfaa8f9fde4f8b87e6854592,
-        shape_int:d66a8a4a4e115f6c5a6652e5434f64f4e717578b ;
+        shape_int:5f4b2f074c90897c0ef01650803e55f69c915974,
+        shape_int:6ea5832cefef253abfaa8f9fde4f8b87e6854592 ;
     sh:targetClass <http://edas#Sponsorship> .
 
 shape_int:db8c74d8a90f0f58f084968b26fefcc63ac560ee a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:554af1b0ed3abdcf4d752da6d6621af90688967c ;
     sh:targetClass <http://edas#RatedPapers> .
 
 shape_int:dc9796e572e13207d4b74f68d56955951e001bf0 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#CADTopic> .
 
 shape_int:de08da3d14144d58f7c7143bbd4cf8974183040b a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#ParallelAndDistributedComputingTopic> .
 
 shape_int:de7203660f56185c617e3fee21133b4e4c03ed61 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#IndustryOrganization> .
 
 shape_int:df35eafa7dcb2264a4d2429b2fcc921191707c7e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#ReviewForm> .
 
 shape_int:e214b8a29923056887b7edf6635d90dcbb2abe88 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#Document> .
 
 shape_int:e29a79fe0c349724caeaa1762fa917f5543248ca a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#Review> .
 
 shape_int:e4fff170260f03d16752551d539f68c79371b174 a sh:NodeShape ;
+    sh:description "Call For Manuscripts" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#CallForManuscripts> .
 
 shape_int:e9ebd1b0ea620496a3fe44bae2cb7e168a33ae85 a sh:NodeShape ;
+    sh:description "Final upload of accepted contributions",
+        "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Camera_Ready_event> .
 
 shape_int:fa37e75f44e8862b0b3e75dfacf30144ba9e98ad a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://edas#ComputerNetworksMeasurementsTopic> .
 
 shape_int:fa5f82ddc16bdadaf1295877c2102aa864ab83af a sh:NodeShape ;
-    sh:property shape_int:0a628308d479d3fb6dc62a8cb1ab44c1261ec0c0,
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:0aee9c287e81819d0a7005cdadd087bb5fda04a2,
         shape_int:f788eaa890e4baf7d733ef8bb9ae10131640a80e ;
     sh:targetClass <http://edas#ConferenceChair> .
 
@@ -435,24 +665,19 @@ shape_int:01f406efa4ca2b5454834a0e2b197a6c88e724b9 a sh:PropertyShape ;
     sh:path <http://edas#hasEndDateTime> ;
     sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
 
+shape_int:06d4d8d918e3ba5a56507b85beb8f683678fea8e a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class <http://confOf#Topic> ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://confOf#expertOn> .
+
 shape_int:072a3a107bfe50ee301d3b8d749c344b55739e42 a sh:PropertyShape ;
     sh:datatype xsd:dateTime ;
     sh:nodeKind sh:Literal ;
     sh:path <http://edas#hasStartDateTime> ;
     sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
-
-shape_int:0be3d697e2e7ffda29fc4b878c862097b985d1c8 a sh:PropertyShape ;
-    rdfs:label "confTool",
-        """value added tax
-""" ;
-    sh:datatype xsd:string ;
-    sh:description "confTool",
-        """value added tax
-""" ;
-    sh:maxCount "1" ;
-    sh:nodeKind sh:IRIOrLiteral ;
-    sh:path <http://confOf#hasVAT> ;
-    sh:pattern ".*" .
 
 shape_int:0cf5df4dfcceb705827fd6d1a68ee727542b8a16 a sh:PropertyShape ;
     sh:class <http://edas#Place> ;
@@ -471,13 +696,12 @@ shape_int:17029522e34d2856fe4d72a97d0b712dbce0e5f0 a sh:PropertyShape ;
     sh:path <http://edas#hasPhone> ;
     sh:pattern ".*" .
 
-shape_int:17e53ed0fb8dfdf23109b5e24c547470073b73e4 a sh:PropertyShape ;
+shape_int:1ad71c6131aa4218e90a808ad9e2292bb8a94843 a sh:PropertyShape ;
     rdfs:label "confTool" ;
     sh:datatype xsd:string ;
     sh:description "confTool" ;
-    sh:maxCount "1" ;
-    sh:nodeKind sh:IRIOrLiteral ;
-    sh:path <http://confOf#has_short_title> ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#hasPhone> ;
     sh:pattern ".*" .
 
 shape_int:231f91394ee3c4f22974710ec633bbba0c17972e a sh:PropertyShape ;
@@ -485,15 +709,13 @@ shape_int:231f91394ee3c4f22974710ec633bbba0c17972e a sh:PropertyShape ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path <http://edas#hasProgramme> .
 
-shape_int:285ee6c866a512ba282c7bf0cab973592bb91394 a sh:PropertyShape ;
-    rdfs:label "confTool" ;
-    sh:datatype xsd:string ;
-    sh:description "confTool" ;
+shape_int:2768f0a2969b0f1855fa4adc28358cc0c0d2a848 a sh:PropertyShape ;
+    sh:class <http://edas#Country> ;
     sh:maxCount "1" ;
     sh:minCount "1" ;
-    sh:nodeKind sh:IRIOrLiteral ;
-    sh:path <http://confOf#has_title> ;
-    sh:pattern ".*" .
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://edas#hasCountry> .
 
 shape_int:2d066d4b8cd6e403bdbe36ad5d0fec36d0e75767 a sh:PropertyShape ;
     sh:class <http://edas#Reviewer> ;
@@ -504,6 +726,35 @@ shape_int:2d29b61423d78c65a70123f4878497612e71d9b0 a sh:PropertyShape ;
     sh:class <http://confOf#Administrative_event> ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path <http://confOf#parallel_with> .
+
+shape_int:3040e255b2b55c5011e638d6839407fe043adfad a sh:PropertyShape ;
+    sh:class <http://confOf#Administrative_event> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://confOf#hasAdministrativeEvent> .
+
+shape_int:38f9f0c6f83078c66b0f87094262d744daab33d0 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://confOf#hasKeyword> ;
+    sh:pattern ".*" .
+
+shape_int:3e341a66431532691b5102d16cdd30ebfe2f8a98 a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasBiography> ;
+    sh:pattern ".*" .
+
+shape_int:3e5040acceacb7e0338e8fe241d192eaa279bd21 a sh:PropertyShape ;
+    rdfs:label "Conference Paper Date and Time Deadline" ;
+    sh:datatype xsd:dateTime ;
+    sh:description "Conference Paper Date and Time Deadline" ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://edas#paperDueOn> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
 
 shape_int:407cc09542b89f6779953f856a7cc0d06b9e06a9 a sh:PropertyShape ;
     sh:class <http://edas#ConferenceEvent> ;
@@ -516,10 +767,15 @@ shape_int:469531de5ba5e267841732fd362478a42161c94c a sh:PropertyShape ;
     sh:path <http://edas#hasPostalCode> ;
     sh:pattern ".*" .
 
-shape_int:511b18dfeeb72f91f16fc70b45ad5b590b0847fc a sh:PropertyShape ;
-    sh:class <http://edas#Author> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path [ sh:alternativePath ( <http://confOf#writtenBy> <http://edas#isWrittenBy> ) ] .
+shape_int:529cd3d64231667aa8d01f2eee503b4ddf29e554 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://confOf#abstract> ;
+    sh:pattern ".*" .
 
 shape_int:5320764c2f98d009ecbdfc8fad3bb9f1aa82e3f8 a sh:PropertyShape ;
     sh:datatype xsd:string ;
@@ -527,10 +783,43 @@ shape_int:5320764c2f98d009ecbdfc8fad3bb9f1aa82e3f8 a sh:PropertyShape ;
     sh:path <http://edas#hasCostCurrency> ;
     sh:pattern ".*" .
 
-shape_int:554af1b0ed3abdcf4d752da6d6621af90688967c a sh:PropertyShape ;
+shape_int:548e3fbcb6b883c25ee440465aea1c33d185d247 a sh:PropertyShape ;
+    sh:class <http://edas#ConferenceEvent> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#attendeeAt> .
+
+shape_int:5b986781761f900573d0af209eec7d98db80fc8b a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class <http://confOf#Topic> ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://confOf#dealsWith> .
+
+shape_int:5f4b2f074c90897c0ef01650803e55f69c915974 a sh:PropertyShape ;
+    sh:datatype xsd:int ;
+    sh:maxInclusive "2147483647" ;
+    sh:minInclusive "-2147483648" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasCostAmount> ;
+    sh:pattern "[\\-+]?[0-9]+" .
+
+shape_int:5fb79fe96b0f2ee5b22d8c05dc98b5d8a18e5368 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class <http://confOf#Topic> ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://confOf#hasTopic> .
+
+shape_int:640e04e533bafccfd3148beb86f3942a0648860b a sh:PropertyShape ;
+    rdfs:label "Conference End Date and Time" ;
+    sh:datatype xsd:dateTime ;
+    sh:description "Conference End Date and Time" ;
+    sh:maxCount "1" ;
     sh:nodeKind sh:IRIOrLiteral ;
-    sh:path <http://edas#hasRating> ;
-    sh:qualifiedMinCount "1" .
+    sh:path <http://edas#endDate> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
 
 shape_int:6ea5832cefef253abfaa8f9fde4f8b87e6854592 a sh:PropertyShape ;
     sh:class <http://edas#Organization> ;
@@ -556,17 +845,6 @@ shape_int:7325c9dde167eb808ec5a28df8901848302a58a2 a sh:PropertyShape ;
     sh:path <http://edas#hasSubmissionDeadline> ;
     sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
 
-shape_int:735452db0beecfdf1c1c1dd83c3193549c5171e4 a sh:PropertyShape ;
-    rdfs:label """confTool
-""" ;
-    sh:datatype xsd:positiveInteger ;
-    sh:description """confTool
-""" ;
-    sh:minInclusive "1" ;
-    sh:nodeKind sh:Literal ;
-    sh:path <http://confOf#minChoice> ;
-    sh:pattern "[\\-+]?[0-9]+" .
-
 shape_int:77f3525935c53e2a9ded2138da33b4acff1afaba a sh:PropertyShape ;
     sh:datatype xsd:boolean ;
     sh:maxCount "1" ;
@@ -578,6 +856,303 @@ shape_int:7d6d49aba278d71a8898617d000af8fa967ad94a a sh:PropertyShape ;
     sh:class <http://edas#PaperPresentation> ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path <http://edas#relatedToEvent> .
+
+shape_int:80ae5e5ef5415c0ed7a7ad2838a39ddacb719f0e a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#hasFax> ;
+    sh:pattern ".*" .
+
+shape_int:85109ce46f16f2043f2dd4ea305e51c3f089bb52 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://confOf#hasEmail> ;
+    sh:pattern ".*" .
+
+shape_int:8f08d0ca3672a17f9fa5fa9498e31443de77af26 a sh:PropertyShape ;
+    sh:class <http://edas#Person> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasMember> .
+
+shape_int:98ab7dccdc4c9133deea3f2d118b920f21c9462d a sh:PropertyShape ;
+    sh:class <http://confOf#Administrative_event> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://confOf#follows> .
+
+shape_int:a1bd3c2e3fe9f93b6ffa71aebf12957a8f733c48 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class [ rdf:rest ( <http://confOf#Contribution> <http://edas#Paper> ) ] ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path [ sh:alternativePath ( <http://confOf#writes> <http://edas#hasRelatedPaper> ) ] .
+
+shape_int:a423ca40fbd44299f2340501a50dfbac3890ea84 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path [ sh:alternativePath ( <http://confOf#hasSurname> <http://edas#hasLastName> ) ] ;
+    sh:pattern ".*" .
+
+shape_int:abe57b4324d5fdfe6d4aafc963b2e24cbe76fdbe a sh:PropertyShape ;
+    sh:class <http://edas#AcceptedPaper> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#relatedToPaper> .
+
+shape_int:b17dbb0b1fd41c59abb63f47b146a0fa5f5295d4 a sh:PropertyShape ;
+    sh:class <http://edas#Person> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasAttendee> .
+
+shape_int:b3d1f1fc6941c422e7eebc85130b6f9bcefef1b1 a sh:PropertyShape ;
+    sh:class <http://confOf#University> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://confOf#studyAt> .
+
+shape_int:b49b8c73b311ab96242b62fd85eef45cbf0971ec a sh:PropertyShape ;
+    rdfs:label "Conference Full Name" ;
+    sh:datatype xsd:string ;
+    sh:description "Conference Full Name" ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://edas#hasName> ;
+    sh:pattern ".*" .
+
+shape_int:bb81a1305d1047fb65ec920d4c9011452b88667e a sh:PropertyShape ;
+    sh:class <http://edas#Sponsorship> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#isProviderOf> .
+
+shape_int:c59ddb86013ffffbd27ac2bc5e1d26684391f85f a sh:PropertyShape ;
+    sh:class <http://edas#MealMenu> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasMenu> .
+
+shape_int:ca56cdef03061f6f6bea96bb635ca96ea0bdb630 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://confOf#hasTitle> ;
+    sh:pattern ".*" .
+
+shape_int:cdb5080218728f60734290497343edcdc488e29d a sh:PropertyShape ;
+    rdfs:label "Conference Registration Date and Time Deadline" ;
+    sh:datatype xsd:dateTime ;
+    sh:description "Conference Registration Date and Time Deadline" ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://edas#registrationDueOn> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:d30efad49c67f1dbe1eb642f31e919497dcf905d a sh:PropertyShape ;
+    sh:class <http://edas#Call> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasCall> .
+
+shape_int:d402ac97d0f252c8bef2b7599de2ccb39bf02dbe a sh:PropertyShape ;
+    sh:class <http://edas#PersonalReviewHistory> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasReviewHistory> .
+
+shape_int:df00bd63bc93de3384c09a31338591a609ca2d87 a sh:PropertyShape ;
+    rdfs:label "Conference Start Date and Time" ;
+    sh:datatype xsd:dateTime ;
+    sh:description "Conference Start Date and Time" ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://edas#startDate> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:eb4ea87398268775d4fc3f2f5a6be7990f81028b a sh:PropertyShape ;
+    rdfs:label "Conference Manuscript Date and Time Deadline" ;
+    sh:datatype xsd:dateTime ;
+    sh:description "Conference Manuscript Date and Time Deadline" ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://edas#manuscriptDueOn> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:ed639c0a3f796dbae13bca7b168ca8c37c2f35a2 a sh:PropertyShape ;
+    sh:class <http://edas#AcademicEvent> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#forEvent> .
+
+shape_int:ed734665a23982e510520bc9af2633413bed6cb5 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#hasHomePage> ;
+    sh:pattern ".*" .
+
+shape_int:ef2430866bd5e8c9da9b0ed8b9edc8b414e799f8 a sh:PropertyShape ;
+    rdfs:label "confTool",
+        "involved middle name" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool",
+        "involved middle name" ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path [ sh:alternativePath ( <http://confOf#hasFirstName> <http://edas#hasFirstName> ) ] ;
+    sh:pattern ".*" .
+
+shape_int:f3265fa7ca9c040c2ef1e4513fc008febb1ac7f4 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://confOf#starts_on> ;
+    sh:pattern ".*" .
+
+shape_int:f4eca27b4536b3990438468b1ca1bfe9c0abc3fe a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#remark> ;
+    sh:pattern ".*" .
+
+shape_int:f62b27cc94b618d66808bed184118e4fe6143bd2 a sh:PropertyShape ;
+    sh:class <http://edas#Conference> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#isMemberOf> .
+
+shape_int:f718a1667690dbff04cd54563a516208667cba00 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://confOf#contactEmail> ;
+    sh:pattern ".*" .
+
+shape_int:f78223adbdade8d540d200ea1db0a38ab62b32da a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://edas#hasStreet> ;
+    sh:pattern ".*" .
+
+shape_int:f842f0800440d926733cdf568fb342f402aa75ff a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class <http://confOf#Organization> ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://confOf#employedBy> .
+
+shape_int:fa8841e25eace879532596731238a06bcbaa7105 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://confOf#ends_on> ;
+    sh:pattern ".*" .
+
+shape_int:fc687222aa574b07318770d5f5576ef8d909e87d a sh:PropertyShape ;
+    sh:class <http://edas#ConferenceEvent> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#belongsToEvent> .
+
+shape_int:094474411f65c28a8d1d33c17905ebabfc445d72 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:or ( [ sh:class <http://edas#Author> ] [ sh:class <http://confOf#Author> ] ) ;
+    sh:path [ sh:alternativePath ( <http://confOf#writtenBy> <http://edas#isWrittenBy> ) ] .
+
+shape_int:0be3d697e2e7ffda29fc4b878c862097b985d1c8 a sh:PropertyShape ;
+    rdfs:label "confTool",
+        """value added tax
+""" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool",
+        """value added tax
+""" ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://confOf#hasVAT> ;
+    sh:pattern ".*" .
+
+shape_int:17e53ed0fb8dfdf23109b5e24c547470073b73e4 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://confOf#has_short_title> ;
+    sh:pattern ".*" .
+
+shape_int:201552d5fe1a546de7d212847a6840992e1baf12 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class <http://confOf#Country> ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://confOf#hasCountry> .
+
+shape_int:285ee6c866a512ba282c7bf0cab973592bb91394 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://confOf#has_title> ;
+    sh:pattern ".*" .
+
+shape_int:475714e22431e89e2e50dc07201dde9549a573a0 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://confOf#hasStreet> ;
+    sh:pattern ".*" .
+
+shape_int:554af1b0ed3abdcf4d752da6d6621af90688967c a sh:PropertyShape ;
+    sh:class <http://edas#ReviewRating> ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://edas#hasRating> ;
+    sh:qualifiedMinCount "1" .
+
+shape_int:735452db0beecfdf1c1c1dd83c3193549c5171e4 a sh:PropertyShape ;
+    rdfs:label """confTool
+""" ;
+    sh:datatype xsd:positiveInteger ;
+    sh:description """confTool
+""" ;
+    sh:minInclusive "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#minChoice> ;
+    sh:pattern "[\\-+]?[0-9]+" .
+
+shape_int:735723bd55bd23d924ea85a380ffb1980bd34e5a a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://confOf#hasPostalCode> ;
+    sh:pattern ".*" .
 
 shape_int:858c68b52542d982b07e6da64b492318a2038ebc a sh:PropertyShape ;
     rdfs:label "confTool",
@@ -603,35 +1178,13 @@ shape_int:9177343c26850eef82d0c88134a76f9d021977ab a sh:PropertyShape ;
     sh:path <http://confOf#maxChoice> ;
     sh:pattern "[\\-+]?[0-9]+" .
 
-shape_int:98ab7dccdc4c9133deea3f2d118b920f21c9462d a sh:PropertyShape ;
-    sh:class <http://confOf#Administrative_event> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://confOf#follows> .
-
 shape_int:a70783e07565adf6cb312566a71723f4214d910a a sh:PropertyShape ;
     sh:class <http://edas#Topic> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
     sh:path <http://edas#hasTopic> .
-
-shape_int:abe57b4324d5fdfe6d4aafc963b2e24cbe76fdbe a sh:PropertyShape ;
-    sh:class <http://edas#AcceptedPaper> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://edas#relatedToPaper> .
-
-shape_int:b17dbb0b1fd41c59abb63f47b146a0fa5f5295d4 a sh:PropertyShape ;
-    sh:class <http://edas#Person> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://edas#hasAttendee> .
-
-shape_int:beb1c53fbc1b871a9fc726f1a0825969b431c419 a sh:PropertyShape ;
-    sh:class <http://edas#Document> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://edas#hasRelatedDocument> .
-
-shape_int:c59ddb86013ffffbd27ac2bc5e1d26684391f85f a sh:PropertyShape ;
-    sh:class <http://edas#MealMenu> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://edas#hasMenu> .
 
 shape_int:c8a452bd95edfe37b9e75f845fc267a7b18a8111 a sh:PropertyShape ;
     rdfs:label "confTool" ;
@@ -644,18 +1197,13 @@ shape_int:c8a452bd95edfe37b9e75f845fc267a7b18a8111 a sh:PropertyShape ;
     sh:path <http://confOf#defaultChoice> ;
     sh:pattern "[\\-+]?[0-9]+" .
 
-shape_int:d402ac97d0f252c8bef2b7599de2ccb39bf02dbe a sh:PropertyShape ;
-    sh:class <http://edas#PersonalReviewHistory> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://edas#hasReviewHistory> .
-
-shape_int:d66a8a4a4e115f6c5a6652e5434f64f4e717578b a sh:PropertyShape ;
-    sh:datatype xsd:int ;
-    sh:maxInclusive "2147483647" ;
-    sh:minInclusive "-2147483648" ;
-    sh:nodeKind sh:Literal ;
-    sh:path <http://edas#hasCostAmount> ;
-    sh:pattern "[\\-+]?[0-9]+" .
+shape_int:cacd6433e7bd86c391e82c6d4bc1c5970af8e550 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class <http://confOf#City> ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://confOf#hasCity> .
 
 shape_int:e615a4bb69cffe910fcc3209efe6fd4aa6321345 a sh:PropertyShape ;
     sh:datatype xsd:string ;
@@ -663,47 +1211,19 @@ shape_int:e615a4bb69cffe910fcc3209efe6fd4aa6321345 a sh:PropertyShape ;
     sh:path <http://edas#hasEmail> ;
     sh:pattern ".*" .
 
-shape_int:ed639c0a3f796dbae13bca7b168ca8c37c2f35a2 a sh:PropertyShape ;
-    sh:class <http://edas#AcademicEvent> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://edas#forEvent> .
-
-shape_int:f3265fa7ca9c040c2ef1e4513fc008febb1ac7f4 a sh:PropertyShape ;
-    rdfs:label "confTool" ;
-    sh:datatype xsd:string ;
-    sh:description "confTool" ;
-    sh:maxCount "1" ;
-    sh:nodeKind sh:IRIOrLiteral ;
-    sh:path <http://confOf#starts_on> ;
-    sh:pattern ".*" .
-
-shape_int:f78223adbdade8d540d200ea1db0a38ab62b32da a sh:PropertyShape ;
-    sh:datatype xsd:string ;
-    sh:nodeKind sh:Literal ;
-    sh:path <http://edas#hasStreet> ;
-    sh:pattern ".*" .
-
-shape_int:fa8841e25eace879532596731238a06bcbaa7105 a sh:PropertyShape ;
-    rdfs:label "confTool" ;
-    sh:datatype xsd:string ;
-    sh:description "confTool" ;
-    sh:maxCount "1" ;
-    sh:nodeKind sh:IRIOrLiteral ;
-    sh:path <http://confOf#ends_on> ;
-    sh:pattern ".*" .
-
-shape_int:fc687222aa574b07318770d5f5576ef8d909e87d a sh:PropertyShape ;
-    sh:class <http://edas#ConferenceEvent> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://edas#belongsToEvent> .
-
 shape_int:f788eaa890e4baf7d733ef8bb9ae10131640a80e a sh:PropertyShape ;
     sh:class <http://edas#Call> ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path <http://edas#initiates> .
 
-shape_int:0a628308d479d3fb6dc62a8cb1ab44c1261ec0c0 a sh:PropertyShape ;
-    sh:class <http://edas#Paper> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
+shape_int:0aee9c287e81819d0a7005cdadd087bb5fda04a2 a sh:PropertyShape ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:or ( [ sh:class [ rdf:rest ( <http://confOf#Contribution> <http://edas#Paper> ) ] ] [ sh:class <http://edas#Paper> ] ) ;
     sh:path [ sh:alternativePath ( <http://confOf#reviewes> <http://edas#isReviewing> ) ] .
+
+shape_int:beb1c53fbc1b871a9fc726f1a0825969b431c419 a sh:PropertyShape ;
+    sh:class <http://edas#Document> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://edas#hasRelatedDocument> .
 

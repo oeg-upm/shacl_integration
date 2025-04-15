@@ -5,75 +5,97 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 shape_int:0eac7f98f19b6abb16bfe27acc8026e259c63639 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Best_Student_Paper_Supporter> .
 
 shape_int:13b8fe38a93b1e74be75932a7d667b18af065fa8 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Workshop> .
 
 shape_int:1eda23758be9e36e5e0d2a6a87de584aaca0193f a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Administrator> .
 
 shape_int:1f851e954227e686b1fb5a996d78e3aa52dda88f a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Banquet> .
 
 shape_int:1ff7c2ba3964a56bc44208ab3db99db4106fb6d2 a sh:NodeShape ;
     sh:description "Submission of contributions",
         "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Submission_event> .
 
 shape_int:210437b3f487158b35b7f3102e8afee62083bcf8 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Registration_Non-Member> .
 
 shape_int:22d507f2ba74e43593de3ae3f550bf202c076adc a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:05d1be7ecf66d0dda445673bf02d7a355be1b518 ;
     sh:targetClass <http://confOf#Paper>,
         <http://sigkdd#Paper> .
 
 shape_int:2701a94c0eb55cbd958a87dff3e959673ff1bf53 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Tutorial> .
 
 shape_int:2b12f36924915fa2101627fa804a0746579a911d a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:307a2836bf23dabb519d85c2b4f67f8c14223cf2,
         shape_int:62242a552af6d901335b71ff5ea70986927c553c ;
     sh:targetClass <http://sigkdd#Deadline> .
 
 shape_int:335ea08ac46e2b0977b44513be03c14eb31c2a32 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Main_office> .
 
 shape_int:37ea46b5942beaeb21bb4e06a14e4f7232d2a1b0 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Listener> .
 
 shape_int:3c479754a656219ea93170f219805bb427633eaf a sh:NodeShape ;
     sh:description "confTool",
         "price category - scholar" ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:b3d1f1fc6941c422e7eebc85130b6f9bcefef1b1 ;
     sh:targetClass <http://confOf#Scholar> .
 
 shape_int:3db7a78a415db407a0d887d8849b65e9f2694060 a sh:NodeShape ;
     sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Short_paper> .
 
 shape_int:40d0fb0d335e9e4093500269437c5157dc68543a a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Best_Paper_Awards_Committee> .
 
 shape_int:413c92eb1ae5fadd1e44cd74102440c756d0b274 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Gold_Supporter> .
 
 shape_int:4271627f4f0bef6104a95cca7bb21cda4d74503e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#City> .
 
 shape_int:42b32794792b48313cd1be9ca11b690d3e614683 a sh:NodeShape ;
     sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Student> .
 
 shape_int:44c3614fc7ee52e134ad0f395977125393554609 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#General_Chair> .
 
 shape_int:4ca3c285f0397d534766d0250452e42f91501e43 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:ab1051f29d48d3bcf011242f33388541aefa11c3 ;
     sh:targetClass <http://sigkdd#Author_of_paper_student> .
 
 shape_int:519255ae1f74ffc5ddd29979295c7572f048ad81 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:201552d5fe1a546de7d212847a6840992e1baf12,
         shape_int:475714e22431e89e2e50dc07201dde9549a573a0,
         shape_int:735723bd55bd23d924ea85a380ffb1980bd34e5a,
@@ -81,65 +103,82 @@ shape_int:519255ae1f74ffc5ddd29979295c7572f048ad81 a sh:NodeShape ;
     sh:targetClass <http://confOf#Organization> .
 
 shape_int:56955cd1c87dc47dbdc6ba420a4d2b44f0ce6d64 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Registration_Student> .
 
 shape_int:57234ed0c6129627eb819b3adeee4d01eba31e83 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Program_Committee> .
 
 shape_int:5b4c6c96933c0872ab39fc7562b955baf4bdbbf6 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Best_Student_Paper_Award> .
 
 shape_int:5fda23d62015b99fb2a9f86b38bcdf2bdf7609c8 a sh:NodeShape ;
     sh:description "confTool" ;
-    sh:property shape_int:596756a98415fcbb9d78ae42d79435faf2e5cfa1,
-        shape_int:a26d84c21efd099c4cf811a322e18e03da859551,
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:a26d84c21efd099c4cf811a322e18e03da859551,
         shape_int:b764e67f0b56280d2970db4e9441f36343d3982d,
+        shape_int:c8ba1db9a2e97d80836f4b12886f5aa4a89f5eb9,
         shape_int:eda75a6f01eaedf2d8b85bc43ac813b1fbb97f63 ;
     sh:targetClass <http://confOf#Author>,
         <http://sigkdd#Author> .
 
 shape_int:62b2986bd44b8a03e9d234d0bdf06fa200f2fcc9 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Deadline_Abstract_Submission> .
 
 shape_int:678a4ca44b0581f2801336d40bd3c9ca46a47b96 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Invited_Speaker> .
 
 shape_int:6853c98a6f4358bbfed1b3b9c81d308649299b0f a sh:NodeShape ;
     sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Member> .
 
 shape_int:715432dcf30be1042d0a59bfe45bed957aad7a9a a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#University> .
 
 shape_int:779943a369fc5c79b672bebcb0bbcfd188bd8f3c a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Organizing_Committee> .
 
 shape_int:7a1994999d181deea68e4304b3346e78f838ecb7 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Company> .
 
 shape_int:7c23b0d99698b57c5cb21fafcb8a8daf127386c6 a sh:NodeShape ;
-    sh:property shape_int:254392317688520e45cc92e07812b3209d4841eb ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:bf6d6959ae9a4e77afec8c55cb03c1350a73d266 ;
     sh:targetClass <http://sigkdd#Speaker> .
 
 shape_int:7e13bd176f89a12f0b614b55ffc19c14515ef920 a sh:NodeShape ;
     sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Topic> .
 
 shape_int:7fc24a6b73df8c830b509366468c6bee8e7ca58c a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Conference_hall> .
 
 shape_int:8010d1f4d0696ce16febddf3dda682cb3e5060c3 a sh:NodeShape ;
     sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Assistant> .
 
 shape_int:85d18fb02425811ac124d64326394380d66f2d01 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:ab1051f29d48d3bcf011242f33388541aefa11c3 ;
     sh:targetClass <http://sigkdd#Author_of_paper> .
 
 shape_int:86301b35b741a6b0bf9a33cdf42dd470048f17b4 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Organizator> .
 
 shape_int:8a1e29b3dd009e1104338701230be5d7a38b1fed a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:11bad9f46b27cd2dbe8a02e66b6eab58fff79c06,
         shape_int:2412dd1ca31808f9cb580a65f6bb92b29822f16a,
         shape_int:80ee18bd99309809362a1a5b8febfab22f5d5599,
@@ -149,61 +188,74 @@ shape_int:8a1e29b3dd009e1104338701230be5d7a38b1fed a sh:NodeShape ;
         <http://sigkdd#Conference> .
 
 shape_int:8b14eacea95cd32c821d01b863123d9a329cbce6 a sh:NodeShape ;
+    sh:description "confTool",
+        "price category - science worker" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Science_Worker> .
 
 shape_int:8c41ae88467fe5bbad09fcd488662b25c3ec5333 a sh:NodeShape ;
     sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:1ad71c6131aa4218e90a808ad9e2292bb8a94843,
         shape_int:201552d5fe1a546de7d212847a6840992e1baf12,
         shape_int:2574d8748b74077fe98080cff99b577a59d09611,
         shape_int:28fb16a0bb2bf1c6d86186272c99a0a0c3fde48e,
         shape_int:475714e22431e89e2e50dc07201dde9549a573a0,
         shape_int:64df91ab0cdfad820389cbb0b3dc23fed128aa43,
+        shape_int:69782ca265eab7422d20b208178a0a1036c876c7,
         shape_int:735723bd55bd23d924ea85a380ffb1980bd34e5a,
         shape_int:80ae5e5ef5415c0ed7a7ad2838a39ddacb719f0e,
-        shape_int:85a9a1fb40c06976db80d3d05ec8ef1ad4d70eba,
-        shape_int:b09cb6531dab08038c91477752b8d2588bffdb7f,
+        shape_int:8c2458e78f61bf9882a70e67b648caddc3b6d44b,
         shape_int:bf7f7a303f99f18f7291e731ec0aceea93d85fa0,
         shape_int:cacd6433e7bd86c391e82c6d4bc1c5970af8e550,
-        shape_int:e508f166aa658aa54c63f3df5637f32d609f0111,
         shape_int:ed734665a23982e510520bc9af2633413bed6cb5,
+        shape_int:f34efd06f78935e34108f617e7a38b2cc23a4cf2,
         shape_int:f842f0800440d926733cdf568fb342f402aa75ff ;
     sh:targetClass <http://confOf#Person>,
         <http://sigkdd#Person> .
 
 shape_int:8d4e4ef3ea5252ec5235e4b1dd463ae9c302422c a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Regular> .
 
 shape_int:933933bc4ece95b961b00300343ade8be0e0b268 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Best_Research_Paper_Award> .
 
 shape_int:982d5a73469ace67d9bb8ac42b0697256070bb9a a sh:NodeShape ;
     sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:38f9f0c6f83078c66b0f87094262d744daab33d0,
-        shape_int:511b18dfeeb72f91f16fc70b45ad5b590b0847fc,
         shape_int:529cd3d64231667aa8d01f2eee503b4ddf29e554,
         shape_int:64beb30a7ebd81eceec4041332e367760fc14bba,
+        shape_int:ced97bb065c0c231b01856077f4990836bd9f52a,
         shape_int:d7145be5c6c3ebe3c6298ba679ee0a4791a28df0,
         shape_int:f4eca27b4536b3990438468b1ca1bfe9c0abc3fe,
         shape_int:f718a1667690dbff04cd54563a516208667cba00 ;
     sh:targetClass <http://confOf#Contribution> .
 
 shape_int:9c4ba7d047eb56093b34e5dc3e51e5fcc74603f4 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Hotel> .
 
 shape_int:9d6ef3b1e64e38fa9c417343a224346184f26e05 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:2d29b61423d78c65a70123f4878497612e71d9b0,
         shape_int:98ab7dccdc4c9133deea3f2d118b920f21c9462d ;
     sh:targetClass <http://confOf#Administrative_event> .
 
 shape_int:9dda9aa776653be989f44d12e9d628d418077f33 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Trip> .
 
 shape_int:9f094fedb59140f952bc50b8fd0b3352afeac424 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:88552b40e15528211b212bde1d05b413fd4871b7 ;
     sh:targetClass <http://sigkdd#Award> .
 
 shape_int:9f7021d7f6f13f7a53ffda6a4490bbe5129bf474 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:0be3d697e2e7ffda29fc4b878c862097b985d1c8,
         shape_int:17e53ed0fb8dfdf23109b5e24c547470073b73e4,
         shape_int:285ee6c866a512ba282c7bf0cab973592bb91394,
@@ -215,9 +267,11 @@ shape_int:9f7021d7f6f13f7a53ffda6a4490bbe5129bf474 a sh:NodeShape ;
 
 shape_int:a33539ca77a6c42fd7a1e50aef1516b3a87d7c85 a sh:NodeShape ;
     sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Poster> .
 
 shape_int:a6efaa1b2811d3c18b7a991f40c33495d9c590a4 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:2e408cf5794d4d8cd6ad51203db4727df8897fa6,
         shape_int:549cb2047834450cdaf250de8c885ac8cae509d3,
         shape_int:d41c713ade4939aec1a808e0c2125f7e65ef0fe0 ;
@@ -225,22 +279,27 @@ shape_int:a6efaa1b2811d3c18b7a991f40c33495d9c590a4 a sh:NodeShape ;
 
 shape_int:a77366e97a2bf514bbc87a66e670fd0ba7173892 a sh:NodeShape ;
     sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:77f3525935c53e2a9ded2138da33b4acff1afaba ;
     sh:targetClass <http://confOf#Participant> .
 
 shape_int:ab5d4781d4f4a9183de71e85992e4091e9d3641a a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Registration_SIGMOD_Member> .
 
 shape_int:ad40f26fd5aaf745721cb3db6ca4b7aa4831455e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Registration_SIGKDD_Member> .
 
 shape_int:ad8919ace091b14011c6439cfd5e1707b58f5abd a sh:NodeShape ;
     sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:f3265fa7ca9c040c2ef1e4513fc008febb1ac7f4,
         shape_int:fa8841e25eace879532596731238a06bcbaa7105 ;
     sh:targetClass <http://confOf#Event> .
 
 shape_int:ade3631d5fe3d7c3b437937f25c95ea6f4bbf032 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:0be3d697e2e7ffda29fc4b878c862097b985d1c8,
         shape_int:17e53ed0fb8dfdf23109b5e24c547470073b73e4,
         shape_int:285ee6c866a512ba282c7bf0cab973592bb91394,
@@ -248,16 +307,18 @@ shape_int:ade3631d5fe3d7c3b437937f25c95ea6f4bbf032 a sh:NodeShape ;
         shape_int:735452db0beecfdf1c1c1dd83c3193549c5171e4,
         shape_int:858c68b52542d982b07e6da64b492318a2038ebc,
         shape_int:9177343c26850eef82d0c88134a76f9d021977ab,
-        shape_int:c8a452bd95edfe37b9e75f845fc267a7b18a8111,
-        shape_int:e74d1b262ca1745bc3b2f14bfd2fb0fe490cd673 ;
+        shape_int:b3df39dd4a83515b9bbf649295bd1132c782b7f5,
+        shape_int:c8a452bd95edfe37b9e75f845fc267a7b18a8111 ;
     sh:targetClass <http://confOf#Working_event> .
 
 shape_int:adfb03aad8a7ead9c8d7176adb61544609e8b20e a sh:NodeShape ;
     sh:description "Reviewing procedure for submitted contributions",
         "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Reviewing_event> .
 
 shape_int:aec727a7ef6c6d467bcd040cfa1500ec94019a04 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:0c36e1c7373eae4991a42943963c87d8e1699d7d,
         shape_int:0eecb8b76fb26b5c7cd5d8d562f1845da4e860f4,
         shape_int:2aa89b8dd8dd9e6e55b817c6c9e7bd804c15e57f ;
@@ -266,91 +327,121 @@ shape_int:aec727a7ef6c6d467bcd040cfa1500ec94019a04 a sh:NodeShape ;
 shape_int:b268e899dce5e3284b67eaac0e9840baba2e0d04 a sh:NodeShape ;
     sh:description "Registration of new ConfTool users",
         "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Registration_of_participants_event> .
 
 shape_int:b5146164b1f0b8ed0abbcca059745ccc3045e861 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Platinum_Supporter> .
 
 shape_int:bd306de3d4ad4c38cedc04e0a59d8e3c67b056c0 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Sponzor_fee> .
 
 shape_int:c32a0147f2e47a52e082fe2dd4b6aaa36084a4cb a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Place> .
 
 shape_int:c6e89c9caf21476cc928ffc4707e00550f300343 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Fee> .
 
 shape_int:cbf217d4cfea1647891d6270c640d24f61b29e12 a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Volunteer> .
 
 shape_int:cd34ef6af6d3fdc6d5791dbe3722191916745884 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Silver_Supporter> .
 
 shape_int:ceee32dfb44dbc2b396d5659cb92839522e14aa2 a sh:NodeShape ;
     sh:description "Results of the reviewing procedures, accessable to authors",
         "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Reviewing_results_event> .
 
 shape_int:d523ebbd10146cdfd39dee077f04c9d08468d0bc a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Country> .
 
 shape_int:d52cdf2f190018aa1adc6eb9ce57b40dae9530c9 a sh:NodeShape ;
     sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Chair_PC>,
         <http://sigkdd#Program_Chair> .
 
 shape_int:d79da395b5d7a09c6439a5f2660d8c568186ab7e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:05d1be7ecf66d0dda445673bf02d7a355be1b518 ;
     sh:targetClass <http://sigkdd#Abstract> .
 
 shape_int:d86049e5a76410d4d5e530d107502d10f49d2301 a sh:NodeShape ;
+    sh:description "Reviewer",
+        "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:06d4d8d918e3ba5a56507b85beb8f683678fea8e,
-        shape_int:0a628308d479d3fb6dc62a8cb1ab44c1261ec0c0 ;
+        shape_int:37ba79e36fd66df8dc1031e036ff37e4db7aa0fd ;
     sh:targetClass <http://confOf#Member_PC>,
         <http://sigkdd#Program_Committee_member> .
 
 shape_int:d928bfee825c93e2502c2b04eeeddd1ffaf790c6 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Reception> .
 
 shape_int:dbeba0c8cad255e054600b7ac77942cafdaa20fc a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Webmaster> .
 
 shape_int:dd09b3c742ff37a9a668204247e0714f52ac0a89 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:28fb16a0bb2bf1c6d86186272c99a0a0c3fde48e,
         shape_int:621002dc0a8587af5721316323d8eb1df25d3cab,
         shape_int:c1dcff296dc50df740e062f9a56705d52a8c33f4 ;
     sh:targetClass <http://sigkdd#Sponzor> .
 
 shape_int:e0c7372138924f5b837519e42b156628f387a2e0 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Best_Applications_Paper_Award> .
 
 shape_int:e214b8a29923056887b7edf6635d90dcbb2abe88 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:05d1be7ecf66d0dda445673bf02d7a355be1b518,
-        shape_int:97d77483342726b96ddca7d8f52c102bb26aabb4 ;
+        shape_int:0b3a6703c21cd8e77c26ebe1a27baef82947180a ;
     sh:targetClass <http://sigkdd#Document> .
 
 shape_int:e29a79fe0c349724caeaa1762fa917f5543248ca a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Review> .
 
 shape_int:e982ab25ccbbc4a304822e11773324e7c2a09b34 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Deadline_Paper_Submission> .
 
 shape_int:e9ebd1b0ea620496a3fe44bae2cb7e168a33ae85 a sh:NodeShape ;
+    sh:description "Final upload of accepted contributions",
+        "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Camera_Ready_event> .
 
 shape_int:eafd49afdab5b29f0b4a91a0876e110bbf9c9c96 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Bronze_Supporter> .
 
 shape_int:ecc133c566704dc685b098b5e82d982e1c0b439a a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Exhibitor> .
 
 shape_int:ee6a2e6aa48109a18c5b331192dd7c032d58daca a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Organizing_Committee_member> .
 
 shape_int:f43dba5677dfd5e3e6793095b56bfab6f533b68f a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Committee> .
 
 shape_int:fc6162d32d60dfa4f7fb7fd31fff408ce312ad2f a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://sigkdd#Deadline_Author_notification> .
 
 shape_int:06d4d8d918e3ba5a56507b85beb8f683678fea8e a sh:PropertyShape ;
@@ -360,10 +451,10 @@ shape_int:06d4d8d918e3ba5a56507b85beb8f683678fea8e a sh:PropertyShape ;
     sh:nodeKind sh:IRI ;
     sh:path <http://confOf#expertOn> .
 
-shape_int:0a628308d479d3fb6dc62a8cb1ab44c1261ec0c0 a sh:PropertyShape ;
-    sh:class <http://confOf#Contribution> ;
-    sh:nodeKind sh:IRI ;
-    sh:path <http://confOf#reviewes> .
+shape_int:0b3a6703c21cd8e77c26ebe1a27baef82947180a a sh:PropertyShape ;
+    sh:class <http://sigkdd#Speaker> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://sigkdd#presentationed_by> .
 
 shape_int:0c36e1c7373eae4991a42943963c87d8e1699d7d a sh:PropertyShape ;
     sh:class <http://sigkdd#Sponzor> ;
@@ -394,12 +485,6 @@ shape_int:2412dd1ca31808f9cb580a65f6bb92b29822f16a a sh:PropertyShape ;
     sh:nodeKind sh:Literal ;
     sh:path <http://sigkdd#City_of_conference> ;
     sh:pattern ".*" .
-
-shape_int:254392317688520e45cc92e07812b3209d4841eb a sh:PropertyShape ;
-    sh:class <http://sigkdd#Document> ;
-    sh:nodeKind sh:IRI ;
-    sh:path <http://sigkdd#presentation> ;
-    sh:qualifiedMinCount "1" .
 
 shape_int:2574d8748b74077fe98080cff99b577a59d09611 a sh:PropertyShape ;
     sh:datatype xsd:string ;
@@ -432,6 +517,11 @@ shape_int:307a2836bf23dabb519d85c2b4f67f8c14223cf2 a sh:PropertyShape ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path <http://sigkdd#designed_by> .
 
+shape_int:37ba79e36fd66df8dc1031e036ff37e4db7aa0fd a sh:PropertyShape ;
+    sh:class <http://confOf#Contribution> ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://confOf#reviewes> .
+
 shape_int:38f9f0c6f83078c66b0f87094262d744daab33d0 a sh:PropertyShape ;
     rdfs:label "confTool" ;
     sh:datatype xsd:string ;
@@ -440,13 +530,6 @@ shape_int:38f9f0c6f83078c66b0f87094262d744daab33d0 a sh:PropertyShape ;
     sh:nodeKind sh:Literal ;
     sh:path <http://confOf#hasKeyword> ;
     sh:pattern ".*" .
-
-shape_int:511b18dfeeb72f91f16fc70b45ad5b590b0847fc a sh:PropertyShape ;
-    rdfs:label "confTool" ;
-    sh:class <http://confOf#Author> ;
-    sh:description "confTool" ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://confOf#writtenBy> .
 
 shape_int:529cd3d64231667aa8d01f2eee503b4ddf29e554 a sh:PropertyShape ;
     rdfs:label "confTool" ;
@@ -463,13 +546,6 @@ shape_int:549cb2047834450cdaf250de8c885ac8cae509d3 a sh:PropertyShape ;
     sh:nodeKind sh:Literal ;
     sh:path <http://sigkdd#Currency> ;
     sh:pattern ".*" .
-
-shape_int:596756a98415fcbb9d78ae42d79435faf2e5cfa1 a sh:PropertyShape ;
-    rdfs:label "confTool" ;
-    sh:class <http://confOf#Contribution> ;
-    sh:description "confTool" ;
-    sh:nodeKind sh:IRI ;
-    sh:path <http://confOf#writes> .
 
 shape_int:621002dc0a8587af5721316323d8eb1df25d3cab a sh:PropertyShape ;
     sh:datatype xsd:string ;
@@ -499,6 +575,16 @@ shape_int:64df91ab0cdfad820389cbb0b3dc23fed128aa43 a sh:PropertyShape ;
     sh:path <http://sigkdd#Name> ;
     sh:pattern ".*" .
 
+shape_int:69782ca265eab7422d20b208178a0a1036c876c7 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#hasSurname> ;
+    sh:pattern ".*" .
+
 shape_int:77f3525935c53e2a9ded2138da33b4acff1afaba a sh:PropertyShape ;
     sh:datatype xsd:boolean ;
     sh:maxCount "1" ;
@@ -520,36 +606,12 @@ shape_int:80ee18bd99309809362a1a5b8febfab22f5d5599 a sh:PropertyShape ;
     sh:path <http://sigkdd#Start_of_conference> ;
     sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
 
-shape_int:85a9a1fb40c06976db80d3d05ec8ef1ad4d70eba a sh:PropertyShape ;
-    rdfs:label "confTool" ;
-    sh:datatype xsd:string ;
-    sh:description "confTool" ;
-    sh:minCount "1" ;
-    sh:nodeKind sh:Literal ;
-    sh:path [ sh:alternativePath ( <http://confOf#hasEmail> <http://sigkdd#E-mail> ) ] ;
-    sh:pattern ".*" .
-
 shape_int:88552b40e15528211b212bde1d05b413fd4871b7 a sh:PropertyShape ;
     sh:nodeKind sh:IRIOrLiteral ;
     sh:path <http://sigkdd#awarded_by> ;
     sh:qualifiedMinCount "1" .
 
-shape_int:97d77483342726b96ddca7d8f52c102bb26aabb4 a sh:PropertyShape ;
-    sh:class <http://sigkdd#Speaker> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://sigkdd#presentationed_by> .
-
-shape_int:98ab7dccdc4c9133deea3f2d118b920f21c9462d a sh:PropertyShape ;
-    sh:class <http://confOf#Administrative_event> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://confOf#follows> .
-
-shape_int:a26d84c21efd099c4cf811a322e18e03da859551 a sh:PropertyShape ;
-    sh:class <http://sigkdd#Award> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://sigkdd#obtain> .
-
-shape_int:b09cb6531dab08038c91477752b8d2588bffdb7f a sh:PropertyShape ;
+shape_int:8c2458e78f61bf9882a70e67b648caddc3b6d44b a sh:PropertyShape ;
     rdfs:label "confTool",
         "involved middle name" ;
     sh:datatype xsd:string ;
@@ -561,10 +623,27 @@ shape_int:b09cb6531dab08038c91477752b8d2588bffdb7f a sh:PropertyShape ;
     sh:path <http://confOf#hasFirstName> ;
     sh:pattern ".*" .
 
+shape_int:98ab7dccdc4c9133deea3f2d118b920f21c9462d a sh:PropertyShape ;
+    sh:class <http://confOf#Administrative_event> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://confOf#follows> .
+
+shape_int:a26d84c21efd099c4cf811a322e18e03da859551 a sh:PropertyShape ;
+    sh:class <http://sigkdd#Award> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://sigkdd#obtain> .
+
 shape_int:b3d1f1fc6941c422e7eebc85130b6f9bcefef1b1 a sh:PropertyShape ;
     sh:class <http://confOf#University> ;
     sh:nodeKind sh:IRI ;
     sh:path <http://confOf#studyAt> .
+
+shape_int:b3df39dd4a83515b9bbf649295bd1132c782b7f5 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class <http://confOf#Topic> ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://confOf#hasTopic> .
 
 shape_int:b6a52c950cc17492ee8bc1f958c501ec0ae8af2e a sh:PropertyShape ;
     sh:class <http://sigkdd#ACM_SIGKDD> ;
@@ -577,6 +656,12 @@ shape_int:b764e67f0b56280d2970db4e9441f36343d3982d a sh:PropertyShape ;
     sh:path <http://sigkdd#submit> ;
     sh:qualifiedMinCount "1" .
 
+shape_int:bf6d6959ae9a4e77afec8c55cb03c1350a73d266 a sh:PropertyShape ;
+    sh:class <http://sigkdd#Document> ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://sigkdd#presentation> ;
+    sh:qualifiedMinCount "1" .
+
 shape_int:bf7f7a303f99f18f7291e731ec0aceea93d85fa0 a sh:PropertyShape ;
     sh:class <http://sigkdd#Place> ;
     sh:nodeKind sh:IRI ;
@@ -586,6 +671,20 @@ shape_int:c1dcff296dc50df740e062f9a56705d52a8c33f4 a sh:PropertyShape ;
     sh:class <http://sigkdd#ACM_SIGKDD> ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path <http://sigkdd#searched_by> .
+
+shape_int:c8ba1db9a2e97d80836f4b12886f5aa4a89f5eb9 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class <http://confOf#Contribution> ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
+    sh:path <http://confOf#writes> .
+
+shape_int:ced97bb065c0c231b01856077f4990836bd9f52a a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class <http://confOf#Author> ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://confOf#writtenBy> .
 
 shape_int:d41c713ade4939aec1a808e0c2125f7e65ef0fe0 a sh:PropertyShape ;
     sh:datatype xsd:int ;
@@ -601,23 +700,6 @@ shape_int:d7145be5c6c3ebe3c6298ba679ee0a4791a28df0 a sh:PropertyShape ;
     sh:description "confTool" ;
     sh:nodeKind sh:IRI ;
     sh:path <http://confOf#dealsWith> .
-
-shape_int:e508f166aa658aa54c63f3df5637f32d609f0111 a sh:PropertyShape ;
-    rdfs:label "confTool" ;
-    sh:datatype xsd:string ;
-    sh:description "confTool" ;
-    sh:maxCount "1" ;
-    sh:minCount "1" ;
-    sh:nodeKind sh:Literal ;
-    sh:path <http://confOf#hasSurname> ;
-    sh:pattern ".*" .
-
-shape_int:e74d1b262ca1745bc3b2f14bfd2fb0fe490cd673 a sh:PropertyShape ;
-    rdfs:label "confTool" ;
-    sh:class <http://confOf#Topic> ;
-    sh:description "confTool" ;
-    sh:nodeKind sh:IRI ;
-    sh:path <http://confOf#hasTopic> .
 
 shape_int:eb249611e93b64f2a7558f1d64cf1e204a2b5aff a sh:PropertyShape ;
     sh:datatype xsd:dateTime ;
@@ -645,6 +727,15 @@ shape_int:f3265fa7ca9c040c2ef1e4513fc008febb1ac7f4 a sh:PropertyShape ;
     sh:maxCount "1" ;
     sh:nodeKind sh:Literal ;
     sh:path <http://confOf#starts_on> ;
+    sh:pattern ".*" .
+
+shape_int:f34efd06f78935e34108f617e7a38b2cc23a4cf2 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:Literal ;
+    sh:path [ sh:alternativePath ( <http://confOf#hasEmail> <http://sigkdd#E-mail> ) ] ;
     sh:pattern ".*" .
 
 shape_int:f4eca27b4536b3990438468b1ca1bfe9c0abc3fe a sh:PropertyShape ;

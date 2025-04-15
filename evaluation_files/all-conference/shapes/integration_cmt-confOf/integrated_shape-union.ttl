@@ -5,9 +5,12 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 shape_int:13b8fe38a93b1e74be75932a7d667b18af065fa8 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Workshop> .
 
 shape_int:1eda23758be9e36e5e0d2a6a87de584aaca0193f a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:1aa97d8b5a664df758ebfaf9d6225bd79741f154,
         shape_int:2453f625f87507c9726a28e42d67574ca3a8ad88,
         shape_int:4f2932852465d21927491384bb759773f524bf3f,
@@ -21,73 +24,149 @@ shape_int:1eda23758be9e36e5e0d2a6a87de584aaca0193f a sh:NodeShape ;
         <http://confOf#Administrator> .
 
 shape_int:1f851e954227e686b1fb5a996d78e3aa52dda88f a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Banquet> .
 
 shape_int:1ff7c2ba3964a56bc44208ab3db99db4106fb6d2 a sh:NodeShape ;
     sh:description "Submission of contributions",
         "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Submission_event> .
 
 shape_int:22d507f2ba74e43593de3ae3f550bf202c076adc a sh:NodeShape ;
-    sh:targetClass <http://cmt#PaperFullVersion>,
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:38f9f0c6f83078c66b0f87094262d744daab33d0,
+        shape_int:4db76df0e035b99d73a61ababc50b2a9be8d178e,
+        shape_int:529cd3d64231667aa8d01f2eee503b4ddf29e554,
+        shape_int:5b986781761f900573d0af209eec7d98db80fc8b,
+        shape_int:64a22182185465a9a7d349c339521f9414e42357,
+        shape_int:6c23cdeb5bea0adde5676452027a705513ccb5c1,
+        shape_int:7fba8d7b9ece0a304ec9c0e29b7c90f296892d43,
+        shape_int:c0d31bc8c41e01561637f82a49296d5327f947b0,
+        shape_int:ca56cdef03061f6f6bea96bb635ca96ea0bdb630,
+        shape_int:d5e88d38d86ed7a62058d38698f1007eb76c9434,
+        shape_int:d7d037568c6c891c053c7a4cb3a499d540ff2e98,
+        shape_int:f4bfb6ce63802c76b21d7fb075501d820d0c946e,
+        shape_int:f4eca27b4536b3990438468b1ca1bfe9c0abc3fe,
+        shape_int:f718a1667690dbff04cd54563a516208667cba00 ;
+    sh:targetClass <http://cmt#Paper>,
+        <http://cmt#PaperFullVersion>,
+        <http://confOf#Contribution>,
         <http://confOf#Paper> .
 
 shape_int:2701a94c0eb55cbd958a87dff3e959673ff1bf53 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Tutorial> .
 
+shape_int:3c479754a656219ea93170f219805bb427633eaf a sh:NodeShape ;
+    sh:description "confTool",
+        "price category - scholar" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:b3d1f1fc6941c422e7eebc85130b6f9bcefef1b1 ;
+    sh:targetClass <http://confOf#Scholar> .
+
 shape_int:3db7a78a415db407a0d887d8849b65e9f2694060 a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Short_paper> .
 
 shape_int:4271627f4f0bef6104a95cca7bb21cda4d74503e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#City> .
 
 shape_int:42b32794792b48313cd1be9ca11b690d3e614683 a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Student> .
 
+shape_int:519255ae1f74ffc5ddd29979295c7572f048ad81 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:201552d5fe1a546de7d212847a6840992e1baf12,
+        shape_int:475714e22431e89e2e50dc07201dde9549a573a0,
+        shape_int:735723bd55bd23d924ea85a380ffb1980bd34e5a,
+        shape_int:cacd6433e7bd86c391e82c6d4bc1c5970af8e550 ;
+    sh:targetClass <http://confOf#Organization> .
+
+shape_int:5ef13827fe0d3996c7c31a108e779b8b99ecf61b a sh:NodeShape ;
+    sh:description "Reviewer",
+        "The Program Committee consists of all members of the conference except for Authors who are not also Reviewers.",
+        "confTool" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:06d4d8d918e3ba5a56507b85beb8f683678fea8e,
+        shape_int:9c6bff39ca47fef706399f2159e203230753d78e,
+        shape_int:af90b19da2d3afcfdaa7d3b59f152e04c35f7d83,
+        shape_int:b338eb4e7e2c8f1baf7dc8c4cfb2a4c22a19fa6b,
+        shape_int:c416dbf1a0871cb18fadf0311b58a34efeb4c608 ;
+    sh:targetClass <http://cmt#ProgramCommitteeMember>,
+        <http://confOf#Member_PC> .
+
+shape_int:5fda23d62015b99fb2a9f86b38bcdf2bdf7609c8 a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:55d6fb9224592a052c227bc564cd5ba0ae42c3ea,
+        shape_int:b621d86541c28ce30d847c0c31e08b3aa2cfd1d2,
+        shape_int:c36f954c99cd23a696beaf5289518855e74e1c7e ;
+    sh:targetClass <http://cmt#Author>,
+        <http://confOf#Author> .
+
 shape_int:6853c98a6f4358bbfed1b3b9c81d308649299b0f a sh:NodeShape ;
-    sh:property shape_int:4f3223d27f703dea8249cfa9f1955854f0cb0102 ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:f62b27cc94b618d66808bed184118e4fe6143bd2 ;
     sh:targetClass <http://cmt#ConferenceMember>,
         <http://confOf#Member> .
 
 shape_int:6d24aab0d5eeb6f64c0c9e3842f6bd075668c6e9 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:fc198ab96b0c27af22cf98089d7e6d37e6c25068 ;
     sh:targetClass <http://cmt#Co-author> .
 
 shape_int:6f178e1fcd8a91b3171b21f73ac2d40bb2d4a1e0 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://cmt#Rejection> .
 
 shape_int:70fbccba5dd309dcd379071f67c0e5bb310b7585 a sh:NodeShape ;
     sh:description "A special type of Reviewer.  There can be any number of Reviewers for a given paper, but only one Meta-Reviewer.  The Meta-Reviewer can go over all the reviews submitted for the paper and submit their own review.  Questions for the Meta-Reviewer can be different from those for a normal Reviewer.  Their role is to ensure that the reviews are good and consistent. The decision to use Meta-Reviewers is optional, and must be set before paper assignment occurs." ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://cmt#Meta-Reviewer> .
 
 shape_int:715432dcf30be1042d0a59bfe45bed957aad7a9a a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#University> .
 
 shape_int:75367ef400b65ad19876ea80659285fd6e3babf4 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:b621d86541c28ce30d847c0c31e08b3aa2cfd1d2 ;
     sh:targetClass <http://cmt#Chairman> .
 
 shape_int:7a1994999d181deea68e4304b3346e78f838ecb7 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Company> .
 
 shape_int:7e13bd176f89a12f0b614b55ffc19c14515ef920 a sh:NodeShape ;
     sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://cmt#SubjectArea>,
         <http://confOf#Topic> .
 
 shape_int:7ecfcbb41cd26c30fe1d6741632d611526ffa27e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:b621d86541c28ce30d847c0c31e08b3aa2cfd1d2 ;
     sh:targetClass <http://cmt#AssociatedChair> .
 
 shape_int:7f59a1f1d55a7cbd48c76e9f75723ccb6c63f3e0 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://cmt#Decision> .
 
 shape_int:8010d1f4d0696ce16febddf3dda682cb3e5060c3 a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Assistant> .
 
 shape_int:8a1e29b3dd009e1104338701230be5d7a38b1fed a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:11b104d56d08b453ebe281cf557c66aae0bd5b8f,
-        shape_int:34992d7c8fc46672d04b46f9eb9652435fa4e5b5,
         shape_int:43380e87d416d303a76e579d519f6956df2c4129,
         shape_int:47397882eaafb54fb616637fe3687f7f2353adab,
         shape_int:6e5d99107112af9add6111657e87e6efd0851ccc,
@@ -95,6 +174,7 @@ shape_int:8a1e29b3dd009e1104338701230be5d7a38b1fed a sh:NodeShape ;
         shape_int:88bba170cbdcb6a0da0c7df686069785335ae6b5,
         shape_int:8bc506bc95d42b4f7c04a8228933ee7d09ccee44,
         shape_int:8c1915f5efbfa2f3bbf9a8b8296118c71d50ce69,
+        shape_int:8f08d0ca3672a17f9fa5fa9498e31443de77af26,
         shape_int:941715c8173589c63316612c245eb7b044990973,
         shape_int:a6affde136a2ce99e1f7d869f0ee89544a337d2b,
         shape_int:b75ae499111bb9a017b6ccd9017ac2b0266becaa,
@@ -104,23 +184,51 @@ shape_int:8a1e29b3dd009e1104338701230be5d7a38b1fed a sh:NodeShape ;
         <http://confOf#Conference> .
 
 shape_int:8b14eacea95cd32c821d01b863123d9a329cbce6 a sh:NodeShape ;
+    sh:description "confTool",
+        "price category - science worker" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Science_Worker> .
 
+shape_int:8c41ae88467fe5bbad09fcd488662b25c3ec5333 a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:11b104d56d08b453ebe281cf557c66aae0bd5b8f,
+        shape_int:1ad71c6131aa4218e90a808ad9e2292bb8a94843,
+        shape_int:201552d5fe1a546de7d212847a6840992e1baf12,
+        shape_int:3dd01ca6cac6c1e0eb4898996b0b6cd4564a47e1,
+        shape_int:475714e22431e89e2e50dc07201dde9549a573a0,
+        shape_int:735723bd55bd23d924ea85a380ffb1980bd34e5a,
+        shape_int:80ae5e5ef5415c0ed7a7ad2838a39ddacb719f0e,
+        shape_int:90970dcca78b9b5fb99b9b3cd48ce3050356e4bb,
+        shape_int:b09cb6531dab08038c91477752b8d2588bffdb7f,
+        shape_int:cacd6433e7bd86c391e82c6d4bc1c5970af8e550,
+        shape_int:e508f166aa658aa54c63f3df5637f32d609f0111,
+        shape_int:ed734665a23982e510520bc9af2633413bed6cb5,
+        shape_int:f842f0800440d926733cdf568fb342f402aa75ff ;
+    sh:targetClass <http://cmt#Person>,
+        <http://confOf#Person> .
+
 shape_int:8d4e4ef3ea5252ec5235e4b1dd463ae9c302422c a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Regular> .
 
 shape_int:97d9b2888847bdab6c3bf47fe6a1af3b69aee3e2 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://cmt#Preference> .
 
 shape_int:9d6ef3b1e64e38fa9c417343a224346184f26e05 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:2d29b61423d78c65a70123f4878497612e71d9b0,
         shape_int:98ab7dccdc4c9133deea3f2d118b920f21c9462d ;
     sh:targetClass <http://confOf#Administrative_event> .
 
 shape_int:9dda9aa776653be989f44d12e9d628d418077f33 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Trip> .
 
 shape_int:9f7021d7f6f13f7a53ffda6a4490bbe5129bf474 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:0be3d697e2e7ffda29fc4b878c862097b985d1c8,
         shape_int:17e53ed0fb8dfdf23109b5e24c547470073b73e4,
         shape_int:285ee6c866a512ba282c7bf0cab973592bb91394,
@@ -131,90 +239,588 @@ shape_int:9f7021d7f6f13f7a53ffda6a4490bbe5129bf474 a sh:NodeShape ;
     sh:targetClass <http://confOf#Social_event> .
 
 shape_int:9f8a2389a20ca0752aa9e95093515517e90e194c a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://cmt#User> .
 
 shape_int:a06a7e5383985145a42c4a0d58a9e59dd712fbe9 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://cmt#AuthorNotReviewer> .
 
 shape_int:a33539ca77a6c42fd7a1e50aef1516b3a87d7c85 a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Poster> .
 
 shape_int:a69d9d5f9f4a0bdc804c32a2ee8bbadb72f7ff6e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://cmt#Acceptance> .
 
 shape_int:a74f16c11792da6a36979a58a1ba2b4333632f57 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:066701024268ef075d14de14a29ccb21ac478418,
         shape_int:795721601b0aa395d25c5fa395398e5a0cca1ce0,
-        shape_int:888550fb43d75a71cf84c3f7b0abb7f85a9133bd,
-        shape_int:b621d86541c28ce30d847c0c31e08b3aa2cfd1d2 ;
+        shape_int:b621d86541c28ce30d847c0c31e08b3aa2cfd1d2,
+        shape_int:c416dbf1a0871cb18fadf0311b58a34efeb4c608 ;
     sh:targetClass <http://cmt#Reviewer> .
 
 shape_int:a77366e97a2bf514bbc87a66e670fd0ba7173892 a sh:NodeShape ;
     sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:77f3525935c53e2a9ded2138da33b4acff1afaba ;
     sh:targetClass <http://confOf#Participant> .
 
 shape_int:ad8919ace091b14011c6439cfd5e1707b58f5abd a sh:NodeShape ;
     sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:f3265fa7ca9c040c2ef1e4513fc008febb1ac7f4,
         shape_int:fa8841e25eace879532596731238a06bcbaa7105 ;
     sh:targetClass <http://confOf#Event> .
 
+shape_int:ade3631d5fe3d7c3b437937f25c95ea6f4bbf032 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:0be3d697e2e7ffda29fc4b878c862097b985d1c8,
+        shape_int:17e53ed0fb8dfdf23109b5e24c547470073b73e4,
+        shape_int:285ee6c866a512ba282c7bf0cab973592bb91394,
+        shape_int:3040e255b2b55c5011e638d6839407fe043adfad,
+        shape_int:5fb79fe96b0f2ee5b22d8c05dc98b5d8a18e5368,
+        shape_int:735452db0beecfdf1c1c1dd83c3193549c5171e4,
+        shape_int:858c68b52542d982b07e6da64b492318a2038ebc,
+        shape_int:9177343c26850eef82d0c88134a76f9d021977ab,
+        shape_int:c8a452bd95edfe37b9e75f845fc267a7b18a8111 ;
+    sh:targetClass <http://confOf#Working_event> .
+
 shape_int:adfb03aad8a7ead9c8d7176adb61544609e8b20e a sh:NodeShape ;
     sh:description "Reviewing procedure for submitted contributions",
         "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Reviewing_event> .
 
 shape_int:b268e899dce5e3284b67eaac0e9840baba2e0d04 a sh:NodeShape ;
     sh:description "Registration of new ConfTool users",
         "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Registration_of_participants_event> .
 
 shape_int:b882643da2201ccf7e594cccbb94cc9ca0de6379 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://cmt#PaperAbstract> .
 
 shape_int:cbf217d4cfea1647891d6270c640d24f61b29e12 a sh:NodeShape ;
     sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Volunteer> .
+
+shape_int:ce75bff82d79aa9d8bab501dceb5d92747da294e a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:26f186ced4ff2a44eab459156fc12b5e0d169642 ;
+    sh:targetClass <http://cmt#Bid> .
 
 shape_int:ceee32dfb44dbc2b396d5659cb92839522e14aa2 a sh:NodeShape ;
     sh:description "Results of the reviewing procedures, accessable to authors",
         "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Reviewing_results_event> .
 
 shape_int:d523ebbd10146cdfd39dee077f04c9d08468d0bc a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Country> .
 
 shape_int:d52cdf2f190018aa1adc6eb9ce57b40dae9530c9 a sh:NodeShape ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:b621d86541c28ce30d847c0c31e08b3aa2cfd1d2,
         shape_int:fa582354def2bc0a828570dfcca42ea854ac6e41 ;
     sh:targetClass <http://cmt#ProgramCommitteeChair>,
         <http://confOf#Chair_PC> .
 
 shape_int:d928bfee825c93e2502c2b04eeeddd1ffaf790c6 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Reception> .
 
 shape_int:e214b8a29923056887b7edf6635d90dcbb2abe88 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://cmt#Document> .
 
+shape_int:e29a79fe0c349724caeaa1762fa917f5543248ca a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:1b5385dcb01dd038a840706ca6b20afe5c529f2c ;
+    sh:targetClass <http://cmt#Review> .
+
 shape_int:e9ebd1b0ea620496a3fe44bae2cb7e168a33ae85 a sh:NodeShape ;
+    sh:description "Final upload of accepted contributions",
+        "confTool" ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://confOf#Camera_Ready_event> .
 
 shape_int:f65dbcfd7195ed982036bc4e1c080879f759e029 a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:17963ae3472fa3c174411e75174bba2c61d514e5 ;
     sh:targetClass <http://cmt#ProgramCommittee> .
 
 shape_int:fa5f82ddc16bdadaf1295877c2102aa864ab83af a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:property shape_int:b621d86541c28ce30d847c0c31e08b3aa2cfd1d2 ;
     sh:targetClass <http://cmt#ConferenceChair> .
 
 shape_int:fad71daebc88dbe9dffc42cf995bfc70dba2e69d a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
     sh:targetClass <http://cmt#Meta-Review> .
+
+shape_int:fc18969b6131dcf5eced1c5e0f78166ea2ff3663 a sh:NodeShape ;
+    sh:description "An External Reviewer is a person that has been assigned to review a paper for another Reviewer, but is not themselves a Reviewer. " ;
+    sh:nodeKind sh:IRI ;
+    sh:property shape_int:82035ec5f7e8803d6ecffbb494fd3fd24231ed2b ;
+    sh:targetClass <http://cmt#ExternalReviewer> .
 
 shape_int:066701024268ef075d14de14a29ccb21ac478418 a sh:PropertyShape ;
     sh:class <http://cmt#Administrator> ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path <http://cmt#assignedByAdministrator> .
+
+shape_int:06d4d8d918e3ba5a56507b85beb8f683678fea8e a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class <http://confOf#Topic> ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://confOf#expertOn> .
+
+shape_int:17963ae3472fa3c174411e75174bba2c61d514e5 a sh:PropertyShape ;
+    sh:class <http://cmt#ProgramCommitteeMember> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#hasProgramCommitteeMember> .
+
+shape_int:1aa97d8b5a664df758ebfaf9d6225bd79741f154 a sh:PropertyShape ;
+    sh:class <http://cmt#Conference> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#printHardcopyMailingManifests> .
+
+shape_int:1ad71c6131aa4218e90a808ad9e2292bb8a94843 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#hasPhone> ;
+    sh:pattern ".*" .
+
+shape_int:1b5385dcb01dd038a840706ca6b20afe5c529f2c a sh:PropertyShape ;
+    sh:class <http://cmt#Reviewer> ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://cmt#writtenBy> .
+
+shape_int:2453f625f87507c9726a28e42d67574ca3a8ad88 a sh:PropertyShape ;
+    sh:class <http://cmt#ProgramCommitteeMember> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#setMaxPapers> .
+
+shape_int:26f186ced4ff2a44eab459156fc12b5e0d169642 a sh:PropertyShape ;
+    sh:class <http://cmt#Reviewer> ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://cmt#adjustedBy> .
+
+shape_int:2d29b61423d78c65a70123f4878497612e71d9b0 a sh:PropertyShape ;
+    sh:class <http://confOf#Administrative_event> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://confOf#parallel_with> .
+
+shape_int:3040e255b2b55c5011e638d6839407fe043adfad a sh:PropertyShape ;
+    sh:class <http://confOf#Administrative_event> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://confOf#hasAdministrativeEvent> .
+
+shape_int:38f9f0c6f83078c66b0f87094262d744daab33d0 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://confOf#hasKeyword> ;
+    sh:pattern ".*" .
+
+shape_int:3dd01ca6cac6c1e0eb4898996b0b6cd4564a47e1 a sh:PropertyShape ;
+    sh:class <http://cmt#Document> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#hasConflictOfInterest> .
+
+shape_int:43380e87d416d303a76e579d519f6956df2c4129 a sh:PropertyShape ;
+    sh:class <http://cmt#Administrator> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#paperAssignmentFinalizedBy> .
+
+shape_int:47397882eaafb54fb616637fe3687f7f2353adab a sh:PropertyShape ;
+    sh:class <http://cmt#Administrator> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#reviewCriteriaEnteredBy> .
+
+shape_int:4db76df0e035b99d73a61ababc50b2a9be8d178e a sh:PropertyShape ;
+    sh:class <http://cmt#Decision> ;
+    sh:maxCount "1" ;
+    sh:minCount "0" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://cmt#hasDecision> .
+
+shape_int:4f2932852465d21927491384bb759773f524bf3f a sh:PropertyShape ;
+    sh:class <http://cmt#Reviewer> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#assignReviewer> .
+
+shape_int:529cd3d64231667aa8d01f2eee503b4ddf29e554 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://confOf#abstract> ;
+    sh:pattern ".*" .
+
+shape_int:55d6fb9224592a052c227bc564cd5ba0ae42c3ea a sh:PropertyShape ;
+    sh:class <http://cmt#Paper> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#submitPaper> .
+
+shape_int:5b986781761f900573d0af209eec7d98db80fc8b a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class [ rdf:rest ( <http://cmt#SubjectArea> <http://confOf#Topic> ) ] ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path [ sh:alternativePath ( <http://cmt#hasSubjectArea> <http://confOf#dealsWith> ) ] .
+
+shape_int:5fb79fe96b0f2ee5b22d8c05dc98b5d8a18e5368 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class <http://confOf#Topic> ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://confOf#hasTopic> .
+
+shape_int:64a22182185465a9a7d349c339521f9414e42357 a sh:PropertyShape ;
+    sh:class <http://cmt#Reviewer> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#assignedTo> .
+
+shape_int:67cdd98163eb3717cc2ff88b78a01e73b4db9e4b a sh:PropertyShape ;
+    sh:class <http://cmt#Conference> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#enableVirtualMeeting> .
+
+shape_int:6c23cdeb5bea0adde5676452027a705513ccb5c1 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class [ rdf:rest ( <http://cmt#Author> <http://confOf#Author> ) ] ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path [ sh:alternativePath ( <http://cmt#hasAuthor> <http://confOf#writtenBy> ) ] .
+
+shape_int:6e5d99107112af9add6111657e87e6efd0851ccc a sh:PropertyShape ;
+    sh:datatype xsd:int ;
+    sh:maxCount "1" ;
+    sh:maxInclusive "2147483647" ;
+    sh:minCount "1" ;
+    sh:minInclusive "-2147483648" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://cmt#reviewsPerPaper> ;
+    sh:pattern "[\\-+]?[0-9]+" .
+
+shape_int:75954a86409ed5170451f4619338361b29d15299 a sh:PropertyShape ;
+    sh:class <http://cmt#Administrator> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#virtualMeetingEnabledBy> .
+
+shape_int:77f3525935c53e2a9ded2138da33b4acff1afaba a sh:PropertyShape ;
+    sh:datatype xsd:boolean ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://confOf#earlyRegistration> ;
+    sh:pattern "true|false|0|1" .
+
+shape_int:795721601b0aa395d25c5fa395398e5a0cca1ce0 a sh:PropertyShape ;
+    sh:class <http://cmt#Paper> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#readPaper> .
+
+shape_int:7fba8d7b9ece0a304ec9c0e29b7c90f296892d43 a sh:PropertyShape ;
+    sh:class <http://cmt#Reviewer> ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://cmt#readByReviewer> .
+
+shape_int:80ae5e5ef5415c0ed7a7ad2838a39ddacb719f0e a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#hasFax> ;
+    sh:pattern ".*" .
+
+shape_int:82035ec5f7e8803d6ecffbb494fd3fd24231ed2b a sh:PropertyShape ;
+    sh:class <http://cmt#Reviewer> ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://cmt#assignedByReviewer> .
+
+shape_int:88bba170cbdcb6a0da0c7df686069785335ae6b5 a sh:PropertyShape ;
+    sh:datatype xsd:date ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://cmt#date> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+shape_int:8bc506bc95d42b4f7c04a8228933ee7d09ccee44 a sh:PropertyShape ;
+    sh:class <http://cmt#Administrator> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#paperAssignmentToolsRunBy> .
+
+shape_int:8c1915f5efbfa2f3bbf9a8b8296118c71d50ce69 a sh:PropertyShape ;
+    sh:datatype xsd:boolean ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://cmt#acceptsHardcopySubmissions> ;
+    sh:pattern "true|false|0|1" .
+
+shape_int:8f08d0ca3672a17f9fa5fa9498e31443de77af26 a sh:PropertyShape ;
+    sh:class <http://cmt#ConferenceMember> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#hasConferenceMember> .
+
+shape_int:90970dcca78b9b5fb99b9b3cd48ce3050356e4bb a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path [ sh:alternativePath ( <http://cmt#email> <http://confOf#hasEmail> ) ] ;
+    sh:pattern ".*" .
+
+shape_int:910747d7b4a50d91df214697f76396af982bd6e1 a sh:PropertyShape ;
+    sh:class <http://cmt#Conference> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#runPaperAssignmentTools> .
+
+shape_int:941715c8173589c63316612c245eb7b044990973 a sh:PropertyShape ;
+    sh:datatype xsd:anyURI ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://cmt#logoURL> ;
+    sh:pattern "^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\\?([^#]*))?(#(.*))?" .
+
+shape_int:97a66f2812b354696334b8ff6e995f8253048852 a sh:PropertyShape ;
+    sh:class <http://cmt#Conference> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#finalizePaperAssignment> .
+
+shape_int:98ab7dccdc4c9133deea3f2d118b920f21c9462d a sh:PropertyShape ;
+    sh:class <http://confOf#Administrative_event> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://confOf#follows> .
+
+shape_int:9c6bff39ca47fef706399f2159e203230753d78e a sh:PropertyShape ;
+    sh:class <http://cmt#Administrator> ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://cmt#addedBy> .
+
+shape_int:a6affde136a2ce99e1f7d869f0ee89544a337d2b a sh:PropertyShape ;
+    sh:class <http://cmt#Administrator> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#detailsEnteredBy> .
+
+shape_int:af90b19da2d3afcfdaa7d3b59f152e04c35f7d83 a sh:PropertyShape ;
+    sh:datatype xsd:int ;
+    sh:maxCount "1" ;
+    sh:maxInclusive "2147483647" ;
+    sh:minInclusive "-2147483648" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://cmt#maxPapers> ;
+    sh:pattern "[\\-+]?[0-9]+" .
+
+shape_int:b09cb6531dab08038c91477752b8d2588bffdb7f a sh:PropertyShape ;
+    rdfs:label "confTool",
+        "involved middle name" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool",
+        "involved middle name" ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://confOf#hasFirstName> ;
+    sh:pattern ".*" .
+
+shape_int:b338eb4e7e2c8f1baf7dc8c4cfb2a4c22a19fa6b a sh:PropertyShape ;
+    sh:class <http://cmt#ProgramCommittee> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#memberOfProgramCommittee> .
+
+shape_int:b3d1f1fc6941c422e7eebc85130b6f9bcefef1b1 a sh:PropertyShape ;
+    sh:class <http://confOf#University> ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://confOf#studyAt> .
+
+shape_int:b75ae499111bb9a017b6ccd9017ac2b0266becaa a sh:PropertyShape ;
+    sh:datatype xsd:anyURI ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://cmt#siteURL> ;
+    sh:pattern "^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\\?([^#]*))?(#(.*))?" .
+
+shape_int:c0d31bc8c41e01561637f82a49296d5327f947b0 a sh:PropertyShape ;
+    sh:class <http://cmt#Meta-Reviewer> ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://cmt#readByMeta-Reviewer> .
+
+shape_int:c36f954c99cd23a696beaf5289518855e74e1c7e a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class <http://confOf#Contribution> ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path [ sh:alternativePath ( <http://cmt#writePaper> <http://confOf#writes> ) ] .
+
+shape_int:c3b8db2d82998726332687bb405271f1698044ea a sh:PropertyShape ;
+    sh:class <http://cmt#Conference> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#startReviewerBidding> .
+
+shape_int:ca56cdef03061f6f6bea96bb635ca96ea0bdb630 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path [ sh:alternativePath ( <http://cmt#title> <http://confOf#hasTitle> ) ] ;
+    sh:pattern ".*" .
+
+shape_int:d08c9edad0d73c9cc661b8a9d9c406172a286bb3 a sh:PropertyShape ;
+    sh:class <http://cmt#Administrator> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#reviewerBiddingStartedBy> .
+
+shape_int:d5e88d38d86ed7a62058d38698f1007eb76c9434 a sh:PropertyShape ;
+    sh:datatype xsd:unsignedLong ;
+    sh:maxCount "1" ;
+    sh:maxInclusive "18446744073709551615" ;
+    sh:minInclusive "0" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://cmt#paperID> ;
+    sh:pattern "[\\-+]?[0-9]+" .
+
+shape_int:d7d037568c6c891c053c7a4cb3a499d540ff2e98 a sh:PropertyShape ;
+    sh:class <http://cmt#Co-author> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#hasCo-author> .
+
+shape_int:dd5e29aa17cd8d7dbb01bdfcef3e134334f71c7e a sh:PropertyShape ;
+    sh:class <http://cmt#Administrator> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#hardcopyMailingManifestsPrintedBy> .
+
+shape_int:e508f166aa658aa54c63f3df5637f32d609f0111 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://confOf#hasSurname> ;
+    sh:pattern ".*" .
+
+shape_int:ed734665a23982e510520bc9af2633413bed6cb5 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#hasHomePage> ;
+    sh:pattern ".*" .
+
+shape_int:f23d210321ffff578bd1421160cc05a639b97e31 a sh:PropertyShape ;
+    sh:class <http://cmt#Conference> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#enterConferenceDetails> .
+
+shape_int:f3265fa7ca9c040c2ef1e4513fc008febb1ac7f4 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://confOf#starts_on> ;
+    sh:pattern ".*" .
+
+shape_int:f4bfb6ce63802c76b21d7fb075501d820d0c946e a sh:PropertyShape ;
+    sh:class <http://cmt#Administrator> ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://cmt#rejectedBy> .
+
+shape_int:f4eca27b4536b3990438468b1ca1bfe9c0abc3fe a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://confOf#remark> ;
+    sh:pattern ".*" .
+
+shape_int:f62b27cc94b618d66808bed184118e4fe6143bd2 a sh:PropertyShape ;
+    sh:class <http://cmt#Conference> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#memberOfConference> .
+
+shape_int:f718a1667690dbff04cd54563a516208667cba00 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:minCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://confOf#contactEmail> ;
+    sh:pattern ".*" .
+
+shape_int:f7dd49f3a922f9718f35bf35ed5638213cc1f737 a sh:PropertyShape ;
+    sh:class <http://cmt#Conference> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#enterReviewCriteria> .
+
+shape_int:f842f0800440d926733cdf568fb342f402aa75ff a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class <http://confOf#Organization> ;
+    sh:description "confTool" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://confOf#employedBy> .
+
+shape_int:fa582354def2bc0a828570dfcca42ea854ac6e41 a sh:PropertyShape ;
+    sh:class <http://cmt#Review> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#endReview> .
+
+shape_int:fa8841e25eace879532596731238a06bcbaa7105 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://confOf#ends_on> ;
+    sh:pattern ".*" .
+
+shape_int:fc198ab96b0c27af22cf98089d7e6d37e6c25068 a sh:PropertyShape ;
+    sh:class <http://cmt#Paper> ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://cmt#co-writePaper> .
 
 shape_int:0be3d697e2e7ffda29fc4b878c862097b985d1c8 a sh:PropertyShape ;
     rdfs:label "confTool",
@@ -237,11 +843,6 @@ shape_int:11b104d56d08b453ebe281cf557c66aae0bd5b8f a sh:PropertyShape ;
     sh:path <http://cmt#name> ;
     sh:pattern ".*" .
 
-shape_int:17963ae3472fa3c174411e75174bba2c61d514e5 a sh:PropertyShape ;
-    sh:class <http://cmt#ProgramCommitteeMember> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://cmt#hasProgramCommitteeMember> .
-
 shape_int:17e53ed0fb8dfdf23109b5e24c547470073b73e4 a sh:PropertyShape ;
     rdfs:label "confTool" ;
     sh:datatype xsd:string ;
@@ -251,15 +852,14 @@ shape_int:17e53ed0fb8dfdf23109b5e24c547470073b73e4 a sh:PropertyShape ;
     sh:path <http://confOf#has_short_title> ;
     sh:pattern ".*" .
 
-shape_int:1aa97d8b5a664df758ebfaf9d6225bd79741f154 a sh:PropertyShape ;
-    sh:class <http://cmt#Conference> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://cmt#printHardcopyMailingManifests> .
-
-shape_int:2453f625f87507c9726a28e42d67574ca3a8ad88 a sh:PropertyShape ;
-    sh:class <http://cmt#ProgramCommitteeMember> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://cmt#setMaxPapers> .
+shape_int:201552d5fe1a546de7d212847a6840992e1baf12 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:class <http://confOf#Country> ;
+    sh:description "confTool" ;
+    sh:maxCount "1" ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://confOf#hasCountry> .
 
 shape_int:285ee6c866a512ba282c7bf0cab973592bb91394 a sh:PropertyShape ;
     rdfs:label "confTool" ;
@@ -271,50 +871,14 @@ shape_int:285ee6c866a512ba282c7bf0cab973592bb91394 a sh:PropertyShape ;
     sh:path <http://confOf#has_title> ;
     sh:pattern ".*" .
 
-shape_int:2d29b61423d78c65a70123f4878497612e71d9b0 a sh:PropertyShape ;
-    sh:class <http://confOf#Administrative_event> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://confOf#parallel_with> .
-
-shape_int:34992d7c8fc46672d04b46f9eb9652435fa4e5b5 a sh:PropertyShape ;
-    sh:class <http://cmt#ConferenceMember> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://cmt#hasConferenceMember> .
-
-shape_int:43380e87d416d303a76e579d519f6956df2c4129 a sh:PropertyShape ;
-    sh:class <http://cmt#Administrator> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://cmt#paperAssignmentFinalizedBy> .
-
-shape_int:47397882eaafb54fb616637fe3687f7f2353adab a sh:PropertyShape ;
-    sh:class <http://cmt#Administrator> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://cmt#reviewCriteriaEnteredBy> .
-
-shape_int:4f2932852465d21927491384bb759773f524bf3f a sh:PropertyShape ;
-    sh:class <http://cmt#Reviewer> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://cmt#assignReviewer> .
-
-shape_int:4f3223d27f703dea8249cfa9f1955854f0cb0102 a sh:PropertyShape ;
-    sh:class <http://cmt#Conference> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://cmt#memberOfConference> .
-
-shape_int:67cdd98163eb3717cc2ff88b78a01e73b4db9e4b a sh:PropertyShape ;
-    sh:class <http://cmt#Conference> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://cmt#enableVirtualMeeting> .
-
-shape_int:6e5d99107112af9add6111657e87e6efd0851ccc a sh:PropertyShape ;
-    sh:datatype xsd:int ;
-    sh:maxCount "1" ;
-    sh:maxInclusive "2147483647" ;
+shape_int:475714e22431e89e2e50dc07201dde9549a573a0 a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
     sh:minCount "1" ;
-    sh:minInclusive "-2147483648" ;
     sh:nodeKind sh:IRIOrLiteral ;
-    sh:path <http://cmt#reviewsPerPaper> ;
-    sh:pattern "[\\-+]?[0-9]+" .
+    sh:path <http://confOf#hasStreet> ;
+    sh:pattern ".*" .
 
 shape_int:735452db0beecfdf1c1c1dd83c3193549c5171e4 a sh:PropertyShape ;
     rdfs:label """confTool
@@ -327,22 +891,14 @@ shape_int:735452db0beecfdf1c1c1dd83c3193549c5171e4 a sh:PropertyShape ;
     sh:path <http://confOf#minChoice> ;
     sh:pattern "[\\-+]?[0-9]+" .
 
-shape_int:75954a86409ed5170451f4619338361b29d15299 a sh:PropertyShape ;
-    sh:class <http://cmt#Administrator> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://cmt#virtualMeetingEnabledBy> .
-
-shape_int:77f3525935c53e2a9ded2138da33b4acff1afaba a sh:PropertyShape ;
-    sh:datatype xsd:boolean ;
-    sh:maxCount "1" ;
+shape_int:735723bd55bd23d924ea85a380ffb1980bd34e5a a sh:PropertyShape ;
+    rdfs:label "confTool" ;
+    sh:datatype xsd:string ;
+    sh:description "confTool" ;
+    sh:minCount "1" ;
     sh:nodeKind sh:IRIOrLiteral ;
-    sh:path <http://confOf#earlyRegistration> ;
-    sh:pattern "true|false|0|1" .
-
-shape_int:795721601b0aa395d25c5fa395398e5a0cca1ce0 a sh:PropertyShape ;
-    sh:class <http://cmt#Paper> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://cmt#readPaper> .
+    sh:path <http://confOf#hasPostalCode> ;
+    sh:pattern ".*" .
 
 shape_int:858c68b52542d982b07e6da64b492318a2038ebc a sh:PropertyShape ;
     rdfs:label "confTool",
@@ -356,35 +912,6 @@ shape_int:858c68b52542d982b07e6da64b492318a2038ebc a sh:PropertyShape ;
     sh:path <http://confOf#location> ;
     sh:pattern ".*" .
 
-shape_int:888550fb43d75a71cf84c3f7b0abb7f85a9133bd a sh:PropertyShape ;
-    sh:class <http://cmt#Paper> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path [ sh:alternativePath ( <http://cmt#hasBeenAssigned> <http://confOf#reviewes> ) ] .
-
-shape_int:88bba170cbdcb6a0da0c7df686069785335ae6b5 a sh:PropertyShape ;
-    sh:datatype xsd:date ;
-    sh:minCount "1" ;
-    sh:nodeKind sh:IRIOrLiteral ;
-    sh:path <http://cmt#date> ;
-    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
-
-shape_int:8bc506bc95d42b4f7c04a8228933ee7d09ccee44 a sh:PropertyShape ;
-    sh:class <http://cmt#Administrator> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://cmt#paperAssignmentToolsRunBy> .
-
-shape_int:8c1915f5efbfa2f3bbf9a8b8296118c71d50ce69 a sh:PropertyShape ;
-    sh:datatype xsd:boolean ;
-    sh:maxCount "1" ;
-    sh:nodeKind sh:IRIOrLiteral ;
-    sh:path <http://cmt#acceptsHardcopySubmissions> ;
-    sh:pattern "true|false|0|1" .
-
-shape_int:910747d7b4a50d91df214697f76396af982bd6e1 a sh:PropertyShape ;
-    sh:class <http://cmt#Conference> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://cmt#runPaperAssignmentTools> .
-
 shape_int:9177343c26850eef82d0c88134a76f9d021977ab a sh:PropertyShape ;
     rdfs:label """confTool
 """ ;
@@ -397,39 +924,11 @@ shape_int:9177343c26850eef82d0c88134a76f9d021977ab a sh:PropertyShape ;
     sh:path <http://confOf#maxChoice> ;
     sh:pattern "[\\-+]?[0-9]+" .
 
-shape_int:941715c8173589c63316612c245eb7b044990973 a sh:PropertyShape ;
-    sh:datatype xsd:anyURI ;
-    sh:maxCount "1" ;
-    sh:nodeKind sh:IRIOrLiteral ;
-    sh:path <http://cmt#logoURL> ;
-    sh:pattern "^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\\?([^#]*))?(#(.*))?" .
-
-shape_int:97a66f2812b354696334b8ff6e995f8253048852 a sh:PropertyShape ;
-    sh:class <http://cmt#Conference> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://cmt#finalizePaperAssignment> .
-
-shape_int:98ab7dccdc4c9133deea3f2d118b920f21c9462d a sh:PropertyShape ;
-    sh:class <http://confOf#Administrative_event> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://confOf#follows> .
-
-shape_int:a6affde136a2ce99e1f7d869f0ee89544a337d2b a sh:PropertyShape ;
-    sh:class <http://cmt#Administrator> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://cmt#detailsEnteredBy> .
-
-shape_int:b75ae499111bb9a017b6ccd9017ac2b0266becaa a sh:PropertyShape ;
-    sh:datatype xsd:anyURI ;
-    sh:maxCount "1" ;
-    sh:nodeKind sh:IRIOrLiteral ;
-    sh:path <http://cmt#siteURL> ;
-    sh:pattern "^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\\?([^#]*))?(#(.*))?" .
-
-shape_int:c3b8db2d82998726332687bb405271f1698044ea a sh:PropertyShape ;
-    sh:class <http://cmt#Conference> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://cmt#startReviewerBidding> .
+shape_int:c416dbf1a0871cb18fadf0311b58a34efeb4c608 a sh:PropertyShape ;
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:or ( [ sh:class <http://confOf#Contribution> ] [ sh:class <http://cmt#Paper> ] ) ;
+    sh:path [ sh:alternativePath ( <http://cmt#hasBeenAssigned> <http://confOf#reviewes> ) ] .
 
 shape_int:c8a452bd95edfe37b9e75f845fc267a7b18a8111 a sh:PropertyShape ;
     rdfs:label "confTool" ;
@@ -442,53 +941,13 @@ shape_int:c8a452bd95edfe37b9e75f845fc267a7b18a8111 a sh:PropertyShape ;
     sh:path <http://confOf#defaultChoice> ;
     sh:pattern "[\\-+]?[0-9]+" .
 
-shape_int:d08c9edad0d73c9cc661b8a9d9c406172a286bb3 a sh:PropertyShape ;
-    sh:class <http://cmt#Administrator> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://cmt#reviewerBiddingStartedBy> .
-
-shape_int:dd5e29aa17cd8d7dbb01bdfcef3e134334f71c7e a sh:PropertyShape ;
-    sh:class <http://cmt#Administrator> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://cmt#hardcopyMailingManifestsPrintedBy> .
-
-shape_int:f23d210321ffff578bd1421160cc05a639b97e31 a sh:PropertyShape ;
-    sh:class <http://cmt#Conference> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://cmt#enterConferenceDetails> .
-
-shape_int:f3265fa7ca9c040c2ef1e4513fc008febb1ac7f4 a sh:PropertyShape ;
+shape_int:cacd6433e7bd86c391e82c6d4bc1c5970af8e550 a sh:PropertyShape ;
     rdfs:label "confTool" ;
-    sh:datatype xsd:string ;
+    sh:class <http://confOf#City> ;
     sh:description "confTool" ;
-    sh:maxCount "1" ;
-    sh:nodeKind sh:IRIOrLiteral ;
-    sh:path <http://confOf#starts_on> ;
-    sh:pattern ".*" .
-
-shape_int:f7dd49f3a922f9718f35bf35ed5638213cc1f737 a sh:PropertyShape ;
-    sh:class <http://cmt#Conference> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://cmt#enterReviewCriteria> .
-
-shape_int:fa582354def2bc0a828570dfcca42ea854ac6e41 a sh:PropertyShape ;
-    sh:class <http://cmt#Review> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://cmt#endReview> .
-
-shape_int:fa8841e25eace879532596731238a06bcbaa7105 a sh:PropertyShape ;
-    rdfs:label "confTool" ;
-    sh:datatype xsd:string ;
-    sh:description "confTool" ;
-    sh:maxCount "1" ;
-    sh:nodeKind sh:IRIOrLiteral ;
-    sh:path <http://confOf#ends_on> ;
-    sh:pattern ".*" .
-
-shape_int:fc198ab96b0c27af22cf98089d7e6d37e6c25068 a sh:PropertyShape ;
-    sh:class <http://cmt#Paper> ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://cmt#co-writePaper> .
+    sh:nodeKind sh:BlankNodeOrIRI,
+        sh:IRIOrLiteral ;
+    sh:path <http://confOf#hasCity> .
 
 shape_int:b621d86541c28ce30d847c0c31e08b3aa2cfd1d2 a sh:PropertyShape ;
     rdfs:label """In CMT terms, a ‘Conflict of Interest’ is an association between a specific Reviewer and a specific Paper that states there is a conflict of interest between that Reviewer and that paper. Conflicts can be marked by Authors (during paper submission) or by Reviewers (in Phase 2) or by Chairmen (in Phase 3).

@@ -48,7 +48,7 @@ class IntegrationOperation:
                         logical_operator: str = None
                         if axiom['logical_operator'] != None:
                             logical_operator = axiom['logical_operator']
-                        object_list.append(axiom['obj'])             
+                        object_list.append(axiom['obj'])
                     res = self.execute_nodekind_integration(nodekind_list=object_list)
                     if res != None:
                         flag = True
