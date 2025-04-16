@@ -116,6 +116,8 @@ class InconsistencesFilter:
         ]
 
         for axiom in prop.property_axiom_cluster_list:
+            # if 'http://ekaw#hasReview' in axiom['path']:
+            #     print(axiom)
             for ax in axiom['axioms']:
                 [(filter_dict[filter_dict.index(fil)]['path'].append(axiom['path']), filter_dict[filter_dict.index(fil)]['list'].append(ax)) for fil in filter_dict if ax['predicate'] in fil['filter']]
 
@@ -132,9 +134,38 @@ class InconsistencesFilter:
         filter_library = Filter_Library()
         axiom_list = list(set(axiom_list))
 
+        # print(filter)
+        # print(filter['filter'])
+
         if len(axiom_list) == 1:
             filter_result = False
             return filter_result
+        
+        if 'http://www.w3.org/ns/shacl#minCount' in filter['filter'] and len(filter['list']) > 0:
+            min_count_list: list[str] = []
+            max_count_list: list[str] = []
+            path_list: list[str] = []
+            for path in filter['path']:
+                if path not in path_list:
+                    path_list.append(path)
+            for axiom in filter['list']:
+                if axiom['predicate'] == 'http://www.w3.org/ns/shacl#minCount':
+                    min_count_list.extend(axiom['objects'])
+                if axiom['predicate'] == 'http://www.w3.org/ns/shacl#maxCount':
+                    max_count_list.extend(axiom['objects'])
+            if len(min_count_list) == 0 or len(max_count_list) == 0:
+                return False
+            fact: rule_engine.Fact = rule_engine.Fact(minCount=max(min_count_list), maxCount=min(max_count_list))
+            filter_result = filter_library.countFilter.evaluate_with_result([fact])
+            if True in filter_result:
+                dict_response = {
+                    'filter': cluster_concept,
+                    'axioms': ['http://www.w3.org/ns/shacl#minCount', 'http://www.w3.org/ns/shacl#maxCount'],
+                    'path': path,
+                    'inconsistency': 'sh:minCount greater or equals than sh:maxCount for intersection operator.'
+                }
+                self.generate_inconsistences_report(dict_response=dict_response)
+                return True
         
         if 'http://www.w3.org/ns/shacl#nodeKind' in filter['filter'] and len(filter['list']) > 0:
             path_list: list[str] = []
@@ -189,7 +220,7 @@ class InconsistencesFilter:
                                         'inconsistency': 'sh:closed not compatible for intersection operator.'
                                     }
                                     self.generate_inconsistences_report(dict_response=dict_response)
-                                    return filter_result
+                                    return True
                                 
             if 'http://www.w3.org/ns/shacl#equals' in filter['filter'] and len(filter['list']) > 0:
                 path_list: list[str] = []
@@ -218,33 +249,8 @@ class InconsistencesFilter:
                                 'inconsistency': 'sh:equals and sh:disjoint not compatible for intersection operator.'
                             }
                             self.generate_inconsistences_report(dict_response=dict_response)
-                            return filter_result
-                    
-            if 'http://www.w3.org/ns/shacl#minCount' in filter['filter'] and len(filter['list']) > 0:
-                min_count_list: list[str] = []
-                max_count_list: list[str] = []
-                path_list: list[str] = []
-                for path in filter['path']:
-                    if path not in path_list:
-                        path_list.append(path)
-                for axiom in filter['list']:
-                    if axiom['predicate'] == 'http://www.w3.org/ns/shacl#minCount':
-                        min_count_list.extend(axiom['objects'])
-                    if axiom['predicate'] == 'http://www.w3.org/ns/shacl#maxCount':
-                        max_count_list.extend(axiom['objects'])
-                if len(min_count_list) == 0 or len(max_count_list) == 0:
-                    return False
-                fact: rule_engine.Fact = rule_engine.Fact(minCount=max(min_count_list), maxCount=min(max_count_list))
-                filter_result = filter_library.countFilter.evaluate_with_result([fact])
-                if True in filter_result:
-                    dict_response = {
-                        'filter': cluster_concept,
-                        'axioms': ['http://www.w3.org/ns/shacl#minCount', 'http://www.w3.org/ns/shacl#maxCount'],
-                        'path': path,
-                        'inconsistency': 'sh:minCount greater or equals than sh:maxCount for intersection operator.'
-                    }
-                    self.generate_inconsistences_report(dict_response=dict_response)
-                    return filter_result
+                            return True
+            
             
             if 'http://www.w3.org/ns/shacl#minExclusive' in filter['filter'] and len(filter['list']) > 0:
                 min_exclusive_list: list[str] = []
@@ -315,7 +321,7 @@ class InconsistencesFilter:
                         'inconsistency': 'sh:minLength greater or equals than sh:maxLength for intersection operator.'
                     }
                     self.generate_inconsistences_report(dict_response=dict_response)
-                    return filter_result
+                    return True
                     
             if 'http://www.w3.org/ns/shacl#qualifiedMinCount' in filter['filter'] and len(filter['list']) > 0:
                 qualified_min_count_list: list[str] = []
@@ -342,7 +348,7 @@ class InconsistencesFilter:
                         'inconsistency': 'sh:qualifiedMinCount greater or equals than sh:qualifiedMaxCount for intersection operator.'
                     }
                     self.generate_inconsistences_report(dict_response=dict_response)
-                    return filter_result
+                    return True
 
             if 'http://www.w3.org/ns/shacl#uniqueLang' in filter['filter'] and len(filter['list']) > 0:
                 unique_lang_list: list[str] = []

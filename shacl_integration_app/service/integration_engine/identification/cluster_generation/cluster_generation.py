@@ -297,7 +297,7 @@ class ClusterGeneration:
             for res in extraction_results['shape_extractions']:
                 if res["root"] == node[0]:
                     for triple in res["triples"]:
-                        stop_word_list: list[str] = ['http://www.w3.org/ns/shacl#or', 'http://www.w3.org/ns/shacl#and', 'http://www.w3.org/ns/shacl#xone', 'http://www.w3.org/ns/shacl#not', 'http://www.w3.org/2000/01/rdf-schema#isDefinedBy', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'http://www.w3.org/ns/shacl#qualifiedValueShape']
+                        stop_word_list: list[str] = ['http://www.w3.org/ns/shacl#or', 'http://www.w3.org/ns/shacl#and', 'http://www.w3.org/ns/shacl#xone', 'http://www.w3.org/ns/shacl#not', 'http://www.w3.org/2000/01/rdf-schema#isDefinedBy', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'] # 'http://www.w3.org/ns/shacl#qualifiedValueShape'
                         logical_stop_word_list: list[str] = ['http://www.w3.org/ns/shacl#or', 'http://www.w3.org/ns/shacl#and', 'http://www.w3.org/ns/shacl#xone', 'http://www.w3.org/ns/shacl#not']
                         if triple["subject"] == node[0] and triple["predicate"] == 'http://www.w3.org/ns/shacl#property':
                             property_triples = [[triple2['predicate'], triple2["object"], triple2["subject"]] for triple2 in res["triples"] if triple2["subject"] == triple["object"] and triple2["subject"] == triple['object'] and triple2["predicate"] not in stop_word_list] # This works

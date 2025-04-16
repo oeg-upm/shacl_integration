@@ -151,7 +151,7 @@
         a               sh:NodeShape ;
         sh:nodeKind     sh:IRI ;
         sh:not          <https://astrea.linkeddata.es/shapes#1de3522db25721d887975b309bd62534> ;
-        sh:property     <https://astrea.linkeddata.es/shapes#34e67049274835e6579d5385fd4ee54e> ;
+        sh:property     <https://astrea.linkeddata.es/shapes#34e67049274835e6579d5385fd4ee54e>, <https://astrea.linkeddata.es/shapes#652d8f1abc66c8d9324e4ab6b3adc093> ;
         sh:targetClass  :Paper .
 
 <https://astrea.linkeddata.es/shapes#7c7d666fc0095d0e8ed968aa019d3b95>
@@ -302,7 +302,7 @@
         a               sh:PropertyShape ;
         sh:class        :Review ;
         sh:inversePath  :has_a_review ;
-        sh:maxCount     1 ;
+        sh:maxCount     '1'^^xsd:int ;
         sh:nodeKind     sh:IRIOrLiteral , sh:BlankNodeOrIRI ;
         sh:path         :has_a_review .
 
@@ -520,7 +520,7 @@
 <https://astrea.linkeddata.es/shapes#89a05aaa91913482fe9e45bd645a67e5>
         a               sh:NodeShape ;
         sh:nodeKind     sh:IRI ;
-        sh:not          <https://astrea.linkeddata.es/shapes#6f9f43e9ab77dc4be28a13e35d0fe1a0> ;
+        sh:not          <https://astrea.linkeddata.es/shapes#6f9f43e9ab77dc4be28a13e35d0fe1a0>, <https://astrea.linkeddata.es/shapes#652d8f1abc66c8d9324e4ab6b3adc093> ;
         sh:targetClass  :Accepted_contribution .
 
 <https://astrea.linkeddata.es/shapes#317f49ea706c88b151fbf7239e49e029>
@@ -851,6 +851,7 @@
 <https://astrea.linkeddata.es/shapes#31b739927d577a32806c651509911848>
         a               sh:NodeShape ;
         sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#652d8f1abc66c8d9324e4ab6b3adc093> ;
         sh:targetClass  :Accepted_contribution , :Rejected_contribution , :Reviewed_contribution .
 
 <https://astrea.linkeddata.es/shapes#bbe358648e50dfd1b2871141cd117656>
