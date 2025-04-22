@@ -1,4 +1,4 @@
-# SHACL shapes Integration
+# SHACLINT: SHACL shapes Integration implementation
 
 ```
 pip install -r requirements.txt
