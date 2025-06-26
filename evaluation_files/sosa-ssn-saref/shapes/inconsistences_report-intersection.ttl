@@ -1,10 +1,43 @@
 @prefix inc: <http://inconsistence.es#> .
 @prefix inc_ex: <http://inconsistence_example.es/resource/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix ssn: <http://www.w3.org/ns/ssn/> .
 
-inc_ex:949fbfe6-dc1b-41c7-807f-6b7c3e2af8d5 a inc:Inconsistency ;
-    inc:hasInconsistencyAxiom sh:or ;
+inc_ex:141a21bc-4cba-4451-a0da-9802c668570a a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:IRI,
+        sh:Literal ;
+    inc:hasInconsistencyInClass sosa:resultTime,
+        <https://saref.etsi.org/core/hasResultTime> ;
+    inc:hasReport "sh:nodeKind not compatible" .
+
+inc_ex:3512ffbf-e220-41fc-8877-5ef6c3fecab5 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNode,
+        sh:IRI ;
+    inc:hasInconsistencyInClass ssn:implements ;
+    inc:hasReport "sh:nodeKind not compatible" .
+
+inc_ex:4a5a1b66-dba9-466f-84b2-96d9589e1227 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNode,
+        sh:IRI ;
+    inc:hasInconsistencyInClass ssn:hasSubSystem ;
+    inc:hasReport "sh:nodeKind not compatible" .
+
+inc_ex:57a82f8f-1256-4f2d-9b4f-06d1bd43ed01 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNode,
+        sh:IRI ;
+    inc:hasInconsistencyInClass ssn:hasDeployment ;
+    inc:hasReport "sh:nodeKind not compatible" .
+
+inc_ex:7ba02bc9-1bc8-40df-b231-b41a7d00e11d a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:BlankNode,
+        sh:IRI ;
+    inc:hasInconsistencyInClass sosa:isHostedBy ;
+    inc:hasReport "sh:nodeKind not compatible" .
+
+inc_ex:9b6b09ad-93b7-4268-bef5-92b4da240587 a inc:Inconsistency ;
+    inc:hasInconsistencyAxiom sh:None,
+        sh:or ;
     inc:hasInconsistencyInClass ssn:System,
         <https://saref.etsi.org/saref4syst/System> ;
     inc:hasReport "Logical constraints not compatible for intersection operation." .

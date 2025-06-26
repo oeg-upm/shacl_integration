@@ -1707,4 +1707,3 @@ shape_int:9137d01245a94ca912a447707f6e7deb76a47647 a sh:PropertyShape ;
     sh:nodeKind sh:IRIOrLiteral ;
     sh:or ( [ sh:class <https://saref.etsi.org/core/Property> ] [ sh:class <https://saref.etsi.org/core/FeatureKind> ] [ sh:class <https://saref.etsi.org/core/Commodity> ] [ sh:class <https://saref.etsi.org/core/Task> ] [ sh:class <https://saref.etsi.org/core/Command> ] [ sh:class <https://saref.etsi.org/core/Function> ] [ sh:class <https://saref.etsi.org/core/State> ] ) ;
     sh:path skos:narrower .
-
