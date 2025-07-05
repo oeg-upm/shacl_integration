@@ -62,7 +62,7 @@ This will return the integrated SHACL graph as the result of the operation.
 
 If you use this software in your research, please cite it. You can use the following DOI to reference it:
 
-[DOI_PLACEHOLDER]
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15813107.svg)](https://doi.org/10.5281/zenodo.15813107)
 
 ## License
 
